@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC 
+"-//W3C//DTD XHTML 1.0 Transitional//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Searching Tips for  Linked Data Services</title>
+    <meta http-equiv="Content-Language" content="en-us" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="keywords" content="searching tips national library catalog beta collections services library congress" />
+    <meta name="description" content="Searching Tips for the National Library Catalog (beta) (National Library Collections and Services, Library of Congress)" />
+    <link rel="stylesheet" media="print" type="text/css" href="/static/lds/css/datastore-print.css" />
+    <link rel="stylesheet" media="screen, projection" type="text/css" href="/static/lds/css/datastore-main.css" />
+    <!-- <link type="text/css" rel="stylesheet" href="/static/lds/css/jquery-ui-1.8.2.all.css"/> -->
+  </head>
+  <body>
+    <a id="skip" href="#skip_menu">skip navigation</a>
+    
+    <div id="container">
+      <div id="branding">
+        <h2>Library of Congress</h2>
+        <h3>Linked Data Services</h3>
+      </div>
+      <div id="topnav">
+        <ul id="menu">
+          <li id="logo_lc"><a title="The Library of Congress" href="http://www.loc.gov/"></a></li>
+          <li id="global_nav"><a href="http://www.loc.gov/rr/askalib/"><img src='/static/lds/images/ask.gif' alt="Ask a Librarian" width="127" height="50" /></a><a href="http://www.loc.gov/library/libarch-digital.html"><img src='/static/lds/images/digitalcoll.gif' alt="Digital collections" width="155" height="50" /></a><a href="http://catalog.loc.gov/"><img src='/static/lds/images/catalog.gif' alt="Library Catalog" width="151" height="50" /></a></li>
+          
+          <li id="searchmenu">
+            <form action="http://www.loc.gov/fedsearch/metasearch/" method="get">
+            <label><a href="http://www.loc.gov/search/more_search.html">Options</a></label><br />
+            <input type="text" name="cclquery" maxlength="200" /><input class="button" id="search_button" name="search_button" type="submit" value="GO" />
+            </form></li>
+        </ul>
+      </div>
+      <div id="crumb_nav">
+        <div id="crumb">
+          
+          <a href="http://www.loc.gov/">Library of Congress</a>
+          <span>&gt;</span> <a href="/lds/">Linked Data Services</a> <span>&gt;</span> Searching Tips</div>
+      </div>
+      
+      <div id="content">
+        
+        <div id="left_nav">
+          <div id="left_nav_top">
+            <a href="/lds/"><img src="/static/lds/images/lc_natcat.gif" alt="XML Datastore" width="218" height="50" /></a>
+          </div>
+          <div id="left_nav_mid">
+            <ul>
+              <li><a href="/index.xqy">Home</a></li>
+              <li class="on"><a href="/static/lds/html/help.html">Searching Tips</a></li>
+              <!--<li><a href="/static/lds/html/news.html">News</a></li>-->
+            </ul>
+            
+           
+            
+            <h2>More Resources</h2>
+            <ul id="res_links">
+                    <li><a href="http://catalog.loc.gov/">LC Online Catalogs</a></li>
+      <li><a href="http://authorities.loc.gov/">LC Authorities</a></li>
+      <li><a href="http://www.loc.gov/library/libarch-digital.html">Digital Collections</a></li>
+      <li><a href="http://findingaids.loc.gov/">Finding Aids</a></li>
+      <li><a href="http://www.loc.gov/rr/program/bib/bibhome.html">Bibliographies & Guides</a></li>
+
+            </ul>
+            
+          </div>
+          <!-- end left_nav_mid -->
+        </div>
+        <!-- end left_nav -->
+        
+        <div id="page_head_help">
+          <span style="width: 100%;"><a name="skip_menu"></a></span>
+          <h1>Searching Tips<br />
+          <span>Linked Data Services</span></h1>
+          <!-- <div class="locshare-this" id='ppocshare_browse'>&nbsp;</div> -->
+        </div> 
+        
+        <div id="main_body">
+          <h2>Stemming of Search Words is Automatic</h2>
+          <p class="msg-info"> <strong>Stemming</strong> is the process used to  reduce words to their base or root form – generally a written word form (e.g., a search for &quot;facility&quot; should return &quot;facility,&quot; &quot;facilities&quot;, &quot;facilitation,&quot; etc.)</p>
+          <p>Stemming of words in <b><i>vernacular</i></b> scripts for the following languages is supported: English, French, Italian, German, Spanish, Russian, Arabic, Chinese (Simplified and Traditional), Korean, Persian (Farsi), and Dutch.</p>
+<p>Stemming of words in <em><strong>transliterated</strong></em> or <strong><em>romanized</em></strong> scripts is not currently supported.</p>
+          <h2>Diacritics, Punctuation and Case Insensitivity</h2>
+          <p>Diacritics (accents and other marks), uppercase letters, and all other forms of punctuation are ignored when entered as part of the your search. However, exact case and diacritics can be used when searching.</p>
+          <h3>Examples:</h3>
+          <p>A search for &quot;resume&quot; would find &quot;Resume,&quot; &quot;resume,&quot; &quot;Résumé,&quot; and/or &quot;résumé.&quot;</p>
+          <p>A search for  &quot;four year degree&quot; would also find &quot;four-year degree.&quot;          </p>
+          <h2>Exact Phrase Searching</h2>
+          <p class="msg-info"> An <strong>exact phrase </strong>is when two or more words occur in exact order entered.</p>
+          <p>Use quotation marks to indicate that an exact phrase search (e.g., &quot;Gone with the wind&quot;).</p>
+<p>Phrase searches are also subject to stemming rules (e.g., &quot;West Virginia&quot; will also return &quot;West Virginian&quot;).</p>
+          <h2>Boolean Logic</h2>
+          <p class="msg-info"><strong>Boolean logic </strong>in keyword searching generally consists of three logical operators:  OR (match any of the words entered); AND (match all of the words entered); and, NOT (match the first word, but eliminate occurences where the second word entered is present). </p>
+          <p>By default, the Boolean AND operator is turned on in Linked Data Services. If multiple words are entered in the search box, then &quot;all of the words entered&quot; will be present in each search result.          </p>
+          <p>The Boolean NOT operator is expressed using the  &quot;minus&quot; immediately prior to the search word that you wish to negate.  <em>Please Note:</em> do not enter a space between the &quot;minus&quot; and the word being  negated (e.g., a search for <strong>iberian -peninsula</strong> will find results where  &quot;iberian&quot; is present, but will eliminate all results which also  contain the word &quot;peninsula&quot;)</p>
+          <p><em><strong>Please note:</strong></em> the Boolean OR operator is not currently supported in  Linked Data Services, but may be included in a future release. Some search refinements (like the &quot;language&quot; facet) use Boolean OR logic in order to allow the selection of several languages (e.g., show me the results where language is either English, French, German OR Spanish).          </p>
+          <h2>Refine Results</h2>
+          <p class="msg-info"><strong>Facets </strong> (limits) llow the user to refine results, while making those results better match your needs. </p>
+          <p>When viewing search results, several categories of limits (facets) will be displayed in the left column. In the Linked Data Services, the ability to refine results is presented to the user after a search is performed and multiple hits  display on the screen. The following search refinements will are available in this release: Access; Format; LC Classification; Language; Publication Year; and, Library Location.</p>
+          <ul>
+            <li><strong>Access</strong> - the three groupings available in the Access limit are: At the Library; Online; and, Partly Online</li>
+            <li><strong>Format</strong> - this limit allows the user to limit the search results to a particular material type, including (but not limited to): <em>Book; Journal/Periodical; Photograph/Art;  Printed Music;  Film/Video/Slide;  Audio (Music);  Computer File;  Audio (Spoken); Manuscript;  Manuscript Music</em>; and more.</li>
+            <li><strong>LC Classification</strong> - using only the high-level catergories of the LC Classification outline (see <a href="http://www.loc.gov/catdir/cpso/lcco/">http://www.loc.gov/catdir/cpso/lcco/</a> for more information), this limit allows filtering of the results by high-level topic. Please note that about 83% of the materials in this catalog have been assigned an LC Classification.</li>
+            <li><strong>Language</strong> - this limit provides the user a way to limit the results to one or more languages.</li>
+            <li><strong>Publication Year</strong> - using the year of publication or issue, the user can limit the search results to to single year.</li>
+            <li><strong>Library Location </strong>- Library of Congress collections are served from vartious locations (mostly  Reading Rooms or &quot;research centers&quot;). Many collection materials, specifically ones in special formats, will only be available from the custodial area responsible for maintaining those collections (e.g., sheet music and scores are only available in the Performing Arts Reading Room). In addition, most Reading Rooms also have a special set of materials available via &quot;reference collections.&quot; This limit allows filtering by individual Reading Rooms and/or collections. Please note, most books in English and the Western European languages are considered part of the General Collections category.</li>
+          </ul>
+        </div>
+        <!-- end main_body -->
+      </div>
+      <!-- end content -->
+      
+<div id="footer">
+<div class="f_container">
+<div class="f_inner_top">
+<h3>Stay Connected with the Library <span><a href="http://www.loc.gov/homepage/connect.html">All ways to connect</a></span></h3>
+</div><!-- end class:f_inner_top -->
+<div class="f_inner_mid">
+<div class="find_us"><h4>Find us on</h4><a href="http://www.facebook.com/libraryofcongress"><img width="16" height="16" alt="Facebook" src="http://www.loc.gov/include/images/facebook.gif"></a><a href="http://twitter.com/librarycongress"><img width="16" height="16" alt="Twitter" src="http://www.loc.gov/include/images/twitter.gif"></a><a href="http://www.youtube.com/libraryofcongress"><img width="16" height="16" alt="YouTube" src="http://www.loc.gov/include/images/youtube.gif"></a><a href="http://www.flickr.com/photos/library_of_congress/"><img width="16" height="16" alt="Flickr" src="http://www.loc.gov/include/images/flickr.gif"></a></div><div class="subscribe"><h4>Subscribe &amp; Comment</h4><span><a href="http://www.loc.gov/rss/">RSS &amp; E-Mail</a></span><span><a href="http://blogs.loc.gov/loc/">Blogs</a></span></div><div class="download"><h4>Download &amp; Play</h4><span><a href="http://www.loc.gov/podcasts/">Podcasts</a></span><span><a href="http://www.loc.gov/webcasts/">Webcasts</a></span><span class="external"><a href="http://deimos3.apple.com/WebObjects/Core.woa/Browse/loc.gov">iTunes U</a></span>
+</div>
+</div><!-- end class:f_inner_mid -->
+<div class="f_inner_bot">
+<div class="sitelinks"><a href="http://www.loc.gov/about/">About</a>
+            &nbsp;|&nbsp;
+            <a href="http://www.loc.gov/pressroom/">Press</a>
+            &nbsp;|&nbsp;
+            <a href="http://www.loc.gov/about/sitemap/">Site Map</a>
+            &nbsp;|&nbsp;
+            <a href="http://www.loc.gov/help/contact-general.html">Contact</a>
+            &nbsp;|&nbsp;
+            <a href="http://www.loc.gov/access/">Accessibility</a>
+            &nbsp;|&nbsp;
+            <a href="http://www.loc.gov/homepage/legal.html">Legal</a>
+            &nbsp;|&nbsp;
+            <a href="http://www.loc.gov/global/disclaim.html">External Link Disclaimer</a>
+            &nbsp;|&nbsp;
+        <a href="http://www.usa.gov/">USA.gov</a></div>
+            <div class="speech"><a href="http://www.loc.gov/access/web.html">Speech Enabled</a>
+</div>
+</div><!-- end class:f_inner_bot -->
+</div><!-- end class:f_container -->
+</div><!-- end id:footer -->
+
+      
+    </div>
+    <!-- end container -->        
+  </body>
+</html>

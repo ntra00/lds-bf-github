@@ -1,0 +1,134 @@
+/********************
+Grid Layout - All Screens
+********************/
+#ds-container {
+	border: solid 1px #eeeeee;
+	margin: 0px;
+	padding: 0px;
+}
+#ds-header  {
+	margin: 0px;
+	padding: 0px;	
+}
+#ds-body {
+	margin: 0px;
+	padding: 0px;
+	min-width: 760px; /* Minimum width of layout - remove line if not required */
+	position: relative;	/* This fixes the IE7 overflow hidden bug */
+	clear: both;
+	float: left;
+	width: 100%;		/* width of whole page */
+	overflow: hidden;	/* This chops off any overhanging divs */
+}
+#ds-body #ds-search {
+	margin: 0px;
+	padding: 0px;
+	height: 50px;
+	width: 100%;
+}
+#ds-body #ds-search #ds-quicksearch {
+	margin: 0px 10px 0px 10px;
+	padding: 3px 10px 0px 10px;
+	height: 36px;
+	background-color: #f8fae0;
+	border: 1px solid #d3d8b2;
+	border-top: 0px;
+}
+#ds-body #ds-search #ds-facetvalues {
+	clear: both;
+	margin: 10px 0px 5px 0px;
+	padding: 0px 0px 5px 10px;
+	background: #FFF;
+	float: left;
+}
+#ds-body #ds-results {
+	clear: both;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	width: 100%;
+}
+/*#ds-body #ds-results #ds-leftcol {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	background: #FFFFFF;
+	width: 265px;
+}
+#ds-body #ds-results #ds-leftcol #ds-facets {
+	margin: 0px 5px 6px 10px;
+	padding: 0px 0px 5px 0px;
+	background: #FFFFFF;
+	width: 248px;
+} */
+
+/* BEGIN CLAY EDIT */
+#ds-container #ds-leftcol {
+	position: absolute;
+	margin-top: 75px;
+	padding: 0px;
+	float: left;
+	background: #FFFFFF;
+	width: 265px;
+}
+
+#ds-container #ds-leftcol #ds-facets {
+	margin: 0px 5px 6px 10px;
+	padding: 0px 0px 5px 0px;
+	background: #FFFFFF;
+	width: 248px;
+}
+/* END CLAY EDIT */
+
+#ds-body #ds-results #ds-mainright {
+	margin: 0px 0px 0px 280px;
+	background: #FFF;
+	padding: 0px 10px 5px 10px;
+}
+#ds-body #ds-results #ds-mainright #ds-controls {
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	background: transparent;
+}
+#ds-body #ds-results #ds-mainright #ds-controls .ds-paging {
+	margin: 0px;
+	padding: 5px 10px 0px 10px;
+	height: 20px;
+	background-color: #DDDDDD;
+}
+#ds-body #ds-results #ds-mainright #ds-controls .ds-paging .left {
+	margin: 0px;
+	float: left;
+}
+#ds-body #ds-results #ds-mainright #ds-controls .ds-paging .right {
+	margin: 0px;
+	padding: 0px;
+	float: right;
+}
+#ds-body #ds-results #ds-mainright #ds-controls .ds-views {
+	clear: right;
+	margin: 0px;
+	padding: 0px 10px 0px 10px;
+	height: 25px;
+	background-color: #F0F0F0;
+}
+#ds-body #ds-results #ds-mainright #ds-controls .ds-views .left {
+	margin: 0px;
+	float: left;
+}
+#ds-body #ds-results #ds-mainright #ds-controls .ds-views .right {
+	margin: 0px;
+	float: right;
+}
+#ds-body #ds-results #ds-mainright #ds-hitlist {
+	margin: 10px 0px 0px 1px;
+	padding: 0px 10px 5px 10px;
+}
+#ds-footer {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin: 20px 0px 0px 0px;
+	padding: 0px;
+	background: #FFF;
+}

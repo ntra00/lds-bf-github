@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/lcml/!svn/ver/323/modules/xq/lscoll/view
+END
+v-page.xqy
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/lcml/!svn/ver/248/modules/xq/lscoll/view/v-page.xqy
+END
+v-result.xqy
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/lcml/!svn/ver/320/modules/xq/lscoll/view/v-result.xqy
+END
+v-browse.xqy
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/lcml/!svn/ver/305/modules/xq/lscoll/view/v-browse.xqy
+END
+v-detail.xqy
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/lcml/!svn/ver/323/modules/xq/lscoll/view/v-detail.xqy
+END
+v-facets.xqy
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/lcml/!svn/ver/304/modules/xq/lscoll/view/v-facets.xqy
+END
+v-search.xqy
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/lcml/!svn/ver/321/modules/xq/lscoll/view/v-search.xqy
+END
+v-viz.xqy
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/lcml/!svn/ver/40/modules/xq/lscoll/view/v-viz.xqy
+END

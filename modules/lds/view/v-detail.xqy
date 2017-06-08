@@ -1,0 +1,397 @@
+xquery version "1.0-ml";
+
+module namespace vd = "http://www.marklogic.com/ps/view/v-detail";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/lds/lib/l-query.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
+import module namespace lh = "http://www.marklogic.com/ps/lib/l-highlight" at "/lds/lib/l-highlight.xqy";
+import module namespace md = "http://www.marklogic.com/ps/model/m-doc" at "/lds/model/m-doc.xqy";
+import module namespace ssk = "info:lc/xq-modules/search-skin"at "/xq/modules/natlibcat-skin.xqy";
+import module namespace mem = "http://xqdev.com/in-mem-update" at "/xq/modules/in-mem-update.xqy";
+import module namespace utils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
+declare default function namespace "http://www.w3.org/2005/xpath-functions";
+declare default element namespace "http://www.w3.org/1999/xhtml";
+declare namespace mets = "http://www.loc.gov/METS/";
+declare namespace bf            	= "http://id.loc.gov/ontogies/bibframe/";
+declare namespace idx="info:lc/xq-modules/lcindex";
+declare namespace lcvar="info:lc/xq-invoke-variable";
+declare namespace madsrdf="http://www.loc.gov/mads/rdf/v1#";
+(: Begin kefo addition :)
+declare namespace httpget = "xdmp:http";
+(: End kefo addition :)
+
+declare function vd:render($perm_uri as xs:string) as element()+ {
+    let $viewindex := lp:get-param-integer($lp:CUR-PARAMS, 'index', 1)
+    let $sortorder as xs:string? := lp:get-param-single($lp:CUR-PARAMS,'sort','score-desc')
+    
+(:	let $path := xdmp:get-request-url():)
+	let $branding:=$cfg:MY-SITE/cfg:branding/string()
+	let $collection:=$cfg:MY-SITE/cfg:collection/string()
+	
+	let $url-prefix:=$cfg:MY-SITE/cfg:prefix/string()
+	
+    let $cln as xs:string? := 
+        if($collection eq "all") then 
+            $cfg:DEFAULT-COLLECTION 
+        else 
+            $collection
+	(: nate set to limit to works for now, need to add the collection optionally:)
+	let $cln:="/resources/works/"
+    let $prevint := $viewindex - 1
+    let $nextint := $viewindex + 1
+    
+    let $query := lq:query-from-params($lp:CUR-PARAMS) 
+    let $est := 
+        if ($perm_uri = '') then
+            xdmp:estimate(cts:search(collection($cln), $query))
+        else () (: maybe this should be a number? not that it really matters... rsin :)
+    let $start :=
+        if ($viewindex eq 1 or $prevint le 1) then
+            1
+        else
+            $prevint     
+    let $end :=
+        if ($viewindex eq $est or $nextint gt $est) then
+            $est
+        else
+            $nextint 
+            
+     let $res-index := 
+        if( $start eq $end) then
+            1
+        else if ($start eq $viewindex) then
+            1
+        else if ($viewindex eq $end) then
+            2
+        else
+            2
+ 
+    let $results := 
+        if ($perm_uri = '') then
+            if ($sortorder eq "score-desc") then
+                (
+                    for $result in cts:search(collection($cln), $query,"unfiltered")
+                    order by cts:score($result) descending, $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
+                    return
+                        $result
+                )[$start to $end]
+            else if ($sortorder eq "score-asc") then
+                (
+                    for $result in cts:search(collection($cln), $query,"unfiltered")
+                    order by cts:score($result) ascending, $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
+                    return
+                        $result
+                )[$start to $end]
+            else if ($sortorder eq "pubdate-asc") then
+                (
+                    for $result in cts:search(collection($cln), $query,"unfiltered")
+                    order by $result//idx:pubdateSort descending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
+                    return
+                        $result
+                )[$start to $end]
+            else if ($sortorder eq "pubdate-desc") then
+                (
+                    for $result in cts:search(collection($cln), $query,"unfiltered")
+                    order by $result//idx:pubdateSort ascending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
+                    return
+                        $result
+                )[$start to $end]
+            else if ($sortorder eq "cre-asc") then
+                (
+                    for $result in cts:search(collection($cln), $query,"unfiltered")
+                    order by $result//idx:mainCreator ascending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
+                    return
+                        $result
+                )[$start to $end]
+            else if ($sortorder eq "cre-desc") then
+                (
+                    for $result in cts:search(collection($cln), $query,"unfiltered")
+                    order by $result//idx:mainCreator descending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
+                    return
+                        $result
+                )[$start to $end]
+            else
+                (for $result in cts:search(collection($cln), $query,"unfiltered") return $result)[$start to $end]
+        else ()
+
+    let $current_object :=
+        if ($perm_uri = '') then
+            $results[$res-index]            
+        else 
+            utils:mets($perm_uri)
+    
+    let $profile := string($current_object/mets:mets/@PROFILE)
+    let $title := string($current_object/mets:mets//idx:titleLexicon)  
+    let $uri := 
+        if ($perm_uri = '') then
+            string($results[$res-index]/mets:mets/@OBJID)
+        else
+            $perm_uri
+    
+    (: Not used anymore?? rsin
+    let $uriprev := string($results[1]/mets:mets/@OBJID)
+    let $urinext := string($results[3]/mets:mets/@OBJID)
+    let $map := map:map()
+    let $put := map:put($map, "ajax", concat('/xq/lscoll/parts/ajax-MARC.xqy?objid=', $uri))
+    let $ajaxjson := xdmp:to-json($map)
+    Not used anymore?? rsin :)
+        
+    let $queryString := <x>{ lq:query-from-params($lp:CUR-PARAMS) }</x>/node()
+    
+    let $filter := lp:get-param-single($lp:CUR-PARAMS, 'qname')
+    let $filter :=
+        if($filter) then 
+            if($filter eq "keyword") then 
+                ()
+            else 
+                $filter
+        else
+            ()
+                        
+    let $highlight-query := lh:highlight-query($queryString)
+    let $behavior := lp:get-param-single($lp:CUR-PARAMS, 'behavior', 'default')
+     
+ let $details :=      
+	
+		if (matches($uri,"(lcdb|africasets|erms|works|instances|items)"  ))   		(: $profile eq "lc:bibRecord":)  then
+            let $pre-details := md:lcrenderBib($current_object, $uri)
+            return
+				if ($pre-details instance of element(error:error)) then
+                	$pre-details
+				else
+				    lh:highlight-bib-results($pre-details, $filter, $highlight-query)
+        else
+			if (matches($uri,"(lcwa|asian)") ) then			
+			 let $pre-details := md:lcrenderMods($current_object)
+            return
+				if ($pre-details instance of element(error:error)) then
+                	$pre-details
+				else
+				     lh:highlight-bib-results($pre-details, $filter, $highlight-query)
+		else
+            if ($behavior='default') then			
+                lh:highlight-bib-results(md:renderDigital($current_object), $filter, $highlight-query)
+            else
+                md:renderDigital($current_object)
+    
+    (:not used??:)
+	
+    let $highlight-details := lh:highlight-bib-results($details, $filter, $highlight-query)
+    
+
+	let $print-link :=
+	    if ( not(contains($cfg:DISPLAY-SUBDOMAIN,"mlvlp04") )) then		
+	        if ($behavior='default') then                    
+	            <li><a class="print" target="_new" href="{concat($url-prefix,'print.xqy?uri=', $uri)}" title="Print Labeled Display">Print this item</a></li>
+	        else 
+	            <li><a class="print" target="_new" href="{concat($url-prefix,'print.xqy?uri=', $uri,'&amp;behavior=marctags')}" title="Print MARC Tagged Display">Print this item</a></li>
+
+		else ()
+
+	let $seo := <meta>{$details//*:metatags}</meta>
+    let $hostname:=  $cfg:DISPLAY-SUBDOMAIN
+	let $doclink:=
+			if ( contains($hostname,"mlvlp04") and xdmp:get-request-header('X-LOC-Environment')!='Staging') then
+		       <a href="{concat("http://",$hostname,"/",$uri,".doc.xml")}">(doc)</a>
+			else ()
+	
+	let $share-tool := ssk:sharetool-div($uri, $title)	
+    let $htmldiv :=
+		if ($details instance of element(error:error)) then
+			 $details
+		else
+            <div id="content-results">
+                <div id="ds-bibrecord-nav">
+                    <ul class="bibrecord-nav">
+                        { if ($perm_uri = '') then
+                            let $backparams := lp:param-remove-all($lp:CUR-PARAMS, "index")
+                            let $backparams := lp:param-remove-all($backparams, "pg")
+                            let $backparams := lp:param-remove-all($backparams, "uri")
+                            let $backparams := lp:param-remove-all($backparams, "itemID")
+                            let $backparams := lp:param-remove-all($backparams, "dtitle") (: from browses:)
+                            let $backparams := lp:param-remove-all($backparams, "behavior")
+                            let $backparams := lp:param-remove-all($backparams, "branding")
+                            let $backparams := lp:param-remove-all($backparams, "collection")
+                            let $back := concat($url-prefix,"search.xqy?", lp:param-string($backparams))
+                            let $nextparams := lp:param-replace-or-insert($lp:CUR-PARAMS, "index", $nextint)
+                            (:let $nextparams := lp:param-replace-or-insert($nextparams, "uri", $urinext):)
+                            let $nextparams := lp:param-remove-all($nextparams, "itemID")
+                            let $nextparams := lp:param-remove-all($nextparams, "dtitle")(: from browses:)
+                            let $nextparams := lp:param-remove-all($nextparams, "behavior")
+                            let $nextparams := lp:param-remove-all($nextparams, "branding")
+                            let $nextparams := lp:param-remove-all($nextparams, "collection")
+                        
+                            let $prevparams := lp:param-replace-or-insert($lp:CUR-PARAMS, "index", $prevint)
+                            (:let $prevparams := lp:param-replace-or-insert($prevparams, "uri", $uriprev):)
+                            let $prevparams := lp:param-remove-all($prevparams, "itemID")
+                            let $prevparams := lp:param-remove-all($prevparams, "behavior")
+                            let $prevparams := lp:param-remove-all($prevparams, "branding")
+                            let $prevparams := lp:param-remove-all($prevparams, "collection")
+                            let $prevdoc := lp:param-string($prevparams)
+                            let $nextdoc := lp:param-string($nextparams)
+                            let $prev := 
+                                if ($res-index gt 1) then
+                                    <li><a rel="nofollow" class="previous" href="{concat($url-prefix,"detail.xqy?",$prevdoc)}">Previous</a></li>
+                                else
+                                    <li><span class="prev_off">Previous</span></li>
+                            let $next := 
+                                if ($viewindex ne $est) then
+                                    <li><a  rel="nofollow"  class="next" href="{concat($url-prefix,"detail.xqy?",$nextdoc)}">Next</a></li>
+                                else
+                                    <li><span class="next_off">Next</span></li>
+                            return
+                                (<li><a id="backtoresults" class="back" href="{$back}">Back to results</a></li>,
+                                $prev,
+                                <li><span class="count">[<strong>{format-number($viewindex, "#,###")}</strong> of about <strong>{format-number($est, "#,###")}</strong>]</span></li>,
+                                $next
+                                )
+                         else ''
+                         }
+                        <li>
+                            {
+                                if (contains($uri, ".lcdb.")(:$profile eq "lc:bibRecord":)) then                         
+                                    if ($behavior eq 'default') then
+                                        let $new-params := lp:param-replace-or-insert($lp:CUR-PARAMS, 'behavior', 'marctags')
+										let $new-params := lp:param-remove-all($new-params, "branding")
+										let $new-params := lp:param-remove-all($new-params, "collection")
+                                        let $marctags-toggle-title := "Toggle to MARC Tagged View"
+                                        let $marctags-toggle-label := "View Tagged Display"
+                                        let $marctags-toggle-url := concat($url-prefix,'detail.xqy?', lp:param-string($new-params))
+                                        return                              
+                                            <a class="marc" title="{$marctags-toggle-title}" href="{$marctags-toggle-url}">{$marctags-toggle-label}</a>
+                                    else
+                                        let $new-params :=  lp:param-remove-all($lp:CUR-PARAMS, 'behavior')
+										let $new-params := lp:param-remove-all($new-params, "branding")
+										let $new-params := lp:param-remove-all($new-params, "collection")
+                                        let $marctags-toggle-title := "Toggle to Labeled View"
+                                        let $marctags-toggle-label := "View Labeled Display"
+                                        let $marctags-toggle-url := concat($url-prefix,'detail.xqy?', lp:param-string($new-params))
+                                        return
+                                            <a class="labeled" title="{$marctags-toggle-title}" href="{$marctags-toggle-url}">{$marctags-toggle-label}</a>
+                                else
+                                    ()
+                            }
+                        </li>
+                       {$print-link} <span style="float:right;">|{$doclink}</span><span style="float:right;">{$share-tool}</span>
+                       
+                    </ul>
+    				
+                <!-- end id:ds-bibrecord-nav -->			
+                </div>
+                <!--{$details}-->	<!-- need metatags from marc ( check lccn???)-->
+				   {if ($details//*:metatags) then  mem:node-delete($details//*:metatags) else $details } 
+                <span id="detailURL" style="visibility: hidden;">{$uri}</span>
+            </div>
+          
+    (: Begin kefo addition :)
+    let $labelservice := "http://id.loc.gov/authorities/subjects/label/"
+    let $subjects := $htmldiv//dd[@class="bibdata-subject"][1]//a
+    let $subjects := 
+        for $s in $subjects
+        let $origstr := xs:string($s) 
+        let $str := xs:string($s)
+        let $str := 
+            if ( fn:ends-with($str, ".") ) then
+                fn:substring($str, 1, (fn:string-length($str) - 1))
+            else
+                $str
+        let $str := fn:encode-for-uri( $str )
+        let $url := fn:concat($labelservice , $str , ".rdf" )
+        let $get := try {xdmp:http-get( $url )
+						}
+					catch ($e) { ()
+					}
+        let $rdf := 
+            if ($get and xs:string($get[1]/httpget:code) = "302") then
+                let $found := xs:string($get[1]/httpget:headers/httpget:location)
+                let $request := xdmp:http-get($found)
+                return $request[2]
+            else ()
+        let $relations := 
+            <subject term="{$origstr}">
+            {
+            for $prop in $rdf/child::node()[fn:local-name()][1]/child::node()[fn:local-name()][1]/child::node()
+            where fn:local-name($prop) = "hasBroaderAuthority" or fn:local-name($prop) = "hasNarrowerAuthority"  
+            return 
+                element relation {
+                    attribute type {fn:local-name($prop)},
+                    xs:string($prop/child::node()[fn:local-name()][1]/child::node()[fn:local-name() = "authoritativeLabel"][1])
+                }
+            }
+            </subject>
+        return $relations
+    let $subjects := <subjects>{$subjects}</subjects>
+(: limited narrowers to 10 (after sorting):)
+    let $narrowers :=
+        if ( $subjects/subject/relation/@type = "hasNarrowerAuthority" ) then
+                (<h2>Search Narrower Subjects</h2>,
+                <ul>
+                    { let $ordered-set:=
+							for $r in $subjects/subject/relation[@type="hasNarrowerAuthority"]
+        			            order by $r 
+							return $r
+					for $r in $ordered-set[1 to 10]
+                    return 
+                        <li>
+                            <a href="/lds/search.xqy?count=10&amp;pg=1&amp;mime=text%2Fhtml&amp;sort=score-desc&amp;q={xs:string($r)}&amp;qname=idx:subjectLexicon" >						
+									{$r}
+							</a>
+                        </li>
+                    }
+                 </ul>
+				)
+        else ()
+    let $broaders :=
+        if ( $subjects/subject/relation/@type = "hasBroaderAuthority" ) then
+                (<h2 class="top">Search Broader Subjects</h2>,
+                <ul>
+                    { for $r in distinct-values($subjects/subject/relation[@type = "hasBroaderAuthority"])
+(:                    for $r in $subjects/subject/relation
+                    where xs:string($r/@type) = "hasBroaderAuthority":)
+					   order by $r                 
+                    return 
+                        <li>
+                            <a href="/lds/search.xqy?count=10&amp;pg=1&amp;mime=text%2Fhtml&amp;sort=score-desc&amp;q={$r}&amp;qname=idx:subjectLexicon">{$r}</a>
+                        </li>
+                    }
+                 </ul>)
+        else ()
+    (: This is so the dotted lines from the CSS looks right :)     
+	let $narrowers:= 
+		if (not($broaders)) then
+             mem:node-insert-child($narrowers//div[@id="ds-bibviews"]/h2[1], attribute class {"top"})
+		else $narrowers
+
+     let $htmldiv :=  
+		if ($broaders or $narrowers  and $htmldiv//div[@id="ds-bibviews"]/h2[@class='top'] ) then
+             mem:node-delete($htmldiv//div[@id="ds-bibviews"]/h2[@class='top']/@class)
+			else $htmldiv
+    (: This is so the dotted lines from the CSS looks right :)     
+    let $htmldiv :=
+        if ( $htmldiv//div[@id="ds-bibviews"] ) then 
+            <div id="content-results">
+                {
+                    $htmldiv/div[@id="ds-bibrecord-nav"],
+                    element div {
+                        attribute id {"ajaxview"},
+                        $htmldiv/div[@id="ajaxview"]/div[@id="ds-bibrecord"],
+                        element div {
+                            attribute id {"ds-bibviews"},
+                            $broaders,
+                            $narrowers,
+                          $htmldiv/div[@id="ajaxview"]/div[@id="ds-bibviews"]/child::node() 
+                        }
+                    } ,
+                    $htmldiv/span
+                }
+            </div>
+        else
+            $htmldiv
+
+     
+     
+    (: End kefo addition :)
+       
+    return
+        ($seo, $htmldiv)
+};

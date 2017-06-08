@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/lcml/!svn/ver/329/modules/xq/lscoll/parts
+END
+ajaxPage.xqy
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/lcml/!svn/ver/329/modules/xq/lscoll/parts/ajaxPage.xqy
+END
+ajax-MARC.xqy
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/lcml/!svn/ver/90/modules/xq/lscoll/parts/ajax-MARC.xqy
+END
+moreFacet.xqy
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/lcml/!svn/ver/40/modules/xq/lscoll/parts/moreFacet.xqy
+END

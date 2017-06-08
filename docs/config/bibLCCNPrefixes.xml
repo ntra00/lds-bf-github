@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- taken from http://www.loc.gov/marc/lccn_structure.html#prefix on 4/21/06 -->
+<bibLCCNPrefixes>
+	<row bibLCCNPrefix="a">
+		<PrefixOnCard>A</PrefixOnCard>
+		<Usage>Cataloging provided to LC by an American library, 1909-</Usage>
+	</row>
+	<row bibLCCNPrefix="ac">
+		<PrefixOnCard>AC</PrefixOnCard>
+		<Usage>Cataloging for foreign materials provided to LC by cooperating libraries under the auspices of the ALA Committee on Cooperative Cataloging, 1932-1942</Usage>
+	</row>
+	<row bibLCCNPrefix="ac">
+		<PrefixOnCard>AC</PrefixOnCard>
+		<Usage>Annotated cards for juvenile books, 1966-</Usage>
+	</row>
+	<row bibLCCNPrefix="af">
+		<PrefixOnCard>AF</PrefixOnCard>
+		<Usage>Cataloging for foreign acquisitions provided to LC by other American libraries, 1946-1950.</Usage>
+	</row>
+	<row bibLCCNPrefix="afl">
+		<PrefixOnCard>AFLM</PrefixOnCard>
+		<Usage>No explanation available</Usage>
+	</row>
+	<row bibLCCNPrefix="agr">
+		<PrefixOnCard>Agr</PrefixOnCard>
+		<Usage>U.S. Department of Agriculture cataloging, 1902-</Usage>
+	</row>
+	<row bibLCCNPrefix="bi">
+		<Usage>Handbook of Latin American Studies record</Usage>
+	</row>
+	<row bibLCCNPrefix="br">
+		<PrefixOnCard>BR</PrefixOnCard>
+		<Usage>Library of Congress, Division for the Blind, Braille book</Usage>
+	</row>
+	<row bibLCCNPrefix="bs">
+		<PrefixOnCard>BS</PrefixOnCard>
+		<Usage>U.S. Bureau of Standards cataloging, 1913-1938.</Usage>
+	</row>
+	<row bibLCCNPrefix="c">
+		<PrefixOnCard>C</PrefixOnCard>
+		<Usage>U.S. Interstate Commerce Commission cataloging, 1915-1916</Usage>
+	</row>
+	<row bibLCCNPrefix="c">
+		<PrefixOnCard>C</PrefixOnCard>
+		<Usage>Library of Congress, Chinese entries, 1949-</Usage>
+	</row>
+	<row bibLCCNPrefix="c">
+		<PrefixOnCard>C-245</PrefixOnCard>
+		<Usage>LC card numbers for June-August 1898. Year prefix "98" added when input into MARC</Usage>
+	</row>
+	<row>
+		<PrefixOnCard>or 245</PrefixOnCard>
+	</row>
+	<row bibLCCNPrefix="ca">
+		<PrefixOnCard>CA</PrefixOnCard>
+		<Usage>LC temporary entries for books in the general classified collections, 1905-1937</Usage>
+	</row>
+	<row bibLCCNPrefix="cad">
+		<PrefixOnCard>CA Dupl</PrefixOnCard>
+		<Usage>LC temporary entries for books in the general classified collections, 1905-1937</Usage>
+	</row>
+	<row bibLCCNPrefix="cd">
+		<PrefixOnCard>CD</PrefixOnCard>
+		<Usage>LC analytical entries for sets and series prepared by the Card Division, 1916-1940</Usage>
+	</row>
+	<row bibLCCNPrefix="cd">
+		<PrefixOnCard>CD</PrefixOnCard>
+		<Usage>Cataloging prepared for LC card sales</Usage>
+	</row>
+	<row bibLCCNPrefix="clc">
+		<Usage>Collection level cataloging; PREMARC record</Usage>
+	</row>
+	<row bibLCCNPrefix="cs">
+		<PrefixOnCard>CS</PrefixOnCard>
+		<Usage>Cataloging prepared by the LC Cooperative Cataloging and Classification Service, 1934-1939</Usage>
+	</row>
+	<row bibLCCNPrefix="cx">
+		<PrefixOnCard>CX</PrefixOnCard>
+		<Usage>Cross reference cards used in LC catalogs for Chinese entries, 1958-</Usage>
+	</row>
+	<row bibLCCNPrefix="cy">
+		<Usage>Federal Cylinder Project, Oct. 1980</Usage>
+	</row>
+	<row bibLCCNPrefix="d">
+		<PrefixOnCard>1-D-245</PrefixOnCard>
+		<Usage>LC card numbers for May-December 1901. Year prefix "01" added when input into MARC</Usage>
+	</row>
+	<row bibLCCNPrefix="do">
+		<PrefixOnCard>DO</PrefixOnCard>
+		<Usage>U.S. Superintendent of Docs. cataloging, 1913-1916</Usage>
+	</row>
+	<row bibLCCNPrefix="e">
+		<PrefixOnCard>E</PrefixOnCard>
+		<Usage>U.S. Office of Education cataloging, 1908-1958</Usage>
+	</row>
+	<row bibLCCNPrefix="es">
+		<PrefixOnCard>ES</PrefixOnCard>
+		<Usage>U.S. Engineers School cataloging, 1913-1935</Usage>
+	</row>
+	<row bibLCCNPrefix="f">
+		<PrefixOnCard>F</PrefixOnCard>
+		<Usage>U.S. Bureau of Fisheries cataloging, 1910-1940</Usage>
+	</row>
+	<row bibLCCNPrefix="f">
+		<PrefixOnCard>1-F-245</PrefixOnCard>
+		<Usage>LC card numbers for May-December 1901. Year prefix "01" added when input into MARC</Usage>
+	</row>
+	<row bibLCCNPrefix="fi">
+		<PrefixOnCard>Fi</PrefixOnCard>
+		<Usage>Films cataloged by LC, 1951-</Usage>
+	</row>
+	<row bibLCCNPrefix="fia">
+		<PrefixOnCard>FiA</PrefixOnCard>
+		<Usage>Cataloging provided by film producers, 1951-</Usage>
+	</row>
+	<row bibLCCNPrefix="fie">
+		<PrefixOnCard>FiE</PrefixOnCard>
+		<Usage>Cataloging provided by the Visual Education Service of the Office of Education, and other government agencies, 1951-</Usage>
+	</row>
+	<row bibLCCNPrefix="g">
+		<PrefixOnCard>1-G-245</PrefixOnCard>
+		<Usage>LC card numbers for May-December 1901. Year prefix "01" added when input into MARC</Usage>
+	</row>
+	<row bibLCCNPrefix="gm">
+		<PrefixOnCard>GM</PrefixOnCard>
+		<Usage>Maps cataloged by LC, 1968-1972</Usage>
+	</row>
+	<row bibLCCNPrefix="gs">
+		<PrefixOnCard>GS</PrefixOnCard>
+		<Usage>U.S. Geological Survey cataloging, 1904-</Usage>
+	</row>
+	<row bibLCCNPrefix="h">
+		<PrefixOnCard>H</PrefixOnCard>
+		<Usage>U.S. National Institute of Health cataloging, 1914-1921</Usage>
+	</row>
+	<row bibLCCNPrefix="ha">
+		<PrefixOnCard>HA</PrefixOnCard>
+		<Usage>U.S. Housing Authority cataloging, 1940-</Usage>
+	</row>
+	<row bibLCCNPrefix="he">
+		<PrefixOnCard>HE</PrefixOnCard>
+		<Usage>Hebrew entries cataloged by LC, 1964-</Usage>
+	</row>
+	<row bibLCCNPrefix="hew">
+		<PrefixOnCard>HEW</PrefixOnCard>
+		<Usage>U.S. Dept. of Health, Ed., and Welfare cataloging, 1958-</Usage>
+	</row>
+	<row bibLCCNPrefix="hex">
+		<PrefixOnCard>HEX</PrefixOnCard>
+		<Usage>Cross reference cards used for Hebrew entries, 1964-</Usage>
+	</row>
+	<row bibLCCNPrefix="it">
+		<PrefixOnCard>1-I-245</PrefixOnCard>
+		<Usage>LC card numbers for May-December 1901. Year prefix "01" added when input into MARC</Usage>
+	</row>
+	<row bibLCCNPrefix="int">
+		<PrefixOnCard>Int</PrefixOnCard>
+		<Usage>U.S. Department of the Interior cataloging, 1959</Usage>
+	</row>
+	<row bibLCCNPrefix="j">
+		<PrefixOnCard>J</PrefixOnCard>
+		<Usage>LC cataloging for Japanese materials 1949-</Usage>
+	</row>
+	<row bibLCCNPrefix="ja">
+		<PrefixOnCard>JA</PrefixOnCard>
+		<Usage>Cataloging for Japanese materials provided to LC by other American libraries, 1951</Usage>
+	</row>
+	<row bibLCCNPrefix="jx">
+		<PrefixOnCard>JX</PrefixOnCard>
+		<Usage>Cross reference cards used for Japanese entries, 1958-</Usage>
+	</row>
+	<row bibLCCNPrefix="k">
+		<PrefixOnCard>K</PrefixOnCard>
+		<Usage>Korean entries cataloged by LC, 1951-</Usage>
+	</row>
+	<row bibLCCNPrefix="kx">
+		<PrefixOnCard>KX</PrefixOnCard>
+		<Usage>Cross reference cards used for Korean entries, 1958-</Usage>
+	</row>
+	<row bibLCCNPrefix="l">
+		<PrefixOnCard>L</PrefixOnCard>
+		<Usage>U.S. Dept. of Labor cataloging, 1911-</Usage>
+	</row>
+	<row bibLCCNPrefix="llh">
+		<Usage>Index to Hispanic Legislation cataloging</Usage>
+	</row>
+	<row bibLCCNPrefix="ltf">
+		<Usage>Less-than-full cataloging; PREMARC record</Usage>
+	</row>
+	<row bibLCCNPrefix="m">
+		<PrefixOnCard>M</PrefixOnCard>
+		<Usage>Sheet music cataloged by LC, 1953-1962</Usage>
+	</row>
+	<row bibLCCNPrefix="ma">
+		<PrefixOnCard>MA</PrefixOnCard>
+		<Usage>Sheet music for which copy was supplied by another American library, 1953-1961</Usage>
+	</row>
+	<row bibLCCNPrefix="map">
+		<PrefixOnCard>Map</PrefixOnCard>
+		<Usage>Atlases in the Maps Division of LC, 1901-</Usage>
+	</row>
+	<row bibLCCNPrefix="map">
+		<PrefixOnCard>1-Map-50</PrefixOnCard>
+		<Usage>LC card numbers for maps for period May-December 1901. Year prefix "01" added when input into MARC</Usage>
+	</row>
+	<row bibLCCNPrefix="med">
+		<PrefixOnCard>Med</PrefixOnCard>
+		<Usage>U.S. Armed Forces Medical Library cataloging, 1946-1948</Usage>
+	</row>
+	<row bibLCCNPrefix="mic">
+		<PrefixOnCard>Mic</PrefixOnCard>
+		<Usage>Microfilms cataloged by LC, 1949-</Usage>
+	</row>
+	<row bibLCCNPrefix="mid">
+		<PrefixOnCard>MicA</PrefixOnCard>
+		<Usage>Microfilms for which cataloging was provided by another American library, 1946-</Usage>
+	</row>
+	<row bibLCCNPrefix="mie">
+		<PrefixOnCard>Micp</PrefixOnCard>
+		<Usage>Microcards and microprints cataloged by LC, 1953-</Usage>
+	</row>
+	<row bibLCCNPrefix="mif">
+		<PrefixOnCard>MicpA</PrefixOnCard>
+		<Usage>Microcards and microprints for which cataloging was provided by another American library, 1953-</Usage>
+	</row>
+	<row bibLCCNPrefix="mm">
+		<PrefixOnCard>mm</PrefixOnCard>
+		<Usage>Library of Congress Manuscript Division</Usage>
+	</row>
+	<row bibLCCNPrefix="mp">
+		<PrefixOnCard>mp</PrefixOnCard>
+		<Usage>Early films cataloged by LC, 1970s</Usage>
+	</row>
+	<row bibLCCNPrefix="mpa">
+		<PrefixOnCard>MPA</PrefixOnCard>
+		<Usage>Pan American Union cataloging for sheet music, 1956-</Usage>
+	</row>
+	<row bibLCCNPrefix="ms">
+		<PrefixOnCard>MS</PrefixOnCard>
+		<Usage>Manuscripts cataloged by LC, 1959-</Usage>
+	</row>
+	<row bibLCCNPrefix="mus">
+		<PrefixOnCard>1-Music-245</PrefixOnCard>
+		<Usage>LC card numbers for music for May-December 1901. Year prefix "01" added when input into MARC</Usage>
+	</row>
+	<row bibLCCNPrefix="ncn">
+		<Usage>Nitrate Film Service cataloging</Usage>
+	</row>
+	<row bibLCCNPrefix="ne">
+		<PrefixOnCard>NE</PrefixOnCard>
+		<Usage>Materials published in the Near East or in the languages of those countries, 1961-</Usage>
+	</row>
+	<row bibLCCNPrefix="nex">
+		<PrefixOnCard>NEX</PrefixOnCard>
+		<Usage>Cross reference cards used for books published in the Near East or in the languages of those countries, 1961-</Usage>
+	</row>
+	<row bibLCCNPrefix="no">
+		<PrefixOnCard>NO</PrefixOnCard>
+		<Usage>U.S. Naval Observatory cataloging, 1930-1940</Usage>
+	</row>
+	<row bibLCCNPrefix="ntc">
+		<Usage>National Translation Center cataloging</Usage>
+	</row>
+	<row bibLCCNPrefix="nuc">
+		<Usage>Records printed in the National Union Catalog for which no LC card number is available</Usage>
+	</row>
+	<row bibLCCNPrefix="or">
+		<Usage>Order Division cataloging</Usage>
+	</row>
+	<row bibLCCNPrefix="pa">
+		<PrefixOnCard>PA</PrefixOnCard>
+		<Usage>Pan American Union cataloging, 1930-</Usage>
+	</row>
+	<row bibLCCNPrefix="pho">
+		<PrefixOnCard>Pho</PrefixOnCard>
+		<Usage>Cataloging provided by other libraries for photographic reproductions of books, 1927-</Usage>
+	</row>
+	<row bibLCCNPrefix="php">
+		<PrefixOnCard>PhoM</PrefixOnCard>
+		<Usage>Cataloging provided by Card Division for photographic facsimiles issued by the Modern Language Association of America, 1927-1938</Usage>
+	</row>
+	<row bibLCCNPrefix="phq">
+		<PrefixOnCard>PhomA</PrefixOnCard>
+		<Usage>Cataloging provided by other libraries for Modern Language Association of America photographic facsimiles</Usage>
+	</row>
+	<row bibLCCNPrefix="po">
+		<PrefixOnCard>PO</PrefixOnCard>
+		<Usage>U.S. Patent Office cataloging, 1917-1953</Usage>
+	</row>
+	<row bibLCCNPrefix="pp">
+		<Usage>Prints and Photographs videodisc system, March 1984</Usage>
+	</row>
+	<row bibLCCNPrefix="r">
+		<PrefixOnCard>R</PrefixOnCard>
+		<Usage>Photograph records cataloged by LC, 1953-</Usage>
+	</row>
+	<row bibLCCNPrefix="ra">
+		<PrefixOnCard>RA</PrefixOnCard>
+		<Usage>Cataloging provided by other American libraries for photographs, 1955-</Usage>
+	</row>
+	<row bibLCCNPrefix="rc">
+		<PrefixOnCard>1-Rc-245</PrefixOnCard>
+		<Usage>LC card numbers for May-December 1901. Year prefix "01" added when input into MARC</Usage>
+	</row>
+	<row bibLCCNPrefix="re">
+		<Usage>Cataloging for commercial ethnic sound recordings produced in the U.S. project, 1981</Usage>
+	</row>
+	<row bibLCCNPrefix="ru">
+		<Usage>Cataloging from the Russian Book Chamber, 1988-</Usage>
+	</row>
+	<row bibLCCNPrefix="s">
+		<PrefixOnCard>S</PrefixOnCard>
+		<Usage>Smithsonian Institution cataloging, 1913-</Usage>
+	</row>
+	<row bibLCCNPrefix="sa">
+		<PrefixOnCard>SA</PrefixOnCard>
+		<Usage>Cataloging for materials published in Southeast Asia or in the languages of those countries, 1961-</Usage>
+	</row>
+	<row bibLCCNPrefix="sax">
+		<PrefixOnCard>SAX</PrefixOnCard>
+		<Usage>Cross reference cards used for materials published in Southeast Asia or in the languages of those countries, 1961-</Usage>
+	</row>
+	<row bibLCCNPrefix="sc">
+		<Usage>Serials, CONSER item not in LC</Usage>
+	</row>
+	<row bibLCCNPrefix="sd">
+		<PrefixOnCard>SD</PrefixOnCard>
+		<Usage>U.S. Dept. of State cataloging, 1914-</Usage>
+	</row>
+	<row bibLCCNPrefix="sf">
+		<Usage>Serials form card or Minimal Level Cataloging or classed separately monographic series</Usage>
+	</row>
+	<row bibLCCNPrefix="sg">
+		<PrefixOnCard>SG</PrefixOnCard>
+		<Usage>Surgeon General's Library, U.S. Army cataloging, 1916-</Usage>
+	</row>
+	<row bibLCCNPrefix="sn">
+		<Usage>Serials, CONSER, item may or may not be in LC</Usage>
+	</row>
+	<row bibLCCNPrefix="ss">
+		<PrefixOnCard>SS</PrefixOnCard>
+		<Usage>Social Security Administration cataloging, 1944-1958</Usage>
+	</row>
+	<row>
+		<PrefixOnCard>su</PrefixOnCard>
+		<Usage>Split manuscript records</Usage>
+	</row>
+	<row bibLCCNPrefix="tb">
+		<PrefixOnCard>TB</PrefixOnCard>
+		<Usage>Talking Books program cataloging</Usage>
+	</row>
+	<row bibLCCNPrefix="tmp">
+		<Usage>Temporary cataloging from PREMARC</Usage>
+	</row>
+	<row bibLCCNPrefix="um">
+		<Usage>Union map; an outside map record input by the Geography and Map Division for NUC use but residing in the G&amp;M database</Usage>
+	</row>
+	<row bibLCCNPrefix="unk">
+		<Usage>Card for which no LC card number was available; PREMARC</Usage>
+	</row>
+	<row bibLCCNPrefix="w">
+		<PrefixOnCard>W</PrefixOnCard>
+		<Usage>District of Columbia Public Library cataloging, 1905-1942</Usage>
+	</row>
+	<row bibLCCNPrefix="war">
+		<PrefixOnCard>War</PrefixOnCard>
+		<Usage>U.S. Army, War College cataloging, 1907-1932</Usage>
+	</row>
+	<row bibLCCNPrefix="x">
+		<PrefixOnCard>X</PrefixOnCard>
+		<Usage>Cross reference cards used in LC catalogs, January 1941-</Usage>
+	</row>
+	<row bibLCCNPrefix="z">
+		<PrefixOnCard>1-Z-245</PrefixOnCard>
+		<Usage>LC card numbers for May-December 1901. Year prefix "01" added when input into MARC</Usage>
+	</row>
+		<row bibLCCNPrefix="tes">
+		<PrefixOnCard/>
+		<Usage>test record</Usage>
+	</row>
+
+	<row bibLCCNPrefix="sv">
+		<PrefixOnCard/>
+		<Usage>Serloc 010 is on non-distributed records</Usage>
+	</row>
+
+</bibLCCNPrefixes>
