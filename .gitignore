@@ -7,4 +7,7 @@ modules/id-main/**
 modules/static/tohap/**
 modules/splashpages/**
 modules/api/**
-
+modules/xq/ingest*.xqy
+modules/xq/modules/lscoll/**
+modules/xq/modules/ead/**
+modules/xq/modules/pass*
