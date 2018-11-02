@@ -4,5 +4,7 @@
 # Ignore 
 **/.svn
 modules/id-main/**
-
+modules/static/tohap/**
+modules/splashpages/**
+modules/api/**
 
