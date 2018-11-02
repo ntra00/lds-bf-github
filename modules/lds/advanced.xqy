@@ -1,14 +1,14 @@
 xquery version "1.0-ml";
-
+(: not used!!)
 import module namespace search="http://marklogic.com/appservices/search" at "/MarkLogic/appservices/search/search.xqy";    
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/nlc/config.xqy";
-import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/nlc/lib/l-query.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/nlc/lib/l-param.xqy";
-(:import module namespace vr = "http://www.marklogic.com/ps/view/v-result" at "/nlc/view/v-result.xqy";
-import module namespace vf = "http://www.marklogic.com/ps/view/v-facets" at "/nlc/view/v-facets.xqy";:)
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/lds/lib/l-query.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
+(:import module namespace vr = "http://www.marklogic.com/ps/view/v-result" at "/lds/view/v-result.xqy";
+import module namespace vf = "http://www.marklogic.com/ps/view/v-facets" at "/lds/view/v-facets.xqy";:)
 import module namespace ssk = "info:lc/xq-modules/search-skin" at "/xq/modules/natlibcat-skin.xqy";
 import module namespace resp = "info:lc/xq-modules/http-response-utils" at "/xq/modules/http-response-utils.xqy";
-import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "/nlc/view/v-search.xqy";
+import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "/lds/view/v-search.xqy";
 import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xq/modules/mime-utils.xqy";
 import module namespace feed = "info:lc/xq-modules/atom-utils" at "/xq/modules/atom-utils.xqy";
 import module namespace sru-utils = "info:lc/xq-modules/sru-utils" at "/xq/modules/sru-utils.xqy";
@@ -46,18 +46,19 @@ let $sortorder as xs:string? := lp:get-param-single($lp:CUR-PARAMS,'sort','score
 let $branding:=$cfg:MY-SITE/cfg:branding/string()
 let $url-prefix:=$cfg:MY-SITE/cfg:prefix/string()
 let $collection:=$cfg:MY-SITE/cfg:collection/string()
- let $cln as xs:string? := 
-        if($collection eq "all") then 
+ let $cln as xs:string? := "/catalog/"
+ (:       if($collection eq "all") then 
             $cfg:DEFAULT-COLLECTION 
         else 
             $collection
+			:)
 let $count := lp:get-param-integer($lp:CUR-PARAMS,'count',$cfg:RESULTS-PER-PAGE)        
 let $longcount := if($count = (10,25,$cfg:RESULTS-PER-PAGE)) then $count else $cfg:RESULTS-PER-PAGE
 let $longstart := (($mypage * $longcount) + 1) - $longcount
 let $start := $longstart
 let $end := ($start - 1 + $longcount)
 let $query := lq:query-from-params($lp:CUR-PARAMS)  
-let $_ := xdmp:log(concat("query: ", xdmp:describe($query)), 'debug')
+let $_ := xdmp:log(concat("query: ", xdmp:describe($query)), 'info')
 (:let $results := 
     if ($sortorder eq "score-desc") then
         (
@@ -160,7 +161,7 @@ let $opts :=
         </constraint>
         <constraint name="KPNC">
             <custom facet="false">
-                <parse apply="constraint-kpnc" ns="info:lc/xq-modules/constraints/" at="/nlc/lib/l-constraints.xqy"/>
+                <parse apply="constraint-kpnc" ns="info:lc/xq-modules/constraints/" at="/lds/lib/l-constraints.xqy"/>
             </custom>
         </constraint>
         <constraint name="K010">
@@ -175,7 +176,7 @@ let $opts :=
         </constraint>
         <constraint name="KISN">
             <custom facet="false">
-                <parse apply="constraint-kisn" ns="info:lc/xq-modules/constraints/" at="/nlc/lib/l-constraints.xqy"/>
+                <parse apply="constraint-kisn" ns="info:lc/xq-modules/constraints/" at="/lds/lib/l-constraints.xqy"/>
             </custom>
         </constraint>
     </options>

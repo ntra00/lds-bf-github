@@ -6,6 +6,7 @@ import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/lds/
 import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
 import module namespace lh = "http://www.marklogic.com/ps/lib/l-highlight" at "/lds/lib/l-highlight.xqy";
 import module namespace pg = "info:lc/xq-modules/pagination" at "/lds/view/v-pagination.xqy";
+import module namespace vd = "http://www.marklogic.com/ps/view/v-detail" at "/lds/view/v-detail.xqy";
 declare namespace search = "http://marklogic.com/appservices/search";
 declare namespace mets = "http://www.loc.gov/METS/";
 declare namespace mxe2 = "http://www.loc.gov/mxe";
@@ -21,11 +22,13 @@ declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare variable $PAGE_SIZE := $cfg:RESULTS-PER-PAGE;
 declare variable $PAGING_LINK_BORDER := 2;
 
+
 declare function vr:result($result, $index, $searchterm) {
     let $pct := concat(round-half-to-even((cts:confidence($result)), 2) * 100, '%')
     let $uri := xdmp:node-uri($result)
     let $myuri := $uri
     let $mets := $result/mets:mets
+	let $docid:=fn:base-uri($mets)
     let $svcid := $mets/@OBJID/string() 
     let $highlight-query :=  lq:get-highlight-query()
     let $matching-text := (:md:matching-text($highlight-query, $result):) ""
@@ -92,7 +95,32 @@ let $collection as xs:string := lp:get-param-single($lp:CUR-PARAMS, 'collection'
                 else:)
                     $cre
             let $physdesc := $mods/mods:physicalDescription/mods:extent[1]/string()
-            let $titletext := 
+           let $workid-length:=  if (fn:contains($svcid,"works")) then
+							fn:string-length(fn:tokenize($svcid,"\.")[fn:last()])
+		   						else
+								1
+		   let $rdftype:= if ($workid-length > 12 and fn:contains($svcid,"works.n")) then
+		   					 		"Work stub from Authority" 
+							 else if (fn:contains($svcid,"works.n")) then
+									 "Work from Authority" 
+							 else if ($workid-length > 12 and fn:contains($svcid,"works.c")) then 
+							 		"Work Stub from Bib"
+							  else if ($workid-length > 12 and fn:contains($svcid,"works.e")) then 
+							  		"Work stub from Editor"
+							  else if (fn:contains($svcid,"works.c")) then 
+							  		"Work from Bib"							  
+							   else if (fn:contains($svcid,"works.e")) then 
+							  		"Work from Editor"							  
+							  else if (fn:contains($svcid,"instances.c")) then 
+							  		"Instance"	
+							  else if (fn:contains($svcid,"items.e")) then 
+							  		fn:concat("Item from Editor")
+							  else if (fn:contains($svcid,"items")) then 
+							  		"Item"								 
+							  else if (fn:contains($svcid,"instances.e")) then 
+							  		"Instance from Editor"							 
+							  else ""
+		    let $titletext := 
                 if (exists($idx/idx:display/idx:title/text())) then
                     string($idx/idx:display/idx:title)
                 else
@@ -106,13 +134,15 @@ let $collection as xs:string := lp:get-param-single($lp:CUR-PARAMS, 'collection'
             let $title :=                
                  <div class="hit-link">                  
                     <a class="hitResult mods-result" href="{$title-link}">                    
-                    {
-                      if ($titletext!="" ) then
-                            $titletext
-                        else 
+                    { if ($idx/idx:nameTitle ) then
+						fn:string($idx/idx:nameTitle[1])
+					  else  if ($titletext!="" ) then
+                           $titletext
+                       else						
                             concat("[No title: ", $svcid, "]")
                     }
-                    </a>
+                    </a>  <span class="format"><b> ({$rdftype})</b></span>
+                    <br/> {if ($titletext="" ) then fn:tokenize(fn:base-uri($mets),"/")[fn:last()] else () }
                 </div>    
             let $creator := 
                 if ($idx/idx:display/idx:mainCreator) then
@@ -129,7 +159,9 @@ let $collection as xs:string := lp:get-param-single($lp:CUR-PARAMS, 'collection'
                     <div class="publisher">{string($idx/idx:display/idx:pubinfo[1])}</div>              
                 else 
                       ()
-            let $typeOfMaterial :=
+            
+
+			let $typeOfMaterial :=
                     if (exists($idx/idx:display/idx:typeOfMaterial)) then
                         <div class="format">{string($idx/idx:display/idx:typeOfMaterial)}</div>
                     else if (exists($idx/idx:form)) then
@@ -144,40 +176,50 @@ let $collection as xs:string := lp:get-param-single($lp:CUR-PARAMS, 'collection'
                 else
                     ()
             (:let $snips := lq:tohap-tei-snippet($result)
-            let $filtersnips := lq:filter-snippets($snips, "/tei:")
-            let $snipout :=
+            	let $filtersnips := lq:filter-snippets($snips, "/tei:")
+            	let $snipout :=
                 for $zz in $filtersnips/search:match
-                let $path := $zz/@path/string()
-                let $unpath := xdmp:unpath($path)
-                let $part := replace($path, ".+/mets:file\[(\d*)\]?.*", "$1")
-                let $xmlspid := $unpath/parent::tei:sp/@xml:id/string()
-                let $hash := concat("#", $xmlspid)
-				let $hit-link:=concat($url-prefix,"tohap.xqy?uri=",$svcid,"&amp;part=",$part,$hash)
-                return
-                    (
-                        <div style="width: 250px; background-color: #DFDFDF;">
-                            <a class="hitResult tohap-result" href="{$hit-link}">
-                                {concat("Part ", $part, ":")}
-                            </a>
-                        </div>,
-                        <p>{lh:snippet-highlight($zz)}</p>    
-                    )
-:)
-			let $unapi-link:=<abbr class="unapi-id" title="{$svcid}" />
-			let $location :=
-                if ($idx//idx:loc1) then
-                    (<span class="location">{$idx//idx:loc1[1]/string()}</span>, <br/> )
-                else ()
-            let $img := 
-				if (matches($svcid,'lcwa')) then
-					<img src="{concat('/media/', replace($svcid,'lcwa','mrva'), "/thumb")}" alt="Thumbnail image" class="hit-cover"/>       
-				else
-					<img src="{concat('/media/', $svcid, "/thumb")}" alt="Thumbnail image" class="hit-cover"/>       
+	                let $path := $zz/@path/string()
+	                let $unpath := xdmp:unpath($path)
+	                let $part := replace($path, ".+/mets:file\[(\d*)\]?.*", "$1")
+	                let $xmlspid := $unpath/parent::tei:sp/@xml:id/string()
+	                let $hash := concat("#", $xmlspid)
+					let $hit-link:=concat($url-prefix,"tohap.xqy?uri=",$svcid,"&amp;part=",$part,$hash)
+	                return
+	                    (
+	                        <div style="width: 250px; background-color: #DFDFDF;">
+	                            <a class="hitResult tohap-result" href="{$hit-link}">
+	                                {concat("Part ", $part, ":")}
+	                            </a>
+	                        </div>,
+	                        <p>{lh:snippet-highlight($zz)}</p>    
+	                    )
+			:)
+				let $unapi-link:=<abbr class="unapi-id" title="{$svcid}" />
+				let $location :=
+	                if ($idx//idx:loc1) then
+	                    (<span class="location">{$idx//idx:loc1[1]/string()}</span>, <br/> )
+	                else ()
+	            let 	$bibid:=  fn:substring-after(tokenize($svcid,"\.")[last()],"c")            
+	            let $img := 
+					if (matches($svcid,'lcwa')) then
+						<img src="{concat('/media/', replace($svcid,'lcwa','mrva'), "/thumb")}" alt="Thumbnail image" class="hit-cover"/>       
+					else if (fn:not(fn:contains($svcid,"works")) ) then
+						let $node:=tokenize($svcid,"\.")[last()]
+	            		let $bibid:=replace($node,"^c0+","")
+						let $bibid:=replace($bibid,"^e0+","")
+	            		let $bibid:=if (string-length($node) > 10 ) then 
+								substring($bibid, 1,string-length($bibid)-4)
+							else 
+								$bibid
+	            		return
+						<img src="{concat('http://der02vlp.loc.gov/media/loc.natlib.lcdb.', $bibid, "/thumb")}" alt="Thumbnail image" class="hit-cover"/>
+						else ()
             return
                 ($img, $span-hit-num, $title, $creator, $publisher, $typeOfMaterial, $location, (:$snipout:) $online-status, $unapi-link)
         else
             let $mods := $mets/mets:dmdSec[@ID='dmd1']/mets:mdWrap[@MDTYPE='MODS']/mets:xmlData/mods:mods
-            let $idx := $mets/mets:dmdSec[@ID='IDX1' or @ID='ldsindex']/mets:mdWrap[@MDTYPE='OTHER']/mets:xmlData/idx:indexTerms
+            let $idx := $mets/mets:dmdSec[@ID='IDX1' or @ID='ldsindex']/mets:mdWrap[@MDTYPE='OTHER']/mets:xmlData/idx:index
             let $mxe := $mets/mets:dmdSec[@ID="dmd2"]/mets:mdWrap[@MDTYPE="MARC"]/mets:xmlData/mxe2:record
             let $marctitle := $mxe/mxe2:datafield_245/child::*
 			let $title-link := concat('/',$branding,'/detail.xqy?',$new-params-str)
@@ -195,7 +237,7 @@ let $collection as xs:string := lp:get-param-single($lp:CUR-PARAMS, 'collection'
                         else
                             concat("[Unknown title: ", $svcid, "]")
                     }
-                    </a>
+                    </a>                    
                 </div>           
             let $creator := 
                 if ($idx/idx:display/idx:mainCreator) then
@@ -249,12 +291,16 @@ declare function vr:render($results, $start, $time, $longstart, $longcount, $sea
 	let $params := lp:param-remove-all($params, "branding")
 	let $params := lp:param-remove-all($params, "collection")
 	let $params:=lp:param-string($params)
+	let $searchfilter := lp:get-param-single($lp:CUR-PARAMS, 'filter','all')
+	let $searchfilter-label := if($searchfilter="all") then "all objects" else $searchfilter
 	let $url-prefix:=concat("/",$branding,"/")
 
     let $mypage := lp:get-param-integer($lp:CUR-PARAMS, 'pg', 1)
     let $count := lp:get-param-integer($lp:CUR-PARAMS,'count',$cfg:RESULTS-PER-PAGE)
+	
     let $mycount := if($count = (10,25,$cfg:RESULTS-PER-PAGE)) then $count else $cfg:RESULTS-PER-PAGE
-    let $estimate :=
+    
+	let $estimate :=
         if ($mypage eq 1) then
             cts:remainder($results[1])
         else
@@ -276,11 +322,12 @@ declare function vr:render($results, $start, $time, $longstart, $longcount, $sea
             format-number($estimate, "#,###")
         else
             concat("about ", format-number($estimate, "#,###"))
-    let $resultcountsdisp :=
+    let $filterlinks:=vd:filter-results($searchfilter, $url-prefix ,"search") 
+	let $resultcountsdisp :=
         if ($hitsfound eq 0) then
             <span><strong>No results</strong></span>
         else
-           <span>Results <strong>{concat(format-number($beginhit, "#,###"), ' - ', format-number($endhit, "#,###"))}</strong> of {$aboutness}</span>
+           <span>Results <strong>{concat(format-number($beginhit, "#,###"), ' - ', format-number($endhit, "#,###"))}</strong> of {$aboutness} ({$searchfilter-label})</span>
     let $mypaginator :=
         if ($hitsfound gt 0) then
             pg:display-results-pagination($start, $longcount, $estimate, $longcount, $params)
@@ -319,14 +366,17 @@ declare function vr:render($results, $start, $time, $longstart, $longcount, $sea
                                     {if ($mysort eq "score-desc") then attribute selected {"selected"} else ()}
                                     Relevance
                                 </option>
-                                <option value="pubdate-asc">
-                                    {if ($mysort eq "pubdate-asc") then attribute selected {"selected"} else ()}
-                                    Date (newest to oldest)
-                                </option>
+                                
                                 <option value="pubdate-desc">
                                     {if ($mysort eq "pubdate-desc") then attribute selected {"selected"} else ()}
-                                    Date (oldest to newest)
-                                </option><option value="cre-asc">
+                                    Date (newest to oldest)
+                                </option>
+								<option value="pubdate-asc">
+                                    {if ($mysort eq "pubdate-asc") then attribute selected {"selected"} else ()}
+                                    
+									 Date (oldest to newest)
+                                </option>
+								<option value="cre-asc">
                                     {if ($mysort eq "cre-asc") then attribute selected {"selected"} else ()}
                                     Main Author/Creator (A-Z)
                                 </option>
@@ -355,6 +405,7 @@ declare function vr:render($results, $start, $time, $longstart, $longcount, $sea
                     <!-- end class:ds-views -->
                   </div>
     )
+
     
     let $lc := 
         <div id="results-results">
@@ -406,6 +457,7 @@ declare function vr:render($results, $start, $time, $longstart, $longcount, $sea
     let $highlight-query := lh:highlight-query($queryString)
     return
         vr:highlight-results($lc, $filter, $highlight-query)
+		
 };
 
 declare function vr:highlight-results($x as node(), $filter, $q as cts:query) {

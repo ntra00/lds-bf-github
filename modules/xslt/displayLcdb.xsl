@@ -56,7 +56,6 @@
 	<xsl:variable name="bookmarkhref" select="concat('http://', $hostname, '/', $objid)"/>
 
 
-
 	<xsl:template match="/">
 		<div id="dsresults">
 			<!-- begin container -->
@@ -140,13 +139,13 @@
 		</xsl:variable> -->
 		<!-- <xsl:variable name="pngPath"><xsl:value-of select="concat('/thumbnails/',substring($objid,1,4), '_',substring($objid,5,2),'/th_',$objid,'.png')"/></xsl:variable>
 		<xsl:variable name="imagePath"><xsl:value-of select="concat('/thumbnails/',substring($objid,1,4), '_',substring($objid,5,2),'/',$objid,'.jpg')"/></xsl:variable> -->
-
+		
 		<xsl:variable name="imagePath">
-			<xsl:value-of select="concat('/media/',$objid,'/0001.tif/200')"
+			<xsl:value-of select="concat('/media/loc.natlib.lcdb.',$bibid,'/0001.tif/200')"
 				disable-output-escaping="no"/>
 		</xsl:variable>
 		<!--<img src="{$imagePath}" alt="Book cover image"/>-->
-		<img src="http://id.loc.gov{$imagePath}" alt="Book cover image"/>		
+		<img src="http://der02vlp.loc.gov{$imagePath}" alt="Book cover image"/>		
 		<dl class="record">
 			<xsl:if test="marc:datafield[@tag='010']/marc:subfield[@code='a']">
 				<xsl:call-template name="displayAll">
@@ -1884,7 +1883,7 @@
 
 	<!-- Series Template for 4XX, 760, 762, 800-830, 840; covers sfc 0, 3, 6  (490: no sfc 0; 840 : no sfc 0, 3; 760/752: no sfc 3) -->
 	<xsl:template name="series" as="item()*">
-		<dt class="label">Series</dt>
+		<dt class="label">See From</dt>
 		<dd class="bibdata">
 			<xsl:for-each
 				select="marc:datafield[@tag='400' or @tag='410' or @tag='411' or @tag='440']">
@@ -2778,7 +2777,7 @@
 				</xsl:if> -->
 			</ul>
 
-			<h2>XML Metadata for This Item</h2>
+			<h2>Other Views for This Description</h2>
 			<ul>
 				<!-- <li>
 					<a href="{concat($bookmarkhref,'.marcxml.xml')}">MARCXML</a>
@@ -2793,7 +2792,7 @@
 					<a href="/{$objid}.mets.xml">METS</a>
 				</li>
 			</ul>
-			<h2>Bookmark This Item</h2>
+			<h2>Bookmark This Description</h2>
 			<ul>
 				<li>
 					<span id="print-permalink" class="white-space">

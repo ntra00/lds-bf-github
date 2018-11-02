@@ -14,13 +14,78 @@ declare default element namespace "http://www.w3.org/1999/xhtml";
 declare namespace mets = "http://www.loc.gov/METS/";
 declare namespace bf            	= "http://id.loc.gov/ontogies/bibframe/";
 declare namespace idx="info:lc/xq-modules/lcindex";
+declare namespace index="info:lc/xq-modules/lcindex";
 declare namespace lcvar="info:lc/xq-invoke-variable";
 declare namespace madsrdf="http://www.loc.gov/mads/rdf/v1#";
 (: Begin kefo addition :)
 declare namespace httpget = "xdmp:http";
 (: End kefo addition :)
+declare function vd:filter-results($searchfilter as xs:string, $url-prefix as xs:string, $program  as xs:string) as element (div){
 
+let $workparams := $lp:CUR-PARAMS
+        let $workparams := lp:param-remove-all($workparams, "filter")
+		let $workparams := lp:param-replace-or-insert($workparams, "filter", "works")
+		let $workparams := lp:param-remove-all($workparams, "pg")
+		let $workparams := lp:param-remove-all($workparams, "index")
+		let $workparams := lp:param-remove-all($workparams, "branding")
+		let $workparams := lp:param-remove-all($workparams, "collection")
+        let $workfilter := lp:param-string($workparams)
+		let $works := 
+            if ($searchfilter ne "works") then
+                <li  style="display:inline;" ><a rel="nofollow"  href="{concat($url-prefix,$program,".xqy?",$workfilter)}">Works </a></li>
+            else
+                <li  style="display:inline;" >Works</li>
+      	
+        let $instanceparams := lp:param-remove-all($workparams, "filter")
+		let $instanceparams := lp:param-replace-or-insert($workparams, "filter", "instances")
+		
+
+        let $instancefilter := lp:param-string($instanceparams)
+			let $instances := 
+            if ($searchfilter ne "instances") then
+                <li  style="display:inline;" ><a rel="nofollow"  href="{concat($url-prefix,$program,".xqy?",$instancefilter)}">Instances </a></li>
+            else
+                <li  style="display:inline;" >Instances</li>
+		
+		let $itemparams := lp:param-remove-all($workparams, "filter")
+		let $itemparams := lp:param-replace-or-insert($workparams, "filter", "items")
+		
+        let $itemfilter := lp:param-string($itemparams)
+			let $items := 
+            if ($searchfilter ne "items") then
+                <li  style="display:inline;"><a rel="nofollow"  href="{concat($url-prefix,$program,".xqy?",$itemfilter)}">Items</a></li>
+            else
+                <li  style="display:inline;" >Items </li>
+		let $stubparams := lp:param-remove-all($workparams, "filter")
+		let $stubparams := lp:param-replace-or-insert($workparams, "filter", "stubs")
+		
+        let $stubfilter := lp:param-string($stubparams)
+			let $stubs := 
+            if ($searchfilter ne "stubs") then
+                <li  style="display:inline;"><a rel="nofollow"  href="{concat($url-prefix,$program,".xqy?",$stubfilter)}">Stubs</a></li>
+            else
+                <li  style="display:inline;" >Stubs</li>
+		let $allparams := lp:param-remove-all($workparams, "filter")
+		let $allparams := lp:param-replace-or-insert($workparams, "filter", "all")
+		
+        let $allfilter := lp:param-string($allparams)
+			let $allobjects := 
+            if ($searchfilter ne "all") then
+                <li  style="display:inline;"><a rel="nofollow"  href="{concat($url-prefix,$program,".xqy?",$allfilter)}">All objects</a></li>
+            else
+                <li  style="display:inline;" >All objects</li>
+				
+  return            
+          <div id="results">  <ul id="pagination-clean" style="background-color: #F0F0F0;">{$works}{$instances}{$items}{$stubs}{$allobjects}</ul></div>
+			(:<span style="text-align:left;outline:gray;">{$works}{$instances}{$items}{$allobjects}</span>:)
+
+};
 declare function vd:render($perm_uri as xs:string) as element()+ {
+(: if you call render w/o a uri, it redoes  and displays the current search , offset at viewindex
+
+actually, there are only 2 mets docs in results at a time; controlled by prev/next, viewindex
+:)
+
     let $viewindex := lp:get-param-integer($lp:CUR-PARAMS, 'index', 1)
     let $sortorder as xs:string? := lp:get-param-single($lp:CUR-PARAMS,'sort','score-desc')
     
@@ -37,10 +102,11 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
             $collection
 	(: nate set to limit to works for now, need to add the collection optionally:)
 	let $cln:="/resources/works/"
+	let $cln:="/catalog/"
     let $prevint := $viewindex - 1
     let $nextint := $viewindex + 1
     
-    let $query := lq:query-from-params($lp:CUR-PARAMS) 
+    let $query := lq:query-from-params($lp:CUR-PARAMS) 	
     let $est := 
         if ($perm_uri = '') then
             xdmp:estimate(cts:search(collection($cln), $query))
@@ -64,17 +130,19 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
         else if ($viewindex eq $end) then
             2
         else
-            2
- 
+           2
+
+ (: this is identical in search.xqy... consolidate so they dont' get out of synch?? :)
     let $results := 
-        if ($perm_uri = '') then
-            if ($sortorder eq "score-desc") then
-                (
+        if ($perm_uri = '') then			
+            if ($sortorder eq "score-desc") then		
+				(             
                     for $result in cts:search(collection($cln), $query,"unfiltered")
                     order by cts:score($result) descending, $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
                     return
                         $result
                 )[$start to $end]
+				
             else if ($sortorder eq "score-asc") then
                 (
                     for $result in cts:search(collection($cln), $query,"unfiltered")
@@ -85,14 +153,16 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
             else if ($sortorder eq "pubdate-asc") then
                 (
                     for $result in cts:search(collection($cln), $query,"unfiltered")
-                    order by $result//idx:pubdateSort descending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
+                    (:order by $result//idx:pubdateSort ascending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1":)
+					order by $result//idx:mDate ascending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
                     return
                         $result
                 )[$start to $end]
             else if ($sortorder eq "pubdate-desc") then
                 (
                     for $result in cts:search(collection($cln), $query,"unfiltered")
-                    order by $result//idx:pubdateSort ascending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
+                    (:order by $result//idx:pubdateSort descending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1":)
+					order by $result//idx:mDate descending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
                     return
                         $result
                 )[$start to $end]
@@ -113,7 +183,9 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
             else
                 (for $result in cts:search(collection($cln), $query,"unfiltered") return $result)[$start to $end]
         else ()
-
+	
+	(:let $_ := xdmp:log(concat("query: ", xdmp:describe($query)),'info')	:)
+		
     let $current_object :=
         if ($perm_uri = '') then
             $results[$res-index]            
@@ -128,16 +200,9 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
         else
             $perm_uri
     
-    (: Not used anymore?? rsin
-    let $uriprev := string($results[1]/mets:mets/@OBJID)
-    let $urinext := string($results[3]/mets:mets/@OBJID)
-    let $map := map:map()
-    let $put := map:put($map, "ajax", concat('/xq/lscoll/parts/ajax-MARC.xqy?objid=', $uri))
-    let $ajaxjson := xdmp:to-json($map)
-    Not used anymore?? rsin :)
         
     let $queryString := <x>{ lq:query-from-params($lp:CUR-PARAMS) }</x>/node()
-    
+    let $searchfilter := lp:get-param-single($lp:CUR-PARAMS, 'filter','all')(: works instances items all :)
     let $filter := lp:get-param-single($lp:CUR-PARAMS, 'qname')
     let $filter :=
         if($filter) then 
@@ -149,7 +214,7 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
             ()
                         
     let $highlight-query := lh:highlight-query($queryString)
-    let $behavior := lp:get-param-single($lp:CUR-PARAMS, 'behavior', 'default')
+    let $behavior := lp:get-param-single($lp:CUR-PARAMS, 'behavior', 'bfview')
      
  let $details :=      
 	
@@ -179,30 +244,44 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
     let $highlight-details := lh:highlight-bib-results($details, $filter, $highlight-query)
     
 
-	let $print-link :=
-	    if ( not(contains($cfg:DISPLAY-SUBDOMAIN,"mlvlp04") )) then		
-	        if ($behavior='default') then                    
+	let $print-link := ()
+	    (:if ( not(contains($cfg:DISPLAY-SUBDOMAIN,"mlvlp01") )) then		
+	        if ($behavior='bfview') then                    
 	            <li><a class="print" target="_new" href="{concat($url-prefix,'print.xqy?uri=', $uri)}" title="Print Labeled Display">Print this item</a></li>
 	        else 
 	            <li><a class="print" target="_new" href="{concat($url-prefix,'print.xqy?uri=', $uri,'&amp;behavior=marctags')}" title="Print MARC Tagged Display">Print this item</a></li>
 
-		else ()
+		else () :)
 
 	let $seo := <meta>{$details//*:metatags}</meta>
     let $hostname:=  $cfg:DISPLAY-SUBDOMAIN
-	let $doclink:=
-			if ( contains($hostname,"mlvlp04") and xdmp:get-request-header('X-LOC-Environment')!='Staging') then
-		       <a href="{concat("http://",$hostname,"/",$uri,".doc.xml")}">(doc)</a>
+	(:let $doclink:=
+			if ( contains($hostname,"mlvlp04") ) then
+		       <a href="{concat("http://",$hostname,"/",$uri,".doc.xml")}">doc</a>
 			else ()
-	
-	let $share-tool := ssk:sharetool-div($uri, $title)	
+	let $biblink:=
+		 	if ( contains($hostname,"mlvlp04")  and contains($uri, ".c") ) then
+				let $bibid:=fn:tokenize($uri,"\.")[fn:last()]				
+				let $bibid:=fn:substring($bibid, 1,10)
+				let $bibid:=fn:replace($bibid,"^c0+","")
+					
+		       return <a href="{concat("http://",$hostname,"/resources/bibs/",$bibid,".xml")}"> MARC </a>
+			else if ( contains($hostname,"mlvlp04")  and contains($uri, ".n") ) then
+			   <a href="{concat("http://",$hostname,"/",$uri,".marcxml.xml")}">MARC</a>
+		
+			else ()
+	:)
+	let $base-uri:=fn:base-uri($current_object)
+	let $share-tool := if (  contains($hostname,"mlvlp04") ) then
+								()
+						else ssk:sharetool-div($uri, $title)	
     let $htmldiv :=
 		if ($details instance of element(error:error)) then
 			 $details
 		else
             <div id="content-results">
                 <div id="ds-bibrecord-nav">
-                    <ul class="bibrecord-nav">
+                    <ul class="bibrecord-nav" style="background-color: #F0F0F0;line-height:2.0;">
                         { if ($perm_uri = '') then
                             let $backparams := lp:param-remove-all($lp:CUR-PARAMS, "index")
                             let $backparams := lp:param-remove-all($backparams, "pg")
@@ -213,7 +292,8 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
                             let $backparams := lp:param-remove-all($backparams, "branding")
                             let $backparams := lp:param-remove-all($backparams, "collection")
                             let $back := concat($url-prefix,"search.xqy?", lp:param-string($backparams))
-                            let $nextparams := lp:param-replace-or-insert($lp:CUR-PARAMS, "index", $nextint)
+                            
+							let $nextparams := lp:param-replace-or-insert($lp:CUR-PARAMS, "index", $nextint)
                             (:let $nextparams := lp:param-replace-or-insert($nextparams, "uri", $urinext):)
                             let $nextparams := lp:param-remove-all($nextparams, "itemID")
                             let $nextparams := lp:param-remove-all($nextparams, "dtitle")(: from browses:)
@@ -229,7 +309,8 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
                             let $prevparams := lp:param-remove-all($prevparams, "collection")
                             let $prevdoc := lp:param-string($prevparams)
                             let $nextdoc := lp:param-string($nextparams)
-                            let $prev := 
+							
+							let $prev := 
                                 if ($res-index gt 1) then
                                     <li><a rel="nofollow" class="previous" href="{concat($url-prefix,"detail.xqy?",$prevdoc)}">Previous</a></li>
                                 else
@@ -239,17 +320,24 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
                                     <li><a  rel="nofollow"  class="next" href="{concat($url-prefix,"detail.xqy?",$nextdoc)}">Next</a></li>
                                 else
                                     <li><span class="next_off">Next</span></li>
+
+ 							let $filterlinks:=vd:filter-results($searchfilter,$url-prefix, "detail")
+							let $searchfilter-label := if($searchfilter="all") then "all objects" else $searchfilter
+							
                             return
                                 (<li><a id="backtoresults" class="back" href="{$back}">Back to results</a></li>,
                                 $prev,
-                                <li><span class="count">[<strong>{format-number($viewindex, "#,###")}</strong> of about <strong>{format-number($est, "#,###")}</strong>]</span></li>,
-                                $next
+                                <li><span class="count">[<strong>{format-number($viewindex, "#,###")}</strong> of about <strong>{format-number($est, "#,###")}</strong>({$searchfilter-label})]</span></li>,
+                               $next, $filterlinks//li
                                 )
                          else ''
                          }
-                        <li>
+                        <!--<li>
                             {
-                                if (contains($uri, ".lcdb.")(:$profile eq "lc:bibRecord":)) then                         
+                                if(contains($profile,"Record" )) then
+                                	(:(contains($uri, ".lcdb."):)
+                                	(:$profile eq "lc:bibRecord") then:)
+                                
                                     if ($behavior eq 'default') then
                                         let $new-params := lp:param-replace-or-insert($lp:CUR-PARAMS, 'behavior', 'marctags')
 										let $new-params := lp:param-remove-all($new-params, "branding")
@@ -261,7 +349,7 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
                                             <a class="marc" title="{$marctags-toggle-title}" href="{$marctags-toggle-url}">{$marctags-toggle-label}</a>
                                     else
                                         let $new-params :=  lp:param-remove-all($lp:CUR-PARAMS, 'behavior')
-										let $new-params := lp:param-remove-all($new-params, "branding")
+										let $new-params := lp:param-remove-all($lp:CUR-PARAMS, "branding")
 										let $new-params := lp:param-remove-all($new-params, "collection")
                                         let $marctags-toggle-title := "Toggle to Labeled View"
                                         let $marctags-toggle-label := "View Labeled Display"
@@ -271,16 +359,25 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
                                 else
                                     ()
                             }
-                        </li>
-                       {$print-link} <span style="float:right;">|{$doclink}</span><span style="float:right;">{$share-tool}</span>
-                       
+                        </li>-->
+                       <!--{$print-link}-->
+					    <!-- <span style="float:right;"> {$biblink} || {$doclink} ||  [ {$base-uri} ]</span> -->
+						<!--<span style="float:right;">{$share-tool}</span>-->
+					                         <!-- <img src="http://covers.librarything.com/devkey/2ed454fd22af5dceef59b6069ed7c020/large/isbn/0545010225"/> -->
                     </ul>
     				
                 <!-- end id:ds-bibrecord-nav -->			
-                </div>
+                
+				</div><span style="margin-left:20px;display:inline-block;"><p> </p>{$base-uri}
+				<span id="detailURL" style="visibility:hidden">{$uri}</span></span>
+								<!-- <span style="margin-left:5px;"> {$biblink} || {$doclink} || [ {$base-uri} ]</span>			  -->
+
                 <!--{$details}-->	<!-- need metatags from marc ( check lccn???)-->
+				
 				   {if ($details//*:metatags) then  mem:node-delete($details//*:metatags) else $details } 
-                <span id="detailURL" style="visibility: hidden;">{$uri}</span>
+				 
+                 
+  
             </div>
           
     (: Begin kefo addition :)
@@ -372,18 +469,21 @@ declare function vd:render($perm_uri as xs:string) as element()+ {
             <div id="content-results">
                 {
                     $htmldiv/div[@id="ds-bibrecord-nav"],
+					
                     element div {
-                        attribute id {"ajaxview"},
-                        $htmldiv/div[@id="ajaxview"]/div[@id="ds-bibrecord"],
+                        attribute id {"ajaxview"},						
+                        $htmldiv/div[@id="ajaxview"]/div[@id="ds-bibrecord"],						
                         element div {
                             attribute id {"ds-bibviews"},
                             $broaders,
                             $narrowers,
                           $htmldiv/div[@id="ajaxview"]/div[@id="ds-bibviews"]/child::node() 
+						
                         }
-                    } ,
+                    },
                     $htmldiv/span
                 }
+				
             </div>
         else
             $htmldiv

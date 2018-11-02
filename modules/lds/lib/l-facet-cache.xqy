@@ -28,8 +28,8 @@ declare function lfc:insert-cache( $id as xs:string, $response as node()* ) {
 };
 
 declare function lfc:get-facet-cache( $id as xs:string ) as node()* {
-    let $_ := xdmp:log(text{"Retrieving cached results for facet: ",$id},"fine")
-    return
+    (:let $_ := xdmp:log(text{"Retrieving cached results for facet: ",$id},"fine")
+    return:)
     fn:doc(fn:concat("/facet-cache/",$id,".xml"))/lfc:facet-cache/lfc:response/node()
 };
 

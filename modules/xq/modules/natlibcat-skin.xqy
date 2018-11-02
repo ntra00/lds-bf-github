@@ -25,9 +25,27 @@ declare function ssk:header($title as xs:string, $crumbs as element()*, $msie as
 
 let $url-prefix:=$cfg:MY-SITE/cfg:prefix/string()
 let $site-title:=  $cfg:MY-SITE/cfg:label/string()	
+ (:let $ajax:= () "$('#ex-ajax-content .qtip2').qtip({
+					      position : {
+					         my: 'bottom left',
+					         at: 'top center'
+					      },
+					      events: {
+					         show: function(event, api) {
+					         
+								api.set( 'content.text', '');
+					            setTimeout(function() {
+					               $.get('http://mlvlp04.loc.gov:8287/vocabulary/organizations/viu.displaylabel.html').done(function( html ) {
+					                     api.set( 'content.text', html );
+					                  });
+					            }, 1000);
+					         }
+					      }
+					   });"
+					   :)
 return
         <header xmlns="http://www.w3.org/1999/xhtml">
-        	<head>
+        	<head>			
                 {ssk:default-header($title,$uri, $site-title,$url-prefix)/*}								
 				{if (matches($objectType,("recordedEvent","simpleAudio","videoRecording") )) then  
 					ssk:player-script()/*
@@ -55,6 +73,17 @@ return
 					else 
 					ssk:sharetool-script()/*	
 				}
+				<!-- <script type="text/javascript" src="/static/lds/js/jquery.js"></script> -->
+<link href="/static/lds/css/bootstrap.css" rel="stylesheet" media="all"/>
+<script type="text/javascript" src="/static/lds/js/bootstrap.min.js"></script>
+
+				<!-- <link href="/static/lds/css/bootstrap.css" rel="stylesheet" media="all"/>				
+				<script type="text/javascript" src="/static/lds/js/bootstrap.min.js"></script> -->
+				<script type="text/javascript" src="/static/lds/js/jquery.syntaxhighlighter.min.js"></script>
+			
+				<!-- <link href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/jquery.qtip.min.css" rel="stylesheet"></link>
+				<script src="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/jquery.qtip.min.js"></script>					
+				 -->	
             </head>            
            {ssk:topnav-div($crumbs)}
         </header>                       
@@ -72,22 +101,27 @@ declare  function ssk:default-header($title as xs:string, $uri as xs:string, $si
         <title>{concat($title, ", ", $site-title, ", Library of Congress)")}</title>               
         <meta name="Keywords" content="search results national library collections library congress" />
         <meta name="Description" content="Search Results for . {$site-title}, Library of Congress" />                
-        <link rel="stylesheet" media="screen, projection" type="text/css" href="/static/natlibcat/css/datastore-new.css" />
-		<script type="text/javascript" src="http://cdn.loc.gov/js/lib/jquery-1.5.1.min.js"></script>		
-        <link type="text/css" rel="stylesheet" href="/static/natlibcat/css/jquery-ui-1.8.2.all.css"/>				
+        <link rel="stylesheet" media="screen, projection" type="text/css" href="/static/lds/css/datastore-new.css" />
+		<!-- <script	  src="http://cdn.loc.gov/js/lib/jquery-2.2.4.min.js"/> -->
+		<script	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+						  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+						  crossorigin="anonymous"></script>    
+        	
+		<!-- <script type="text/javascript" src="http://cdn.loc.gov/js/lib/jquery-1.5.1.min.js"></script>		 -->
 		{ssk:print-script($uri)}
-        <link type="text/css" rel="stylesheet" href="/static/natlibcat/css/mlstyle.css"/>
-        <link type="text/css" rel="stylesheet" href="/static/natlibcat/css/splash.css"/>             
+        <link type="text/css" rel="stylesheet" href="/static/lds/css/mlstyle.css"/>
+        <link type="text/css" rel="stylesheet" href="/static/lds/css/splash.css"/>             
         
-        <script type="text/javascript" src="/static/natlibcat/js/jquery-ui-1.8.2.all.min.js"></script>		
-        <script type="text/javascript" src="/static/natlibcat/js/jquery.qtip-1.0.0-rc3.min.js"></script>
-        <script type="text/javascript" src="/static/natlibcat/js/jquery.validate.min.js"></script>                
+        <script type="text/javascript" src="/static/lds/js/jquery-ui-1.8.2.all.min.js"></script>		
+		<link type="text/css" rel="stylesheet" href="/static/lds/css/jquery-ui-1.8.2.all.css"/>			
+        <script type="text/javascript" src="/static/lds/js/jquery.qtip-1.0.0-rc3.min.js"></script>
+        <script type="text/javascript" src="/static/lds/js/jquery.validate.min.js"></script>                
         <script type="text/javascript">{$cfg:BLANK-SEARCH-STUB-JS}</script>
-        <script type="text/javascript" src="/static/natlibcat/js/natlibcat3.js"></script>
+        <script type="text/javascript" src="/static/lds/js/natlibcat3.js"></script>
 		<link rel="unapi-server" type="application/xml" title="unAPI" href="{$url-prefix}unapi.xqy"/>
 		  <!-- CSS -->
-    <link type="text/css" media="screen" rel="stylesheet" href="/xq/id-main/static/css/2012/styles.css"/>
-    <link type="text/css" media="print" rel="stylesheet" href="/xq/id-main/static/css/2012/loc_print_v2.css"/>
+    <!-- <link type="text/css" media="screen" rel="stylesheet" href="/xq/id-main/static/css/2012/styles.css"/>
+    <link type="text/css" media="print" rel="stylesheet" href="/xq/id-main/static/css/2012/loc_print_v2.css"/> -->
     <!--[if lte IE 7]><link type="text/css" media="screen" rel="stylesheet" href="/static/css/2012/loc_lte_ie6.css" /><![endif]-->
     <!-- End CSS -->
 	 </header>
@@ -202,7 +236,7 @@ declare private function ssk:player-script() as element(header) {
 		<script type="text/javascript" src="http://cdn.loc.gov/js/plugins/jquery.url-1.0.js"></script>
 		<script type="text/javascript" src="http://cdn.loc.gov/js/lib/modernizr-1.5.min.js"></script>
 		<script type="text/javascript" src="http://media.loc.gov/loader/lib/flowplayer-3.2.4.min.js"></script>
-		<script type="text/javascript" src="/static/natlibcat/js/player.js"></script>
+		<script type="text/javascript" src="/static/lds/js/player.js"></script>
 	</header>
 
 };
@@ -211,7 +245,7 @@ declare private function ssk:sharetool-script() as element(header) {
 (:	Currently not allowed in production.
 
 :)
-	if ( contains($cfg:DISPLAY-SUBDOMAIN,"mlvlp04") and xdmp:get-request-header('X-LOC-Environment')!='Staging')
+	if ( contains($cfg:DISPLAY-SUBDOMAIN,"mlvlp01") and xdmp:get-request-header('X-LOC-Environment')!='Staging')
  then		
 		<header xmlns="http://www.w3.org/1999/xhtml">
 			<link href="/share/sites/zawrE2Ra/share-min.css" rel="stylesheet" type="text/css" media="screen, all" />									
@@ -243,10 +277,10 @@ declare private function ssk:seadragon-script($uri  as xs:string) as element(hea
 	return 
 		if (exists($path)) then		
 		<header xmlns="http://www.w3.org/1999/xhtml">
-			<script type="text/javascript" src="/static/natlibcat/js/seadragon-min.js"></script>
-            <script type="text/javascript" src="/static/natlibcat/js/seadragon-display.js"></script>		
-			<script type="text/javascript" src="/static/natlibcat/js/jquery.galleriffic.js"></script>
-			<link type="text/css" rel="stylesheet" href="/static/natlibcat/css/galleriffic-2.css"/>             
+			<script type="text/javascript" src="/static/lds/js/seadragon-min.js"></script>
+            <script type="text/javascript" src="/static/lds/js/seadragon-display.js"></script>		
+			<script type="text/javascript" src="/static/lds/js/jquery.galleriffic.js"></script>
+			<link type="text/css" rel="stylesheet" href="/static/lds/css/galleriffic-2.css"/>             
             
 			<script type="text/javascript">
 				var viewer = null;
@@ -274,12 +308,12 @@ declare function ssk:timeline-script() as element(header)? {
     <header xmlns="http://www.w3.org/1999/xhtml">
         <!--<script type="text/javascript" src="http://static.simile.mit.edu/timeline/api-2.3.0/timeline-api.js?bundle=true"></script>-->
          <script>
-              Timeline_ajax_url="/static/natlibcat/js/timeline_ajax/simile-ajax-api.js";
-              Timeline_urlPrefix='/static/natlibcat/js/timeline_js/';       
+              Timeline_ajax_url="/static/lds/js/timeline_ajax/simile-ajax-api.js";
+              Timeline_urlPrefix='/static/lds/js/timeline_js/';       
               Timeline_parameters='bundle=true';
         </script>
-        <script src="/static/natlibcat/js/timeline_js/timeline-api.js" type="text/javascript"></script>
-        <script type="text/javascript" src="/static/natlibcat/js/timeline-display.js"></script>
+        <script src="/static/lds/js/timeline_js/timeline-api.js" type="text/javascript"></script>
+        <script type="text/javascript" src="/static/lds/js/timeline-display.js"></script>
         <style type="text/css">
             .timeline-band-3 .timeline-ether-bg {{
                 background-color: #BBBBBB;
@@ -298,7 +332,7 @@ declare function ssk:topnav-div($crumbs as element()*) as element(body){
                     <div id="left_header">
                         <ul id="menu">
                             <li id="logo_lc" title="The Library of Congress"><a href="http://www.loc.gov"></a></li>
-                            <li id="global_nav"><a href="http://www.loc.gov/rr/askalib/"><img src="/static/natlibcat/images/ask_librarian.gif" alt="Ask a Librarian" width="101" height="40" /></a><a href="http://www.loc.gov/library/libarch-digital.html"><img src="/static/natlibcat/images/digital_collections.gif" alt="Digital Collections" width="119" height="40" /></a><a href="http://catalog.loc.gov/"><img src="/static/natlibcat/images/library_catalog.gif" alt="Library Catalogs" width="111" height="40" /></a></li>
+                            <li id="global_nav"><a href="http://www.loc.gov/rr/askalib/"><img src="/static/lds/images/ask_librarian.gif" alt="Ask a Librarian" width="101" height="40" /></a><a href="http://www.loc.gov/library/libarch-digital.html"><img src="/static/lds/images/digital_collections.gif" alt="Digital Collections" width="119" height="40" /></a><a href="http://catalog.loc.gov/"><img src="/static/lds/images/library_catalog.gif" alt="Library Catalogs" width="111" height="40" /></a></li>
                         </ul>
                     <!-- end id:left_header -->
                     </div>
@@ -354,6 +388,7 @@ declare function ssk:sharetool-div($uri as xs:string ,$title as xs:string) {
 	return 
 (:		if (contains($hostname,'mlvlp04') and $cfg:MY-SITE/cfg:branding/string()!="tohap") then		:)
 		if ( contains($hostname,"mlvlp04") and xdmp:get-request-header('X-LOC-Environment')!='Staging') then
+		
 		 	<div class="locshare-this" id="page_toolbar">
 				<code>{{ 
 					link: '{concat($bookmarkhref,'.html')}', 
@@ -408,7 +443,9 @@ declare function ssk:sharetool-div($uri as xs:string ,$title as xs:string) {
        			 }}</code>
 			</div>
 		else
-		 ()(:printlink:)
+		 ()
+		 
+		 (:printlink:)
 };
 declare function ssk:footer() as element(footer) {
 (: called by search, detail, permalink:)
@@ -421,7 +458,7 @@ declare function ssk:footer() as element(footer) {
                 </div>
                 <div class="f_inner_mid">
                     <div class="find_us">
-                        <h4>Find us on</h4><a href="http://www.facebook.com/libraryofcongress"><img width="16" height="16" alt="Facebook" src="/static/natlibcat/images/facebook.gif"/></a><a href="http://twitter.com/librarycongress"><img width="16" height="16" alt="Twitter" src="/static/natlibcat/images/twitter.gif"/></a><a href="http://www.youtube.com/libraryofcongress"><img width="16" height="16" alt="YouTube" src="/static/natlibcat/images/youtube.gif"/></a><a href="http://www.flickr.com/photos/library_of_congress/"><img width="16" height="16" alt="Flickr" src="/static/natlibcat/images/flickr.gif"/></a></div><div class="subscribe"><h4>Subscribe &amp; Comment</h4><span><a href="http://www.loc.gov/rss/">RSS &amp; E-Mail</a></span><span><a href="http://blogs.loc.gov/loc/">Blogs</a></span></div><div class="download"><h4>Download &amp; Play</h4><span><a href="http://www.loc.gov/podcasts/">Podcasts</a></span><span><a href="http://www.loc.gov/webcasts/">Webcasts</a></span><span class="external"><a href="http://deimos3.apple.com/WebObjects/Core.woa/Browse/loc.gov">iTunes U</a></span>
+                        <h4>Find us on</h4><a href="http://www.facebook.com/libraryofcongress"><img width="16" height="16" alt="Facebook" src="/static/lds/images/facebook.gif"/></a><a href="http://twitter.com/librarycongress"><img width="16" height="16" alt="Twitter" src="/static/lds/images/twitter.gif"/></a><a href="http://www.youtube.com/libraryofcongress"><img width="16" height="16" alt="YouTube" src="/static/lds/images/youtube.gif"/></a><a href="http://www.flickr.com/photos/library_of_congress/"><img width="16" height="16" alt="Flickr" src="/static/lds/images/flickr.gif"/></a></div><div class="subscribe"><h4>Subscribe &amp; Comment</h4><span><a href="http://www.loc.gov/rss/">RSS &amp; E-Mail</a></span><span><a href="http://blogs.loc.gov/loc/">Blogs</a></span></div><div class="download"><h4>Download &amp; Play</h4><span><a href="http://www.loc.gov/podcasts/">Podcasts</a></span><span><a href="http://www.loc.gov/webcasts/">Webcasts</a></span><span class="external"><a href="http://deimos3.apple.com/WebObjects/Core.woa/Browse/loc.gov">iTunes U</a></span>
                     </div>
                     <!-- end class:f_inner_mid -->
                 </div>

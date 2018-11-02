@@ -10,13 +10,18 @@ declare variable $digitizedfacet as xs:string := string($cfg:DISPLAY-ELEMENTS/el
 declare variable $query as xs:string? := xdmp:get-request-field("q", ());
 declare variable $qname as xs:string? := xdmp:get-request-field("qname", "keyword");
 declare variable $digitized as xs:string? := xdmp:get-request-field($digitizedfacet, "");
+declare variable $filter as xs:string? := xdmp:get-request-field("filter", "all");
+declare variable $precision as xs:string? := xdmp:get-request-field("precision", "anymatch");
+declare variable $category as xs:string? := xdmp:get-request-field("category", "all");
 declare variable $starting-text := $query;
 declare variable $browse-query as xs:string? := xdmp:get-request-field("bq", ());
 declare variable $browse as xs:string? := xdmp:get-request-field("browse", "");
+(:declare variable $behavior as xs:string? := xdmp:get-request-field("behavior", "bfview");:)
 let $hostname:=  $cfg:DISPLAY-SUBDOMAIN
 let $doctype := '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">'
+let $doctype := '<!DOCTYPE html>'
 let $duration := $cfg:HTTP_EXPIRES_CACHE
-
+let $today:=fn:current-date()
 let $html :=
     <html xmlns="http://www.w3.org/1999/xhtml">
     	<head>
@@ -24,11 +29,11 @@ let $html :=
     		<meta http-equiv="Content-Language" content="en-us" />
     		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <meta name="robots" content="noindex"/>
-    		<meta name="keywords" content="Linked Data Services  search library congress collections" />
+    		<meta name="keywords" content="Linked Data Services search library congress collections" />
     		<meta name="description" content="Linked Data Services :  Library of Congress Bibliographic and authority data in linked data formats." />
     		<link rel="stylesheet" media="print" type="text/css" href="/static/lds/css/datastore-print.css" />
     		<link rel="stylesheet" media="screen, projection" type="text/css" href="/static/lds/css/datastore-main.css" />
-    		<link type="text/css" rel="stylesheet" href="/static/lds/ls -acss/jquery-ui-1.8.2.all.css"/>
+    		<link type="text/css" rel="stylesheet" href="/static/lds/css/jquery-ui-1.8.2.all.css"/>
             <script type="text/javascript" src="/static/lds/js/jquery-1.4.4.min.js"></script>
             <script type="text/javascript" src="/static/lds/js/jquery-ui-1.8.2.all.min.js"></script>
             <script type="text/javascript" src="/static/lds/js/jquery.idTabs.min.js"></script>
@@ -53,7 +58,7 @@ let $html :=
          			<div id="crumb_nav">
         				<div id="crumb">
         					<a href="http://www.loc.gov/">Library of Congress</a>
-        	                   <span> &gt; </span>Linked Data Services
+        	                   <span> &gt; </span>BIBFRAME Database
                        </div>
          			</div>
         
@@ -69,14 +74,14 @@ let $html :=
               <li><a href="/static/lds/html/help.html">Searching Tips</a></li>
               <!-- <li><a href="/static/lds/html/news.html">News</a></li> -->
             </ul>
-            <h2>More Resources</h2>
+               <!-- <h2>More Resources</h2>
                 <ul id="res_links">
                     <li><a href="http://catalog.loc.gov/">LC Online Catalogs</a></li>
                     <li><a href="http://authorities.loc.gov/">LC Authorities</a></li>
                     <li><a href="http://www.loc.gov/library/libarch-digital.html">Digital Collections</a></li>
                     <li><a href="http://findingaids.loc.gov/">Finding Aids</a></li>
                     <li><a href="http://www.loc.gov/rr/program/bib/bibhome.html">Bibliographies &amp; Guides</a></li>
-                </ul>
+                </ul>-->
         </div>
         <!-- end left_nav_mid -->
         </div>
@@ -84,20 +89,28 @@ let $html :=
         
         <div id="page_head">
         	<span style="width: 100%;"><a id="skip_menu"></a></span>
-        	<h1>Linked Data Services <br /><span>Search Library of Congress Collections</span></h1>
+        	<h1>BIBFRAME Database <br /><span>Library of Congress Metadata</span></h1>
         </div> 
         
         <div id="main_menu">
         <div id="form">
+		<!-- <h4><span style="color:brown">Text searching:</span></h4> -->
+				<table ><tr><td><h4><span style="color:brown">Text searching:</span></h4></td>
+		<td style="background-color:lightgray;width:16%;margin-right:5px;">Recently edited: <br/>
+					<a href="/resources/works/feed/17">works</a> or <a href="/resources/instances/feed/22">instances</a>
+		</td></tr>
+		
+		</table>
         <div id="search_box">
                  <form method="get" action="/lds/search.xqy" accept-charset="UTF-8" id="indexForm">                 	
                  	<div class="search_form">
                         <label class="nodisplay" for="quick-search-box">Keyword Search</label>
                         <input tabindex="1" id="quick-search-box" name="q" type="text" class="search" value="{$starting-text}" size="50" maxlength="300"/>
                         <button tabindex="7" id="indexSubmit">Search</button>
+						<!-- <input type="hidden" value="bfview" id="behavior" name="behavior"/> -->
                     </div>
                     <div id="quick-search-options">				
-                        {
+                      {
                             if ($qname eq 'keyword') then
                                 <input tabindex="2" type="radio" value="keyword" checked="checked" name="qname" class="searchOptionRadioControl" id="all" />
                             else
@@ -126,70 +139,392 @@ let $html :=
                         }
                         <label for="subject">Subject</label>						
                     </div>
+					<hr />
+					<table><tr><td style="width:40%">
+					<h3>Filter on:</h3>
+					<div id="quick-search-options2">				
+					 {
+                            if ($filter eq 'all') then
+                                <input tabindex="5" type="radio" value="all" checked="checked" name="filter" class="searchOptionRadioControl" id="all" />
+                            else
+                                <input tabindex="5" type="radio" value="all" name="filter" class="searchOptionRadioControl" id="all" />      
+                        	}<label for="all">Everything</label>	
+                        {
+                            if ($filter eq 'works') then
+                                <input tabindex="2" type="radio" value="works" checked="checked" name="filter" class="searchOptionRadioControl" id="works" />
+                            else
+                                <input tabindex="2" type="radio" value="works" name="filter" class="searchOptionRadioControl" id="works" />
+                        }
+                        <label for="works">Works</label>
+                       {
+                            if ($filter eq 'instances') then
+                                <input tabindex="3" type="radio" value="instances" checked="checked" name="filter" class="searchOptionRadioControl" id="instances" />
+                            else
+                                <input tabindex="3" type="radio" value="instances" name="filter" class="searchOptionRadioControl" id="instances" />                                
+                        }
+                        <label for="instances">Instances</label>
+                        {
+                            if ($qname eq 'items') then
+                                <input tabindex="4" type="radio" value="items" checked="checked" name="filter" class="searchOptionRadioControl" id="items" />
+                            else
+                                <input tabindex="4" type="radio" value="items" name="filter" class="searchOptionRadioControl" id="items" />
+                        }
+                        <label for="items">Items</label>
+                       				
+                    </div>
+					</td>
+					<td style="width:12%"></td><td style="width:20%">
 
-                    <!-- end split_button --> 
-        			<div id="limits-container">
-        			     {
-                             if ($digitized eq 'Online') then
-                                 <input tabindex="6" name="{$digitizedfacet}" type="checkbox" checked="checked" id="limits" value="Online" /> 
-                             else
-                                 <input tabindex="6" name="{$digitizedfacet}" type="checkbox" id="limits" value="Online" /> 
-                         }
-                         <label for="limits">Limit search to materials available online</label>
-            	  </div>
+<h3>Exact match Toggle:</h3>
+					<div id="quick-search-options0">				
+					 {
+                            if ($precision eq 'exact') then
+                                <input tabindex="5" type="radio" value="exact" checked="checked" name="precision" class="searchOptionRadioControl" id="precision" />
+                            else
+                                <input tabindex="5" type="radio" value="exact" name="precision" class="searchOptionRadioControl" id="precision" />                        
+                        	}<label for="exact">Exact Match</label>	
+                         {
+                            if ($precision eq 'anymatch') then
+                                <input tabindex="5" type="radio" value="anymatch" checked="checked" name="precision" class="searchOptionRadioControl" id="precision" />
+                            else
+                                <input tabindex="5" type="radio" value="anymatch" name="precision" class="searchOptionRadioControl" id="precision" />                        
+                        	}<label for="anymatch">Any Match</label>	
+                        
+                       				
+                    </div>
+</td></tr></table>
+					<div>
+								<table>
+								    <!-- <tr colspan="2">
+								        <td>
+								            <h4>Category:</h4>
+								        </td>
+								    </tr> -->
+								    <tr>
+								        <td>
+								            <h5>Instance or Work Categories:</h5>
+								        </td>
+								        <td/>
+								    </tr>
+								    <tr>
+								        <td> { if ($category eq 'all') then <input tabindex="1" type="radio" value="all"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="all3"/> 
+								            else
+								                <input tabindex="1" type="radio" value="all" name="category"
+								                class="searchOptionRadioControl" id="all3"/> }<label for="all3"
+								            >Everything</label></td>
+								        <td> { if ($category eq 'edited') then <input tabindex="2" type="radio" value="edited"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="edited"/>
+								            else <input tabindex="2" type="radio" value="edited" name="category"
+								                class="searchOptionRadioControl" id="edited"/> } <label for="edited">From BF
+								                Editor</label>
+								            <br/>
+								        </td>
+								    </tr>
+
+								    <tr>
+								        <td> { if ($category eq 'notMerged') then <input tabindex="3" type="radio" value="notMerged"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="notMerged"/>
+								            else <input tabindex="3" type="radio" value="notMerged" name="category"
+								                class="searchOptionRadioControl" id="notMerged"/> } <label for="notMerged">No Merge
+								                activity</label><br/></td>
+								        <td> { if ($category eq 'rda') then <input tabindex="4" type="radio" value="rda"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="rda"/> else
+								                <input tabindex="4" type="radio" value="rda" name="category"
+								                class="searchOptionRadioControl" id="rda"/> } <label for="rda">RDA Cataloging Rules </label>
+								            <br/>
+								        </td>
+								    </tr>
+								    <tr>
+								       
+								        <td> { if ($category eq 'ecip') then <input tabindex="4" type="radio" value="ecip"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="ecip"/> else
+								                <input tabindex="4" type="radio" value="ecip" name="category"
+								                class="searchOptionRadioControl" id="ecip"/> } <label for="ecip">E-CIP Records </label>
+								            <br/>
+								        </td>
+										<td> { if ($category eq 'fibc') then <input tabindex="4" type="radio" value="fibc"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="fibc"/> else
+								                <input tabindex="4" type="radio" value="fibc" name="category"
+								                class="searchOptionRadioControl" id="fibc"/> } <label for="fibc">Foreign IBC </label>
+								            <br/>
+								        </td>
+								    </tr>
+									
+								    <tr>
+								        <td> { if ($category eq 'ibc') then <input tabindex="4" type="radio" value="ibc"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="ibc"/> else
+								                <input tabindex="4" type="radio" value="ibc" name="category"
+								                class="searchOptionRadioControl" id="ibc"/> } <label for="ibc">IBC Records </label>
+								            <br/>
+								        </td>
+								        <td> { if ($category eq 'batch') then <input tabindex="4" type="radio" value="batch"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="batch"/> else
+								                <input tabindex="4" type="radio" value="batch" name="category"
+								                class="searchOptionRadioControl" id="batch"/> } <label for="ibc">Any 985 batch code </label>
+								            <br/>
+								        </td>
+								    </tr>
+									<tr><td> { if ($category eq 'nondistributed') then <input tabindex="4" type="radio" value="nondistributed"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="nondistributed"/> else
+								                <input tabindex="4" type="radio" value="nondistributed" name="category"
+								                class="searchOptionRadioControl" id="nondistributed"/> } <label for="nondistributed">Non Distributed</label>
+								            <br/>
+								        </td><td> </td>
+										</tr> 
+								    <tr>
+								        <td colspan="2">
+								            <h5>Work Categories:</h5>
+								        </td>
+								    </tr>
+								    <tr>
+								        <td> { if ($category eq 'mergedWorks') then <input tabindex="4" type="radio"
+								                value="mergedWorks" checked="checked" name="category"
+								                class="searchOptionRadioControl" id="mergedWorks"/> else <input tabindex="4"
+								                type="radio" value="mergedWorks" name="category" class="searchOptionRadioControl"
+								                id="mergedWorks"/> } <label for="mergedWorks">Works that have Bibs merged on
+								                them</label><br/>
+								        </td>
+								        <td>{ if ($category eq 'authNameTitle') then <input tabindex="5" type="radio"
+								                value="authNameTitle" checked="checked" name="category"
+								                class="searchOptionRadioControl" id="authNameTitle"/> else <input tabindex="5"
+								                type="radio" value="authNameTitle" name="category" class="searchOptionRadioControl"
+								                id="authNameTitle"/> } <label for="authNameTitle">NameTitle work</label>
+								            <br/>
+								        </td>
+								    </tr>
+								    <tr>
+								        <td>{ if ($category eq 'authTitle') then <input tabindex="6" type="radio" value="authTitle"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="authTitle"/>
+								            else <input tabindex="6" type="radio" value="authTitle" name="category"
+								                class="searchOptionRadioControl" id="authTitle"/> } <label for="authTitle">Title
+								                Work</label>
+								           
+								        </td>
+								        <td> { if ($category eq 'authWork') then <input tabindex="7" type="radio" value="authWork"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="authWork"/>
+								            else <input tabindex="7" type="radio" value="authWork" name="category"
+								                class="searchOptionRadioControl" id="authWork"/> } <label for="authWork">Work from
+								                Title or NameTitle Authority</label>
+								            
+								        </td>
+								    </tr>
+								    <tr>
+								        <td>{ if ($category eq 'expression') then <input tabindex="8" type="radio"
+								                value="expression" checked="checked" name="category"
+								                class="searchOptionRadioControl" id="expression"/> else <input tabindex="8"
+								                type="radio" value="expression" name="category" class="searchOptionRadioControl"
+								                id="expression"/> } <label for="expression">Expression </label>
+								            
+								        </td>
+								        <td> { if ($category eq 'stubworks') then <input tabindex="8" type="radio" value="stubworks"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="stubworks"/>
+								            else <input tabindex="8" type="radio" value="stubworks" name="category"
+								                class="searchOptionRadioControl" id="stubworks"/> } <label for="stubworks">Stub
+								                Related Works </label>
+								           
+								        </td>
+								    </tr>
+										 <tr>
+								         <td> { if ($category eq 'nonstubs') then <input tabindex="9" type="radio" value="nonstubs"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="nonstubs"/>
+								            else <input tabindex="9" type="radio" value="nonstubs" name="category"
+								                class="searchOptionRadioControl" id="nonstubs"/> } 
+												<label for="nonstubs">Non-Stub Works </label>
+								           
+								        </td>
+								        <td> { if ($category eq 'hasLinks') then <input tabindex="9" type="radio" value="hasLinks"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="hasLinks"/>
+								            else <input tabindex="9" type="radio" value="hasLinks" name="category"
+								                class="searchOptionRadioControl" id="hasLinks"/> } 
+												<label for="hasLinks">Has Links to other objects </label>
+								           
+								        </td>
+								    </tr>
+								    <tr>
+								        <td colspan="2">
+								            <h5>Instance categories:</h5>
+								        </td>
+								    </tr>
+								    <tr>
+								        <td>{ if ($category eq 'mergedInstances') then <input tabindex="9" type="radio"
+								                value="mergedInstances" checked="checked" name="category"
+								                class="searchOptionRadioControl" id="mergedInstances"/> else <input tabindex="9"
+								                type="radio" value="mergedInstances" name="category"
+								                class="searchOptionRadioControl" id="mergedInstances"/> } <label
+								                for="mergedInstances">Instances merged onto any Work</label>
+								            <br/>
+								        </td>
+								        <td> { if ($category eq 'authMerge') then <input tabindex="9" type="radio" value="authMerge"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="authMerge"/>
+								            else <input tabindex="9" type="radio" value="authMerge" name="category"
+								                class="searchOptionRadioControl" id="authMerge"/> }<label for="authMerge">Instances
+								                merged onto Authority Work</label><br/>
+								        </td>
+								    </tr>
+								    <tr>
+								        <td> { if ($category eq 'bibMerge') then <input tabindex="10" type="radio" value="bibMerge"
+								                checked="checked" name="category" class="searchOptionRadioControl" id="bibMerge"/>
+								            else <input tabindex="10" type="radio" value="bibMerge" name="category"
+								                class="searchOptionRadioControl" id="bibMerge"/> } <label for="bibMerge">Instances merged
+								                onto Bib Work</label>
+								            <br/>
+								        </td>
+								        <td> </td>
+								    </tr>
+								</table>
+						</div>
+						<hr/>
+				  
             </form>
         </div>
-		{if (not(matches($hostname,'marklogic3'))) then
-				()
-		else
-			<div id="browse_box">
-				<form method="get" action="/lds/browse.xqy" accept-charset="UTF-8" id="browseForm">
+
+		
+        </div>
+        <!-- end search_box -->
+		
+        <!-- end form -->
+		
+  
+        <div id="browse_box"  style="	background: #e6f2ff;"><br/>
+		<h4><span style="color:brown">Left-anchor browsing:</span></h4>
+				<form method="get" action="/lds/browse.xqy" accept-charset="UTF-8" id="browseForm" >
 				<div class="browse_form">
 					<label class="nodisplay" for="browse-search-box">Browse</label>
 					<input tabindex="1" id="browse-search-box" name="bq" type="text" class="browse" value="" size="25" maxlength="300"/>
 					<button tabindex="5" id="browseSubmit">Browse</button>
 					<input type="hidden" value="ascending" id="sort" name="browse-order"/>
 				</div>
-				<div id="browse-search-options">			
-				 {
+				<div id="browse-search-options">		
+				<table>
+				<tr>
+								        <td>{
 	                if ($browse eq 'author') then
-	                    <input tabindex="2" type="radio" value="author" checked="checked" name="browse" class="searchOptionRadioControl" id="b_name" />
+	                    <input tabindex="1" type="radio" value="author" checked="checked" name="browse" class="searchOptionRadioControl" id="b_name" />
 	                else
-	                    <input tabindex="2" type="radio" value="author" name="browse" class="searchOptionRadioControl" id="b_name" />
+	                    <input tabindex="1" type="radio" value="author" name="browse" class="searchOptionRadioControl" id="b_name" />
 	            }
-				<label for="b_name">Name</label>			
-				 {
+				<label for="b_name">Name</label><span style="margin-left:55px;"> </span>	
+								        </td>
+								        <td> {
 	                if ($browse eq 'subject') then
 	                    <input tabindex="2" type="radio" value="subject" checked="checked" name="browse" class="searchOptionRadioControl" id="b_subject" />
 	                else
 	                    <input tabindex="2" type="radio" value="subject" name="browse" class="searchOptionRadioControl" id="b_subject" />
 	             }
-				<label for="b_subject">Subject</label>
-				{
+				<label for="b_subject">Subject</label><span style="margin-left:20px;"> </span>
+								        </td>
+								    </tr>
+									<tr>
+								        <td>{
 	                if ($browse eq 'class') then
-	                    <input tabindex="2" type="radio" value="class" checked="checked" name="browse" class="searchOptionRadioControl" id="b_class" />
+	                    <input tabindex="3" type="radio" value="class" checked="checked" name="browse" class="searchOptionRadioControl" id="b_class" />
 	                else
-	                    <input tabindex="2" type="radio" value="class" name="browse" class="searchOptionRadioControl" id="b_class" />
+	                    <input tabindex="3" type="radio" value="class" name="browse" class="searchOptionRadioControl" id="b_class" />
 	             }
 				 <label for="b_class">LC Call Number</label>
+								        </td>
+								        <td> 	{
+	                if ($browse eq 'date') then
+	                    <input tabindex="4" type="radio" value="date" checked="checked" name="browse" class="searchOptionRadioControl" id="b_date" />
+	                else
+	                    <input tabindex="4" type="radio" value="date" name="browse" class="searchOptionRadioControl" id="b_date" />
+	             }<label for="b_date">Date Modified</label>
+								        </td>
+								    </tr>
+				
+				 <tr>
+								        <td>
+				
+				 			
+				  {
+	                if ($browse eq 'lccn') then
+	                    <input tabindex="5" type="radio" value="lccn" checked="checked" name="browse" class="searchOptionRadioControl" id="b_lccn" />
+	                else
+	                    <input tabindex="5" type="radio" value="lccn" name="browse" class="searchOptionRadioControl" id="b_lccn" />
+	             }
+				 <label for="b_lccn">LCCN</label><span style="margin-left:35px;"> </span>	</td>
+				 <td>
+				  {
+	                if ($browse eq 'loaddate') then
+	                    <input tabindex="6" type="radio" value="loaddate" checked="checked" name="browse" class="searchOptionRadioControl" id="b_loaddate" />
+	                else
+	                    <input tabindex="7" type="radio" value="loaddateitle" name="browse" class="searchOptionRadioControl" id="b_loaddate" />
+	             }
+				 <label for="b_loaddate">Date <em>Loaded</em></label> (<a href="browse.xqy?bq={$today}&amp;browse-order=ascending&amp;browse=loaddate">today</a>)
+				 </td>
+				 </tr>
+				 <tr><td>
+  {
+	                if ($browse eq 'imprint') then
+	                    <input tabindex="6" type="radio" value="imprint" checked="checked" name="browse" class="searchOptionRadioControl" id="b_imprint" />
+	                else
+	                    <input tabindex="7" type="radio" value="imprint" name="browse" class="searchOptionRadioControl" id="b_imprint" />
+	             }
+				 <label for="b_imprint">Imprint</label>
+				 </td>
+				  <td>
+				  {
+	                if ($browse eq 'nameTitle') then
+	                    <input tabindex="6" type="radio" value="nameTitle" checked="checked" name="browse" class="searchOptionRadioControl" id="b_nameTitle" />
+	                else
+	                    <input tabindex="7" type="radio" value="nameTitle" name="browse" class="searchOptionRadioControl" id="b_nameTitle" />
+	             }
+				 <label for="b_nameTitle">Name/Title</label>
+				 </td>
+				 </tr>
+				 		
+					
+</table>
 			</div>
 		<!-- end ID:browse-search-options -->		
-	</form>
-</div>}
-<!-- end CLASS: browse_box -->
-        <!-- end form -->
-        </div>
-        <!-- end search_box -->
-        </div>
+				<h3>Filter on:</h3>
+					<div id="quick-search-options2">				
+					 {
+                            if ($qname eq 'all') then
+                                <input tabindex="5" type="radio" value="all" checked="checked" name="filter" class="searchOptionRadioControl" id="all2" />
+                            else
+                                <input tabindex="5" type="radio" value="all" name="filter" class="searchOptionRadioControl" id="all" />                        
+                        	}<label for="all">Everything</label>		
+                        {
+                            if ($filter eq 'works') then
+                                <input tabindex="2" type="radio" value="works" checked="checked" name="filter" class="searchOptionRadioControl" id="works2" />
+                            else
+                                <input tabindex="2" type="radio" value="works" name="filter" class="searchOptionRadioControl" id="works2" />
+                        }
+                        <label for="works">Works</label>
+                       {
+                            if ($filter eq 'instances') then
+                                <input tabindex="3" type="radio" value="instances" checked="checked" name="filter" class="searchOptionRadioControl" id="instances2" />
+                            else
+                                <input tabindex="3" type="radio" value="instances" name="filter" class="searchOptionRadioControl" id="instances2" />                                
+                        }
+                        <label for="instances">Instances</label>
+                        {
+                            if ($qname eq 'items') then
+                                <input tabindex="4" type="radio" value="items" checked="checked" name="filter" class="searchOptionRadioControl" id="items2" />
+                            else
+                                <input tabindex="4" type="radio" value="items" name="filter" class="searchOptionRadioControl" id="items2" />
+                        }
+                        <label for="items">Items</label>
+                       				
+                    </div>
+		</form>
+	</div>
+	</div>
 	
+			
         <!-- end main_menu -->
-        <div id="main_body">
+	      <div id="main_body">
             <p> Library of Congress Linked Data Services, an online platform for linked data versions of Library's bibliographic and 
 			authority data.</p>            
 						
             <p> Please <a href="/lds/feedback.xqy">contact us</a> to provide your comments.</p>
-        </div>
+        <div style="background: #fff;"><p> </p><p> </p><hr/></div>
+	<!-- end CLASS: browse_box -->
+		</div>
         <!-- end main_body -->
+		
         </div>
         <!-- end content -->
         

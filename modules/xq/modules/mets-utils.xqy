@@ -9,17 +9,18 @@ utils:render() format any xml (from get() as html, json, atom, div....)
 :)
 
 module namespace utils = "info:lc/xq-modules/mets-utils";
+import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
 import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+
 import module namespace marcutil = "info:lc/xq-modules/marc-utils" at "/xq/modules/marc-utils.xqy";
 
 import module namespace mem = "http://xqdev.com/in-mem-update" at "/xq/modules/in-mem-update.xqy";
 import module namespace lh = "http://www.marklogic.com/ps/lib/l-highlight" at "/lds/lib/l-highlight.xqy";
-import module namespace rdfxml2nt = "info:lc/id-modules/rdfxml2nt#" at "/id-main/modules/module.RDFXML-2-Ntriples.xqy";
-import module namespace rdfxml2json = "info:lc/id-modules/rdfxml2json#" at "/id-main/modules/module.RDFXML-2-JSON.xqy";
-import module namespace xml2jsonml = "info:lc/id-modules/xml2jsonml#" at "/id-main/modules/module.XML-2-JSONML.xqy";
+import module namespace xml2jsonml = "info:lc/id-modules/xml2jsonml#" at "/xq/modules/module.XML-2-JSONML.xqy";
+import module namespace rdfxml2trix = "http://3windmills.com/rdfxq/modules/rdfxml2trix#" at "/xq/rdfxq/modules/module.RDFXML-2-TriX.xqy";
+import module namespace rdfxml2json = "info:lc/id-modules/rdfxml2json#" at "/xq/modules/module.RDFXML-2-JSON.xqy";
+import module namespace trix2jsonld-ml = "http://3windmills.com/rdfxq/modules/trix2jsonld-ml#" at "/xq/rdfxq/modules/module.TriX-2-JSONLD-MarkLogic.xqy";
 
-import module namespace rdfxml2trix = "http://3windmills.com/rdfxq/modules/rdfxml2trix#" at "/id-main/rdfxq/modules/module.RDFXML-2-TriX.xqy";
-import module namespace trix2jsonld-ml = "http://3windmills.com/rdfxq/modules/trix2jsonld-ml#" at "/id-main/rdfxq/modules/module.TriX-2-JSONLD-MarkLogic.xqy";
 
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare namespace mets = "http://www.loc.gov/METS/";
@@ -38,9 +39,10 @@ declare namespace hld = "http://www.indexdata.com/turbomarc";
 declare namespace xhtml="http://www.w3.org/1999/xhtml" ;
 declare namespace l= "local";
 
+declare variable $RDF-FORMATS as xs:string:="" ;
 declare function utils:mets($id as xs:string) {
        
-    (:  requires id parameter (METS/@OBJID as in "loc.natlib.lcdb.5226")
+    (:  requires id parameter (METS/@OBJID as in "loc.natlib.works.5226")
    
     :)		
 	let $mets:=
@@ -49,55 +51,162 @@ declare function utils:mets($id as xs:string) {
 		    } catch($e) {
 		        ($e, xdmp:log(xdmp:quote($e)), ())
 		    }
-	return if (exists($mets) ) then
-				$mets
+	return if (exists($mets) ) then	           
+	            $mets
 			else
 				xdmp:set-response-code(404,"Item Not found")
 
 };
-(: from id-main, get the bibframe rdf dmdsec :)
+(: from id-main, get the bibframe rdf dmdsec . if no ser specified, return rdfxml :)
 declare function utils:rdf($uri as xs:string) {
+	let $ser:="rdfxml"
+	return 
+		utils:rdf-ser($uri ,$ser)
+	
+};
+     
+(:~
+:   Get mets document
+:
+:   @param  $uri            is DB uri
+:   @return mets:mets as element
+:)
+declare function utils:get-mets(
+    $uri as xs:string
+    ) as element(mets:mets)
+{
+    let $doc := fn:doc($uri)
+    return
+        if ($doc) then
+            $doc/element()
+        else
+            <mets:mets>Document not found</mets:mets>
+};
+(:~
+:   Get mets dmdSec section
+:
+:   @param  $uri            is DB uri
+:   @return mets:mets as element
+:)
+declare function utils:get-mets-dmdSec(
+    $dmdSecID as xs:string,
+    $uri as xs:string
+    ) as node()
+{
+    let $mets := utils:get-mets($uri)
+
+	(: marcxml may need to be generated from mxe 2016 06 15 
+		if marcxml dmdsec exists, return it; if not, try to get mxe, converty to marcxml; otherwise, try to return the dmdsec requested
+	:)
+      let $dmdSec :=	
+		 if ( $dmdSecID="bibframe" ) then
+	       	$mets//mets:dmdSec[@ID=$dmdSecID]//rdf:RDF
+		 else  if ( $dmdSecID="ldsindex" ) then
+	       	$mets//mets:dmdSec[@ID=$dmdSecID]//idx:index
+		else  if ( $dmdSecID="index" ) then
+	       	$mets//mets:dmdSec[@ID=$dmdSecID]//idx:index
+		else (:madsrdf returns rdf:RDF :)
+			$mets//mets:dmdSec[@ID=$dmdSecID]/mets:mdWrap/mets:xmlData
+
+    return 
+           if ($dmdSec) then
+            (:$dmdSec/child::node()[fn:name()][1]:)
+			$dmdSec
+        else
+            <empty></empty> 
+};
+(: serialize bf rdf as ser :)
+declare function utils:rdf-ser($uri as xs:string, $ser as xs:string) {
 	(: convert bibframe rdf is in a dmdsec :)
 	let $mets:=document{utils:mets($uri)}
-	return 
-		if (not(empty($mets) )) then		 		
+	let $mime:= if ($ser="n3") 			then "text/n3"
+				else if ($ser="rdfxml") then "application/rdf+xml; charset=utf-8"
+				else if ($ser="nt")		then "application/n-triples"
+				else if ($ser="json")		then "application/json"
+         		else if ($ser="ttl") 	then "text/turtle"
+				else "text/plain"
+   
+   let $serialize:=if (fn:matches($ser,"(n3|ntriples|nt|rdf|json|rdfjson|nquad|ttl)" )) then
+                       if ($ser="rdfxml") then "rdfxml"
+                     	 else if ($ser="json") then "rdfjson"
+						 else if ($ser="rdfjson") then "rdfjson"
+                      	 else if ($ser="ttl") then "turtle"
+                         else $ser
+                   else "rdfxml"
+   
+   let $bfrdf:=$mets/mets:mets/mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF	
+   
+   (:let $_:=        xdmp:log( sem:rdf-serialize(sem:rdf-parse($bfrdf/node(),"rdfxml"),$serialize),"info"):)
+   
+   let $resp:= if ($serialize="rdfxml" )then 
+   						$bfrdf
+   				else try{
+							sem:rdf-serialize(sem:rdf-parse($bfrdf/node(),"rdfxml"),$serialize)
+						}
+					 catch($e) { ( (),
+					 	xdmp:log(fn:concat("DISPLAY: RDF conversion error for ",$uri),"info")					 	
+					 	)
+					 }
+   	return 
+		if (not(empty($bfrdf) )) then		 		
 			(
-			        xdmp:set-response-content-type("application/rdf+xml; charset=utf-8"), 		            
-					$mets/mets:mets/mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF					
+			        xdmp:set-response-content-type($mime), 		            
+					xdmp:add-response-header("Access-Control-Allow-Origin", "*") ,
+					$resp
 					)
 		else
 			xdmp:set-response-code(404,"Item Not found")
 
 };
-(: from id-main, get the bibframe rdf dmdsec,  convert to nt :)
+
+     
+
+
+
+(: NOT from id-main, get the bibframe rdf dmdsec,  convert to nt :)
 declare function utils:nt($uri as xs:string) {
 	(: convert bibframe rdf is in a dmdsec :)
-	let $mets:=document{utils:mets($uri)}
-
+	(:let $mets:=document{utils:mets($uri)}:)
+let $bfrdf:=utils:rdf($uri)
 	return 
-		if (not(empty($mets) )) then
-			let $bf:=$mets/mets:mets/mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF
-			return
+		if (not(empty($bfrdf) )) then						
 			     (
-			        xdmp:set-response-content-type("application/n-triples; charset=utf-8"), 		            
-				    rdfxml2nt:rdfxml2ntriples($bf) 					
-				)
+			        xdmp:set-response-content-type("application/n-triples; charset=utf-8"),
+					sem:rdf-parse($bfrdf,"ntriples")
+					
+				 )
 		else
 			xdmp:set-response-code(404,"Item Not found")
-
 };
 (: from id-main, get the bibframe rdf dmdsec,  convert to json:)
-declare function utils:json($uri as xs:string) {
-	(: convert bibframe rdf is in a dmdsec :)
+
+declare function utils:json($uri as xs:string, $ser as xs:string) {
+	
 	let $mets:=document{utils:mets($uri)}
 
 	return 
 		if (not(empty($mets) )) then
-			let $bf:=$mets/mets:mets/mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF
+			let $bfrdf:=$mets/mets:mets/mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF
+			
+			let $response:= 
+					if ($ser="jsonld") then
+						let $bftrix:=rdfxml2trix:rdfxml2trix($bfrdf)					
+						return trix2jsonld-ml:trix2jsonld($bftrix)
+
+					else
+						try{
+						xml2jsonml:xml2jsonml($bfrdf)
+						}
+						 catch($e) { ( (),
+					 	xdmp:log(fn:concat("DISPLAY: json conversion error for ",$uri),"info")					 	
+					 	)
+					 }
+			            
 			return
 			     (
 			        xdmp:set-response-content-type("application/json; charset=utf-8"), 		            
-				    rdfxml2json:rdfxml2json($bf) 					
+					$response
+				  
 				)
 		else
 			xdmp:set-response-code(404,"Item Not found")

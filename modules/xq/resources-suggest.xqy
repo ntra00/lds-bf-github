@@ -3,9 +3,11 @@ xquery version "1.0-ml";
 import module namespace search = "http://marklogic.com/appservices/search" at "/MarkLogic/appservices/search/search.xqy";
 (:import module namespace json = "http://marklogic.com/json" at "/modules/lib/json.xqy";:)
 import module namespace json = "http://marklogic.com/json" at "/json.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace sem                 = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
 declare namespace mets = "http://www.loc.gov/METS/";
 declare namespace idx = "info:lc/xq-modules/lcindex";
-
+declare namespace sparql = "http://www.w3.org/2005/sparql-results#";
 (: OpenSearch Suggestion format: http://www.opensearch.org/Specifications/OpenSearch/Extensions/Suggestions/1.0 :)
 
 (:~
@@ -34,7 +36,7 @@ declare variable $scheme as xs:string := (xdmp:get-request-field("scheme", "all"
 declare variable $format as xs:string := xdmp:get-request-field("format", "xhtml");
 
 (:~
-:   This variable is for the mimetype, but only xhtml supported.
+:   This variable is for the mimetype, but only json supported.
 :   Extensible for future development, could be pure XML, text.
 :)
 
@@ -45,51 +47,154 @@ declare variable $resultCount as xs:string := xdmp:get-request-field("count", "1
 declare variable $callback as xs:string? := xdmp:get-request-field("callback");
 
 let $strip-mads-ns := replace($rdftype, "(http://www\.loc\.gov/mads/rdf/v1#|madsrdf:|mads:|:)?(.+)", "$2")
+  
 
 let $rdftypequery := 
     if ($strip-mads-ns eq $madsClasses) then
        cts:element-range-query(xs:QName("idx:rdftype"), "=", $strip-mads-ns, ("collation=http://marklogic.com/collation/"))
     else
         ()
-		
-let $ctsquery :=
-    cts:and-not-query(
-        
+	
+let $scheme:=fn:substring-after($scheme,"http://id.loc.gov") 
+let $ctsquery :=    
         (: trap for authority and vocab searches that need to recurse into sub-vocabularies :)
-        if (matches($scheme, "(authorities|vocabulary|resources)/$")) then
-            let $scheme:=fn:substring-after($scheme,"http://id.loc.gov") 
-            return
-            cts:and-query((cts:collection-query(($scheme)), $rdftypequery)) (: 1 or infinity :)
+        if (matches($scheme, "resources/works")) then            
+		    cts:and-query((
+						cts:or-query((
+							cts:collection-query(("/authorities/bfworks/")),
+							cts:collection-query(($scheme))
+							)),
+						 $rdftypequery))
+		  else if (matches($scheme, "(authorities|vocabulary|resources)")) then    
+            cts:and-query((cts:collection-query(($scheme)), $rdftypequery)) 
         (: if not recursive authorities or vocab, then take the scheme provided and do the search at that directory level only :)
-        else if ($scheme ne "all" (:and matches($scheme, "(authorities|vocabulary)/(.+)/.+$"):)) then
+        else if ($scheme ne "all" ) then
             cts:and-query((cts:directory-query(($scheme), "1"), $rdftypequery))
         (: search entire database :)
         else
-            cts:and-query((cts:directory-query(("/authorities/", "/vocabulary/"), "infinity"), $rdftypequery)),
+            cts:and-query((cts:directory-query(("/authorities/", "/vocabulary/"), "infinity"), $rdftypequery))
+
+(: skip stubs :)
+let $ctsquery:=cts:and-not-query(
+								$ctsquery,cts:collection-query("/bibframe/stubworks/")        
+								)
         
-        (: Do not include classification in suggest :)    
-        cts:directory-query(("/authorities/classification/"), "1")
-    )
-let $searchLabel :=     
-        xs:QName("idx:nameTitle")
+let $searchLabel :=  if ($term="token") then
+				  			xs:QName("idx:token")
+					else if ($term="lccn") then
+					  		xs:QName("idx:lccn")
+					else
+					      xs:QName("idx:nameTitle")
+
+let $searchLabel2 :=       xs:QName("idx:title")
         
 let $stop := xs:integer($offset) + xs:integer($resultCount) - 1
-let $completions := (cts:element-value-match($searchLabel, concat(normalize-space($q), "*"), ("case-insensitive", 
-"diacritic-insensitive", "ascending", "collation=http://marklogic.com/collation/en/S1"), ($ctsquery)))[xs:integer($offset) 
-to $stop]
+(:	let $_:=xdmp:log($ctsquery,"info"):)			
+let $completions:=
+if ( fn:not($term)) then
+	distinct-values(
+				(
+				((cts:element-value-match($searchLabel2, concat(normalize-space($q), "*"),("case-insensitive", "diacritic-insensitive", "ascending", "collation=http://marklogic.com/collation/codepoint"), ($ctsquery))))
+				,((cts:element-value-match($searchLabel, concat(normalize-space($q), "*"),("case-insensitive", "diacritic-insensitive", "ascending", "collation=http://marklogic.com/collation/en/S1"), ($ctsquery))))
+				)
+	)[xs:integer($offset) to $stop]
+else 
+
+				cts:search(
+		           /mets:mets,   cts:element-value-query($searchLabel, $q)
+				   )
+					 
+
 
 let $search := 
-    for $c in $completions
-    
-    let $mets := cts:search(
-            /mets:mets, 
-            cts:and-query(
-                (cts:element-range-query($searchLabel, "=", $c, ( "collation=http://marklogic.com/collation/en/S1")), $ctsquery)
-                )
-            )
-    return string($mets[1]/@OBJID)
-let $descriptions :=
-    if (count($completions) gt 0) then
+    for $c in $completions    
+ 		let $mets :=  if (fn:not($term) ) then
+			cts:search(
+		           /mets:mets,                                
+					cts:and-query((
+							$ctsquery,
+							cts:or-query((
+		                          cts:element-range-query($searchLabel, "=",$c, ( "collation=http://marklogic.com/collation/en/S1") ),
+								  cts:element-range-query($searchLabel2, "=",$c, ( "collation=http://marklogic.com/collation/codepoint") )
+							))
+		            ))                    
+                  )                              
+				  
+				  else $c[1]
+				  
+    		return string($mets[1]/@OBJID)
+
+(: term= missing or lccn or token 
+	if it's a nametitle, you found the work 
+:)
+let $search:= 
+	if (fn:contains($search[1],"works.n") and $term="lccn") then
+						$search
+		   				(:	let $uri:=fn:replace($search,"loc\.natlib","resources")
+			   				let $uri:=concat("http://id.loc.gov/", $uri)
+							let $uri:=fn:replace($uri,"\.","/")
+							return  $uri
+						:)
+				else  if (fn:not($term) or $term="token") then
+							$search
+				else (: regular lccn, found on instance, go look for work :)
+				  for $t in $search
+           				let $uri:=fn:replace($t,"\.","/")
+		   				let $uri:=fn:replace($uri,"loc/natlib","resources")
+		   				let $uri:=concat("http://id.loc.gov/", $uri)
+
+						let $spq:=
+								 <query><![CDATA[
+										PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                      					PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+											PREFIX rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>
+											PREFIX bf: 		<http://id.loc.gov/ontologies/bibframe/>
+											PREFIX bflc: 	<http://id.loc.gov/ontologies/bflc/>								      
+									       
+										  select distinct ?relateduri ?agent ?title
+										  
+										  where { ?uri bf:instanceOf ?relateduri    .
+												  ?relateduri bf:title ?titlenode .
+												  ?titlenode rdfs:label ?title .
+								optional { ?relateduri bf:contribution ?c .
+									            ?c bf:agent ?a .
+									            ?a rdfs:label ?agent  .
+							                    }   
+											}	LIMIT 1
+	                    
+	                                    
+								                ]]></query>
+							let $params := 
+							        map:new((
+							            map:entry( "uri", sem:iri( $uri))
+							            (:map:entry( "lccn",   $lccn-param):)
+							        ))
+							let $res:=
+								sem:query-results-serialize( sem:sparql($spq, $params, ()				)
+													)//sparql:results 
+							return $res
+
+
+ let $docs := 
+    for $c in $completions    
+ 		let $mets := if (fn:not($term) ) then
+			cts:search(
+		           /mets:mets,                                
+					cts:and-query((
+							$ctsquery,
+							cts:or-query((
+		                          cts:element-range-query($searchLabel, "=",$c, ( "collation=http://marklogic.com/collation/en/S1") ),
+								  cts:element-range-query($searchLabel2, "=",$c, ( "collation=http://marklogic.com/collation/codepoint") )
+							))
+		            ))                    
+                  )       
+				  else ()                       
+    	return $mets[1]/mets:dmdSec[@ID="bibframe"]
+ 
+ 
+
+let $descriptions := if ($term) then "1 result" else
+    if (count($completions) gt 0 ) then
         let $freq :=
             for $t in $completions
             let $freqstring := cts:frequency($t) cast as xs:string
@@ -100,29 +205,108 @@ let $descriptions :=
                     concat($freqstring, " results")
         return
             $freq
-    else
-        ()
+	else
+       			()
+let $idnametitles:=  if ($term="lccn" and fn:not(fn:contains($search[1],"works.n"))) then
+						for $t in $search/sparql:result[1]
+						return fn:concat(fn:string($t//sparql:binding[@name="agent"])," ", fn:string( $t/sparql:binding[@name="title"]))
+				 else if ($term) then (: nametitle lccn or token; completions has the work :)
+					for $c in $completions
+							return fn:string( ($c//idx:index/idx:nameTitle|$c//idx:index//idx:aLabel|$c//mets:dmdSec[@ID="index"]//idx:title[1])[1])
+				else ()
+
 let $queryurls :=
     if (count($completions) gt 0) then
         let $qurls :=
             for $t in $search
-            let $preurl := substring-before($t, ".xml")
-            return
-                concat("http://id.loc.gov", $preurl) (:concat('"/search/?q=', encode-for-uri($t), '&amp;q="') :) 
+					return if ($term="lccn" and fn:not(fn:contains($search[1],"works.n"))) then
+						fn:string($t//sparql:binding[@name="relateduri"][1]/sparql:uri)
+							(: <results xmlns=\"http://www.w3.org/2005/sparql-results#\"><result><binding name=\"relateduri\"><uri>http://id.loc.gov/resources/works/c014575167</uri></binding><binding name=\"agent\"><literal>Research &amp; Education Association.</literal></binding><binding name=\"title\"><literal>The best teachers' test preparation for the ICTS, Illinois Certification Testing System : basic skills test, elementary/middle grades tests</literal></binding></result></results> :)
+					else
+           				let $uri:=fn:replace($t,"\.","/")
+		  				 let $uri:=fn:replace($uri,"loc/natlib","resources")
+		   
+           		 return
+					concat("http://id.loc.gov/", $uri)
+				
         return
             $qurls
     else
         ()
-let $jsondoc := 
+
+let $queryfields :=
+    if (count($completions) gt 0) then
+        let $qf :=
+            for $t in $docs
+           	
+            return
+            	fn:string($t//rdf:RDF/bf:Work/bf:title[1])
+				
+        return
+            $qf
+    else
+        ()
+
+
+let $ids :=
+    if (count($completions) gt 0) then        
+            (for $t in $search
+              return
+                tokenize($t,"\.")[last()]
+				)
+        
+    else
+        ()
+
+let $xmldoc:=<suggestions>
+						<completions>{for $item in $completions return <item>{$item}</item>}</completions>
+						<descriptions>{for $item in $descriptions return <item>{$item}</item>}</descriptions>
+						<queryurls>{for $item in $queryurls return <item>{$item}</item>}</queryurls>
+						<ids>{for $item in $ids return <item>{$item}</item>}</ids>
+						<queryfields>{for $item in $queryfields return <item>{$item}</item>}</queryfields></suggestions>
+
+let $jsondoc := if (fn:not($term)) then
     json:document(
         json:array((
-            $q, json:array(($completions)), json:array(($descriptions)), json:array(($queryurls))
+            $q, json:array(($completions)), json:array(($descriptions)), json:array(($queryurls)), json:array(($ids))
         ))
     )
-return $jsondoc(:
-        if ($callback) then
-                (xdmp:set-response-content-type("application/javascript; charset=utf-8"), concat(replace($callback, "[^a-zA-Z0-9_]", ""), "(", json:serialize($jsondoc), ");"))
+	else 
+	 json:document(
+        json:array((
+            $q, json:array(($idnametitles[1]) ),  json:array(($descriptions[1])), json:array(($queryurls[1])), json:array(($ids[1]))
+        ))
+    )
+
+(:					  
+   	return 
+		if ($search) then		 		
+			(
+			        xdmp:set-response-content-type($mime), 		            
+					xdmp:add-response-header("Access-Control-Allow-Origin", "*") ,
+					$resp
+					)
+		else
+			xdmp:set-response-code(404,"Item Not found")
+			:)
+return
+		if ($search) then		
+ 		(
+		if ($mimetype ="xml") then
+				( xdmp:set-response-content-type("application/text+xml; charset=utf-8"),
+					$xmldoc
+				)
+       	else if ($callback) then
+                ( xdmp:set-response-content-type("application/javascript; charset=utf-8"), 
+					xdmp:add-response-header("Access-Control-Allow-Origin", "*") ,
+				 	concat(replace($callback, "[^a-zA-Z0-9_]", ""), "(", json:serialize($jsondoc), ");")
+				)
         else
-                (: (xdmp:set-response-content-type("application/json; charset=utf-8"), json:serialize($jsondoc)) :)
-                (xdmp:set-response-content-type("application/x-suggestions+json; charset=utf-8"), json:serialize($jsondoc))
-:)
+                                 
+				(xdmp:set-response-content-type("application/x-suggestions+json; charset=utf-8"),
+				 xdmp:add-response-header("Access-Control-Allow-Origin", "*") ,
+				 json:serialize($jsondoc)
+				 ) 					
+		)
+else
+			xdmp:set-response-code(404,"Item Not found")

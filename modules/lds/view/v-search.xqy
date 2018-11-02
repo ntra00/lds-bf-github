@@ -13,7 +13,7 @@ declare default collation "http://marklogic.com/collation/en/S1";
 
 declare function vs:render() as element(div) {
     let $mypage := lp:get-param-integer($lp:CUR-PARAMS, 'pg', 1)
-    let $sortorder as xs:string? := lp:get-param-single($lp:CUR-PARAMS,'sort','score-dec')            
+    let $sortorder as xs:string? := lp:get-param-single($lp:CUR-PARAMS,'sort','score-desc')            
     (:let $collection := lp:get-param-single($lp:CUR-PARAMS, 'collection')         :)
     let $count-str :=    lp:get-param-single($lp:CUR-PARAMS, 'count')
     let $count := lp:get-param-integer($lp:CUR-PARAMS,'count',$cfg:RESULTS-PER-PAGE)        
@@ -72,6 +72,10 @@ declare function vs:render() as element(div) {
 	            </option>)  
 		       else ()
             }
+			 <option value="idx:lccn">
+                {if ($qname eq "idx:lccn") then attribute selected {"selected"} else ()}
+                LCCN
+            </option>
         </select>
 
 
@@ -107,7 +111,7 @@ declare function vs:render() as element(div) {
                 </form>
               {if ($branding='lds') then  
 			    <span class="searchhelp">
-                    <a href="/static/natlibcat/html/help.html">Search Tips</a>
+                    <a href="/static/lds/html/help.html">Search Tips</a>
                 </span>
 				else ()
 				}

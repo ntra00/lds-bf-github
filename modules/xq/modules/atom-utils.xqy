@@ -1,18 +1,45 @@
 xquery version "1.0-ml";
 
 module namespace feed = "info:lc/xq-modules/atom-utils";
-declare namespace search = "http://marklogic.com/appservices/search";
+import module namespace mets-utils = "info:lc/xq-modules/mets-utils" at "mets-utils.xqy";
+import module namespace search = "http://marklogic.com/appservices/search" at "/MarkLogic/appservices/search/search.xqy";
+(:declare namespace search = "http://marklogic.com/appservices/search";:)
 declare namespace mets = "http://www.loc.gov/METS/";
 declare namespace mods = "http://www.loc.gov/mods/v3";
 declare namespace mxe = "http://www.loc.gov/mxe";
 declare namespace mxe2 = "http://www.loc.gov/mxe";
 declare namespace idx = "info:lc/xq-modules/lcindex";
+declare namespace index = "info:lc/xq-modules/lcindex";
+declare namespace bf = "http://id.loc.gov/ontologies/bibframe/";
 declare namespace atom = "http://www.w3.org/2005/Atom";
 declare namespace prop = "http://marklogic.com/xdmp/property";
 declare namespace georss = "http://www.georss.org/georss";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare default element namespace "http://www.w3.org/1999/xhtml";
+(:~
+:   Get index document
+:	Currently generates index from madsrdf if its not bf and on test
+: from id, format:get-index
+:
+:   @param  $uri            is DB uri of METS document
+:   @return element
+:)
+declare function feed:get-index(
+    $uri as xs:string
+    ) as element()
+{
+    (: name title works hav both indexes; 
+		/resources/works/n2018040054
+	:)
+	
+	if(mets-utils:get-mets-dmdSec('ldsindex', $uri)!= <empty/>) then
+			mets-utils:get-mets-dmdSec('ldsindex', $uri) 
+      else if(mets-utils:get-mets-dmdSec('index', $uri)!= <empty/>) then
+        mets-utils:get-mets-dmdSec('index', $uri)    
+      else 
+        element index:index{} 
 
+};
 declare variable $feed:idx :=
 	<idx:indexTerms version="20101105">
 	  <idx:display>
@@ -113,7 +140,82 @@ declare variable $feed:test :=
   </search:metrics>
 </search:response>
 ;
+(:~
+:   Feed search 
+:
+:   @param  $directory          is the directory to search (changed to collection in BF Db., ie. /resources/works/)
+:   @param  $search-start       is start position
+:   @param  $search-count       is number of hits to return
+:   @return search:response as element
+:)
+declare function feed:search-feed(
+    $directory as xs:string,
+    $search-start as xs:integer,
+    $search-count as xs:integer
+    )
+    as element(search:response)
+{
+    let $search-options :=       
+        <options xmlns="http://marklogic.com/appservices/search">         
+            <additional-query>{cts:collection-query($directory)}</additional-query>
+             <sort-order type="xs:date" direction="descending">
+                <search:element ns="info:lc/xq-modules/lcindex" name="mDate"/>
+            </sort-order>
+            <sort-order type="xs:date" direction="descending">
+                <search:element ns="info:lc/xq-modules/lcindex" name="cDate"/>
+            </sort-order>
+			<transform-results apply="empty-snippet" />
+			<return-metrics>{fn:false()}</return-metrics>
+        </options>
+    return search:search("",$search-options,$search-start,$search-count)
+};
+(:
+feed based on director (names, subjects etc
+field, (040a)
+value (CMalG)
 
+:)
+declare function feed:search-advanced-feed(
+    $directory as xs:string,
+    $field as xs:string,
+    $value as xs:string,
+    $search-start as xs:integer,
+    $search-count as xs:integer
+    )
+    as element(search:response)
+{ 
+let $opts:=("case-insensitive","diacritic-insensitive",    "punctuation-insensitive",   "wildcarded")
+    
+    let $search-options :=
+    if (fn:contains($field,"subfield")) then (:mxe:d100_subfield_a means search this subfield, can use element-value-query :) 
+        <options xmlns="http://marklogic.com/appservices/search">         
+             <additional-query>{cts:collection-query($directory)}</additional-query>
+             <additional-query>{cts:element-value-query( xs:QName( $field),$value,$opts)}</additional-query>
+            <sort-order type="xs:date" direction="descending">
+                <element ns="info:lc/xq-modules/lcindex" name="mDate"/>
+            </sort-order>
+            <sort-order type="xs:date" direction="descending">
+                <element ns="info:lc/xq-modules/lcindex" name="cDate"/>
+            </sort-order>
+        </options>
+        
+        else (:mxe:datafield_100 means search all subfields, can't use element-value-query :)
+        <options xmlns="http://marklogic.com/appservices/search">         
+             <additional-query>{cts:collection-query($directory)}</additional-query>
+             <additional-query>{cts:element-query( xs:QName( $field),$value)}</additional-query>
+            <sort-order type="xs:date" direction="descending">
+                <element ns="info:lc/xq-modules/lcindex" name="mDate"/>
+            </sort-order>
+            <sort-order type="xs:date" direction="descending">
+                <element ns="info:lc/xq-modules/lcindex" name="cDate"/>
+            </sort-order>
+        </options>
+        
+    return
+     search:search("",$search-options,$search-start,$search-count)
+
+};
+(: not used in BF database? see AtomPub.xqy :)
 declare function feed:search-api-to-Atom($content as element(search:response), $query as xs:string) as element(atom:feed) {
     let $queryStr := 
         if ($content/search:qtext) then
@@ -122,26 +224,26 @@ declare function feed:search-api-to-Atom($content as element(search:response), $
             $query
     let $dateTime := current-dateTime()
     return
-        <atom:feed xmlns:georss="http://www.georss.org/georss" xmlns:atom="http://www.w3.org/2005/Atom">
-            <atom:title>loccatalog.loc.gov search results for: "{$queryStr}"</atom:title>
+        <atom:feed xmlns:atom="http://www.w3.org/2005/Atom">
+            <atom:title>BIBFRAME LDS search results for: '{$queryStr}'</atom:title>
             <atom:updated>{$dateTime}</atom:updated>
-            <atom:link rel="self" href="http://blah.org/" type="application/atom+xml"/>
-            <atom:id>info:lc/blah</atom:id>
+            <atom:link rel="self" href="http://example.org/" type="application/atom+xml"/>
+            <atom:id>info:lc/</atom:id>
             <atom:author>
                 <atom:name>Library of Congress</atom:name>
                 <atom:email>info@loc.gov</atom:email>
             </atom:author>
             {
                 for $pt in $content/search:result
-                let $uri := string($pt/@uri)
-                let $props := xdmp:document-properties($uri)/prop:properties
+                let $uri := string($pt/@uri)                
                 let $mets := doc($uri)/mets:mets
+				let $edit:=string($mets//mets:metsHdr/@LASTMODDATE)
                 let $mods := $mets//mods:mods
                 let $objid := string($mets/@OBJID)
-                let $idx := $mets/mets:dmdSec[@ID="IDX1"]/mets:mdWrap[@MDTYPE="OTHER"]/mets:xmlData/idx:indexTerms
+                let $idx := $mets/mets:dmdSec[@ID="index"]/mets:mdWrap[@MDTYPE="OTHER"]/mets:xmlData/idx:*
                 let $display := $idx/idx:display
-                let $link := concat("http://loccatalog.loc.gov/", $objid)
-                let $id := concat("info:lc/", $objid)
+                let $link := concat("http://mlvlp04.loc.gov:8230/", $objid)
+                let $id :=  $objid
                 let $title := 
                     <a href="{$link}">                    
                     {
@@ -169,32 +271,48 @@ declare function feed:search-api-to-Atom($content as element(search:response), $
                             string-join($mets/mets:dmdSec[@ID="dmd2"]/mets:mdWrap[@MDTYPE="MARC"]/mets:xmlData/mxe:record/mxe:datafield_260/child::*, " ")
                     }
                     </span>
+				let $pubdate:=string($mets/mets:dmdSec[@ID="bibframe"]//bf:provisionActivity[1]/bf:ProvisionActivity[1]//bf:date[1])
+
+				let $lccn :=
+                    <span class="lccn">
+                    {
+                        if (exists($idx/idx:lccn)) then
+                            string($idx/idx:lccn)
+                        else
+                            ()
+                    }
+                    </span>
                 let $typeOfMaterial :=
                     <span class="format">
                     {
                         if (exists($display/idx:typeOfMaterial)) then
                             string($display/idx:typeOfMaterial) 
-                        else
+                        else if (exists($idx/idx:rdftype)) then
+						 	string($idx/idx:rdftype[1])
+						else
                             string($idx/idx:form[1])
                     }
                     </span>
-                let $html :=
+                (:<div>Main Title: {$title}</div>:)
+				let $html :=
                     (
-                        <div xmlns="http://www.w3.org/1999/xhtml">
-                            <div>Main Title: {$title}</div>
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="details">                            
                             <div>Type of Material: {$typeOfMaterial}</div>
-                            <div>Personal Name: {$creator}</div>
+                            <div>Creator/Contributor: {$creator}</div>
                             <div>Published/Created: {$publisher}</div>
-                            <hr />
+							<div>LCCN: {$lccn}</div>                         
                         </div>
                     )
                 return
                     <atom:entry>
                         <atom:title>{$display/idx:title/string()}</atom:title>
-                        <atom:updated>{$props/prop:last-modified/string()}</atom:updated>
+						<atom:author><atom:name>{string($creator)}</atom:name></atom:author>
+						<atom:category>{string($typeOfMaterial)}</atom:category>
+                        <atom:updated>{$edit}</atom:updated>
+						<atom:published>{$pubdate}</atom:published>
                         <atom:link href="{$link}"/>
-                        <atom:id>{$id}</atom:id>
-                        <atom:summary type="xhtml">{$html}</atom:summary>
+                        <atom:id>{if ($lccn) then string($lccn) else $id}</atom:id>
+                        <atom:summary  type="xhtml">{$html}</atom:summary>
                     </atom:entry>
             }
         </atom:feed>
@@ -205,7 +323,7 @@ declare function feed:mets-to-atom($content, $query as xs:string) as element(ato
     let $dateTime := current-dateTime()
     return
         <atom:feed xmlns:georss="http://www.georss.org/georss" xmlns:atom="http://www.w3.org/2005/Atom">
-            <atom:title>loccatalog.loc.gov search results for: "{$queryStr}"</atom:title>
+            <atom:title>bf database search results for: "{$queryStr}"</atom:title>
             <atom:updated>{$dateTime}</atom:updated>
             <atom:link rel="self" href="http://blah.org/" type="application/atom+xml"/>
             <atom:id>info:lc/blah</atom:id>

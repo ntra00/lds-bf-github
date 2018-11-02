@@ -1,7 +1,7 @@
 xquery version "1.0-ml";
 
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/nlc/config.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/nlc/lib/l-param.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
 declare namespace em = "URN:ietf:params:email-xml:";
 declare namespace rf = "URN:ietf:params:rfc822:";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";

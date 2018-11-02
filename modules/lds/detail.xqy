@@ -37,18 +37,19 @@ declare function local:output($msie as xs:boolean, $seo as element(meta)+, $main
         )
     let $atom := ()
     
-     let $myhead := 
-            (:if ($maindiv//h1/span[@property="bf:authorizedAccessPoint"]) then bibframe! :)
-			if ($maindiv//h1/span[contains(@property,'authoritativeLabel')]) then
-			
-                 <header>{ssk:default-header($htmltitle,$uri, $htmltitle,$url-prefix)}</header>         
+     let $myhead :=             
+			if (fn:matches($maindiv//span[@id="detailURL"],"(works|instances|items)")  ) then			
+				ssk:header($htmltitle, $crumbs, $msie, $atom, $seo, $uri, "bibRecord")
             else
                 ssk:header($htmltitle, $crumbs, $msie, $atom, $seo, $uri, $objectType)
-    let $searchbar :=
+    
+	
+	let $searchbar :=
         <div id="search-results">
             {vs:render()}
         </div>
-	let $dev-div:=	if ( contains($cfg:DISPLAY-SUBDOMAIN,"mlvlp04") and (not( xdmp:get-request-header('X-LOC-Environment')) or  xdmp:get-request-header('X-LOC-Environment')!='Staging' )) then
+	let $dev-div:=	
+	if ( contains($cfg:DISPLAY-SUBDOMAIN,"mlvlp04") and (not( xdmp:get-request-header('X-LOC-Environment')) or  xdmp:get-request-header('X-LOC-Environment')!='Staging' )) then
 						<div class="top" style="background-color:#e0ffff;color=white; width=100%;text-align:center;font-size:120%;"><strong>Development Site</strong></div>
 					else
 					()
@@ -56,6 +57,7 @@ declare function local:output($msie as xs:boolean, $seo as element(meta)+, $main
     return   
         <html xmlns="http://www.w3.org/1999/xhtml">
             {$myhead/child::*[1]}
+			
             <body>{$dev-div} 
                 {$myhead/body/div}                              
                 <div id="ds-container">
@@ -93,6 +95,7 @@ let $seo:=<meta>{$detail-result//*:metatags}</meta>
 let $maindiv := $detail-result[2] (: html div or error:error :)
 (: this has not been reliably the right uri , so start using the hidden span tag in the main div 
 let $uri as xs:string? := lp:get-param-single($lp:CUR-PARAMS, 'uri'):)
+
 let $uri as xs:string? := $maindiv//span[@id="detailURL"]/string()
 
 

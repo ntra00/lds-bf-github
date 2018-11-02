@@ -9,7 +9,7 @@ import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xq/modules/m
 import module namespace utils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
 import module namespace index= "info:lc/xq-modules/index-utils" at "/xq/modules/index-utils.xqy";
 import module namespace resp = "info:lc/xq-modules/http-response-utils" at "/xq/modules/http-response-utils.xqy";
-import module namespace rdfaxhtml = "info:lc/id-modules/rdfaxhtml#" at "/xq/id-main/modules/module.RDF-2-RDFaXHTML.xqy";
+import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
 declare namespace mets = "http://www.loc.gov/METS/";
 declare namespace mods = "http://www.loc.gov/mods/v3";
 declare namespace marc="http://www.loc.gov/MARC21/slim";
@@ -19,20 +19,25 @@ declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare default element namespace "http://www.w3.org/1999/xhtml";
 
 declare function local:output($msie as xs:boolean, $detail-result as element(div)*, $uri as xs:string, $mime as xs:string, $behavior as xs:string) as element(html) {
-    let $htmltitle := 
-        if ($uri) then
-            let $title := fn:string-join( $detail-result//h1[@id eq 'title-top' or not(@id)]//text(), " ")
-            return
-            if ($title) then $title else "Record Detail"
-        else
-            "Record Detail"
-			
+    let $title:=fn:string-join($detail-result//h1[@id eq 'title-top' or not (@id)]//text(), " ")
+	
+	let $crumb:=
+				 if (contains($uri, "work")) then  "Work Description"
+					else if  (contains($uri,"instance")) then "Instance Description"
+					else if  (contains($uri,"item" )) then "Item Description"
+					else "Description Detail"
+        
+	let $htmltitle:=if ($title) then $title
+						else if ($uri) then fn:concat($uri," ", $crumb)
+						else $crumb
+
+					
 	let $objectType as xs:string? := $detail-result//span[@id="objectType"]/string()
 	let $objectType := if (not($objectType) ) then "workRecord" else $objectType
 
 	
 	(:let $objectType as xs:string? := "modsBibRecord":)
-    let $crumbs := <span class="ds-searchresultcrumb">Record Detail</span>
+    let $crumbs := <span class="ds-searchresultcrumb">{$crumb}</span>
     let $atom := ()
     let $seo := <meta>{$detail-result//*:metatags}</meta>
     
@@ -51,7 +56,7 @@ declare function local:output($msie as xs:boolean, $detail-result as element(div
                     <div id="msgbox">
                         <div class="fright">
                             <a id="msgclose">
-                                <img alt="Close" src="/static/natlibcat/images/close.jpg"/>
+                                <img alt="Close" src="/static/lds/images/close.jpg"/>
                             </a>
                         </div>
                         <br class="break"/>
@@ -84,11 +89,23 @@ declare function local:output($msie as xs:boolean, $detail-result as element(div
 (: input parameters :)
 
 let $uri as xs:string? := lp:get-param-single($lp:CUR-PARAMS, "uri")
-let $behavior := lp:get-param-single($lp:CUR-PARAMS, 'behavior','default')
+let $behavior := lp:get-param-single($lp:CUR-PARAMS, 'behavior','bfview')
 let $mime := mime:safe-mime(lp:get-param-single($lp:CUR-PARAMS, 'mime', 'text/html'))
+let $dmdsec := mime:safe-mime(lp:get-param-single($lp:CUR-PARAMS, 'subset', '')) (:semtriples:)
 let $duration := $cfg:HTTP_EXPIRES_CACHE
+
 return
-    if (matches($mime, "application/mets\+xml")) then				
+   	if ($dmdsec="semtriples" ) then
+	(: not finished :)
+			if (exists(utils:mets($uri))) then
+				let $doc:=utils:get-mets-dmdSec("semtriples",$uri )/*
+				return sem:rdf-serialize(sem:rdf-parse($doc/node(),"rdfxml"),"ntriple")
+				(:sem:rdf-serialize(sem:rdf-parse($doc/node(),"rdfxml"),"turtle"):)
+				
+			else 
+				xdmp:set-response-code(404,"Item Not found")
+
+	else    if (matches($mime, "application/mets\+xml")) then				
 			if (exists(utils:export-mets($uri))) then
 			 (
 		            xdmp:set-response-content-type("text/xml; charset=utf-8"), 
@@ -98,33 +115,87 @@ return
 	        		)				
 			else
 				xdmp:set-response-code(404,"Item Not found")
+		
+		else if ($dmdsec="semtriples" and matches($mime, "text/turtle")) then			
+			(
+	            xdmp:set-response-content-type("text/turtle; charset=utf-8"), 
+	            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
+	            xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
+				if (exists(utils:mets($uri))) then
+	            	let $doc:=document{utils:get-mets-dmdSec("semtriples",$uri )}
+    				return 
+	
+   					 try{
+							sem:rdf-serialize(sem:rdf-parse($doc/node(),"rdfxml"),"turtle")
+						}
+					 catch($e) { ( (),
+					 	xdmp:log(fn:concat("DISPLAY: RDF conversion error for ",$uri),"info")					 	
+					 	)
+					 }
+   
+				else
+					xdmp:set-response-code(404,"Item Not found")
+        	)
+        
 		else if (matches($mime, "application/rdf\+xml")) then			
 			(
 	            xdmp:set-response-content-type("text/xml; charset=utf-8"), 
 	            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
 	            xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
-				if (exists(utils:rdf($uri))) then
-	            	document{utils:rdf($uri)} 
+				if (exists(utils:mets($uri))) then
+	            	document{utils:rdf-ser($uri,"rdfxml")} 
 				else
 					xdmp:set-response-code(404,"Item Not found")
         	)
-        	else if (matches($mime, "application/n-triples")) then			
+			else if (matches($mime, "text/turtle")) then			
 			(
-	            xdmp:set-response-content-type("text/plain; charset=utf-8"), 
+	            xdmp:set-response-content-type("text/turtle; charset=utf-8"), 
 	            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
 	            xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
-				if (exists(utils:nt($uri))) then
-	            	document{utils:nt($uri)} 
+				if (exists(utils:mets($uri))) then
+	            	document{utils:rdf-ser($uri,"ttl")} 
 				else
 					xdmp:set-response-code(404,"Item Not found")
         	)
+        	else if (matches($mime, "text/n3")) then			
+			(
+	            xdmp:set-response-content-type("text/n3; charset=utf-8"), 
+	            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
+	            xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
+				if (exists(utils:mets($uri))) then
+	            	document{utils:rdf-ser($uri,"n3")} 
+				else
+					xdmp:set-response-code(404,"Item Not found")
+        	)
+			else if (matches($mime, "application/n-triples")) then			
+			(
+	            xdmp:set-response-content-type("application/n-triples; charset=utf-8"), 
+	            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
+	            xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
+				if (exists(utils:mets($uri))) then
+	            	document{utils:rdf-ser($uri, "nt")} 
+				else
+					xdmp:set-response-code(404,"Item Not found")
+        	)
+			
         	else if (matches($mime, "application/json")) then			
 			(
-	            xdmp:set-response-content-type("text/plain; charset=utf-8"), 
+	            xdmp:set-response-content-type("application/json; charset=utf-8"), 
 	            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
 	            xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
-				if (exists(utils:json($uri))) then
-	            	document{utils:json($uri)} 
+				if (exists(utils:mets($uri))) then
+	         
+					document{utils:json($uri,"json")}
+				else
+					xdmp:set-response-code(404,"Item Not found")
+        	)
+			else if (matches($mime, "application/ld\+json")) then			
+			(
+	            xdmp:set-response-content-type("application/ld+jsonld; charset=utf-8"), 
+	            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
+	            xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
+				if (exists(utils:mets($uri))) then	            	
+					document{utils:json($uri,"jsonld")}
 				else
 					xdmp:set-response-code(404,"Item Not found")
         	)
@@ -133,11 +204,37 @@ return
 	            xdmp:set-response-content-type("text/xml; charset=utf-8"), 
 	            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
 	            xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
-				if (exists(utils:mets($uri))) then
+					utils:mets($uri)
+(:				if (exists(utils:mets($uri))) then
 	            	document{utils:mets($uri)} 
 				else
-					xdmp:set-response-code(404,"Item Not found")
+					xdmp:set-response-code(404,"Item Not found"):)
         	)
+			(: nametitle authority marc :)
+	   else if (matches($mime, "application/marcxml\+xml") and contains($uri,"resources/bibs/n")) then					
+	   		let $objid:=fn:concat("loc.natlib.works.",fn:replace($uri,"/resources/bibs/",""))
+	   		return try {( document{utils:export-mets($objid)},
+							xdmp:set-response-content-type("text/xml; charset=utf-8"), 
+				            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
+				            xdmp:add-response-header("Cache-Control", resp:cache-control($duration))
+							)
+						}
+					catch($e) {
+						xdmp:set-response-code(404,"Item Not found")
+					}
+			
+	   else if (matches($mime, "application/marcxml\+xml") and contains($uri,"resources/bibs")) then					
+	   
+				if (doc-available(fn:concat("/bibframe-process/records/",fn:replace($uri,"/resources/bibs/",""),".xml"))) then					
+					(
+		            		xdmp:set-response-content-type("text/xml; charset=utf-8"), 
+				            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
+				            xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
+				            document(fn:concat("/bibframe-process/records/",fn:replace($uri,"/resources/bibs/",""),".xml"))//marc:record
+        			)					
+				else xdmp:set-response-code(404,"Item Not found")
+
+
 		else if (matches($mime, "application/marcxml\+xml")) then						
 				if (exists(utils:export-mets($uri))) then					
 					(
@@ -178,7 +275,7 @@ return
             	xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
             	xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
 				<index:index xmlns:index="info:lc/xq-modules/lcindex">{$mets/mets:dmdSec[fn:contains(@ID,"index")]/mets:mdWrap/mets:xmlData/index:index/*}</index:index>
-			(:index:mods-to-idx($mets//mods:mods, $mets//mxe:record, $uri) :)
+			
 			)
 			   
       else  if (matches($mime, "application/srwdc\+xml")) then
@@ -207,17 +304,10 @@ return
 			               		)
 				else 	xdmp:set-response-code(404,"Item Not found") 
     else (: HTML, XHTML, etc. :)	   
-		let $detail-result := 
-				if ($behavior="bfview") then						
-						if (exists(utils:mets($uri))) then
-								let $mets:=   utils:mets($uri)
-								let $bf:= $mets/mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF
-								return 
-							 		<div id="ds-bibrecord">{rdfaxhtml:rdf2rdfaxhtml($bf)}</div>
-						else xdmp:set-response-code(404,"Item Not found")            
-				else
-						vd:render($uri)[2]
-        return (
+		let $detail-result := vd:render($uri)[2] 	
+(:		let $_:=xdmp:log(vd:render($uri)[2],"info")							:)
+        
+		return (
 		  if ($detail-result instance of element(error:error) ) then
 			  (
 			  	xdmp:set-response-code(500, $detail-result//error:message[1]/string()),      
@@ -231,7 +321,7 @@ return
                 xdmp:set-response-content-type(concat($mime, "; charset=utf-8")), 
                 xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
                 xdmp:add-response-header("Cache-Control", resp:cache-control($duration)), 
-                '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">',
+                '<!DOCTYPE html>',
                 local:output(false(), $detail-result, $uri, $mime, $behavior)
 		
             )

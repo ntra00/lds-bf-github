@@ -5,7 +5,7 @@ declare default function namespace "http://www.w3.org/2005/xpath-functions";
 
 (: Need to backslash escape any double quotes, backslashes, and newlines :)
 declare function json-utils:escape($s as xs:string) as xs:string {
-  let $s := replace($s, "\\", "\\")
+(:  let $s := replace($s, "\\", "\\") :)
   let $s := replace($s, "&quot;&quot;", "\""")
   let $s := replace($s, codepoints-to-string((13, 10)), "\n")
   let $s := replace($s, codepoints-to-string(13), "\n")

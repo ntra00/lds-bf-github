@@ -65,10 +65,10 @@ declare function vf:facets($page-name as xs:string) as element(div)* {
     let $char := 
         if($isHidden) then
             (: "+" :)
-            "/static/natlibcat/images/accordion-closed.png"
+            "/static/lds/images/accordion-closed.png"
         else
             (: "-" :)
-            "/static/natlibcat/images/accordion-open.png"
+            "/static/lds/images/accordion-open.png"
     return             
         <div class="facet-box">
            <div class="title">
@@ -89,7 +89,7 @@ declare function vf:facets($page-name as xs:string) as element(div)* {
         </div>
 };
 
-(:  ################# FACET FUNCITON POINTER TARGETS ################### :)
+(:  ################# FACET FUNCTION POINTER TARGETS ################### :)
 
 declare function vf:facet-data($params as xs:string*) {
     let $ns := $params[1]
@@ -101,7 +101,7 @@ declare function vf:facet-data($params as xs:string*) {
     let $titleid := concat("title-", $facetid)
     let $facetlistid := concat("facetlist-", $id)
     let $describeid := concat('describe-', $id)
-    let $_ := xdmp:log(text{"Entering facet-data: ", $ln}, 'fine')
+    (:let $_ := xdmp:log(text{"Entering facet-data: ", $ln}, 'fine'):)
     let $cur-params := $lp:CUR-PARAMS
 	let $cur-params := lp:param-remove-all($cur-params, "branding")
 	let $cur-params := lp:param-remove-all($cur-params, "collection")
@@ -271,7 +271,7 @@ declare function vf:facet-two-tier($params as xs:string*) {
 
 declare function vf:facet-values($ns,$ln,$id,$query-id-long,$cur-params,$options) {
     let $query := cts:registered-query($query-id-long, "unfiltered")
-    let $_ := xdmp:log(text{"Computing facet results: ",$ln,"-",$id,"-",$query-id-long}, "fine")
+    (:let $_ := xdmp:log(text{"Computing facet results: ",$ln,"-",$id,"-",$query-id-long}, "fine"):)
     return
         element vf:facet-values {
             let $values := (cts:element-values( QName($ns,$ln), (), ($options), cts:and-query((cts:collection-query($cfg:DEFAULT-COLLECTION),$query)) ))
@@ -296,7 +296,7 @@ declare function vf:facet-data-cache($params as xs:string*) {
     let $ns := $params[1]
     let $ln := $params[2]
     let $id := $params[3]
-    let $_ := xdmp:log(text{"Entering facet-data-cache: ",$ln},'fine')
+    (:let $_ := xdmp:log(text{"Entering facet-data-cache: ",$ln},'fine'):)
     let $cur-params := $lp:CUR-PARAMS
     let $query-id-long := cts:register( lq:query-from-params($cur-params) )
     let $query-id-string := concat($ln,"-",$id,"-",xs:string($query-id-long))
@@ -326,7 +326,7 @@ declare function vf:facet-link-selected-multi-tier($tiers, $current-tier, $last-
     return
     (
         <li class="facet-{$id-this}" style="margin-left:{(($current-tier - 1) * 15)}px;">
-            <span class="facet-selected">{$val1}</span> [{format-number($freq, "#,###") }] <a href="{concat($url-prefix,'search.xqy?',$new-params-str)}"><img src="/static/natlibcat/images/plus.gif" alt="Remove facet: {$val1}" /></a>
+            <span class="facet-selected">{$val1}</span> [{format-number($freq, "#,###") }] <a href="{concat($url-prefix,'search.xqy?',$new-params-str)}"><img src="/static/lds/images/plus.gif" alt="Remove facet: {$val1}" /></a>
         </li>,
         if(($current-tier + 1) le $last-tier) then
             vf:facet-tier($tiers, $current-tier + 1, $last-tier)
@@ -347,7 +347,7 @@ declare function vf:facet-link-remove-two-tier($ns1, $ln1, $id1, $ns2, $ln2, $id
 	let $url-prefix:=concat("/",$branding,"/")
     return
     <li>
-        <span class="facet-selected">{$val1}</span> [{format-number($freq, "#,###") }] <a href="{concat($url-prefix,'search.xqy?',$new-params-str)}" ><img src="/static/natlibcat/images/plus.gif" alt="Remove facet: {$val1}" /></a>
+        <span class="facet-selected">{$val1}</span> [{format-number($freq, "#,###") }] <a href="{concat($url-prefix,'search.xqy?',$new-params-str)}" ><img src="/static/lds/images/plus.gif" alt="Remove facet: {$val1}" /></a>
         <ul style="margin-left:15px;">
         {        
             let $query-id-string := concat($ln2,"-",$id2,"-",xs:string($query-id-long))
@@ -390,7 +390,7 @@ declare function vf:facet-link-remove($ns, $ln, $id, $cur-params, $val, $freq) {
     return    
         <li>
             <!-- &#x2611; for check mark and &#x2612; for X mark -->
-            <span class="facet-selected">{$val}</span> [{format-number($freq, "#,###") }] <a href="{concat($url-prefix,'search.xqy?',$new-params-str)}"><img src="/static/natlibcat/images/plus.gif" alt="Remove facet: {$val}" /></a>
+            <span class="facet-selected">{$val}</span> [{format-number($freq, "#,###") }] <a href="{concat($url-prefix,'search.xqy?',$new-params-str)}"><img src="/static/lds/images/plus.gif" alt="Remove facet: {$val}" /></a>
         </li>
 };
 
@@ -408,7 +408,7 @@ declare function vf:facet-link-remove-all($ns, $ln, $ids, $cur-params, $freq, $t
     let $new-params-str := lp:param-string($new-params)
     return
     <li>
-        <span class="facet-selected">{$text}</span> [{format-number($freq, "#,###") }] <a href="{concat($url-prefix,'search.xqy?',$new-params-str)}"><img src="/static/natlibcat/images/plus.gif" alt="Remove facet: {$text}" /></a>
+        <span class="facet-selected">{$text}</span> [{format-number($freq, "#,###") }] <a href="{concat($url-prefix,'search.xqy?',$new-params-str)}"><img src="/static/lds/images/plus.gif" alt="Remove facet: {$text}" /></a>
     </li>
 };
 
@@ -426,8 +426,8 @@ declare function vf:facet-link-multi-tier-add($tiers, $current-tier, $last-tier,
     let $new-params-str := lp:param-string($new-params)
 	let $branding := lp:get-param-single($lp:CUR-PARAMS, 'branding', $cfg:DEFAULT-BRANDING)
 	let $url-prefix:=concat("/",$branding,"/")
-    let $_ := xdmp:log(fn:concat("**** $new-params-str: ", $new-params-str),"info")
-    let $_ := xdmp:log(fn:concat("**** $VAL: ", $val),"info")
+    (:let $_ := xdmp:log(fn:concat("**** $new-params-str: ", $new-params-str),"info")
+    let $_ := xdmp:log(fn:concat("**** $VAL: ", $val),"info"):)
     return
     if($cfg:SHOW-ZERO-COUNT-FACETS or ($freq gt 0)) then
         <li class="facet-{$id}" style="margin-left:{(($current-tier - 1) * 15)}px;">
@@ -449,7 +449,7 @@ declare function vf:facet-link-add($ns, $ln, $id, $cur-params, $val, $freq) {
     let $new-params-str := lp:param-string($new-params)
 	let $branding := lp:get-param-single($lp:CUR-PARAMS, 'branding', $cfg:DEFAULT-BRANDING)
 	let $url-prefix:=concat("/",$branding,"/")
-    let $_ := xdmp:log($new-params-str,"debug")
+    (:let $_ := xdmp:log($new-params-str,"debug"):)
     return
     if($cfg:SHOW-ZERO-COUNT-FACETS or ($freq gt 0)) then
         <li>
@@ -757,10 +757,10 @@ declare function vf:facets-concurrent($page-name as xs:string) {
     let $char := 
         if($isHidden) then
             (: "+" :)
-            "/static/natlibcat/images/accordion-closed.png"
+            "/static/lds/images/accordion-closed.png"
         else
             (:"-":)
-            "/static/natlibcat/images/accordion-open.png"
+            "/static/lds/images/accordion-open.png"
     return
        <div class="facet-box">
            <div class="title">

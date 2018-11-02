@@ -1,9 +1,9 @@
 xquery version "1.0-ml";
 
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/nlc/config.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/nlc/lib/l-param.xqy";
-import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "/nlc/view/v-search.xqy";
-import module namespace vf = "http://www.marklogic.com/ps/view/v-facets" at "/nlc/view/v-facets.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
+import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "/lds/view/v-search.xqy";
+import module namespace vf = "http://www.marklogic.com/ps/view/v-facets" at "/lds/view/v-facets.xqy";
 import module namespace ssk = "info:lc/xq-modules/search-skin" at "/xq/modules/natlibcat-skin.xqy";
 import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xq/modules/mime-utils.xqy";
 import module namespace resp = "info:lc/xq-modules/http-response-utils" at "/xq/modules/http-response-utils.xqy";

@@ -11,6 +11,7 @@ import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "/ld
 import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xq/modules/mime-utils.xqy";
 import module namespace feed = "info:lc/xq-modules/atom-utils" at "/xq/modules/atom-utils.xqy";
 import module namespace sru-utils = "info:lc/xq-modules/sru-utils" at "/xq/modules/sru-utils.xqy";
+import module namespace vd = "http://www.marklogic.com/ps/view/v-detail" at "/lds/view/v-detail.xqy";
 
 declare namespace qm="http://marklogic.com/xdmp/query-meters";
 declare namespace xhtml = "http://www.w3.org/1999/xhtml";
@@ -23,6 +24,7 @@ declare namespace mxe = "http://www.loc.gov/mxe";
 declare namespace mxe1 = "mxens";
 declare namespace xlink="http://www.w3.org/1999/xlink";
 declare namespace idx="info:lc/xq-modules/lcindex";
+declare namespace index="info:lc/xq-modules/lcindex";
 declare namespace ead="urn:isbn:1-931666-22-9";
 declare namespace rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 declare namespace skos="http://www.w3.org/2004/02/skos/core#";
@@ -35,6 +37,8 @@ declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare default element namespace "http://www.w3.org/1999/xhtml";
 
 declare function local:html($msie as xs:boolean, $searchres as element(div), $facets as element(div)*, $searchterm as xs:string?, $url-prefix as xs:string?) as element(html) {
+let $url-prefix := $cfg:MY-SITE/cfg:prefix/string()
+let $branding :=  $cfg:MY-SITE/cfg:branding/string()
     let $searchtitle := 
         if ($searchterm) then
             concat("Results for &quot;", <strong>{$searchterm}</strong>,"&quot;")
@@ -56,6 +60,9 @@ declare function local:html($msie as xs:boolean, $searchres as element(div), $fa
         <div id="search-results">
             {vs:render()}
         </div>
+		let $searchfilter := lp:get-param-single($lp:CUR-PARAMS, 'filter','all')
+		let $filterlinks:=vd:filter-results($searchfilter, $url-prefix ,"search") 
+
 let $suggest:=local:suggest($searchterm)
     return
         <html xmlns="http://www.w3.org/1999/xhtml">
@@ -66,8 +73,10 @@ let $suggest:=local:suggest($searchterm)
                     <div id="ds-body">						
 					<div id="page_head">			
                        {$searchbar}
-						<h1>{$site-title}<br/><span>{$searchtitle}</span></h1>
+						<h1>{$site-title}<br/><span>{$searchtitle}</span><span style="text-align:center">{$filterlinks}</span></h1>
+						
 						{$suggest}
+						
 					</div>
                     {$facets[2]}
                     <div id="ds-colcontainer">
@@ -103,6 +112,8 @@ let $qname:=lp:get-param-single($lp:CUR-PARAMS, 'qname')
             "idx:mainCreator"
         else if ($qname = "idx:titleLexicon") then
             "idx:uniformTitle"
+		else if ($qname = "idx:lccn") then
+            "idx:lccn"
         else 
             ""
 
@@ -173,7 +184,7 @@ return
 };
 (: input parameters :)
 let $page := "search"
-let $doctype := '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">'
+let $doctype := '<!DOCTYPE html>'
 let $mime := mime:safe-mime(lp:get-param-single($lp:CUR-PARAMS, 'mime', "text/html"))
 let $duration := $cfg:HTTP_EXPIRES_CACHE
 let $mypage := lp:get-param-integer($lp:CUR-PARAMS, 'pg', 1)
@@ -195,9 +206,10 @@ let $start := $longstart
 let $end := ($start - 1 + $longcount)
 let $query := lq:query-from-params($lp:CUR-PARAMS)  
 
-let $_ := xdmp:log(concat("query: ", xdmp:describe($query)),'debug')
+(: let $_ := xdmp:log(concat("query: ", xdmp:describe($query)),'info'):)
+(: this is identical in v-detail.xqy... consolidate so they dont' get out of synch?? :)
 let $results := 
-    if ($sortorder eq "score-desc") then
+    if ($sortorder eq "score-desc") then	
         (
             for $result in cts:search(collection($cln), $query,"unfiltered")
             order by cts:score($result) descending, $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
@@ -211,17 +223,21 @@ let $results :=
             return
                 $result
         )[$start to $end]
+												(: oldest to newest :)
     else if ($sortorder eq "pubdate-asc") then
         (
             for $result in cts:search(collection($cln), $query,"unfiltered")
-            order by $result//idx:pubdateSort descending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
+			order by $result//idx:mDate ascending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
+            (:order by $result//idx:pubdateSort ascending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1":)
             return
                 $result
         )[$start to $end]
+						(:  newest to oldest :)
     else if ($sortorder eq "pubdate-desc") then
         (
             for $result in cts:search(collection($cln), $query,"unfiltered")
-            order by $result//idx:pubdateSort ascending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
+            (:order by $result//idx:pubdateSort descending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1":)
+			order by $result//idx:mDate descending collation "http://marklogic.com/collation/en/S1", $result//idx:titleLexicon ascending collation "http://marklogic.com/collation/en/S1"
             return
                 $result
         )[$start to $end]
@@ -241,6 +257,7 @@ let $results :=
         )[$start to $end]
     else
         (for $result in cts:search(collection($cln), $query,"unfiltered") return $result)[$start to $end]
+
 return
     if (matches($mime, "(application/xhtml\+xml|text/html)")) then
         let $searchres :=
@@ -273,11 +290,11 @@ return
                     return
                         if (count($f) gt 0) then
                             <span class="facet">
-                                <img src="/static/natlibcat/images/arrow.gif" alt="&gt;" class="facet-arrow" />
+                                <img src="/static/lds/images/arrow.gif" alt="&gt;" class="facet-arrow" />
                                 {$fval}&nbsp;
                                 <span class="cssnav">
                                     <a href="{$myhref}" title="Remove Facet: [{$fval}]">
-                                        <img src="/static/natlibcat/images/facet-on.gif" alt="Remove Facet" />
+                                        <img src="/static/lds/images/facet-on.gif" alt="Remove Facet" />
                                     </a>
                                 </span>
                             </span>

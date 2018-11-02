@@ -1,8 +1,8 @@
 xquery version "1.0-ml";
 
 module namespace md = "http://www.marklogic.com/ps/model/m-doc";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/nlc/config.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/nlc/lib/l-param.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
 import module namespace search="http://marklogic.com/appservices/search" at "/MarkLogic/appservices/search/search.xqy";
 declare namespace mlapp = "http://www.marklogic.com/mlapp";
 declare namespace xhtml = "http://www.w3.org/1999/xhtml";

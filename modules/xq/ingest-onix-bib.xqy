@@ -51,9 +51,23 @@ let $m :=
     } catch($e) {
         $e
     }
+    let $params:=map:map()
+				let $put:=map:put($params, "baseuri", "http://id.loc.gov/resources/works/")
+				let $put:=map:put($params, "idfield", "001")
+	
 let $bf:=
     try {        
-			marcbib2bibframe:marcbib2bibframe(<marc:collection>{$mrc}</marc:collection>)
+			(: this is bf1, and it works, but we need to switch to bf2
+			 
+			 marcbib2bibframe:marcbib2bibframe(<marc:collection>{$mrc}</marc:collection>)
+	
+	:)
+			 (:this bf conversion code is not tested; probably should not be in the display code base :)
+			
+								xdmp:xslt-invoke("/admin/bfi/bibrecs/xsl/marc2bibframe2.xsl",document{$mrc},$params)			
+							}
+					
+				    
     } catch($e) {
    	  xdmp:log (  xdmp:unquote($e/error:message),"info")
     }

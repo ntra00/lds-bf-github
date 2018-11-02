@@ -1,28 +1,422 @@
 xquery version "1.0-ml";
 
-module namespace md = "http://www.marklogic.com/ps/model/m-doc";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
-import module namespace utils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
-import module namespace matconf = "info:lc/xq-modules/config/materials" at "/xq/modules/config/materialtype.xqy";
-import module namespace marcutil= "info:lc/xq-modules/marc-utils" at "/xq/modules/marc-utils.xqy";
-import module namespace rdfaxhtml = "info:lc/id-modules/rdfaxhtml#" at "/xq/id-main/modules/module.RDF-2-RDFaXHTML.xqy";
-import module namespace ssk = "info:lc/xq-modules/search-skin" at "/xq/modules/natlibcat-skin.xqy";
-import module namespace mem = "http://xqdev.com/in-mem-update" at "/xq/modules/in-mem-update.xqy";
-declare namespace mets = "http://www.loc.gov/METS/";
-declare namespace mods = "http://www.loc.gov/mods/v3";
-declare namespace idx="info:lc/xq-modules/lcindex";
-declare namespace lcvar = "info:lc/xq-invoke-variable";
-declare namespace mxe = "http://www.loc.gov/mxe";
-declare namespace mat = "info:lc/xq-modules/config/materials";
-declare namespace tei = "http://www.tei-c.org/ns/1.0";
-declare namespace xhtml = "http://www.w3.org/1999/xhtml";
-declare namespace hld = "http://www.indexdata.com/turbomarc";
-declare namespace bf    ="http://bibframe.org/vocab/";
-declare namespace l = "local";
-declare namespace rdf           = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+module namespace 		md 			= "http://www.marklogic.com/ps/model/m-doc";
+
+import module namespace cfg 		= "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace lp 			= "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
+import module namespace utils 		= "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
+import module namespace matconf		= "info:lc/xq-modules/config/materials" at "/xq/modules/config/materialtype.xqy";
+import module namespace marcutil	= "info:lc/xq-modules/marc-utils" at "/xq/modules/marc-utils.xqy";
+import module namespace display		= "info:lc/xq-modules/display-utils" at "/xq/modules/display-utils.xqy";
+import module namespace ssk 		= "info:lc/xq-modules/search-skin" at "/xq/modules/natlibcat-skin.xqy";
+import module namespace searchts 	= "info:lc/xq-modules/searchts#" at "/xq/modules/module.SearchTS.xqy";
+import module namespace mem 		= "http://xqdev.com/in-mem-update" at "/xq/modules/in-mem-update.xqy";
+
+declare namespace       functx      = "http://www.functx.com";
+declare namespace 		mets		= "http://www.loc.gov/METS/";
+declare namespace 		mods 		= "http://www.loc.gov/mods/v3";
+declare namespace 		idx			= "info:lc/xq-modules/lcindex";
+declare namespace 		lcvar 		= "info:lc/xq-invoke-variable";
+declare namespace 		mxe 		= "http://www.loc.gov/mxe";
+declare namespace 		mat 		= "info:lc/xq-modules/config/materials";
+declare namespace 		tei 		= "http://www.tei-c.org/ns/1.0";
+declare namespace 		xhtml 		= "http://www.w3.org/1999/xhtml";
+declare namespace 		hld 		= "http://www.indexdata.com/turbomarc";
+declare namespace 		bf    		= "http://id.loc.gov/ontologies/bibframe/";
+declare namespace 		bflc    	= "http://id.loc.gov/ontologies/bflc/";
+declare namespace 		l 			= "local";
+declare namespace 		rdf         = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
+declare namespace  		rdfs        = "http://www.w3.org/2000/01/rdf-schema#";
+declare namespace		sparql 		= "http://www.w3.org/2005/sparql-results#";
+declare namespace 		xdmphttp      = "xdmp:http";
+
 declare default element namespace "http://www.w3.org/1999/xhtml";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
+
+declare function md:prettify-rdf($rdf, $indent ) {
+     let $c_or_p:=if (fn:substring(fn:name($rdf),1,1) eq "ABCDEFGHIJKLMNOPQRSTUVWXYZ") then
+	 					"c"
+						else "p"
+	return 				
+	    if ( fn:name($rdf) ne "" and $c_or_p="c" ) then (: node  is a class; don't indent yet :)
+			let $attributes := 
+                   for $a in $rdf/@*
+                     return
+                       if (fn:name($a) eq "rdf:about" or fn:name($a) eq "rdf:resource") then
+                         <span>
+                            <span style="color: #0066FF"><a href="{xs:string($a)}">{xs:string($a)}</a></span>
+                         </span>
+                       else if (fn:name($a) eq "rdf:datatype") then
+                         <span> (datatype:{fn:substring-after($a, "#")}) </span>
+                       else
+                         <span>
+                             <span><b>{fn:name($a)}</b></span>=<span style="color: #0066FF">"{xs:string($a)}"</span>
+                         </span>
+			return 
+		         ( <span style="color: #1A661A">{ fn:name($rdf) }</span>	,
+	                $attributes,
+                    concat('<div style="margin-left: ',$indent,'px">'),
+	                		for $i in $rdf/child::node()
+	                   			return (  md:prettify-rdf($i, $indent + 3) ),
+							
+					 "</div>"
+					) 
+    else if ( fn:name($rdf) ne "" and xs:string($rdf) ne "" and fn:not(fn:name($rdf) eq "rdfs:label")) then (: node with text in it :)
+             <div  style="margin-left: {$indent}px">
+            { if (fn:not(upper-case(fn:name($rdf)) eq "RDF:RDF" or fn:name($rdf) eq "rdfs:label")) then
+               <span style="color: #1A661A">{ fn:name($rdf) }</span>
+             else () }
+             { if ($rdf/child::node()[fn:name()="rdfs:label"]) then
+               <span><b>["{ $rdf/child::node()[fn:name()="rdfs:label"]/text() }"] </b></span>
+              else()
+             } 
+                 {
+                     let $attributes := 
+                         for $a in $rdf/@*
+                         return
+                          if (fn:name($a) eq "rdf:about" or fn:name($a) eq "rdf:resource") then
+                             <span>
+                                <span style="color: #0066FF"><a href="{xs:string($a)}">{xs:string($a)}</a></span>
+                             </span>
+                          else if (fn:name($a) eq "rdf:datatype") then
+                            <span> (datatype:{fn:substring-after($a, "#")}) </span>
+                          else
+                             <span>
+                                 <span><b>{fn:name($a)}</b></span>=<span style="color: #0066FF">"{xs:string($a)}"</span>
+                             </span>
+                     return (" ",$attributes)
+                 } 
+                 {
+                     let $newindent := $indent + 3
+                     for $i in $rdf/child::node()
+                     return md:prettify-rdf($i, $newindent)
+                     
+                 }  
+             </div>
+                          
+    else if ( fn:name($rdf) ne "" and $rdf/child::node() and fn:not(fn:name($rdf) eq "rdfs:label")) then (: node with child  in it :)
+             <div style="margin-left: {$indent}px">
+               <span style="color: #1A661A">{ fn:name($rdf) }</span>
+                 {
+                     let $attributes := 
+                         for $a in $rdf/@*
+                         return
+                           if (fn:name($a) eq "rdf:about" or fn:name($a) eq "rdf:resource") then
+                             <span>
+                                <span style="color: #0066FF"><a href="{xs:string($a)}">{xs:string($a)}</a></span>
+                             </span>
+                           else if (fn:name($a) eq "rdf:datatype") then
+                             <span> (datatype:{fn:substring-after($a, "#")}) </span>
+                           else
+                             <span>
+                                 <span><b>{fn:name($a)}</b></span>=<span style="color: #0066FF">"{xs:string($a)}"</span>
+                             </span>
+                     return (" ",$attributes),
+					 $rdf/text()
+                 }
+                     {
+                     let $newindent := $indent + 3
+                     for $i in $rdf/child::node()
+                       return (  md:prettify-rdf($i, $newindent)                     )
+                     }
+             </div>
+    else if ( fn:name($rdf) ne "" and xs:string($rdf) eq "" and fn:not(fn:name($rdf) eq "rdfs:label")) then (: node  with only attributes :)
+             <div style="margin-left: {$indent}px">
+                 <span style="color: #1A661A">{ fn:name($rdf) }</span>
+                 {
+                     let $attributes := 
+                         for $a in $rdf/@*
+                         return
+                          if (fn:name($a) eq "rdf:about" or fn:name($a) eq "rdf:resource") then
+                             <span>
+                                <span style="color: #0066FF"><a href="{xs:string($a)}">{xs:string($a)}</a></span>
+                             </span>
+                          else if (fn:name($a) eq "rdf:datatype") then
+                            <span> (datatype:{fn:substring-after($a, "#")}) </span>
+                          else
+                             <span>
+                                 <span><b>{fn:name($a)}</b></span> <span style="color: #0066FF">="{xs:string($a)}"</span>
+                             </span>
+                     return (" ",$attributes)
+                 }               <b>{fn:normalize-space(xs:string($rdf))}</b>
+             </div>
+    else if ( fn:not(fn:name($rdf) eq "rdfs:label") ) then
+           <b>{fn:normalize-space(xs:string($rdf))}</b>
+    else 
+               ()
+};
+(:?instance instanceOf ?uri becomes "has instance " ?instance
+:)
+declare function md:my-children($my-uri,$node) {
+	 
+	let $results:=
+	           if ($node="work") then (:instance of me:)
+	               searchts:return-specific-family($my-uri,"http://id.loc.gov/ontologies/bibframe/instanceOf", "/resources/instances/")
+	           else (: is itemOf in bf or bflc?? :)
+	               (searchts:return-specific-family($my-uri,"http://id.loc.gov/ontologies/bflc/itemOf", "/resources/items/"),
+	                searchts:return-specific-family($my-uri,"http://id.loc.gov/ontologies/bibframe/itemOf", "/resources/items/")
+					)	
+	let  $label:= if ($node="work") then 
+	                   "Has Instance(s)"
+	               else "Has Items(s)"
+(: this may dedup multiple titles, but is it right? :)
+let $results:=<sparql:results>{
+				for $r in distinct-values($results/sparql:result/sparql:binding[@name="relateduri"]/sparql:uri)
+					return 
+						$results//sparql:result[sparql:binding[@name="relateduri"]/sparql:uri=$r][1]
+				}</sparql:results>
+	
+	
+ return md:linked-layout($results, $my-uri,$label) 
+		
+};
+(:parent is in bf, use xpath, then sparql for label
+:)
+declare function md:my-parent($my-uri,$node, $bf) {
+	
+	let $parent-uri:=
+	           if ($node="instance") then 
+	               fn:string($bf/bf:Instance/bf:instanceOf/@rdf:resource)
+	           else if ($node="item") then 
+	               fn:string($bf/bf:Item/*[fn:local-name()='itemOf']/@rdf:resource)
+	               else () 
+     
+     let $parent-graph:=if ($node="instance")  then 
+                                    "/resources/works/"  
+                                else if ($node="item") then 
+                                    "/resources/instances/" 
+                                  else ()
+     let  $label:= if ($node="instance") then 
+	                   "Instance Of"
+	               else "Item Of"                
+	       
+	       
+     let $results:=searchts:return-related-title($parent-uri, $parent-graph)
+  (: this may dedup multiple titles, but is it right? :)
+let $results:=<sparql:results>{
+				for $r in distinct-values($results/sparql:result/sparql:binding[@name="relateduri"]/sparql:uri)
+					return 
+						$results//sparql:result[sparql:binding[@name="relateduri"]/sparql:uri=$r][1]
+				}</sparql:results>
+	
+
+	 return md:linked-layout($results, $my-uri,$label) 
+
+    (:  
+	    let $parent-label:= for $node in $results/sparql:result                            
+                            return $node/sparql:binding[@name="label"]/sparql:literal
+        let $parent-id:=fn:tokenize($parent-uri,"/")[fn:last()]    
+		let $parent-link:=fn:replace($parent-uri,"id.loc.gov",$cfg:DISPLAY-SUBDOMAIN)	 		
+	
+	return
+			if ($parent-uri) then	
+			<ul>{$label}
+				 <li><a href="{fn:string($parent-link)}">{fn:string($parent-label)} ({$parent-id})</a></li>
+			</ul>			
+		else 
+			()
+
+		:)
+};
+declare function md:titleChop($title,$length) {
+    
+    if ( fn:string-length($title) < $length ) then 
+          $title 
+       else 
+                  fn:concat( md:reverse-str( fn:substring-after(
+                                       md:reverse-str(fn:substring($title,1,$length)
+                                       )," ")
+ 	                      ),"...")
+};
+
+declare function md:reverse-str( $str as xs:string? )  as xs:string {
+   codepoints-to-string(reverse(string-to-codepoints($str)))
+ } ;
+(:sparql results layout : 
+:  params @results : sparql results
+:  		  @my-uri is the current uri, so you don't create a link to yourself
+:		  @label is the label for this query
+: many titles now possible, since not using rdfs:label
+: if you want, as in my direct children, dedup before coming here
+:)
+declare function md:linked-layout($results, $my-uri , $label) {
+let $my-node:=fn:tokenize($my-uri,"/")[fn:last()]									
+(:let $style:=if ($label="Has Instance(s)") then "background-color: #DDDDDD;"	else ()
+<ul style="{$style }" >
+changing the style based on depth only will work if we know the parent.
+:)
+return
+		if ($results/sparql:result) then		
+<ul>
+
+		<h2 class="top">{$label}</h2>
+				{ 
+				for $node in $results/sparql:result
+			 		let $node-uri:=fn:string($node/sparql:binding[@name="relateduri"]/sparql:uri)
+					let $node-id:=fn:tokenize($node-uri,"/")[fn:last()]									
+			 		
+					let $node-label:=md:titleChop($node/sparql:binding[@name="label"]/sparql:literal,100)
+			 		
+					let $node-relation:=$node/sparql:binding[@name="relation"]/sparql:uri
+			 		let $node-relation:=fn:tokenize(fn:string($node-relation),"/")[fn:last()]
+					
+					(: a stub work for c006408223 is c0064082230001  :)
+					(: a native instance will have the same root work for c006408223 is c0064082230001  
+					 on siblings, the first 10 will be the same :)
+					let $stub:=if (fn:contains($node-id,$my-node)) then "stub" else "notstub"
+					let $native:=if (fn:contains(fn:substring($node-id,1,10) ,fn:substring($my-node,1,10)) )then "native" else "non"
+					(:instances on work and siblings on instances show only the instance num if same root:)
+					let $node-id:=if ((fn:contains($label,"Has Instance") or  fn:contains($label,"Sibling") ) and $native="native") then
+										fn:concat("i",fn:substring($node-id,fn:string-length($node-id)-3))
+									else if ($stub="stub" and fn:not(fn:contains($label,"Item")) and fn:not(fn:contains($node-uri,"#Work")))  then
+										fn:concat("w",fn:substring($node-id,fn:string-length($node-id)-3))
+										else if ($stub="stub" and fn:contains($label,"Item") ) then
+										fn:concat("item",fn:substring($node-id,fn:string-length($node-id)-3))
+									else $node-id
+					
+					order by $stub, $node-relation, $node-uri
+
+					return <li>
+							{if ( fn:contains($node-uri,"example.org")) then
+									()
+							 else if ( $my-uri != $node-uri ) then
+										let $related-local-uri:=fn:replace($node-uri,"id.loc.gov",$cfg:DISPLAY-SUBDOMAIN) (:???:)
+										(: relations onl show (ie., vary) for works, not hasinstance, hasitem:)
+										let $relation:= 
+											if (fn:contains($label, "Indirect") and fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 											
+												<span style="color:blue;">{fn:concat(" (",$node-relation," this work)")}</span>
+											else if (fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 
+												<span style="color:blue;">{fn:concat($node-relation," : ")}</span>
+											else ()
+									return
+										if (fn:contains($label, "Indirect") and $node-label!="" and $node-relation) then 
+								 	       (<a href="{$related-local-uri}">{fn:string($node-label)}</a>, fn:concat(" (", $node-id,") " ) ,$relation )
+										else if (fn:contains($label, "Indirect")  and $node-relation) then 
+								 	       (<a href="{$related-local-uri}">{fn:string($node-id)}</a>,$relation )
+									
+
+										else if ($node-label!="" and $node-relation) then 
+								 	       ($relation ,<a href="{$related-local-uri}">{fn:string($node-label)} </a>, fn:concat(" (", $node-id,")" ) )
+										else if ($node-label!="") then
+											(<a href="{$related-local-uri}">{fn:string($node-label)} </a>, fn:concat("(", $node-id,")" ) )
+										else if ($node-id) then
+									    	 ($relation ,	<a href="{$related-local-uri}">{fn:string($node-id)} </a>)
+										else ()
+									
+							else  (<b>{fn:string($node-label)}</b>,fn:concat("(", $node-id,")" ))
+							}
+							</li>
+				} </ul>	
+		else 
+			()
+};
+(:?instance instanceOf ?uri becomes "has instance " ?instance
+:  params @instance is this instance uri for comarison
+: expressions ,or non-expressions, or all
+:  		  @work-uri is the parent uri
+:)
+declare function md:work-siblings-old($my-uri) {
+	let $expressions:=
+			searchts:return-work-siblings($my-uri , "expressions")
+	let $expressions:=				
+		if ($expressions) then
+			md:linked-layout($expressions, $my-uri, "Expressions/Translations" )
+			else ()
+	let $other-works:=
+			searchts:return-work-siblings($my-uri , "nonex-relateds")
+	let $other-works:=				
+		if ($other-works) then				
+			md:linked-layout($other-works, $my-uri,"Related Work(s), including stubs") 
+		else ()
+	
+	return(	 $expressions, $other-works )
+};
+declare function md:work-siblings($my-uri) {
+	let $direct:=
+			searchts:work-siblings-directional($my-uri , "Direct")
+	let $direct:=				
+		if ($direct) then
+				md:linked-layout($direct, $my-uri, "Direct Links to Works" )
+			else ()
+	let $indirect:=
+			searchts:work-siblings-directional($my-uri , "Indirect")
+	let $indirect:=				
+		if ($indirect) then				
+			md:linked-layout($indirect, $my-uri,"Indirect Linked Work(s)") 
+		else ()
+	
+	return(	 $direct, $indirect )
+};
+
+
+(:?instance instanceOf ?uri becomes "has instance " ?instance
+:  params @instance is this instance uri for comarison
+: not called by works
+:  		  @work-uri is the parent uri
+:)
+declare function md:my-siblings($my-uri, $parent-uri) {
+	let $graph:= if (fn:contains($my-uri,"instances")) then
+	               "/resources/instances/"
+	           else if (fn:contains($my-uri,"items")) then
+	               "/resources/items/"
+	           else ()
+	let $results:=
+			if (fn:contains($my-uri,"works")) then
+				searchts:return-work-siblings($my-uri , "all")
+			else
+				searchts:return-my-siblings($parent-uri,$graph)
+	(: this may dedup multiple titles, but is it right? :)
+let $results:=<sparql:results>{
+				for $r in distinct-values($results/sparql:result/sparql:binding[@name="relateduri"]/sparql:uri)
+					return 
+						$results//sparql:result[sparql:binding[@name="relateduri"]/sparql:uri=$r][1]
+				}</sparql:results>
+
+	return
+		md:linked-layout($results, $my-uri,"Sibling(s)")
+		
+};
+
+(: use sem triples to infer relations like instances that are instance of this work
+:)
+declare function md:bf-sem-links($uri, $bf) {
+(: parent :)
+let $parent:=		
+	if (fn:contains($uri,"instances")) then
+				(: get instance or item parent:)
+				md:my-parent($uri, "instance", $bf)			
+	else if (fn:contains($uri,"items")) then
+				md:my-parent($uri, "item", $bf)
+    else ()    
+
+(: siblings :)
+let $siblings:=
+	if (fn:matches($uri,"(instances|items)")) then
+		let $parent-uri:=
+				if (fn:matches($uri,"instances")) then
+						fn:string($bf/bf:Instance/bf:instanceOf[1]/@rdf:resource)
+					else 
+						fn:string($bf/bf:Item/*[fn:local-name()='itemOf'][1]/@rdf:resource)
+		
+			return md:my-siblings($uri, $parent-uri)
+						
+	else if (fn:matches($uri,"works")) then			
+			md:work-siblings($uri)			 		
+	else ()			
+
+(: children :)
+let $children:=    
+	if (fn:contains($uri,"works")) then
+				md:my-children($uri, "work")			
+	else if (fn:contains($uri,"instances")) then
+				md:my-children($uri, "instance")
+    else ()			
+
+
+	
+	return  ($parent, $siblings,$children)
+	
+};
 
 declare function md:lcrender($uri as xs:string) as element(div) {
 (:is this used?:)
@@ -36,14 +430,34 @@ declare function md:lcrender($uri as xs:string) as element(div) {
         }
     return $xml
 };
-
+(:
+label search at id like authorities/names/label/*
+:)
+declare function md:check-id-head(
+	$uri2check as xs:string    
+    )
+{
+let $x:=
+    try { 
+		fn:string( xdmp:http-head($uri2check)//xdmphttp:x-uri	)
+	}
+		
+	catch ($e) {(xdmp:log($e,"info"),
+		(:"error on id header lookup", but just return blank; nothing found to enhance:)
+		"")
+	}   
+	
+return if ($x!="" ) then 
+			fn:replace($x,$cfg:ID-LOOKUP-CACHE-BASE, $cfg:ID-BASE)
+		else ""
+};
 
 declare function md:lcrenderBib($mets as node() ,$uri as xs:string) as element()? { 
 
 (:returns xhtml div or error:error or 404 not found and () :)
      
     let $mime := "mime=text/html"
-    
+    let $hostname:=  $cfg:DISPLAY-SUBDOMAIN
     let $new-params := lp:param-remove-all($lp:CUR-PARAMS, 'browse-order')
     let $new-params := lp:param-remove-all($new-params, 'bq')
     let $new-params := lp:param-remove-all($new-params, 'browse')
@@ -82,8 +496,9 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string) as element()
 		                    $materials//mat:materialtype[@tag='006_00_1'][@code=$control6]/mat:desc/string()
 		                else ()  
 		    let $marcxml:=marcutil:mxe2-to-marcslim($mxe)
-		    let $lccn:= ($mxe//mxe:datafield_010/mxe:d010_subfield_a)[1]
-		    let $behavior as xs:string? := lp:get-param-single($lp:CUR-PARAMS, 'behavior', 'default')
+		    let $lccn:=($mxe//mxe:d010_subfield_a)[1]
+			
+		    let $behavior as xs:string? := lp:get-param-single($lp:CUR-PARAMS, 'behavior', 'bfview')
 			(:status is the bib circ status:)
     		let $status as xs:string? := lp:get-param-single($lp:CUR-PARAMS, 'status', 'no')
 			let $branding := lp:get-param-single($lp:CUR-PARAMS, 'branding','lds')
@@ -109,31 +524,345 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string) as element()
 		            map:put($params, "ajaxparams", $ajaxparams)
 		        else
 		            ()
-     		
-		    let $lcdbDisplay:=
-				if ($behavior="bfview") then						
-					let $bf:= $mets/mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF
-						return 
-							 <div id="ds-bibrecord">{rdfaxhtml:rdf2rdfaxhtml($bf)}</div>
-					(:return <div id="ajaxview"><div id="dsresults"><div id="ds-bibrecord">{rdfaxhtml:rdf2rdfaxhtml($bf)}</div></div></div>:)
-				else 					
-			        try { 
+     		let $put :=map:put($params, "marcedit","yes" )
+            let $bf:= $mets//mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF
+			let $editor-profile:=fn:string($bf//bf:adminMetadata[1]//bflc:profile[1]  )
+		 (: not working: update the doc from blank node! node replace of the rdf:about does not work for permissions issues. ask clay?:)
+		
+		(:	let $x :=xdmp:log(fn:string($bf/bf:Work/bf:contribution[1]/*/bf:agent/bf:Agent/@rdf:about),"info")
+			let $_:=if (fn:contains(fn:string($bf/bf:Work/bf:contribution[1]/*/bf:agent/bf:Agent/@rdf:about), "#Agent100")) then
+						let $label:=fn:string($bf/bf:Work/bf:contribution[1]/*/bf:agent/bf:Agent/bflc:primaryContributorName00MatchKey)
+						let $id-lookuplink:=fn:concat($cfg:ID-VARNISH-BASE,"/authorities/names/label/",fn:encode-for-uri($label))
+						let $id-lookup:=md:check-id-head($id-lookuplink)
+						let $idurl:= if ($id-lookup!="") then 
+										attribute rdf:about {$id-lookup}
+									else ()
+						let $_  :=xdmp:log(fn:concat("BFDB name lookup ",$id-lookuplink),"info")
+						let $_ :=xdmp:log(fn:string($idurl),"info")
+						return if ($idurl) then
+								let $_ :=xdmp:log(fn:string($idurl),"info")
+								 return try {xdmp:node-replace(
+								 $mets//mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF/bf:Work/bf:contribution[1]/*/bf:agent/bf:Agent/@rdf:about,$idurl )
+								 			}catch($e){
+								 				xdmp:log($e,"info")
+								 	}
+								else ()
+
+					else ()
+			
+			:)
+			let $uri:=if ($uri) then
+							$uri
+						 else
+							fn:string($mets/mets:mets/@OBJID)
+			let $loaded:=fn:substring($mets//mets:metsHdr/@LASTMODDATE,1,10)
+			let $loaddate:=xs:date($loaded)
+			let $loaded-display:=if (fn:starts-with($loaded,"2017")) then <span style="color:red;">{$loaded}</span>
+							else <span >{$loaded}</span>
+			let $reloadable:= if (fn:contains($uri,"works") and
+							 fn:not(fn:contains($uri, "works.n")) and 
+							 fn:not(fn:contains($uri, "works.e")) and 
+							 ( $loaddate < xs:date("2018-08-31") 
+							 ) and 
+							 index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/convertedBibs/" )
+							 ) then
+								let $token:=fn:replace(fn:tokenize($uri,"\.")[fn:last()],"^c0*","")
+									return fn:concat("./rbi ", $token)
+							else if (fn:contains($uri,"instances") and ($loaddate < xs:date("2018-08-31")) ) then
+									let $token:=fn:replace(fn:tokenize($uri,"\.")[fn:last()],"^c0*","")
+											return fn:concat("./rbi ", fn:substring($token,1,fn:string-length($token)-4))
+							else if  (fn:contains($uri, "works.n") and
+							 		 $loaddate < xs:date("2018-08-31") and 
+									 fn:not(index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/consolidatedBibs/" ))
+							 )  then
+									let $token:= fn:tokenize($uri,"\.")[fn:last()]
+										return fn:concat("./post-auth.sh ", $token)
+							else
+									()
+							
+			let $_ := if ($reloadable) 	then
+					 	 (: allows log file to contain rbi command for auto reload: :)
+						xdmp:log(fn:concat("BF Database viewed: ", $uri, ": ", $reloadable),"info")
+					 else 
+					 ()
+
+			let $resourceslink:=
+							if (contains($uri,"loc.natlib")) then
+									concat("http://id.loc.gov/resources/",tokenize($uri,"\.")[3],"/",tokenize($uri,"\.")[4])
+								else if (contains($uri,"/resources")) then
+									concat("http://id.loc.gov/",$uri)									
+								else $uri
+
+	 		let $isbn:=fn:string($mets//mets:dmdSec[@ID="ldsindex" or @ID="index"]/mets:mdWrap/mets:xmlData/idx:index/idx:isbn[1])
+			
+			let $bfe-lookup:=
+				if (fn:contains($uri,"items")) then
+					let $instance-uri:=fn:string($bf//*[fn:local-name()='itemOf']/@rdf:resource)
+					let $instance-titles:=searchts:return-related-title($instance-uri, "/resources/instances/")
+					let $instance-title:=if ($instance-titles) then
+											$instance-titles/sparql:result[1]/sparql:binding[@name='label']
+										else $uri
+					return
+						 fn:string($instance-title)
+				else
+						 fn:string(
+								($mets//mets:dmdSec[@ID="ldsindex" or @ID="index"]/mets:mdWrap/mets:xmlData/idx:index/idx:nameTitle,
+								$mets//mets:dmdSec[@ID="ldsindex" or @ID="index"]/mets:mdWrap/mets:xmlData/idx:index/idx:display/idx:title)[1])
+								
+			let $bfe-lookup:=if ($bfe-lookup="[Unknown]")  then
+								 fn:concat($bfe-lookup,  " ", fn:string($mets//mets:dmdSec[@ID="ldsindex" or @ID="index"]/mets:mdWrap/mets:xmlData/idx:index/idx:uri[1]))
+							else
+								 $bfe-lookup
+
+			let $workid-length:=  if (fn:contains($uri,"works")) then
+									fn:string-length(fn:tokenize($uri,"\.")[fn:last()])
+		   						else
+									1
+		    let $datasource:= if ($workid-length > 12 and fn:contains($uri,"works.n")) then
+		   					 		"Work stub from Authority" 
+							 else if (fn:contains($uri,"works.n")) then
+									 "Work from Authority" 
+							 else if ($workid-length > 12 and fn:contains($uri,"works.c")) then 
+							 		"Work Stub from Bib"
+							  else if ($workid-length > 12 and fn:contains($uri,"works.e")) then 
+							  		"Work stub from Editor"
+							  else if (fn:contains($uri,"works.c")) then 
+							  		"Work from Bib"							  
+							   else if (fn:contains($uri,"works.e")) then 
+							  		"Work from Editor"							  
+							  else if (fn:contains($uri,"instances.c")) then 
+							  		"Instance"	
+							  else if (fn:contains($uri,"items.e")) then 
+							  		fn:concat("Item from Editor")
+							  else if (fn:contains($uri,"items")) then 
+							  		"Item"								 
+							  else if (fn:contains($uri,"instances.e")) then 
+							  		"Instance from Editor"							 
+							  else ""			
+			let $rdftype:= if (fn:starts-with($datasource,"Work") or fn:starts-with($datasource,"Instance") ) then 
+								fn:tokenize(fn:string($bf/bf:*[1]/rdf:type[1]/@rdf:resource) ,"/")[fn:last()] 
+								
+								else ()
+			let $rdftype:= if ($rdftype) then $rdftype else "Untyped"
+            let $node:=tokenize($uri,"\.")[last()]
+            let $bibid:=replace($node,"^c0+","")
+  			let $bibid:=replace($bibid,"^e0+","")
+    		let $bibid:=if (string-length($node) > 10 ) then 
+					substring($bibid, 1,string-length($bibid)-4)
+				else 
+					$bibid
+            (:let $bibid:=substring($bibid, 1,string-length($bibid)-4):)
+            let $imageUri:=concat("loc.natlib.lcdb.",$bibid)
+            let $imagePath:=concat('/media/',$imageUri,'/0001.tif/200')
+			let $imageLink:=if (fn:not(fn:contains($uri,"works"))) then 
+								<img src="http://der02vlp.loc.gov{$imagePath}" alt="{$uri}"/>
+							else ()
+		  
+	(:	  let $ajax:= 
+		 		"
+				$('[displayhref]').each(function() {
+				    $(this).qtip({
+				      content: {
+				        text: function(event, api) {
+				          $.ajax({
+				            url: api.elements.target.attr('displayhref') // Use displayhref attribute as URL
+				          })
+				          .then(function(content) {
+				            // Set the tooltip content upon successful retrieval
+				            api.set('content.text', content);
+				          }, function(xhr, status, error) {
+				            // Upon failure... set the tooltip content to error
+				            api.set('content.text', status + ': ' + error);
+				          });
+				          return 'Loading...'; // Set some initial text
+				        }
+				      },
+				      position: {
+				        viewport: $(window)
+				      },
+				      style: 'qtip-wiki'
+				    });
+				  });
+				"
+				:)
+let $ajax:=
+			 "
+
+			$('[displayhref]').each( function() {     
+			  var url = $(this).attr('displayhref')  ;
+			 //$(this).load(url);
+			 $(this).prev(['#resolver']).load(url);
+			});
+
+			 "
+			let $lcdbDisplay:=
+				if ($behavior="bfview" 
+					or fn:matches($uri, "(instances|items)" )					
+					or not($mxe)
+					) then											
+					   <div id="ajaxview">
+					   	<div id="dsresults">
+					   		<div id="ds-bibrecord">					  
+					   	 		 <h1 id="title-top">{$bfe-lookup} </h1>
+								 <span class="format">{$datasource}</span>		( <span style="color:red;" class="format">{$rdftype}</span> )
+					   			<div style="align:right;">{$imageLink}</div>														
+
+		
+								<!-- <div style="align:right;">{<img src="http://covers.librarything.com/devkey/2ed454fd22af5dceef59b6069ed7c020/large/isbn/{$isbn}" alt="Book cover image"/>}</div> -->
+					                         
+					   			{display:display-rdf($bf,0)}
+<script>{$ajax}</script>					   
+					   		</div>					      
+					       
+					      </div>
+					   </div> 
+				
+				else 
+			        try {
 			            xdmp:xslt-invoke($displayXsl,document{$marcxml},$params)
 			        } catch ($exception) {
-			            $exception
-			        }    
-				(:let $bib:=substring-after($uri,".lcdb.")
-				let $statuses:=
-					xdmp:http-get(concat("http://lcweb2.loc.gov:8081/diglib/voyager/",$bib,"/statuses"))[2]:)
+			            ($exception, xdmp:log(fn:string($exception),"info"))
+						
+			        }  			
+			let $bflinks:= for $l in $bf
+								return 									
+									$l/child::*[1]/*[fn:local-name()= "itemOf" or fn:local-name()= "instanceOf" or fn:local-name()="hasInstance" or fn:local-name()="hasItem" or fn:local-name()="consolidates"]
+		    	
 			
-		    return  
+			let $bookmarklink:= if (contains($uri,"loc.natlib")) then
+									$uri
+								else if (contains($uri,"/resources")) then
+									concat("http://id.loc.gov/",$uri)									
+								else $uri
+
+			let $formats-base:=replace($resourceslink, "id.loc.gov",$cfg:DISPLAY-SUBDOMAIN)
+			let $biblink:=
+		 	if ( contains($hostname,"mlvlp04")  and contains($uri, ".c") ) then
+				let $bibid:=fn:tokenize($uri,"\.")[fn:last()]				
+				let $bibid:=fn:substring($bibid, 1,10)
+				let $bibid:=fn:replace($bibid,"^c0+","")
+					
+		       return <a href="{concat("http://",$hostname,"/resources/bibs/",$bibid,".xml")}"> MARC source </a>
+				else ()
+			let $sem-links:= md:bf-sem-links($resourceslink, $bf)
+            
+			return
 				if ($lcdbDisplay instance of element(error:error)) then
-				  $lcdbDisplay
-		           (: need to handle this in detail.xqy:(<strong>Error: {$lcdbDisplay//error:message/string()}</strong>,xdmp:add-response-header("status", "500") ) :)
+				  $lcdbDisplay		           
 		        else
 		            <div id="ajaxview">
-		               {$lcdbDisplay//descendant-or-self::div[@id="ds-bibviews" or @id="ds-bibrecord" or @id="tab1"][1]}     												   
+		           	  {$lcdbDisplay//descendant-or-self::div[@id="ds-bibviews" or @id="ds-bibrecord" or @id="tab1"][1]} 
+					 	<div id="ds-bibviews"><!--<h2 class="top">BIBFRAME links</h2>-->
+					 	 { $sem-links }						
+						   
+						 {if (fn:not($sem-links//li ) ) then
+						         <ul>
+					 			   { 
+								   	for $link in $bflinks
+					 			   		let $rewrite-link:= 
+													if (contains($link/@rdf:resource,"/resources/bibs")) then
+														let $id:=tokenize(string($link/@rdf:resource),"/")[last()]
+														let $id:=replace($id,"^0+","")
+															return concat("/resources/bibs/", $id)
+													else if ($link/@rdf:resource) then
+														fn:replace($link/@rdf:resource, "id.loc.gov",$cfg:DISPLAY-SUBDOMAIN)
+					 			                     else if ($link/@rdf:about) then
+													   		fn:replace($link/@rdf:about, "id.loc.gov",$cfg:DISPLAY-SUBDOMAIN)
+					 			                    else ""
+										let $subnode:= if (contains($rewrite-link, "loc.natlib")) then
+										   					tokenize($rewrite-link,"\.")[last()]
+														else
+															tokenize( $rewrite-link,"/")[last()]
+										let $hasInstance:=if  (contains($link/@rdf:resource,"/resources/bibs")) then
+															let $id:=tokenize(string($link/@rdf:resource),"/")[last()]
+															return  ( concat("/resources/instances/c",$id,"0001"), concat("c",$id,"0001"))
+														  else 	 ()
+					 				return				
+					 					<li >
+											<span class="white-space">{fn:local-name($link)} :<a href="{ $rewrite-link}">{$subnode}</a></span>
+											{if ($hasInstance) then 
+													<span class="white-space"> (hasInstance :
+															<a href="{$hasInstance[1]}">{$hasInstance[2]}</a>
+															)
+													 </span>
+													  else ()
+													  }
+
+										</li>
+										}
+								 </ul>
+								 else () (: sem links available, suppress manual creations:)
+								 }
+								 
+
+                  					{ 	if ($lcdbDisplay//h2[starts-with(., "Other Views for This Description" )]) then
+                                            ()
+                  						else                                                          						                    						     
+                  						    (<h2>Other Views for This Description</h2>,
+                            			          <ul>		 		
+                                       				
+													<li><a href="{$formats-base}.rdf">BIBFRAME RDF</a>
+                                       				
+                                       				</li>
+													<li>
+                                       					<a href="{$formats-base}.ttl">BIBFRAME Turtle</a>
+                                       				</li>
+                                       				<li>
+                                       					<a href="{$formats-base}.json">BIBFRAME JSON</a>
+                                       				</li>
+                                       				<li>
+                                       					<a href="{$formats-base}.jsonld">BIBFRAME JSON-LD</a>
+                                       				</li>
+                                       				<li>
+                                       					<a href="{$formats-base}.mets.xml">METS</a>														
+                                       				</li> 
+													<li>
+                                       					<a href="{$formats-base}.doc.xml">Whole Document</a>														
+                                       				</li>                                       				
+													<li>
+                                       					<a href="{$formats-base}.index.xml">Fast Indexes</a>														
+                                       				</li>                                       				
+													<li>
+                                       					{$biblink}
+                                       				</li>                                       				
+                                       			</ul>,
+                                       			
+                                       			<h2>Bookmark This Description</h2>,
+                                       			<ul>
+                                       				<li>
+                                       					<span id="print-permalink" class="white-space">														
+														<a href="{replace($resourceslink, 'id.loc.gov',$cfg:DISPLAY-SUBDOMAIN)}">{$resourceslink}</a>
+                                       					</span>
+                                       				</li>
+                                       			</ul>	,
+												if (fn:not(fn:contains($uri,"items"))) then
+													let $load-action:= if (fn:contains($uri,"works")) then
+																			"loadwork"
+																		else
+																				"loadibc"
+													return
+													(<h2>Editor Link</h2>,
+                                       				<ul>
+                                       					<li>
+                                       					<span class="white-space" style="color:#36c;">														
+														<!--{$formats-base}.jsonld-->
+														<!--<form action="http://mlvlp04.loc.gov:3000/bfe/development.html">
+															<input type="hidden" name="action" value="loadibc"/>
+															<input   type="hidden" name="url" value="{$formats-base}.jsonld"/>
+															<button value="submit for edit">Submit to Editor</button>
+														</form>-->
+                                       					 <a href="http://mlvlp04.loc.gov:3000/bfe/development.html?action={$load-action}&amp;url={$formats-base}.jsonld&amp;profile={$editor-profile}">Load to Editor</a>
+														</span>														
+	                                       				</li>
+	                                       			</ul>)
+													else ()
+                                      		)}
+                           <br/><br/>Last loaded: {$loaded-display} 		                                       			
+						          </div>
+								  
+									
 		            </div> 			    
+				
 };
 
 declare function md:lcrenderMods($mets as node() )  { (:as element()?:)
@@ -178,7 +907,7 @@ if ( not(exists( $mets) ) ) then
 		        try {
 		            xdmp:xslt-invoke("/xslt/mods/labels.xsl", $mets, $labelsParams)
 		        } catch ($exception) {
-		            $exception
+		            $exception 
 		        }      
 		    (: ------- group same labels together --------- :)		    
 		    let $groupings :=
@@ -187,12 +916,22 @@ if ( not(exists( $mets) ) ) then
 		        } catch ($exception) {
 		            $exception
 		        }  
-		  let $illustrative:=utils:illustrative($mets/node() ,$uri)      		    
+		  let $illustrative:=utils:illustrative($mets/node() ,$uri)
+		  let $bibid:=  fn:replace(fn:tokenize($uri,"\.")[last()],"^c0+","")
+		  let $bibid:=  fn:replace($bibid,"^e0+","")
+		  let $imgid:=if (string-length($bibid) > 10 ) then 
+								substring($bibid, 1,string-length($bibid)-4)
+							else 
+								$bibid
+            
 		  let $imagepath := 
 				if ( matches($uri,"lcwa") and exists($illustrative) ) then
 					<img src="{replace($illustrative,'lcwa','mrva')}/200" alt="thumbnail" />			
-			    else if (matches($objectType,"(bibRecord|modsBibRecord|metadataRecord)") and exists($illustrative)) then
-			        <img src="{$illustrative}/200" alt="thumbnail" /> 	  	        
+			    else if (fn:not(fn:contains($uri,"/works/")) and 
+						matches($objectType,"(bibRecord|modsBibRecord|metadataRecord)") and
+						exists($illustrative)) then
+			        (:<img src="{$illustrative}/200" alt="thumbnail" />:)
+			        <img src="loc.natlib.lcdb.{$imgid}/200" alt="thumbnail" />
 					else 					
 						()
 
@@ -572,7 +1311,7 @@ return
 							 else (),
 							  if ($browse[matches(lower-case(l:label),"classification" )]//l:browseurl ) then
 								<div id="browse-class">
-									<h4>LC Class</h4>
+ 									<h4>LC Class</h4>
 										<ul class="std">										
 											{md:li-browsetransform($browse[matches(lower-case(l:label),"classification" )][//l:browseurl])}
 										</ul>
@@ -597,7 +1336,7 @@ return
 				else ()
 					}
 			<div id="xml">
-			<h3>XML Metadata for This Item</h3>
+			<h3>Other Views for This Description</h3>
 			<ul class="std">	
 				<li>
 					<a href="{concat($url-prefix,$uri)}.rdf">BIBFRAME RDF</a>
@@ -611,7 +1350,7 @@ return
 			</ul>
 			</div><!-- end xml -->
 			<div id="permalink">
-			<h3>Bookmark This Item</h3>
+			<h3>Bookmark This Description</h3>
 			<ul class="std">	
 				<li>
 					<span id="print-permalink" class="white-space">
@@ -632,16 +1371,16 @@ return
 declare function md:maincontent($groupings as node()?, $behavior as xs:string?, $uri as xs:string, $objectType as xs:string?) as element(div) {
 
 	let $url-prefix:=$cfg:MY-SITE/cfg:prefix/string()
-
+	let $imguri:=replace($uri,'c0[0-3]','')
 	let $imagepath := 		
 		if (matches($objectType,"(bibRecord|modsBibRecord)") ) then
-			<img src="/media/{replace($uri,'lcwa','mrva')}/0001.tif/200" alt="thumbnail" />			
+			<!--<img src="http://loccatalog.loc.gov/media/{$imguri}/0001.tif/200" alt="thumbnail" />			-->
 			else 
 				()
 
 	(: holdings-- not done: only if we use tabbed view for lcdb records: :)
 	let $hold := 
-	   if (contains($uri, "lcdb") and not(contains($uri, "works")) ) then
+	   if (contains($uri, "lcdb") and not(matches($uri, "(works|instances|items)")) ) then
 	       utils:hold-bib(xs:integer(tokenize($uri, "\.")[last()]),"lcdb")
 	   else ()    
 

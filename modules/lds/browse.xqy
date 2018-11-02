@@ -1,11 +1,11 @@
 xquery version "1.0-ml";
 
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/nlc/config.xqy";
-import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/nlc/lib/l-query.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/nlc/lib/l-param.xqy";
-import module namespace vb = "http://www.marklogic.com/ps/view/v-browse" at "/nlc/view/v-browse.xqy";
-import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "/nlc/view/v-search.xqy";
-import module namespace vf = "http://www.marklogic.com/ps/view/v-facets" at "/nlc/view/v-facets.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/lds/lib/l-query.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
+import module namespace vb = "http://www.marklogic.com/ps/view/v-browse" at "/lds/view/v-browse.xqy";
+import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "/lds/view/v-search.xqy";
+import module namespace vf = "http://www.marklogic.com/ps/view/v-facets" at "/lds/view/v-facets.xqy";
 import module namespace ssk = "info:lc/xq-modules/search-skin" at "/xq/modules/natlibcat-skin.xqy";
 import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xq/modules/mime-utils.xqy";
 import module namespace resp = "info:lc/xq-modules/http-response-utils" at "/xq/modules/http-response-utils.xqy";
@@ -36,14 +36,23 @@ let $url-prefix:=$cfg:MY-SITE/cfg:prefix/string()
             "Browse Name Headings"
         else if (matches($brfield, "subject", "i")) then
             "Browse Subject Headings"
-        else if (matches($brfield, "title", "i")) then
+        else if (matches($brfield, "nameTitle", "i")) then
+            "Browse Name/Title"
+		else if (matches($brfield, "title", "i")) then
             "Browse Title Headings"
         else if (matches($brfield, "class", "i")) then
             "Browse LC Classification"
+		else if (matches($brfield, "loaddate", "i")) then
+            "Browse Date Ingested"
+		else if (matches($brfield, "date", "i")) then
+            "Browse Date Modified"
+		else if (matches($brfield, "lccn", "i")) then
+            "Browse LCCN"
+       
         else if ($dtitle) then
             $dtitle
         else
-            "Browse"
+            ("Browse ", $brfield)
     let $atom := ()
     let $seo := ()
     let $crumbs := 
@@ -71,6 +80,7 @@ let $url-prefix:=$cfg:MY-SITE/cfg:prefix/string()
                 let $new-params := lp:param-remove-all($lp:CUR-PARAMS, 'bq')
                 let $new-params := lp:param-remove-all($new-params, 'browse-order')
                 let $new-params := lp:param-remove-all($new-params, 'browse')
+				let $new-params := lp:param-remove-all($new-params, 'category')
                 let $new-params := lp:param-remove-all($new-params, 'dtitle')
                 return
                     <span>
@@ -79,6 +89,7 @@ let $url-prefix:=$cfg:MY-SITE/cfg:prefix/string()
             else
                 (),            
             <span class="ds-searchresultcrumb">{$browsetitle}</span>
+			
     )
 	(:last 2 parms are uri and objectype:)
     let $myhead := ssk:header($browsetitle, $crumbs, $msie, $atom, $seo,"","browse")
@@ -124,14 +135,17 @@ let $collection := $cfg:MY-SITE/cfg:collection/string()
 let $browsefield as xs:string? := lp:get-param-single($lp:CUR-PARAMS, 'browse', 'subject')
 let $browsedirection as xs:string? := lp:get-param-single($lp:CUR-PARAMS, 'browse-order', 'descending')
 let $term as xs:string? := lp:get-param-single($lp:CUR-PARAMS, 'q', ())
+(: bf mergedworks, etc:)
+let $category as xs:string? := lp:get-param-single($lp:CUR-PARAMS, 'category', ())
 let $detail-uri as xs:string? := lp:get-param-single($lp:CUR-PARAMS, 'uri', ())
+let $filter as xs:string? := lp:get-param-single($lp:CUR-PARAMS, 'filter', "works")
 let $browseterm as xs:string? := lp:get-param-single($lp:CUR-PARAMS, 'bq', 'A')
 let $qname := lp:get-param-single($lp:CUR-PARAMS, 'qname', "keyword")
 let $dtitle := lp:get-param-single($lp:CUR-PARAMS, 'dtitle', $detail-uri)
 let $query := lq:query-from-params($lp:CUR-PARAMS) 
-let $_ := xdmp:log(concat("query: ", xdmp:describe($query)),'debug')
+(:let $_ := xdmp:log(concat("query: ", xdmp:describe($query)),'info'):)
 
-let $results := lq:browse-lexicons($browseterm, $browsefield, $browsedirection, $collection)
+let $results := lq:browse-lexicons($browseterm, $browsefield, $browsedirection, $collection, $filter)
 
 let $facets :=
     if (exists($cfg:DISPLAY-ELEMENTS//*:elt/*:page[text() = $page])) then
@@ -140,12 +154,12 @@ let $facets :=
         ()
 
 let $browses := <div id="results">{vb:render($results, $browsefield, $browsedirection)}</div>
-
+(:'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">', :)
 return
     (
         xdmp:set-response-content-type(concat($mime, "; charset=utf-8")), 
         xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
         xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
-        '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">', 
+        '<!DOCTYPE html>',
         local:output(false(), $browses, $facets, $term, $detail-uri, $browseterm, $browsefield, $qname, $dtitle)
     )

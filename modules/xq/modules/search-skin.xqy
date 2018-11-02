@@ -19,19 +19,19 @@ declare function ssk:header($title as xs:string) as element(header) {
     <header xmlns="http://www.w3.org/1999/xhtml">
     	<head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-            <title>{concat($title, " (National Library Collections, Library of Congress)")}</title>
+            <title>{concat($title, " (Linked Data Services, Library of Congress)")}</title>
             <meta name="Keywords" content="search results national library collections library congress" />
-            <meta name="Description" content="Search Results for . National Library Collections, Library of Congress" />
-            <link rel="stylesheet" media="screen, projection" type="text/css" href="/static/natlibcat/css/datastore.css" />
-            <link type="text/css" rel="stylesheet" href="/static/natlibcat/css/jquery-ui-1.8.2.all.css"/>
-            <link type="text/css" rel="stylesheet" href="/static/natlibcat/css/facybox.css"/>
-            <link type="text/css" rel="stylesheet" href="/static/natlibcat/css/mlstyle.css"/>
-            <link type="text/css" rel="stylesheet" href="/static/natlibcat/css/splash.css"/>
-            <script type="text/javascript" src="/static/natlibcat/js/jquery-1.4.4.min.js"></script>
-            <script type="text/javascript" src="/static/natlibcat/js/jquery-ui-1.8.2.all.min.js"></script>  
-            <script type="text/javascript" src="/static/natlibcat/js/jquery.address-1.3.2.min.js"></script>
-            <script type="text/javascript" src="/static/natlibcat/js/facybox.js"></script> 
-            <script type="text/javascript" src="/static/natlibcat/js/natlibcat.min.js"></script>
+            <meta name="Description" content="Search Results for . Linked Data Services, Library of Congress" />
+            <link rel="stylesheet" media="screen, projection" type="text/css" href="/static/lds/css/datastore.css" />
+            <link type="text/css" rel="stylesheet" href="/static/lds/css/jquery-ui-1.8.2.all.css"/>
+            <link type="text/css" rel="stylesheet" href="/static/lds/css/facybox.css"/>
+            <link type="text/css" rel="stylesheet" href="/static/lds/css/mlstyle.css"/>
+            <link type="text/css" rel="stylesheet" href="/static/lds/css/splash.css"/>
+            <script type="text/javascript" src="/static/lds/js/jquery-1.4.4.min.js"></script>
+            <script type="text/javascript" src="/static/lds/js/jquery-ui-1.8.2.all.min.js"></script>  
+            <script type="text/javascript" src="/static/lds/js/jquery.address-1.3.2.min.js"></script>
+            <script type="text/javascript" src="/static/lds/js/facybox.js"></script> 
+            <script type="text/javascript" src="/static/lds/js/natlibcat.min.js"></script>
             <!--<script type="text/javascript" src="http://www.loc.gov:8081/global/foresee/foresee-trigger.js"></script>-->
         </head>
         <body>
@@ -40,7 +40,7 @@ declare function ssk:header($title as xs:string) as element(header) {
                     <div id="top_container">
                         <ul id="menu">
                             <li id="logo_lc" title="The Library of Congress"><a href="http://www.loc.gov"></a></li>
-                            <li id="global_nav"><a href="http://www.loc.gov/rr/askalib/"><img src="/static/natlibcat/images/ask_librarian.gif" alt="Ask a Librarian" width="101" height="40" /></a><a href="http://www.loc.gov/library/libarch-digital.html"><img src="/static/natlibcat/images/digital_collections.gif" alt="Digital Collections" width="119" height="40" /></a><a href="http://catalog.loc.gov/"><img src="/static/natlibcat/images/library_catalog.gif" alt="Library Catalogs" width="111" height="40" /></a></li>
+                            <li id="global_nav"><a href="http://www.loc.gov/rr/askalib/"><img src="/static/lds/images/ask_librarian.gif" alt="Ask a Librarian" width="101" height="40" /></a><a href="http://www.loc.gov/library/libarch-digital.html"><img src="/static/lds/images/digital_collections.gif" alt="Digital Collections" width="119" height="40" /></a><a href="http://catalog.loc.gov/"><img src="/static/lds/images/library_catalog.gif" alt="Library Catalogs" width="111" height="40" /></a></li>
                         </ul>
                     </div>
                     <!-- end id:top_container -->

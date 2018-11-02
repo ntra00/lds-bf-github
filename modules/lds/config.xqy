@@ -7,8 +7,8 @@ declare namespace gml = "http://www.opengis.net/gml";
 import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 
-declare variable $META-TITLE := "Linked Data Services (beta): Search Library of Congress BIBFRAME Data";
-declare variable $ADMIN-EMAIL := "natlibcat@loc.gov";
+declare variable $META-TITLE := "BIBFRAME Database (beta): Search Library of Congress BIBFRAME Descriptions";
+declare variable $ADMIN-EMAIL := "bibframepilot@loc.gov";
 declare variable $BLANK-SEARCH-STUB-TEXT := "Enter search word(s)";
 declare variable $DEFAULT-POLYGON-ROI as cts:polygon := cts:polygon((cts:point(39, -21), cts:point(39, 55), cts:point(-38, 55), cts:point(-38, -21)));
 declare variable $BLANK-SEARCH-STUB-JS := fn:concat('var defaultsearchtext = "', $BLANK-SEARCH-STUB-TEXT, '";');
@@ -21,7 +21,21 @@ declare variable $SHOW-ZERO-COUNT-FACETS as xs:boolean := fn:false();
 declare variable $SHOW-WHOAMI as xs:boolean := fn:false();
 declare variable $CACHE-FACETS as xs:boolean := fn:false();
 declare variable $HTTP_EXPIRES_CACHE := xs:dayTimeDuration("PT12H");
+(:if you look up links at id  using the preprocessing varnish, the result will be thehost name and port  $ID-LOOKUP-CACHE-BASE , which needs to be converted to ID-BASE :)
+declare variable $ID-VARNISH-BASE := "http://idwebvlp03.loc.gov";
+declare variable $ID-LOOKUP-CACHE-BASE := "http://mlvlp04.loc.gov:8080";
+declare variable $ID-BASE := "http://id.loc.gov";
+
+declare variable $BF-VARNISH-BASE := "http://idwebvlp03.loc.gov:8230";
+declare variable $BF-BASE := "http://mlvlp04.loc.gov:8230";
+
 declare variable $HOST-NAME := xdmp:host-name(xdmp:host());
+(:~
+:   This variable is used by the app to determine whether it is
+:   in production or development. (from id-main)
+:)
+declare variable $cfg:DEBUG as xs:boolean := fn:true();
+
 declare variable $DISPLAY-SUBDOMAIN :=
 (:2016 07 13 nate changed from marklogic3:)
     if (fn:contains($cfg:HOST-NAME, "mlvlp04")) then
@@ -33,7 +47,7 @@ declare variable $DEFAULT-BRANDING as xs:string :="lds" ;
 (:2016 07 13 nate NOT changed from marklogic3 to mlvlp04; maybe later.... :)
 declare variable $DEFAULT-COLLECTION as xs:string :=
     if (fn:contains($cfg:HOST-NAME, "mlvlp04")) then
-        "/lscoll/lcdb/works/"
+         "/catalog/"
     else
         "/catalog/";
 
@@ -42,7 +56,7 @@ declare variable $SITES as node() :=
   <sites xmlns="http://www.marklogic.com/ps/config">
         <site> <!--test version of ml1-->
             <branding>lds</branding>
-            <label>Linked Data Store</label>
+            <label>BIBFRAME Database</label>
 			<prefix>/lds/</prefix>
 			<collection>/catalog/</collection> <!--translates to /catalog on ml1, /lscoll on ml3-->
         </site>
@@ -501,7 +515,7 @@ declare variable $DISPLAY-ELEMENTS as node() :=
     let $f-counter := 0
     return
     <display>
-      <elt>
+     <!--  <elt>
           <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
             <page>search</page>
           <page>results</page>
@@ -519,12 +533,12 @@ declare variable $DISPLAY-ELEMENTS as node() :=
                 Remove the filter by selecting the X icon.
             </div>
           </longdesc>
-          <starts-hidden>false</starts-hidden>
+          <starts-hidden>true</starts-hidden>
           <data-function>vf:facet-data</data-function>
           <facet-param>info:lc/xq-modules/lcindex</facet-param>
           <facet-param>digitized</facet-param>
           <facet-operation>or</facet-operation>
-        </elt>
+        </elt> -->
         <elt>
           <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
           <page>search</page>
@@ -546,7 +560,7 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <facet-param>materialGroup</facet-param>
           <facet-operation>or</facet-operation>
         </elt>
-        <elt>
+		 <elt>
           <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("ft",$f-counter) }</facet-id>
           <page>search</page>
           <page>results</page>
@@ -571,8 +585,8 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <facet-param>info:lc/xq-modules/lcindex</facet-param>
           <facet-param>lcc3</facet-param>
           <facet-operation>or</facet-operation>
-        </elt>        
-        <elt>
+        </elt>      
+		 <elt>
           <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
           <page>search</page>
           <page>results</page>
@@ -594,12 +608,14 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <facet-param>language</facet-param>
           <facet-operation>and</facet-operation>
         </elt>
+         
+       
         <elt>
           <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
           <page>search</page>
           <page>results</page>
           <view-area>left</view-area>
-          <view-name>Publication Year</view-name>
+          <view-name>Publication Year (bf:Instance)</view-name>
           <description>To refine results by year, select any year from the list provided.  While the most common occurance is the 'year of publication', this filter may also refer to year of issuance, creation, copyright, etc.  The first ten years are shown (based on frequency), but more can be displayed by selecting the 'more publication years' link. It is only possible to select one year at a time. Remove the filter by selecting the X icon.</description>
           <longdesc>
             <div xmlns="http://www.w3.org/1999/xhtml">
@@ -620,7 +636,7 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <page>search</page>
           <page>results</page>
           <view-area>left</view-area>
-          <view-name>Library Location</view-name>
+          <view-name>Library Location (bf:Item)</view-name>
           <description>Materials available at the Library are located in several different curatorial locations.  Most materials are part of the 'General Collections' and can be requested in any Jefferson or Adams building reading room.  However, some materials are available only from specialized reading rooms.  This filter is additive (one or more locations can be selected at a time). Remove any location filter by selecting the X icon.</description>
           <longdesc>
             <div xmlns="http://www.w3.org/1999/xhtml">
@@ -630,7 +646,7 @@ declare variable $DISPLAY-ELEMENTS as node() :=
                 Remove the filter by selecting the X icon.
             </div>
           </longdesc>
-          <starts-hidden>false</starts-hidden>
+          <starts-hidden>true</starts-hidden>
           <data-function>vf:facet-data</data-function>
           <facet-param>info:lc/xq-modules/lcindex</facet-param>
           <facet-param>loc1</facet-param>
@@ -723,7 +739,7 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <facet-operation>or</facet-operation>
         </elt-->
         
-        <!-- <elt>
+       <!--  <elt>
           <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
           <page>search</page>
           <page>results</page>
@@ -736,6 +752,27 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <facet-param>memberOf</facet-param>
           <facet-operation>or</facet-operation>
         </elt> -->
+		 <elt>
+          <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
+          <page>search</page>
+          <page>results</page>
+          <view-area>left</view-area>
+          <view-name>Role</view-name>
+          <description>To refine results by role, select a role from the list provided. Currently, it is only possible to filter by one role at a time. Remove the filter by selecting the X icon.</description>
+          <longdesc>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                To refine results by role, select a material type from the list provided.<br />
+                <br />
+                It is only possible to filter by one role at a time.<br />
+                Remove the filter by selecting the X icon.
+            </div>
+          </longdesc>
+          <starts-hidden>false</starts-hidden>
+          <data-function>vf:facet-data</data-function>
+          <facet-param>info:lc/xq-modules/lcindex</facet-param>
+          <facet-param>role</facet-param>
+          <facet-operation>or</facet-operation>
+        </elt>
         
        <!--  <elt>
           <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
@@ -771,7 +808,7 @@ declare variable $DISPLAY-ELEMENTS as node() :=
     <page><behavior>transcript</behavior><noattributes/>
       <description>transcript of the whole thing, see greatconv</description>
     </page>
-    <example><name>tohap</name>http://marklogic3.loctest.gov/nlc/detail.xqy?q=tohap%20jigme&amp;collection=all&amp;count=10&amp;pg=1&amp;mime=text%2Fhtml&amp;sort=score-desc&amp;qname=keyword&amp;uri=loc.natlib.tohap.H0202&amp;index=3</example>
+    <example><name>tohap</name>http://marklogic3.loctest.gov/lds/detail.xqy?q=tohap%20jigme&amp;collection=all&amp;count=10&amp;pg=1&amp;mime=text%2Fhtml&amp;sort=score-desc&amp;qname=keyword&amp;uri=loc.natlib.tohap.H0202&amp;index=3</example>
       <example><name>beaux arts</name>http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.200003788/contents.html</example>
       <example><name>greatconv</name>http://lcweb2.loc.gov/diglib/ihas/loc.natlib.ihas.200031107/default.html</example>              
   </object-control>

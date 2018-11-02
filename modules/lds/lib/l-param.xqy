@@ -17,7 +17,7 @@ declare function lp:get-params() as element(param:params) {
                         element param:value {$value}
                     }
             }
-    let $_ := xdmp:log(concat("get-params: ",xdmp:quote($params)),'debug')    
+    
     return
         $params
     
@@ -48,10 +48,10 @@ declare function lp:get-param-single($params as element(param:params), $name as 
 };
 
 declare function lp:get-param-single($params as element(param:params), $name as xs:string) as xs:string? {
-    lp:get-param-mutliple($params, $name)[1]
+    lp:get-param-multiple($params, $name)[1]
 };
 
-declare function lp:get-param-mutliple($params as element(param:params), $name as xs:string) as xs:string* {
+declare function lp:get-param-multiple($params as element(param:params), $name as xs:string) as xs:string* {
     ($params/param:param[param:name eq $name])/param:value/text()
 };
 
@@ -86,7 +86,7 @@ declare function lp:param-insert($params as element(param:params), $name as xs:s
                             
                         }
                 }            
-            let $_ := xdmp:log(concat("param-insert: ",xdmp:quote($ret-params)),'fine')            
+            
             return
                 $ret-params
 };
@@ -122,7 +122,7 @@ declare function lp:param-replace-or-insert($params as element(param:params), $n
                         element param:value { xs:string($value) }
                     }
         }    
-    let $_ := xdmp:log(concat("param-replace-or-insert: ",xdmp:quote($ret-params)),'fine')    
+    
     return
         $ret-params
 };
@@ -137,7 +137,7 @@ declare function lp:param-remove-all($params as element(param:params), $name as 
                 else
                     $param
         }    
-    let $_ := xdmp:log(concat("param-remove-all: ",xdmp:quote($ret-params)),'fine')    
+    
     return
         $ret-params
 };
@@ -152,7 +152,7 @@ declare function lp:param-remove($params as element(param:params), $name as xs:s
                 else
                     $param
         }    
-    let $_ := xdmp:log(concat("param-remove: ",xdmp:quote($ret-params)),'fine')    
+    
     return
         $ret-params    
 };
@@ -186,7 +186,7 @@ declare function lp:param-remove-all-multi($params as element(param:params), $na
                     else
                     $param
         }    
-    let $_ := xdmp:log(concat("param-remove-all-multi: ",xdmp:quote($ret-params)),'fine')    
+    (:let $_ := xdmp:log(concat("param-remove-all-multi: ",xdmp:quote($ret-params)),'fine')    :)
     return
         $ret-params
 };

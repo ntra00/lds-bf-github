@@ -16,6 +16,9 @@ declare namespace mods = "http://www.loc.gov/mods/v3";
 declare namespace mets = "http://www.loc.gov/METS/";
 declare namespace marc = "http://www.loc.gov/MARC21/slim";
 declare namespace mxe = "http://www.loc.gov/mxe";
+declare namespace bf = "http://id.loc.gov/ontologies/bibframe/";
+declare namespace bflc = "http://id.loc.gov/ontologies/bflc/";
+declare namespace madsrdf = "http://www.loc.gov/mads/rdf/v1#";
 declare namespace mxe1 = "mxens";
 declare namespace xlink="http://www.w3.org/1999/xlink";
 declare namespace idx="info:lc/xq-modules/lcindex";
@@ -84,9 +87,9 @@ declare function lq:get-last-query-without-me($ns,$ln) as cts:query? {
     let $params := $lp:CUR-PARAMS
     let $query := xdmp:get-session-field("query",())
     let $query-xml := (<x>{$query}</x>)/node()
-    let $_ := xdmp:log(concat("Orig Query: ",xdmp:quote($query-xml)),'debug')
+    (:let $_ := xdmp:log(concat("Orig Query: ",xdmp:quote($query-xml)),'debug'):)
     let $query-xml-removed := if($query-xml) then lq:recursive-remove-query($ns,$ln,$query-xml) else ()
-    let $_ := xdmp:log(concat("Removed Query: ",xdmp:quote($query-xml-removed)),'debug')
+    (:let $_ := xdmp:log(concat("Removed Query: ",xdmp:quote($query-xml-removed)),'debug'):)
     return
         cts:query($query-xml-removed)
 };
@@ -121,6 +124,130 @@ declare function lq:tiers-from-params($params as xs:string*) as element(tier)* {
                     }
             else ()
 };
+declare function lq:coll-browse-query-from-params() as cts:query? {
+let $filter as xs:string? := lp:get-param-single($lp:CUR-PARAMS, "filter","works")
+	let $category as xs:string? := lp:get-param-single($lp:CUR-PARAMS, "category","")
+	let $cln as xs:string := lp:get-param-single($lp:CUR-PARAMS, 'collection', $cfg:DEFAULT-COLLECTION)
+
+(: filter first:)
+	let $collection-query := 
+        if ($cln eq ("/lscoll/", "/lscoll/lcdb/", "/lscoll/erms/")) then
+            cts:and-not-query(cts:collection-query($cln), cts:collection-query(("/lscoll/lcdb/holdings/", "/lscoll/erms/holdings/")))
+        else 
+			if ($filter="instances" )then 
+				cts:and-query((
+					cts:collection-query($cln),
+					cts:directory-query("/lscoll/lcdb/instances/", "infinity")
+				))
+		else 
+			if ($filter="items" )then 
+				cts:and-query((
+					cts:collection-query($cln),
+					cts:directory-query("/lscoll/lcdb/items/", "infinity")
+				))
+		else (: not tested :)
+			if ($filter="stubs" )then 				
+					cts:and-query((cts:collection-query($cln),					
+								cts:directory-query("/lscoll/lcdb/works/", "infinity"),				
+								cts:collection-query("/bibframe/stubworks/")
+								))
+				else (: not tested :)
+			if ($filter="works" )then 
+				cts:and-not-query(
+					cts:and-query((cts:collection-query($cln),					
+								cts:directory-query("/lscoll/lcdb/works/", "infinity")
+								)),
+					cts:collection-query("/bibframe/stubworks/")
+				)
+		else 
+			if ($filter="all" )then 
+				cts:and-query((
+					cts:collection-query($cln)					
+				))
+		
+		else  (: default is all:)
+           
+			cts:and-query((
+					cts:collection-query($cln)					
+				))
+		
+
+	let $collection-query:=
+		if 	($category="mergedWorks") then  (:consolidatedBibs:)
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/consolidatedBibs/")))
+(:		else if 	($category="linked") then 
+				cts:and-query((
+								$collection-query, cts:collection-query("/bibframe/had7xx/")
+							))	:)
+		else if 	($category="casalini") then 
+			cts:and-query(($collection-query, cts:collection-query("/test/casalini/")))
+
+		else if ($category="hasLinks") then 			
+			cts:and-not-query(
+					cts:and-query(( $collection-query,
+								cts:collection-query("/bibframe/relatedTo/")
+								)),
+					cts:collection-query("/bibframe/stubworks/")
+					)
+		else if 	($category="notMerged") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/notMerged/")))
+	(: what is the distinction? no merge, not merged : check index.xqy :)
+		else if ($category="noMerge") then 							
+				cts:and-query(($collection-query,
+			        cts:and-not-query( $collection-query, 
+							                  cts:collection-query("/bibframe/consolidatedBibs/"))
+				))
+			
+		else if 	($category="authNameTitle") then 
+			cts:and-query(($collection-query, cts:element-value-query(xs:QName("idx:rdftype"),"NameTitle") ))
+		else if 	($category="authTitle") then 
+			cts:and-query(($collection-query, cts:element-value-query(xs:QName("idx:rdftype"),"Title") ))
+		else if 	($category="authWork") then 
+			cts:and-query(($collection-query, cts:element-value-query(xs:QName("idx:memberOfURI"),"http://id.loc.gov/authorities/names/collection_FRBRWork") ))			
+		else if 	($category="mergedInstances") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/mergedInstances/")))
+		else if 	($category="authMerge") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/mergedtoAuthWork/")))		
+		else if 	($category="bibMerge") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/mergedtoBibWork/")))		
+		else if 	($category="expression") then 
+			cts:and-query(($collection-query,
+							cts:or-query((cts:collection-query("/resources/expressions/"),
+							 	cts:element-value-query(xs:QName("idx:memberOfURI"),"http://id.loc.gov/authorities/names/collection_FRBRExpression") ))			
+								))
+		else if 	($category="edited") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/editor/")))		
+		else if 	($category="stubworks") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/stubworks/")))		
+		else if 	($category="nonstubs") then 
+			cts:and-not-query($collection-query, 
+								cts:collection-query("/bibframe/stubworks/")
+								)		
+		else if 	($category="ibc") then 
+			cts:and-query(($collection-query, 
+									 	cts:element-value-query(xs:QName("mxe:d906_subfield_b"),"ibc")										 
+						))
+		else if 	($category="fibc") then 
+			cts:and-query(($collection-query, 
+									 	cts:element-value-query(xs:QName("mxe:d985_subfield_a"),"VENDOR LOAD") 												 
+						))
+		else if 	($category="ecip") then 
+			cts:and-query(($collection-query, 
+									 	cts:element-value-query(xs:QName("mxe:d906_subfield_e"),"ecip")			
+									 										 
+						))
+		else if 	($category="rda") then 
+			cts:and-query(($collection-query,						
+						cts:element-attribute-value-query(xs:QName("bf:DescriptionConventions"),xs:QName("rdf:about"),"http://id.loc.gov/vocabulary/descriptionConventions/rda",("exact"))
+					)		)
+		
+		else  $collection-query
+let $_:=xdmp:log(fn:concat("DISPLAY", xdmp:quote($collection-query)),"info")
+
+	return
+	$collection-query
+
+};
 
 declare function lq:query-from-params($params as element(param:params)) as cts:query? {
     let $term as xs:string? := lp:get-param-single($params, 'q')
@@ -128,6 +255,12 @@ declare function lq:query-from-params($params as element(param:params)) as cts:q
     let $qname as xs:string? := lp:get-param-single($params, 'qname')
     let $precision as xs:string? := lp:get-param-single($params, 'precision')
     let $points as xs:string? := lp:get-param-single($lp:CUR-PARAMS, "latlng")
+	
+	(: filter is works instances items all, default works :)
+	let $filter as xs:string? := lp:get-param-single($lp:CUR-PARAMS, "filter","works")
+	let $category as xs:string? := lp:get-param-single($lp:CUR-PARAMS, "category","")
+	let $qname:=if ($category="batch") then "mxe:datafield_985" else $qname
+	
     let $cln as xs:string := lp:get-param-single($lp:CUR-PARAMS, 'collection', $cfg:DEFAULT-COLLECTION)
     let $region :=
         if ($points eq "earth") then
@@ -136,15 +269,33 @@ declare function lq:query-from-params($params as element(param:params)) as cts:q
             georss:polygon(<georss:polygon>{replace($points, "(, |\(|\))", " ")}</georss:polygon>)
         else
             ()
-    let $text-query := 
+    let $text-query :=  
         if ($term) then
-            if ($qname ne "keyword") then
-                if ($precision eq "exact") then
+            if ($qname ne "keyword") then 
+                if ($precision eq "exact") then (:this is for the browse results hits to be searched :)
                     (: cts:element-value-query(xs:QName($qname), $term, ("exact")) :)
                     (: See Danny Sokolsky at http://www.mail-archive.com/general@developer.marklogic.com/msg02325.html :)
-                    cts:element-range-query(xs:QName($qname), "=", $term, ("collation=http://marklogic.com/collation/en/S1"))
-                 else
-                    cts:element-query(xs:QName($qname), lq:text-to-query($term))
+					if ($qname eq "collection") then
+					          cts:collection-query(concat("/",$term,"/") )
+				else if ($qname eq "notcollection") then
+					          cts:not-query(cts:collection-query( concat("/",$term,"/")))
+				
+					else if ($qname eq "idx:mDate") then
+					        cts:element-range-query(xs:QName($qname), "=", $term, ("collation=http://marklogic.com/collation/codepoint"))
+					else if ($qname eq "loaddate") then
+							let $dateterm:=xs:dateTime($term)
+							return
+					        	cts:element-attribute-range-query(xs:QName("mets:metsHdr"),xs:QName("LASTMODDATE"), "=", $dateterm,())				
+						else if ($qname eq "idx:lccn") then
+					        	cts:element-range-query(xs:QName($qname), "=", $term, ("collation=http://marklogic.com/collation/codepoint"))						
+						else
+                    		cts:element-range-query(xs:QName($qname), "=", $term, ("collation=http://marklogic.com/collation/en/S1"))
+                 else if ($qname eq "collection") then
+					        cts:collection-query(concat("/",$term,"/") )
+				 else if ($qname eq "notcollection") then
+					        cts:not-query(cts:collection-query( concat("/",$term,"/")))
+					else
+                    	cts:element-query(xs:QName($qname), lq:text-to-query($term))
             else
                 lq:text-to-query($term)
         else if ($sruterm) then
@@ -178,10 +329,124 @@ declare function lq:query-from-params($params as element(param:params)) as cts:q
     let $collection-query := 
         if ($cln eq ("/lscoll/", "/lscoll/lcdb/", "/lscoll/erms/")) then
             cts:and-not-query(cts:collection-query($cln), cts:collection-query(("/lscoll/lcdb/holdings/", "/lscoll/erms/holdings/")))
-        else
-            cts:collection-query($cln)
-        
-    let $multi-tier-elts := $cfg:DISPLAY-ELEMENTS//elt[data-function/text() eq "vf:facet-multi-tier" ]
+		else if ($filter="works" )then 
+					cts:and-not-query(
+							cts:and-query((
+									cts:collection-query($cln),
+									cts:collection-query("/resources/works/")					
+							)),
+							cts:collection-query("/bibframe/stubworks/")
+							)
+
+		else 
+			if ($filter="instances" )then 
+				cts:and-query((
+					cts:collection-query($cln),
+					cts:directory-query("/lscoll/lcdb/instances/", "infinity")
+				))
+		else 
+			if ($filter="items" )then 
+				cts:and-query((
+					cts:collection-query($cln),
+					cts:directory-query("/lscoll/lcdb/items/", "infinity")
+				))
+		else (: not tested :)
+			if ($filter="stubs" )then 				
+					cts:and-query((cts:collection-query($cln),					
+									cts:directory-query("/lscoll/lcdb/works/", "infinity"),				
+									cts:collection-query("/bibframe/stubworks/")
+									))
+					
+		else 
+			if ($filter="all" )then 
+				cts:and-query((
+					cts:collection-query($cln)					
+				))
+		
+		else  (: default for now is works only but if I can get filter to persist,  we can toggle on filter = works, instances, items, all :)
+            (:cts:and-not-query(
+					cts:and-query((
+						cts:collection-query("/lscoll/lcdb/works/"),
+						cts:collection-query($cln)
+					)),
+			cts:collection-query("/lscoll/lcdb/instances/")) :)
+
+
+			cts:and-query((
+				cts:collection-query($cln),
+				cts:directory-query("/lscoll/lcdb/works/", "infinity")
+			))
+
+	let $collection-query:=
+		if 	($category="mergedWorks") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/consolidatedBibs/")))
+		else if 	($category="notMerged") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/notMerged/")))
+		(: new,  not tested :)
+		else if 	($category="noMerge") then 							
+				cts:and-query(($collection-query,
+			        cts:and-not-query( $collection-query, 
+							                  cts:collection-query("/bibframe/consolidatedBibs/"))
+				))
+		else if 	($category="casalini") then 
+			cts:and-query(($collection-query, cts:collection-query("/test/casalini/")))
+
+		else if ($category="hasLinks") then 			
+			cts:and-not-query(
+					cts:and-query(( $collection-query,
+								cts:collection-query("/bibframe/relatedTo/")
+								)),
+					cts:collection-query("/bibframe/stubworks/")
+					)
+				
+		else if 	($category="authNameTitle") then 
+			cts:and-query(($collection-query, cts:element-value-query(xs:QName("idx:rdftype"),"NameTitle") ))
+		else if 	($category="authTitle") then 
+			cts:and-query(($collection-query, cts:element-value-query(xs:QName("idx:rdftype"),"Title") ))
+		else if 	($category="authWork") then 
+			cts:and-query(($collection-query, cts:element-value-query(xs:QName("idx:memberOfURI"),"http://id.loc.gov/authorities/names/collection_FRBRWork") ))			
+		else if 	($category="mergedInstances") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/mergedInstances/")))
+		else if 	($category="authMerge") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/mergedtoAuthWork/")))		
+		else if 	($category="bibMerge") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/mergedtoBibWork/")))		
+		else if 	($category="expression") then 
+			cts:and-query(($collection-query,
+							cts:or-query((cts:collection-query("/resources/expressions/"),
+							 	cts:element-value-query(xs:QName("idx:memberOfURI"),"http://id.loc.gov/authorities/names/collection_FRBRExpression") ))			
+								))
+		else if 	($category="edited") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/editor/")))		
+		else if 	($category="stubworks") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe/stubworks/")))		
+		else if 	($category="nonstubs") then 
+			cts:and-not-query($collection-query, 
+								cts:collection-query("/bibframe/stubworks/")
+								)		
+		else if 	($category="ibc") then 
+			cts:and-query(($collection-query, 
+									 	cts:element-value-query(xs:QName("mxe:d906_subfield_b"),"ibc")										 
+						))
+		else if 	($category="fibc") then 
+			cts:and-query(($collection-query, 
+									 	cts:element-value-query(xs:QName("mxe:d985_subfield_a"),"VENDOR LOAD") 												 
+						))
+		else if 	($category="ecip") then 
+			cts:and-query(($collection-query, 
+									 	cts:element-value-query(xs:QName("mxe:d906_subfield_e"),"ecip")												 										 
+						))
+						
+		else if 	($category="nondistributed") then 
+			cts:and-query(($collection-query, cts:collection-query("/bibframe-process/not-distributed/")))		
+		else if 	($category="rda") then 
+			cts:and-query(($collection-query,						
+						cts:element-attribute-value-query(xs:QName("bf:DescriptionConventions"),xs:QName("rdf:about"),"http://id.loc.gov/vocabulary/descriptionConventions/rda",("exact"))
+					)		)
+		
+		else  $collection-query
+    
+	let $multi-tier-elts := $cfg:DISPLAY-ELEMENTS//elt[data-function/text() eq "vf:facet-multi-tier" ]
     let $multi-tier-queries :=
         for $elt in $multi-tier-elts
         let $id := $elt/facet-id/text()
@@ -200,12 +465,15 @@ declare function lq:query-from-params($params as element(param:params)) as cts:q
                     ()
 
     let $final-query := cts:and-query(($facet-query, $text-query, $multi-tier-queries, $geo-query, $collection-query))
-    let $_ := xdmp:log(concat("final Query: ", xdmp:quote(<blah>{$final-query}</blah>/element())), "info")
+    
     return
         $final-query
 };
 
-declare function lq:browse-lexicons($query as xs:string, $field as xs:string, $direction as xs:string, $collection as xs:string) as xs:string* {
+declare function lq:browse-lexicons($query as xs:string, $field as xs:string, $direction as xs:string, $collection as xs:string,
+$filter as xs:string)
+ (:as xs:string* :)
+ {
     let $howMany := 25
     let $browsefld := 
         if ($field eq "subject") then
@@ -214,19 +482,66 @@ declare function lq:browse-lexicons($query as xs:string, $field as xs:string, $d
             "idx:mainCreator"
         else if ($field eq "class") then
             "idx:lcclass"
-        else
+	   else if (matches($field, "loaddate", "i")) then 
+            "LASTMODDATE"		
+	   else if (matches($field, "date", "i")) then 
+            "idx:mDate"
+		else if (matches($field, "lccn", "i")) then 
+            "idx:lccn"
+       else if (matches($field, "nameTitle", "i")) then 
+            "idx:nameTitle"
+		else if (matches($field, "imprint", "i")) then 
+            "idx:imprint"
+	    else
             "idx:titleLexicon"
+
     let $limit := concat("limit=", $howMany)
     let $order := $direction
-    let $collation := "collation=http://marklogic.com/collation/en/S1"
-    let $opts := ($limit, $order, $collation, "checked", "item-frequency", "concurrent")
-    let $cts := cts:collection-query($collection)
-    let $seq := cts:element-values(xs:QName($browsefld), $query, $opts, $cts)
-    return
+    let $collation := if ($field="date") then 
+							"collation=http://marklogic.com/collation/codepoint"
+					else if ($field="lccn") then 
+							"collation=http://marklogic.com/collation/codepoint"
+						else
+							"collation=http://marklogic.com/collation/en/S1"
+    
+	let $opts := if ($browsefld="LASTMODDATE") then
+					($limit, $order,  "checked", "item-frequency", "concurrent")
+				else
+					($limit, $order, $collation, "checked", "item-frequency", "concurrent")
+    
+	let $cts := if  (matches($field, "lccn", "i")) then
+				cts:and-query((
+					cts:collection-query($collection),
+					cts:directory-query("/lscoll/lcdb/instances/", "infinity")
+				))
+				else
+				(:for now, just don't try to filter, categorize the browse by loaddate	(xdmp:log(lq:coll-browse-query-from-params(),"info"),
+								lq:coll-browse-query-from-params()
+					):)
+					cts:collection-query($collection)
+ 	let $query:=if ($browsefld="LASTMODDATE" and fn:contains($query,"T")) then
+						let $time:=xs:time(fn:tokenize($query,"T")[2] )
+						let $day:=xs:date(fn:tokenize($query,"T")[1] )
+						return fn:dateTime($day, $time)
+					else 		if ($browsefld="LASTMODDATE") then
+						fn:dateTime(	 xs:date(fn:tokenize($query,"T")[1] ),xs:time("00:01:00"))
+				else $query				
+			
+  	let $result := if ($browsefld="LASTMODDATE") then
+					cts:element-attribute-values(xs:QName("mets:metsHdr"),xs:QName($browsefld), $query , $opts , $cts)
+				else
+					cts:element-values(xs:QName($browsefld), $query, $opts, $cts)
+	let $seq:=
         if ($order eq "descending") then
-            reverse($seq)
+            reverse($result)
         else
-            $seq
+            $result
+
+return if ($browsefld!="LASTMODDATE")then
+			$seq 
+		else (: convert from xs:dateTime :)
+			for $node in $seq return fn:string($node)
+
 };
 
 declare function lq:search-resolve($ctsquery as element(cts:and-query), $start as xs:int, $count as xs:int, $sort as xs:string, $cln as xs:string) as element(search:response) {

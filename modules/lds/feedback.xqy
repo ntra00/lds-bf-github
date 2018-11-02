@@ -1,8 +1,8 @@
 xquery version "1.0-ml";
 
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/nlc/lib/l-param.xqy";
-import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "/nlc/view/v-search.xqy";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/nlc/config.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
+import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "/lds/view/v-search.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
 import module namespace metsutils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
 import module namespace marcutils = "info:lc/xq-modules/marc-utils" at "/xq/modules/marc-utils.xqy";
 import module namespace ssk = "info:lc/xq-modules/search-skin" at "/xq/modules/natlibcat-skin.xqy";
@@ -16,7 +16,7 @@ declare namespace mxe2 = "http://www.loc.gov/mxe";
 
 declare function local:output($msie as xs:boolean, $fbkuri as xs:string?, $title as xs:string?, $refer as xs:string?) as element(html) {
     let $detail-refer := 
-        if (contains($refer, "/nlc/detail.xqy")) then
+        if (contains($refer, "/lds/detail.xqy")) then
             (
                 <span id="ds-searchresultcrumb">
                     <a href="{$refer}">Record View</a>
@@ -54,7 +54,7 @@ declare function local:output($msie as xs:boolean, $fbkuri as xs:string?, $title
     let $whatis := concat("What does ", $num1, " ", $operator, " ", $num2, " equal?")
     let $math := string-join(($num1, $operator, $num2), "::")
     let $formhtml :=
-                <form action="/nlc/parts/feedback-mailer.xqy" accept-charset="utf-8" method="post" id="commentform" class="feedback">
+                <form action="/lds/parts/feedback-mailer.xqy" accept-charset="utf-8" method="post" id="commentform" class="feedback">
                     <p>
                         <span class="required">*</span>
                         <label for="fbkname">Your Name</label>

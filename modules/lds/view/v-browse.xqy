@@ -1,20 +1,24 @@
 xquery version "1.0-ml";
 
 module namespace vb = "http://www.marklogic.com/ps/view/v-browse";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/nlc/lib/l-param.xqy";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/nlc/config.xqy";
-declare default element namespace "http://www.w3.org/1999/xhtml";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+(:declare default element namespace "http://www.w3.org/1999/xhtml";:)
+
+
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
+declare namespace mets = "http://www.loc.gov/METS/";
 declare namespace mods = "http://www.loc.gov/mods/v3";
 declare namespace xlink = "http://www.w3.org/1999/xlink";
 declare namespace idx = "info:lc/xq-modules/lcindex";
 declare namespace ead = "urn:isbn:1-931666-22-9";
-declare namespace mets = "http://www.loc.gov/METS/";
+
 declare namespace lang = "xdmp:encoding-language-detect";
 
 declare default collation "http://marklogic.com/collation/en/S1";
 
 declare function vb:render($results as xs:string*, $field as xs:string, $direction as xs:string) as element(div) {
+
     let $url-prefix:=$cfg:MY-SITE/cfg:prefix/string()
     let $hits := vb:make-hits($results, $field, $url-prefix)
     let $first := $results[1]
@@ -26,11 +30,21 @@ declare function vb:render($results as xs:string*, $field as xs:string, $directi
             "Name Headings"
         else if (matches($field, "subject", "i")) then
             "Subject Headings"
-        else if (matches($field, "title", "i")) then
-            "Title Headings"
+        else if (matches($field, "nameTitle", "i")) then            
+			"Name/Title"
+		else if (matches($field, "imprint", "i")) then            
+			"Imprint"
+		else if (matches($field, "loaddate", "i")) then
+            "Date Ingested"
+		else if (matches($field, "date", "i")) then
+            "Date Modified"
+		else if (matches($field, "title", "i")) then
+            "Title Headings"		
+		else if (matches($field, "lccn", "i")) then
+            "LCCN"
         else if (matches($field, "class", "i")) then
             "LC Classification"
-        else
+		 else
             ()
     return
         <div id="dsresults">
@@ -42,15 +56,26 @@ declare function vb:render($results as xs:string*, $field as xs:string, $directi
 };
 
 declare function vb:make-hits($terms as xs:string*, $field as xs:string, $url-prefix as xs:string) as element(ul) {
+
     let $qname :=
         if (matches($field, "author", "i")) then
             "idx:mainCreator"
         else if (matches($field, "subject", "i")) then
             "idx:subjectLexicon"
-        else if (matches($field, "title", "i")) then
+        else if (matches($field, "nameTitle", "i")) then            
+			"idx:nameTitle"		
+		else if (matches($field, "title", "i")) then
             "idx:titleLexicon"
+		else if (matches($field, "imprint", "i")) then
+            "idx:imprint"
         else if (matches($field, "class", "i")) then
             "idx:lcclass"
+		else if (matches($field, "lccn", "i")) then            
+			"idx:lccn"
+		else if (matches($field, "loaddate", "i")) then
+            "loaddate"
+		else if (matches($field, "date", "i")) then
+            "idx:mDate"
         else
             "idx:subjectLexicon"
     return
@@ -58,8 +83,17 @@ declare function vb:make-hits($terms as xs:string*, $field as xs:string, $url-pr
         {
             if (count($terms) gt 0) then
                 for $term at $i in $terms
-                let $freq := cts:frequency($term)
-                let $uri := concat($url-prefix,"search.xqy?count=10&amp;sort=score-desc&amp;pg=1&amp;precision=exact&amp;qname=", $qname, "&amp;q=", encode-for-uri($term))
+                let $freq := if ($qname="loaddate") then								
+								let $dateterm:=xs:dateTime($term)
+								return 									 
+									xdmp:estimate(cts:search(/,cts:element-attribute-range-query(xs:QName("mets:metsHdr"),xs:QName("LASTMODDATE"), "=", $dateterm)))
+							else
+								cts:frequency($term)
+                let $uri := if(matches($field, "lccn", "i") or matches($field, "imprint", "i")) then 
+						concat($url-prefix,"search.xqy?count=10&amp;sort=score-desc&amp;pg=1&amp;precision=exact&amp;qname=", $qname, "&amp;filter=instances&amp;q=", encode-for-uri($term))
+					
+					else
+				 		concat($url-prefix,"search.xqy?count=10&amp;sort=score-desc&amp;pg=1&amp;precision=exact&amp;qname=", $qname, "&amp;q=", encode-for-uri($term))
                 let $evenodd :=
                     if ($i mod 2 eq 0) then
                         "even"
@@ -94,6 +128,7 @@ declare function vb:browse-nav($first as xs:string?, $last as xs:string?, $brows
         let $new-params := lp:param-remove-all($new-params, 'browse-order')
         let $new-params := lp:param-remove-all($new-params, 'browse')
         let $new-params := lp:param-remove-all($new-params, 'collection')
+		let $new-params := lp:param-remove-all($new-params, 'filter') (:???? :)
         let $new-params := lp:param-remove-all($new-params, 'branding')
         let $new-param-str := lp:param-string($new-params)
         let $text := "Back to results"
@@ -105,7 +140,7 @@ declare function vb:browse-nav($first as xs:string?, $last as xs:string?, $brows
                 return
                     concat($url-prefix,"detail.xqy?", lp:param-string($back-params))
             (:else
-                ("/nlc/index.xqy", xdmp:set($text,"Back"))
+                ("/lds/index.xqy", xdmp:set($text,"Back"))
 				:)
         let $back := <li><a class="back" href="{$browseback}">{$text}</a></li>
         return

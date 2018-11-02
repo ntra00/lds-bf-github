@@ -25,6 +25,8 @@ declare function local:output($msie as xs:boolean, $facets as element(div)+, $id
     let $new-params := lp:param-remove-all($new-params, 'view')
     let $new-params := lp:param-remove-all($new-params, 'mps')
     let $new-params := lp:param-remove-all($new-params, 'mpg')
+	let $new-params := lp:param-remove-all($new-params, 'branding')
+	 let $new-params := lp:param-replace-or-insert($new-params, 'behavior', 'bfview')
     let $crumbs := 
         (
             <span id="ds-searchresultcrumb"><a href="/lds/search.xqy?{lp:param-string($new-params)}">{$searchtitle}</a></span>,
