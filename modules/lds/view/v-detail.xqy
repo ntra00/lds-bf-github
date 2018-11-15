@@ -88,7 +88,7 @@ actually, there are only 2 mets docs in results at a time; controlled by prev/ne
 
     let $viewindex := lp:get-param-integer($lp:CUR-PARAMS, 'index', 1)
     let $sortorder as xs:string? := lp:get-param-single($lp:CUR-PARAMS,'sort','score-desc')
-    
+    let $sparql-offset:=lp:get-param-integer($lp:CUR-PARAMS, 'offset', 0)
 (:	let $path := xdmp:get-request-url():)
 	let $branding:=$cfg:MY-SITE/cfg:branding/string()
 	let $collection:=$cfg:MY-SITE/cfg:collection/string()
@@ -219,7 +219,7 @@ actually, there are only 2 mets docs in results at a time; controlled by prev/ne
  let $details :=      
 	
 		if (matches($uri,"(lcdb|africasets|erms|works|instances|items)"  ))   		(: $profile eq "lc:bibRecord":)  then
-            let $pre-details := md:lcrenderBib($current_object, $uri)
+            let $pre-details := md:lcrenderBib($current_object, $uri, $sparql-offset)
             return
 				if ($pre-details instance of element(error:error)) then
                 	$pre-details

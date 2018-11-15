@@ -210,7 +210,8 @@ declare variable $display:RDFprops as element () :=
 	<property name="usageAndAccessPolicy" range="UsageAndAccessPolicy" sort="23j">Use and access condition</property>
 	<property name="immediateAcquisition" range="ImmediateAcquisition" sort="23k">Immediate acquisition</property>
 	<property name="noteType" range="literal" sort="25c">Note type</property>
-	<property name="relatedTo" range="rdfs:Resource" sort="27b">Related resource</property>
+	<!-- <property name="relatedTo" range="rdfs:Resource" sort="27b">Related resource</property> -->
+	<property name="relatedTo" range="bf:Work" sort="27b">Related resource</property>
 	<property name="hasInstance" range="Instance" sort="27c">Has Instance</property>
 	<property name="instanceOf" range="Work" sort="27d">Instance of</property>
 	<property name="hasExpression" range="Work" sort="27e">Expressed as</property>
@@ -289,7 +290,7 @@ declare variable $display:RDFprops as element () :=
 	<property name="appliesTo" range="AppliesTo" sort="33">Applies to</property>
 	<property name="applicableInstitution" range="Agent">Applicable institution</property>
 	<property name="relationship" range="Relationship" sort="33">Related resource and relationship</property>
-	<property name="relation" range="Relation" sort="33">Specific relationship</property>
+	<property name="relation" range="rdfs:Resource" sort="33">Specific relationship</property>
 	<property name="seriesTreatment" sort="55a">Series treatment</property>
 	<property name="consolidates" sort="99a">Consolidates </property>
 	<property name="profile" sort="99a"  range="literal">Editor Profile Used </property>
@@ -504,7 +505,7 @@ declare variable $display:RDFclasses as element () :=
 	<class name="bf:MetadataLicensor" subclassof="Agent">Metadata licensor</class>
 	<class name="bf:PrimaryContribution" subclassof="Contribution" sort="02">Primary contribution</class>
 	<class name="bf:Relation">Relation</class>
-	<class name="bf:Relationship">Relationship</class>
+	
 	<class name="bf:DemographicGroup">Demographic group</class>
 	<class name="bf:CreatorCharacteristic">Creator characteristic</class>
 	<class name="bf:MachineModel" subclassof="SystemRequirement">Model</class>
@@ -519,12 +520,9 @@ declare variable $display:RDFclasses as element () :=
 	<class name="bflc:SeriesClassification" sort="55a">Series classification</class>
 	<class name="bflc:SeriesNumbering" sort="55a">Series numbering</class>
 	<class name="bflc:SeriesProvider" sort="55a">Series provider</class>
+	
 	<!-- auths -->
-	<class name="bf:SeriesAnalysis" sort="55a">Series analysis</class> 
-	<class name="bf:SeriesTracing" sort="55a">Series tracing</class>
-	<class name="bf:SeriesClassification" sort="55a">Series classification</class>
-	<class name="bf:SeriesNumbering" sort="55a">Series numbering</class>
-	<class name="bf:SeriesProvider" sort="55a">Series provider</class>
+	<class name="bflc:Relationship">Relationship</class>
 	<!-- madsrdf -->
 	<class name="madsrdf:Geographic" namespace="madsrdf" sort="24i">Geographic</class>
 <class name="madsrdf:HierarchicalGeographic" namespace="madsrdf" sort="24i">Hierarchical Geographic</class>
@@ -833,7 +831,7 @@ let $issn-portal-link:= if (fn:contains($displaytype,"Issn")) then
 			else ()
 
 let $url:= fn:string($node/@rdf:*[1])
-	
+	let $_:=xdmp:log($url, "info")
 let $link:= if (fn:contains($url,"id.loc.gov/resources/")) then
 				fn:replace($url,$cfg:BF-BASE, $cfg:BF-VARNISH-BASE)
 			else if (fn:contains($displaytype,"Issn")) then
@@ -869,7 +867,9 @@ let $ajax-link:= if (fn:contains($link,"id.loc.gov/")  and $displaytype ne "labe
 
 
 let $display-label:=
-				 if  (fn:contains($url,"example.org")) then
+				 if ($displaytype="plain-url") then
+							<a href="{$link}">{$label	}</a>
+				 else if  (fn:contains($url,"example.org")) then
 					$label
 				else if  (fn:matches($url,"(works|instances)" ) ) then
 					$label
@@ -879,12 +879,7 @@ let $display-label:=
 							<a href="{$link}" displayhref="{$ajax-link}" > {$shortnode}</a>
 					</div>					
 				else if ($link ) then
-					<a href="{$link}">{
-						(
-						
-					 $label	)
-					}
-					</a>
+					<a href="{$link}">{	($label	)}</a>
 				else $label
 
 	return 	$display-label
@@ -945,13 +940,9 @@ let $result:=
 	                            }
 	        </dd>,
             
-		   		(:if ($rdf/*[fn:not(self::* instance of element (rdf:type))][ fn:not(self::* instance of element (rdf:value))][ fn:not(self::* instance of element (rdfs:label))]) then 	         	        :)
+		   		
 				 if ($rdf/*[fn:not(index-of(ignores,fn:local-name(self::*)) )]) then
-				display:properties($rdf,$indent)
-	        	      (:(  for $i in $rdf/*[fn:not(self::* instance of element (rdf:type)) and fn:not(self::* instance of element (rdf:value))][ fn:not(self::* instance of element (rdfs:label))]
-	        				order by index-of($props-order,fn:local-name($i)) 
-	                           	return ( display:property($i, $indent +10) )
-            			):)
+						display:properties($rdf,$indent)	        	
             
 		   else ()	   
 	    )
@@ -1003,7 +994,13 @@ if ($rdf instance of element (bf:instanceOf) or $rdf instance of element (bflc:i
 				    (<dt class="label">{ fn:string($display:RDFprops/property[@name=fn:local-name($rdf)]) }</dt>,
 				    <dd class="bibdata">{if (fn:string($rdf)!="") then fn:string($rdf) else <br/> }</dd>
 				    )	
-  (: blank node property :)
+  else if ($rdf/bf:Work[@rdf:about]) then 
+              (<dt class="label">{ fn:string($display:RDFprops/property[@name=fn:local-name($rdf)]) }</dt>,
+			  
+				 <dd class="bibdata"> (Work) { display:linkme($rdf/bf:Work,"plain-url")}</dd>,
+				 <div class="boxed">{display:class($rdf/bf:Work, $indent+5 )}</div>
+				)
+  (: blank node property or text related? :)
   else if ($rdf/bf:Work) then 
               (<dt class="label">{ fn:string($display:RDFprops/property[@name=fn:local-name($rdf)]) }</dt>,
 				 <dd class="bibdata"> (Work) </dd>,
@@ -1071,7 +1068,11 @@ if ($rdf instance of element (bf:instanceOf) or $rdf instance of element (bflc:i
  		(<dt class="label">{fn:name($rdf)}</dt>,
  		 <dd class="bibdata">{if (fn:string($rdf)) then fn:string($rdf) else display:linkme($rdf, "value")}</dd>
 		)
-
+		(: need to fix: why is this property not selecte above someplace? bflc??? :)
+else if ($rdf  instance of element(bflc:relation )) then
+(<dt class="label">Role</dt>,
+ 		 <dd class="bibdata">{$rdf/rdfs:Resource/rdfs:label}</dd>
+		)
  else for $i in $rdf/*
  		order by index-of($class-order,fn:local-name($i))
  	 		return display:class($i, $indent+5 )

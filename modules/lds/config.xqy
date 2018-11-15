@@ -13,6 +13,8 @@ declare variable $BLANK-SEARCH-STUB-TEXT := "Enter search word(s)";
 declare variable $DEFAULT-POLYGON-ROI as cts:polygon := cts:polygon((cts:point(39, -21), cts:point(39, 55), cts:point(-38, 55), cts:point(-38, -21)));
 declare variable $BLANK-SEARCH-STUB-JS := fn:concat('var defaultsearchtext = "', $BLANK-SEARCH-STUB-TEXT, '";');
 declare variable $RESULTS-PER-PAGE as xs:integer := 10;
+declare variable $SPARQL-LIMIT as xs:integer := 25;
+
 declare variable $FACETS-PER-BOX as xs:integer := 15;
 declare variable $FACET-YEARS-BACK as xs:integer := 5;
 declare variable $MORE-COLUMN-COUNT as xs:integer := 5;

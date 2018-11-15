@@ -147,8 +147,8 @@ declare function md:prettify-rdf($rdf, $indent ) {
 };
 (:?instance instanceOf ?uri becomes "has instance " ?instance
 :)
-declare function md:my-children($my-uri,$node) {
-	 
+declare function md:my-children($my-uri,$node, $offset) {
+	let $limit:=$cfg:SPARQL-LIMIT
 	let $results:=
 	           if ($node="work") then (:instance of me:)
 	               searchts:return-specific-family($my-uri,"http://id.loc.gov/ontologies/bibframe/instanceOf", "/resources/instances/")
@@ -165,9 +165,9 @@ let $results:=<sparql:results>{
 					return 
 						$results//sparql:result[sparql:binding[@name="relateduri"]/sparql:uri=$r][1]
 				}</sparql:results>
+	let $sparql-nav:=md:sparql-nav($my-uri,$results,$offset, $limit)
 	
-	
- return md:linked-layout($results, $my-uri,$label) 
+ return md:linked-layout($results, $my-uri,$label, ()) 
 		
 };
 (:parent is in bf, use xpath, then sparql for label
@@ -200,7 +200,7 @@ let $results:=<sparql:results>{
 				}</sparql:results>
 	
 
-	 return md:linked-layout($results, $my-uri,$label) 
+	 return md:linked-layout($results, $my-uri,$label, ()) 
 
     (:  
 	    let $parent-label:= for $node in $results/sparql:result                            
@@ -236,10 +236,11 @@ declare function md:reverse-str( $str as xs:string? )  as xs:string {
 :  params @results : sparql results
 :  		  @my-uri is the current uri, so you don't create a link to yourself
 :		  @label is the label for this query
+: 		@bf is the whole doc, to mine for text relations
 : many titles now possible, since not using rdfs:label
 : if you want, as in my direct children, dedup before coming here
 :)
-declare function md:linked-layout($results, $my-uri , $label) {
+declare function md:linked-layout($results, $my-uri , $label, $bf) {
 let $my-node:=fn:tokenize($my-uri,"/")[fn:last()]									
 (:let $style:=if ($label="Has Instance(s)") then "background-color: #DDDDDD;"	else ()
 <ul style="{$style }" >
@@ -257,7 +258,9 @@ return
 			 		
 					let $node-label:=md:titleChop($node/sparql:binding[@name="label"]/sparql:literal,100)
 			 		
-					let $node-relation:=$node/sparql:binding[@name="relation"]/sparql:uri
+					let $node-relation:= if ($bf) then
+												$bf/bf:Work/bflc:relationship/bflc:Relationship[fn:string(bf:relatedTo/bf:Work/@rdf:about)=$node-uri]/bflc:relation/rdfs:Resource/rdfs:label
+											else $node/sparql:binding[@name="relation"]/sparql:uri
 			 		let $node-relation:=fn:tokenize(fn:string($node-relation),"/")[fn:last()]
 					
 					(: a stub work for c006408223 is c0064082230001  :)
@@ -283,15 +286,15 @@ return
 										let $related-local-uri:=fn:replace($node-uri,"id.loc.gov",$cfg:DISPLAY-SUBDOMAIN) (:???:)
 										(: relations onl show (ie., vary) for works, not hasinstance, hasitem:)
 										let $relation:= 
-											if (fn:contains($label, "Indirect") and fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 											
+											if (fn:contains($label, "Inward") and fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 											
 												<span style="color:blue;">{fn:concat(" (",$node-relation," this work)")}</span>
 											else if (fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 
 												<span style="color:blue;">{fn:concat($node-relation," : ")}</span>
 											else ()
 									return
-										if (fn:contains($label, "Indirect") and $node-label!="" and $node-relation) then 
+										if (fn:contains($label, "Inward") and $node-label!="" and $node-relation) then 
 								 	       (<a href="{$related-local-uri}">{fn:string($node-label)}</a>, fn:concat(" (", $node-id,") " ) ,$relation )
-										else if (fn:contains($label, "Indirect")  and $node-relation) then 
+										else if (fn:contains($label, "Inward")  and $node-relation) then 
 								 	       (<a href="{$related-local-uri}">{fn:string($node-id)}</a>,$relation )
 									
 
@@ -320,32 +323,34 @@ declare function md:work-siblings-old($my-uri) {
 			searchts:return-work-siblings($my-uri , "expressions")
 	let $expressions:=				
 		if ($expressions) then
-			md:linked-layout($expressions, $my-uri, "Expressions/Translations" )
+			md:linked-layout($expressions, $my-uri, "Expressions/Translations", () )
 			else ()
 	let $other-works:=
 			searchts:return-work-siblings($my-uri , "nonex-relateds")
 	let $other-works:=				
 		if ($other-works) then				
-			md:linked-layout($other-works, $my-uri,"Related Work(s), including stubs") 
+			md:linked-layout($other-works, $my-uri,"Related Work(s), including stubs", ()) 
 		else ()
 	
 	return(	 $expressions, $other-works )
 };
-declare function md:work-siblings($my-uri) {
-	let $direct:=
-			searchts:work-siblings-directional($my-uri , "Direct")
-	let $direct:=				
-		if ($direct) then
-				md:linked-layout($direct, $my-uri, "Direct Links to Works" )
+declare function md:work-siblings($my-uri, $offset,$bf) {
+	let $limit:=$cfg:SPARQL-LIMIT
+	let $direct-res:=
+			searchts:work-siblings-directional($my-uri , "Direct", $offset)
+	let $direct-res:=				
+		if ($direct-res) then				(: need bf for text relationships :)
+				md:linked-layout($direct-res, $my-uri, "Outgoing Work Link(s)", $bf )
 			else ()
-	let $indirect:=
-			searchts:work-siblings-directional($my-uri , "Indirect")
-	let $indirect:=				
-		if ($indirect) then				
-			md:linked-layout($indirect, $my-uri,"Indirect Linked Work(s)") 
+					
+	let $indirect-res:=
+			searchts:work-siblings-directional($my-uri , "Indirect",$offset)
+	let $indirect-res:=				
+		if ($indirect-res) then							
+			md:linked-layout($indirect-res, $my-uri,"Incoming Work Link(s)",()) 
 		else ()
-	
-	return(	 $direct, $indirect )
+	let $sparql-nav:=md:sparql-nav($my-uri,$direct-res,$offset, $limit)
+	return(	 $direct-res, $indirect-res , $sparql-nav)
 };
 
 
@@ -354,32 +359,66 @@ declare function md:work-siblings($my-uri) {
 : not called by works
 :  		  @work-uri is the parent uri
 :)
-declare function md:my-siblings($my-uri, $parent-uri) {
+declare function md:my-siblings($my-uri, $parent-uri,$offset) {
+ 	let $limit:=$cfg:SPARQL-LIMIT
 	let $graph:= if (fn:contains($my-uri,"instances")) then
 	               "/resources/instances/"
 	           else if (fn:contains($my-uri,"items")) then
 	               "/resources/items/"
 	           else ()
 	let $results:=
-			if (fn:contains($my-uri,"works")) then
+			(:if (fn:contains($my-uri,"works")) then
 				searchts:return-work-siblings($my-uri , "all")
-			else
-				searchts:return-my-siblings($parent-uri,$graph)
+				else 
+			:)			
+				searchts:return-my-siblings($parent-uri,$graph, $offset)
+
 	(: this may dedup multiple titles, but is it right? :)
 let $results:=<sparql:results>{
 				for $r in distinct-values($results/sparql:result/sparql:binding[@name="relateduri"]/sparql:uri)
 					return 
 						$results//sparql:result[sparql:binding[@name="relateduri"]/sparql:uri=$r][1]
 				}</sparql:results>
+let $sparql-nav:=md:sparql-nav($my-uri,$results, $limit, $offset)
 
 	return
-		md:linked-layout($results, $my-uri,"Sibling(s)")
+		( 
+			md:linked-layout($results, $my-uri,"Sibling(s)", ())		,
+			$sparql-nav
+				)
 		
 };
-
+(: show more and previous links for any sparql result :)
+declare function md:sparql-nav($uri,$results, $limit, $offset){
+let $permalink:=fn:string-join(fn:tokenize($uri, "/")[4 to 6],"/")
+let $more:=if (count($results//sparql:result) = ($limit ) ) then (: show a more link:)
+				let $params:=				lp:get-params() 
+				let $put:=lp:param-replace-or-insert($params, "offset", $offset + $limit)
+								
+				return <a href="/{$permalink}?offset={$offset+ $limit}">from {$offset + $limit} </a> 
+				
+				else ()
+let $less:=if (count($results//sparql:result) < (  $limit ) and $offset > 0) then 
+				let $params:=				lp:get-params() 
+				let $put:=lp:param-replace-or-insert($params, "offset", $offset - $limit)
+			
+				let $prevlabel:=
+						if (( $offset - $limit) = 0 ) then 
+							fn:concat("First ", $limit)
+						 else 
+						 	fn:concat("previous ",$limit, " from :",($offset - $limit))
+			
+				return <a href="/{$permalink}?offset={$offset - $limit}">{$prevlabel}</a> 
+			else ()
+return 			<span style="margin-left:40px;">
+					{$less} {
+						if ($less) then  fn:concat(" | ",$offset , " to ",($offset + $limit)," | ") else ()
+					}{ $more}
+				</span>
+};
 (: use sem triples to infer relations like instances that are instance of this work
 :)
-declare function md:bf-sem-links($uri, $bf) {
+declare function md:bf-sem-links($uri, $bf, $offset) {
 (: parent :)
 let $parent:=		
 	if (fn:contains($uri,"instances")) then
@@ -398,18 +437,18 @@ let $siblings:=
 					else 
 						fn:string($bf/bf:Item/*[fn:local-name()='itemOf'][1]/@rdf:resource)
 		
-			return md:my-siblings($uri, $parent-uri)
+			return md:my-siblings($uri, $parent-uri, $offset)
 						
 	else if (fn:matches($uri,"works")) then			
-			md:work-siblings($uri)			 		
+			md:work-siblings($uri, $offset, $bf)			 		
 	else ()			
 
 (: children :)
 let $children:=    
 	if (fn:contains($uri,"works")) then
-				md:my-children($uri, "work")			
+				md:my-children($uri, "work", $offset)			
 	else if (fn:contains($uri,"instances")) then
-				md:my-children($uri, "instance")
+				md:my-children($uri, "instance", $offset)
     else ()			
 
 
@@ -452,7 +491,7 @@ return if ($x!="" ) then
 		else ""
 };
 
-declare function md:lcrenderBib($mets as node() ,$uri as xs:string) as element()? { 
+declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset ) as element()? { 
 
 (:returns xhtml div or error:error or 404 not found and () :)
      
@@ -464,10 +503,14 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string) as element()
 	let $new-params := lp:param-remove-all($new-params, 'collection')
 	let $new-params := lp:param-remove-all($new-params, 'branding')
     
-    let $ajaxparams := lp:param-string($new-params)
+    let $ajaxparams := lp:param-string($new-params)	
+	(:let $offset  := lp:get-param-single($lp:CUR-PARAMS, 'offset', '0'):)
     
-    (:let $mets:= utils:mets($uri) :)
+	let $offset:= if (fn:not($offset castable as xs:integer)) then 0
+				else if (xs:integer($offset) > 200 ) then 200
+				else xs:integer($offset)
 
+    
     return 
 	  if ( not(exists( $mets) ) ) then
 			xdmp:set-response-code(404,"Item Not found")
@@ -526,7 +569,7 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string) as element()
 		            ()
      		let $put :=map:put($params, "marcedit","yes" )
             let $bf:= $mets//mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF
-			let $editor-profile:=fn:string($bf//bf:adminMetadata[1]//bflc:profile[1]  )
+			let $editor-profile:=fn:string($bf/child::*[1]/bf:adminMetadata[1]//bflc:profile[1]  )
 		 (: not working: update the doc from blank node! node replace of the rdf:about does not work for permissions issues. ask clay?:)
 		
 		(:	let $x :=xdmp:log(fn:string($bf/bf:Work/bf:contribution[1]/*/bf:agent/bf:Agent/@rdf:about),"info")
@@ -557,35 +600,39 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string) as element()
 							fn:string($mets/mets:mets/@OBJID)
 			let $loaded:=fn:substring($mets//mets:metsHdr/@LASTMODDATE,1,10)
 			let $loaddate:=xs:date($loaded)
-			let $loaded-display:=if (fn:starts-with($loaded,"2017")) then <span style="color:red;">{$loaded}</span>
-							else <span >{$loaded}</span>
-			let $reloadable:= if (fn:contains($uri,"works") and
-							 fn:not(fn:contains($uri, "works.n")) and 
-							 fn:not(fn:contains($uri, "works.e")) and 
-							 ( $loaddate < xs:date("2018-08-31") 
-							 ) and 
-							 index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/convertedBibs/" )
-							 ) then
-								let $token:=fn:replace(fn:tokenize($uri,"\.")[fn:last()],"^c0*","")
-									return fn:concat("./rbi ", $token)
-							else if (fn:contains($uri,"instances") and ($loaddate < xs:date("2018-08-31")) ) then
-									let $token:=fn:replace(fn:tokenize($uri,"\.")[fn:last()],"^c0*","")
-											return fn:concat("./rbi ", fn:substring($token,1,fn:string-length($token)-4))
-							else if  (fn:contains($uri, "works.n") and
-							 		 $loaddate < xs:date("2018-08-31") and 
-									 fn:not(index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/consolidatedBibs/" ))
-							 )  then
-									let $token:= fn:tokenize($uri,"\.")[fn:last()]
-										return fn:concat("./post-auth.sh ", $token)
-							else
-									()
-							
-			let $_ := if ($reloadable) 	then
-					 	 (: allows log file to contain rbi command for auto reload: :)
-						xdmp:log(fn:concat("BF Database viewed: ", $uri, ": ", $reloadable),"info")
-					 else 
-					 ()
 
+			let $loaded-display:=if (fn:starts-with($loaded,"2017")			) then <span style="color:red;">{$loaded}</span>
+							else <span >{$loaded}</span>
+							(: reload command for nametitles or bibs that were loaded before 8/31/18 and not merged: :)
+			let $reloadable:= if (fn:contains($uri,"works") and
+								 fn:not(fn:contains($uri, "works.n")) and 
+								 fn:not(fn:contains($uri, "works.e")) and 
+								 ( $loaddate < xs:date("2018-09-19") 
+								 ) and 
+								 index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/convertedBibs/" )
+								 ) then
+									let $token:=fn:replace(fn:tokenize($uri,"\.")[fn:last()],"^c0*","")
+										return fn:concat("./rbi ", $token)
+								else if (fn:contains($uri,"instances") and ($loaddate < xs:date("2018-09-19")) ) then
+										let $token:=fn:replace(fn:tokenize($uri,"\.")[fn:last()],"^c0*","")
+												return fn:concat("./rbi ", fn:substring($token,1,fn:string-length($token)-4))
+								else if  (fn:contains($uri, "works.n") and
+								 		 $loaddate < xs:date("2018-09-19") and 
+										 fn:not(index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/consolidatedBibs/" ))
+								 )  then
+										let $token:= fn:tokenize($uri,"\.")[fn:last()]
+											return fn:concat("./post-auth.sh ", $token)
+								else
+										()
+							
+			
+						let $_ := if ($reloadable) 	then
+						 	 (: allows log file to contain rbi  or post-auth command for auto reload: :)
+							xdmp:log(fn:concat("BF Database viewed: ", $uri, ": ", $reloadable),"info")
+						 else 
+						 ()
+			
+			
 			let $resourceslink:=
 							if (contains($uri,"loc.natlib")) then
 									concat("http://id.loc.gov/resources/",tokenize($uri,"\.")[3],"/",tokenize($uri,"\.")[4])
@@ -736,15 +783,16 @@ let $ajax:=
 								else $uri
 
 			let $formats-base:=replace($resourceslink, "id.loc.gov",$cfg:DISPLAY-SUBDOMAIN)
+
 			let $biblink:=
-		 	if ( contains($hostname,"mlvlp04")  and contains($uri, ".c") ) then
-				let $bibid:=fn:tokenize($uri,"\.")[fn:last()]				
-				let $bibid:=fn:substring($bibid, 1,10)
-				let $bibid:=fn:replace($bibid,"^c0+","")
+			 	if ( contains($hostname,"mlvlp04")  and contains($uri, ".c") ) then
+					let $bibid:=fn:tokenize($uri,"\.")[fn:last()]				
+					let $bibid:=fn:substring($bibid, 1,10)
+					let $bibid:=fn:replace($bibid,"^c0+","")
 					
-		       return <a href="{concat("http://",$hostname,"/resources/bibs/",$bibid,".xml")}"> MARC source </a>
+			       return <a href="{concat("http://",$hostname,"/resources/bibs/",$bibid,".xml")}"> MARC source </a>
 				else ()
-			let $sem-links:= md:bf-sem-links($resourceslink, $bf)
+			let $sem-links:= md:bf-sem-links($resourceslink, $bf, $offset)
             
 			return
 				if ($lcdbDisplay instance of element(error:error)) then
@@ -821,7 +869,8 @@ let $ajax:=
                                        				</li>                                       				
 													<li>
                                        					<a href="{$formats-base}.index.xml">Fast Indexes</a>														
-                                       				</li>                                       				
+                                       				</li>   
+													
 													<li>
                                        					{$biblink}
                                        				</li>                                       				
@@ -851,6 +900,7 @@ let $ajax:=
 															<input   type="hidden" name="url" value="{$formats-base}.jsonld"/>
 															<button value="submit for edit">Submit to Editor</button>
 														</form>-->
+														<p>{$formats-base}.jsonld</p>
                                        					 <a href="http://mlvlp04.loc.gov:3000/bfe/development.html?action={$load-action}&amp;url={$formats-base}.jsonld&amp;profile={$editor-profile}">Load to Editor</a>
 														</span>														
 	                                       				</li>
