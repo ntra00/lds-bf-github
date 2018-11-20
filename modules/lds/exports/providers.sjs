@@ -38,11 +38,13 @@ WHERE { \
 LIMIT 2 \
 ';
 
+var field = "imprint";
+var collation = "http://marklogic.com/collation/en/S1";
 var values = 
     cts.elementValues(
-      fn.QName(ns_idx, "imprint"),
+      fn.QName(ns_idx, field),
       label,
-      ["collation=http://marklogic.com/collation/en/S1"]
+      ["collation=" + collation]
     );
 var count = fn.count(values)
 
@@ -76,7 +78,7 @@ for (var i=0; i < selectValues.length; i++) {
   if (strv.replace(/‏/g, "").trim() == "") { continue; }
   
   var bindings = {'label': strv};
-  rangeQuery = cts.elementRangeQuery(fn.QName(ns_idx, "imprint"), "=", strv, ["collation=http://marklogic.com/collation/en/S1", "uncached"]);
+  rangeQuery = cts.elementRangeQuery(fn.QName(ns_idx, field), "=", strv, ["collation=" + collation, "uncached"]);
   store = sem.store(null, rangeQuery);
   queryResults = sem.sparql(queryTypes, bindings, "optimize=1", store);
   var types = [];
