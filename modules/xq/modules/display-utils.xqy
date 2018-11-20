@@ -831,7 +831,7 @@ let $issn-portal-link:= if (fn:contains($displaytype,"Issn")) then
 			else ()
 
 let $url:= fn:string($node/@rdf:*[1])
-	let $_:=xdmp:log($url, "info")
+	
 let $link:= if (fn:contains($url,"id.loc.gov/resources/")) then
 				fn:replace($url,$cfg:BF-BASE, $cfg:BF-VARNISH-BASE)
 			else if (fn:contains($displaytype,"Issn")) then

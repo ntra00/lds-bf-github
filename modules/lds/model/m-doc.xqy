@@ -391,11 +391,11 @@ let $sparql-nav:=md:sparql-nav($my-uri,$results, $limit, $offset)
 (: show more and previous links for any sparql result :)
 declare function md:sparql-nav($uri,$results, $limit, $offset){
 let $permalink:=fn:string-join(fn:tokenize($uri, "/")[4 to 6],"/")
-let $more:=if (count($results//sparql:result) = ($limit ) ) then (: show a more link:)
+let $more:=if (count($results//sparql:result) >0  and count($results//sparql:result) = $limit  ) then (: show a more link:)
 				let $params:=				lp:get-params() 
 				let $put:=lp:param-replace-or-insert($params, "offset", $offset + $limit)
 								
-				return <a href="/{$permalink}?offset={$offset+ $limit}">from {$offset + $limit} </a> 
+				return <a href="/{$permalink}?offset={$offset+ $limit}">from {$offset + $limit} {count($results//sparql:result)} </a> 
 				
 				else ()
 let $less:=if (count($results//sparql:result) < (  $limit ) and $offset > 0) then 
@@ -581,7 +581,7 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset ) as
 										attribute rdf:about {$id-lookup}
 									else ()
 						let $_  :=xdmp:log(fn:concat("BFDB name lookup ",$id-lookuplink),"info")
-						let $_ :=xdmp:log(fn:string($idurl),"info")
+						
 						return if ($idurl) then
 								let $_ :=xdmp:log(fn:string($idurl),"info")
 								 return try {xdmp:node-replace(
@@ -862,7 +862,7 @@ let $ajax:=
                                        					<a href="{$formats-base}.jsonld">BIBFRAME JSON-LD</a>
                                        				</li>
                                        				<li>
-                                       					<a href="{$formats-base}.mets.xml">METS</a>														
+                                       					<a href="{$formats-base}.simple.rdf">New sem</a>														
                                        				</li> 
 													<li>
                                        					<a href="{$formats-base}.doc.xml">Whole Document</a>														
