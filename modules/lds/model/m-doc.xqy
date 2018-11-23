@@ -609,7 +609,10 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset ) as
 								 fn:not(fn:contains($uri, "works.e")) and 
 								 ( $loaddate < xs:date("2018-09-19") 
 								 ) and 
-								 index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/convertedBibs/" )
+								 index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/convertedBibs/" ) and 
+								 fn:not(
+								 	index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/consolidatedBibs/" )
+								 	)
 								 ) then
 									let $token:=fn:replace(fn:tokenize($uri,"\.")[fn:last()],"^c0*","")
 										return fn:concat("./rbi ", $token)
