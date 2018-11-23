@@ -253,6 +253,12 @@ else if (fn:matches($path,  "^/suggest([/]?)$") ) then
         let $accept := "application/json"
 		let $redir:= fn:replace($url,  "^/suggest([/]?)$", "/xq/resources-suggest.xqy?scheme=all")
 		return fn:concat($redir, "&amp;mime=", $accept)
+		
+else if (fn:matches($path,  "^/exports/([A-Za-z0-9]+)/$") ) then
+        let $accept := "application/json"
+		let $redir:= fn:replace($path,  "^/exports/([A-Za-z0-9]+)/$", "/lds/exports/$1.sjs")
+		let $redir := fn:concat($redir , "?" , $args, "&amp;mime=", $accept)
+		return $redir
 
 (: ****************  various serializations for marc based data *********************:) 
  else (:tohap branded mets:)
