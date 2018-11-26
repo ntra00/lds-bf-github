@@ -14,14 +14,14 @@ import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/conf
 
 import module namespace marcutil = "info:lc/xq-modules/marc-utils" at "/xq/modules/marc-utils.xqy";
 
-import module namespace mem = "http://xqdev.com/in-mem-update" at "/xq/modules/in-mem-update.xqy";
-import module namespace lh = "http://www.marklogic.com/ps/lib/l-highlight" at "/lds/lib/l-highlight.xqy";
-import module namespace xml2jsonml = "info:lc/id-modules/xml2jsonml#" at "/xq/modules/module.XML-2-JSONML.xqy";
-import module namespace rdfxml2trix = "http://3windmills.com/rdfxq/modules/rdfxml2trix#" at "/xq/rdfxq/modules/module.RDFXML-2-TriX.xqy";
-import module namespace rdfxml2json = "info:lc/id-modules/rdfxml2json#" at "/xq/modules/module.RDFXML-2-JSON.xqy";
-import module namespace trix2jsonld-ml = "http://3windmills.com/rdfxq/modules/trix2jsonld-ml#" at "/xq/rdfxq/modules/module.TriX-2-JSONLD-MarkLogic.xqy";
-
-
+import module namespace mem 			= "http://xqdev.com/in-mem-update" 						at "/xq/modules/in-mem-update.xqy";
+import module namespace lh 				= "http://www.marklogic.com/ps/lib/l-highlight"			at "/lds/lib/l-highlight.xqy";
+import module namespace xml2jsonml	 	= "info:lc/id-modules/xml2jsonml#" 						at "/xq/modules/module.XML-2-JSONML.xqy";
+import module namespace rdfxml2trix 	= "http://3windmills.com/rdfxq/modules/rdfxml2trix#" 	at "/xq/rdfxq/modules/module.RDFXML-2-TriX.xqy";
+import module namespace rdfxml2json 	= "info:lc/id-modules/rdfxml2json#"					 	at "/xq/modules/module.RDFXML-2-JSON.xqy";
+import module namespace trix2jsonld-ml 	= "http://3windmills.com/rdfxq/modules/trix2jsonld-ml#" at "/xq/rdfxq/modules/module.TriX-2-JSONLD-MarkLogic.xqy";
+import module namespace searchts 		= 'info:lc/xq-modules/searchts#' 					 	at "/xq/modules/module.SearchTS.xqy";
+declare namespace sparql                = "http://www.w3.org/2005/sparql-results#";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare namespace mets = "http://www.loc.gov/METS/";
 declare namespace rights = "http://www.loc.gov/rights/";
@@ -64,6 +64,133 @@ declare function utils:rdf($uri as xs:string) {
 		utils:rdf-ser($uri ,$ser)
 	
 };
+(:~
+:   Get mets uri from lccn
+:
+:   @param  $uri            is lccn based request for work /instance/item
+:   @return mets:mets as element
+:)
+declare function utils:get-mets-id-by-lccn(
+    $uri as xs:string
+    ) as xs:string
+{
+let $token:= fn:tokenize($uri,"/")[fn:last()]
+let $base-node:= if (fn:contains($token,".")) then fn:substring-before($token, ".") else $token
+let $lccn:= if (fn:contains($base-node,"-")) then fn:substring-before($base-node, "-") else $base-node
+let $lccn-spaced:=
+if (fn:not(fn:matches($lccn, "^[0-9].+$"))) then
+						fn:concat(
+									 fn:replace($lccn,"([A-Za-z]+)([0-9]+)$","$1"),
+									" ",
+									 fn:replace($lccn,"([A-Za-z]+)([0-9]+)$","$2")
+						)
+					else ()
+					
+(: instance or item offset:)
+let $offset:=if (fn:contains($base-node,"-")) then fn:substring-after($base-node, "-") else ()
+
+let $node:= fn:replace($uri, "(/resource/)(work|instance|item)(/.+)","$2")
+
+
+
+
+let $domain-for-lccn-query:=
+    if ($node="work"  and fn:starts-with($token,"n") ) then
+                        "/resources/works/"
+                else 
+                         "/resources/instances/"
+
+let $lccn-doc:=cts:uris((),(),	
+	                          	cts:and-query((
+											cts:or-query((
+												cts:element-value-query(xs:QName("idx:lccn"),$lccn ) ,
+												cts:element-value-query(xs:QName("idx:lccn"),$lccn-spaced ) 
+												))
+			                              	,
+			                              	cts:collection-query($domain-for-lccn-query),
+			                              	cts:collection-query("/catalog/")                               
+			                   				))
+											)[1]
+    
+ let $doc-uri:=
+ 				if ($node="instance") then					
+				 		$lccn-doc
+                   else if ($node="work" and fn:starts-with($token,"n")) then
+                                     
+                   (: nametitle the lccn should have been found on the work, so lccn-doc has it. :)
+                   
+                   
+						 4 ( 
+						 			$lccn-doc
+						 )
+                  else if ($node="work") then   
+				  		let $instance-uri:=fn:replace(fn:tokenize($lccn-doc,"/")[fn:last()],".xml","")
+						let $instance-uri:=fn:concat("http://id.loc.gov/resources/instances/",$instance-uri)
+						let $q:=  <query><![CDATA[
+	
+			   				      PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
+									PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+									PREFIX rdfs:        <http://www.w3.org/2000/01/rdf-schema#>			
+									PREFIX bf:          <http://id.loc.gov/ontologies/bibframe/>
+									PREFIX bflc:        <http://id.loc.gov/ontologies/bflc/>
+						       SELECT distinct ?w
+							  	  	WHERE {		?uri bf:instanceOf ?w .			
+						   }
+						   limit 10  
+						                ]]></query>
+ 
+						 let $uri-param:=         
+						            sem:iri($instance-uri      )
+						let $params := 
+						        map:new((						            
+						            map:entry( "uri",   $uri-param)
+						        ))
+						let $res:=
+						    searchts:sparql($q/text(), $params,("/resources/instances/"))										 
+						
+						let $work-uri:=fn:string($res//sparql:binding/sparql:uri)
+						let $work-doc-node:=fn:tokenize($work-uri,"/")[fn:last()]
+						let $work-doc-id:=base-uri(utils:mets(fn:concat("loc.natlib.works.",$work-doc-node)))
+
+						 return (
+						 			$work-doc-id
+						 )
+			    else if ($node="item") then   
+				(: if you know the lccn-instance uri, use the requested $offset and just calculate the item uri.
+					resource/item/2018017556-0004
+					would find the lccn-instance resources/instances/c0204398000001, replace 0001 with 0004 change instance to item
+					:)
+
+				  		let $instance-uri:=fn:replace(fn:tokenize($lccn-doc,"/")[fn:last()],".xml","")
+						let $instance-base:=fn:substring($instance-uri,1,10)
+						let $item-doc-node:=fn:concat($instance-base,$offset)
+						
+						
+						let $item-doc-id:=base-uri(utils:mets(fn:concat("loc.natlib.items.",$item-doc-node)))
+
+						 return ( 
+						 			$item-doc-id
+						 )
+						 else ("error")
+
+ let $_:=        xdmp:log( fn:concat("DISPLAY: ",fn:doc-available($doc-uri), ":" ,$doc-uri),"info")
+    return
+        if (fn:doc-available($doc-uri)) then
+         	let $lccn-uri:=fn:tokenize($doc-uri,"/")[fn:last()]
+			let $lccn-uri:=fn:substring-before($lccn-uri, ".xml")
+			let $lccn-uri:=if (($node="instance" or $node="item") and fn:string-length($lccn-uri) > 10 and fn:substring($lccn-uri,10,14) ne $offset ) then
+							fn:concat(fn:substring($lccn-uri,1,10),$offset)
+							else 
+							$lccn-uri
+				
+			let $_:=xdmp:log( fn:concat("DISPLAdcY: ", $lccn-doc, ":",$lccn-uri),"info")
+			let $objid:=fn:concat("loc.natlib.",$node,"s.",$lccn-uri)
+			return ($objid,
+			xdmp:log($objid,"info")
+			)
+        else
+            "Document not found"
+};
      
 (:~
 :   Get mets document
@@ -85,25 +212,24 @@ declare function utils:get-mets(
 (:~
 :   Get mets dmdSec section
 :
-:   @param  $uri            is DB uri
-:   @return mets:mets as element
+:   @param  $uri            is DB uri (fully qualified path, with slashes, or OBJID)
+:   @return mets as element mets:dmdsec
 :)
 declare function utils:get-mets-dmdSec(
     $dmdSecID as xs:string,
     $uri as xs:string
     ) as node()
 {
-    let $mets := utils:get-mets($uri)
-
+    let $mets := if (fn:contains($uri, "/") ) then
+					 	utils:get-mets($uri)
+					 else
+					 	utils:mets($uri)
 	(: marcxml may need to be generated from mxe 2016 06 15 
-		if marcxml dmdsec exists, return it; if not, try to get mxe, converty to marcxml; otherwise, try to return the dmdsec requested
-	:)
+	if marcxml dmdsec exists, return it; if not, try to get mxe, converty to marcxml; otherwise, try to return the dmdsec requested:)
       let $dmdSec :=	
 		 if ( $dmdSecID="bibframe" ) then
 	       	$mets//mets:dmdSec[@ID=$dmdSecID]//rdf:RDF
-		 else  if ( $dmdSecID="ldsindex" ) then
-	       	$mets//mets:dmdSec[@ID=$dmdSecID]//idx:index
-		else  if ( $dmdSecID="index" ) then
+		 else  if ( $dmdSecID="index" ) then
 	       	$mets//mets:dmdSec[@ID=$dmdSecID]//idx:index
 		else (:madsrdf returns rdf:RDF :)
 			$mets//mets:dmdSec[@ID=$dmdSecID]/mets:mdWrap/mets:xmlData
@@ -137,7 +263,6 @@ declare function utils:rdf-ser($uri as xs:string, $ser as xs:string) {
    let $bfrdf:=$mets/mets:mets/mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF	
    
    (:let $_:=        xdmp:log( sem:rdf-serialize(sem:rdf-parse($bfrdf/node(),"rdfxml"),$serialize),"info"):)
-   
    let $resp:= if ($serialize="rdfxml" )then 
    						$bfrdf
    				else try{

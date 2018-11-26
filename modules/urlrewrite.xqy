@@ -3,6 +3,7 @@ xquery version "1.0-ml";
 import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
 import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xq/modules/mime-utils.xqy";
 import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace utils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
 (:import module namespace rest="http://marklogic.com/appservices/rest" at "/MarkLogic/appservices/utils/rest.xqy"; :)
 (: tohap permalinks and xml output are hardcoded to work within the branding url, diglib/tohap instead of at the root:)
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
@@ -10,7 +11,7 @@ declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare variable $REGEX-FOR-RESOURCES-SUGGEST as xs:string := "/resources/(.*)/suggest/$";
 declare variable $REGEX-FOR-RESOURCES-SUGGEST-TOKEN as xs:string := "/resources/(.*)/suggest/(lccn|token)/(.+)$";
 declare variable $REGEX-FOR-RESOURCES-FEED as xs:string := "/resources/(.*/)feed([/]?)([0-9]+)?";
-
+declare variable $REGEX-FOR-LABEL-SERVICE as xs:string := "/resources/works/label/(.+)(\..+)?$";
 (:change to rest:rewrite  soon!:)
 (: sample logger:
 let $_ := xdmp:log(concat('urlrewriter  success -  ',$args),'notice')
@@ -45,19 +46,35 @@ let $path:=
     if (fn:matches($path, "^/resources/(instances|works|items)/") and 
 		fn:not(fn:matches($path, $REGEX-FOR-RESOURCES-SUGGEST)) and 
 		fn:not(fn:matches($path, $REGEX-FOR-RESOURCES-FEED)) and 
+		fn:not(fn:matches($path, $REGEX-FOR-LABEL-SERVICE)) and 
 		fn:not(fn:matches($path, $REGEX-FOR-RESOURCES-SUGGEST-TOKEN)) 
 		)
     then	
         fn:replace($path, "^/resources/(instances|works|items)/", "/loc.natlib.$1.")	
     else
-        $path       
+        $path     
+(:let $path:= 
+    if (fn:matches($path, "^/resource/(instance|work|item)/")		 )
+    then	
+        fn:replace($path, "^/resource/(instance|work|item)/", "/loc.natlib.$1.")	
+    else
+        $path       :)
 
 return
  (: ****************   bookmarks with various serializations *********************:) 
 		  (: mets does not include mxe or idx; use doc.xml to find that :)
 		  if (matches($path, "/lds(/)?$")) then 
 		  		concat("/lds/index.xqy", $args)
-    
+		    (: label service for nametitle :)
+			else if (fn:matches($path,$REGEX-FOR-LABEL-SERVICE)) then
+ 				 let $accept := "text/xml"
+ 					let $redir:=  fn:replace($url, "^/resources/works/label/(.+)(\..+)?$", 					
+						"/lds/search.xqy?count=1&amp;sort=score-desc&amp;precision=exact&amp;qName=idx:nameTitle&amp;q=$1&amp;mime=")
+						let $redir:=fn:concat($redir,$accept)
+				
+				return $redir
+
+		
 			else if(matches($path, "^/resources/bibs/[0-9]+(\.xml)?$")) then
 		      let $accept := "application/marcxml+xml"      
 			  let $tmppath:= if (fn:contains($path, ".xml")) then
@@ -66,7 +83,27 @@ return
 							 	$path
 		      (:let $_:= 		xdmp:log(concat("/lds/permalink.xqy?uri=", $tmppath, "&amp;mime=", $accept),"info"):)
 			  return concat("/lds/permalink.xqy?uri=", $tmppath, "&amp;mime=", $accept)
-			  						  
+(: ========================== experimental redirect of lccn based search =============================:)
+			
+			else if (matches($path, "^/resource/(work|instance|item)/.+(\.(ttl|nt|xml|rdf|html))$")) then			  
+					 let $ser:=fn:replace($path,
+					  					"^/resource/(work|instance|item)/(.+)\.(ttl|nt|xml|rdf|html)$",
+					   "$3" 
+					   ) 			  				
+					 let $accept := if ($ser="xml") then  "application/mdoc+xml" 
+					 else if ($ser="rdf") then  "application/rdf+xml" 
+					 else if ($ser="html") then  "text+html" 
+					 else 
+					 	 "application/mets+xml"      
+ 		let $tmppath:= if (fn:contains($path, ".")) then
+			  					substring-before($path,".")
+			  				 else
+							 	$path
+
+		let $tmppath:=			 utils:get-mets-id-by-lccn($path)
+		return ( concat("/lds/permalink.xqy?uri=", $tmppath, "&amp;mime=", $accept))
+
+(: ========================== experimental redirect of lccn based search =============================:)		  
 (: get marc bibs records :)
 			else if(matches($path, "^/resources/bibs/n.+(\.xml)?$")) then
 		      let $accept := "application/marcxml+xml"      
@@ -129,12 +166,23 @@ return
 		  :)
 		
 		(:rdf  :)
+		else if(matches($path, "^/loc\.natlib\.(lcdb|works|instances|items)\..+\.simple.rdf$")) then
+	 	
+		      let $accept := "application/bf-simple+xml"
+		      let $tmppath := replace($path, "/", "")
+		      let $objid := substring-before($tmppath, ".simple.rdf")
+		      return(
+			   		concat("/lds/permalink.xqy?uri=", $objid, "&amp;mime=", $accept)
+			   )
+			  
 		 else if(matches($path, "^/loc\.(natlib|pnp|asian|afc|gmd|music)\.(lcdb|works|instances|items)\..+\.rdf$")) then
 		      let $accept := "application/rdf+xml"
 		      let $tmppath := replace($path, "/", "")
 		      let $objid := substring-before($tmppath, ".rdf")
 		      return concat("/lds/permalink.xqy?uri=", $objid, "&amp;mime=", $accept)
- 
+	 
+	 
+
 		 else if(matches($path, "^/loc\.natlib\.(lcdb|works|instances|items)\..+\.ttl$")) then
 		      let $accept := "text/turtle"
 		      let $tmppath := replace($path, "/", "")
@@ -171,6 +219,8 @@ return
 		      let $tmppath := replace($path, "/", "")
 		      let $objid := substring-before($tmppath, ".nt")
 		      return concat("/lds/permalink.xqy?uri=", $objid, "&amp;mime=", $accept)
+		
+		
 
 (: ****************   suggest service  *********************:) 
 (: Suggests, from specific scheme searches to generic searches from id-main for bf editor this one uses a $term variable token, lccn,etc. :)
@@ -262,6 +312,21 @@ else if (fn:matches($path,  "^/exports/([A-Za-z0-9]+)/$") ) then
                 let $tmppath := replace($path, "/", "")
                 let $objid := substring-before($tmppath, ".doc.xml")
                 return concat("/lds/permalink.xqy?uri=", $objid, "&amp;mime=", $accept)
+   (:********************* bibframe lccn lookup rewriter *********************:) 
+			else 
+				  if(matches($path, "^/loc\.(natlib)\.(work|instance|item)\..+(\.html)?$")) then
+                  let $accept := "text/html"
+                  let $tmppath := replace($path, "/", "")
+                  let $objid := if(contains($tmppath, ".html")) then substring-before($tmppath, ".html")
+                                else $tmppath
+                  (: added branding to allow links to work in context (ils records all get lds, though) :)
+				  (: took this out because lcwa0002 records found in lds were going to the lcwa0002 display; not ready for 
+				  that yet and it might be the wrong behavior:)
+                  let $branding :=  "lds"
+				  		(: if (matches($path, "\.lcdb\.")) then "lds"
+                        else  replace($path, "^/loc\.(\w+)\.(\w+)\..+(\.html)$", "$2"):)
+				  
+                  return concat("/lds/permalink.xqy?uri=", $objid, "&amp;mime=", $accept, "&amp;branding=", $branding, "&amp;",$args)
    (: ****************  html ?? *********************:) 
 			else 
 				  if(matches($path, "^/loc\.(natlib|pnp|asian|afc|gmd|music)\.(lcdb|ia|copland|tohap|asian|nksip|gottlieb|ggbain|bernstein|lcwa[0-9]+|afc2001001|pae|ihas|afc9999005|erms|works|instances|items|sm[0-9]+)\..+(\.html)?$")) then
