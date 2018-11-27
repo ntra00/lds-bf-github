@@ -216,8 +216,9 @@
 				</xsl:copy>
 			</xsl:when>
 			<xsl:otherwise>
-
+<xsl:copy>
 				<xsl:apply-templates select="@*|*|text()"/>
+				</xsl:copy>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
