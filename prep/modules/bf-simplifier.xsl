@@ -1,0 +1,1 @@
+/marklogic/applications/lds/modules/xslt/bf-simplifier.xsl

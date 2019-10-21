@@ -1,0 +1,62 @@
+#!/bin/bash
+#curl metaproxy or run yaz for a singleton
+
+#rm sourceload/*
+
+BIBID=$1
+
+#B=$(echo "${BIBID//c/}")
+#BIBID=$("${B//0/}")
+# /marklogic/id/natlibcat/admin/bfi/bibrecs/source/singleton.122913240.xml
+tm=$(date '+%H-%M-%S')
+# curl "http://mlvlp04.loc.gov:8230/resources/bibs/$BIBID.xml"  | sed -e "s|\[from old catalog\]||g"   > source/singleton.$BIBID.xml
+curl "http://mlvlp04.loc.gov:8230/resources/bibs/$BIBID" | sed -e "s|\[from old catalog\]||g"   > source/singleton.$BIBID.tmp.xml
+uconv -f utf8 -t utf8 -x nfc --from-callback skip --to-callback  skip < source/singleton.$BIBID.tmp.xml   > source/singleton.$BIBID.xml	
+
+chmod 775 source/*
+chgrp marklogic source/*
+
+CURDIR=`echo $PWD`
+
+	M2BFDIR=/marklogic/id/marc2bibframe2
+	yaz-record-conv  $M2BFDIR/record-conv.vlp3.xml  source/singleton.$BIBID.xml |sed -e "s|idwebvlp03.loc.gov|id.loc.gov|g" | sed -e "s|mlvlp04.loc.gov:8080|id.loc.gov|g" | sed -e "s|//mlvlp06.loc.gov:8288|http://id.loc.gov|g"   > sourceload/singleton.$BIBID.tmp.rdf
+
+# wrap the pkg in <lclocal:graph>:
+ xsltproc modules/graphiphy.xsl  sourceload/singleton.$BIBID.tmp.rdf  > sourceload/singleton.$BIBID.rdf
+rm sourceload/singleton.$BIBID.tmp.rdf 
+
+chmod 775 sourceload/*
+chgrp marklogic sourceload/*
+
+
+TODAY=`date +%Y-%m-%d`
+
+ echo "load date  = $TODAY"
+
+MLCPPATH=/marklogic/id/id-prep/mlcp/bin
+PASSWD=`/marklogic/id/id-prep/marc/keys/passwd-ml.sh`
+ #-input_file_pattern singleton*.rdf \
+#-input_file_path /marklogic/id/natlibcat/admin/bfi/bibrecs/sourceload \
+#if [[ type -f  /marklogic/id/natlibcat/admin/bfi/bibrecs/sourceload/$BIBIID.rdf ]]
+ $MLCPPATH/mlcp.sh import  \
+       -host localhost \
+        -port 8203 \
+        -username id-admin \
+        -password $PASSWD \
+		-input_file_pattern singleton.$BIBID.rdf \
+	-input_file_path /marklogic/id/natlibcat/admin/bfi/bibrecs/sourceload \
+	-output_uri_replace "/marklogic/id/natlibcat/admin/bfi/bibrecs/singleload/,''"  \
+	-output_collections /bibframe-process/,/processing/load/bibs/$TODAY/,/bibframe-process/yaz-reload/ \
+	-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update \
+	-input_file_type documents \
+	-transform_module /admin/bfi/bibrecs/corb-bibframe-process-yazbib-files.xqy \
+	-transform_namespace "http://loc.gov/ndmso/marc-2-bibframe-yaz/" \
+	-document_type xml \
+	-aggregate_record_element RDF \
+    	-aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns# \
+	-thread_count 4 \
+        -mode local 
+
+echo $BIBID loaded?
+ls -l sourceload/singleton.$BIBID.rdf
+mv sourceload/singleton.$BIBID*.rdf loaded

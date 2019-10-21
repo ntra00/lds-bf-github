@@ -1,0 +1,27 @@
+#!/bin/bash
+# this is written for idmain on localhost to ldx localhost 8282 to 8203
+#  mlcp import after curling out a particular lccn ($1)  from nametitles in id-main
+# covert using yaz; no load; post to lccn directory
+# called by bibrecs/rnc
+# curls the xml from id, stores in source, as .xml, converts using yaz to source/.rdf
+# watch-auths moves them to load before running rnl (copied from rbl)
+  TODAY=`date +%Y-%m-%d`
+
+THREADS=4
+
+LCCN=$1 
+
+#rm  /marklogic/id/natlibcat/admin/bfi/auths/source/$LCCN*
+echo consider a whole bunch of yazzes, then a single load
+CURDIR=`echo $PWD`
+MLCPPATH=/marklogic/id/id-prep/mlcp/bin
+PASSWD=`/marklogic/id/id-prep/marc/keys/passwd-ml.sh`
+curl -L http://idwebvlp03.loc.gov/authorities/names/$LCCN.marcxml.xml > source/$LCCN.xml
+chmod 775 source/$LCCN.xml
+chgrp marklogic source/$LCCN.xml
+yaz-record-conv auth2bibframe2/auths-conv.xml source/$LCCN.xml |  sed -e "s|idwebvlcp03.loc.gov|id.loc.gov|g" | sed -e "s|mlvlp04.loc.gov:8080|id.loc.gov|g" >source/$LCCN.rdf
+
+rm source/$LCCN.xml
+chmod 775 source/$LCCN.rdf
+chgrp marklogic source/$LCCN.rdf
+

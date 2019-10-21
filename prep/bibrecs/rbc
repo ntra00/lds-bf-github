@@ -1,0 +1,30 @@
+#!/bin/bash
+# rbi does convert, load. Use rbc a bunch of times then one rbl to load them
+
+#curl metaproxy or run yaz for a singleton
+
+
+BIBID=$1
+
+tm=$(date '+%H-%M-%S')
+
+ curl "http://idwebvlp03.loc.gov:8230/resources/bibs/$BIBID.xml"  | sed -e "s|\[from old catalog\]||g"   > source/singleton.$BIBID.xml
+chmod 775 source/*
+chgrp marklogic source/*
+
+CURDIR=`echo $PWD`
+
+M2BFDIR=/marklogic/id/marc2bibframe2
+ yaz-record-conv  $M2BFDIR/record-conv.vlp3.xml  $CURDIR/source/singleton.$BIBID.xml | sed -e "s|idwebvlp03.loc.gov|id.loc.gov|g" | sed -e "s|mlvlp04.loc.gov:8080|id.loc.gov|g"  >$CURDIR/singleload/singleton.$BIBID.tmp.rdf
+
+ xsltproc modules/graphiphy.xsl  singleload/singleton.$BIBID.tmp.rdf  > singleload/singleton.$BIBID.rdf
+
+rm singleload/singleton.*.tmp.rdf
+chmod 775 $CURDIR/singleload/*
+chgrp marklogic $CURDIR/singleload/*
+
+echo rbli run by watch-singles-i.sh every 3 mins is looking in loadrdf:
+mv singleload/singleton.$BIBID.rdf loadrdf
+
+rm $CURDIR/source/singleton.$BIBID*
+

@@ -3,11 +3,29 @@
 
 # Ignore 
 **/.svn
-modules/id-main/**
-modules/static/tohap/**
-modules/splashpages/**
-modules/api/**
-modules/xq/ingest*.xqy
-modules/xq/modules/lscoll/**
-modules/xq/modules/ead/**
-modules/xq/modules/pass*
+
+src/id-main/**
+src/static/tohap/**
+src/splashpages/**
+src/api/**
+src/xq/ingest*.xqy
+src/xq/modules/lscoll/**
+src/xq/modules/ead/**
+src/xq/modules/pass*
+src/xq/rdfxq*
+
+# marc2bibframe2
+prep/bibrecs/xsl
+prep/bibrecs/batchupdates/**
+prep/bibrecs/loaded/**
+prep/bibrecs/singleload/**
+prep/bibrecs/source/**
+prep/bibrecs/bfe-preprocess/**
+prep/bibrecs/*test*
+prep/auths/auth2bibframe2/xsl/**
+prep/auths/batchupdates/**
+prep/auths/lccn/**
+prep/auths/load/**
+prep/auths/loaded/**
+prep/auths/source/**
+prep/auths/out/**
