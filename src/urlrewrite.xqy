@@ -53,24 +53,22 @@ let $path:=
         fn:replace($path, "^/resources/(instances|works|items)/", "/loc.natlib.$1.")	
     else
         $path     
-<<<<<<< HEAD:src/urlrewrite.xqy
+
 		(: experiment with lccn resolution :)
 		
-(:let $path:=  all the other bf refernences get converted to the old nlc format, not lccn requests.
-=======
+
+
 (:let $path:= 
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/urlrewrite.xqy
+
     if (fn:matches($path, "^/resource/(instance|work|item)/")		 )
     then	
         fn:replace($path, "^/resource/(instance|work|item)/", "/loc.natlib.$1.")	
     else
-<<<<<<< HEAD:src/urlrewrite.xqy
+
         $path       
 :)
-=======
-        $path       :)
 
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/urlrewrite.xqy
+
 return
  (: ****************   bookmarks with various serializations *********************:) 
 		  (: mets does not include mxe or idx; use doc.xml to find that :)
@@ -96,7 +94,7 @@ return
 			  return concat("/lds/permalink.xqy?uri=", $tmppath, "&amp;mime=", $accept)
 (: ========================== experimental redirect of lccn based search =============================:)
 			
-<<<<<<< HEAD:src/urlrewrite.xqy
+
 			else if (matches($path, "^/resource/(work|instance|item)/.+(\.(ttl|nt|xml|rdf|html|json|jsonld) )?$")) then			  
 					 let $ser:=fn:replace($path,
 					  					"^/resource/(work|instance|item)/(.+)\.(ttl|nt|xml|rdf|html|json|jsonld)?$",
@@ -112,37 +110,29 @@ return
 									
 									 else   "text/html" 
 					 	 
-=======
+(:
 			else if (matches($path, "^/resource/(work|instance|item)/.+(\.(ttl|nt|xml|rdf|html))$")) then			  
 					 let $ser:=fn:replace($path,
 					  					"^/resource/(work|instance|item)/(.+)\.(ttl|nt|xml|rdf|html)$",
 					   "$3" 
 					   ) 			  				
 					 let $accept := if ($ser="xml") then  "application/mdoc+xml" 
-					 else if ($ser="rdf") then  "application/rdf+xml" 
-					 else if ($ser="html") then  "text+html" 
-					 else 
-					 	 "application/mets+xml"      
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/urlrewrite.xqy
- 		let $tmppath:= if (fn:contains($path, ".")) then
+									 else if ($ser="rdf") then  "application/rdf+xml" 
+									 else if ($ser="html") then  "text+html" 
+					 					else 
+									 	 "application/mets+xml"      
+:)
+ 					let $tmppath:= if (fn:contains($path, ".")) then
 			  					substring-before($path,".")
 			  				 else
 							 	$path
-<<<<<<< HEAD:src/urlrewrite.xqy
+
 		let $tmppath:=			 utils:get-mets-id-by-lccn($path)		
 		return ( concat("/lds/permalink.xqy?uri=", $tmppath, "&amp;mime=", $accept))
 (: ========================== experimental redirect of lccn based search above =============================:)		  
 
 
 
-
-=======
-
-		let $tmppath:=			 utils:get-mets-id-by-lccn($path)
-		return ( concat("/lds/permalink.xqy?uri=", $tmppath, "&amp;mime=", $accept))
-
-(: ========================== experimental redirect of lccn based search =============================:)		  
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/urlrewrite.xqy
 (: get marc bibs records :)
 			else if(matches($path, "^/resources/bibs/n.+(\.xml)?$")) then
 		      let $accept := "application/marcxml+xml"      
@@ -205,7 +195,7 @@ return
 		  :)
 		
 		(:rdf  :)
-<<<<<<< HEAD:src/urlrewrite.xqy
+
 		else if(matches($path, "^/loc\.natlib\.(lcdb|works|instances|items)\..+\.simple(\.rdf)?$")) then
 	 	
 		      let $accept := if (fn:matches($path, 'simple.rdf')) then
@@ -213,17 +203,13 @@ return
 								else 
 									"text/html"
 
-=======
-		else if(matches($path, "^/loc\.natlib\.(lcdb|works|instances|items)\..+\.simple.rdf$")) then
-	 	
-		      let $accept := "application/bf-simple+xml"
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/urlrewrite.xqy
+
 		      let $tmppath := replace($path, "/", "")
 		      let $objid := substring-before($tmppath, ".simple.rdf")
 		      return(
 			   		concat("/lds/permalink.xqy?uri=", $objid, "&amp;mime=", $accept)
 			   )
-<<<<<<< HEAD:src/urlrewrite.xqy
+
 		else if(matches($path, "^/loc\.natlib\.(lcdb|instances)\..+\.marc-pkg\.xml$")) then
 	 	
 		      let $accept := 
@@ -235,9 +221,7 @@ return
 		      return(
 			   		concat("/lds/permalink.xqy?uri=", $objid, "&amp;mime=", $accept)
 			   )	  
-=======
-			  
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/urlrewrite.xqy
+
 		 else if(matches($path, "^/loc\.(natlib|pnp|asian|afc|gmd|music)\.(lcdb|works|instances|items)\..+\.rdf$")) then
 		      let $accept := "application/rdf+xml"
 		      let $tmppath := replace($path, "/", "")
@@ -471,7 +455,8 @@ else if (fn:matches($path,  "^/exports/([A-Za-z0-9]+)/$") ) then
 					return concat("/admin/remove-collection.xqy?uri=",$uri)
 
                           else $url
-						  (: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+						  
+(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
 <metaInformation>
 <scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
 </metaInformation>

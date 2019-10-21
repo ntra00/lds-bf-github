@@ -507,11 +507,7 @@ declare variable $display:RDFclasses as element () :=
 	<class name="bf:Eidr">EIDR</class>
 	<class name="bf:MetadataLicensor" subclassof="Agent">Metadata licensor</class>
 	<class name="bf:PrimaryContribution" subclassof="Contribution" sort="02">Primary contribution</class>
-<<<<<<< HEAD:src/xq/modules/display-utils.xqy
 	<!--<class name="bf:Relation">Relation</class>-->
-=======
-	<class name="bf:Relation">Relation</class>
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/display-utils.xqy
 	
 	<class name="bf:DemographicGroup">Demographic group</class>
 	<class name="bf:CreatorCharacteristic">Creator characteristic</class>
@@ -530,10 +526,7 @@ declare variable $display:RDFclasses as element () :=
 	
 	<!-- auths -->
 	<class name="bflc:Relationship">Relationship</class>
-<<<<<<< HEAD:src/xq/modules/display-utils.xqy
 	<class name="bflc:Relation">Relation</class>
-=======
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/display-utils.xqy
 	<!-- madsrdf -->
 	<class name="madsrdf:Geographic" namespace="madsrdf" sort="24i">Geographic</class>
 <class name="madsrdf:HierarchicalGeographic" namespace="madsrdf" sort="24i">Hierarchical Geographic</class>
@@ -951,13 +944,9 @@ let $ajax-link:= if (fn:contains($link,"id.loc.gov/")  and $displaytype ne "labe
 
 let $display-label:=
 				 if ($displaytype="plain-url") then
-<<<<<<< HEAD:src/xq/modules/display-utils.xqy
 						<a href="{fn:replace(fn:string($link),$cfg:ID-BASE, $cfg:BF-BASE)}">{$label	}</a>
 				  else if  (fn:not($url) or $url="") then
 						$label
-=======
-							<a href="{$link}">{$label	}</a>
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/display-utils.xqy
 				 else if  (fn:contains($url,"example.org")) then
 					$label
 				else if  (fn:matches($url,"(works|instances)" ) ) then
@@ -973,10 +962,7 @@ let $display-label:=
 							
 					</div>					)
 				else if ($link ) then
-<<<<<<< HEAD:src/xq/modules/display-utils.xqy
 				
-=======
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/display-utils.xqy
 					<a href="{$link}">{	($label	)}</a>
 				else $label
 
@@ -1093,14 +1079,8 @@ let $result:=
 								  else  <br/>																		
 	                            }
 	        </dd>,
-<<<<<<< HEAD:src/xq/modules/display-utils.xqy
             		   		
 				 if ($rdf/*[fn:not(index-of($ignores,fn:local-name(self::*)) )]) then
-=======
-            
-		   		
-				 if ($rdf/*[fn:not(index-of(ignores,fn:local-name(self::*)) )]) then
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/display-utils.xqy
 						display:properties($rdf,$indent)	        	
             
 		   else ()	   
@@ -1208,12 +1188,8 @@ if ($rdf instance of element (bf:instanceOf) or
               (<dt class="label">{ fn:string($display:RDFprops/property[@name=fn:local-name($rdf)]) }</dt>,
 			  
 				 <dd class="bibdata"> (Work) { display:linkme($rdf/bf:Work,"plain-url")}</dd>,
-<<<<<<< HEAD:src/xq/modules/display-utils.xqy
 				 (:<div class="boxed">{display:class($rdf/bf:Work, $indent+5 )}</div>:)
 				 <div >{display:class($rdf/bf:Work, $indent+5 )}</div>
-=======
-				 <div class="boxed">{display:class($rdf/bf:Work, $indent+5 )}</div>
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/display-utils.xqy
 				)
   (: blank node property or text related? :)
   else if ($rdf/bf:Work) then 
@@ -1293,17 +1269,10 @@ if ($rdf instance of element (bf:instanceOf) or
  		(<dt class="label">{fn:name($rdf)}</dt>,
  		 <dd class="bibdata">{if (fn:string($rdf)) then fn:string($rdf) else display:linkme($rdf, "value")}</dd>
 		)
-<<<<<<< HEAD:src/xq/modules/display-utils.xqy
 		(: need to fix: why is this property not selected above someplace? bflc??? :)
 else if ($rdf  instance of element(bflc:relation )) then
 		(<dt class="label">Role</dt>,
  		 <dd class="bibdata">{$rdf/*/rdfs:label}</dd>
-=======
-		(: need to fix: why is this property not selecte above someplace? bflc??? :)
-else if ($rdf  instance of element(bflc:relation )) then
-(<dt class="label">Role</dt>,
- 		 <dd class="bibdata">{$rdf/rdfs:Resource/rdfs:label}</dd>
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/display-utils.xqy
 		)
  else for $i in $rdf/*
  		order by index-of($class-order,fn:local-name($i))

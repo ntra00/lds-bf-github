@@ -205,7 +205,6 @@ let $offset:= if (fn:not($offset castable as xs:integer)) then 0
   let $params := 
         map:new((            
             map:entry( "lccn", sem:typed-literal($lccn,sem:iri("http://www.w3.org/2001/XMLSchema#string")) )
-<<<<<<< HEAD:src/xq/modules/module.SearchTS.xqy
         ))
 :)
 	let $params:= map:map()
@@ -214,28 +213,9 @@ let $offset:= if (fn:not($offset castable as xs:integer)) then 0
 
 	let $res:=
 			searchts:sparql($query/text(), $params, "/resources/works/")
-	(:let $_:=xdmp:log(fn:concat("8231 display",xdmp:quote($res)),"info"):)
+	
 
 	return $res
-=======
-        ))
-:)
-	let $params:= map:map()
-	let $put := map:put($params, "uri",  sem:iri($work-uri)       )
-	let $put := map:put($params, "offset",sem:typed-literal($offset, sem:iri("xs:integer")    ))
-
-	(:let $params := 
-        map:new((
-            map:entry("uri", sem:iri($work-uri)       )
-		,
-            map:entry("offset", sem:typed-literal($offset, sem:iri("xs:integer")       )
-        ))
-    :)
-let $x:=searchts:sparql($query/text(), $params, "/resources/works/")
-    (:let $_:= xdmp:log($x,"info"):)
-	return $x
-	(:searchts:sparql($query/text(), $params, "/resources/works/"):)
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/module.SearchTS.xqy
 };	
 (:~
 :   Search database for this Work's related  works
@@ -258,11 +238,7 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 						PREFIX bflc: 	<http://id.loc.gov/ontologies/bflc/>
 			            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
-<<<<<<< HEAD:src/xq/modules/module.SearchTS.xqy
 						SELECT  distinct ?relation ?relateduri ?label ?direction 
-=======
-						SELECT  distinct ?relation ?relateduri ?label ?direction
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/module.SearchTS.xqy
 						WHERE {  {  		
 				  				?uri  ?relation  ?relateduri .
 								VALUES ?relation {		bf:relatedTo bf:eventContentOf	bf:hasEquivalent	bf:hasPart	bf:partOf	bf:accompaniedBy	bf:accompanies	
@@ -283,7 +259,6 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 								#  		?rel bf:relatedTo ?relateduri .
 								# FILTER isURI(?relateduri) .
 								
-<<<<<<< HEAD:src/xq/modules/module.SearchTS.xqy
 								#OPTIONAL {		?relateduri 	bf:title 		?tnode .
 									#?tnode 			bf:mainTitle ?label }.  		
 								#BIND ("Direct" as ?direction) .
@@ -304,24 +279,6 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 					              BIND  ("text-relation" as ?direction). 				  		
 							 			 }
 							} limit ?limit
-=======
-								OPTIONAL {		?relateduri 	bf:title 		?tnode .
-												?tnode 			rdfs:label		?label }.
-								BIND ("Direct" as ?direction) .
-							 }
-							  UNION {
-				                  		?uri bflc:relationship ?relClass .
-					                   	?relClass rdf:type <http://id.loc.gov/ontologies/bflc/Relationship> .            
-					                  	?relClass bf:relatedTo ?relateduri .
-            
-					            FILTER(  isUri(?relateduri) &&
-					                	 !(regex(?relateduri, "#Work"))
-					             	    )
-					             OPTIONAL {?relateduri 			rdfs:label		?label  .  	}
-					              BIND  ("text-relation" as ?direction). 				  		
-							 			 }
-												 } limit ?limit
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/module.SearchTS.xqy
 							 OFFSET ?offset
 					]]>
 	        </query>     
@@ -344,7 +301,6 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 												} .
 								FILTER isURI(?relateduri) .
 								OPTIONAL {		?relateduri 	bf:title 		?tnode .
-<<<<<<< HEAD:src/xq/modules/module.SearchTS.xqy
 												?tnode 			bf:mainTitle ?label }.  		
 								OPTIONAL {		?relateduri 	rdfs:label		?label }.  		
 								bind ("Inverse" as ?direction) .
@@ -368,12 +324,6 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 							 			
 
 							 	}
-=======
-												?tnode 			rdfs:label		?label }.  		
-								bind ("Inverse" as ?direction) .
-							 } 
-							 
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/module.SearchTS.xqy
 							 } limit ?limit
 							 	offset ?offset
 					]]>
@@ -389,16 +339,13 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 	let $put := map:put($params, "uri",  sem:iri($work-uri)       )
 	let $put := map:put($params, "offset",sem:typed-literal(fn:string($offset), sem:iri("xs:integer")    ))
 	let $put := map:put($params, "limit",sem:typed-literal(fn:string($limit), sem:iri("xs:integer")    ))
-<<<<<<< HEAD:src/xq/modules/module.SearchTS.xqy
 	(:let $_:= xdmp:log("$query","info")
 	let $_:= xdmp:log($query,"info")
 	let $_:= xdmp:log($work-uri,"info")
 	:)
 	
-=======
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/module.SearchTS.xqy
 let $x:=searchts:sparql($query/text(), $params, "/resources/works/")
-    (:let $_:= xdmp:log($x,"info"):)
+    
 	return $x
 	(:searchts:sparql($query/text(), $params, "/resources/works/"):)
 };	
@@ -453,7 +400,7 @@ let $limit:=$cfg:SPARQL-LIMIT
 
 	let $put := map:put($params, "limit",sem:typed-literal(fn:string($limit), sem:iri("xs:integer")    ))
 
-    	
+    	(:let $_:=xdmp:log($query,"info"):)
 	return searchts:sparql($query/text(), $params, $graph)
 };	
 

@@ -92,7 +92,7 @@ declare function vd:render($perm_uri as xs:string, $source_rdf as xs:string) as 
     let $viewindex := lp:get-param-integer($lp:CUR-PARAMS, 'index', 1)
 	let $sparql-offset:=lp:get-param-integer($lp:CUR-PARAMS, 'offset', 0)
     let $sortorder as xs:string? := lp:get-param-single($lp:CUR-PARAMS,'sort','score-desc')
-    let $sparql-offset:=lp:get-param-integer($lp:CUR-PARAMS, 'offset', 0)
+    
 (:	let $path := xdmp:get-request-url():)
 	let $branding:=$cfg:MY-SITE/cfg:branding/string()
 	let $collection:=$cfg:MY-SITE/cfg:collection/string()
@@ -224,11 +224,7 @@ declare function vd:render($perm_uri as xs:string, $source_rdf as xs:string) as 
  let $details :=      
 	
 		if (matches($uri,"(lcdb|africasets|erms|works|instances|items)"  ))   		(: $profile eq "lc:bibRecord":)  then
-<<<<<<< HEAD:src/lds/view/v-detail.xqy
             let $pre-details := md:lcrenderBib($current_object, $uri, $sparql-offset, $source_rdf)
-=======
-            let $pre-details := md:lcrenderBib($current_object, $uri, $sparql-offset)
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/view/v-detail.xqy
             return
 				if ($pre-details instance of element(error:error)) then
                 	$pre-details

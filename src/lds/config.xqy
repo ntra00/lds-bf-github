@@ -610,7 +610,7 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <facet-param>language</facet-param>
           <facet-operation>and</facet-operation>
         </elt>
-<<<<<<< HEAD:src/lds/config.xqy
+
         <elt>
           <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
           <page>search</page>
@@ -630,9 +630,6 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <facet-param>subjectLexicon</facet-param>
           <facet-operation>or</facet-operation>
         </elt>
-=======
-         
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/config.xqy
        
         <elt>
           <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
@@ -867,4 +864,8 @@ declare variable $DISPLAY-ELEMENTS as node() :=
     <example><name>single</name>http://lcweb2.loc.gov/diglib/ihas/loc.natlib.gottlieb.11231/enlarge.html?page=1&amp;size=1024&amp;from=default&amp;section=ver02</example>
   </object-control>
 </object-controls>
-;
+;(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

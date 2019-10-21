@@ -313,19 +313,12 @@ return
 			 		
 					let $node-label:=md:titleChop($node/sparql:binding[@name="label"]/sparql:literal,100)
 			 		
-<<<<<<< HEAD:src/lds/model/m-doc.xqy
 					let $node-rel:= 	if ($node/sparql:binding[@name="relation"]/sparql:uri) then
 												 $node/sparql:binding[@name="relation"]/sparql:uri
 										else if ($bf) then
 												$bf/bf:Work/bflc:relationship/bflc:Relationship[fn:string(bf:relatedTo/bf:Work/@rdf:about)=$node-uri]/bflc:relation/rdfs:Resource/rdfs:label
 											else $node/sparql:binding[@name="relation"]/sparql:uri
 			 		let $node-relation:=fn:tokenize(fn:string($node-rel),"/")[fn:last()]
-=======
-					let $node-relation:= if ($bf) then
-												$bf/bf:Work/bflc:relationship/bflc:Relationship[fn:string(bf:relatedTo/bf:Work/@rdf:about)=$node-uri]/bflc:relation/rdfs:Resource/rdfs:label
-											else $node/sparql:binding[@name="relation"]/sparql:uri
-			 		let $node-relation:=fn:tokenize(fn:string($node-relation),"/")[fn:last()]
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/model/m-doc.xqy
 					
 					(: a stub work for c006408223 is c0064082230001  :)
 					(: a native instance will have the same root work for c006408223 is c0064082230001  
@@ -356,33 +349,11 @@ return
 														md:inverseRelationship($node-rel)											
 														else ()
 										let $relation:= 
-<<<<<<< HEAD:src/lds/model/m-doc.xqy
 											if (fn:contains($label, "Incoming") and fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 																																				
 															<span style="color:blue;">{fn:substring-before($inverse,"inverse rel not available")}</span>
 													else if (fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 
 														<span style="color:blue;">{fn:concat($node-relation," : ")}</span>
 													else ()
-=======
-											if (fn:contains($label, "Inward") and fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 											
-												<span style="color:blue;">{fn:concat(" (",$node-relation," this work)")}</span>
-											else if (fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 
-												<span style="color:blue;">{fn:concat($node-relation," : ")}</span>
-											else ()
-									return
-										if (fn:contains($label, "Inward") and $node-label!="" and $node-relation) then 
-								 	       (<a href="{$related-local-uri}">{fn:string($node-label)}</a>, fn:concat(" (", $node-id,") " ) ,$relation )
-										else if (fn:contains($label, "Inward")  and $node-relation) then 
-								 	       (<a href="{$related-local-uri}">{fn:string($node-id)}</a>,$relation )
-									
-
-										else if ($node-label!="" and $node-relation) then 
-								 	       ($relation ,<a href="{$related-local-uri}">{fn:string($node-label)} </a>, fn:concat(" (", $node-id,")" ) )
-										else if ($node-label!="") then
-											(<a href="{$related-local-uri}">{fn:string($node-label)} </a>, fn:concat("(", $node-id,")" ) )
-										else if ($node-id) then
-									    	 ($relation ,	<a href="{$related-local-uri}">{fn:string($node-id)} </a>)
-										else ()
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/model/m-doc.xqy
 									
 										let $layout :=
 											   if (fn:contains($inverse,"inverse rel not available")) then
@@ -395,7 +366,7 @@ return
 															else if ($node-id) then
 														    	 ($relation ,	<a href="{$related-local-uri}">{fn:string($node-id)} </a>)
 															else ()
-									let $_:=xdmp:log($layout,"info")
+									
 													return $layout
 										(:if (fn:contains($label, "Incoming") and $node-label!="" and $node-relation) then 
 								 	       (<a href="{$related-local-uri}">{fn:string($node-label)}</a>, fn:concat(" (", $node-id,") " ) ,$relation )
@@ -431,7 +402,6 @@ declare function md:work-siblings-old($my-uri) {
 	
 	return(	 $expressions, $other-works )
 };
-<<<<<<< HEAD:src/lds/model/m-doc.xqy
 declare function md:inverseRelationship($relation) {
 (:for $rel in $indirect-res//sparql:result
 let $relation:=fn:tokenize(fn:string($rel/sparql:binding[@name="relation"]/sparql:uri),"/")[fn:last()]
@@ -444,15 +414,13 @@ let $inverse:= if (fn:index-of(distinct-values($INVERSES//rel/name), $relation )
 							fn:concat($token, "inverse rel not available")
 							else "relatedTo"
 
-let $_:=xdmp:log($inverse)
+
 (:let $_:= xdmp:node-replace($rel/sparql:binding[@name="relation"]/sparql:uri,
 								<sparql:uri>{fn:concat("http://id.loc.gov/ontologies/bibframe/",$inverse)}</sparql:uri>
 				):)
 
 return $inverse
 };
-=======
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/model/m-doc.xqy
 declare function md:work-siblings($my-uri, $offset,$bf) {
 	let $limit:=$cfg:SPARQL-LIMIT
 	let $direct-res:=
@@ -464,16 +432,10 @@ declare function md:work-siblings($my-uri, $offset,$bf) {
 					
 	let $indirect-res:=
 			searchts:work-siblings-directional($my-uri , "Indirect",$offset)
-<<<<<<< HEAD:src/lds/model/m-doc.xqy
 	
 	let $indirect-res:=				
 		if ($indirect-res) then						
 			 		md:linked-layout($indirect-res, $my-uri,"Incoming Work Link(s)",()) 
-=======
-	let $indirect-res:=				
-		if ($indirect-res) then							
-			md:linked-layout($indirect-res, $my-uri,"Incoming Work Link(s)",()) 
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/model/m-doc.xqy
 		else ()
 	let $sparql-nav:=md:sparql-nav($my-uri,$direct-res,$offset, $limit)
 	return(	 $direct-res, $indirect-res , $sparql-nav)
@@ -616,13 +578,8 @@ return if ($x!="" ) then
 			fn:replace($x,$cfg:ID-LOOKUP-CACHE-BASE, $cfg:ID-BASE)
 		else ""
 };
-<<<<<<< HEAD:src/lds/model/m-doc.xqy
 (: if source_rdf is "simple" then render the display from simple.rdf :)
 declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $source_rdf ) as element()? { 
-=======
-
-declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset ) as element()? { 
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/model/m-doc.xqy
 
 (:returns xhtml div or error:error or 404 not found and () :)
      
@@ -737,20 +694,14 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset ) as
 							(: reload command for nametitles or bibs that were loaded before 8/31/18 and not merged: :)
 			let $reloadable:= if (fn:contains($uri,"works") and
 								 fn:not(fn:contains($uri, "works.n")) and 
-<<<<<<< HEAD:src/lds/model/m-doc.xqy
 								 fn:not(fn:contains($uri, "s.e")) and 
 								 ( $loaddate < xs:date("2018-11-30") 
-=======
-								 fn:not(fn:contains($uri, "works.e")) and 
-								 ( $loaddate < xs:date("2018-09-19") 
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/model/m-doc.xqy
 								 ) and 
 								 index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/convertedBibs/" ) and 
 								 fn:not(
 								 	index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/consolidatedBibs/" )
 								 	)
 								 ) then
-<<<<<<< HEAD:src/lds/model/m-doc.xqy
 									
 									let $token:=fn:tokenize($uri,"\.")[fn:last()]
 									let $token:=substring($token, 1,10)
@@ -764,15 +715,6 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset ) as
 												return fn:concat("./rbi ", fn:substring($token,1,fn:string-length($token)-4))
 								else if  (fn:contains($uri, "works.n") and
 								 		 $loaddate < xs:date("2018-11-30") and 
-=======
-									let $token:=fn:replace(fn:tokenize($uri,"\.")[fn:last()],"^c0*","")
-										return fn:concat("./rbi ", $token)
-								else if (fn:contains($uri,"instances") and ($loaddate < xs:date("2018-09-19")) ) then
-										let $token:=fn:replace(fn:tokenize($uri,"\.")[fn:last()],"^c0*","")
-												return fn:concat("./rbi ", fn:substring($token,1,fn:string-length($token)-4))
-								else if  (fn:contains($uri, "works.n") and
-								 		 $loaddate < xs:date("2018-09-19") and 
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/model/m-doc.xqy
 										 fn:not(index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/consolidatedBibs/" ))
 								 )  then
 										let $token:= fn:tokenize($uri,"\.")[fn:last()]
@@ -955,7 +897,6 @@ let $ajax:=
 
 			let $biblink:=
 			 	if ( contains($hostname,"mlvlp04")  and contains($uri, ".c") ) then
-<<<<<<< HEAD:src/lds/model/m-doc.xqy
 					(: already known
 					let $bibid:=fn:tokenize($uri,"\.")[fn:last()]				
 					let $bibid:=fn:substring($bibid, 1,10)
@@ -965,13 +906,6 @@ let $ajax:=
 				else if ( contains($uri, "works.n") ) then
 				(:let $node:=fn:tokenize($uri,"\.")[fn:last()] return:)
 				 	 <a href="{concat('https://id.loc.gov/authorities/names/',$token,'.marcxml.xml')}">MARC authority source (at ID) </a>
-=======
-					let $bibid:=fn:tokenize($uri,"\.")[fn:last()]				
-					let $bibid:=fn:substring($bibid, 1,10)
-					let $bibid:=fn:replace($bibid,"^c0+","")
-					
-			       return <a href="{concat("http://",$hostname,"/resources/bibs/",$bibid,".xml")}"> MARC source </a>
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/model/m-doc.xqy
 				else ()
 			let $sem-links:= md:bf-sem-links($resourceslink, $bf, $offset)
             
@@ -1050,12 +984,7 @@ let $ajax:=
                                        				</li>                                       				
 													<li>
                                        					<a href="{$formats-base}.index.xml">Fast Indexes</a>														
-<<<<<<< HEAD:src/lds/model/m-doc.xqy
                                        				</li>   													
-=======
-                                       				</li>   
-													
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/model/m-doc.xqy
 													<li>
                                        					{$biblink}
                                        				</li>                                       				
@@ -1093,11 +1022,7 @@ let $ajax:=
 															<button value="submit for edit">Submit to Editor</button>
 														</form>-->
 														<p>{$formats-base}.jsonld</p>
-<<<<<<< HEAD:src/lds/model/m-doc.xqy
                                        					 <a href="http://mlvlp04.loc.gov:3000/bfe/index.html?action={$load-action}&amp;url={$formats-base}.jsonld&amp;profile={$editor-profile}">Load to Editor</a>
-=======
-                                       					 <a href="http://mlvlp04.loc.gov:3000/bfe/development.html?action={$load-action}&amp;url={$formats-base}.jsonld&amp;profile={$editor-profile}">Load to Editor</a>
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/model/m-doc.xqy
 														</span>														
 	                                       				</li>
 	                                       			</ul>)
@@ -1687,7 +1612,7 @@ declare function md:maincontent($groupings as node()?, $behavior as xs:string?, 
     					<div id="ds-bibrecord-new">						
     						<h2 class="hidden">Details</h2>
     						{$imagepath}
-    						{md:record-display($groupings,$uri)}
+    						{md:record-display($groupings)}
     					</div>
                     <!--bibrecord-->
     				</div>
@@ -1716,19 +1641,15 @@ declare function md:maincontent($groupings as node()?, $behavior as xs:string?, 
     		</div>
 };
 
-declare function md:record-display($groupings, $uri) {
-let $bgcolor:=if (fn:contains($uri, "works") ) then "gray" 
-			 else if (fn:contains($uri, "instances") ) then "brown" 
-			else "beige"
-			return(<h1>{$bgcolor}</h1>,
-    <dl class="record" style="background-color:{$bgcolor};" >
+declare function md:record-display($groupings) {
+    <dl class="record">
         {                           
           for $element in $groupings//l:full/l:element[l:label/string()!="Copyright"]
               return (
                 md:dt-transform($element)                                            
             )                           
         }
-    </dl>)
+    </dl>
 };
 
 declare function md:rights-tab($groupings) {
@@ -1802,7 +1723,7 @@ declare function md:tohap-content-tab($uri, $url-prefix,$groupings) {
                 <!-- access-box -->
                 <div id="ds-bibrecord-new">                     
                     <h2 class="hidden">Details</h2>
-                    {md:record-display($groupings, $uri)}
+                    {md:record-display($groupings)}
                 </div>
             <!--bibrecord-->
             </div>
@@ -1838,7 +1759,7 @@ declare function md:ia-content-tab($uri, $url-prefix, $groupings) {
                         <!-- access-box -->
                         <div id="ds-bibrecord-new">                     
                             <h2 class="hidden">Details</h2>
-                            {md:record-display($groupings, $uri)}
+                            {md:record-display($groupings)}
                         </div>
                     <!--bibrecord-->
                     </div>
