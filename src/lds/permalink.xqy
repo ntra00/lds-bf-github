@@ -156,6 +156,7 @@ return
 	        		)				
 			else
 				xdmp:set-response-code(404,"Item Not found")
+<<<<<<< HEAD:src/lds/permalink.xqy
 	else  if (matches($mime, "application/bf-simple\+xml")) then			
 			let $rdf:= document{utils:get-mets-dmdSec("bibframe",$uri )}
  			let $stylesheetBase :="/xslt/"
@@ -170,13 +171,37 @@ return
 			        			
 			return if (exists($simple-bf)) then
 			         (
+=======
+	else    if (matches($mime, "application/bf-simple\+xml")) then				
+	
+			
+			let $rdf:= document{utils:get-mets-dmdSec("bibframe",$uri )}
+ 			let $stylesheetBase :="/xslt/"
+		    let $stylesheet := concat( $stylesheetBase ,"bf-simplifier.xsl")
+    		
+			let $simple-bf:=try {
+					            xdmp:xslt-invoke($stylesheet,document{$rdf/rdf:RDF})
+			        			} catch ($exception) {(
+								$exception
+						 	)
+								
+				        }  									
+			return (:if (exists($simple-bf)) then:)
+			 (
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/permalink.xqy
 		            xdmp:set-response-content-type("text/xml; charset=utf-8"), 
 		            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
 		            xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),	            
 					document{$simple-bf}
 	        		)				
+<<<<<<< HEAD:src/lds/permalink.xqy
 			     else
 	       			xdmp:set-response-code(404,"Item Not found")
+=======
+			(:else
+				xdmp:set-response-code(404,"Item Not found")
+				:)
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/permalink.xqy
 		
 		else if ($dmdsec="semtriples" and matches($mime, "text/turtle")) then			
 			(

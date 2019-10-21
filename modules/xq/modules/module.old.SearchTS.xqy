@@ -69,29 +69,25 @@ declare function searchts:return-related-title($uri as xs:string, $related-graph
             map:entry("uri", sem:iri($uri)       )
         ))
     	
-	return searchts:sparql($query/text(), $params,$related-graph)
-	
+	(:return searchts:sparql($query/text(), $params,$related-graph)
+	:)
+	let $x:= searchts:sparql($query/text(), $params,$related-graph)	
+	(: xdmp:log($x,"info"),:)
+			return(
+			 $x
+			)
 	
 };	
-(: first time in, no offset :)
-declare function searchts:return-work-siblings($work-uri as xs:string , $set as xs:string) as element(sparql:results) 
-{
-	searchts:return-work-siblings($work-uri  , $set, 0)
-};
 (:~
 :   Search database for this Work's related  works
 :
 :
 :   @param  $uri 		string : http:.../resources/work/c0*  or n*
-:   @param set		director or indirect text flag
-:	@param offset	  defaults to zero if not set
+: problematic: it finds direct and indirects!  
 :   @return element( sparql:results) 
 :)
-declare function searchts:return-work-siblings($work-uri as xs:string , $set as xs:string, $offset) as element(sparql:results) 
+declare function searchts:return-work-siblings($work-uri as xs:string , $set as xs:string) as element(sparql:results) 
 {
-let $offset:= if (fn:not($offset castable as xs:integer)) then 0
-				else if ($offset > 200 ) then 200
-				else $offset
 (:OPTIONAL {?relateduri rdfs:label 	?label } .:)
     let $query := 
 		if ($set="expressions") then
@@ -113,11 +109,10 @@ let $offset:= if (fn:not($offset castable as xs:integer)) then 0
 				  				?uri  ?relation  ?relateduri .
 								values ?relation {	bf:expressionOf	bf:hasExpression	bf:translationOf	bf:translation} .
 								OPTIONAL {		?relateduri 	bf:title 		?tnode .
-												?tnode 			bf:mainTitle ?label }.  		
+												?tnode 			rdfs:label		?label }.  		
 							bind ("Direct" as ?direction) .
 							 } 
-						  } limit 50
-						  OFFSET ?offset
+						  }
 	        ]]></query>
         else if ($set ="nonex-relateds") then
 			<query><![CDATA[
@@ -136,7 +131,7 @@ let $offset:= if (fn:not($offset castable as xs:integer)) then 0
 														bf:continuedBy	bf:continuesInPart	bf:splitInto	bf:absorbed	bf:absorbedBy	bf:separatedFrom	bf:continuedInPartBy
 												} .
 								OPTIONAL {		?relateduri 	bf:title 		?tnode .
-										 	?tnode 			bf:mainTitle ?label }.  		
+												?tnode 			rdfs:label		?label }.  		
 								bind ("Inverse" as ?direction) .
 							 } 
 							 UNION {  		
@@ -148,14 +143,13 @@ let $offset:= if (fn:not($offset castable as xs:integer)) then 0
 														bf:continuedBy	bf:continuesInPart	bf:splitInto	bf:absorbed	bf:absorbedBy	bf:separatedFrom	bf:continuedInPartBy
 												} .
 								OPTIONAL {		?relateduri 	bf:title 		?tnode .
-											?tnode 			bf:mainTitle ?label }.  		
+												?tnode 			rdfs:label		?label }.
 								bind ("Direct" as ?direction) .
 							 }
-							 } limit 50
-							 OFFSET ?offset
+							 } limit 120
 					]]>
 	        </query>     
-		 else (:Indirect:)
+		 else
            <query><![CDATA[
 						PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
 						PREFIX rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>
@@ -172,7 +166,7 @@ let $offset:= if (fn:not($offset castable as xs:integer)) then 0
 														bf:continuedBy	bf:continuesInPart	bf:splitInto	bf:absorbed	bf:absorbedBy	bf:separatedFrom	bf:continuedInPartBy
 												} .
 								OPTIONAL {		?relateduri 	bf:title 		?tnode .
-											?tnode 			bf:mainTitle ?label }.  		
+												?tnode 			rdfs:label		?label }.
 								bind ("Inverse" as ?direction) .
 							 } 
 							 UNION {  		
@@ -184,71 +178,43 @@ let $offset:= if (fn:not($offset castable as xs:integer)) then 0
 														bf:continuedBy	bf:continuesInPart	bf:splitInto	bf:absorbed	bf:absorbedBy	bf:separatedFrom	bf:continuedInPartBy
 												} .
 								OPTIONAL {		?relateduri 	bf:title 		?tnode .
-												?tnode 			bf:mainTitle ?label }.  		
+												?tnode 			rdfs:label		?label }.
 								 bind ("Direct" as ?direction) .
 							 } 
-							 
 							  UNION {  		
-				  				?uri  bflc:relationship ?rel .
+				  				?uri  bf:relationship ?rel .
 								  ?rel bf:relatedTo ?relateduri .
 								
 								OPTIONAL {		?relateduri 	bf:title 		?tnode .
-												?tnode 			bf:mainTitle ?label }.  		
+												?tnode 			rdfs:label		?label }.
 								bind ("Direct" as ?direction) .
 							 } 
 							 } ORDER BY ?relation ?label 
-							  LIMIT 50
-							  OFFSET ?offset
+							  LIMIT 120
 					]]>
 	        </query>            
-  (:let $put := map:put($bindings,"limit",sem:typed-literal('1',sem:iri("xs:integer")))
-  let $params := 
-        map:new((            
-            map:entry( "lccn", sem:typed-literal($lccn,sem:iri("http://www.w3.org/2001/XMLSchema#string")) )
-<<<<<<< HEAD:src/xq/modules/module.SearchTS.xqy
-        ))
-:)
-	let $params:= map:map()
-	let $put := map:put($params, "uri",  sem:iri($work-uri)       )
-	let $put := map:put($params, "offset",sem:typed-literal($offset, sem:iri("xs:integer")    ))
-
-	let $res:=
-			searchts:sparql($query/text(), $params, "/resources/works/")
-	(:let $_:=xdmp:log(fn:concat("8231 display",xdmp:quote($res)),"info"):)
-
-	return $res
-=======
-        ))
-:)
-	let $params:= map:map()
-	let $put := map:put($params, "uri",  sem:iri($work-uri)       )
-	let $put := map:put($params, "offset",sem:typed-literal($offset, sem:iri("xs:integer")    ))
-
-	(:let $params := 
+    
+	let $params := 
         map:new((
             map:entry("uri", sem:iri($work-uri)       )
-		,
-            map:entry("offset", sem:typed-literal($offset, sem:iri("xs:integer")       )
         ))
-    :)
+    
 let $x:=searchts:sparql($query/text(), $params, "/resources/works/")
     (:let $_:= xdmp:log($x,"info"):)
 	return $x
 	(:searchts:sparql($query/text(), $params, "/resources/works/"):)
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/module.SearchTS.xqy
 };	
 (:~
 :   Search database for this Work's related  works
-: 
-:	called by works for direc and indirect
+:
+:
 :   @param  $uri 		string : http:.../resources/work/c0*  or n*
-:	@param offset	  defaults to zero if not set
+: problematic: it finds direct and indirects!  
+:   @return element( sparql:results) 
 :)
-declare function searchts:work-siblings-directional($work-uri as xs:string , $direction as xs:string, $offset) as element(sparql:results) 
+declare function searchts:work-siblings-directional($work-uri as xs:string , $direction as xs:string) as element(sparql:results) 
 {
-	
-	let $limit:=$cfg:SPARQL-LIMIT
-	
+(:OPTIONAL {?relateduri rdfs:label 	?label } .:)
     let $query := 
 		if ($direction="Direct") then
 			<query><![CDATA[
@@ -256,13 +222,8 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 						PREFIX rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>
 						PREFIX bf: 		<http://id.loc.gov/ontologies/bibframe/>
 						PREFIX bflc: 	<http://id.loc.gov/ontologies/bflc/>
-			            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-
-<<<<<<< HEAD:src/xq/modules/module.SearchTS.xqy
-						SELECT  distinct ?relation ?relateduri ?label ?direction 
-=======
+	            
 						SELECT  distinct ?relation ?relateduri ?label ?direction
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/module.SearchTS.xqy
 						WHERE {  {  		
 				  				?uri  ?relation  ?relateduri .
 								VALUES ?relation {		bf:relatedTo bf:eventContentOf	bf:hasEquivalent	bf:hasPart	bf:partOf	bf:accompaniedBy	bf:accompanies	
@@ -274,58 +235,22 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 												} .
 								FILTER isURI(?relateduri) .
 								OPTIONAL {		?relateduri 	bf:title 		?tnode .
-												?tnode 			bf:mainTitle ?label }.  		
+												?tnode 			rdfs:label		?label }.
 								bind ("Direct" as ?direction) .
 							 }
-							 # 2019-09-12: repeats the last one?
-						# UNION {  		
-				  			#			?uri  bflc:relationship ?rel .
-								#  		?rel bf:relatedTo ?relateduri .
-								# FILTER isURI(?relateduri) .
+							 UNION {  		
+				  						?uri  bf:relationship ?rel .
+								  		?rel bf:relatedTo ?relateduri .
+								 FILTER isURI(?relateduri) .
 								
-<<<<<<< HEAD:src/xq/modules/module.SearchTS.xqy
-								#OPTIONAL {		?relateduri 	bf:title 		?tnode .
-									#?tnode 			bf:mainTitle ?label }.  		
-								#BIND ("Direct" as ?direction) .
-							 #}
-							  UNION {
-				                  		?uri bflc:relationship ?relClass .
-					                   	
-					                  	?relClass bf:relatedTo ?relateduri .
-            					
-					            FILTER(  isUri(?relateduri) &&
-					                	 !(regex(?relateduri, "#Work"))
-					             	    )
-					              #OPTIONAL {?relateduri 			rdfs:label		?label  .  	}
-								  OPTIONAL {?relClass 		bflc:relation	?relation  .  	}
-								    OPTIONAL {		?relateduri 	bf:title 		?tnode .
-													?tnode 			bf:mainTitle ?label }.  		
-								  
-					              BIND  ("text-relation" as ?direction). 				  		
-							 			 }
-							} limit ?limit
-=======
 								OPTIONAL {		?relateduri 	bf:title 		?tnode .
 												?tnode 			rdfs:label		?label }.
 								BIND ("Direct" as ?direction) .
 							 }
-							  UNION {
-				                  		?uri bflc:relationship ?relClass .
-					                   	?relClass rdf:type <http://id.loc.gov/ontologies/bflc/Relationship> .            
-					                  	?relClass bf:relatedTo ?relateduri .
-            
-					            FILTER(  isUri(?relateduri) &&
-					                	 !(regex(?relateduri, "#Work"))
-					             	    )
-					             OPTIONAL {?relateduri 			rdfs:label		?label  .  	}
-					              BIND  ("text-relation" as ?direction). 				  		
-							 			 }
-												 } limit ?limit
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/module.SearchTS.xqy
-							 OFFSET ?offset
+							 } limit 120
 					]]>
 	        </query>     
-        else (: indirect :)
+        else 
 			<query><![CDATA[
 						PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
 						PREFIX rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>
@@ -344,80 +269,37 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 												} .
 								FILTER isURI(?relateduri) .
 								OPTIONAL {		?relateduri 	bf:title 		?tnode .
-<<<<<<< HEAD:src/xq/modules/module.SearchTS.xqy
-												?tnode 			bf:mainTitle ?label }.  		
-								OPTIONAL {		?relateduri 	rdfs:label		?label }.  		
-								bind ("Inverse" as ?direction) .
-							 } 
-							  UNION {#text relation
-							   
-							   			?relClass bf:relatedTo ?uri .
-				                  		?relateduri bflc:relationship ?relClass .
-					                   	
-					                 
-            					
-					            FILTER(  isUri(?relateduri) &&
-					                	 !(regex(?relateduri, "#Work"))
-					             	    )
-					              #OPTIONAL {?relateduri 			rdfs:label		?label  .  	}
-								  OPTIONAL {?relClass 		bflc:relation	?relation  .  	}
-								    OPTIONAL {		?relateduri 	bf:title 		?tnode .
-													?tnode 			bf:mainTitle ?label }.  		
-								  
-					              BIND  ("text-relation" as ?direction). 				  		
-							 			
-
-							 	}
-=======
 												?tnode 			rdfs:label		?label }.  		
-								bind ("Inverse" as ?direction) .
+								bind ("Indirect" as ?direction) .
 							 } 
 							 
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/module.SearchTS.xqy
-							 } limit ?limit
-							 	offset ?offset
+							 } limit 120
 					]]>
 	        </query>     
 		        
-    (:
+    
 	let $params := 
         map:new((
             map:entry("uri", sem:iri($work-uri)       )
         ))
-    :)
-	let $params:= map:map()
-	let $put := map:put($params, "uri",  sem:iri($work-uri)       )
-	let $put := map:put($params, "offset",sem:typed-literal(fn:string($offset), sem:iri("xs:integer")    ))
-	let $put := map:put($params, "limit",sem:typed-literal(fn:string($limit), sem:iri("xs:integer")    ))
-<<<<<<< HEAD:src/xq/modules/module.SearchTS.xqy
-	(:let $_:= xdmp:log("$query","info")
-	let $_:= xdmp:log($query,"info")
-	let $_:= xdmp:log($work-uri,"info")
-	:)
-	
-=======
->>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/module.SearchTS.xqy
+    
 let $x:=searchts:sparql($query/text(), $params, "/resources/works/")
     (:let $_:= xdmp:log($x,"info"):)
 	return $x
 	(:searchts:sparql($query/text(), $params, "/resources/works/"):)
 };	
-(: first time in no offset? 
-:)
-declare function searchts:return-my-siblings($parent-uri as xs:string, $graph as xs:string ) as element(sparql:results) {
-	searchts:return-my-siblings($parent-uri ,$graph , 0)
-};
+
+
 (:~
 :   Search database for this item or instances' siblings; start with the parent work uri (or instance)
 :
 :
 :   @param  $uri 		string : http:.../resources/work/c0* or resources/instances/c*
-:   @param  $graph 		string : for collection query /resources/instances/ or /resources/items/
+:   @param  $uri 		string : for collection query /resources/instances/ or /resources/items/
 :   @return element( sparql:results) 
 :)
-declare function searchts:return-my-siblings($parent-uri as xs:string, $graph as xs:string, $offset) as element(sparql:results) 
+declare function searchts:return-my-siblings($parent-uri as xs:string, $graph as xs:string) as element(sparql:results) 
 {
-let $limit:=$cfg:SPARQL-LIMIT
     
     let $query := <query><![CDATA[
 			PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
@@ -430,29 +312,20 @@ let $limit:=$cfg:SPARQL-LIMIT
 	  				?relateduri ?relation ?uri .
 			
 			VALUES ?relation {
-								bf:instanceOf    bf:itemOf
+								bf:instanceOf bflc:itemOf   bf:itemOf
 							} .
 			OPTIONAL {		?relateduri 	bf:title 		?tnode .
 							?tnode 			rdfs:label		?label }.  					
 
 				} 	
 			ORDER BY ?relateduri
-			LIMIT $limit
-			OFFSET ?offset
+			LIMIT 120
 	        ]]></query>
                           
-(:	let $params := 
+	let $params := 
         map:new((
             map:entry("uri", sem:iri($parent-uri)       )
         ))
-		:)
-		
-	let $params:= map:map()
-	let $put := map:put($params, "uri",  sem:iri($parent-uri)       )
-	let $put := map:put($params, "offset",sem:typed-literal(fn:string($offset), sem:iri("xs:integer")    ))
-
-	let $put := map:put($params, "limit",sem:typed-literal(fn:string($limit), sem:iri("xs:integer")    ))
-
     	
 	return searchts:sparql($query/text(), $params, $graph)
 };	
@@ -490,7 +363,7 @@ declare function searchts:return-specific-family($uri as xs:string,
 								}		
 
 			} ORDER BY ?relateduri
-			  LIMIT ?limit
+			  LIMIT 120
 	        ]]></query>
                           
     
@@ -503,43 +376,7 @@ declare function searchts:return-specific-family($uri as xs:string,
     	
 	return searchts:sparql($query/text(), $params,  $parent-graph)
 };							
-		(:~
-:   Search database for this instance's  items
-:
-:
-:   @param  $uri 		string : http:.../resources/instances/c0*or e*
-:   @return element( sparql:results) 
-:)
-declare function searchts:return-my-items($uri as xs:string 					
-					)
-		as element(sparql:results) 
-{
-        
-    let $query := <query><![CDATA[
-			PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
-			PREFIX rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>
-			PREFIX bf: 		<http://id.loc.gov/ontologies/bibframe/>
-			PREFIX bflc: 	<http://id.loc.gov/ontologies/bflc/>
-
-	            
-			SELECT   distinct ?relateduri    
-			WHERE {
-					        ?relateduri   	bf:itemOf   	?uri .
-
-			} ORDER BY ?relateduri
-			  LIMIT 20
-	        ]]></query>
-                          
-    
-	let $params := 
-        map:new((
-            map:entry("uri", sem:iri($uri)       )
-            
-        ))		
-    	 
-	return searchts:sparql($query/text(), $params, "/resources/items/")
-	
-};							
+						
 (:~
 :   Search database for matching relation parent/child: work to instance,to  item, or back .
 :May not be used; see specific family
@@ -819,14 +656,12 @@ declare function searchts:sparql($query, $params,$graph) as element(sparql:resul
 if ($graph) then
 	(
 		(: xdmp:log($query,"info"),:)
-    	sem:query-results-serialize( 
-			sem:sparql($query, $params, (),
-						cts:and-query((
-										cts:collection-query("/catalog/"),  
-										cts:collection-query($graph) 
-									 ))
-						) 
-		)/sparql:results 
+    	sem:query-results-serialize( sem:sparql($query, $params, (),
+													cts:and-query((
+																	cts:collection-query("/catalog/"),  cts:collection-query($graph) 
+																))
+												) 
+						)/sparql:results 
 )
 
     else
@@ -1125,7 +960,7 @@ declare function searchts:return-useFor-relation(
 
 	
 SELECT * WHERE {
- ?newNode madsrdf:useFor <http://id.loc.gov/authorities/names/n205027149> .
+ ?newNode madsrdf:useFor <http://id.loc.gov/authorities/names/n2012027149> .
 } LIMIT 10
 
 
@@ -1352,8 +1187,3 @@ declare function format-uri($uri) as xs:string
 {
     fn:concat( fn:replace( $uri, "http://id\.loc\.gov" , "") , '.xml')
 };
-(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
-<metaInformation>
-<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
-</metaInformation>
-:)

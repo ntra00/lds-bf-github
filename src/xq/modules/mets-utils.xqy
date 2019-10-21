@@ -40,6 +40,7 @@ declare namespace xhtml="http://www.w3.org/1999/xhtml" ;
 declare namespace l= "local";
 
 declare variable $RDF-FORMATS as xs:string:="" ;
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
 (: padded to 9 if less :)
 declare function utils:padded-id($id as xs:string) 
 {
@@ -68,6 +69,8 @@ declare function utils:padded-id($id as xs:string)
     
 };
 
+=======
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
 declare function utils:mets($id as xs:string) {
        
     (:  requires id parameter (METS/@OBJID as in "loc.natlib.works.5226")
@@ -85,6 +88,7 @@ declare function utils:mets($id as xs:string) {
 				xdmp:set-response-code(404,"Item Not found")
 
 };
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
 
 declare function utils:metsdoc-available($objid as xs:string) {
        
@@ -101,6 +105,8 @@ declare function utils:metsdoc-available($objid as xs:string) {
 
 };
 
+=======
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
 (: from id-main, get the bibframe rdf dmdsec . if no ser specified, return rdfxml :)
 declare function utils:rdf($uri as xs:string) {
 	let $ser:="rdfxml"
@@ -111,18 +117,26 @@ declare function utils:rdf($uri as xs:string) {
 (:~
 :   Get mets uri from lccn
 :
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
 :   @param  $uri            is lccn based request for work /instance/item/lccn
+=======
+:   @param  $uri            is lccn based request for work /instance/item
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
 :   @return mets:mets as element
 :)
 declare function utils:get-mets-id-by-lccn(
     $uri as xs:string
     ) as xs:string
 {
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
 
+=======
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
 let $token:= fn:tokenize($uri,"/")[fn:last()]
 let $base-node:= if (fn:contains($token,".")) then fn:substring-before($token, ".") else $token
 let $lccn:= if (fn:contains($base-node,"-")) then fn:substring-before($base-node, "-") else $base-node
 let $lccn-spaced:=
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
 	if (fn:not(fn:matches($lccn, "^[0-9].+$"))) then
 			fn:concat(
 						 fn:replace($lccn,"([A-Za-z]+)([0-9]+)$","$1"),
@@ -145,6 +159,31 @@ let $lccn-doc:= if (fn:starts-with($lccn,"n") and utils:metsdoc-available(fn:con
 					fn:concat("loc.natlib.works.",$lccn)
 				else
 					cts:uris((),(),	
+=======
+if (fn:not(fn:matches($lccn, "^[0-9].+$"))) then
+						fn:concat(
+									 fn:replace($lccn,"([A-Za-z]+)([0-9]+)$","$1"),
+									" ",
+									 fn:replace($lccn,"([A-Za-z]+)([0-9]+)$","$2")
+						)
+					else ()
+					
+(: instance or item offset:)
+let $offset:=if (fn:contains($base-node,"-")) then fn:substring-after($base-node, "-") else ()
+
+let $node:= fn:replace($uri, "(/resource/)(work|instance|item)(/.+)","$2")
+
+
+
+
+let $domain-for-lccn-query:=
+    if ($node="work"  and fn:starts-with($token,"n") ) then
+                        "/resources/works/"
+                else 
+                         "/resources/instances/"
+
+let $lccn-doc:=cts:uris((),(),	
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
 	                          	cts:and-query((
 											cts:or-query((
 												cts:element-value-query(xs:QName("idx:lccn"),$lccn ) ,
@@ -155,6 +194,7 @@ let $lccn-doc:= if (fn:starts-with($lccn,"n") and utils:metsdoc-available(fn:con
 			                              	cts:collection-query("/catalog/")                               
 			                   				))
 											)[1]
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
  let $doc-uri:=
  				if ($nodetype="instance") then					
 				 		$lccn-doc
@@ -163,6 +203,21 @@ let $lccn-doc:= if (fn:starts-with($lccn,"n") and utils:metsdoc-available(fn:con
                  			$lccn-doc
 					
                   else if ($nodetype="work") then   
+=======
+    
+ let $doc-uri:=
+ 				if ($node="instance") then					
+				 		$lccn-doc
+                   else if ($node="work" and fn:starts-with($token,"n")) then
+                                     
+                   (: nametitle the lccn should have been found on the work, so lccn-doc has it. :)
+                   
+                   
+						 4 ( 
+						 			$lccn-doc
+						 )
+                  else if ($node="work") then   
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
 				  		let $instance-uri:=fn:replace(fn:tokenize($lccn-doc,"/")[fn:last()],".xml","")
 						let $instance-uri:=fn:concat("http://id.loc.gov/resources/instances/",$instance-uri)
 						let $q:=  <query><![CDATA[
@@ -175,7 +230,11 @@ let $lccn-doc:= if (fn:starts-with($lccn,"n") and utils:metsdoc-available(fn:con
 						       SELECT distinct ?w
 							  	  	WHERE {		?uri bf:instanceOf ?w .			
 						   }
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
 						   limit 5
+=======
+						   limit 10  
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
 						                ]]></query>
  
 						 let $uri-param:=         
@@ -189,6 +248,7 @@ let $lccn-doc:= if (fn:starts-with($lccn,"n") and utils:metsdoc-available(fn:con
 						
 						let $work-uri:=fn:string($res//sparql:binding/sparql:uri)
 						let $work-doc-node:=fn:tokenize($work-uri,"/")[fn:last()]
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
 						
 
 						 return fn:concat("loc.natlib.works.",$work-doc-node)
@@ -199,11 +259,24 @@ let $lccn-doc:= if (fn:starts-with($lccn,"n") and utils:metsdoc-available(fn:con
 						resource/item/2018017556-0004
 						would find the lccn-instance resources/instances/c0204398000001, replace 0001 with 0004 change instance to item
 						:)
+=======
+						let $work-doc-id:=base-uri(utils:mets(fn:concat("loc.natlib.works.",$work-doc-node)))
+
+						 return (
+						 			$work-doc-id
+						 )
+			    else if ($node="item") then   
+				(: if you know the lccn-instance uri, use the requested $offset and just calculate the item uri.
+					resource/item/2018017556-0004
+					would find the lccn-instance resources/instances/c0204398000001, replace 0001 with 0004 change instance to item
+					:)
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
 
 				  		let $instance-uri:=fn:replace(fn:tokenize($lccn-doc,"/")[fn:last()],".xml","")
 						let $instance-base:=fn:substring($instance-uri,1,10)
 						let $item-doc-node:=fn:concat($instance-base,$offset)
 						
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
 						 return  fn:concat("loc.natlib.items.",$item-doc-node)
 						
 						
@@ -214,6 +287,31 @@ let $lccn-doc:= if (fn:starts-with($lccn,"n") and utils:metsdoc-available(fn:con
  
 	   if ( utils:metsdoc-available($doc-uri) ) then
 			$doc-uri         	
+=======
+						
+						let $item-doc-id:=base-uri(utils:mets(fn:concat("loc.natlib.items.",$item-doc-node)))
+
+						 return ( 
+						 			$item-doc-id
+						 )
+						 else ("error")
+
+ let $_:=        xdmp:log( fn:concat("DISPLAY: ",fn:doc-available($doc-uri), ":" ,$doc-uri),"info")
+    return
+        if (fn:doc-available($doc-uri)) then
+         	let $lccn-uri:=fn:tokenize($doc-uri,"/")[fn:last()]
+			let $lccn-uri:=fn:substring-before($lccn-uri, ".xml")
+			let $lccn-uri:=if (($node="instance" or $node="item") and fn:string-length($lccn-uri) > 10 and fn:substring($lccn-uri,10,14) ne $offset ) then
+							fn:concat(fn:substring($lccn-uri,1,10),$offset)
+							else 
+							$lccn-uri
+				
+			let $_:=xdmp:log( fn:concat("DISPLAdcY: ", $lccn-doc, ":",$lccn-uri),"info")
+			let $objid:=fn:concat("loc.natlib.",$node,"s.",$lccn-uri)
+			return ($objid,
+			xdmp:log($objid,"info")
+			)
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
         else
             "Document not found"
 };
@@ -287,7 +385,12 @@ declare function utils:rdf-ser($uri as xs:string, $ser as xs:string) {
                    else "rdfxml"
    
    let $bfrdf:=$mets/mets:mets/mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF	
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
       
+=======
+   
+   (:let $_:=        xdmp:log( sem:rdf-serialize(sem:rdf-parse($bfrdf/node(),"rdfxml"),$serialize),"info"):)
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
    let $resp:= if ($serialize="rdfxml" )then 
    						$bfrdf
    				else try{
@@ -299,6 +402,7 @@ declare function utils:rdf-ser($uri as xs:string, $ser as xs:string) {
 					 }
    	return 
 		if (not(empty($bfrdf) )) then		 		
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
 				(
 			        xdmp:set-response-content-type($mime), 		            
 					xdmp:add-response-header("Access-Control-Allow-Origin", "*") ,
@@ -373,6 +477,8 @@ declare function utils:rdf-2marc($uri as xs:string, $ser as xs:string) {
 	
 	return 
 		if (not(empty($instance) )) then		 		
+=======
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
 			(
 			        xdmp:set-response-content-type($mime), 		            
 					xdmp:add-response-header("Access-Control-Allow-Origin", "*") ,
@@ -383,6 +489,10 @@ declare function utils:rdf-2marc($uri as xs:string, $ser as xs:string) {
 
 };
 
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
+=======
+     
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
 
 
 
@@ -426,7 +536,11 @@ declare function utils:json($uri as xs:string, $ser as xs:string) {
 					 }
 			            
 			return
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
 			     (	xdmp:add-response-header("Access-Control-Allow-Origin", "*") ,
+=======
+			     (
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
 			        xdmp:set-response-content-type("application/json; charset=utf-8"), 		            
 					$response
 				  
@@ -650,6 +764,7 @@ return
 	else $trymods
 };
 
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
 declare function utils:export-package-for-marc($instance-uri as xs:string )  {
 (: given the object id for an instance, get its'work and items, produce rdf:RDF package for export to conversion for MARC in ILS :)
 let $instance:=utils:mets($instance-uri)
@@ -665,6 +780,8 @@ return $work-objectid
 	else $trymods:)
 };
 
+=======
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy
 
 declare function utils:mets-files($uri as xs:string, $format as xs:string, $set as xs:string) {
   (:  
@@ -1195,8 +1312,12 @@ return
 						<dd class="bibdata">{$item//rights:ConstraintDescription}</dd>)
 			}
         </div>	
+<<<<<<< HEAD:src/xq/modules/mets-utils.xqy
 };(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
 <metaInformation>
 <scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
 </metaInformation>
 :)
+=======
+};
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/xq/modules/mets-utils.xqy

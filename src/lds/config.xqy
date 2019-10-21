@@ -610,6 +610,7 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <facet-param>language</facet-param>
           <facet-operation>and</facet-operation>
         </elt>
+<<<<<<< HEAD:src/lds/config.xqy
         <elt>
           <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
           <page>search</page>
@@ -629,6 +630,9 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <facet-param>subjectLexicon</facet-param>
           <facet-operation>or</facet-operation>
         </elt>
+=======
+         
+>>>>>>> 5c44025970b8e616b101d33e33f5f1f3ce5a395a:modules/lds/config.xqy
        
         <elt>
           <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
