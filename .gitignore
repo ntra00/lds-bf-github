@@ -8,6 +8,7 @@ src/id-main/**
 src/static/tohap/**
 src/splashpages/**
 src/api/**
+src/xq/lscoll/**
 src/xq/ingest*.xqy
 src/xq/modules/lscoll/**
 src/xq/modules/ead/**
