@@ -63,7 +63,7 @@ declare variable $body := xdmp:get-request-body("xml")/node();
 
 
 import module namespace bibs2mets 			= 		"http://loc.gov/ndmso/bibs-2-mets" 		at 	"../modules/module.bibs2mets.xqy";
-import module namespace marcutil			= 		"info:lc/xq-modules/marc-utils" 		at	"../../src/xq/modules/module.marc-utils.xqy";
+import module namespace marcutil			= 		"info:lc/xq-modules/marc-utils" 		at	"../../../src/xq/modules/marc-utils.xqy";
 
 import module namespace bibframe2index      =       "info:lc/id-modules/bibframe2index#" 	at "../../../modules/module.BIBFRAME-2-INDEX.xqy";
 import module namespace bf4ts   			=      "info:lc/xq-modules/bf4ts#"  			at "../../../modules/module.BIBFRAME-4-Triplestore.xqy";
