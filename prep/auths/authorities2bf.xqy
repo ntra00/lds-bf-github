@@ -2,9 +2,9 @@ xquery version "1.0-ml";
 
 module namespace auth2bf = "http://loc.gov/ndmso/authorities-2-bibframe";
 
-import module namespace bibframe2index    = "info:lc/id-modules/bibframe2index#"   at "modules/module.BIBFRAME-2-INDEX.xqy";
-import module namespace	bf4ts   		  = "info:lc/xq-modules/bf4ts#"   		   at "modules/module.BIBFRAME-4-Triplestore.xqy";
-import module namespace bibs2mets 		  = "http://loc.gov/ndmso/bibs-2-mets" 	at 	"modules/module.bibs2mets.xqy";
+import module namespace bibframe2index    = "info:lc/id-modules/bibframe2index#"   at "/prep/modules/module.BIBFRAME-2-INDEX.xqy";
+import module namespace	bf4ts   		  = "info:lc/xq-modules/bf4ts#"   		   at "/prep/modules/module.BIBFRAME-4-Triplestore.xqy";
+import module namespace bibs2mets 		  = "http://loc.gov/ndmso/bibs-2-mets" 	at 	"/prep/modules/module.bibs2mets.xqy";
 
 declare namespace 	rdf					= "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 declare namespace	rdfs   			    = "http://www.w3.org/2000/01/rdf-schema#";
@@ -828,4 +828,8 @@ else (: not $deprecated and doc-available($destination-uri) :)
  ()
 	 (:xdmp:log( fn:concat("CORB auth : ",$orig-uri," skipped on load: Not a bfWork"),"info"):)
          
-         };
+         };(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

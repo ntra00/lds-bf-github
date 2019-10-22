@@ -49,7 +49,7 @@ declare namespace 	hld 				= "http://www.indexdata.com/turbomarc";
 declare namespace 	pmo  				= "http://performedmusicontology.org/ontology/";
 
 import module namespace ldsindex 		= "info:lc/xq-modules/index-utils" at "/src/xq/modules/index-utils.xqy";
-import module namespace lcc 			= "info:lc/xq-modules/config/lcclass" at "config/lcc2.xqy";
+import module namespace lcc 			= "info:lc/xq-modules/config/lcclass" at "/src/xq/modules/config/lcc2.xqy";
 
 declare namespace xdmphttp = "xdmp:http";
 
