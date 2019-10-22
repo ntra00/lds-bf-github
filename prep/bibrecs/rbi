@@ -54,7 +54,7 @@ PASSWD=`/marklogic/id/id-prep/marc/keys/passwd-ml.sh`
 	-output_collections /bibframe-process/,/processing/load/bibs/$TODAY/,/bibframe-process/yaz-reload/ \
 	-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update \
 	-input_file_type documents \
-	-transform_module /bibrecs/corb-bibframe-process-yazbib-files.xqy \
+	-transform_module /prep/bibrecs/corb-bibframe-process-yazbib-files.xqy \
 	-transform_namespace "http://loc.gov/ndmso/marc-2-bibframe-yaz/" \
 	-document_type xml \
 	-aggregate_record_element RDF \
