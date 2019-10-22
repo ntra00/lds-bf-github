@@ -3,7 +3,7 @@ xquery version "1.0-ml";
 (: Contains functions to convert between mxe and marcxml, etc. :)
 
 module namespace marcutil = "info:lc/xq-modules/marc-utils";
-import module namespace index="info:lc/xq-modules/index-utils" at "/xq/modules/index-utils.xqy";
+import module namespace index="info:lc/xq-modules/index-utils" at "/src/xq/modules/index-utils.xqy";
 import module namespace xslt="info:lc/xq-modules/xslt" at "/xq/modules/xslt.xqy";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare default element namespace "http://www.loc.gov/MARC21/slim";
@@ -389,3 +389,8 @@ return
 </table>
 
 };
+(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

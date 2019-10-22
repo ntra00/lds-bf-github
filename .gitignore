@@ -20,6 +20,7 @@ prep/bibrecs/xsl
 prep/bibrecs/batchupdates/**
 prep/bibrecs/loaded/**
 prep/bibrecs/singleload/**
+prep/bibrecs/sourceload/**
 prep/bibrecs/source/**
 prep/bibrecs/bfe-preprocess/**
 prep/bibrecs/*test*

@@ -33,6 +33,27 @@ import module namespace lcc = "info:lc/xq-modules/config/lcclass" at "/xq/module
 import module namespace locs = "info:lc/xq-modules/config/lclocations" at "/xq/modules/config/lclocations.xqy";
 declare namespace xdmphttp = "xdmp:http";
 (: -------------------------- index terms starts here: -------------------------- :)
+(: This function chops the given punctuation from the end of the given string. useful for lopping off ending periods (but be careful!)
+adapted from marcslim2modsutils.xsl
+$punc to be chopped  can be passed in, or defaults to  ".:,;/" (not including the quotes)
+:)
+declare function index:chopPunctuation( $str as xs:string*,
+    $punc as xs:string){
+let $punc:= if (fn:string-length($punc)=0 ) then  ".:,;/" else $punc
+let $str:=fn:normalize-space($str)
+
+let $len:=fn:string-length($str)
+
+return	if ($len=0) then
+			()
+	else if (fn:contains($punc, fn:substring($str,$len,1) )) then
+			ldsindex:chopPunctuation(fn:substring($str,1,$len - 1),$punc)
+	else if (fn:not($str)) then
+			()
+	else
+		$str
+
+};
 declare function index:get-thumb($mets as element(), $uri as xs:string ) {
 (: copied from mets-utils
 this is only for digital objects that already have a mets file with filesec..
@@ -1744,4 +1765,8 @@ let $membership:=string-join(
 			{$lcc}					
 			{$loc}				
         </idx:indexTerms>
-};
+};(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)
