@@ -1,6 +1,6 @@
 xquery version "1.0-ml";
 (:
-:   Module Name: BIBFRAME Full to Index
+:   Module Name: BIBFRAME Full to Index adapted from natlibcat version for namespace issues and uri issues
 :
 :   Module Version: 1.0
 :
@@ -49,7 +49,7 @@ declare namespace 	hld 				= "http://www.indexdata.com/turbomarc";
 declare namespace 	pmo  				= "http://performedmusicontology.org/ontology/";
 
 import module namespace ldsindex 		= "info:lc/xq-modules/index-utils" at "index-utils.xqy";
-import module namespace lcc 			= "info:lc/xq-modules/config/lcclass" at "/xq/modules/config/lcc2.xqy";
+import module namespace lcc 			= "info:lc/xq-modules/config/lcclass" at "config/lcc2.xqy";
 
 declare namespace xdmphttp = "xdmp:http";
 
@@ -65,9 +65,8 @@ declare namespace xdmphttp = "xdmp:http";
 
 :   @return index:index node
 :)
-declare function bibframe2index:bibframe2index($rdfxml as element() , $mxe  ) {
-    (:let $_:=xdmp:log("in index","info"):)
-		
+declare function bibframe2index:bibframe2index($rdfxml as element(rdf:RDF) , $mxe  ) {
+    		
 	let $resource := $rdfxml/child::node()[fn:name()][1] (:bf:work, instance, item :)
 	
     let $uris := bibframe2index:get_uris($resource)
@@ -82,7 +81,13 @@ declare function bibframe2index:bibframe2index($rdfxml as element() , $mxe  ) {
     (: bibframe-related extracts :)
     let $uniformTitle :=  bibframe2index:get_bibframe_uniform_title($resource)
 	
-	let $mainTitles := bibframe2index:get_bibframe_titles($resource)    
+	let $mainTitles := bibframe2index:get_bibframe_titles($resource)
+	let $aLabel:=if($uniformTitle) then 
+	   element index:aLabel {$uniformTitle//text()}
+	 else if ($mainTitles) then
+	   element index:aLabel {$mainTitles[1]//text()}
+	   else 
+	       element index:aLabel {"no title"}
     let $bibframeLabels := ()
             (: bibframe2index:get_bibframe_labels($resource):)
     let $creators := bibframe2index:get_bibframe_creator($resource)
@@ -111,6 +116,7 @@ declare function bibframe2index:bibframe2index($rdfxml as element() , $mxe  ) {
 						 $changeDates2
 						 :)
 	let $imprints:=bibframe2index:getImprints($resource//bf:provisionActivity)					
+	let $pubPlaces:=bibframe2index:getPubPlaces($resource//bf:provisionActivity)					
 	let $issuance:=bibframe2index:getIssuance($resource//bf:issuance)					
 	let $generationProcess := bibframe2index:get_generation($resource//bflc:generationProcess)
     let $aaps:=      bibframe2index:get_aaps($resource)
@@ -127,12 +133,14 @@ declare function bibframe2index:bibframe2index($rdfxml as element() , $mxe  ) {
             $aaps,            
             $uniformTitle,            
 			$mainTitles,
+			$aLabel,
             $bibframeLabels,
             $creators,
             $contributors/*,           
             $language,
 			$classes,
 			$imprints,
+			$pubPlaces,
 			$issuance,
 			$display,
             $derivations,
@@ -141,15 +149,12 @@ declare function bibframe2index:bibframe2index($rdfxml as element() , $mxe  ) {
 			$generationProcess		          
         }
 		return ($result
-		 (:,xdmp:log("result","info")
-		 ,xdmp:log($result,"info")
-		 :)
 	
 		)
 		
 };
 
-declare function bibframe2index:getIssuance($issuances as element()*) as element()? {
+declare function bibframe2index:getIssuance($issuances as element()*) as element()* {
 
 for $issuance in $issuances/bf:Issuance
 
@@ -162,10 +167,10 @@ for $issuance in $issuances/bf:Issuance
     			else $code
 
 return  if ($label!="") then 
-		<idx:issuance>{$label}</idx:issuance> 
+		<index:issuance>{$label}</index:issuance> 
 		
-					(:<wrap><idx:issuance>{$label}</idx:issuance> 
-					 <idx:materialGroup> {$label}</idx:materialGroup>
+					(:<wrap><index:issuance>{$label}</index:issuance> 
+					 <index:materialGroup> {$label}</index:materialGroup>
 					 </wrap>:)
 					 (: changed mind about wanting serial, mono etc; instance material groups are pretty good already:)
 	else ()
@@ -189,10 +194,25 @@ for $agent in $activity/bf:agent
 		let $imprint:= if ($imprint) then $imprint else fn:string($agent/bf:Agent/rdfs:label[1])
 	:)
 
-return  if ($imprint!="") then  <idx:imprint>{$imprint}</idx:imprint> else ()
+return  if ($imprint!="") then  <index:imprint>{$imprint}</index:imprint> else ()
 
 
 };
+(: pub place  :)
+declare function bibframe2index:getPubPlaces($provision as element())  {
+
+for $activity in $provision/bf:ProvisionActivity
+for $place in $activity/bf:place	
+	let $pubPlace := fn:string($place/bf:Place/rdfs:label[1])
+	(:let $pubPlace := if ($pubPlace) then $pubPlace else fn:string($place/@rdf:resource)
+	let $pubPlace:=if ($pubPlace) then $pubPlace else fn:string($place/bf:Place/@rdf:about)
+	:)
+
+return  if ($pubPlace!="") then  <index:pubPlace>{$pubPlace}</index:pubPlace> else ()
+
+
+};
+
 (:-----------------------------------------------------------------------
 from ldsindex:getPubDates
 <bf:provisionActivity><bf:ProvisionActivity><rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
@@ -247,36 +267,36 @@ return
         
 	        let $result:=
 	           if ($range) then
-	             <idx:range>
-	                <idx:beginpubdate>{$begindate}</idx:beginpubdate>
-	            	<idx:begyear>{ldsindex:gyear($begindate)}</idx:begyear>        
-	                <idx:endpubdate>{$enddate}</idx:endpubdate>
-	            	<idx:endyear>{ldsindex:gyear($enddate)}</idx:endyear>        
-	             </idx:range>
+	             <index:range>
+	                <index:beginpubdate>{$begindate}</index:beginpubdate>
+	            	<index:begyear>{ldsindex:gyear($begindate)}</index:begyear>        
+	                <index:endpubdate>{$enddate}</index:endpubdate>
+	            	<index:endyear>{ldsindex:gyear($enddate)}</index:endyear>        
+	             </index:range>
 	             else 
-	                (<idx:beginpubdate>{$begindate}</idx:beginpubdate>,
-	            	<idx:begyear>{ldsindex:gyear($begindate)}</idx:begyear>        )
+	                (<index:beginpubdate>{$begindate}</index:beginpubdate>,
+	            	<index:begyear>{ldsindex:gyear($begindate)}</index:begyear>        )
                 
 	        return 
-	           <idx:pubdates>
+	           <index:pubdates>
 	                {$result}
 	                {if (exists($computedBegin)) then 
 	            		let $sort:=
 	            			if ($computedBegin="Undetermined")  then 
 	            	   			$computedBegin 
 	            			else replace($computedBegin,"\D+","")
-	                    return (<idx:pubdateSort>{$sort}</idx:pubdateSort>,
-	            				<idx:pubyrSort>{ldsindex:gyear($sort)}</idx:pubyrSort>        )
+	                    return (<index:pubdateSort>{$sort}</index:pubdateSort>,
+	            				<index:pubyrSort>{ldsindex:gyear($sort)}</index:pubyrSort>        )
 	                else if (exists($begindate)) then        
-	                    (<idx:pubdateSort>{$begindate}</idx:pubdateSort> ,
-	            		      <idx:pubyrSort>{ldsindex:gyear($begindate)}</idx:pubyrSort>        )
+	                    (<index:pubdateSort>{$begindate}</index:pubdateSort> ,
+	            		      <index:pubyrSort>{ldsindex:gyear($begindate)}</index:pubyrSort>        )
 	                    else ()}        
-	            </idx:pubdates>
+	            </index:pubdates>
    
 };
 
 (:~
-:   Records the lccn, isbn, issn
+:   Records the lccn, isbn, issn: NOT IN USE!
 :
 :   @param  $el        element() is the MADS/RDF property  
 :   @return index:code element()
@@ -285,14 +305,14 @@ declare function bibframe2index:get_code($el as element()*) as element()* {
     for $e in $el
     return 
         (
-            element idx:code { text { $e/text() } },
+            element index:code { text { $e/text() } },
             if ( fn:contains(xs:string($e), "-") ) then
                 let $codeStart := fn:substring-before(xs:string($e), "-")
                 let $codeEnd := fn:substring-after(xs:string($e), "-")
                 return 
                     (
-                        element idx:codeStart { $codeStart },
-                        element idx:codeEnd { $codeEnd }
+                        element index:codeStart { $codeStart },
+                        element index:codeEnd { $codeEnd }
                     )
             else
                 ()
@@ -304,6 +324,7 @@ declare function bibframe2index:get_code($el as element()*) as element()* {
 :
 :   @param  $el        element() is the MADS/RDF property  
 :   @return index:code element()
+:  indexes numbers  of any status, not just the valid ones.
 :)
 declare function bibframe2index:get_identifiers($el as element()*) as element()* {
     for $e in $el//bf:identifiedBy/*
@@ -315,20 +336,24 @@ declare function bibframe2index:get_identifiers($el as element()*) as element()*
 						(: IdentifierLccn  or bf:Issn :)
 				let $type:= 
 							 if  ( fn:contains($types,"Lccn") ) then
-								"idx:lccn"
+								"index:lccn"
 							else if (  fn:contains($types,"Isbn")) then
-								"idx:isbn"
+								"index:isbn"
 							else if  ( fn:contains($types,"Issn")) then
-								"idx:issn"
-							else if  ( fn:string($e/bf:source/bf:Source/rdfs:label) ="DLC") then
-							
-									"idx:lccn"
-							else "idx:identifier"
-			    return 
-			        (
-			            element {$type} { fn:normalize-space(fn:string($e/rdf:value)) }			            
-			        )
-
+								"index:issn"
+							else if  ( fn:string($e/bf:source/bf:Source/rdfs:label) ="DLC") then							
+									"index:lccn"
+							else "index:identifier"
+			   		 return
+						if ($type="index:identifier") then 
+					        ( 
+					            element {$type} { fn:normalize-space(fn:string($e/rdf:value)) }			            
+	
+					        )
+						else
+					        ( element index:identifier { fn:normalize-space(fn:string($e/rdf:value))},
+						            element {$type} { fn:normalize-space(fn:string($e/rdf:value)) }			            
+						     )
 				else ()
 
 				
@@ -352,10 +377,10 @@ declare function bibframe2index:get_aaps($el as element()*) as element()* {
 				,
 		for $aap in $el/bf:authorizedAccessPoint[fn:not(@xml:lang='x-bf-hash')]
          return 
-				element idx:aLabel { text { $aap/text() } }    , 
+				element index:aLabel { text { $aap/text() } }    , 
 		for $aap in $el/bf:authorizedAccessPoint[@xml:lang='x-bf-hash']
          return 
-				element idx:WorkHash { xdmp:md5(fn:normalize-space($aap)) }     
+				element index:WorkHash { xdmp:md5(fn:normalize-space($aap)) }     
 				)
 };
 declare function bibframe2index:get-lcc-facet($mods ,$holdings) {
@@ -387,11 +412,11 @@ let $possibleLCC:=
 				return (
 					(: lc classes don't have a space after the alpha prefix, like DA1 vs "DA 1" :)
     				if (substring(substring-after($cl/string(), $subclassCode),1,1)!=' ' and $subclassCode = $validLCC  ) then   				
-							(<idx:lcclass search="{$cl/@search}">{$cl/string()}</idx:lcclass>,							
+							(<index:lcclass search="{$cl/@search}">{$cl/string()}</index:lcclass>,							
                                $cl,
-							 <idx:lcc>{lcc:getLCClass($subclassCode)}</idx:lcc>)
+							 <index:lcc>{lcc:getLCClass($subclassCode)}</index:lcc>)
 					else if ($subclassCode="LAW") then
-						<idx:invalid>{$subclassCode}</idx:invalid>(: allows you to see that there's at least one unclassed law later:)
+						<index:invalid>{$subclassCode}</index:invalid>(: allows you to see that there's at least one unclassed law later:)
 					else 
 						()
 				   ) 
@@ -399,19 +424,19 @@ let $possibleLCC:=
 	</set>
 	
 return (
-         $possibleLCC//idx:lcclass,
-			if ($possibleLCC//idx:lcc) then
-			   $possibleLCC/idx:lcc[1]
+         $possibleLCC//index:lcclass,
+			if ($possibleLCC//index:lcc) then
+			   $possibleLCC/index:lcc[1]
 			else 
-			 if ($possibleLCC//idx:invalid/string()="LAW") then
-			    <idx:lcc>
-					<idx:lcc1>K - Law</idx:lcc1>
-				 	<idx:lcc2>K~ - Unclassed</idx:lcc2>
-				</idx:lcc>
+			 if ($possibleLCC//index:invalid/string()="LAW") then
+			    <index:lcc>
+					<index:lcc1>K - Law</index:lcc1>
+				 	<index:lcc2>K~ - Unclassed</index:lcc2>
+				</index:lcc>
 			else
-			    <idx:lcc>
-					<idx:lcc1>~ - Unclassed</idx:lcc1>
-				</idx:lcc>				
+			    <index:lcc>
+					<index:lcc1>~ - Unclassed</index:lcc1>
+				</index:lcc>				
 		)
 	
 };
@@ -436,7 +461,7 @@ return (
 		if ($lcc) then	
 			$lcc
 			else
-		element idx:lcc { fn:string($e/bf:classificationPortion)}
+		element index:lcc { fn:string($e/bf:classificationPortion)}
 		)
 		
 		
@@ -455,7 +480,7 @@ declare function bibframe2index:get_collections($el as element()*) as element()*
     for $e in $el
         return 
             (
-                element idx:scheme { text { fn:data($e/@rdf:resource) } }
+                element index:scheme { text { fn:data($e/@rdf:resource) } }
             )
 };
 
@@ -469,7 +494,7 @@ declare function bibframe2index:get_contentSources($el as element()*) as element
     for $e in fn:distinct-values($el/@rdf:resource)
         return 
             (
-                element idx:contentSource { text { fn:data($e) } }
+                element index:contentSource { text { fn:data($e) } }
             )
 };
 
@@ -486,7 +511,7 @@ declare function bibframe2index:get_creation_dates($el as element()*, $type as x
 
     
 		for $e in $el
-			let $elname:= if ($type="c") then "idx:cDate" else "idx:mDate" 
+			let $elname:= if ($type="c") then "index:cDate" else "index:mDate" 
 			let $date:= fn:normalize-space($e)
 			let $date:= if (fn:contains($date,"T")) then
 					fn:substring-before($date, "T")
@@ -496,10 +521,10 @@ declare function bibframe2index:get_creation_dates($el as element()*, $type as x
 							$date
 						else "1969-01-01"
         	return  (:creation dates  are also modifed dates:)
-				if ($elname="idx:cDate") then
-					<idx:cDate>{$date}</idx:cDate>
+				if ($elname="index:cDate") then
+					<index:cDate>{$date}</index:cDate>
 				else
-					<idx:mDate>{$date}</idx:mDate>
+					<index:mDate>{$date}</index:mDate>
 };
 
 (:~
@@ -510,7 +535,7 @@ declare function bibframe2index:get_creation_dates($el as element()*, $type as x
 :)
 declare function bibframe2index:get_generation($el as element()*) as element()* {
     for $e in $el
-        return element idx:generation { text { $e/text() } }
+        return element index:generation { text { $e/text() } }
 };
 
 (:~
@@ -521,45 +546,35 @@ declare function bibframe2index:get_generation($el as element()*) as element()* 
 :)
 declare function bibframe2index:get_types($el as element()) as element()* 
 {
-    let $root_rdftype := fn:local-name($el)
-    return 
-        (
-        element idx:rdftype { text { fn:concat("http://id.loc.gov/ontologies/bibframe/",$root_rdftype)} },
-        for $type in $el/../*[fn:matches(fn:local-name(),"(Work|Instance)")]/rdf:type[1]
-		let $group:=if (fn:matches($type/@rdf:resource,"ontologies/bibframe/")) then
-					 fn:substring-after($type/@rdf:resource,"ontologies/bibframe/")
-					 else if (fn:matches($type/@rdf:resource,"ontologies/bflc/")) then
-					 fn:substring-after($type/@rdf:resource,"ontologies/bflc/")
-					 else ()
-		return ( element idx:rdftype { fn:string($type/@rdf:resource) } ,
-				 if ($group) then
-				 		element idx:materialGroup { $group}
-				 else ()
-				),
-		if (fn:not($el/../*[fn:matches(fn:local-name(),"(Work|Instance)")]/rdf:type)) then
-				 element idx:materialGroup { fn:local-name($el) }
+    
+	let $root_rdftype := fn:local-name($el)
+    
+	(: for auths, detect title vs nametitle types title30 means it's from a 130; if it's not that but it is a name auth, then it's a nametitle :)
+	let $authtype:= if ($el/bf:title/bf:Title/bflc:title30MarcKey) then 
+							element index:rdftype { "Title" }
+						else if (fn:starts-with(fn:normalize-space($el/bf:identfiedBy/bf:Lccn/rdf:value),"n"))  then 
+							element index:rdftype { "NameTitle" }
 				else ()
-				
-		
-		(:,
-        
-       for $e in $el/rdf:type/@rdf:resource
-        let $tStr := xs:string($e)
-        let $t := 
-            if ( fn:contains( $tStr, "#" ) ) then
-                fn:substring-after( $tStr, '#')
-            else if ( fn:contains( $tStr, "_" ) ) then
-                fn:substring-after($tStr, '_')
-            else if ( fn:contains( $tStr, "/" ) ) then
-                xs:string(fn:tokenize($tStr, "/")[fn:last()])
-            else
-                ""
-        return
-            if ($t ne "") then
-                element idx:rdftype { $t }
-            else 
-                ()
-       :)
+	return 
+        (
+        element index:rdftype { text { fn:concat("http://id.loc.gov/ontologies/bibframe/",$root_rdftype)} },
+        for $type in $el/../*[fn:matches(fn:local-name(),"(Work|Instance)")]/rdf:type[1]
+			let $group:=if (fn:matches($type/@rdf:resource,"ontologies/bibframe/")) then
+							 fn:substring-after($type/@rdf:resource,"ontologies/bibframe/")
+					    else if (fn:matches($type/@rdf:resource,"ontologies/bflc/")) then
+					 			fn:substring-after($type/@rdf:resource,"ontologies/bflc/")
+					 	else ()
+			return ( element index:rdftype { fn:string($type/@rdf:resource) } ,
+					 if ($group) then
+							element index:materialGroup { $group}
+				 	else ()
+					),
+					if (fn:not($el/../*[fn:matches(fn:local-name(),"(Work|Instance)")]/rdf:type)) then
+				 		element index:materialGroup { fn:local-name($el) }
+					else ()
+				,
+				$authtype
+	
        )
 };
 
@@ -574,8 +589,8 @@ declare function bibframe2index:get_uris($el as element()) as element()* {
 	let $about := fn:string($el/@rdf:about)  	(: http://id.loc.gov/resources/works/n99269797":)
     let $uriandtoken:= if (fn:starts-with($about, "loc.natlib." )) then
 							(: coming from editor, uri is okay already:)
-						 (element idx:uri {  $about },
-						  element idx:token { fn:tokenize( $about , '\.')[fn:last()] }
+						 (element index:uri {  $about },
+						  element index:token { fn:tokenize( $about , '\.')[fn:last()] }
 						  )
 				else
 					let $uri_tokens := fn:tokenize( $about , '/')
@@ -625,6 +640,8 @@ let $contribs:=
     	let $con:=   
 			if ($t/bf:Agent/rdfs:label) then     			 	
 	            xs:string($t/bf:Agent/rdfs:label)				
+			else if ($t/*/rdfs:label) then     			 	
+	            xs:string($t/*[1]/rdfs:label)				
 			else if ($t/@rdf:resource) then 
 				fn:string($t/@rdf:resource) 
 			else if ($t/*[1]/@rdf:about ) then  (:madsrdf:PersonalName, eg.:)
@@ -683,6 +700,9 @@ declare function bibframe2index:get_bibframe_creator
 
 			if ($t/bf:agent/@rdf:resource )then 
 				(fn:string($t/bf:agent/@rdf:resource))
+			else if ($t/bf:agent/*/rdfs:label )then 
+				for $l in $t/bf:agent/*
+					return $l/rdfs:label[1]/fn:string()
 			else if ($t/bf:agent/madsrdf:*/@rdf:about )then 
 				(fn:string($t/bf:agent/madsrdf:*/@rdf:about))
 			else
@@ -774,43 +794,44 @@ declare function bibframe2index:get_bibframe_uniform_title
 { (: bf editor uses this for nametitle construct:  :)
 	
 	
-	
 	if (fn:string($resource/madsrdf:authoritativeLabel)!="") then
 		element index:nameTitle {fn:string($resource/madsrdf:authoritativeLabel)}
 	else 
-	let $name:=
-                    for $contrib in $resource/bf:contribution/bf:Contribution[rdf:type/@rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"][fn:not(fn:contains(bf:agent/bf:Agent[1]/@rdf:about, "Agent880"))]
-                        return        fn:string($contrib/bf:agent/bf:Agent[1][fn:not(fn:contains(@rdf:about, "Agent880"))]/bflc:*[fn:starts-with(fn:local-name(),'primaryContributorName')][1])
-	(: was:
-			let $name:= for $n in $resource/bf:contribution/*[self::* instance of element(bflc:PrimaryContribution) or rdf:type/@rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"][1]
-				              return $n/bf:agent/bf:Agent[1][fn:not(fn:contains(@rdf:about, "Agent880"))]/bflc:*[fn:matches(fn:local-name(),"^name[0-9]{2}MatchKey$")]				
-			:)
-	let $name:= if ($name) then  (:use 880 if none else found :)
-						$name 
-				else
-				   for $contrib in $resource/bf:contribution/bf:Contribution[1]/bf:agent/bf:Agent[1]
-                        return        fn:string($contrib/bflc:*[fn:matches(fn:local-name(),"^name[0-9]{2}MatchKey$")][1])
-	let $title:=	
-	 	if (  $resource/bf:title/bf:Title[1][bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MatchKey$")]]	) then
-			for $t in $resource/bf:title/bf:Title[1][bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MatchKey$")]]
-					return  if (
-								fn:not(fn:contains(
-									fn:string(
-						      			$t/bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MarcKey$")]
-						      			),"$6880")) 
-							) then
-				 			 xs:string($t/bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MatchKey$")][1])
-						else 
-							()
-		else
-			if (  $resource/bf:title/bf:Title[1]/bflc:titleSortKey	) then
-				fn:string($resource/bf:title[1]/bf:Title[1]/bflc:titleSortKey)
-				 				
-		else
-        	for $t in $resource/bf:title/bf:Title[1]
-				return xs:string($t/rdfs:label[1])
-				
-let $title:=fn:replace($title[1], "/$","")
+       	let $name:=
+                      for $contrib in $resource/bf:contribution/bf:Contribution[rdf:type/@rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"][fn:not(fn:contains(bf:agent/bf:Agent[1]/@rdf:about, "Agent880"))]
+                               return        fn:string($contrib/bf:agent/bf:Agent[1][fn:not(fn:contains(@rdf:about, "Agent880"))]/bflc:*[fn:starts-with(fn:local-name(),'primaryContributorName')][1])
+       	(: was:
+       			let $name:= for $n in $resource/bf:contribution/*[self::* instance of element(bflc:PrimaryContribution) or rdf:type/@rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"][1]
+       				              return $n/bf:agent/bf:Agent[1][fn:not(fn:contains(@rdf:about, "Agent880"))]/bflc:*[fn:matches(fn:local-name(),"^name[0-9]{2}MatchKey$")]				
+       			:)
+       	
+       	(:let $name:= if ($name) then  (:use 880 if none else found :)
+       						$name 
+       				else
+       				   for $contrib in $resource/bf:contribution/bf:Contribution[1]/bf:agent/bf:Agent[1]
+                               return        fn:string($contrib/bflc:*[fn:matches(fn:local-name(),"^name[0-9]{2}MatchKey$")][1])
+       	:)
+       	let $title:=	
+       	 	if (  $resource/bf:title/bf:Title[1][bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MatchKey$")]]	) then
+       			for $t in $resource/bf:title/bf:Title[1][bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MatchKey$")]]
+       					return  if (
+       								fn:not(fn:contains(
+       									fn:string(
+       						      			$t/bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MarcKey$")]
+       						      			),"$6880")) 
+       							) then
+       				 			 xs:string($t/bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MatchKey$")][1])
+       						else 
+       							()
+       		else
+       			if (  $resource/bf:title/bf:Title[1]/bflc:titleSortKey	) then
+       				fn:string($resource/bf:title[1]/bf:Title[1]/bflc:titleSortKey)
+       				 				
+       		else
+               	for $t in $resource/bf:title/bf:Title[1]
+       				return xs:string($t/rdfs:label[1])
+       				
+        let $title:=fn:replace($title[1], "/$","")
 		    	
 
 	return
@@ -819,7 +840,11 @@ let $title:=fn:replace($title[1], "/$","")
 			            		$title
 			        	}
 					else (),
-					if ($title!="" or $name!="") then
+				 if ($name="") then 
+						element index:nameTitle {
+			        		    fn:normalize-space( $title[1] )
+			        		}					
+					else if ($title!="" or $name!="") then
 						element index:nameTitle {
 			        		    fn:normalize-space(
 									fn:concat(fn:string($name[1]),	" ", $title[1]	)
@@ -1003,14 +1028,14 @@ let $meetname:= for $data in $mxe//mxe:datafield_111
                         return string-join($data/*[local-name()!="d111_subfield_j" and local-name()!="d111_subfield_4" and local-name()!="d111_subfield_6" and local-name()!="d100_subfield_c"]," ")                             
 
 let $mxecreator:=  if ($bibOrAuth = "auth" ) then  								
-				   	for $creator in $metadata//bf:Work/bf:contribution/*[rdf:type/@rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"]/bf:agent/bf:Agent/bflc:*[fn:starts-with(fn:local-name(),'primaryContributorName')]							
+				   	for $creator in $metadata//bf:Work/bf:contribution/*[. instance of element (bflc:PrimaryContribution) or rdf:type/@rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"]/bf:agent/bf:Agent/bflc:*[fn:starts-with(fn:local-name(),'primaryContributorName')]							
 				   			return if ($creator/bf:agent/@rdf:resource )then 
 											fn:string($creator/bf:agent/@rdf:resource)
 			 						else	fn:string($creator)
 
-            else if ( exists($pname)) then $pname 
-            else if (exists($corpname)) then $corpname
-            else $meetname
+		            else if ( exists($pname)) then $pname 
+		            else if (exists($corpname)) then $corpname
+		            else $meetname
 
 let $mxecreator880:= if ( exists($pname880)) then $pname880
                             else  if (exists($corpname880)) then $corpname880
@@ -1072,3 +1097,8 @@ return
   	
   		)		
 };
+(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

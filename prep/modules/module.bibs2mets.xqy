@@ -14,8 +14,11 @@ import module namespace 		bibframe2index   	= "info:lc/id-modules/bibframe2index
 import module namespace 		bf4ts   			= "info:lc/xq-modules/bf4ts#"   		 at "module.BIBFRAME-4-Triplestore.xqy";
 import module namespace 		mem 				= "http://xqdev.com/in-mem-update" 		 at "/MarkLogic/appservices/utils/in-mem-update.xqy";
 import module namespace 		auth2bf				= "http://loc.gov/ndmso/authorities-2-bibframe" at "../../auths/authorities2bf.xqy";
-import module namespace 		searchts 			= 'info:lc/xq-modules/searchts#' 		 at "/src/xq/modules/module.SearchTS.xqy";
-declare namespace sparql                = "http://www.w3.org/2005/sparql-results#";
+(:import module namespace 		searchts 			= "info:lc/xq-modules/searchts#" 		 at "/modules/xq/modules/module.SearchTS.xqy";:)
+import module namespace 		searchts 			= "info:lc/xq-modules/searchts#" 		 at "module.SearchTS.xqy";
+import module namespace 		marcutil 			= "info:lc/xq-modules/marc-utils" 		 at "module.marcutils.xqy";
+
+declare namespace 				sparql              = "http://www.w3.org/2005/sparql-results#";
 declare namespace 				rdf					= "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 declare namespace  				rdfs   			    = "http://www.w3.org/2000/01/rdf-schema#";
 declare namespace   			mets       		 	= "http://www.loc.gov/METS/";
@@ -28,61 +31,64 @@ declare namespace 				index 				= "info:lc/xq-modules/lcindex";
 declare namespace 				idx 				= "info:lc/xq-modules/lcindex";
 declare namespace   			mlerror	            = "http://marklogic.com/xdmp/error"; 
 declare namespace				pmo 	 			= "http://performedmusicontology.org/ontology/";
+declare namespace				lclocal				="http://id.loc.gov/ontologies/lclocal/";
+
 declare variable $BASE_COLLECTIONS:= ("/lscoll/lcdb/", "/lscoll/", "/catalog/", "/catalog/lscoll/", "/catalog/lscoll/lcdb/",
- "/catalog/lscoll/lcdb/bib/","/bibframe-process/reloads/2017-09-16/" );
+	 "/catalog/lscoll/lcdb/bib/","/bibframe-process/reloads/2017-09-16/" );
 declare variable $BASE-URI  as xs:string:="http://id.loc.gov/resources/works/";
-declare variable $INVERSES :=<set>
-<rel><name>relatedTo</name><inverse>relatedTo</inverse></rel>
-<rel><name>hasInstance</name><inverse>instanceOf</inverse></rel>
-<rel><name>instanceOf</name><inverse>hasInstance</inverse></rel>
-<rel><name>hasExpression</name><inverse>expressionOf</inverse></rel>
-<rel><name>expressionOf</name><inverse>hasExpression</inverse></rel>
-<rel><name>hasItem</name><inverse>itemOf</inverse></rel>
-<rel><name>itemOf</name><inverse>hasItem</inverse></rel>
-<rel><name>eventContent</name><inverse>eventContentOf</inverse></rel>
-<rel><name>eventContentOf</name><inverse>eventContent</inverse></rel>
-<rel><name>hasEquivalent</name><inverse>hasEquivalent</inverse></rel>
-<rel><name>hasPart</name><inverse>partOf</inverse></rel>
-<rel><name>partOf</name><inverse>hasPart</inverse></rel>
-<rel><name>accompaniedBy</name><inverse>accompanies</inverse></rel>
-<rel><name>accompanies</name><inverse>accompaniedBy</inverse></rel>
-<rel><name>hasDerivative</name><inverse>derivativeOf</inverse></rel>
-<rel><name>derivativeOf</name><inverse>hasDerivative</inverse></rel>
-<rel><name>precededBy</name><inverse>succeededBy</inverse></rel>
-<rel><name>succeededBy</name><inverse>precededBy</inverse></rel>
-<rel><name>references</name><inverse>referencedBy</inverse></rel>
-<rel><name>referencedBy</name><inverse>references</inverse></rel>
-<rel><name>issuedWith</name><inverse>issuedWith</inverse></rel>
-<rel><name>otherPhysicalFormat</name><inverse>otherPhysicalFormat</inverse></rel>
-<rel><name>hasReproduction</name><inverse>reproductionOf</inverse></rel>
-<rel><name>reproductionOf</name><inverse>hasReproduction</inverse></rel>
-<rel><name>hasSeries</name><inverse>seriesOf</inverse></rel>
-<rel><name>seriesOf</name><inverse>hasSeries</inverse></rel>
-<rel><name>hasSubseries</name><inverse>subseriesOf</inverse></rel>
-<rel><name>subseriesOf</name><inverse>hasSubseries</inverse></rel>
-<rel><name>supplement</name><inverse>supplementTo</inverse></rel>
-<rel><name>supplementTo</name><inverse>supplement</inverse></rel>
-<rel><name>translation</name><inverse>translationOf</inverse></rel>
-<rel><name>translationOf</name><inverse>translation</inverse></rel>
-<rel><name>originalVersion</name><inverse>originalVersionOf</inverse></rel>
-<rel><name>originalVersionOf</name><inverse>originalVersion</inverse></rel>
-<rel><name>index</name><inverse>indexOf</inverse></rel>
-<rel><name>indexOf</name><inverse>index</inverse></rel>
-<rel><name>otherEdition</name><inverse>otherEdition</inverse></rel>
-<rel><name>findingAid</name><inverse>findingAidOf</inverse></rel>
-<rel><name>findingAidOf</name><inverse>findingAid</inverse></rel>
-<rel><name>replacementOf</name><inverse>replacedBy</inverse></rel>
-<rel><name>replacedBy</name><inverse>replacementOf</inverse></rel>
-<rel><name>mergerOf</name><inverse>mergedToForm</inverse></rel>
-<rel><name>mergedToForm</name><inverse>mergerOf</inverse></rel>
-<rel><name>continues</name><inverse>continuedBy</inverse></rel>
-<rel><name>continuedBy</name><inverse>continues</inverse></rel>
-<rel><name>continuesInPart</name><inverse>splitInto</inverse></rel>
-<rel><name>splitInto</name><inverse>continuesInPart</inverse></rel>
-<rel><name>absorbed</name><inverse>absorbedBy</inverse></rel>
-<rel><name>absorbedBy</name><inverse>absorbed</inverse></rel>
-<rel><name>separatedFrom</name><inverse>continuedInPartBy</inverse></rel>
-<rel><name>continuedInPartBy</name><inverse>separatedFrom</inverse></rel>
+declare variable $INVERSES :=
+<set>
+		<rel><name>relatedTo</name><inverse>relatedTo</inverse></rel>
+		<rel><name>hasInstance</name><inverse>instanceOf</inverse></rel>
+		<rel><name>instanceOf</name><inverse>hasInstance</inverse></rel>
+		<rel><name>hasExpression</name><inverse>expressionOf</inverse></rel>
+		<rel><name>expressionOf</name><inverse>hasExpression</inverse></rel>
+		<rel><name>hasItem</name><inverse>itemOf</inverse></rel>
+		<rel><name>itemOf</name><inverse>hasItem</inverse></rel>
+		<rel><name>eventContent</name><inverse>eventContentOf</inverse></rel>
+		<rel><name>eventContentOf</name><inverse>eventContent</inverse></rel>
+		<rel><name>hasEquivalent</name><inverse>hasEquivalent</inverse></rel>
+		<rel><name>hasPart</name><inverse>partOf</inverse></rel>
+		<rel><name>partOf</name><inverse>hasPart</inverse></rel>
+		<rel><name>accompaniedBy</name><inverse>accompanies</inverse></rel>
+		<rel><name>accompanies</name><inverse>accompaniedBy</inverse></rel>
+		<rel><name>hasDerivative</name><inverse>derivativeOf</inverse></rel>
+		<rel><name>derivativeOf</name><inverse>hasDerivative</inverse></rel>
+		<rel><name>precededBy</name>	<inverse>succeededBy</inverse></rel>
+		<rel><name>succeededBy</name>	<inverse>precededBy</inverse></rel>
+		<rel><name>references</name><inverse>referencedBy</inverse></rel>
+		<rel><name>referencedBy</name><inverse>references</inverse></rel>
+		<rel><name>issuedWith</name>	<inverse>issuedWith</inverse></rel>		
+		<rel><name>otherPhysicalFormat</name><inverse>otherPhysicalFormat</inverse></rel>
+		<rel><name>hasReproduction</name><inverse>reproductionOf</inverse></rel>
+		<rel><name>reproductionOf</name><inverse>hasReproduction</inverse></rel>
+		<rel><name>hasSeries</name><inverse>seriesOf</inverse></rel>
+		<rel><name>seriesOf</name><inverse>hasSeries</inverse></rel>
+		<rel><name>hasSubseries</name><inverse>subseriesOf</inverse></rel>
+		<rel><name>subseriesOf</name><inverse>hasSubseries</inverse></rel>
+		<rel><name>supplement</name><inverse>supplementTo</inverse></rel>
+		<rel><name>supplementTo</name><inverse>supplement</inverse></rel>
+		<rel><name>translation</name><inverse>translationOf</inverse></rel>
+		<rel><name>translationOf</name><inverse>translation</inverse></rel>
+		<rel><name>originalVersion</name><inverse>originalVersionOf</inverse></rel>
+		<rel><name>originalVersionOf</name><inverse>originalVersion</inverse></rel>
+		<rel><name>index</name><inverse>indexOf</inverse></rel>
+		<rel><name>indexOf</name><inverse>index</inverse></rel>
+		<rel><name>otherEdition</name><inverse>otherEdition</inverse></rel>
+		<rel><name>findingAid</name><inverse>findingAidOf</inverse></rel>
+		<rel><name>findingAidOf</name><inverse>findingAid</inverse></rel>
+		<rel><name>replacementOf</name><inverse>replacedBy</inverse></rel>
+		<rel><name>replacedBy</name><inverse>replacementOf</inverse></rel>
+		<rel><name>mergerOf</name><inverse>mergedToForm</inverse></rel>
+		<rel><name>mergedToForm</name><inverse>mergerOf</inverse></rel>
+		<rel><name>continues</name><inverse>continuedBy</inverse></rel>
+		<rel><name>continuedBy</name><inverse>continues</inverse></rel>
+		<rel><name>continuesInPart</name><inverse>splitInto</inverse></rel>
+		<rel><name>splitInto</name><inverse>continuesInPart</inverse></rel>
+		<rel><name>absorbed</name><inverse>absorbedBy</inverse></rel>
+		<rel><name>absorbedBy</name><inverse>absorbed</inverse></rel>
+		<rel><name>separatedFrom</name><inverse>continuedInPartBy</inverse></rel>
+		<rel><name>continuedInPartBy</name><inverse>separatedFrom</inverse></rel>
 </set>;
 declare variable $LINK-EXPRESSIONS:=<set>
 	<node>http://id.loc.gov/ontologies/bibframe/NotatedMusic</node>
@@ -115,7 +121,7 @@ declare variable $LINK-EXPRESSIONS:=<set>
             if yes, then retrieve work record
                 add subjects, all other info
             if no, then add to db as own work  
-			move adminMeta to instance
+			copy adminMeta to instance IF IT doesn't have one!
 
     Instance
         for each instance
@@ -195,9 +201,9 @@ declare function bibs2mets:link-via-lccn2($lccn,  $workDBURI) {
 
   
   return if (count($uri) = 0) then
-  			xdmp:log(fn:concat("CORB bib merge: not linking ",$workDBURI," via lccn ", $lccn, " zero hits. " ),"info")
+  			xdmp:log(fn:concat("CORB BIB merge: not linking ",$workDBURI," via lccn ", $lccn, " zero hits. " ),"info")
 		else  if (count($uri) != 1) then
-			xdmp:log(fn:concat("CORB bib merge: not linking ",$workDBURI," via lccn ", $lccn, " too many hits. " ),"info")
+			xdmp:log(fn:concat("CORB BIB merge: not linking ",$workDBURI," via lccn ", $lccn, " too many hits. " ),"info")
 			  
    else
 		let $instance-uri:=fn:replace(fn:tokenize($uri,"/")[fn:last()],".xml","")
@@ -234,8 +240,8 @@ declare function bibs2mets:link-via-lccn2($lccn,  $workDBURI) {
 		     else ()
      
 		return if ($relatedWork) then
-				(	$relatedWork,xdmp:log(fn:concat("CORB bib merge: linked via lccn ", $workDBURI, " to :" ,$relatedWork),"info"))
-				else ("",xdmp:log(fn:concat("CORB bib merge: not linked via lccn ", $workDBURI, " to :" ,$relatedWork),"info"))
+				(	$relatedWork,xdmp:log(fn:concat("CORB BIB merge: linked via lccn ", $workDBURI, " to :" ,$relatedWork),"info"))
+				else ("",xdmp:log(fn:concat("CORB BIB merge: not linked via lccn ", $workDBURI, " to :" ,$relatedWork),"info"))
 };
 
 (: this work is the 7xx work, so it is not primarycontribution etc:)
@@ -266,10 +272,13 @@ when linking 7xxs to existing works, you can include work stubs unlike when merg
 			 $bfwork/bf:title[1]/bf:Title[1]/bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MatchKey$")] !='' or 
 			 $bfwork/bf:title[1]/bf:Title[fn:not(rdf:type)] or
 			 $bfwork/bf:hasInstance/bf:Instance/bf:title[1]/bf:Title[1]/rdfs:label
-			) and $romanizedcontrib
-			(:   multiple auth contributors makes this too hard to check in the if; maybe build it in below
-			and fn:not(fn:starts-with($bfwork/bf:contribution/bf:Contribution/bf:agent/bf:Agent[1]/bflc:*[fn:matches(fn:local-name(),"^name[0-9]{2}MarcKey$")],"880")
-			) :)
+			)
+			(: why does there have to be a contrib? nate removed 2019-02-07
+			and $romanizedcontrib
+			:)
+				(:   multiple auth contributors makes this too hard to check in the if; maybe build it in below
+				and fn:not(fn:starts-with($bfwork/bf:contribution/bf:Contribution/bf:agent/bf:Agent[1]/bflc:*[fn:matches(fn:local-name(),"^name[0-9]{2}MarcKey$")],"880")
+				) :)
 			and
 			fn:not(fn:contains( $blank-node-uri,"Work880"))
 
@@ -317,7 +326,9 @@ when linking 7xxs to existing works, you can include work stubs unlike when merg
 							let $nt2:=fn:replace($nt2,"-","&#8212;"	)
 							return $nt2
 			         else ()
-					 let $_:=xdmp:log(fn:concat("CORB bib merge link2: for ",$workDBURI, " looking for namet1: ",$nameTitle, "namet2:",$nameTitle2),"info")
+
+				let $_:=xdmp:log(fn:concat("CORB BIB merge link2: for ",$workDBURI, " looking for namet1: ",$nameTitle ),"info")
+
 				let $nonsortNameTitle:=
 				    if ($nonsortTitle and $titlematchkey !=  $nonsortTitle ) then
                         fn:concat(fn:string($contributor[1]), " ",$nonsortTitle)                       
@@ -343,14 +354,17 @@ when linking 7xxs to existing works, you can include work stubs unlike when merg
                                  						cts:element-value-query(fn:QName("info:lc/xq-modules/lcindex", "nameTitle"), xs:string($nameTitle2), ("unstemmed", "case-insensitive", "punctuation-insensitive", "diacritic-insensitive"), 15) 																	
             		                                ))
 									else
-											cts:element-value-query(fn:QName("info:lc/xq-modules/lcindex", "nameTitle"), xs:string($nameTitle), ("unstemmed", "case-insensitive", "punctuation-insensitive", "diacritic-insensitive"), 15) 
+											cts:element-value-query(fn:QName("info:lc/xq-modules/lcindex", "nameTitle"), xs:string($nameTitle), ("unstemmed", "case-insensitive", "punctuation-insensitive", "diacritic-insensitive"), 15) 				
 				
 				let $search :=  
-					 if (fn:normalize-space($nameTitle)!="" and fn:not(fn:contains($nameTitle,"Untitled") ) 
-					 and fn:not(fn:matches($nameTitle,"NO CAPTION") ) ) then
+					 if (fn:normalize-space($nameTitle)!="" 
+					 		and fn:not(fn:contains($nameTitle,"Untitled") ) 
+					 		and fn:not(fn:matches($nameTitle,"NO CAPTION","i") ) 
+					 		and fn:not(fn:matches($nameTitle,"Annual Report","i") ) 
+					 ) then
 							"try to link"
 						else
-							"skip link"	           		       
+							"skip link"	           		      
 	        			(: if nonsortnametitle is different from nametitle, perform an OR search for it :)
 	        	let $result:= if ($search = "try to link" ) then 
 								let $searchcode:= 
@@ -405,7 +419,7 @@ when linking 7xxs to existing works, you can include work stubs unlike when merg
 	
 	return if ($found-uri and $found-uri != "didn't look" ) then
 				(fn:concat($BASE-URI,$found-uri) ,
-				xdmp:log(fn:concat("CORB bib merge: linking ", $workDBURI, " to :" ,$found-uri),"info")
+				xdmp:log(fn:concat("CORB BIB merge: linking ", $workDBURI, " to :" ,$found-uri),"info")
 			)
 			else if ($found-uri and $found-uri = "didn't look" ) then
 				$found-uri
@@ -465,14 +479,15 @@ declare function bibs2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $mxe
                      else ()
                 let $nonsortNameTitle:=fn:replace($nonsortNameTitle,"\[from old catalog\]",""	)                     
 	
-	
+				
 				let $search :=  
 					 if ($nameTitle!="" and fn:not(fn:contains($nameTitle,"Untitled") )	
-					 				    and fn:not(fn:matches($nameTitle,"NO CAPTION") ) ) then
+					 				    and fn:not(fn:matches($nameTitle,"NO CAPTION","i") ) 
+										and fn:not(fn:matches(normalize-space($nameTitle),"Annual Report","i") ) 
+										) then
 							"try to merge"
 						else 
 							"skip merge"	           		       
-	        	
 				(: if nonsortnametitle is different from nametitle, perform an OR search for it :)
 	        	let $found:= if ($search = "try to merge" ) then 
 								let $searchcode:= 
@@ -551,7 +566,7 @@ declare function bibs2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $mxe
 
 
 let $link-expression:=($rdftype!="" and fn:contains(fn:string-join($LINK-EXPRESSIONS," "),$rdftype)  )
-(:let $_:=xdmp:log(fn:concat("CORB bib merge: rdftype: ", $rdftype, " link-expression :" ,$link-expression),"info"):)
+(:let $_:=xdmp:log(fn:concat("CORB BIB merge: rdftype: ", $rdftype, " link-expression :" ,$link-expression),"info"):)
 let $expressionOfURI:= if ($found-mets) then
 				let $objid:=fn:string( $found-mets/mets:mets/@OBJID)
 				let $objid:=fn:tokenize($objid,"\.")[fn:last()]
@@ -564,7 +579,7 @@ let $work := (: if found :)
 			(: link expression, don't merge work :)
 				(:let $expressionOfURI:= fn:string( $found-mets/mets:mets/@OBJID)
 				let $expressionOfURI:=fn:tokenize($expressionOfURI,"\.")[fn:last()]
-				let $_:=xdmp:log(fn:concat("CORB bib merge: expression instead of linking ", $workDBURI, " to :" ,$expressionOfURI),"info")
+				let $_:=xdmp:log(fn:concat("CORB BIB merge: expression instead of linking ", $workDBURI, " to :" ,$expressionOfURI),"info")
 				let $expressionOfURI:=fn:concat($BASE-URI,$expressionOfURI) 
 						 return:)
 						  element bf:Work {
@@ -601,12 +616,14 @@ let $work := (: if found :)
 						else
 	                        $c  
 			
-			let $consolidates := if (fn:not($w//bflc:consolidates) or fn:not($w//bflc:consolidates[fn:string(@rdf:resource)=fn:concat("http://id.loc.gov/resources/bibs/", $BIBURI)] )) then
-					                element bflc:consolidates {
+			let $consolidates := if (fn:not($w//bflc:consolidates) or fn:not($w//bflc:consolidates[fn:string(@rdf:resource)=fn:concat("http://id.loc.gov/resources/bibs/", $BIBURI)] ) or
+									 fn:not($w//lclocal:consolidates) or fn:not($w//lclocal:consolidates[fn:string(@rdf:resource)=fn:concat("http://id.loc.gov/resources/bibs/", $BIBURI)] )		
+									) then
+					                element lclocal:consolidates {
 					                    attribute rdf:resource { fn:concat("http://id.loc.gov/resources/bibs/", fn:replace($BIBURI,"^0+","") ) }
 					                }
  							else ()
-			    (: move adminMetadata to instances :)                        
+			    
             return  (: doesn't include hasInstance to the merged instances... put in sem?   :)
                 element bf:Work {
 		                    $w/@*,
@@ -630,12 +647,7 @@ let $remove-orphan-work:= if ($found-mets and doc-available($destination-uri)) t
 							)
 							else ()
 							:)
-
-	(: not sure this is working :)
-	 let $_ := 	try{														 
-	 				mem:node-delete($work//bf:changeDate[fn:string(self::*)="0000-00-00T00:00:00"])
-	 				} catch ($e) {xdmp:log($e , "info")}
- 
+	
 
 	 let $adminMeta-for-instance:= $bfraw-work/bf:adminMetadata[1]
      						
@@ -646,7 +658,9 @@ let $remove-orphan-work:= if ($found-mets and doc-available($destination-uri)) t
             $workDBURI
 	
 	
-	let $lccn:="" (: in normal bibs2mets, don't change the uri to the lccn number . IBC is also for  the editor only:)
+	let $lccn:="" (: in normal bibs2mets, don't change the uri to the lccn number . IBC is also for  the editor only
+	this may be why items are not changing to e numbers?
+	:)
 	let $ibc:=""
 	(: 2019-01-03: now contains get-items-new :)
     let $instances := bibs2mets:get-instances($bfraw,$workDBURI,$paddedID, <mxe:record/>, $adminMeta-for-instance, $lccn, $ibc)
@@ -700,36 +714,36 @@ let $distinct-relateds:= if (fn:not($found-mets)) then
 					       else () 
 
 let $related-7xxs:=if  ($bfraw-work/*[fn:not(self::* instance of element (bf:subject))]/bf:Work) then
+						let $contributions:=$work//bf:contribution[bf:Contribution/bf:agent/bf:Agent[fn:not(fn:contains(fn:string(@rdf:about),"#Agent880"))]]
+						
+						return
 						<related-7xxs>{
 						for $w in $bfraw-work/*[fn:not(self::* instance of element (bf:subject))]/bf:Work
-							let $contributions:=$work//bf:contribution[bf:Contribution/bf:agent/bf:Agent[fn:not(fn:contains(fn:string(@rdf:about),"#Agent880"))]]
+							(:let $_:= xdmp:log(fn:concat("BIB 7xx",fn:name($w)), "info"):)
 							(: 20180918 sparql query needs work; too slow; maybe lccn substitution issue?? :)
 	
-							let $link:= if ($w/bf:identifiedBy/bf:Identifier[fn:string(bf:source/bf:Source/rdfs:label)="DLC"]) then
+							let $link:= if ($w//bf:identifiedBy/bf:Identifier[fn:string(bf:source/bf:Source/rdfs:label)="DLC"]) then
 													let $lccn:= for $l in $w/bf:identifiedBy/bf:Identifier[1][fn:string(bf:source/bf:Source/rdfs:label)="DLC"]
 														return	if (fn:matches($l/bf:status/bf:Status/rdfs:label,"invalid","i" )) then
 															()
 															else fn:string($l/rdf:value)
 												let $lccn:= fn:normalize-space($lccn[1])
-
-												return if (fn:string-length($lccn ) >4 ) then
-												
-												 		bibs2mets:link-via-lccn2($lccn, $workDBURI)
-												
-													else ()
+(:let $_:=xdmp:log($lccn,"info"):)
+												return if (fn:string-length($lccn ) >4 ) then												
+												 			bibs2mets:link-via-lccn2($lccn, $workDBURI)												
+														else ()
 										else
 												bibs2mets:link2relateds($w, "",$workDBURI, $contributions) 							
+								
 
-									
-
-										return  if ($link="didn't look") then  
-												$w/parent::node()
-										else if ($link!="") then									
-												 <wrap>
-													<name>{fn:name($w/parent::*)}</name><link>{ $link}</link>											
-												</wrap>		
-										else 											
-											$w/parent::node()
+								return  if ($link="didn't look") then  
+														$w/parent::node()
+												else if ($link!="") then									
+														 <wrap>
+															<name>{fn:name($w/parent::*)}</name><link>{ $link}</link>											
+														</wrap>		
+												else 											
+													$w/parent::node()
 																						
 						}</related-7xxs>				
 						else ()
@@ -739,7 +753,6 @@ let $related-7xxs:=  (:nodes and links to replace the 7xxs :)
 				 for $linkset in $related-7xxs/* (:links, not nodes:)
 					return												
 				 		if ( $linkset[self::* instance of element(wrap)]) then
-
 						 	auth2bf:dedup-links($work,$linkset/name,$linkset/link)							 							
 						else
 							(:  blank nodes will be inserted as stubs  :)
@@ -747,6 +760,7 @@ let $related-7xxs:=  (:nodes and links to replace the 7xxs :)
 							
 				}</wrap>		
 	let $sevenxx-properties:= fn:distinct-values(for $node in $related-7xxs/child::* return fn:name($node))
+	
 
 let $subject-works:=
 		if ($bfraw-work/*[self::* instance of element (bf:subject)]/bf:Work)  then 
@@ -761,10 +775,14 @@ let $relateds:=
 												for $rel in $related-7xxs/*[bf:Work[fn:not(fn:contains( fn:string(@rdf:about),"Work880"))]]
 												return  $rel
 	    									}</bf:Work></rdf:RDF>		
-				
+							
 							return bibs2mets:insert-work-stubs($rels,$workDBURI, $paddedID, $BIBURI, $destination-uri)							                             
 					else  ()
-	
+	(: I think related7xx's posted as stubs don't get replaced with uris!!! 
+	$relateds  in the middle of rels, with each related, insert, build a link
+		
+	:)
+
 let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) then
 						<bf:Work>{
 							$work/@rdf:about,
@@ -802,18 +820,27 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
     
     let $work :=  element rdf:RDF { $work } 
             
-	let $work-sem := bf4ts:bf4ts( element rdf:RDF { $work }  )
+	(:let $work-sem := bf4ts:bf4ts( element rdf:RDF { $work }  ):)
+	let $work-sem := bf4ts:bf4ts(  $work   )
 	
 	let $mxe:= if ($found-mets) then	
 					$found-mets/mets:mets/mets:dmdSec[@ID="mxe"]/mets:mdWrap/mets:xmlData/*
 			    else
-					 <mxe:empty-record/>
-
+					(: 2019 10 07 restart saving mxe :)
+					
+					let $marcxml:=try{
+										doc(fn:concat("/bibframe-process/records/",fn:replace($resclean,"^c0+",""),".xml"))
+								}
+								catch($e){			<marcxml:record/>}
+					
+					return try{ marcutil:marcslim-to-mxe2($marcxml/marcxml:record) }
+						   catch($e)							  
+							  {<mxe:empty-record/>}
 	
 	let $work-bfindex :=  
 					   try {
 					       			bibframe2index:bibframe2index( $work ,  <mxe:empty-record/> )
-									(:,xdmp:log(fn:concat("trying index", fn:name($work)),"info"):)
+									
 
 					   } catch($e){
 					             (<index:index/>,
@@ -831,6 +858,7 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
 			xmlns:rdf   = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 			xmlns:bf	="http://id.loc.gov/ontologies/bibframe/" 
 			xmlns:bflc	="http://id.loc.gov/ontologies/bflc/" 
+			xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/"
         	xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" 
 			xmlns:relators      = "http://id.loc.gov/vocabulary/relators/"            
 			xmlns:idx="info:lc/xq-modules/lcindex"
@@ -860,15 +888,7 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
             <mets:dmdSec ID="index">
                 <mets:mdWrap MDTYPE="OTHER">
                     <mets:xmlData>
-                       {(  $work-bfindex
-								   (:,xdmp:log("bibframe2index",'info'),					   
-									   xdmp:log("_________________________",'info'),
-									   xdmp:log(bibframe2index:bibframe2index( $work ,  <mxe:empty-record/> ),'info'),
-									   xdmp:log("-----------------",'info'),
-									   xdmp:log($mxe,"info")
-								   :)
-					   	   )
-					    }
+                       { $work-bfindex  	}
                     </mets:xmlData>
                 </mets:mdWrap>
             </mets:dmdSec>
@@ -927,7 +947,8 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
              catch ($e) { xdmp:log(fn:concat("CORB BIB merge: work not loaded error on : ", $workDBURI, "; $paddedID for instances merged= ",$paddedID,". ","destination:",fn:tokenize($destination-uri,"/")[fn:last()],  fn:string( $e/mlerror:code))    , "info")
         }
         , if (fn:contains($workDBURI,$BIBURI)) then 
-				xdmp:log(fn:concat("CORB BIB merge: loaded bib work doc : ",$workDBURI, " from bib doc : ",$BIBURI," to : ",fn:tokenize($destination-uri,"/")[fn:last()] )   , "info")
+				(: xdmp:log(fn:concat("CORB BIB merge: loaded bib work doc : ",$workDBURI, " from bib doc : ",$BIBURI," to : ",fn:tokenize($destination-uri,"/")[fn:last()] )   , "info"):)
+				xdmp:log(fn:concat("CORB BIB merge: loaded bib work doc : ",$workDBURI, " from bib doc : ",$BIBURI," to : ",$destination-uri )   , "info")
 			else			
 				xdmp:log(fn:concat("CORB BIB merge: merged onto work doc : ",$workDBURI, " from bib doc : ",$BIBURI )  , "info")
         )
@@ -936,13 +957,15 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
     let $instance-collections := ($BASE_COLLECTIONS,"/resources/instances/","/bibframe/","/bibframe/convertedBibs/", "/lscoll/lcdb/instances/")     
 	let $instance-collections:= if ($found-mets and fn:matches($workDBURI,"works.n")) then 
 									($instance-collections, "/bibframe/mergedtoAuthWork/","/bibframe/mergedInstances/")
+	                           else	if ($found-mets and fn:matches($workDBURI,"works.e")) then 
+									($instance-collections, "/bibframe/mergedtoEditedWork/","/bibframe/mergedInstances/")
 	                            else if ($found-mets) then 
 									($instance-collections, ("/bibframe/mergedInstances/","/bibframe/mergedtoBibWork/"))
 								else
 									($instance-collections,("/bibframe/notMerged/"))
 
 	let $instance-collections:=($instance-collections, $collections)
-  (: this generates 58 hasitem links! http://mlvlp04.loc.gov:8230/resources/instances/c0112880890003 :)
+  (: this generates 58 hasitem links! http://localhost/resources/instances/c0112880890003 :)
     
 	let $insert-instances :=
         for $i in $instances (: instances are mets:mets nodes:)
@@ -965,7 +988,7 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
 				xdmp:log(fn:concat("CORB BIB merge: skipping loading instance doc - edited : ", xs:string($i/@OBJID), " from bib doc : ",$BIBURI , " to : ",fn:tokenize($destination-uri,"/")[fn:last()]  )   , "info")
 			else
 				
-				try{	(
+				try{	(xdmp:lock-for-update($destination-uri),
 				 		xdmp:document-insert(
 	         				   $destination-uri (:not  xs:string($i/@OBJID) :), 
 	            				$i,
@@ -1017,6 +1040,7 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
 								$item-collections, $quality, $forests			
 		        		),
 						xdmp:log(fn:concat("CORB BIB merge: loaded item doc : ", xs:string($i/@OBJID), " from bib doc : ", $BIBURI , " to : " ,fn:tokenize($destination-uri,"/")[fn:last()]   )   , "info")
+						
 					}
 					catch ($e) {xdmp:log(fn:concat("CORB BIB merge: failed to load item doc : ", xs:string($i/@OBJID), " from bib doc : ", $BIBURI , " to : " ,fn:tokenize($destination-uri,"/")[fn:last()] , fn:string($e//mlerror:message[1])  )   , "info")
 								}
@@ -1136,8 +1160,9 @@ let $instanceOf:=if ($instanceOf/@rdf:resource)  then
 					2019: since the items are now instanceid-[offset], I am also stopping putting on hasItems; 
 							links go up to instance, not down from instance!
 
-				:)
-				(:let $hasItems:= (: only items with abouts ie not 010066190 :)
+				:) 
+				(: only items with abouts ie not 010066190 :)
+				(:let $hasItems:=
 	        				if ($workDBURI="") then
 								$i/bf:hasItem
 							else 
@@ -1158,14 +1183,17 @@ let $instanceOf:=if ($instanceOf/@rdf:resource)  then
 	       	(: build mets for each item, calls insert-any mets to store :)
 				let $items := bibs2mets:get-items-new($i,$workDBURI,  $paddedID,$pos )		
 				
-			
+			(: suppress adminmeta if there already is one (from editor, for example :)
 				let $instance-modified := 
 	            	element bf:Instance {
 	                	attribute rdf:about {$instanceURI},
 	                
 						$i/*[fn:local-name() ne "instanceOf" and fn:local-name()!="hasItem"],					
 		                $instanceOf,						
-						$adminMeta
+						if ($i/bf:adminMetadata) then 
+							()
+						 else
+							$adminMeta
 	           	 }
 				 (: consider "insert-any-mets" here :)
 				let $instance-sem :=  
@@ -1196,6 +1224,7 @@ let $instanceOf:=if ($instanceOf/@rdf:resource)  then
 					xmlns:rdfs  = "http://www.w3.org/2000/01/rdf-schema#"						
 					xmlns:bf	= "http://id.loc.gov/ontologies/bibframe/" 
 					xmlns:bflc	= "http://id.loc.gov/ontologies/bflc/" 
+					xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/"
 	                xmlns:madsrdf= "http://www.loc.gov/mads/rdf/v1#" 
 	                xmlns:xsi	= "http://www.w3.org/2001/XMLSchema-instance" 
 					xmlns:idx	= "info:lc/xq-modules/lcindex" 
@@ -1283,7 +1312,7 @@ let $items := (: avoid related works with instances with specific xpath:)
 			          		let $derivedbib:= fn:replace($paddedID,"^c","")
 			          		let $derivedbib:= fn:replace($derivedbib,"^0+","")
 			          		 let $itemOf := 
-			          	        element bflc:itemOf {          		           
+			          	        element bf:itemOf {          		           
 			          				    attribute rdf:resource { fn:concat("http://id.loc.gov/resources/instances/", $instanceID ) }
 			                  }
 					
@@ -1320,6 +1349,7 @@ let $items := (: avoid related works with instances with specific xpath:)
 							xmlns:rdfs  = "http://www.w3.org/2000/01/rdf-schema#"						
 							xmlns:bf	= "http://id.loc.gov/ontologies/bibframe/" 
 							xmlns:bflc	= "http://id.loc.gov/ontologies/bflc/" 
+							xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/"
 					        xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" 
 			                xmlns:xsi	= "http://www.w3.org/2001/XMLSchema-instance" 
 							xmlns:idx	="info:lc/xq-modules/lcindex"
@@ -1376,13 +1406,16 @@ declare function bibs2mets:get-items-new(
 	each instance may have one or more items.
 	items get id's relative to position in the whole doc
 	 :)    
-       
-	   
+       (: nate continue here on renaming items with elccn number:)
+	let $_:=xdmp:log(fn:concat("get-items new:", $paddedID, "|", $workDBURI),"info")
+	
 let $item-collections := ($BASE_COLLECTIONS, "/resources/items/"  , "/bibframe/","/bibframe/convertedBibs/",  "/lscoll/lcdb/items/")      
 	
 let $items :=       	  	
-	  		for $item  at $item-pos in $instance//bf:hasItem/bf:Item[@rdf:about or @rdf:nodeID] (: for each item  :)
-				let $this-item-about:=($item/@rdf:about||$item/@rdf:nodeID)[1]
+	  		for $item  at $item-pos in $instance//bf:hasItem/bf:Item (:editor items not numbered :)
+			(:for $item  at $item-pos in $instance//bf:hasItem/bf:Item[@rdf:about or @rdf:nodeID] :)
+			(: for each item  :)
+(:				let $this-item-about:=($item/@rdf:about||$item/@rdf:nodeID)[1]:)
 		
 				(: get the item position relative to the RDF:RDF, not the instance :)
 				
@@ -1405,9 +1438,10 @@ let $items :=
 							let $derivedbib:= fn:replace($paddedID,"^c","")
 			          		let $derivedbib:= fn:replace($derivedbib,"^0+","")
 			          		 let $itemOf := 
-			          	        element bflc:itemOf {          		           
+			          	        element bf:itemOf {          		           
 			          				    attribute rdf:resource { fn:concat("http://id.loc.gov/resources/instances/", $instanceID ) }
 			                  }
+							  
 					
 		             let $item-modified := 
 		                 element bf:Item {
@@ -1457,6 +1491,7 @@ let $items :=
 							xmlns:rdfs  = "http://www.w3.org/2000/01/rdf-schema#"						
 							xmlns:bf	= "http://id.loc.gov/ontologies/bibframe/" 
 							xmlns:bflc	= "http://id.loc.gov/ontologies/bflc/" 
+							xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/"
 					        xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" 
 			                xmlns:xsi	= "http://www.w3.org/2001/XMLSchema-instance" 
 							xmlns:idx	="info:lc/xq-modules/lcindex"
@@ -1520,7 +1555,7 @@ let $node-name:=fn:name($node)
 				 )
 	   }
 	let $sem :=  try {
-			   			 bf4ts:bf4ts( element rdf:RDF{ $rdf })
+			   			 bf4ts:bf4ts( $rdf )
 						 
 					 
 					 } catch($e){(<sem:triples/>,					 
@@ -1537,6 +1572,7 @@ let $node-name:=fn:name($node)
 			xmlns:rdf   	= "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 			xmlns:bf		="http://id.loc.gov/ontologies/bibframe/" 
 			xmlns:bflc		="http://id.loc.gov/ontologies/bflc/" 
+			xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/"
         	xmlns:madsrdf	="http://www.loc.gov/mads/rdf/v1#" 
 			xmlns:relators  = "http://id.loc.gov/vocabulary/relators/"            
             xmlns:index		="info:lc/xq-modules/lcindex"
@@ -1576,16 +1612,18 @@ let $node-name:=fn:name($node)
  let $forests	:=()	
    	  
  let $insert-node := 
-         (try {xdmp:document-insert(
-                 $filepath, 
-                $mets,
-                (
-                    xdmp:permission("id-user-role", "read"), 
-                    xdmp:permission("id-admin-role", "update"),
-                    xdmp:permission("id-admin-role", "insert")
-                ),
-        		$collections, $quality, $forests
-            )		         
+         (try {(xdmp:lock-for-update($filepath),
+		 		xdmp:document-insert(
+			           			 $filepath, 
+				                $mets,
+				                (
+				                    xdmp:permission("id-user-role", "read"), 
+				                    xdmp:permission("id-admin-role", "update"),
+				                    xdmp:permission("id-admin-role", "insert")
+				                ),
+				        		$collections, $quality, $forests
+            				)
+				)		         
         }
              catch ($e) { xdmp:log(fn:concat("CORB BFE/BIB editor load: not loaded error on : ", $objectID,  fn:string( $e/mlerror:message))    , "error")
         }
@@ -1627,16 +1665,30 @@ for $related at $workpos in $work/bf:Work/*
 												fn:concat('http://id.loc.gov/resources/works/', $paddedID ) 
 												 	}
 												 }  
+let $label:= if ($related/bf:Work/rdfs:label) then
+				()
+				else if ($related/bf:Work/bf:title[1]/bf:Title/rdfs:label) 	then
+						$related/bf:Work/bf:title[1]/bf:Title/rdfs:label
+ 					else if  ($related/bf:Work/bf:title[1]/bf:Title/bf:mainTitle) then
+						<rdfs:label>{fn:string($related/bf:Work/bf:title[1]/bf:Title/bf:mainTitle)}</rdfs:label>
+					else if  ($related/bf:Work/bf:hasInstance/bf:Instance/bf:title[1]/bf:Title/bf:mainTitle) then
+						<rdfs:label>{fn:string($related/bf:Work/bf:hasInstance/bf:Instance/bf:title[1]/bf:Title/bf:mainTitle)}</rdfs:label>
+						else 
+						<rdfs:label>[No title]</rdfs:label>
 
 	  let $stub-work:= <rdf:RDF>
 			  <bf:Work rdf:about="{$relworkURI}">			
+			  {$label}
 				{$related/bf:Work/*}
 				{$relatedTo}
-			</bf:Work>	</rdf:RDF>
+			</bf:Work>	
+			</rdf:RDF>
 			
     let $stub-collections :=if (fn:starts-with($wID,"e")) then
 					 ("/lscoll/lcdb/works/","/resources/works/","/bibframe/","/bibframe/editor/","/bibframe/stubworks/" ,$BASE_COLLECTIONS)
-				 else 
+				 else if (fn:starts-with($wID,"n")) then
+					 ("/lscoll/lcdb/works/","/resources/works/","/bibframe/","/bibframe/stubworks/","/bibframe/nametitle-work/",$BASE_COLLECTIONS)
+					 else
 					("/lscoll/lcdb/works/","/resources/works/","/bibframe/","/bibframe/convertedBibs/","/bibframe/stubworks/" ,$BASE_COLLECTIONS)
 
 	let $insert-stub-mets:= bibs2mets:insert-any-mets($stub-work  ,$relWorkDBURI ,  $stub-destination-uri, $stub-collections ,"workRecord")
@@ -1647,3 +1699,8 @@ for $related at $workpos in $work/bf:Work/*
         )
 
 };
+(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

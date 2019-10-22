@@ -13,6 +13,8 @@ If you are posting directly, you call bibrecs/bfe-post2database.xqy, which calls
 IBC note:  ibc records are this instance, it's work, and any items for this instance.
 It is not safe to rename the work of an ibc to it's lccn, so the work record should stay the same.
 Items and Instance can be updated to e[lccn].
+2019-09-10 change ibc detector to look in instance admin meta
+
 :)
 	module namespace bfe2mets = "http://loc.gov/ndmso/bfe-2-mets";
 
@@ -28,6 +30,7 @@ declare namespace   mxe					= "http://www.loc.gov/mxe";
 declare namespace   ri                  = "http://id.loc.gov/ontologies/RecordInfo#";
 declare namespace   bf              	= "http://id.loc.gov/ontologies/bibframe/";
 declare namespace   bflc            	= "http://id.loc.gov/ontologies/bflc/";
+declare namespace   lclocal            	= "http://id.loc.gov/ontologies/lclocal/";
 declare namespace   index               = "info:lc/xq-modules/lcindex";
 declare namespace   idx               	= "info:lc/xq-modules/lcindex";
 declare namespace   mlerror	            = "http://marklogic.com/xdmp/error"; 
@@ -60,10 +63,10 @@ declare variable $BASE_COLLECTIONS:= ("/lscoll/lcdb/", "/lscoll/", "/catalog/", 
 	Note: if the record is an ibc, it will have an lccn and the about will be the c-number
 
  :)
-declare function bfe2mets:full-package-insert($workraw, $body, $linkables, $lccn){
+declare function bfe2mets:full-package-insert($workraw, $body, $linkables, $lccn, $ibc){
 
 	let $worktype := fn:local-name($workraw)
-
+	
 	let $rdftype:= fn:concat("http://id.loc.gov/ontologies/bibframe/", $worktype)
 
 	let $work-about:= fn:string($workraw/@rdf:about)
@@ -76,11 +79,9 @@ declare function bfe2mets:full-package-insert($workraw, $body, $linkables, $lccn
 	ibc about= http://id.loc.gov/resources/works/c0005226
 	:)
 	(:let $_:=xdmp:log(fn:concat("work-about:",$work-about),"info"):)
-	
-	let $ibc:=for $n at $x in  $workraw//bf:AdminMetadata[fn:string(*:procInfo[1]) = "ibc update"]
-					 return $x 
+
 	let $ibc:=if ($ibc) then "yes" else "no"
-		
+	let $_:=xdmp:log(fn:concat("CORB bfe ibc:", $ibc ),"info")		
 	let $instances-reformatted := 
 	    (for $instance in $body/bf:Instance	    
 			return  bfe2mets:process($instance, $linkables),
@@ -103,7 +104,8 @@ declare function bfe2mets:full-package-insert($workraw, $body, $linkables, $lccn
 			)[1]
 
 	   else   $lccn 
-let $_:=xdmp:log(fn:concat("CORB lccn:", $lccn ),"info")
+let $_:=xdmp:log(fn:concat("CORB bfe-full lccn:", $lccn ),"info")
+
 	
 	let $BIBURI:=
 		if ($lccn and fn:matches($work-about,$lccn)) then (: editing an existing edited name/title from db ?:)
@@ -116,12 +118,14 @@ let $_:=xdmp:log(fn:concat("CORB lccn:", $lccn ),"info")
 				fn:concat("e",$lccn)
 		else if (fn:starts-with ($work-about, "http://id.loc.gov/resources/works/")) then
 				fn:substring-after($work-about, "/works/")
-	    else if (fn:contains($work-about, "example.org")) then
+	    else if (fn:contains($work-about, "bibframe.example.org")) then
 				fn:substring-before(fn:tokenize($work-about, "/")[fn:last()], "#Work")
 		else if (fn:contains($work-about, ".works.")) then
 				fn:substring-after($work-about, "works.")
 		else if ($work-about) then
 		 	$work-about (:rdf:about="http://bibframe.example.org/5226#Work:)
+		else if (not($work-about) and $lccn) then
+				fn:concat("e",$lccn)
 		else if ($workraw/@rdf:nodeID ) then (: rdf:nodeid? :)
 			 fn:string($workraw/@rdf:nodeID)
 		else if ($workraw//bf:Lccn) then				
@@ -131,7 +135,7 @@ let $_:=xdmp:log(fn:concat("CORB lccn:", $lccn ),"info")
 		
 	let $BIBURI := bibs2mets:padded-id($BIBURI)	
 	let $paddedID := 
-	    if (fn:contains($work-about, "example.org")) then
+	    if (fn:contains($work-about, "bibframe.example.org")) then
 		   fn:concat("c", $BIBURI) (: match existing record in database or follow the pattern fora new one:)
 		else
 	        $BIBURI
@@ -142,30 +146,35 @@ let $_:=xdmp:log(fn:concat("CORB lccn:", $lccn ),"info")
 	let $attribs:= 
 		if ($lccn) then 
 			attribute rdf:about {$workURI}
-	    else if (fn:contains($workraw/@rdf:about,"example.org")) then 
+	    else if (fn:contains($workraw/@rdf:about,"bibframe.example.org")) then 
 		   ($workraw/@*[fn:not(. instance of attribute(rdf:about))], attribute rdf:about {$workDBURI})
 		else if ($workraw/@rdf:nodeID ) then 
 			attribute rdf:about {$workURI}
 		 else
 		   ($workraw/@*)
-	
+	(: suppress hasInstance nested instances :)
 	
 	let $workraw2 :=
 	    <bf:Work>
 	        {$attribs}
 	        {if ($rdftype) then <rdf:type rdf:resource="{$rdftype}"/> else ()}
-	        {$workraw/*}
+	      
+			{$workraw/*[fn:not(self::* instance of element(bf:hasInstance))]       }
 			
 	    </bf:Work>
 
+	(: nate add this back when troubleshooting duplicate data: let $_:=xdmp:log($workraw//bf:subject,"info")
+	:)
+
 	let $work:= bfe2mets:process($workraw2, $linkables)
-	
+
+
 (: instances -reformatted was here :)
 	
 
 	(: item is either the main body or in a work/instance or in an instance:
 		was too broad:
-			for $item in $body/bf:*/bf:hasItem/bf:Item
+			for $item in $body/bf:*/bf:hasItem/
 	    		return bfe2mets:process($item, $linkables),				
 	:)
 	
@@ -186,6 +195,7 @@ let $_:=xdmp:log(fn:concat("CORB lccn:", $lccn ),"info")
 				xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
 				xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
 		 		xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+				xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/"
 		  		xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"> {
 		  		   ($work, $instances-reformatted, $items-reformatted)
 		}
@@ -219,16 +229,20 @@ let $_:= xdmp:log(fn:concat("CORB $destination-uri ",$destination-uri),"info")
 
 	    if ($work-id instance of empty-sequence()) then
 	        ( ()
-	            (:xdmp:set-response-code(400, "Bad Request"),
-	            xdmp:set-response-content-type("application/xml"),
 	            
-	          <response xmlns="response" element-type="bfraw">{$bfraw}</response>:)
-	        )
+			(:  xdmp:set-response-code(400, "Bad Request"),
+	            xdmp:set-response-content-type("application/xml"),	           
+	           <response xmlns="response" element-type="bfraw">{$bfraw}</response>
+			 :)
+	        
+			)
 	    else
-	        ((:
+	        ( $work-id
+			(: 
 	            xdmp:set-response-code(200, "OK"), 
-	            xdmp:set-response-content-type("text/plain"),:)
-	            $work-id
+	            xdmp:set-response-content-type("text/plain"),
+			:)
+	            
 	        )
  
  };
@@ -257,7 +271,7 @@ declare function bfe2mets:partial-package-insert($body, $linkables, $lccn)	{
 			fn:concat("e",$lccn)
 		else if (fn:starts-with ($instance-about, "http://id.loc.gov/resources/instances/")) then
 				fn:substring-after($instance-about, "/instances/")
-	    else if (fn:contains($instance-about, "example.org")) then
+	    else if (fn:contains($instance-about, "bibframe.example.org")) then
 				fn:substring-before(fn:tokenize($instance-about, "/")[fn:last()], "#Instance")
 		else if (fn:contains($instance-about, ".instances.")) then
 				fn:substring-after($instance-about, "instances.")
@@ -270,7 +284,7 @@ declare function bfe2mets:partial-package-insert($body, $linkables, $lccn)	{
 			
 	let $BIBURI := bibs2mets:padded-id($BIBURI)	
 	let $paddedID := 
-	    if (fn:contains($instance-about, "example.org")) then
+	    if (fn:contains($instance-about, "bibframes.example.org")) then
 		   fn:concat("c", $BIBURI) (: match existing record in database or follow the pattern fora new one:)
 		else
 	        $BIBURI
@@ -355,7 +369,7 @@ declare function bfe2mets:insert-instances($bfraw, $workDBURI, $paddedID, $mxe, 
 											fn:string($i//rdf:RDF/bf:Instance/bf:instanceOf/child::*[1]/@rdf:about)
 											else ()
 									else ()
-			let $_:=xdmp:log(fn:concat("CORB BFE ibc hiding:" , $ibc, "|", $orig-work-link), "info")
+			let $_:=xdmp:log(fn:concat("CORB BFE ibc hiding work:" , $ibc, "|", $orig-work-link), "info")
 
 			let $orig-instance-id:=fn:tokenize($orig-work-link,"/")[fn:last()]
 			let $orig-instance-link:=fn:concat($orig-work-link,fn:substring($bibid, fn:string-length($bibid)-3,4))
@@ -378,8 +392,8 @@ declare function bfe2mets:insert-instances($bfraw, $workDBURI, $paddedID, $mxe, 
 			let $_:=if ($ibc="yes") then
 							xdmp:log(fn:concat("CORB ibc instance? workdbu: ", $workDBURI," : instance uri", $destination-uri ," orig work: ",$orig-work-link, " newlink : ", $change-work-link),"info")
 				else ()
-
-
+(:moving items inside instances at long last 2019-10-11 :)
+		
 	        return	  
 				if ($i instance of element (mets:mets) )       then 
 					try{	(
@@ -536,11 +550,12 @@ let $items :=
 			                PROFILE="itemRecord" 
 			                OBJID="{$itemDBURI}" 
 			                xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" 
-			                xmlns:mets	="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" 
+			                xmlns:mets		="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" 
 			             	xmlns:rdf	="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 							xmlns:rdfs  = "http://www.w3.org/2000/01/rdf-schema#"						
 							xmlns:bf	= "http://id.loc.gov/ontologies/bibframe/" 
-							xmlns:bflc	= "http://id.loc.gov/ontologies/bflc/" 
+							xmlns:bflc	 = "http://id.loc.gov/ontologies/bflc/" 
+							xmlns:lclocal = "http://id.loc.gov/ontologies/lclocal/" 
 			                xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" 
 			                xmlns:xsi	= "http://www.w3.org/2001/XMLSchema-instance" 
 			                xmlns:index	="info:lc/xq-modules/lcindex"
@@ -663,15 +678,16 @@ declare function bfe2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $dest
 
 	let $hasInstances:= for $hasInstance at $x in $bfraw-work/*[self::node() instance of element(bf:hasInstance )]
 						return
-							if (fn:contains($hasInstance/@rdf:resource,"example.org") or $hasInstance/bf:Instance/@rdf:nodeID ) then
+							if (fn:contains($hasInstance/@rdf:resource,"bibframe.example.org") or $hasInstance/bf:Instance/@rdf:nodeID ) then
 										element bf:hasInstance {attribute rdf:resource {
 											fn:concat("http://id.loc.gov/resources/instances/",$paddedID,format-number($x,"0000"))
 										}
 										}
-								else 	$hasInstance
+								else 	 () (: 2019-03-14 drop hasInstance; these are posted separately and link back $hasInstance:)
 	
-	let $bfwork:= <bf:Work>	{$bfraw-work/@*}
-							{$bfraw-work/*[fn:local-name()!="hasInstance"]}
+	(: old: {$bfraw-work/*[fn:local-name()!="hasInstance"]}:)
+	let $bfwork:= <bf:Work>	{$bfraw-work/@*}							
+							{$bfraw-work/*[fn:not(self::* instance of element(bf:hasInstance))]     }
 							{$hasRelatedWorks}							
 							{$hasInstances}							
 					</bf:Work>	
@@ -700,6 +716,7 @@ declare function bfe2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $dest
 			xmlns:rdf   = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 			xmlns:bf	="http://id.loc.gov/ontologies/bibframe/" 
 			xmlns:bflc	="http://id.loc.gov/ontologies/bflc/" 
+			xmlns:lclocal = "http://id.loc.gov/ontologies/lclocal/" 
         	xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" 
 			xmlns:relators      = "http://id.loc.gov/vocabulary/relators/"            
             xmlns:index="info:lc/xq-modules/lcindex"
@@ -760,7 +777,7 @@ declare function bfe2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $dest
 
 	let $adminMeta:=$bfraw-work/bf:adminMetadata[1]
 	
-	let $insert-instances:=bfe2mets:insert-instances(<rdf:RDF>{$bfraw/bf:Instance}</rdf:RDF>, $workDBURI, $paddedID, <mxe:empty-record/>,$bfraw-work/bf:adminMetadata, $ibc,  $lccn)
+	let $insert-instances:=bfe2mets:insert-instances(<rdf:RDF>{$bfraw/bf:Instance}</rdf:RDF>, $workDBURI, $paddedID, <mxe:empty-record/>,$adminMeta, $ibc,  $lccn)
 
 (:let $_:=xdmp:log($workDBURI,"info"):)
 	
@@ -802,7 +819,7 @@ return
 	 else if ($n instance of element(bf:hasInstance)) then $node  
 	 else if ($n instance of element(bf:instanceOf) and $n/bf:Work/@rdf:nodeID ) then ()
 	 else if ($n instance of element(bf:instanceOf) ) then $node  
-	 (:else if (fn:contains($n/@rdf:resource,"example.org")) then bfe2mets:resolve-bnode($n, $linkables)  :)
+	 (:else if (fn:contains($n/@rdf:resource,"bibframe.example.org")) then bfe2mets:resolve-bnode($n, $linkables)  :)
 	 else if ($n instance of attribute (rdf:resource)) then $node  
 	 else if ($n instance of element(rdf:first)) then  bfe2mets:resolve-bnode($n,$linkables) 
 	 else  if ($n instance of element(rdf:type)) then
@@ -832,6 +849,7 @@ let $node-name:=fn:name($node)
                  else if (fn:contains(fn:namespace-uri($node),"/bibframe") ) then fn:concat("bf:", fn:local-name($node))
                  else if (fn:contains(fn:namespace-uri($node),"/bflc") ) then fn:concat("bflc:", fn:local-name($node))
                  else if (fn:contains(fn:namespace-uri($node),"/mads") ) then fn:concat("madsrdf:", fn:local-name($node))
+				 else if (fn:contains(fn:namespace-uri($node),"/lclocal") ) then fn:concat("lclocal:", fn:local-name($node))				 
 				 else if (fn:contains($node-name,":")) then $node-name
 				 else if (fn:matches($node-name,"Extent")) then "bf:Extent"
                  else $node-name
@@ -903,6 +921,10 @@ main node is instance/instanceof
 		let $orig-uri := map:get($content, 'uri')  
 
 		let $_x:= xdmp:log(fn:concat("CORB BFE editor load: orig uri " , $orig-uri  )   , "info")
+ let $bfe-uri:="http://mlvlp04.loc.gov:3000/profile-edit/server/publishRsp"
+
+return (: try catch for the whole process to better return json result to editor :)
+	try {
 		
 		let $body := map:get($content, 'value')/rdf:RDF		
 		
@@ -923,19 +945,24 @@ main node is instance/instanceof
 						else 		$root-node
 		(:if multiple works still are there, just pick one:)		
 		let $root-node:=$root-node[1]
-		(:let $_:=	xdmp:log(xdmp:quote($root-node),"info"):)
+	
 		(:return if (count($root-node) !=1 ) then
 	
 			    xdmp:log(fn:concat("CORB BFE: error loading, too many root nodes in: ",$orig-uri),"info")
 			else
 :)		
 				
-				let $lccn:=  fn:string($body//bf:Instance[1]/bf:identifiedBy/bf:Lccn[1][fn:not(bf:status)]/rdf:value)
+(:finds multiples: let $lccn:=  fn:string($body//bf:Instance[1]/bf:identifiedBy/bf:Lccn[1][fn:not(bf:status)]/rdf:value):)
+				(: look for it in root instance first, then rootwork/instance:)
+				
+				let $lccn:=  $body/bf:Instance[1]/bf:identifiedBy/bf:Lccn[1][fn:not(bf:status)]/rdf:value			
 
-				let $lccn:= if ($lccn) then $lccn else  fn:string($body/bf:Work/bf:hasInstance/bf:Instance/bf:identifiedBy/bf:Lccn[1][fn:not(bf:status)]/rdf:value)
+				let $lccn:= if ($lccn) then $lccn else  $body/bf:Work/bf:hasInstance/bf:Instance/bf:identifiedBy/bf:Lccn[1][fn:not(bf:status)]/rdf:value
+				
 				(: re-editing nametitle authority works, lccn is in Work:)
-				let $lccn:= if ($lccn) then $lccn else  fn:string($body/bf:Work/bf:identifiedBy/bf:Lccn[1][fn:not(bf:status)]/rdf:value)
-				let $lccn:= fn:replace($lccn," ","")
+				let $lccn:= if ($lccn) then $lccn else  $body/bf:Work/bf:identifiedBy/bf:Lccn[1][fn:not(bf:status)]/rdf:value
+				
+				let $lccn:= fn:replace(fn:string($lccn[1])," ","")
 				(: Consider just storing bibframe.rdf in the database, no need for HTTP overhead :)
 
 				(: Can load the bibframe.rdf as Semantics sem:triples, and infer or property path the subclasses too :)
@@ -943,8 +970,9 @@ main node is instance/instanceof
 
 				let $bfonto:= xdmp:http-get("http://id.loc.gov/ontologies/bibframe.rdf")[2]
 				let $worktypes:=
-				    for $subc in $bfonto//owl:Class[rdfs:subClassOf[@rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"]]
-					    return (fn:substring-after($subc/@rdf:about,"bibframe/"))
+				    (for $subc in $bfonto//owl:Class[rdfs:subClassOf[@rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"]]
+					    return (fn:substring-after($subc/@rdf:about,"bibframe/")),
+						"Hub")
 				let $instanceTypes:=
 				    for $subc in $bfonto//owl:Class[rdfs:subClassOf[@rdf:resource="http://id.loc.gov/ontologies/bibframe/Instance"]]
 					    return (fn:substring-after($subc/@rdf:about,"bibframe/"))
@@ -987,10 +1015,11 @@ main node is instance/instanceof
 								return
 								   for $w in $body/*[fn:local-name()=$type]
 							       return $w
-
-		
 				(:if $workraw1 is null, process instances , items   only   :)
-				
+					
+			let $ibc:=for $n at $x in  $body//bf:AdminMetadata/bflc:procInfo[text() = "update instance"]
+	
+									 return $x 
 				let $result:= if ($workraw1  ) then
 
 						( xdmp:log(
@@ -999,7 +1028,7 @@ main node is instance/instanceof
 										  			)
 									   , "info")
 							,																	 
-										bfe2mets:full-package-insert($workraw1,$body, $linkables, $lccn)
+										bfe2mets:full-package-insert($workraw1,$body, $linkables, $lccn, $ibc)
 									)
 							   else
 							   		(: process instances, items :)
@@ -1020,11 +1049,11 @@ main node is instance/instanceof
 									$nodeID
 
 		  		let $json:=if ($result)  then
-		  		            fn:concat('{"name": "',$orig-uri,'","objid": "resources/',$type,'/',$nodeID,'","publish": {"status": "success","message": "posted"}}')
+		  		           		fn:concat('{"name": "',$orig-uri,'","objid": "resources/',$type,'/',$nodeID,'","publish": {"status": "success","message": "posted"}}')
 		  		            else 
-		  		                fn:concat('{"name": "',$orig-uri,'","objid": ","publish": {"status": "error","message": "post failed"}}')
+		  		                fn:concat('{"name": "',$orig-uri,'","objid": "resources/',$orig-uri,'","publish": {"status": "error","message": "post failed"}}')
 
-		        let $bfe-uri:="http://mlvlp04.loc.gov:3000/profile-edit/server/publishRsp"
+		       
 
 		        let  $bfe-options:=<options xmlns="xdmp:http">       
 		                    <data>{$json}</data>
@@ -1032,9 +1061,11 @@ main node is instance/instanceof
 		                      <content-type>application/json</content-type>
 		                    </headers>
 		                  </options>
-        
+        		let $_:= xdmp:log(fn:concat("CORB json: ",$json),"info")
 				let $bfe-post:=xdmp:http-post( $bfe-uri,  	 $bfe-options	                )
-				return ()
+				
+				return (  )
+
 		  		(:return 
 		  		    (xdmp:log(fn:concat("CORB result: ",$result),"info"),
 		  		    xdmp:log(fn:concat("CORB json: ",$json),"info"),
@@ -1046,4 +1077,29 @@ main node is instance/instanceof
 		  			xdmp:add-response-header("Access-Control-Allow-Origin", "*"),
 						map:put ($content, $result,'uri')					   
 							   ):)
+
+
+
+}
+catch($e)  {
+			let $json:= ( fn:concat('{"name": "',$orig-uri,'", "objid":"","publish": {"status": "error","message": "post failed really"}}'))
+		
+
+
+			let $_:= xdmp:log(fn:concat("CORB json: ",$json),"info")
+			
+			let  $bfe-options:=<options xmlns="xdmp:http">       
+		                    <data>{$json}</data>
+		                    <headers>
+		                      <content-type>application/json</content-type>
+		                    </headers>
+		                  </options>
+			return xdmp:http-post( $bfe-uri,  $bfe-options	     )
+				 
+}
 };
+(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

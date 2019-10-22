@@ -55,7 +55,7 @@ bf4ts
 module namespace 	bf4ts 			= "info:lc/xq-modules/bf4ts#"   ;
 
 import module namespace sem 		= "http://marklogic.com/semantics"  at "/MarkLogic/semantics.xqy";
-import module namespace utils		= "info:lc/xq-modules/mets-utils" 	at "/xq/modules/mets-utils.xqy";
+
 (: NAMESPACES :)
 
 declare namespace   rdf             = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
@@ -69,6 +69,7 @@ declare namespace   owl             = "http://www.w3.org/2002/07/owl#";
 declare namespace 	mets 			= "http://www.loc.gov/METS/";
 declare namespace 	idx 			= "info:lc/xq-modules/lcindex";
 declare namespace 	pmo  			= "http://performedmusicontology.org/ontology/";
+declare namespace	lclocal				="http://id.loc.gov/ontologies/lclocal/";
 
 (: skip terms that are text or otherwise can be excluded :)
 declare variable $skip-literals:=
@@ -196,12 +197,15 @@ declare function bf4ts:process($node) {
  for $n in $node
  return
    typeswitch($n)
-        case text()         return fn:replace($n, " \[from old catalog\]","")
+   
         case attribute()  	return $n
-		case comment() return ()
-        case element() 		return if ($n/@rdf:about or $n/@rdf:resource ) then
-                                         bf4ts:cleanup($n)								
-								else if ($n/*/@rdf:about or $n/@rdf:resource ) then
+		case text()         return fn:replace($n, " \[from old catalog\]","")
+		case comment() 		return ()
+        case element() 		return 
+								 (: doesnt' do much ?? :)
+								 if ($n/@rdf:about or $n/@rdf:resource  ) then
+                                         bf4ts:cleanup($n)																
+								  else if ($n/*/@rdf:about or $n/@rdf:resource ) then
                                          bf4ts:cleanup($n)
                                    else if ($n instance of element (bflc:derivedFrom))   then
                                          bf4ts:cleanup($n)                                       
@@ -209,29 +213,30 @@ declare function bf4ts:process($node) {
                                          bf4ts:cleanup($n)	 
 									else if ($n instance of element (bflc:Relationship))   then
                                          bf4ts:cleanup($n)	 
-                                   else if ($n instance of element (bflc:itemOf))   then
+                                   else if ($n instance of element (bf:itemOf))   then
                                          bf4ts:cleanup($n)                                       
                                    else if ($n instance of element (bflc:applicableInstitution) )  then
                                          bf4ts:cleanup($n)  
                                    else if (fn:index-of($skip-nodes,fn:name($n))) then 
-                                         () (:fn:concat("skipping ",  fn:name($n)) :)
-                                   else if (fn:starts-with(fn:name($n),'bflc')) then
-                                         () (:fn:concat("skipping bflc?",  fn:name($n)) :)
+                                         () 
+                                   (: stop skipping bflc 2019 09 12:)
+								   (:else if (fn:starts-with(fn:name($n),'bflc')) then
+                                         ():)
                                    else bf4ts:cleanup($n) 
        	
-        default 			      return  bf4ts:process($n)
+        default 		     return bf4ts:process($n)
 };
 
 
 
 declare function bf4ts:cleanup($node) {
-(: need to stop indexing stuff with id uris in about, resource :)
-if ($node/@rdf:about and fn:contains($node/@rdf:about,"#Work880-") or fn:matches($node/@rdf:about,"#Work7[0-9]{2}-[0-9]{2}") or fn:matches($node/@rdf:about,"#Work2[0-9]{2}-[0-9]{2}")) then
+(: need to stop indexing (relatedto/Work/about ) stuff with id uris in about, resource :)
+if ($node/child::*[1]/@rdf:about and fn:contains($node/child::*[1]/@rdf:about,"#Work880-") or fn:matches($node/child::*[1]/@rdf:about,"#Work7[0-9]{2}-[0-9]{2}") or fn:matches($node/child::*[1]/@rdf:about,"#Work2[0-9]{2}-[0-9]{2}")) then
 ()(: skip links to embedded 880 works :)
 else
 element {xs:QName(fn:name($node))} {
-
-        if ($node/@rdf:resource and fn:starts-with(fn:string($node/@rdf:resource),"www.") ) then
+		(		        
+		if ($node/@rdf:resource and fn:starts-with(fn:string($node/@rdf:resource),"www.") ) then
             (attribute rdf:resource {fn:concat("//",fn:string($node/@rdf:resource))}                
                 )
 		else if ($node/@rdf:about) then 
@@ -239,13 +244,22 @@ element {xs:QName(fn:name($node))} {
 		else if ($node/@rdf:resource and fn:not(fn:matches(fn:string($node/@rdf:resource),"^.+//.+$") ) ) then
 				element rdfs:label {fn:string($node/@rdf:resource)}
 
-        else  $node/@*,       
-		(:if (fn:not($node instance of element(bf:Agent) or $node instance of element (bf:Topic)) and ($node/@rdf:resource or $node/@rdf:about))  then:)
-         bf4ts:process($node/node())
-		(: else ():)
+        else  $node/@*
+		,       
+		        (: found that related Works were being skipped 2019-03-04:)
+		
+		 	bf4ts:process($node/node() )
+		
+		)
+		
 }
 
 
 
 };
 
+(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)
