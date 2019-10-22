@@ -13,10 +13,13 @@ module namespace bibs2mets = "http://loc.gov/ndmso/bibs-2-mets";
 import module namespace 		bibframe2index   	= "info:lc/id-modules/bibframe2index#"   at "module.BIBFRAME-2-INDEX.xqy";
 import module namespace 		bf4ts   			= "info:lc/xq-modules/bf4ts#"   		 at "module.BIBFRAME-4-Triplestore.xqy";
 import module namespace 		mem 				= "http://xqdev.com/in-mem-update" 		 at "/MarkLogic/appservices/utils/in-mem-update.xqy";
-import module namespace 		auth2bf				= "http://loc.gov/ndmso/authorities-2-bibframe" at "../../auths/authorities2bf.xqy";
-(:import module namespace 		searchts 			= "info:lc/xq-modules/searchts#" 		 at "/modules/xq/modules/module.SearchTS.xqy";:)
+import module namespace 		auth2bf				= "http://loc.gov/ndmso/authorities-2-bibframe" at "/prep/auths/authorities2bf.xqy";
+(:2019-10-22 :)
+import module namespace 		searchts 			= "info:lc/xq-modules/searchts#" 		 at "/src/xq/modules/module.SearchTS.xqy";
+(:import module namespace 		searchts 			= "info:lc/xq-modules/searchts#" 		 at "/modules/xq/modules/module.SearchTS.xqy";
 import module namespace 		searchts 			= "info:lc/xq-modules/searchts#" 		 at "module.SearchTS.xqy";
-import module namespace 		marcutil 			= "info:lc/xq-modules/marc-utils" 		 at "module.marcutils.xqy";
+import module namespace 		marcutil 			= "info:lc/xq-modules/marc-utils" 		 at "module.marcutils.xqy";:)
+import module namespace 		marcutil 			= "info:lc/xq-modules/marc-utils" 		 at "/src/xq/modules/marc-utils.xqy";
 
 declare namespace 				sparql              = "http://www.w3.org/2005/sparql-results#";
 declare namespace 				rdf					= "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
