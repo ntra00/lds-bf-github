@@ -199,4 +199,8 @@ declare function utils:pagination-href($start as xs:integer, $request as xs:stri
 declare function utils:pagination-href($start as xs:integer, $keys as xs:string*, $values as xs:string*, $request as xs:string) as xs:string {
     let $request-clean := concat("/xq/lscoll/app.xqy#", replace($request, "&amp;pg=\d+", ""))
     return concat($request-clean, concat("&amp;pg=", $start))
-};
+};(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

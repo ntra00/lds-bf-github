@@ -1,10 +1,10 @@
 xquery version "1.0-ml";
-import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xq/modules/mime-utils.xqy";
-import module namespace resp = "info:lc/xq-modules/http-response-utils" at "/xq/modules/http-response-utils.xqy";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/nlc/config.xqy";
-import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/nlc/lib/l-query.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/nlc/lib/l-param.xqy";
-import module namespace utils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
+import module namespace mime = "info:lc/xq-modules/mime-utils" at "/src/xq/modules/mime-utils.xqy";
+import module namespace resp = "info:lc/xq-modules/http-response-utils" at "/src/xq/modules/http-response-utils.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/src/lds/config.xqy";
+import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/src/lds/lib/l-query.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/src/lds/lib/l-param.xqy";
+import module namespace utils = "info:lc/xq-modules/mets-utils" at "/src/xq/modules/mets-utils.xqy";
 import module namespace functx = "http://www.functx.com" at "/MarkLogic/functx/functx-1.0-nodoc-2007-01.xqy"; 
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 declare namespace xhtml = "http://www.w3.org/1999/xhtml";
@@ -122,3 +122,8 @@ return
                 else
                  local:ia-page($uri,$num,$gid)
             )
+(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

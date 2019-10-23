@@ -38,4 +38,8 @@ return
         xdmp:set-response-content-type("application/atom+xml; charset=utf-8"), 
         xdmp:add-response-header("Cache-Control", "public, max-age=600"),        
         $results
-    )
+    )(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

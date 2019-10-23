@@ -12,9 +12,9 @@ xquery version "1.0-ml";
 declare namespace marc="http://www.loc.gov/MARC21/slim" ;
 declare namespace mets="http://www.loc.gov/METS/";
 
-import module namespace hold = "info:lc/xq-modules/holdings-utils" at "/xq/modules/holdings-utils.xqy";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/nlc/config.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/nlc/lib/l-param.xqy";
+import module namespace hold = "info:lc/xq-modules/holdings-utils" at "xq/modules/holdings-utils.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
 import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xq/modules/mime-utils.xqy";
 import module namespace resp = "info:lc/xq-modules/http-response-utils" at "/xq/modules/http-response-utils.xqy";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
@@ -40,4 +40,8 @@ return
                  			
             )  
             
-           
+           (: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

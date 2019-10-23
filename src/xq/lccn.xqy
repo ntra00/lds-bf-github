@@ -12,17 +12,17 @@ xquery version "1.0-ml";
 let $mime := mime:safe-mime(lp:get-param-single($lp:CUR-PARAMS, 'mime', "text/html")) 
 :)
 
-import module namespace ssk = "info:lc/xq-modules/search-skin" at "/xq/modules/natlibcat-skin.xqy";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/nlc/config.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/nlc/lib/l-param.xqy";
-import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xq/modules/mime-utils.xqy";
-import module namespace xslt="info:lc/xq-modules/xslt" at "/xq/modules/xslt.xqy"; 
-import module namespace utils= "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
-import module namespace marcutil= "info:lc/xq-modules/marc-utils" at "/xq/modules/marc-utils.xqy";
-import module namespace index= "info:lc/xq-modules/index-utils" at "/xq/modules/index-utils.xqy";
-import module namespace matconf = "info:lc/xq-modules/config/materials" at "/xq/modules/config/materialtype.xqy";
+import module namespace ssk = "info:lc/xq-modules/search-skin" at "/src/xq/modules/natlibcat-skin.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/src/lds/config.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/src/lds/lib/l-param.xqy";
+import module namespace mime = "info:lc/xq-modules/mime-utils" at "/src/xq/modules/mime-utils.xqy";
+import module namespace xslt="info:lc/xq-modules/xslt" at "/src/xq/modules/xslt.xqy"; 
+import module namespace utils= "info:lc/xq-modules/mets-utils" at "/src/xq/modules/mets-utils.xqy";
+import module namespace marcutil= "info:lc/xq-modules/marc-utils" at "/src/xq/modules/marc-utils.xqy";
+import module namespace index= "info:lc/xq-modules/index-utils" at "/src/xq/modules/index-utils.xqy";
+import module namespace matconf = "info:lc/xq-modules/config/materials" at "/src/xq/modules/config/materialtype.xqy";
 
-import module namespace md = "http://www.marklogic.com/ps/model/m-doc" at "/nlc/model/m-doc.xqy";
+import module namespace md = "http://www.marklogic.com/ps/model/m-doc" at "/src/lds/model/m-doc.xqy";
 declare namespace xdmp="http://marklogic.com/xdmp";
 declare namespace marc="http://www.loc.gov/MARC21/slim";
 declare namespace idx = "info:lc/xq-modules/lcindex";
@@ -163,3 +163,8 @@ let $html:= <html>{$head}
 				</body>
 			</html>			
 return ($html)
+(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

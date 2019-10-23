@@ -238,4 +238,8 @@ returns clean params based on page controls , current behavior, next behavior, p
  return  $ret-params
 };
 
-declare variable $CUR-PARAMS := lp:get-params();
+declare variable $CUR-PARAMS := lp:get-params();(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

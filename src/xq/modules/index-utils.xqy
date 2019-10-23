@@ -22,6 +22,7 @@ declare namespace mxe = "http://www.loc.gov/mxe";
 
 declare namespace hld = "http://www.indexdata.com/turbomarc";
 declare namespace loc = "info:lc/xq-modules/config/lclocations";
+declare namespace xdmphttp = "xdmp:http";
        
 import module namespace utils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
 import module namespace hold = "info:lc/xq-modules/holdings-utils" at "/xq/modules/holdings-utils.xqy";
@@ -31,7 +32,7 @@ import module namespace langs = "info:lc/xq-modules/config/languages" at "/xq/mo
 import module namespace relators = "info:lc/xq-modules/config/relators" at "/xq/modules/config/relators.xqy";
 import module namespace lcc = "info:lc/xq-modules/config/lcclass" at "/xq/modules/config/lcc2.xqy";
 import module namespace locs = "info:lc/xq-modules/config/lclocations" at "/xq/modules/config/lclocations.xqy";
-declare namespace xdmphttp = "xdmp:http";
+
 (: -------------------------- index terms starts here: -------------------------- :)
 (: This function chops the given punctuation from the end of the given string. useful for lopping off ending periods (but be careful!)
 adapted from marcslim2modsutils.xsl
@@ -47,7 +48,7 @@ let $len:=fn:string-length($str)
 return	if ($len=0) then
 			()
 	else if (fn:contains($punc, fn:substring($str,$len,1) )) then
-			ldsindex:chopPunctuation(fn:substring($str,1,$len - 1),$punc)
+			index:chopPunctuation(fn:substring($str,1,$len - 1),$punc)
 	else if (fn:not($str)) then
 			()
 	else

@@ -3,8 +3,8 @@ xquery version "1.0-ml";
 (: Contains functions to convert between mxe and marcxml, etc. :)
 
 module namespace marcutil = "info:lc/xq-modules/marc-utils";
-import module namespace index="info:lc/xq-modules/index-utils" at "/src/xq/modules/index-utils.xqy";
-import module namespace xslt="info:lc/xq-modules/xslt" at "/src/xq/modules/xslt.xqy";
+import module namespace index="info:lc/xq-modules/index-utils"		 at "/xq/modules/index-utils.xqy";
+import module namespace xslt="info:lc/xq-modules/xslt"		 at "/xq/modules/xslt.xqy";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare default element namespace "http://www.loc.gov/MARC21/slim";
 declare namespace mods = "http://www.loc.gov/mods/v3";
@@ -22,7 +22,7 @@ declare namespace xdmp="http://marklogic.com/xdmp";
 
 declare function marcutil:char2element($string as xs:string, $prefix as xs:string) as node()+ {
     let $cps := string-to-codepoints($string)
-    for $cp at $count in $cps
+    for $cp		 at $count in $cps
     let $cpe := if ($count < 11) then (concat('0', $count -1)) else ($count -1)
     let $char := codepoints-to-string($cp)
     return 

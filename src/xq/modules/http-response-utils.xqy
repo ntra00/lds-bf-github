@@ -19,4 +19,8 @@ declare function resp:private-loc-mlnode() as xs:string {
     (: Returns the integer 1, 2, or 3 representing which server served up the content: ml1, ml2, or ml3. :)
     (: Useful for directing requests to specific cluster nodes using sticky sessions.                    :)
     replace($cfg:HOST-NAME, "[^\d]", "")
-};
+};(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

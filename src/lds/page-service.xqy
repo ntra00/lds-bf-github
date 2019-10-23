@@ -30,13 +30,13 @@ xquery version "1.0";
 (: MODULES :)
 import module namespace resp = "info:lc/xq-modules/http-response-utils" at "/xq/modules/http-response-utils.xqy";
 import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
-import module namespace searchml = 'info:lc/id-modules/searchml#' at "../xq/modules/module.SearchML.xqy";
+import module namespace searchml = 'info:lc/id-modules/searchml#' at "/xq/modules/module.SearchML.xqy";
 (:
 import module namespace transmit    = "info:lc/id-modules/transmit#" at "../xq/modules/module.Transmit.xqy";
 :)
-import module namespace atompub    = "info:lc/xq-modules/atom#" at "../xq/modules/module.AtomPub.xqy";
+import module namespace atompub    = "info:lc/xq-modules/atom#" at "/xq/modules/module.AtomPub.xqy";
 
-import module namespace feed = "info:lc/xq-modules/atom-utils"at "../xq/modules/atom-utils.xqy";
+import module namespace feed = "info:lc/xq-modules/atom-utils"at "/xq/modules/atom-utils.xqy";
 
 (: NAMESPACES :)
 declare namespace xhtml = "http://www.w3.org/1999/xhtml";
@@ -169,4 +169,8 @@ return
 		$response
     else 
         $response
-)
+)(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

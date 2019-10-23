@@ -1,14 +1,14 @@
 xquery version "1.0-ml";
 
 import module namespace search = "http://marklogic.com/appservices/search" at "/MarkLogic/appservices/search/search.xqy";
-import module namespace sc = "info:lc/xq-modules/search-config" at "modules/searchConfig.xqy";
+import module namespace sc = "info:lc/xq-modules/search-config" at "/xq/modules/searchConfig.xqy";
 (:import module namespace fac = "info:lc/xq-modules/facets" at "modules/facets.xqy";:)
 (:import module namespace sr = "info:lc/xq-modules/searchresults-utils" at "modules/searchresults-utils.xqy";:)
 (:import module namespace eadutils = "info:lc/xq-modules/ead-utils" at "modules/ead-utils.xqy";
 import module namespace altoutils = "info:lc/xq-modules/alto-utils" at "modules/alto-utils.xqy";:)
-import module namespace mime = "info:lc/xq-modules/mime-utils" at "modules/mime-utils.xqy";
-import module namespace sru = "info:lc/xq-modules/sru" at "modules/sru.xqy";
-import module namespace pg = "info:lc/xq-modules/pagination" at "modules/pagination.xqy";
+import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xqmodules/mime-utils.xqy";
+import module namespace sru = "info:lc/xq-modules/sru" at "/xq/modules/sru.xqy";
+import module namespace pg = "info:lc/xq-modules/pagination" at "/xq/modules/pagination.xqy";
 (: import module namespace jsonutils = "info:lc/xq-modules/json-utils" at "modules/json-utils.xqy"; :)
 declare default element namespace "http://www.w3.org/1999/xhtml";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
@@ -383,4 +383,8 @@ return
     else if (matches($requestedMime, "(application/x-lcsearchresults\+xml|text/xml|application/xml)")) then
         $search
     else
-        "You must specify a mime-type for serialization"
+        "You must specify a mime-type for serialization"(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

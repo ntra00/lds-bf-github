@@ -9,10 +9,12 @@ import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xq/modules/m
 import module namespace utils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
 import module namespace index= "info:lc/xq-modules/index-utils" at "/xq/modules/index-utils.xqy";
 import module namespace resp = "info:lc/xq-modules/http-response-utils" at "/xq/modules/http-response-utils.xqy";
+import module namespace marcutil = "info:lc/xq-modules/marc-utils" at "/xq/modules/marc-utils.xqy";
+
 import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
 
 
-import module namespace marcutil = "info:lc/xq-modules/marc-utils" at "/xq/modules/marc-utils.xqy";
+
 
 declare namespace mets = "http://www.loc.gov/METS/";
 declare namespace mods = "http://www.loc.gov/mods/v3";
