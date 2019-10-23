@@ -43,8 +43,12 @@ PASSWD=`/marklogic/id/id-prep/marc/keys/passwd-ml.sh`
 #-input_file_path /marklogic/id/natlibcat/admin/bfi/bibrecs/sourceload \
 #if [[ type -f  /marklogic/id/natlibcat/admin/bfi/bibrecs/sourceload/$BIBIID.rdf ]]
 # was 8203
+
+#    -port 8028 \
+#    -host localhost \
+
  $MLCPPATH/mlcp.sh import  \
-       -host localhost \
+        -host mlvlp04.loc.gov \
         -port 8028 \
         -username id-admin \
         -password $PASSWD \
