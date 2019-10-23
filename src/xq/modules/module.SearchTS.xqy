@@ -31,7 +31,7 @@ module namespace searchts = 'info:lc/xq-modules/searchts#';
 (: Imported modules :)
 import module namespace sem                 = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
 import module namespace search              = "http://marklogic.com/appservices/search" at "/MarkLogic/appservices/search/search.xqy";
-import module namespace cfg 				= "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace cfg 				= "http://www.marklogic.com/ps/config" at "../../lds/config.xqy";
 
 (: Namespaces :)
 declare namespace xdmp = "http://marklogic.com/xdmp";

@@ -29,7 +29,7 @@ module namespace shared = 'info:lc/id-modules/shared#';
 
 (: MODULES :)
 (:import module namespace constants           = "info:lc/id-modules/constants#" at "../constants.xqy";:)
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../../lds/config.xqy";
 (: NAMESPACES :)
 declare namespace xhtml     = "http://www.w3.org/1999/xhtml";
 

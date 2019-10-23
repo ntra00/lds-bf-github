@@ -1,7 +1,7 @@
 xquery version "1.0-ml";
 
 module namespace ld = "http://www.marklogic.com/ps/lib/l-date";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../config.xqy";
 import module namespace functx = "http://www.functx.com" at "/MarkLogic/functx/functx-1.0-nodoc-2007-01.xqy"; 
 
 declare function ld:convert-picker-to-date($pickerText as xs:string) as xs:date {

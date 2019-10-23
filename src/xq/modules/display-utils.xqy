@@ -4,12 +4,12 @@ module namespace display = "info:lc/xq-modules/display-utils";
  
 
 :)
-import module namespace functx	="http://www.functx.com" 				 at "/xq/modules/functx.xqy";
-import module namespace ssk 	= "info:lc/xq-modules/search-skin"		 at "/xq/modules/search-skin.xqy";
-import module namespace utils	= "info:lc/xq-modules/mets-utils"		 at "/xq/modules/mets-utils.xqy";
-import module namespace marcutil= "info:lc/xq-modules/marc-utils"		 at "/xq/modules/marc-utils.xqy";
-import module namespace matconf = "info:lc/xq-modules/config/materials"		 at "/xq/modules/config/materialtype.xqy";
-import module namespace cfg 	= "http://www.marklogic.com/ps/config"		 at "/lds/config.xqy";
+import module namespace functx	="http://www.functx.com" 				 at "functx.xqy";
+import module namespace ssk 	= "info:lc/xq-modules/search-skin"		 at "search-skin.xqy";
+import module namespace utils	= "info:lc/xq-modules/mets-utils"		 at "mets-utils.xqy";
+import module namespace marcutil= "info:lc/xq-modules/marc-utils"		 at "marc-utils.xqy";
+import module namespace matconf = "info:lc/xq-modules/config/materials"		 at "config/materialtype.xqy";
+import module namespace cfg 	= "http://www.marklogic.com/ps/config"		 at "../../lds/config.xqy";
 
 declare namespace marc    		=	"http://www.loc.gov/MARC21/slim";
 declare namespace mxe       	=	"http://www.loc.gov/mxe";

@@ -1,9 +1,9 @@
 xquery version "1.0-ml";
 
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" 	at "/lds/lib/l-param.xqy";
-import module namespace mime = "info:lc/xq-modules/mime-utils" 			at "/xq/modules/mime-utils.xqy";
-import module namespace cfg = "http://www.marklogic.com/ps/config" 		at "/lds/config.xqy";
-import module namespace utils = "info:lc/xq-modules/mets-utils" 		at "/xq/modules/mets-utils.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" 	at "lds/lib/l-param.xqy";
+import module namespace mime = "info:lc/xq-modules/mime-utils" 			at "xq/modules/mime-utils.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" 		at "lds/config.xqy";
+import module namespace utils = "info:lc/xq-modules/mets-utils" 		at "xq/modules/mets-utils.xqy";
 (:import module namespace rest="http://marklogic.com/appservices/rest" at "/MarkLogic/appservices/utils/rest.xqy"; :)
 (: tohap permalinks and xml output are hardcoded to work within the branding url, diglib/tohap instead of at the root:)
 declare default function namespace "http://www.w3.org/2005/xpath-functions";

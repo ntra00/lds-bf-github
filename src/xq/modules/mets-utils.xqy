@@ -9,19 +9,22 @@ utils:render() format any xml (from get() as html, json, atom, div....)
 :)
 
 module namespace utils = "info:lc/xq-modules/mets-utils";
+declare default function namespace "http://www.w3.org/2005/xpath-functions";
 
 import module namespace sem 			= "http://marklogic.com/semantics" 						at "/MarkLogic/semantics.xqy";
-import module namespace cfg 			= "http://www.marklogic.com/ps/config"					at "/lds/config.xqy";
-import module namespace marcutil		= "info:lc/xq-modules/marc-utils" 						at "/xq/modules/marc-utils.xqy";
-import module namespace mem 			= "http://xqdev.com/in-mem-update" 						at "/xq/modules/in-mem-update.xqy";
-import module namespace xml2jsonml	 	= "info:lc/id-modules/xml2jsonml#" 						at "/xq/modules/module.XML-2-JSONML.xqy";
-import module namespace rdfxml2trix 	= "http://3windmills.com/rdfxq/modules/rdfxml2trix#" 	at "/xq/rdfxq/modules/module.RDFXML-2-TriX.xqy";
-import module namespace rdfxml2json 	= "info:lc/id-modules/rdfxml2json#"					 	at "/xq/modules/module.RDFXML-2-JSON.xqy";
-import module namespace trix2jsonld-ml 	= "http://3windmills.com/rdfxq/modules/trix2jsonld-ml#" at "/xq/rdfxq/modules/module.TriX-2-JSONLD-MarkLogic.xqy";
-import module namespace searchts 		= 'info:lc/xq-modules/searchts#' 					 	at "/xq/modules/module.SearchTS.xqy";
 
-import module namespace lh 				= "http://www.marklogic.com/ps/lib/l-highlight"			at "/lds/lib/l-highlight.xqy";
-declare default function namespace "http://www.w3.org/2005/xpath-functions";
+import module namespace marcutil		= "info:lc/xq-modules/marc-utils" 						at "marc-utils.xqy";
+import module namespace mem 			= "http://xqdev.com/in-mem-update" 						at "in-mem-update.xqy";
+import module namespace xml2jsonml	 	= "info:lc/id-modules/xml2jsonml#" 						at "module.XML-2-JSONML.xqy";
+import module namespace rdfxml2json 	= "info:lc/id-modules/rdfxml2json#"					 	at "module.RDFXML-2-JSON.xqy";
+
+import module namespace searchts 		= 'info:lc/xq-modules/searchts#' 					 	at "module.SearchTS.xqy";
+
+import module namespace rdfxml2trix 	= "http://3windmills.com/rdfxq/modules/rdfxml2trix#" 	at "../rdfxq/modules/module.RDFXML-2-TriX.xqy";
+import module namespace trix2jsonld-ml 	= "http://3windmills.com/rdfxq/modules/trix2jsonld-ml#" at "../rdfxq/modules/module.TriX-2-JSONLD-MarkLogic.xqy";
+
+import module namespace lh 				= "http://www.marklogic.com/ps/lib/l-highlight"			at "../../lds/lib/l-highlight.xqy";
+import module namespace cfg 			= "http://www.marklogic.com/ps/config"					at "../../lds/config.xqy";
 
 declare namespace sparql                = "http://www.w3.org/2005/sparql-results#";
 declare namespace mets = "http://www.loc.gov/METS/";

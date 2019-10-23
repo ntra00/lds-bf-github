@@ -1,10 +1,13 @@
 xquery version "1.0-ml";
 
 module namespace lq = "http://www.marklogic.com/ps/lib/l-query";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+
 import module namespace search="http://marklogic.com/appservices/search" at "/MarkLogic/appservices/search/search.xqy";                    
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
 import module namespace georss = "http://www.georss.org/georss" at "/MarkLogic/geospatial/georss.xqy";
+
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../config.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "l-param.xqy";
+
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare namespace param = "http://www.marklogic.com/ps/params";
 (: you have to include all namespaces for facets here or lq:recursive-remove-query won't work :)

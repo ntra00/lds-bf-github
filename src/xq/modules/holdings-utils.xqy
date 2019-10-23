@@ -1,10 +1,10 @@
 xquery version "1.0-ml";
 
 module namespace hold = "info:lc/xq-modules/holdings-utils";
-import module namespace utils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
-import module namespace locs ="info:lc/xq-modules/config/lclocations" at "/xq/modules/config/lclocations.xqy";
-import	module namespace index = "info:lc/xq-modules/index-utils" at "/xq/modules/index-utils.xqy";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace utils = "info:lc/xq-modules/mets-utils" at "mets-utils.xqy";
+import module namespace locs ="info:lc/xq-modules/config/lclocations" at "config/lclocations.xqy";
+import	module namespace index = "info:lc/xq-modules/index-utils" at "index-utils.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../../lds/config.xqy";
 	 
 
 declare namespace idx="info:lc/xq-modules/lcindex" ;

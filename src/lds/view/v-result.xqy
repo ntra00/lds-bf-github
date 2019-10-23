@@ -1,12 +1,12 @@
 xquery version "1.0-ml";
 
 module namespace vr = "http://www.marklogic.com/ps/view/v-result";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
-import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/lds/lib/l-query.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
-import module namespace lh = "http://www.marklogic.com/ps/lib/l-highlight" at "/lds/lib/l-highlight.xqy";
-import module namespace pg = "info:lc/xq-modules/pagination" at "/lds/view/v-pagination.xqy";
-import module namespace vd = "http://www.marklogic.com/ps/view/v-detail" at "/lds/view/v-detail.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../config.xqy";
+import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "../lib/l-query.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "../lib/l-param.xqy";
+import module namespace lh = "http://www.marklogic.com/ps/lib/l-highlight" at "../lib/l-highlight.xqy";
+import module namespace pg = "info:lc/xq-modules/pagination" at "../view/v-pagination.xqy";
+import module namespace vd = "http://www.marklogic.com/ps/view/v-detail" at "../view/v-detail.xqy";
 declare namespace search = "http://marklogic.com/appservices/search";
 declare namespace mets = "http://www.loc.gov/METS/";
 declare namespace mxe2 = "http://www.loc.gov/mxe";

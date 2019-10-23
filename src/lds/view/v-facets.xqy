@@ -1,11 +1,11 @@
 xquery version "1.0-ml";
 
 module namespace vf = "http://www.marklogic.com/ps/view/v-facets";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
-import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/lds/lib/l-query.xqy";
-import module namespace ld = "http://www.marklogic.com/ps/lib/l-date" at "/lds/lib/l-date.xqy";
-import module namespace lfc = "http://www.marklogic.com/ps/lib/l-facet-cache" at "/lds/lib/l-facet-cache.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../config.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "../lib/l-param.xqy";
+import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "../lib/l-query.xqy";
+import module namespace ld = "http://www.marklogic.com/ps/lib/l-date" at "../lib/l-date.xqy";
+import module namespace lfc = "http://www.marklogic.com/ps/lib/l-facet-cache" at "../lib/l-facet-cache.xqy";
 import module namespace functx = "http://www.functx.com" at "/MarkLogic/functx/functx-1.0-nodoc-2007-01.xqy";
 
 declare namespace param = "http://www.marklogic.com/ps/params";

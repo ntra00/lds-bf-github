@@ -1,13 +1,13 @@
 xquery version "1.0-ml";
 
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
-import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "/lds/view/v-search.xqy";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "lds/config.xqy";
-import module namespace metsutils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
-import module namespace marcutils = "info:lc/xq-modules/marc-utils" at "/xq/modules/marc-utils.xqy";
-import module namespace ssk = "info:lc/xq-modules/search-skin" at "/xq/modules/natlibcat-skin.xqy";
-import module namespace resp = "info:lc/xq-modules/http-response-utils" at "/xq/modules/http-response-utils.xqy";
-import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xq/modules/mime-utils.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" 	at "../lib/l-param.xqy";
+import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "../view/v-search.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" 		at "../config.xqy";
+import module namespace metsutils = "info:lc/xq-modules/mets-utils" 	at "../../xq/modules/mets-utils.xqy";
+import module namespace marcutils = "info:lc/xq-modules/marc-utils" 	at "../../xq/modules/marc-utils.xqy";
+import module namespace ssk = "info:lc/xq-modules/search-skin" 			at "../../xq/modules/natlibcat-skin.xqy";
+import module namespace resp = "info:lc/xq-modules/http-response-utils" at "../../xq/modules/http-response-utils.xqy";
+import module namespace mime = "info:lc/xq-modules/mime-utils" 			at "../../xq/modules/mime-utils.xqy";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare default element namespace "http://www.w3.org/1999/xhtml";
 declare namespace mets = "http://www.loc.gov/METS/";

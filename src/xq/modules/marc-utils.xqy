@@ -3,8 +3,8 @@ xquery version "1.0-ml";
 (: Contains functions to convert between mxe and marcxml, etc. :)
 
 module namespace marcutil = "info:lc/xq-modules/marc-utils";
-import module namespace index="info:lc/xq-modules/index-utils"		 at "/xq/modules/index-utils.xqy";
-import module namespace xslt="info:lc/xq-modules/xslt"		 at "/xq/modules/xslt.xqy";
+import module namespace index="info:lc/xq-modules/index-utils"		 at "index-utils.xqy";
+import module namespace xslt="info:lc/xq-modules/xslt"		 at "xslt.xqy";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare default element namespace "http://www.loc.gov/MARC21/slim";
 declare namespace mods = "http://www.loc.gov/mods/v3";

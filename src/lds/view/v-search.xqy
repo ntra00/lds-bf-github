@@ -1,8 +1,8 @@
 xquery version "1.0-ml";
 
 module namespace vs = "http://www.marklogic.com/ps/view/v-search";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" 		at "../config.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" 	at "../lib/l-param.xqy";
 
 declare namespace param = "http://www.marklogic.com/ps/params";
 declare namespace esi = "http://www.edge-delivery.org/esi/1.0";

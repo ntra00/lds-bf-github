@@ -4,7 +4,7 @@ module namespace cfg = "http://www.marklogic.com/ps/config";
 declare namespace mlapp = "http://www.marklogic.com/mlapp";
 declare namespace e = "http://marklogic.com/entity";
 declare namespace gml = "http://www.opengis.net/gml";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "lib/l-param.xqy";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 
 declare variable $META-TITLE := "BIBFRAME Database (beta): Search Library of Congress BIBFRAME Descriptions";

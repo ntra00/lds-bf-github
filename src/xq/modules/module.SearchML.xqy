@@ -33,7 +33,7 @@ module namespace searchml = 'info:lc/id-modules/searchml#';
 import module namespace search              = "http://marklogic.com/appservices/search" at "/MarkLogic/appservices/search/search.xqy";
 (:import module namespace constants           = "info:lc/id-modules/constants#" at "../constants.xqy";
 import module namespace format              = "info:lc/id-modules/format#" at "module.Format.xqy";:)
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../../lds/config.xqy";
 (: Namespaces :)
 declare namespace rdf       = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 declare namespace map       = "http://marklogic.com/xdmp/map";
@@ -1464,3 +1464,8 @@ declare function format-uri($uri) as xs:string
 };
 
 
+(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

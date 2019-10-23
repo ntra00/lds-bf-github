@@ -1,7 +1,7 @@
 xquery version "1.0-ml";
 
 module namespace lh = "http://www.marklogic.com/ps/lib/l-highlight";
-import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/lds/lib/l-query.xqy";
+import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "l-query.xqy";
 declare namespace search = "http://marklogic.com/appservices/search";
 declare default element namespace "http://www.w3.org/1999/xhtml";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";

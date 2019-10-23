@@ -24,14 +24,14 @@ declare namespace hld = "http://www.indexdata.com/turbomarc";
 declare namespace loc = "info:lc/xq-modules/config/lclocations";
 declare namespace xdmphttp = "xdmp:http";
        
-import module namespace utils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
-import module namespace hold = "info:lc/xq-modules/holdings-utils" at "/xq/modules/holdings-utils.xqy";
-import module namespace functx = "http://www.functx.com"  at "/xq/modules/functx.xqy";
-import module namespace matconf = "info:lc/xq-modules/config/materials" at "/xq/modules/config/materialtype.xqy";
-import module namespace langs = "info:lc/xq-modules/config/languages" at "/xq/modules/config/languages.xqy";
-import module namespace relators = "info:lc/xq-modules/config/relators" at "/xq/modules/config/relators.xqy";
-import module namespace lcc = "info:lc/xq-modules/config/lcclass" at "/xq/modules/config/lcc2.xqy";
-import module namespace locs = "info:lc/xq-modules/config/lclocations" at "/xq/modules/config/lclocations.xqy";
+import module namespace utils = "info:lc/xq-modules/mets-utils" at "mets-utils.xqy";
+import module namespace hold = "info:lc/xq-modules/holdings-utils" at "holdings-utils.xqy";
+import module namespace functx = "http://www.functx.com"  at "functx.xqy";
+import module namespace matconf = "info:lc/xq-modules/config/materials" at "config/materialtype.xqy";
+import module namespace langs = "info:lc/xq-modules/config/languages" at "config/languages.xqy";
+import module namespace relators = "info:lc/xq-modules/config/relators" at "config/relators.xqy";
+import module namespace lcc = "info:lc/xq-modules/config/lcclass" at "config/lcc2.xqy";
+import module namespace locs = "info:lc/xq-modules/config/lclocations" at "config/lclocations.xqy";
 
 (: -------------------------- index terms starts here: -------------------------- :)
 (: This function chops the given punctuation from the end of the given string. useful for lopping off ending periods (but be careful!)

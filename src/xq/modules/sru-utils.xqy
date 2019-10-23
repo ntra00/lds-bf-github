@@ -3,7 +3,7 @@ xquery version "1.0-ml";
 module namespace s = "info:lc/xq-modules/sru-utils";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 import module namespace search = "http://marklogic.com/appservices/search" at "/MarkLogic/appservices/search/search.xqy";
-import module namespace marcutil = "info:lc/xq-modules/marc-utils" at "/xq/modules/marc-utils.xqy";
+import module namespace marcutil = "info:lc/xq-modules/marc-utils" at "marc-utils.xqy";
 declare namespace sru = "http://docs.oasis-open.org/ns/search-ws/sruResponse";
 declare namespace diag = "http://docs.oasis-open.org/ns/search-ws/diagnostic";
 declare namespace mets = "http://www.loc.gov/METS/";

@@ -1,9 +1,9 @@
 xquery version "1.0-ml";
 
 module namespace ssk = "info:lc/xq-modules/search-skin";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
-import module namespace utils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../../lds/config.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "../../lds/lib/l-param.xqy";
+import module namespace utils = "info:lc/xq-modules/mets-utils" at "mets-utils.xqy";
 declare default element namespace "http://www.w3.org/1999/xhtml";
 declare  namespace l = "local";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";

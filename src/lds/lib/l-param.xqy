@@ -1,7 +1,7 @@
 xquery version "1.0-ml";
 
 module namespace lp = "http://www.marklogic.com/ps/lib/l-param";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../config.xqy";
 declare namespace param = "http://www.marklogic.com/ps/params";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 

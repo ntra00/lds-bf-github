@@ -30,7 +30,7 @@ xquery version "1.0";
 module namespace rdfxml2json = 'info:lc/id-modules/rdfxml2json#';
 
 (: Imported Modules :)
-import module namespace rdfxml2nt   = "info:lc/id-modules/rdfxml2nt#" at "/xq/modules/module.RDFXML-2-Ntriples.xqy";
+import module namespace rdfxml2nt   = "info:lc/id-modules/rdfxml2nt#" at "module.RDFXML-2-Ntriples.xqy";
 
 (: Namespace(s) :)
 declare namespace   rdf             = "http://www.w3.org/1999/02/22-rdf-syntax-ns#";

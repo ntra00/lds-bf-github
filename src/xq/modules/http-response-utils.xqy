@@ -1,8 +1,8 @@
 xquery version "1.0-ml";
 
 module namespace resp = "info:lc/xq-modules/http-response-utils";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
-import module namespace functx = "http://www.functx.com" at "/xq/modules/functx.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../../lds/config.xqy";
+import module namespace functx = "http://www.functx.com" at "functx.xqy";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 
 declare function resp:expires($dur as xs:dayTimeDuration) as xs:string {

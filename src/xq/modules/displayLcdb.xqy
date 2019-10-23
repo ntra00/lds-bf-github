@@ -8,11 +8,11 @@ lccnstyle1.xsl, and sending the header/footer, $lcdbDisplay nodes to renderPage.
 This will only work  for things with mxe or marc records, not PAE etc. 
 :)
 
-import module namespace ssk = "info:lc/xq-modules/search-skin" at "/xq/modules/search-skin.xqy";
+import module namespace ssk = "info:lc/xq-modules/search-skin" at "search-skin.xqy";
 
-import module namespace utils= "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
-import module namespace marcutil= "info:lc/xq-modules/marc-utils" at "/xq/modules/marc-utils.xqy";
-import module namespace matconf = "info:lc/xq-modules/config/materials" at "/xq/modules/config/materialtype.xqy";
+import module namespace utils= "info:lc/xq-modules/mets-utils" at "mets-utils.xqy";
+import module namespace marcutil= "info:lc/xq-modules/marc-utils" at "marc-utils.xqy";
+import module namespace matconf = "info:lc/xq-modules/config/materials" at "config/materialtype.xqy";
 declare namespace marc="http://www.loc.gov/MARC21/slim";
 declare namespace xdmp="http://marklogic.com/xdmp";
 declare namespace xsl="http://www.w3.org/1999/XSL/Transform";
@@ -123,4 +123,8 @@ let results:= for $subfield in $rec
   case element($subfield,marc:controlfield) return xs:string($subfield)
   default return display:transformData($subfield)
 return $results
-       
+       (: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

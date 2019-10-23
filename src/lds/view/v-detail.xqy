@@ -1,14 +1,14 @@
 xquery version "1.0-ml";
 
 module namespace vd = "http://www.marklogic.com/ps/view/v-detail";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
-import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/lds/lib/l-query.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
-import module namespace lh = "http://www.marklogic.com/ps/lib/l-highlight" at "/lds/lib/l-highlight.xqy";
-import module namespace md = "http://www.marklogic.com/ps/model/m-doc" at "/lds/model/m-doc.xqy";
-import module namespace ssk = "info:lc/xq-modules/search-skin"at "/xq/modules/natlibcat-skin.xqy";
-import module namespace mem = "http://xqdev.com/in-mem-update" at "/xq/modules/in-mem-update.xqy";
-import module namespace utils = "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../config.xqy";
+import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "../lib/l-query.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "../lib/l-param.xqy";
+import module namespace lh = "http://www.marklogic.com/ps/lib/l-highlight" at "../lib/l-highlight.xqy";
+import module namespace md = "http://www.marklogic.com/ps/model/m-doc" at "../model/m-doc.xqy";
+import module namespace ssk = "info:lc/xq-modules/search-skin"at "../../xq/modules/natlibcat-skin.xqy";
+import module namespace mem = "http://xqdev.com/in-mem-update" at "../../xq/modules/in-mem-update.xqy";
+import module namespace utils = "info:lc/xq-modules/mets-utils" at "../../xq/modules/mets-utils.xqy";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
 declare default element namespace "http://www.w3.org/1999/xhtml";
 declare namespace mets = "http://www.loc.gov/METS/";

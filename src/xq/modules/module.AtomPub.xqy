@@ -43,7 +43,7 @@ declare namespace at        = "http://purl.org/atompub/tombstones/1.0";
 (:import module namespace constants = "info:lc/id-modules/constants#" at "../constants.xqy";
 import module namespace format      = "info:lc/id-modules/format#" at "module.Format.xqy";:)
 
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../../lds/config.xqy";
 import module namespace feed  		= "info:lc/xq-modules/atom-utils" at "atom-utils.xqy";
 import module namespace shared      = "info:lc/id-modules/shared#" at "module.Shared.xqy";
 declare variable $COUNT as xs:integer := 100;

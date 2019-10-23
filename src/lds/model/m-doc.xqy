@@ -2,15 +2,15 @@ xquery version "1.0-ml";
 
 module namespace 		md 			= "http://www.marklogic.com/ps/model/m-doc";
 
-import module namespace cfg 		= "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
-import module namespace lp 			= "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
-import module namespace utils 		= "info:lc/xq-modules/mets-utils" at "/xq/modules/mets-utils.xqy";
-import module namespace matconf		= "info:lc/xq-modules/config/materials" at "/xq/modules/config/materialtype.xqy";
-import module namespace marcutil	= "info:lc/xq-modules/marc-utils" at "/xq/modules/marc-utils.xqy";
-import module namespace display		= "info:lc/xq-modules/display-utils" at "/xq/modules/display-utils.xqy";
-import module namespace ssk 		= "info:lc/xq-modules/search-skin" at "/xq/modules/natlibcat-skin.xqy";
-import module namespace searchts 	= "info:lc/xq-modules/searchts#" at "/xq/modules/module.SearchTS.xqy";
-import module namespace mem 		= "http://xqdev.com/in-mem-update" at "/xq/modules/in-mem-update.xqy";
+import module namespace cfg 		= "http://www.marklogic.com/ps/config" at "../config.xqy";
+import module namespace lp 			= "http://www.marklogic.com/ps/lib/l-param" at "../lib/l-param.xqy";
+import module namespace utils 		= "info:lc/xq-modules/mets-utils" at "../..//xq/modules/mets-utils.xqy";
+import module namespace matconf		= "info:lc/xq-modules/config/materials" at "../../xq/modules/config/materialtype.xqy";
+import module namespace marcutil	= "info:lc/xq-modules/marc-utils" at "../../xq/modules/marc-utils.xqy";
+import module namespace display		= "info:lc/xq-modules/display-utils" at "../../xq/modules/display-utils.xqy";
+import module namespace ssk 		= "info:lc/xq-modules/search-skin" at "../../xq/modules/natlibcat-skin.xqy";
+import module namespace searchts 	= "info:lc/xq-modules/searchts#" at "../../xq/modules/module.SearchTS.xqy";
+import module namespace mem 		= "http://xqdev.com/in-mem-update" at "../../xq/modules/in-mem-update.xqy";
 
 declare namespace       functx      = "http://www.functx.com";
 declare namespace 		mets		= "http://www.loc.gov/METS/";

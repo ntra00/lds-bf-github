@@ -1,7 +1,7 @@
 xquery version "1.0-ml";
 
 module namespace lfc = "http://www.marklogic.com/ps/lib/l-facet-cache";
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "../config.xqy";
 
 declare function lfc:insert-cache( $id as xs:string, $response as node()* ) {
     let $_ := xdmp:log(text{"Caching results for facet: ",$id},"fine")
