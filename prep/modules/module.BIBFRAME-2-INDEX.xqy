@@ -454,7 +454,7 @@ declare function bibframe2index:get_classes($el as element()*) as element()* {
 		let $classmods:=<mods:mods><mods:classification authority="lcc">{fn:string($e/bf:classificationPortion[1])}</mods:classification></mods:mods>
 		
 		let $holdings:=<hld:holdings></hld:holdings>
-		let $lcc:=ldsindex:get-lcc-facet($classmods, $holdings)
+		let $lcc:=bibframe2index:get-lcc-facet($classmods, $holdings)
 	
 
 return (
