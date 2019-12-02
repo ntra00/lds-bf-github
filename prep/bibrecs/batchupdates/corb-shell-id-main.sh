@@ -22,7 +22,7 @@
 
 
 
-
+# probably not used
 
 #
 # This performs a CORB update for any xqy and uri set, passed in as $1  
