@@ -220,7 +220,7 @@ let $offset:= if (fn:not($offset castable as xs:integer)) then 0
 (:~
 :   Search database for this Work's related  works
 : 
-:	called by works for direc and indirect
+:	called by works for direct and indirect
 :   @param  $uri 		string : http:.../resources/work/c0*  or n*
 :	@param offset	  defaults to zero if not set
 :)
@@ -253,16 +253,15 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 												?tnode 			bf:mainTitle ?label }.  		
 								bind ("Direct" as ?direction) .
 							 }
-							 # 2019-09-12: repeats the last one?
-						# UNION {  		
+							# 2019-09-12: repeats the last one?
+							# UNION {  		
 				  			#			?uri  bflc:relationship ?rel .
-								#  		?rel bf:relatedTo ?relateduri .
-								# FILTER isURI(?relateduri) .
-								
-								#OPTIONAL {		?relateduri 	bf:title 		?tnode .
-									#?tnode 			bf:mainTitle ?label }.  		
-								#BIND ("Direct" as ?direction) .
-							 #}
+							#  		?rel bf:relatedTo ?relateduri .
+							# FILTER isURI(?relateduri) .								
+							#OPTIONAL {		?relateduri 	bf:title 		?tnode .
+							#?tnode 			bf:mainTitle ?label }.  		
+							#BIND ("Direct" as ?direction) .
+							#}
 							  UNION {
 				                  		?uri bflc:relationship ?relClass .
 					                   	
@@ -289,7 +288,7 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 						PREFIX bf: 		<http://id.loc.gov/ontologies/bibframe/>
 						PREFIX bflc: 	<http://id.loc.gov/ontologies/bflc/>
 	            
-						SELECT  distinct ?relation ?relateduri ?label ?direction
+						SELECT  distinct ?relation ?relateduri ?label ?direction ?reltext
 						WHERE { {  		
 				  				?relateduri ?relation ?uri .
 								values ?relation {		bf:relatedTo bf:eventContentOf	bf:hasEquivalent	bf:hasPart	bf:partOf	bf:accompaniedBy	bf:accompanies	
@@ -305,20 +304,22 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 								OPTIONAL {		?relateduri 	rdfs:label		?label }.  		
 								bind ("Inverse" as ?direction) .
 							 } 
-							  UNION {#text relation
+							  UNION {#text relation or non-bf
 							   
 							   			?relClass bf:relatedTo ?uri .
-				                  		?relateduri bflc:relationship ?relClass .
-					                   	
+				                  		?relateduri bflc:relationship ?relClass .					                   	
 					                 
             					
 					            FILTER(  isUri(?relateduri) &&
 					                	 !(regex(?relateduri, "#Work"))
 					             	    )
 					              #OPTIONAL {?relateduri 			rdfs:label		?label  .  	}
-								  OPTIONAL {?relClass 		bflc:relation	?relation  .  	}
-								    OPTIONAL {		?relateduri 	bf:title 		?tnode .
-													?tnode 			bf:mainTitle ?label }.  		
+								    OPTIONAL {?relClass 		bflc:relation	?relation  .  	}
+								    OPTIONAL {		?relateduri 	bf:title 	?tnode .
+													?tnode 			a bf:Title.
+                                        			?tnode bf:mainTitle ?label .
+                             					}.  		
+									#OPTIONAL {?relation 		rdfs:label 	?reltext  .  	}
 								  
 					              BIND  ("text-relation" as ?direction). 				  		
 							 			
@@ -345,7 +346,7 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 	:)
 	
 let $x:=searchts:sparql($query/text(), $params, "/resources/works/")
-    
+    (:let $_:= xdmp:log($x,"info"):)
 	return $x
 	(:searchts:sparql($query/text(), $params, "/resources/works/"):)
 };	

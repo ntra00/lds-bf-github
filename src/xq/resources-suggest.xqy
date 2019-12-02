@@ -96,36 +96,44 @@ let $searchLabel2 :=       xs:QName("idx:title")
 let $stop := xs:integer($offset) + xs:integer($resultCount) - 1
 	
 let $completions:=
-if ( fn:not($term)) then
-	distinct-values(
-				(
-				((cts:element-value-match($searchLabel2, concat(normalize-space($q), "*"),("case-insensitive", "diacritic-insensitive", "ascending", "collation=http://marklogic.com/collation/codepoint"), ($ctsquery))))
-				,((cts:element-value-match($searchLabel, concat(normalize-space($q), "*"),("case-insensitive", "diacritic-insensitive", "ascending", "collation=http://marklogic.com/collation/en/S1"), ($ctsquery))))
-				)
-	)[xs:integer($offset) to $stop]
-else 
-(: was element value query but isbn has more than exact match ; qualifiers:)
-				cts:search( 
-		           /mets:mets,   cts:element-query($searchLabel, $q)
-				   )
-					 
+		if ( fn:not($term)) then
+			distinct-values(
+						(
+						((cts:element-value-match($searchLabel2, concat(normalize-space($q), "*"),("case-insensitive", "diacritic-insensitive", "ascending", "collation=http://marklogic.com/collation/codepoint"), ($ctsquery))))
+						,((cts:element-value-match($searchLabel, concat(normalize-space($q), "*"),("case-insensitive", "diacritic-insensitive", "ascending", "collation=http://marklogic.com/collation/en/S1"), ($ctsquery))))
+						)
+			)[xs:integer($offset) to $stop]
+		else 
+		(: was element value query but isbn has more than exact match ; qualifiers:)
+						cts:search( 
+				           /mets:mets,   cts:element-query($searchLabel, $q)
+						   )
 let $search := 
-    for $c in $completions    
- 		let $mets :=  if (fn:not($term) ) then
-			cts:search(
-		           /mets:mets,                                
-					cts:and-query((
-							$ctsquery,
-							cts:or-query((
-		                          cts:element-range-query($searchLabel, "=",$c, ( "collation=http://marklogic.com/collation/en/S1") ),
-								  cts:element-range-query($searchLabel2, "=",$c, ( "collation=http://marklogic.com/collation/codepoint") )
-							))
-		            ))                    
-                  )                              
+
+    for $c at $x in $completions
+
+	 		let $mets :=  if (fn:not($term) ) then			
+				cts:search(
+			           /mets:mets,                                
+						(cts:and-query((
+								$ctsquery,
+								cts:or-query((
+			                          cts:element-range-query($searchLabel, "=", normalize-unicode($c), ( "collation=http://marklogic.com/collation/en/S1") ),
+									  cts:element-range-query($searchLabel2, "=",normalize-unicode($c), ( "collation=http://marklogic.com/collation/codepoint") )
+								))
+			            ))
+						)
+						,
+						(cts:index-order(cts:element-reference(xs:QName("idx:lccn") ) ,("descending")))
+						
+	                  )                              
 				  
-				  else $c[1]
+					  else (
+					  	$c[1]
+						)
 				  
-    		return string($mets[1]/@OBJID)
+				return for $x in $mets return string($x/@OBJID)					
+	 
 
 (: term= missing or lccn or token 
 	if it's a nametitle, you found the work 
@@ -190,7 +198,9 @@ let $search:=
 		                          cts:element-range-query($searchLabel, "=",$c, ( "collation=http://marklogic.com/collation/en/S1") ),
 								  cts:element-range-query($searchLabel2, "=",$c, ( "collation=http://marklogic.com/collation/codepoint") )
 							))
-		            ))                    
+		            ))
+					,
+						(cts:index-order(cts:element-reference(xs:QName("idx:lccn") ) ,("descending")))                    
                   )       
 				  else ()                       
     	return $mets[1]/mets:dmdSec[@ID="bibframe"]
@@ -343,6 +353,6 @@ return
 else
 			xdmp:set-response-code(404,"Item Not found")(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
 <metaInformation>
-<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+<scenarios ><scenario default="yes" name="Scenario1" userelativepaths="yes" externalpreview="no" useresolver="no" url="" outputurl="" processortype="internal" tcpport="6357110" profilemode="0" profiledepth="" profilelength="" urlprofilexml="" commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" host="" port="0" user="" password="" validateoutput="no" validator="internal" customvalidator=""/></scenarios><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
 </metaInformation>
 :)

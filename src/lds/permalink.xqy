@@ -307,10 +307,8 @@ return
 				let $marcxml:= if ($mxe ) then  try 	 { marcutil:mxe2-to-marcslim($mxe) } 
 												catch($e){ () } 
 								else ()
-									let $_:=xdmp:log($uri,"info")						
-				let $_:=xdmp:log($bibid,"info")						
-				let $_:=xdmp:log($objid,"info")
-				let $_:=xdmp:log(doc-available(fn:concat("/bibframe-process/records/",fn:replace($uri,"/resources/bibs/",""),".xml"))	,"info")
+				
+				
 				return if ( $marcxml ) then
 					(
 		            		xdmp:set-response-content-type("text/xml; charset=utf-8"), 

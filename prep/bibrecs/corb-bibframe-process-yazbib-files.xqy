@@ -38,6 +38,7 @@ xquery version "1.0-ml";
 :)
 
 module namespace m2bfyaz ="http://loc.gov/ndmso/marc-2-bibframe-yaz/" ;
+
 import module namespace 		mem 				= "http://xqdev.com/in-mem-update" 		 at '/MarkLogic/appservices/utils/in-mem-update.xqy';
 
 (: Namespaces :)

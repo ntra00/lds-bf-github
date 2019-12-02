@@ -81,13 +81,13 @@ let $workparams := $lp:CUR-PARAMS
 
 };
 (: if you call render w/o "simple", it redirects with "" as the source (plain bf rdf) :)
-declare function vd:render($perm_uri as xs:string) as element()+ {
+declare function vd:render($perm_uri as xs:string) {
 vd:render($perm_uri,"")
 };
 (: if you call render w/o a uri, it redoes  and displays the current search , offset at viewindex
 :  actually, there are only 2 mets docs in results at a time; controlled by prev/next, viewindex
 :)
-declare function vd:render($perm_uri as xs:string, $source_rdf as xs:string) as element()+ {
+declare function vd:render($perm_uri as xs:string, $source_rdf as xs:string) {
 
     let $viewindex := lp:get-param-integer($lp:CUR-PARAMS, 'index', 1)
 	let $sparql-offset:=lp:get-param-integer($lp:CUR-PARAMS, 'offset', 0)
@@ -496,9 +496,9 @@ declare function vd:render($perm_uri as xs:string, $source_rdf as xs:string) as 
      
      
     (: End kefo addition :)
-       
+       (: nate added current object to return so we can render different formats instead of html for detail.xqy:)
     return
-        ($seo, $htmldiv)
+        ($seo, $htmldiv, $current_object, $uri)
 };(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
 <metaInformation>
 <scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>

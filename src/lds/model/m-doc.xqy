@@ -35,7 +35,7 @@ declare default function namespace "http://www.w3.org/2005/xpath-functions";
 
 declare variable $INVERSES :=
 <set>
-		<rel><name>relatedTo</name><inverse>relatedTo</inverse></rel>
+		<rel><name>relatedTo</name><inverse>relatedTo</inverse><label>Related To</label></rel>
 		<rel><name>hasInstance</name><inverse>instanceOf</inverse></rel>
 		<rel><name>instanceOf</name><inverse>hasInstance</inverse></rel>
 		<rel><name>hasExpression</name><inverse>expressionOf</inverse></rel>
@@ -287,6 +287,21 @@ declare function md:titleChop($title,$length) {
 declare function md:reverse-str( $str as xs:string? )  as xs:string {
    codepoints-to-string(reverse(string-to-codepoints($str)))
  } ;
+(:  this is to get the label of the entities/lationships at Id for entities/relationships (head request) or bibframe (get rdf)
+:)
+ declare function md:get-rel-label( $uri as xs:string )  as xs:string {
+
+ let $uri:= if (fn:contains($uri, "entities/relationship")) then fn:concat($uri,".html") 
+ 			else  fn:concat($uri,".rdf") 
+   let $res:=if (fn:contains($uri, "entities/relationship")) then xdmp:http-head($uri)
+		   else xdmp:http-get($uri)[2]
+
+   let $_:= xdmp:log($uri,"info")
+return if (fn:contains($uri, "entities/relationship")) then 
+				fn:string($res//xdmphttp:x-preflabel)
+			else
+			$res/rdf:RDF//rdfs:label[1]
+ } ;
 (:sparql results layout : 
 :  params @results : sparql results
 :  		  @my-uri is the current uri, so you don't create a link to yourself
@@ -300,6 +315,9 @@ let $my-node:=fn:tokenize($my-uri,"/")[fn:last()]
 (:let $style:=if ($label="Has Instance(s)") then "background-color: #DDDDDD;"	else ()
 <ul style="{$style }" >
 changing the style based on depth only will work if we know the parent.
+**
+** if incoming is from /id.loc.gov/entities/relationships/, then  I don't know the inverse; get the label and add "of"?
+**
 :)
 return
 		if ($results/sparql:result) then		
@@ -308,25 +326,37 @@ return
 		<h2 class="top">{$label}</h2>
 				{ 
 				for $node in $results/sparql:result
-			 		let $node-uri:=fn:string($node/sparql:binding[@name="relateduri"]/sparql:uri)
-					let $node-id:=fn:tokenize($node-uri,"/")[fn:last()]									
+				 		let $node-uri:=fn:string($node/sparql:binding[@name="relateduri"]/sparql:uri)
+				
+						let $node-id:=fn:tokenize($node-uri,"/")[fn:last()]									
+						let $_:=xdmp:log($label,"info")
+						
+						let $node-label:=
+											md:titleChop($node/sparql:binding[@name="label"]/sparql:literal,100)
+			 		let $_:= if (fn:contains($label,"Outgoing")) then xdmp:log($node-label,"info") else ()
+						let $node-rel:= 													
+											if ($node/sparql:binding[@name="relation"]/sparql:uri) then
+													fn:string($node/sparql:binding[@name="relation"]/sparql:uri)
+											else if ($bf) then
+													$bf/bf:Work/bflc:relationship/bflc:Relationship[fn:string(bf:relatedTo/bf:Work/@rdf:about)=$node-uri]/bflc:relation/rdfs:Resource/rdfs:label
+											else fn:string($node/sparql:binding[@name="relation"]/sparql:uri)
 			 		
-					let $node-label:=md:titleChop($node/sparql:binding[@name="label"]/sparql:literal,100)
-			 		
-					let $node-rel:= 	if ($node/sparql:binding[@name="relation"]/sparql:uri) then
-												 $node/sparql:binding[@name="relation"]/sparql:uri
-										else if ($bf) then
-												$bf/bf:Work/bflc:relationship/bflc:Relationship[fn:string(bf:relatedTo/bf:Work/@rdf:about)=$node-uri]/bflc:relation/rdfs:Resource/rdfs:label
-											else $node/sparql:binding[@name="relation"]/sparql:uri
-			 		let $node-relation:=fn:tokenize(fn:string($node-rel),"/")[fn:last()]
-					
-					(: a stub work for c006408223 is c0064082230001  :)
-					(: a native instance will have the same root work for c006408223 is c0064082230001  
-					 on siblings, the first 10 will be the same :)
-					let $stub:=if (fn:contains($node-id,$my-node)) then "stub" else "notstub"
-					let $native:=if (fn:contains(fn:substring($node-id,1,10) ,fn:substring($my-node,1,10)) )then "native" else "non"
-					(:instances on work and siblings on instances show only the instance num if same root:)
-					let $node-id:=if ((fn:contains($label,"Has Instance") or  fn:contains($label,"Sibling") ) and $native="native") then
+				let $_:= if (fn:contains($label,"Incoming"))  then xdmp:log($node-rel,"info") else ()
+
+						let $node-relation:=if (fn:contains(fn:string($node/sparql:binding[@name="relation"]/sparql:uri),"entities/relationships") ) then
+												
+													md:get-rel-label(fn:string($node/sparql:binding[@name="relation"]/sparql:uri))
+						 						else if ($node/sparql:binding[@name="relation"]/sparql:uri) then
+													md:get-rel-label(fn:string($node/sparql:binding[@name="relation"]/sparql:uri))
+												 else  $node-rel
+						let $_:= if (fn:contains($label,"Incoming"))  then xdmp:log($node-relation,"info") else ()
+						(: a stub work for c006408223 is c0064082230001  :)
+						(: a native instance will have the same root work for c006408223 is c0064082230001  
+						 on siblings, the first 10 will be the same :)
+						let $stub:=if (fn:contains($node-id,$my-node)) then "stub" else "notstub"
+						let $native:=if (fn:contains(fn:substring($node-id,1,10) ,fn:substring($my-node,1,10)) )then "native" else "non"
+						(:instances on work and siblings on instances show only the instance num if same root:)
+						let $node-id:=if ((fn:contains($label,"Has Instance") or  fn:contains($label,"Sibling") ) and $native="native") then
 										fn:concat("i",fn:substring($node-id,fn:string-length($node-id)-3))
 									else if ($stub="stub" and fn:not(fn:contains($label,"Item")) and fn:not(fn:contains($node-uri,"#Work")))  then
 										fn:concat("w",fn:substring($node-id,fn:string-length($node-id)-3))
@@ -345,16 +375,17 @@ return
 							 else if ( $my-uri != $node-uri ) then
 										let $related-local-uri:=fn:replace($node-uri,"id.loc.gov",$cfg:DISPLAY-SUBDOMAIN) (:???:)
 										(: relations onl show (ie., vary) for works, not hasinstance, hasitem:)
-										let $inverse:= if (fn:contains($label, "Incoming") and fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 								
-														md:inverseRelationship($node-rel)											
+										let $inverse:= if (fn:contains($label, "Incoming") and fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 																							
+														 md:inverseRelationship($node-rel, $node-relation)											
 														else ()
 										let $relation:= 
 											if (fn:contains($label, "Incoming") and fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 																																				
-															<span style="color:blue;">{fn:substring-before($inverse,"inverse rel not available")}</span>
+															(:<span style="color:blue;">{fn:substring-before($inverse,"inverse rel not available")}</span>:)
+															<span style="color:blue;">{fn:concat($inverse," : ")}</span>
 													else if (fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 
 														<span style="color:blue;">{fn:concat($node-relation," : ")}</span>
 													else ()
-									
+									let $_:= if (fn:contains($label,"Outgoing"))  then xdmp:log($relation,"info") else ()
 										let $layout :=
 											   if (fn:contains($inverse,"inverse rel not available")) then
 																(<a href="{$related-local-uri}">{fn:string($node-label)} </a>, fn:concat("(", $node-id,")" ,fn:concat(" (", <span style="color:blue;">{$relation}</span>,")" ) ) )
@@ -402,25 +433,33 @@ declare function md:work-siblings-old($my-uri) {
 	
 	return(	 $expressions, $other-works )
 };
-declare function md:inverseRelationship($relation) {
+declare function md:inverseRelationship($relation-uri, $relation-text) {
 (:for $rel in $indirect-res//sparql:result
 let $relation:=fn:tokenize(fn:string($rel/sparql:binding[@name="relation"]/sparql:uri),"/")[fn:last()]
 	:)
-let $token:=fn:tokenize($relation,"/")[fn:last()]
+let $token:=fn:tokenize($relation-uri,"/")[fn:last()]
 
-let $inverse:= if (fn:index-of(distinct-values($INVERSES//rel/name), $relation )) then
-								fn:string($INVERSES//rel[fn:string(name) = $relation]/inverse)
-				else if (fn:contains($relation,"relationships") ) then 
-							fn:concat($token, "inverse rel not available")
-							else "relatedTo"
+let $inverse:= if (fn:index-of(distinct-values($INVERSES//rel/name), $relation-uri )) then
+				let $i:=			fn:string($INVERSES//rel[fn:string(name) = $relation-uri]/inverse)
+					return $INVERSES//rel[fn:string(name) =$i]/label
+				else if (fn:contains($relation-uri,"relationships") and fn:ends-with($relation-uri,"of")) then 
+							(:fn:concat($token, "inverse rel not available"):)
+							fn:substring-before($relation-text, "of")
+				else if (fn:contains($relation-uri,"relationships") )  then
+					fn:concat($relation-text, " of")
+				else "Related resource"
 
+let $_:= xdmp:log("inverse","info") 
 
+let $_:= xdmp:log($inverse,"info") 
 (:let $_:= xdmp:node-replace($rel/sparql:binding[@name="relation"]/sparql:uri,
 								<sparql:uri>{fn:concat("http://id.loc.gov/ontologies/bibframe/",$inverse)}</sparql:uri>
 				):)
 
 return $inverse
 };
+
+
 declare function md:work-siblings($my-uri, $offset,$bf) {
 	let $limit:=$cfg:SPARQL-LIMIT
 	let $direct-res:=

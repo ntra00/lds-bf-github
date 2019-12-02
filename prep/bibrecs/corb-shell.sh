@@ -10,9 +10,6 @@
 # if  changecode, = reload then corb-bibframe-process-bib-files.xqy (ie reload)
 
 #
-# threads will default to 4
-
-#
 #(expects c-add-colls.xqy, c-add-colls-uris.xqy)
 # database is natlibcat by default
 
@@ -32,20 +29,16 @@
 #	module root - try /marklogic/id/id-prep/ is 8282 root
 # 	module database, use 0 for filesystem
 # 	INSTALL - have no idea what this means, set to false.
- # xcc://id-admin:111888-USER-admin@mlvlp04.loc.gov:8282/ \
+ # xcc://id:pw@mlvlp04.loc.gov:port/ \
  
- #BASEPATH=/marklogic/id/natlibcat/admin/bfi/bibrecs/
+#set dirs etc:
+source config bibrecs
 
- CORBPATH=/marklogic/id/corb
- PASSWD=`/marklogic/id/id-prep/marc/keys/passwd-ml.sh`
- USER=id-admin 
-
- CHANGEURIS="batchupdates/$1-uris.xqy"
- 
+CHANGEURIS="$1-uris.xqy"
+CHANGECODE=$2
+COLLECTIONS="/processing/$1/" 
 
 
-
- CHANGECODE=$2
 
 if [ "$CHANGECODE" != "reload" ]
 then
@@ -54,16 +47,16 @@ then
 	 CHANGECODE="corb-bibframe-process-bib-files.xqy"
  fi
 
- THREADS=4
- 
+#echo "$CORBPATH/marklogic-xcc-8.0-5.jar  xcc://$BFDB_XCC_USER:BFDB_XCC_PASS@BFDB_HOST:BFDB_PORT/ ? $COLLECTIONS : $CHANGECODE  | $THREADS : $CHANGEURIS"
+
 java   -Xmx32G  -XX:+UseConcMarkSweepGC -cp $CORBPATH/marklogic-xcc-8.0-5.jar:$CORBPATH/corb.jar \
    com.marklogic.developer.corb.Manager \
-   xcc://$USER:$PASSWD@localhost:8203/  \
-   "" \
+   xcc://$BFDB_XCC_USER:$BFDB_XCC_PASS@$BFDB_HOST:$BFDB_XCC_PORT/  \
+   $COLLECTIONS \
    $CHANGECODE \
    $THREADS \
    $CHANGEURIS \
-   /admin/bfi/bibrecs/ \
+   /prep/bibrecs/batchupdates/ \
    0 \
    false
 

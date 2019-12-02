@@ -41,6 +41,61 @@ declare variable $view as xs:string := xdmp:get-request-field("view","html");  (
 
 (:declare variable $CAPITAL-ALPHA as xs:string  :="ABCDEFGHIJKLMNOPQRSTUVWXYZ"; :)
 
+declare variable $display:Relationships as element() :=
+<set>
+		<rel><name>relatedTo</name><inverse>relatedTo</inverse></rel>
+		<rel><name>relationship</name><inverse>relatedTo</inverse></rel>
+		<!--<rel><name>hasInstance</name><inverse>instanceOf</inverse></rel>-->
+		<rel><name>instanceOf</name><inverse>hasInstance</inverse></rel>
+		<rel><name>hasExpression</name><inverse>expressionOf</inverse></rel>
+		<rel><name>expressionOf</name><inverse>hasExpression</inverse></rel>
+		<rel><name>hasItem</name><inverse>itemOf</inverse></rel>
+		<rel><name>itemOf</name><inverse>hasItem</inverse></rel>
+		<rel><name>eventContent</name><inverse>eventContentOf</inverse></rel>
+		<rel><name>eventContentOf</name><inverse>eventContent</inverse></rel>
+		<rel><name>hasEquivalent</name><inverse>hasEquivalent</inverse></rel>
+		<rel><name>hasPart</name><inverse>partOf</inverse></rel>
+		<rel><name>partOf</name><inverse>hasPart</inverse></rel>
+		<rel><name>accompaniedBy</name><inverse>accompanies</inverse></rel>
+		<rel><name>accompanies</name><inverse>accompaniedBy</inverse></rel>
+		<rel><name>hasDerivative</name><inverse>derivativeOf</inverse></rel>
+		<rel><name>derivativeOf</name><inverse>hasDerivative</inverse></rel>
+		<rel><name>precededBy</name>	<inverse>succeededBy</inverse></rel>
+		<rel><name>succeededBy</name>	<inverse>precededBy</inverse></rel>
+		<rel><name>references</name><inverse>referencedBy</inverse></rel>
+		<rel><name>referencedBy</name><inverse>references</inverse></rel>
+		<rel><name>issuedWith</name>	<inverse>issuedWith</inverse></rel>		
+		<rel><name>otherPhysicalFormat</name><inverse>otherPhysicalFormat</inverse></rel>
+		<rel><name>hasReproduction</name><inverse>reproductionOf</inverse></rel>
+		<rel><name>reproductionOf</name><inverse>hasReproduction</inverse></rel>
+		<rel><name>hasSeries</name><inverse>seriesOf</inverse></rel>
+		<rel><name>seriesOf</name><inverse>hasSeries</inverse></rel>
+		<rel><name>hasSubseries</name><inverse>subseriesOf</inverse></rel>
+		<rel><name>subseriesOf</name><inverse>hasSubseries</inverse></rel>
+		<rel><name>supplement</name><inverse>supplementTo</inverse></rel>
+		<rel><name>supplementTo</name><inverse>supplement</inverse></rel>
+		<rel><name>translation</name><inverse>translationOf</inverse></rel>
+		<rel><name>translationOf</name><inverse>translation</inverse></rel>
+		<rel><name>originalVersion</name><inverse>originalVersionOf</inverse></rel>
+		<rel><name>originalVersionOf</name><inverse>originalVersion</inverse></rel>
+		<rel><name>index</name><inverse>indexOf</inverse></rel>
+		<rel><name>indexOf</name><inverse>index</inverse></rel>
+		<rel><name>otherEdition</name><inverse>otherEdition</inverse></rel>
+		<rel><name>findingAid</name><inverse>findingAidOf</inverse></rel>
+		<rel><name>findingAidOf</name><inverse>findingAid</inverse></rel>
+		<rel><name>replacementOf</name><inverse>replacedBy</inverse></rel>
+		<rel><name>replacedBy</name><inverse>replacementOf</inverse></rel>
+		<rel><name>mergerOf</name><inverse>mergedToForm</inverse></rel>
+		<rel><name>mergedToForm</name><inverse>mergerOf</inverse></rel>
+		<rel><name>continues</name><inverse>continuedBy</inverse></rel>
+		<rel><name>continuedBy</name><inverse>continues</inverse></rel>
+		<rel><name>continuesInPart</name><inverse>splitInto</inverse></rel>
+		<rel><name>splitInto</name><inverse>continuesInPart</inverse></rel>
+		<rel><name>absorbed</name><inverse>absorbedBy</inverse></rel>
+		<rel><name>absorbedBy</name><inverse>absorbed</inverse></rel>
+		<rel><name>separatedFrom</name><inverse>continuedInPartBy</inverse></rel>
+		<rel><name>continuedInPartBy</name><inverse>separatedFrom</inverse></rel>
+</set>;
 declare variable $display:Ignores as element() :=
 <properties> 
 	<property name="bflc:titleSortKey"/>
@@ -258,8 +313,8 @@ declare variable $display:RDFprops as element () :=
 	<property name="replacedBy" range="Work or Instance" sort="31wd">Succeeded by</property>
 	<property name="mergerOf" range="Work or Instance" sort="31we">Merger of</property>
 	<property name="mergedToForm" range="Work or Instance" sort="31wf">Merged to form</property>
-	<property name="continues" range="Work or Instance" sort="31wg">Continuation of</property>
-	<property name="continuesInPart" range="Work or Instance" sort="31wh">Continuation in part of</property>
+	<property name="continues" range="Work or Instance" sort="31wg">Continues</property>
+	<property name="continuesInPart" range="Work or Instance" sort="31wh">Continues in part</property>
 	<property name="absorbed" range="Work or Instance" sort="31wi">Absorption of</property>
 	<property name="absorbedBy" range="Work or Instance" sort="31wj">Absorbed by</property>
 	<property name="continuedBy" range="Work or Instance" sort="31wk">Continued by</property>
@@ -285,7 +340,7 @@ declare variable $display:RDFprops as element () :=
 	<!-- bflc starts:  -->
 	<property name="demographicGroup" range="DemographicGroup" sort="33d">Demographic group</property>
 	<property name="creatorCharacteristic" range="CreatorCharacteristic" sort="33">Creator characteristic</property>
-	<property name="projectedProvisionDate" range="date" sort="33">Projected publication date</property>
+	<property name="projectedProvisionDate"  sort="33">Projected publication date</property>
 	<property name="metadataLicensor" domain="AdminMetadata" range="MetadataLicensor" sort="33">Metadata licensor</property>
 	<property name="encodingLevel" domain="AdminMetadata" range="EncodingLevel" sort="99a" >Encoding level</property>	
 	<property name="appliesTo" range="AppliesTo" sort="33">Applies to</property>
@@ -550,7 +605,10 @@ declare variable $display:RDFclasses as element () :=
 declare variable  $ignores :=
 	for $prop in $display:Ignores/*			
 			return fn:string($prop/@name);
-			
+declare variable  $relations :=
+	for $prop in $display:Relationships/rel
+			return fn:string($prop/name);
+
 declare variable  $literal-props :=
 	for $prop in $display:RDFprops/*[fn:string(@range)="literal"]
 			order by $prop/@sort
@@ -575,6 +633,7 @@ declare function display:display-rdf($rdf, $indent ) {
 (
  if ($rdf instance of element(rdf:RDF)) then
  let $uri:=fn:string($rdf/*[1]/@rdf:about)
+ 
  let $bgcolor:=if (fn:contains($uri, "works") ) then "SeaGreen" 
 			 else if (fn:contains($uri, "instances") ) then "DarkBlue" 
 			else "SandyBrown"
@@ -1109,6 +1168,7 @@ return
 			
   		
 };
+(: not used yet :)
 
 declare function display:properties-simple($rdf-block, $indent ) {
 
@@ -1133,8 +1193,9 @@ else (:rdf:resource :)
 };
 declare function display:properties($rdf-block, $indent ) {
 
-
+(:$display:Relationships/set/rel/name :) 
 for $rdf in $rdf-block/*[fn:not(index-of($ignores,fn:name(self::*)))]
+						[fn:not(index-of($relations,fn:local-name(self::*))   )]
         				order by index-of($props-order,fn:local-name($rdf))
 return                        
 
@@ -1145,6 +1206,8 @@ if ($rdf instance of element (bf:instanceOf) or
 	$rdf instance of element (bflc:consolidates) or
 	$rdf instance of element (lclocal:consolidates) or
 	$rdf instance of element (bf:hasPart) or 
+	$rdf instance of element (bf:translationOf) or 
+	$rdf instance of element (bf:hasItem) or 
 	(:$rdf instance of element (bf:expressionOf) or 
 	$rdf instance of element (bf:hasExpression) or :)
 	$rdf instance of element(bflc:derivedFrom) 

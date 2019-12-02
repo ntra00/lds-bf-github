@@ -4,6 +4,7 @@
 # Ignore 
 **/.svn
 
+
 src/id-main/**
 src/static/tohap/**
 src/splashpages/**
@@ -15,8 +16,11 @@ src/xq/modules/ead/**
 src/xq/modules/pass*
 src/xq/rdfxq*
 
+prep/bibrecs/config
+
 # marc2bibframe2
 prep/bibrecs/xsl
+
 prep/bibrecs/batchupdates/**
 prep/bibrecs/loaded/**
 prep/bibrecs/singleload/**
