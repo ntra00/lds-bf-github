@@ -44,7 +44,7 @@ declare variable $view as xs:string := xdmp:get-request-field("view","html");  (
 declare variable $display:Relationships as element() :=
 <set>
 		<rel><name>relatedTo</name><inverse>relatedTo</inverse></rel>
-		<rel><name>relationship</name><inverse>relatedTo</inverse></rel>
+		<!--<rel><name>relationship</name><inverse>relatedTo</inverse></rel>-->
 		<!--<rel><name>hasInstance</name><inverse>instanceOf</inverse></rel>-->
 		<rel><name>instanceOf</name><inverse>hasInstance</inverse></rel>
 		<rel><name>hasExpression</name><inverse>expressionOf</inverse></rel>
@@ -152,7 +152,7 @@ declare variable $display:RDFprops as element () :=
 	<property name="carrier" range="Carrier" sort="02e">Carrier type</property>
 	
 	<property name="genreForm" range="GenreForm" sort="02f">Genre/form</property>
-	<property name="title" range="Title " sort="01c">Title </property>
+	<property name="title" range="Title" sort="01c">Title </property>
 	<property name="mainTitle" range="literal" sort="01d">Main title</property>
 	
 	<property name="subtitle" range="literal" sort="01e">Subtitle</property>
@@ -572,7 +572,7 @@ declare variable $display:RDFclasses as element () :=
 	<class name="bf:ImageBitDepth" subclassof="DigitalCharacteristic">Image bit depth</class>
 <!-- bflc: -->
 	<!-- auths -->
-	<class name="bflc:TransliteratedTitle" sort="01" >Transliterated</class>
+	<class name="bflc:TransliteratedTitle" sort="01" >Transliterated title</class>
 	<class name="bflc:SeriesAnalysis" sort="55a">Series analysis</class> 
 	<class name="bflc:SeriesTracing" sort="55a">Series tracing</class>
 	<class name="bflc:SeriesClassification" sort="55a">Series classification</class>
@@ -602,12 +602,13 @@ declare variable $display:RDFclasses as element () :=
 <class name="pmo:VoiceEnsemble"  namespace="pmo" sort="24i">Voice Ensemble</class> 
 
 </classes>;
-declare variable  $ignores :=
-	for $prop in $display:Ignores/*			
-			return fn:string($prop/@name);
 declare variable  $relations :=
 	for $prop in $display:Relationships/rel
 			return fn:string($prop/name);
+
+declare variable  $ignores :=
+	for $prop in $display:Ignores/*			
+			return fn:string($prop/@name);
 
 declare variable  $literal-props :=
 	for $prop in $display:RDFprops/*[fn:string(@range)="literal"]
@@ -920,12 +921,17 @@ return
 };
 declare  function display:title($rdf,$indent){
   
-  (  <dt class="label">{if ( $rdf/rdf:type) then  								
-								for $type in $rdf/rdf:type[1] 
-									return display:linkme($type,"label")
-									
+  (  <dt class="label">{if ( fn:name($rdf)="bf:Title" and  ( not($rdf/rdf:type) or $rdf/rdf:type="http://id.loc.gov/ontologies/bibframe/Title") ) then  																						
+							fn:string($display:RDFclasses/class[@name=fn:name($rdf)]) 
+						else  if ( fn:name($rdf)!="bf:Title") then  															
+									 fn:string($display:RDFclasses/class[@name=fn:name($rdf)]) 
+
+						else if ( fn:name($rdf)="bf:Title" and   $rdf/rdf:type!="http://id.loc.gov/ontologies/bibframe/Title") then  								  							
+									for $type in $rdf/rdf:type[1] 
+									return display:linkme($type,"label")  																
 						else
-						 			fn:string($display:RDFclasses/class[@name=fn:name($rdf)]) 
+
+						( 			fn:string($display:RDFclasses/class[@name=fn:name($rdf)]) )
 						}
 						</dt>,
 	        
@@ -1105,10 +1111,10 @@ let $result:=
 			 $rdf instance of element(bf:CollectiveTitle) or			 
 			
 			 $rdf instance of element(bf:Agent) ) then
-	    display:title($rdf,$indent) 
+	    		display:title($rdf,$indent) 
 	
-	else
-	    (  <dt class="label">{if ($rdf/rdf:type) then
+		else
+		    (  <dt class="label">{if ($rdf/rdf:type) then
 									for $type in $rdf/rdf:type[@rdf:resource]
 										return (display:linkme($type,"label"), " ")
 								else if (fn:name($rdf) = "rdfs:Resource" and fn:name($rdf/parent::*) = "bf:supplementaryContent") then
@@ -1169,7 +1175,7 @@ return
   		
 };
 (: not used yet :)
-
+(:
 declare function display:properties-simple($rdf-block, $indent ) {
 
 for $rdf in $rdf-block/*[fn:not(index-of($ignores,fn:name(self::*)))]
@@ -1191,9 +1197,11 @@ else (:rdf:resource :)
 
 	)
 };
+:)
 declare function display:properties($rdf-block, $indent ) {
 
 (:$display:Relationships/set/rel/name :) 
+
 for $rdf in $rdf-block/*[fn:not(index-of($ignores,fn:name(self::*)))]
 						[fn:not(index-of($relations,fn:local-name(self::*))   )]
         				order by index-of($props-order,fn:local-name($rdf))
@@ -1256,7 +1264,7 @@ if ($rdf instance of element (bf:instanceOf) or
 				)
   (: blank node property or text related? :)
   else if ($rdf/bf:Work) then 
-              (<dt class="label">{ fn:string($display:RDFprops/property[@name=fn:local-name($rdf)]) }</dt>,
+              (<dt class="label">1{ fn:string($display:RDFprops/property[@name=fn:local-name($rdf)]) }</dt>,
 				 <dd class="bibdata"> (Work) </dd>,
 				 <div>{display:class($rdf/bf:Work, $indent+5 )}</div>
 				 (:<div class="boxed">{display:class($rdf/bf:Work, $indent+5 )}</div>:)
@@ -1287,7 +1295,9 @@ if ($rdf instance of element (bf:instanceOf) or
 		 
 									display:linkme($rdf/child::*[1],"value")
 							}</dd>)
- 
+ else if ($rdf instance of element(bf:title)) then
+ 		( display:class($rdf/*, $indent+5 ))
+		
  else  if ($rdf instance of element(bflc:encodingLevel)  or
 			 $rdf instance of element(bf:descriptionConventions ) or 
 			 $rdf instance of element(bf:status )  or 
