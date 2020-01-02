@@ -68,10 +68,10 @@ declare variable $body := xdmp:get-request-body("xml")/node();
 :)
 
 
-import module namespace b2mload 			= 		"http://loc.gov/ndmso/bibs-2-mets-load"	at 	"module.bibs2mets-load.xqy";
+import module namespace b2mload 			= 		"http://loc.gov/ndmso/bibs-2-mets-load"	at 	"../module.bibs2mets-load.xqy";
 
 
-import module namespace bibframe2index      =       "info:lc/id-modules/bibframe2index#" 	at "module.BIBFRAME-2-INDEX.xqy";
+import module namespace bibframe2index      =       "info:lc/id-modules/bibframe2index#" 	at "../module.BIBFRAME-2-INDEX.xqy";
 
 
 
@@ -221,3 +221,8 @@ return
 				    
 return ()
 };
+(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

@@ -38,7 +38,6 @@ xquery version "1.0-ml";
 :)
 
 module namespace m2bfyaz ="http://loc.gov/ndmso/marc-2-bibframe-yaz/" ;
-
 import module namespace 		mem 				= "http://xqdev.com/in-mem-update" 		 at '/MarkLogic/appservices/utils/in-mem-update.xqy';
 
 (: Namespaces :)
@@ -63,11 +62,11 @@ declare variable $body := xdmp:get-request-body("xml")/node();
 :)
 
 
-import module namespace bibs2mets 			= 		"http://loc.gov/ndmso/bibs-2-mets" 		at 	"/prep/modules/module.bibs2mets.xqy";
-import module namespace marcutil			= 		"info:lc/xq-modules/marc-utils" 		at	"/src/xq/modules/marc-utils.xqy";
+import module namespace bibs2mets 			= 		"http://loc.gov/ndmso/bibs-2-mets" 		at 	"../modules/module.bibs2mets.xqy";
+import module namespace marcutil			= 		"info:lc/xq-modules/marc-utils" 		at	"../modules/module.marcutils.xqy";
 
-import module namespace bibframe2index      =       "info:lc/id-modules/bibframe2index#" 	at "/prep/modules/module.BIBFRAME-2-INDEX.xqy";
-import module namespace bf4ts   			=      "info:lc/xq-modules/bf4ts#"  			at "/prep/modules/module.BIBFRAME-4-Triplestore.xqy";
+import module namespace bibframe2index      =       "info:lc/id-modules/bibframe2index#" 	at "../modules/module.BIBFRAME-2-INDEX.xqy";
+import module namespace bf4ts   			=      "info:lc/xq-modules/bf4ts#"  			at "../modules/module.BIBFRAME-4-Triplestore.xqy";
 
 
 
@@ -77,9 +76,9 @@ declare variable $TODAY as xs:string:=fn:substring(fn:string(fn:current-date()),
 
 declare variable $XML-STRING as xs:string external;
 
-(: if overwrite=repl then update=replace, unconditionally
+(: if overwrite=yes then update=replace, unconditionally:)
 declare variable $OVERWRITE as xs:string external ;
-:)
+
 
 
 (:
@@ -149,23 +148,28 @@ declare function m2bfyaz:transform(
 {
 
 	let $start := xdmp:elapsed-time()
-	
+	let $OVERWRITE:= map:get($context, "transform_param")
 	let $body := map:get($content, "value")
 	let $orig-uri := map:get($content, "uri")  (: file name! :)
 	
 	let $_:=xdmp:log(fn:concat("CORB BIBYAZ uri starting: ",$orig-uri),"info")
+	let $_:= if ($OVERWRITE="OVERWRITE") then
+			 		xdmp:log(fn:concat("CORB BIBYAZ overwrite any edits on ",$orig-uri," : ",$OVERWRITE),"info") 
+			 else 	
+			 		()
+	
 	
 return 
 
 	for $set in $body/descendant-or-self::rdf:RDF
-		(:let $_:=xdmp:log(fn:concat("CORB BIBYAZ uri starting2: ",fn:name($set) ),"info"):)
+	
 	
 	
 	 for $records in $set/rdf:Description/lclocal:graph
-		(:let $_:=xdmp:log(fn:concat("CORB BIBYAZ uri starting3: ",fn:name($records) ),"info"):)
+	
 	
 		for $work in $records/bf:Work[parent::lclocal:graph]
-			(:let $_:=xdmp:log(fn:concat("CORB BIBYAZ uri starting4: ",fn:name($work) ),"info"):)
+			
 
 	(: 2019-01-17: leader 06 status new and changed generate a status; otherwise it's a delete:)
 		return if ( fn:not($work/bf:adminMetadata/bf:AdminMetadata/bf:status) or
@@ -177,6 +181,7 @@ return
 					return
 							m2bfyaz:remove-from-coll($bibid)
   			else
+			
 		
 		let $already-in-pilot:=   
 			for $batch in $work//lclocal:batch
@@ -188,7 +193,7 @@ return
 						xdmp:log(fn:concat("CORB BIBYAZ merge: skip: ",$orig-uri , ", has 985." ), "info")
 				else
 					
-							
+					
 					let $work-about:= fn:string($work/@rdf:about)
 					let $instances:=$records/bf:Instance[fn:string(bf:instanceOf/@rdf:resource) = $work-about ]
 					let $record:=<rdf:RDF>{$work, $instances}</rdf:RDF>
@@ -227,7 +232,7 @@ return
 	
 					let $result:=						
 							(
-								bibs2mets:get-work($bf,$workDBURI,$paddedID, $BIBURI, $mxe,  $destination-collections,$destination-uri)
+								bibs2mets:get-work($bf,$workDBURI,$paddedID, $BIBURI, $mxe,  $destination-collections,$destination-uri, $OVERWRITE)								
 			  					,
 							    xdmp:log(fn:concat("CORB BIBYAZ merge:  ", (xdmp:elapsed-time() - $start) cast as xs:string), "info")
 						    	)

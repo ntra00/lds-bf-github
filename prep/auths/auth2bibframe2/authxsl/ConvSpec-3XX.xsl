@@ -2,16 +2,18 @@
 <xsl:stylesheet version="1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:marc="http://www.loc.gov/MARC21/slim" xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
                 xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="xsl marc">
 
-	<!-- Conversion specs for 3XX -->
+	<!-- Conversion specs for 3XX 
+	370 and 377 now done in bibs
+	-->
 	<xsl:include href="../xsl/ConvSpec-3XX.xsl"/>
 
-	<xsl:template match="marc:datafield[@tag='370']" mode="work">
+	<!--<xsl:template match="marc:datafield[@tag='370']" mode="work">
 		<xsl:param name="serialization" select="'rdfxml'"/>
 		<xsl:apply-templates select="." mode="work370">
 			<xsl:with-param name="serialization" select="$serialization"/>
 		</xsl:apply-templates>
 	</xsl:template>
-	<xsl:template match="marc:datafield[@tag='370' or @tag='880']" mode="work370">
+	 <xsl:template match="marc:datafield[@tag='370' or @tag='880']" mode="work370">
 		<xsl:param name="serialization" select="'rdfxml'"/>
 
 		<xsl:choose>
@@ -42,7 +44,7 @@
 				</xsl:for-each>
 			</xsl:when>
 		</xsl:choose>
-	</xsl:template>
+	</xsl:template> 
 	<xsl:template match="marc:datafield[@tag='377']" mode="work">
 		<xsl:param name="serialization" select="'rdfxml'"/>
 		<xsl:apply-templates select="." mode="work377">
@@ -84,7 +86,7 @@
 				</xsl:if>
 			</xsl:when>
 		</xsl:choose>
-	</xsl:template>
+	</xsl:template>-->
  	
   <xsl:template match="marc:datafield[@tag='381']" mode="work">
     <xsl:param name="serialization" select="'rdfxml'"/>

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /marklogic/id/natlibcat/admin/bfi/bibrecs/
-# make an xml file for doc label  checking
+# make an xml file for doc label change checking
 curdir=`pwd`
 # mkdir $curdir/manifest
 

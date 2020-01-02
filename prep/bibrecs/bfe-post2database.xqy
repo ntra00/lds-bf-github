@@ -25,17 +25,17 @@ declare namespace   bflc            	= "http://id.loc.gov/ontologies/bflc/";
 declare namespace   index               = "info:lc/xq-modules/lcindex";
 declare namespace   mlerror	            = "http://marklogic.com/xdmp/error"; 
 declare namespace 	pmo  				= "http://performedmusicontology.org/ontology/";
-import module namespace bfe2mets = "http://loc.gov/ndmso/bfe-2-mets" at "modules/bfe2mets.xqy";
+import module namespace bfe2mets = "http://loc.gov/ndmso/bfe-2-mets" at "../modules/bfe2mets.xqy";
 
 import module namespace sem = "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
-import module namespace 		bf4ts   			= "info:lc/xq-modules/bf4ts#"   		 at "modules/module.BIBFRAME-4-Triplestore.xqy";
+import module namespace 		bf4ts   			= "info:lc/xq-modules/bf4ts#"   		 at "../modules/module.BIBFRAME-4-Triplestore.xqy";
 
-import module namespace bibframe2index      = "info:lc/id-modules/bibframe2index#" at "modules/module.BIBFRAME-2-INDEX.xqy";
+import module namespace bibframe2index      = "info:lc/id-modules/bibframe2index#" at "../modules/module.BIBFRAME-2-INDEX.xqy";
 
 (: ==============================================================================================================
 :	ALERT: using test version of bibs2mets: (drop .new to revert to production version
 :   =============================================================================================================:)
-import module namespace bibs2mets = "http://loc.gov/ndmso/bibs-2-mets" at "modules/module.bibs2mets.xqy";
+import module namespace bibs2mets = "http://loc.gov/ndmso/bibs-2-mets" at "../modules/module.bibs2mets.xqy";
 
 declare variable $quality := ();    
 declare variable $forests:=();
@@ -93,4 +93,8 @@ declare variable $BASE_COLLECTIONS:= ("/lscoll/lcdb/", "/lscoll/", "/catalog/", 
   return ( 	xdmp:set-response-code(200 ,"OK"),
 				$result,			           
 					   xdmp:add-response-header("Access-Control-Allow-Origin", "*")
-					   )
+					   )(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

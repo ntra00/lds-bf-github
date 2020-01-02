@@ -212,8 +212,8 @@ declare variable $display:RDFprops as element () :=
 	<property name="schedulePart" range="literal" sort="13e">Classification designation</property>
 	<property name="edition" range="literal" sort="13j">Classification scheme edition</property>
 	
-	 <property name="classificationPortion" range="literal" sort="13g">Classification number</property> 
-	 <property name="itemPortion" range="literal" sort="13h">Classification item number</property>
+	<property name="classificationPortion" range="literal" sort="13g">Classification number</property> 
+	<property name="itemPortion" range="literal" sort="13h">Classification item number</property>
 	<property name="spanEnd" range="literal" sort="13i">Classification number span end</property>
 	<property name="table" range="literal" sort="13j">Classification table identification</property>
 	<property name="tableSeq" range="literal" sort="13k">Classification table sequence number</property>

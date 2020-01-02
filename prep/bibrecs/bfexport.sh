@@ -37,7 +37,7 @@ echo $MLDIR
 pwd
 
 #startindex ??
-java  -Xmx32G  -XX:+UseConcMarkSweepGC  -server -cp corb/marklogic-xcc-8.0-5.jar:corb/marklogic-corb-2.3.2.jar \
+java  -Xmx32G  -XX:+UseConcMarkSweepGC  -server -cp ../corb/marklogic-xcc-8.0-5.jar:../corb/marklogic-corb-2.3.2.jar \
 	-DXCC-CONNECTION-URI=xcc://id-admin:$PASSWD@localhost:8203/natlibcat \
 	-DTHREAD-COUNT=16 \
 	-DURIS-MODULE=/admin/bfi/bibrecs/corb-export-uris.xqy \

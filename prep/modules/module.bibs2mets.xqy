@@ -14,12 +14,9 @@ import module namespace 		bibframe2index   	= "info:lc/id-modules/bibframe2index
 import module namespace 		bf4ts   			= "info:lc/xq-modules/bf4ts#"   		 at "module.BIBFRAME-4-Triplestore.xqy";
 import module namespace 		mem 				= "http://xqdev.com/in-mem-update" 		 at "/MarkLogic/appservices/utils/in-mem-update.xqy";
 import module namespace 		auth2bf				= "http://loc.gov/ndmso/authorities-2-bibframe" at "/prep/auths/authorities2bf.xqy";
-(:2019-10-22 :)
-import module namespace 		searchts 			= "info:lc/xq-modules/searchts#" 		 at "/src/xq/modules/module.SearchTS.xqy";
-(:import module namespace 		searchts 			= "info:lc/xq-modules/searchts#" 		 at "/modules/xq/modules/module.SearchTS.xqy";
+(:import module namespace 		searchts 			= "info:lc/xq-modules/searchts#" 		 at "/modules/xq/modules/module.SearchTS.xqy";:)
 import module namespace 		searchts 			= "info:lc/xq-modules/searchts#" 		 at "module.SearchTS.xqy";
-import module namespace 		marcutil 			= "info:lc/xq-modules/marc-utils" 		 at "module.marcutils.xqy";:)
-import module namespace 		marcutil 			= "info:lc/xq-modules/marc-utils" 		 at "/src/xq/modules/marc-utils.xqy";
+import module namespace 		marcutil 			= "info:lc/xq-modules/marc-utils" 		 at "module.marcutils.xqy";
 
 declare namespace 				sparql              = "http://www.w3.org/2005/sparql-results#";
 declare namespace 				rdf					= "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
@@ -373,16 +370,16 @@ when linking 7xxs to existing works, you can include work stubs unlike when merg
 								let $searchcode:= 
 								    
 										 cts:and-not-query(
-    										(: cts:and-not-query( :)
+    										 cts:and-not-query( 
 						                            cts:and-query(( 
 						                                cts:collection-query("/resources/works/"),
 														                 cts:collection-query("/catalog/"),
 						            		  $inner-query											  
                                             
 			            		        ))
-                                    (: ,
+                                     ,
 						            		        cts:collection-query("/bibframe/stubworks/")
-						            		        ):)
+						            		        )
 													,
 										 cts:element-value-query(fn:QName("info:lc/xq-modules/lcindex", "uri"),$workDBURI)
 										 )									
@@ -438,7 +435,7 @@ when linking 7xxs to existing works, you can include work stubs unlike when merg
 :
 :)
 
-declare function bibs2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $mxe, $collections, $destination-uri)
+declare function bibs2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $mxe, $collections, $destination-uri, $OVERWRITE)
 {
 
     let $bfraw-work := $bfraw/bf:Work
@@ -512,18 +509,18 @@ declare function bibs2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $mxe
 													,
 										 cts:element-value-query(fn:QName("info:lc/xq-modules/lcindex", "token"),$paddedID)
 									)
-									
+									(: nate allowed linking to stubs 2019-12-12 :)
 								else
 								   cts:and-not-query(
-										cts:and-not-query(
+										(:cts:and-not-query( :)
 						                            cts:and-query(( 
 						                                cts:collection-query("/resources/works/"),
 														 cts:collection-query("/catalog/"),
 						            		            cts:element-value-query(fn:QName("info:lc/xq-modules/lcindex", "nameTitle"), xs:string($nameTitle), ("unstemmed", "case-insensitive", "punctuation-insensitive", "diacritic-insensitive"), 15)            		            
 						            		        ))
-													,
-						            		        cts:collection-query("/bibframe/stubworks/")
-						            		        )
+													(: ,
+						            		       cts:collection-query("/bibframe/stubworks/")
+						            		        ):)
 													,
 										 cts:element-value-query(fn:QName("info:lc/xq-modules/lcindex", "token"),$paddedID)
 									)
@@ -718,15 +715,15 @@ let $distinct-relateds:= if (fn:not($found-mets)) then
 
 let $related-7xxs:=if  ($bfraw-work/*[fn:not(self::* instance of element (bf:subject))]/bf:Work) then
 						let $contributions:=$work//bf:contribution[bf:Contribution/bf:agent/bf:Agent[fn:not(fn:contains(fn:string(@rdf:about),"#Agent880"))]]
-						
+					
 						return
 						<related-7xxs>{
 						for $w in $bfraw-work/*[fn:not(self::* instance of element (bf:subject))]/bf:Work
 							(:let $_:= xdmp:log(fn:concat("BIB 7xx",fn:name($w)), "info"):)
 							(: 20180918 sparql query needs work; too slow; maybe lccn substitution issue?? :)
 	
-							let $link:= if ($w//bf:identifiedBy/bf:Identifier[fn:string(bf:source/bf:Source/rdfs:label)="DLC"]) then
-													let $lccn:= for $l in $w/bf:identifiedBy/bf:Identifier[1][fn:string(bf:source/bf:Source/rdfs:label)="DLC"]
+							let $link:= if ($w//bf:identifiedBy/*[fn:string(bf:source/bf:Source/rdfs:label)="DLC"]) then
+													let $lccn:= for $l in $w//bf:identifiedBy/*[1][fn:string(bf:source/bf:Source/rdfs:label)="DLC"]
 														return	if (fn:matches($l/bf:status/bf:Status/rdfs:label,"invalid","i" )) then
 															()
 															else fn:string($l/rdf:value)
@@ -794,8 +791,13 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
 							(:$work/*[self::* instance of element (bf:translationOf) or self::* instance of element (bf:relatedTo) or self::* instance of element (bf:hasPart) )],:)
 							(: keep relateds that are blank nodes :)							
 							$distinct-translations,
+							
 							$distinct-relateds,
-							$related-7xxs/*
+							(:suppress relateds we've got stubs for (all but 880s :)
+							(:$related-7xxs/*,:)
+							$related-7xxs/*/bf:Work[fn:contains( fn:string(@rdf:about),"Work880")	],
+							(: link to related stubs in place of related blank nodes :)
+							$relateds
 							}
           				</bf:Work>
 				else
@@ -925,9 +927,12 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
     let $quality :=()
 
     let $forests:=()
+ let $_:= if (  $OVERWRITE !="OVERWRITE" and xdmp:document-get-collections($destination-uri)="/bibframe/editor/")  then
+ 				xdmp:log(fn:concat("CORB BIB merge: overwriting edits for  ", $workDBURI, "; ",$OVERWRITE),"info")
+			else  ()
 	let $insert-work := 
-		(: if ( $OVERWRITE !="replace" and fn:doc-available($destination-uri)  and xdmp:document-get-collections($destination-uri)="/bibframe/editor/")  then:)
-		 if (fn:doc-available($destination-uri)  and xdmp:document-get-collections($destination-uri)="/bibframe/editor/")  then
+		 if ( $OVERWRITE !="OVERWRITE" and fn:doc-available($destination-uri)  and xdmp:document-get-collections($destination-uri)="/bibframe/editor/")  then
+		 (:if (fn:doc-available($destination-uri)  and xdmp:document-get-collections($destination-uri)="/bibframe/editor/")  then:)
 				xdmp:log(fn:concat("CORB BIB merge: skipping loading work doc - edited  : ",$workDBURI, " from bib doc : ",$BIBURI )   , "info")
 			else
        
@@ -947,7 +952,7 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
 						            )		
 				)         
         }
-             catch ($e) { xdmp:log(fn:concat("CORB BIB merge: work not loaded error on : ", $workDBURI, "; $paddedID for instances merged= ",$paddedID,". ","destination:",fn:tokenize($destination-uri,"/")[fn:last()],  fn:string( $e/mlerror:code))    , "info")
+             catch ($e) { xdmp:log(fn:concat("CORB BIB merge: work not loaded error on : ", $workDBURI, "; paddedID for instances merged= ",$paddedID,". ","destination:",fn:tokenize($destination-uri,"/")[fn:last()],  fn:string( $e/mlerror:code))    , "info")
         }
         , if (fn:contains($workDBURI,$BIBURI)) then 
 				(: xdmp:log(fn:concat("CORB BIB merge: loaded bib work doc : ",$workDBURI, " from bib doc : ",$BIBURI," to : ",fn:tokenize($destination-uri,"/")[fn:last()] )   , "info"):)
@@ -1009,46 +1014,7 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
 				catch ($e) {xdmp:log(fn:concat("CORB BIB merge: failed to load instance doc : ", xs:string($i/@OBJID), " from bib doc : ",$BIBURI , " to : "
 				 				,fn:tokenize($destination-uri,"/")[fn:last()] )   , "info")
 				 }			
-	(: items now generated per instance, not overall (2019-01-03) so comment this out: :)	
-	(:
-			let $item-collections := ( "/lscoll/lcdb/", "/lscoll/","/catalog/", "/catalog/lscoll/", "/catalog/lscoll/lcdb/", "/catalog/lscoll/lcdb/bib/")		
-			let $item-collections := ($item-collections, "/resources/items/"  , "/bibframe","/bibframe/convertedBibs/",  "/lscoll/lcdb/items/")      
-			let $item-collections:=($item-collections, $collections)
-    
-			let $insert-items := 
 	
-		        for $i in $items
-					(:-------------------------from ingest-voyager-bib  -------------------------:)
-					let $bibid := fn:tokenize( xs:string($i/@OBJID), "\.")[fn:last()]				
-					let $resclean := fn:substring($bibid,1,10)			
-					let $dirtox := bibs2mets:chars-001($resclean)
-					let $destination-root := "/lscoll/lcdb/items/"
-				    let $dir := fn:concat($destination-root, string-join($dirtox, '/'), '/')
-				    let $destination-uri := fn:concat($dir, $bibid, '.xml')
-		   			(:-------------------------from ingest-voyager-bib  -------------------------:)
-
-		        return
-				if (fn:doc-available($destination-uri)  and xdmp:document-get-collections($destination-uri)="/bibframe/editor/" ) then								
-						xdmp:log(fn:concat("CORB BIB merge: skipping loading item doc - edited : ", xs:string($i/@OBJID), " from bib doc : ", $BIBURI , " to : " ,fn:tokenize($destination-uri,"/")[fn:last()]   )   , "info")
-					else
-		           ( try {
-				    xdmp:document-insert(
-					           	$destination-uri ,
-					            $i,
-					            (
-					                xdmp:permission("id-user-role", "read"), 
-					                xdmp:permission("id-admin-role", "update"),
-					                xdmp:permission("id-admin-role", "insert")
-					            ),
-								$item-collections, $quality, $forests			
-		        		),
-						xdmp:log(fn:concat("CORB BIB merge: loaded item doc : ", xs:string($i/@OBJID), " from bib doc : ", $BIBURI , " to : " ,fn:tokenize($destination-uri,"/")[fn:last()]   )   , "info")
-						
-					}
-					catch ($e) {xdmp:log(fn:concat("CORB BIB merge: failed to load item doc : ", xs:string($i/@OBJID), " from bib doc : ", $BIBURI , " to : " ,fn:tokenize($destination-uri,"/")[fn:last()] , fn:string($e//mlerror:message[1])  )   , "info")
-								}
-				)
-	:)
     
 	return 
         (   $workDBURI    )
@@ -1091,6 +1057,7 @@ let $paddedID:=if ($ibc="yes" and $lccn!="" and  fn:not(fn:contains($paddedID, $
 						fn:concat("e", $lccn)
 					else 
 						$paddedID
+						
 (:let $_:=xdmp:log(fn:concat("CORB BFE/BIB $padded id ",$paddedID), "info")									:)
 
 	let $adminMeta:=if ($adminMeta/*) then $adminMeta else ()
@@ -1115,7 +1082,11 @@ let $paddedID:=if ($ibc="yes" and $lccn!="" and  fn:not(fn:contains($paddedID, $
 									fn:tokenize(fn:string($i/@rdf:about),"/")[fn:last()]
 								else
 									$paddedID
+				let $paddedID:=if ($lccn and not($i/@rdf:about)) then
+										fn:concat("e",$lccn)
+								else $paddedID
 				
+
 			    let $iID:=bibs2mets:get-padded-subnode($pos, $paddedID)
 	       
 		        let $instanceDBURI := fn:concat("loc.natlib.instances." , $iID )
@@ -1152,9 +1123,9 @@ let $instanceOf:=if ($instanceOf/@rdf:resource)  then
 						element bf:instanceOf {
 						          attribute rdf:resource { $workuri-4-instance }
 						  }
-
- 
-
+(:let $_:=xdmp:log("--------------------","info")
+ let $_:=xdmp:log(fn:string($instanceOf),"info")
+let $_:=xdmp:log("--------------------","info"):)
 				let $itemURI := fn:concat("http://id.loc.gov/resources/items/", $iID)
 		        (:
 
@@ -1661,14 +1632,16 @@ for $related at $workpos in $work/bf:Work/*
 
     let $relWorkDBURI := fn:concat("loc.natlib.works." , $wID )
     let $relworkURI := fn:concat("http://id.loc.gov/resources/works/", $wID)
-		
-		 let $relatedTo := 			 		        		
+		(: relation from stub back to work should not be done, since it's expression of and it's going to be on the original Work too 
+		Stopped this 2019-12-12
+		:)
+	(:let $relatedTo := 			 		        		
 					element {xs:QName($inverse-relation)} {
 								attribute  rdf:resource {
 												fn:concat('http://id.loc.gov/resources/works/', $paddedID ) 
 												 	}
-												 }  
-let $label:= if ($related/bf:Work/rdfs:label) then
+												 }  :)
+	let $label:= if ($related/bf:Work/rdfs:label) then
 				()
 				else if ($related/bf:Work/bf:title[1]/bf:Title/rdfs:label) 	then
 						$related/bf:Work/bf:title[1]/bf:Title/rdfs:label
@@ -1678,12 +1651,14 @@ let $label:= if ($related/bf:Work/rdfs:label) then
 						<rdfs:label>{fn:string($related/bf:Work/bf:hasInstance/bf:Instance/bf:title[1]/bf:Title/bf:mainTitle)}</rdfs:label>
 						else 
 						<rdfs:label>[No title]</rdfs:label>
-
+(:	took out 	{$relatedTo} and added rdftype:hub :)
 	  let $stub-work:= <rdf:RDF>
 			  <bf:Work rdf:about="{$relworkURI}">			
+			  <rdf:type rdf:resource="http://id.loc.gov/ontologies/lclocal/Hub"/>
+
 			  {$label}
 				{$related/bf:Work/*}
-				{$relatedTo}
+		
 			</bf:Work>	
 			</rdf:RDF>
 			
@@ -1697,8 +1672,8 @@ let $label:= if ($related/bf:Work/rdfs:label) then
 	let $insert-stub-mets:= bibs2mets:insert-any-mets($stub-work  ,$relWorkDBURI ,  $stub-destination-uri, $stub-collections ,"workRecord")
 
 	return 
-        (         
-            $relWorkDBURI 
+        (     element {fn:name($related)}  {  attribute rdf:resource {$relworkURI}}
+            (:$relWorkDBURI :)
         )
 
 };

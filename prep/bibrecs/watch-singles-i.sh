@@ -1,8 +1,12 @@
 #!/bin/bash
-cd /marklogic/id/natlibcat/admin/bfi/bibrecs/
+
+source ../config bibrecs
+
+
 CURDIR=`echo $PWD`
 
-ct=$(ls -ltra $CURDIR/singleload/ | wc -l)
+ct=$(ls -ltra $SOURCE_PROCESSED/single/ | wc -l)
+
 watchct=$(ps -ef|grep watch-singles-i | wc -l)
 echo watching: $watchct
 echo $ct ready to post
@@ -13,10 +17,12 @@ if [[  $ct != 0 ]]; then
 # no watch singles jobs running
       echo loading singles
       sleep 1
-      mv `ls -tr $CURDIR/singleload/* | head -$ct` $CURDIR/loadrdf/
+      mv `ls -tr $SOURCE_PROCESSED/single/* | head -$ct` $LOAD_UNPROCESSED/single/
+	  
+	 ls -l  $LOAD_UNPROCESSED/single/
+	 
 # reload instances with batch id collection
-    ./rbli
-          
+   ./load_bib_yaz.sh 
    else
       echo "waiting for previous watch session : $watchct"
    fi

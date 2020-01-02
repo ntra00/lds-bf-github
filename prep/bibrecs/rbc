@@ -2,29 +2,40 @@
 # rbi does convert, load. Use rbc a bunch of times then one rbl to load them
 
 #curl metaproxy or run yaz for a singleton
+# usage rbc [bibid#|lccn#] [lccn]
+# bib example: ./rbc 5226
+#lccn example ./rbi 201902345 lccn
 
-
-BIBID=$1
-
-tm=$(date '+%H-%M-%S')
-
- curl "http://idwebvlp03.loc.gov:8230/resources/bibs/$BIBID.xml"  | sed -e "s|\[from old catalog\]||g"   > source/singleton.$BIBID.xml
-chmod 775 source/*
-chgrp marklogic source/*
-
+source ../config bibrecs
 CURDIR=`echo $PWD`
 
-M2BFDIR=/marklogic/id/marc2bibframe2
- yaz-record-conv  $M2BFDIR/record-conv.vlp3.xml  $CURDIR/source/singleton.$BIBID.xml | sed -e "s|idwebvlp03.loc.gov|id.loc.gov|g" | sed -e "s|mlvlp04.loc.gov:8080|id.loc.gov|g"  >$CURDIR/singleload/singleton.$BIBID.tmp.rdf
+ID=$1
+LCCN=$2
+if [[  $LCCN == "" ]]
+then
+ 	curl "http://mlvlp04.loc.gov:8230/resources/bibs/$ID.xml"  | sed -e "s|\[from old catalog\]||g"   > $SOURCE_UNPROCESSED/single/$ID.xml
+else
+	echo curling permalink for lccn: $lccn/marcxml
+	# sru:
+	curl -L "https://lccn.loc.gov/$ID/marcxml"    | sed -e "s|\[from old catalog\]||g"   > $SOURCE_UNPROCESSED/single/$ID.xml
+	echo "curl -L 'https://lccn.loc.gov/$ID/marcxml'    | sed -e 's|\[from old catalog\]||g'   > $SOURCE_UNPROCESSED/single/$ID.xml"
+fi
 
- xsltproc modules/graphiphy.xsl  singleload/singleton.$BIBID.tmp.rdf  > singleload/singleton.$BIBID.rdf
 
-rm singleload/singleton.*.tmp.rdf
-chmod 775 $CURDIR/singleload/*
-chgrp marklogic $CURDIR/singleload/*
+chmod 775 $SOURCE_UNPROCESSED/single/$ID*
+chgrp marklogic $SOURCE_UNPROCESSED/single/$ID*
 
-echo rbli run by watch-singles-i.sh every 3 mins is looking in loadrdf:
-mv singleload/singleton.$BIBID.rdf loadrdf
 
-rm $CURDIR/source/singleton.$BIBID*
+
+ yaz-record-conv  $M2BFDIR/record-conv.vlp3.xml  $SOURCE_UNPROCESSED/single/$ID.xml | sed -e "s|idwebvlp03.loc.gov|id.loc.gov|g" | sed -e "s|mlvlp04.loc.gov:8080|id.loc.gov|g"  > $SOURCE_UNPROCESSED/single/$ID.tmp.rdf
+
+ xsltproc $MODULES/graphiphy.xsl  $SOURCE_UNPROCESSED/single/$ID.tmp.rdf  > $SOURCE_PROCESSED/single/$ID.rdf
+
+rm  $SOURCE_UNPROCESSED/single/$ID.tmp.rdf
+chmod 775 $SOURCE_PROCESSED/single/$ID*
+chgrp marklogic $SOURCE_PROCESSED/single/$ID*
+
+echo load_bib_yaz.sh run by watch-singles-i.sh every 3 mins is looking in source/processed/single
+
+rm $SOURCE_UNPROCESSED/single/$ID*
 

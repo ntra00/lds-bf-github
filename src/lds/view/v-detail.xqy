@@ -280,7 +280,8 @@ declare function vd:render($perm_uri as xs:string, $source_rdf as xs:string) {
 	let $share-tool := if (  contains($hostname,"mlvlp04") ) then
 								()
 						else ssk:sharetool-div($uri, $title)	
-    let $htmldiv :=
+    
+	let $htmldiv :=
 		if ($details instance of element(error:error)) then
 			 $details
 		else
@@ -330,45 +331,15 @@ declare function vd:render($perm_uri as xs:string, $source_rdf as xs:string) {
 							let $searchfilter-label := if($searchfilter="all") then "all objects" else $searchfilter
 							
                             return
-                                (<li><a id="backtoresults" class="back" href="{$back}">Back to results</a></li>,
+                                (<li><a id="backtoresults" class="back" href="{$back}">Back to results</a></li>,								
                                 $prev,
-                                <li><span class="count">[<strong>{format-number($viewindex, "#,###")}</strong> of about <strong>{format-number($est, "#,###")}</strong>({$searchfilter-label})]</span></li>,
+                                <li><span class="count">[<strong>{format-number($viewindex, "#,###")}</strong> of about <strong>{format-number($est, "#,###")}</strong>
+								({$searchfilter-label})]</span></li>,
                                $next, $filterlinks//li
                                 )
                          else ''
                          }
-                        <!--<li>
-                            {
-                                if(contains($profile,"Record" )) then
-                                	(:(contains($uri, ".lcdb."):)
-                                	(:$profile eq "lc:bibRecord") then:)
-                                
-                                    if ($behavior eq 'default') then
-                                        let $new-params := lp:param-replace-or-insert($lp:CUR-PARAMS, 'behavior', 'marctags')
-										let $new-params := lp:param-remove-all($new-params, "branding")
-										let $new-params := lp:param-remove-all($new-params, "collection")
-                                        let $marctags-toggle-title := "Toggle to MARC Tagged View"
-                                        let $marctags-toggle-label := "View Tagged Display"
-                                        let $marctags-toggle-url := concat($url-prefix,'detail.xqy?', lp:param-string($new-params))
-                                        return                              
-                                            <a class="marc" title="{$marctags-toggle-title}" href="{$marctags-toggle-url}">{$marctags-toggle-label}</a>
-                                    else
-                                        let $new-params :=  lp:param-remove-all($lp:CUR-PARAMS, 'behavior')
-										let $new-params := lp:param-remove-all($lp:CUR-PARAMS, "branding")
-										let $new-params := lp:param-remove-all($new-params, "collection")
-                                        let $marctags-toggle-title := "Toggle to Labeled View"
-                                        let $marctags-toggle-label := "View Labeled Display"
-                                        let $marctags-toggle-url := concat($url-prefix,'detail.xqy?', lp:param-string($new-params))
-                                        return
-                                            <a class="labeled" title="{$marctags-toggle-title}" href="{$marctags-toggle-url}">{$marctags-toggle-label}</a>
-                                else
-                                    ()
-                            }
-                        </li>-->
-                       <!--{$print-link}-->
-					    <!-- <span style="float:right;"> {$biblink} || {$doclink} ||  [ {$base-uri} ]</span> -->
-						<!--<span style="float:right;">{$share-tool}</span>-->
-					                         <!-- <img src="http://covers.librarything.com/devkey/2ed454fd22af5dceef59b6069ed7c020/large/isbn/0545010225"/> -->
+                       
                     </ul>
     				
                 <!-- end id:ds-bibrecord-nav -->			
@@ -494,13 +465,13 @@ declare function vd:render($perm_uri as xs:string, $source_rdf as xs:string) {
             $htmldiv
 
      
-     
+  
     (: End kefo addition :)
        (: nate added current object to return so we can render different formats instead of html for detail.xqy:)
     return
         ($seo, $htmldiv, $current_object, $uri)
 };(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
 <metaInformation>
-<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+<scenarios ><scenario default="yes" name="Scenario1" userelativepaths="yes" externalpreview="no" useresolver="no" url="" outputurl="" processortype="internal" tcpport="1980002256" profilemode="0" profiledepth="" profilelength="" urlprofilexml="" commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" host="" port="0" user="" password="" validateoutput="no" validator="internal" customvalidator=""/></scenarios><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
 </metaInformation>
 :)

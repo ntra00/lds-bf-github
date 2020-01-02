@@ -7,21 +7,21 @@
 # 8203 transform uses   /admin/bfi/bibrecs/modules/bfe2mets.xqy
 # ex:  ./load_bfe_mlcp.sh 
 
-CURDIR=/marklogic/id/natlibcat/admin/bfi/bibrecs
-cd $CURDIR
+source ../config bibrecs
+CURDIR=`echo $PWD`
+
 
 BFEDIR=/marklogic/bibliomata/recto/resources/
 cd $BFEDIR
+
 ct=$(find -maxdepth 1 -mtime 0 -type f | wc -l)
+
 #ct=1
 # if there are any records in the editor "save" directory:
 if [[  $ct > 0 ]]
  then
 
-THREADS=4
 
-MLCPPATH=/marklogic/id/id-prep/mlcp/bin
-PASSWD=`/marklogic/id/id-prep/marc/keys/passwd-ml.sh`
 ERRORDIR=$CURDIR/bfe-preprocess/errors/
 ZERODIR=$CURDIR/bfe-preprocess/zero/
 WARNDIR=$CURDIR/bfe-preprocess/warn/
@@ -148,16 +148,16 @@ if [[  $postingct > 0 ]]
 
 	$MLCPPATH/mlcp.sh import  \
         -host mlvlp04.loc.gov \
-        -port 8203 \
-        -username id-admin \
-        -password $PASSWD \
+        -port $BFDB_XCC_PORT \
+        -username $BFDB_XCC_USER \
+        -password $BFDB_XCC_PASS  \
 		-input_file_path $VALIDDIR/source/ \
 		-input_file_pattern '.*\.rdf' \
-		-output_uri_replace "/marklogic/applications/natlibcat/admin/bfi/bibrecs/bfe-preprocess/valid/source/,''"  \
+		-output_uri_replace "/marklogic/applications/nate/lds/lds-bf/bibrecs/bfe-preprocess/valid/source/,''"  \
 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update \
     	-input_file_type documents \
 		-document_type XML \
-		-transform_module /admin/bfi/bibrecs/modules/bfe2mets.xqy \
+		-transform_module /prep/bibrecs/modules/bfe2mets.xqy \
 		-transform_function transform \
 	    -transform_namespace http://loc.gov/ndmso/bfe-2-mets \
         -thread_count $THREADS 

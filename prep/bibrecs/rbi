@@ -1,94 +1,73 @@
 #!/bin/bash
-#curl metaproxy or run yaz for a singleton
-# Reload Bib Instant 
-#example bib id: 	./rbi  23608 bibid
-#example lccn:		./rbi  23608 lccn
 
-	#set paths for bibrecords:
-	# add debug to list paths:  "source config bibrecs debug"
-source config bibrecs 
+#modified to work like bibdaily4 (load only a single record by ID)
+#curl metaproxy or run yaz for a singleton and load right away
+
+source ../config bibrecs
+
+CURDIR=`echo $PWD`
+
+# if it's an lccn, have "lccn" or anything in the second parameter
 
 
-BIBID=$1
-TYPE=$2
-echo reloading $BIBID $TYPE
-rm  $SOURCE_UNPROCESSED/$BIBID*
-	# curl from db or permalink
-if [[ $TYPE -eq "" ]]; then
-	curl "http://mlvlp04.loc.gov:8230/resources/bibs/$BIBID" | sed -e "s|\[from old catalog\]||g"   > $SOURCE_UNPROCESSED/$BIBID.tmp.xml
+# usage rbc [bibid#|lccn#] [lccn]
+# bib example: ./rbc 5226
+#lccn example ./rbi 201902345 lccn
 
-else if [[ $TYPE -eq "lccn" ]]; then
-			 
-		curl https://lccn.loc.gov/$BIBID/marcxml    | sed -e "s|\[from old catalog\]||g"   > $SOURCE_UNPROCESSED/$BIBID.tmp.xml
-		curl https://lccn.loc.gov/$BIBID/marcxml   > $SOURCE_UNPROCESSED/$BIBID.tmp2.xml
-	else # bib
-		curl http://mlvlp04.loc.gov:8230/resources/bibs/$BIBID | sed -e "s|\[from old catalog\]||g"   > $SOURCE_UNPROCESSED/$BIBID.tmp.xml		
-	fi
-fi
+source ../config bibrecs
+ID=$1
+LCCN=$2
+if [[  $LCCN == "" ]]
+then
+ 	curl "http://mlvlp04.loc.gov:8230/resources/bibs/$ID.xml"  | sed -e "s|\[from old catalog\]||g"   > $SOURCE_UNPROCESSED/single/$ID.tmp.xml
+else
+	echo curling permalink for lccn: $lccn/marcxml
+	# sru:
+	curl -L "https://lccn.loc.gov/$ID/marcxml"    | sed -e "s|\[from old catalog\]||g"   > $SOURCE_UNPROCESSED/single/$ID.tmp.xml
 	
+fi
 
 
-#curl https://lccn.loc.gov/$BIBID/marcxml    | sed -e "s|\[from old catalog\]||g"   > sources/singleton.$BIBID.xml
-	# get and  clean marcxml
-#curl "http://mlvlp04.loc.gov:8230/resources/bibs/$BIBID" | sed -e "s|\[from old catalog\]||g"   > $SOURCE_UNPROCESSED/$BIBID.tmp.xml
+uconv -f utf8 -t utf8 -x nfc --from-callback skip --to-callback  skip < $SOURCE_UNPROCESSED/single/$ID.tmp.xml   > $SOURCE_UNPROCESSED/single/$ID.xml	
 
-	#form c composed
-uconv -f utf8 -t utf8 -x nfc --from-callback skip --to-callback  skip < $SOURCE_UNPROCESSED/$BIBID.tmp.xml   > $SOURCE_UNPROCESSED/$BIBID.xml	
+chmod 775 $SOURCE_UNPROCESSED/single/$ID*
+chgrp marklogic $SOURCE_UNPROCESSED/single/$ID*
 
-	# permissions
-chmod 775 $SOURCE_UNPROCESSED/*
-chgrp marklogic $SOURCE_UNPROCESSED/*
-ls -l  $SOURCE_UNPROCESSED/$BIBID*
-read x
-yaz-record-conv  $M2BFDIR/record-conv.vlp3.xml  $SOURCE_UNPROCESSED/$BIBID.xml |sed -e "s|idwebvlp03.loc.gov|id.loc.gov|g" | sed -e "s|mlvlp04.loc.gov:8080|id.loc.gov|g" | sed -e "s|//mlvlp06.loc.gov:8288|http://id.loc.gov|g"   > $SOURCE_UNPROCESSED/$BIBID.tmp.rdf
+yaz-record-conv  $M2BFDIR/record-conv.vlp3.xml  $SOURCE_UNPROCESSED/single/$ID.xml |sed -e "s|idwebvlp03.loc.gov|id.loc.gov|g" | sed -e "s|mlvlp04.loc.gov:8080|id.loc.gov|g" | sed -e "s|//mlvlp06.loc.gov:8288|http://id.loc.gov|g"   > $SOURCE_PROCESSED/single/$ID.tmp.rdf
 
-	# wrap the pkg in <lclocal:graph>:
+# wrap the pkg in <lclocal:graph>:
+xsltproc $MODULES/graphiphy.xsl  $SOURCE_PROCESSED/single/$ID.tmp.rdf  > $LOAD_UNPROCESSED/single/$ID.rdf
 
-xsltproc $XSLDIR/graphiphy.xsl  $SOURCE_UNPROCESSED/$BIBID.tmp.rdf  > $SOURCE_PROCESSED/$BIBID.rdf
-# put this back
-#rm $SOURCE_UNPROCESSED/$BIBID.tmp.rdf 
+rm  $SOURCE_PROCESSED/single/$ID.tmp.rdf 
 
-chmod 775 $SOURCE_PROCESSED/$BIBID*
-chgrp marklogic $SOURCE_PROCESSED/$BIBID*
+chmod 775 $LOAD_UNPROCESSED/single/$ID*
+chgrp marklogic $LOAD_UNPROCESSED/single/$ID*
 
-cp  $SOURCE_PROCESSED/$BIBID*.rdf $LOAD_UNPROCESSED/
 
 TODAY=`date +%Y-%m-%d`
 
-# relative to bfhome
-TRANSFORM_XQY="/prep/bibrecs/corb-bibframe-process-yazbib-files.xqy"
-TRANSFORM_NS="http://loc.gov/ndmso/marc-2-bibframe-yaz/"
- echo "load date  = $TODAY"
- 
+echo "load date  = $TODAY"
+echo loading $LOAD_UNPROCESSED/single/$ID.rdf
 
- #-input_file_pattern singleton*.rdf \
-#-input_file_path /marklogic/id/natlibcat/admin/bfi/bibrecs/sourceload \
-#if [[ type -f  /marklogic/id/natlibcat/admin/bfi/bibrecs/sourceload/$BIBIID.rdf ]]
-# was 8203
-
-#    -port 8203 \
-#    -host mlvlp04.loc.gov \
-
- $MLCPPATH/mlcp.sh import  \
-        -host $BFDB_HOST \
+$MLCPPATH/mlcp.sh import  \
+ 	    -host localhost \
         -port $BFDB_XCC_PORT \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS \
-		-input_file_pattern $BIBID.rdf \
-		-input_file_path  $LOAD_UNPROCESSED \
-		-output_uri_replace "$LOAD_UNPROCESSED/,''"  \
+		-input_file_path $LOAD_UNPROCESSED/single	 \
+		-output_uri_replace "$LOAD_UNPROCESSED/single,''"  \
 		-output_collections /bibframe-process/,/processing/load/bibs/$TODAY/,/bibframe-process/yaz-reload/ \
 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update \
-		-input_file_type documents \
-		-transform_module $TRANSFORM_XQY \
-		-transform_namespace $TRANSFORM_NS \
+   		-input_file_type documents \
+		-transform_module /prep/bibrecs/corb-bibframe-process-yazbib-files.xqy \
+		-transform_namespace "http://loc.gov/ndmso/marc-2-bibframe-yaz/" \
 		-document_type xml \
-		-aggregate_record_element RDF \
-    	-aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns# \
-		-thread_count $THREADS \
+        -aggregate_record_element RDF \
+        -aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns# \
+        -thread_count $THREADS \
         -mode local 
 
-mv $LOAD_UNPROCESSED/$BIBID.* $LOAD_PROCESSED/
+echo $ID loaded?
 
-echo $BIBID loaded?
-ls -l $LOAD_PROCESSED/$BIBID.rdf
+mv $LOAD_UNPROCESSED/single/$ID*.rdf $LOAD_PROCESSED/single/
+ls -l $LOAD_PROCESSED/single/$ID.rdf

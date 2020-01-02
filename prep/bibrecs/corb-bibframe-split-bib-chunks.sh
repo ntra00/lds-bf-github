@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# called by bibdaily_1 nightly for adds then deletes
+
 # This performs a CORB update
 #
 # Parameters as follows:
@@ -14,20 +16,20 @@
 # 	INSTALL - whether the local modules should be deployed into the modules database for evaluation and execution; true means they get deployed into MarkLogic. 
 
 # used to either split all the catalog records (bulk) or the dailies (a and d) or a specific date
-# tests using the mudule executor tool:
-# https://github.com/marklogic-community/corb2/wiki/ModuleExecutor-Tool
-## USAGE:     ./corb-bibframe-split-bib-chunks.sh daily A
-## USAGE:     ./corb-bibframe-split-bib-chunks.sh daily D
-## USAGE:     ./corb-bibframe-split-bib-chunks.sh bulk 
+
 ## USAGE:     ./corb-bibframe-split-bib-chunks.sh 2017-06-23 A
 ## USAGE:     ./corb-bibframe-split-bib-chunks.sh 2017-06-23 D
 
+##not sure about these usages:
 
-USER="id-admin"
-PASSWD=""
-PASSWD=`/marklogic/id/id-prep/marc/keys/passwd-ml.sh`
+## USAGE:     ./corb-bibframe-split-bib-chunks.sh daily A
+## USAGE:     ./corb-bibframe-split-bib-chunks.sh daily D
+## USAGE:     ./corb-bibframe-split-bib-chunks.sh bulk 
+
+
 #split the 1000 records in /bibframe/process into singletons 
 
+source ../config bibrecs
 LOADTYPE=$1
 BIBTYPE=$2
 
@@ -59,15 +61,15 @@ fi
 
 ###=======================
 
-		 	
-		java -cp ../corb/marklogic-corb-2.3.2.jar:../corb/marklogic-xcc-8.0-5.jar $BATCHDATE  $TYPE \
+
+		java -cp ${CORBPATH}/marklogic-corb-2.3.2.jar:${CORBPATH}/marklogic-xcc-8.0-5.jar $BATCHDATE  $TYPE \
 			com.marklogic.developer.corb.Manager \
-	        xcc://$USER:$PASSWD@localhost:8203/ \
+	        xcc://$BFDB_XCC_USER:$BFDB_XCC_PASS@localhost:$BFDB_XCC_PORT/ \
 	  		"" \
 			corb-bibframe-split-marcxml-records.xqy \
-			8 \
+			$THREADS \
 			$URISFILE \
-			admin/bfi/bibrecs/ \
+			/prep/bibrecs/ \
 			0 \
   			false 
 

@@ -53,6 +53,7 @@ declare function searchts:return-related-title($uri as xs:string, $related-graph
     let $query := <query><![CDATA[
 			PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
 			PREFIX rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>
+			PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 			PREFIX bf: 		<http://id.loc.gov/ontologies/bibframe/>
 			PREFIX bflc: 	<http://id.loc.gov/ontologies/bflc/>
 	            
@@ -98,6 +99,7 @@ let $offset:= if (fn:not($offset castable as xs:integer)) then 0
 			<query><![CDATA[
 					PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
 					PREFIX rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>
+					PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 					PREFIX bf: 		<http://id.loc.gov/ontologies/bibframe/>
 					PREFIX bflc: 	<http://id.loc.gov/ontologies/bflc/>
 	            
@@ -123,6 +125,7 @@ let $offset:= if (fn:not($offset castable as xs:integer)) then 0
 			<query><![CDATA[
 						PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
 						PREFIX rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>
+						PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 						PREFIX bf: 		<http://id.loc.gov/ontologies/bibframe/>
 						PREFIX bflc: 	<http://id.loc.gov/ontologies/bflc/>
 	            
@@ -159,6 +162,7 @@ let $offset:= if (fn:not($offset castable as xs:integer)) then 0
            <query><![CDATA[
 						PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
 						PREFIX rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>
+						PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 						PREFIX bf: 		<http://id.loc.gov/ontologies/bibframe/>
 						PREFIX bflc: 	<http://id.loc.gov/ontologies/bflc/>
 	            
@@ -234,6 +238,7 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 			<query><![CDATA[
 						PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
 						PREFIX rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>
+						PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 						PREFIX bf: 		<http://id.loc.gov/ontologies/bibframe/>
 						PREFIX bflc: 	<http://id.loc.gov/ontologies/bflc/>
 			            PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -285,6 +290,7 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 			<query><![CDATA[
 						PREFIX madsrdf: <http://www.loc.gov/mads/rdf/v1#>
 						PREFIX rdfs: 	<http://www.w3.org/2000/01/rdf-schema#>
+						PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 						PREFIX bf: 		<http://id.loc.gov/ontologies/bibframe/>
 						PREFIX bflc: 	<http://id.loc.gov/ontologies/bflc/>
 	            
@@ -300,7 +306,9 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 												} .
 								FILTER isURI(?relateduri) .
 								OPTIONAL {		?relateduri 	bf:title 		?tnode .
-												?tnode 			bf:mainTitle ?label }.  		
+												?tnode 			bf:mainTitle ?label 
+												filter NOT exists{?tnode rdf:type <http://id.loc.gov/ontologies/bibframe/VariantTitle>}
+												}.  		
 								OPTIONAL {		?relateduri 	rdfs:label		?label }.  		
 								bind ("Inverse" as ?direction) .
 							 } 
@@ -318,6 +326,7 @@ declare function searchts:work-siblings-directional($work-uri as xs:string , $di
 								    OPTIONAL {		?relateduri 	bf:title 	?tnode .
 													?tnode 			a bf:Title.
                                         			?tnode bf:mainTitle ?label .
+													filter NOT exists{?tnode rdf:type <http://id.loc.gov/ontologies/bibframe/VariantTitle>}
                              					}.  		
 									#OPTIONAL {?relation 		rdfs:label 	?reltext  .  	}
 								  

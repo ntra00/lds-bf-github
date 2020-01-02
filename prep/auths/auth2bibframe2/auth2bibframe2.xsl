@@ -70,7 +70,7 @@
 	<!-- id.loc.gov vocabulary stems -->
 	<xsl:variable name="carriers">http://id.loc.gov/vocabulary/carriers/</xsl:variable>
 	<xsl:variable name="classSchemes">http://id.loc.gov/vocabulary/classSchemes/</xsl:variable>
-	<xsl:variable name="subjectSchemes">http://id.loc.gov/vocabulary/subjectSchemes/</xsl:variable>
+	
 	<xsl:variable name="contentType">http://id.loc.gov/vocabulary/contentType/</xsl:variable>
 	<xsl:variable name="countries">http://id.loc.gov/vocabulary/countries/</xsl:variable>
 	<xsl:variable name="demographicTerms">http://id.loc.gov/authorities/demographicTerms/</xsl:variable>
@@ -90,7 +90,27 @@
 	<xsl:variable name="marcmuscomp">http://id.loc.gov/vocabulary/marcmuscomp/</xsl:variable>
 	<xsl:variable name="organizations">http://id.loc.gov/vocabulary/organizations/</xsl:variable>
 	<xsl:variable name="relators">http://id.loc.gov/vocabulary/relators/</xsl:variable>
+	<xsl:variable name="mproduction">http://id.loc.gov/vocabulary/mproduction/</xsl:variable>
+    <xsl:variable name="msoundcontent">http://id.loc.gov/vocabulary/msoundcontent/</xsl:variable>
+    <xsl:variable name="mrecmedium">http://id.loc.gov/vocabulary/mrecmedium/</xsl:variable>
+    <xsl:variable name="mgeneration">http://id.loc.gov/vocabulary/mgeneration/</xsl:variable>
+    <xsl:variable name="mpresformat">http://id.loc.gov/vocabulary/mpresformat/</xsl:variable>
+    <xsl:variable name="mmaspect">http://id.loc.gov/vocabulary/maspect/</xsl:variable>
+    <xsl:variable name="mrectype">http://id.loc.gov/vocabulary/mrectype/</xsl:variable>
+    <xsl:variable name="mspecplayback">http://id.loc.gov/vocabulary/mspecplayback/</xsl:variable>
+    <xsl:variable name="mgroove">http://id.loc.gov/vocabulary/mgroove/</xsl:variable>
+    <xsl:variable name="mvidformat">http://id.loc.gov/vocabulary/mvidformat/</xsl:variable>
+    <xsl:variable name="mbroadstd">http://id.loc.gov/vocabulary/mbroadstd/</xsl:variable>
+    <xsl:variable name="mfiletype">http://id.loc.gov/vocabulary/mfiletype/</xsl:variable>
+    <xsl:variable name="mregencoding">http://id.loc.gov/vocabulary/mregencoding/</xsl:variable>
+    <xsl:variable name="mmusicformat">http://id.loc.gov/vocabulary/mmusicformat/</xsl:variable>
+  
+	<xsl:variable name="genreFormSchemes">http://id.loc.gov/vocabulary/genreFormSchemes/</xsl:variable>
+    <xsl:variable name="subjectSchemes">http://id.loc.gov/vocabulary/subjectSchemes/</xsl:variable>
 
+  <!-- for upper- and lower-case translation (ASCII only) -->
+  <xsl:variable name="lower">abcdefghijklmnopqrstuvwxyz</xsl:variable>
+  <xsl:variable name="upper">ABCDEFGHIJKLMNOPQRSTUVWXYZ</xsl:variable>
 	<!-- configuration files -->
 
 	<!-- subject thesaurus map -->
@@ -101,7 +121,7 @@
 
 	<!-- auths only , 1xx name label for matching against 4xx, 5xx sees -->
 	<xsl:variable name="primaryNameLabel"><xsl:apply-templates select="//marc:datafield[@tag='100' or @tag='110' or @tag='111'][1]" mode="tNameLabel"></xsl:apply-templates></xsl:variable>
-	 	<xsl:variable name="last-edit">2018-11-21T13:00</xsl:variable>
+	 	<xsl:variable name="last-edit">2019-12-18T13:00</xsl:variable>
 	 
 	<xsl:template match="/">
 

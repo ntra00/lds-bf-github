@@ -32,7 +32,7 @@
  # xcc://id:pw@mlvlp04.loc.gov:port/ \
  
 #set dirs etc:
-source config bibrecs
+source ../config bibrecs
 
 CHANGEURIS="$1-uris.xqy"
 CHANGECODE=$2

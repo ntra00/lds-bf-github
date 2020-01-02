@@ -4,7 +4,7 @@ module namespace yaz2bf = "http://loc.gov/ndmso/authorities-yaz-2-bibframe";
 
 import module namespace auth2bf = "http://loc.gov/ndmso/authorities-2-bibframe"   at "authorities2bf.xqy";
 
-import module namespace bibs2mets 		  = "http://loc.gov/ndmso/bibs-2-mets" 	at 	"modules/module.bibs2mets.xqy";
+import module namespace bibs2mets 		  = "http://loc.gov/ndmso/bibs-2-mets" 	at 	"/prep/modules/module.bibs2mets.xqy";
 
 declare namespace 	rdf					= "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 declare namespace	rdfs   			    = "http://www.w3.org/2000/01/rdf-schema#";
@@ -31,7 +31,7 @@ declare function yaz2bf:transform(
   $context as map:map
 ) as map:map*
 {
-    let $auth2bfBase:="/admin/bfi/auths/auth2bibframe2/"
+    let $auth2bfBase:="/prep/auths/auth2bibframe2/"
 	let $the-doc := map:get($content, "value")
 	let $orig-uri := map:get($content, "uri")  
 	return if ($the-doc/rdf:RDF/bf:Work or  $the-doc/rdf:RDF/bf:Instance or $the-doc/rdf:RDF/bf:Item                )						
@@ -86,7 +86,7 @@ return
 	       or fn:not($doc-exists) )  then
 	     	
 
-        let $metsHdr:= <mets:metsHdr LASTMODDATE="{fn:current-dateTime()}"/>
+        let $metsfHdr:= <mets:metsHdr LASTMODDATE="{fn:current-dateTime()}"/>
         
         let $params:=map:map()
     	let $put:=map:put($params, "baseuri", "http://id.loc.gov/resources/works/")
@@ -165,4 +165,8 @@ else
  ()
  
          
-         };
+         };(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

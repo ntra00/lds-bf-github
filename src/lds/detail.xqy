@@ -99,6 +99,7 @@ let $mime := mime:safe-mime(lp:get-param-single($lp:CUR-PARAMS, 'mime', 'text/ht
 let $result := vd:render('')
 let $currentObject:=$result[3]
 let $uri:=$result[4]
+let $detail-result:=$result[2]
 let $seo:=$result[1]
 
 (:*************below is all from permalink *****************:)
@@ -388,8 +389,7 @@ return
 				else 	xdmp:set-response-code(404,"Item Not found") 
 	
 	else  if (matches($mime, "text/simple-html")) then
-		   	if (exists(utils:mets($uri))) then					
-				let $detail-result := vd:render($uri,"simple")[2]
+		 
 				let $mime:="text/html"
 				return (
 					  if ($detail-result instance of element(error:error) ) then
@@ -405,20 +405,22 @@ return
 			                xdmp:set-response-content-type(concat($mime, "; charset=utf-8")), 
 			                xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
 			                xdmp:add-response-header("Cache-Control", resp:cache-control($duration)), 
-			                '<!DOCTYPE html>',
+			                '<!DOCTYPE html>',							
 			                local:output(false(), $detail-result, $uri, $mime, $behavior)
-		
+							
+
 			            )
 				)
-				else 	xdmp:set-response-code(404,"Item Not found") 
+
+(:				else 	xdmp:set-response-code(404,"Item Not found") :)
 
 		
     else (: HTML, XHTML, etc. :)	   
-		let $detail-result := vd:render($uri)[2] 	
+		(:let $detail-result := vd:render($uri)[2] 	:)
 
 
         
-		return (
+		
 		  if ($detail-result instance of element(error:error) ) then
 			  (
 			  	xdmp:set-response-code(500, $detail-result//error:message[1]/string()),      
@@ -433,12 +435,13 @@ return
                 xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
                 xdmp:add-response-header("Cache-Control", resp:cache-control($duration)), 
                 '<!DOCTYPE html>',
-                (:local:output(false(), $detail-result, $uri, $mime, behavior)		:)
+                (:local:output(false(), $detail-result, $uri, $mime, $behavior)		:)
+				
 				local:output(false(),$seo, $detail-result, $uri, $mime)		
 				
 				
             )
-		)	
+		
 
 (:*************above is all from permalink *****************:)
 (:

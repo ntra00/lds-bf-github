@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 #loads whatever is in load; copied from bibs rbl
 # rnc curls to source, transforms to singleload, moves to load
 #rnl loads from load, moves to loaded, which should be cleared out periodically

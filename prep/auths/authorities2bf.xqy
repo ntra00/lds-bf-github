@@ -15,6 +15,8 @@ declare namespace   mxe					= "http://www.loc.gov/mxe";
 declare namespace 	bf					= "http://id.loc.gov/ontologies/bibframe/";
 declare namespace	bflc				= "http://id.loc.gov/ontologies/bflc/";
 declare namespace 	idx 				= "info:lc/xq-modules/lcindex";
+declare namespace 	index 				= "info:lc/xq-modules/lcindex";
+
 declare namespace				lclocal				="http://id.loc.gov/ontologies/lclocal/";
 
 declare variable $BASE-URI  as xs:string:="http://id.loc.gov/resources/works/";
@@ -318,7 +320,7 @@ declare function auth2bf:transform-and-overwrite(
   $context as map:map
 ) as map:map*
 {
- let $auth2bfBase:="/admin/bfi/auths/auth2bibframe2/"
+ let $auth2bfBase:="/prep/auths/auth2bibframe2/"
 	let $the-doc := map:get($content, "value")
 	let $orig-uri := map:get($content, "uri")  
 	let $lccn:= fn:normalize-space(fn:tokenize($orig-uri,"/")[fn:last()])
@@ -362,8 +364,8 @@ return
 			xdmp:log(fn:concat("CORB auth : auth2bibframe document deprecated : ",$resclean), "info")
 		)
 	else (:  if ( fn:not($already-in-pilot)) then    :)
-     	if ($the-doc/mets:mets/mets:dmdSec[@ID="index"]/mets:mdWrap/mets:xmlData[//idx:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRWork"  
-                        or //idx:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRExpression"]
+     	if ($the-doc/mets:mets/mets:dmdSec[@ID="index"]/mets:mdWrap/mets:xmlData[//index:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRWork"  
+                        or //index:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRExpression"]
                         and fn:not($already-in-pilot)) then
 	(:let $marcxml:=$the-doc/mets:mets/mets:dmdSec[@ID="marcxml"]/mets:mdWrap/mets:xmlData/marcxml:record:)	
     
@@ -379,12 +381,12 @@ return
     	
     	let $bfwork:=           
     		try {				
-    				xdmp:xslt-invoke("/admin/bfi/auths/auth2bibframe2/auth2bibframe2.xsl",document{$marcxml},$params)
+    				xdmp:xslt-invoke("/prep/auths/auth2bibframe2/auth2bibframe2.xsl",document{$marcxml},$params)
     			 } 
     		catch ($e) {
     					(
-						$e,
-    					xdmp:log(fn:concat("CORB auth : auth2bibframe error. transform failed for ",$resclean), "info")
+						$stylesheet,
+    					xdmp:log(fn:concat("CORB auth : auth2bibframe error. transform failed on",$resclean), "info")
 						,xdmp:log($e, "info")
     					)				
     		}
@@ -407,6 +409,7 @@ return
             	        	PROFILE			= "workRecord"
             	        	xmlns:xlink		= "http://www.w3.org/1999/xlink"  
 							xmlns:idx 		= "info:lc/xq-modules/lcindex"
+							xmlns:index		= "info:lc/xq-modules/lcindex"
             	        	xmlns:marcxml	= "http://www.loc.gov/MARC21/slim" 
             	        	xmlns:mets		= "http://www.loc.gov/METS/" 
 	            			xmlns:mxe		= "http://www.loc.gov/mxe"
@@ -594,7 +597,7 @@ let $relateds:=
 						else ()
 	(: memberofuri no longer makes it into the bf databse, so post it to the collection (all are resources/works, only some are resources/expressions: :)
 	
-	let $nametitle-expression:=if ($the-doc/mets:mets/mets:dmdSec[@id="index"]/mets:mdWrap/mets:xmlData//idx:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRExpression") then "/resources/expressions/" else ()
+	let $nametitle-expression:=if ($the-doc/mets:mets/mets:dmdSec[@ID="index"]/mets:mdWrap/mets:xmlData//index:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRExpression") then "/resources/expressions/" else ()
 	let $rel-colls:=($haslinks, $expressions,$titlerelations, $had7xx,$textrelations, $nametitle-expression)
 	let $bfwork:= if ( $distinct-translations or $distinct-relateds or $related-7xxs or $text-relation-nodes) then
 						<rdf:RDF>
@@ -647,7 +650,7 @@ let $relateds:=
             		  		OBJID="{$new-uri}"
             	        	PROFILE			= "workRecord"
             	        	xmlns:xlink		= "http://www.w3.org/1999/xlink"  
-							xmlns:idx 		= "info:lc/xq-modules/lcindex"
+							xmlns:idx 		= "info:lc/xq-modules/lcindex"							
 							xmlns:index		= "info:lc/xq-modules/lcindex"
             	        	xmlns:marcxml	= "http://www.loc.gov/MARC21/slim" 
             	        	xmlns:mets		= "http://www.loc.gov/METS/" 
@@ -696,14 +699,18 @@ declare function auth2bf:transform(
   $context as map:map
 ) as map:map*
 {
-    let $auth2bfBase:="/admin/bfi/auths/auth2bibframe2/"
+    let $auth2bfBase:="/prep/auths/auth2bibframe2/"
 	let $the-doc := map:get($content, "value")
+	
 	let $orig-uri := map:get($content, "uri")  
-	return if ($the-doc/mets:mets/mets:dmdSec[@id="index"]/mets:mdWrap/mets:xmlData[//idx:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRWork"  
-                        or //idx:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRExpression"]
-						or $the-doc/mets:mets/mets:dmdSec[@ID="madsrdf"]/mets:mdWrap/mets:xmlData/rdf:RDF/madsrdf:Title )
-						
+	return if ($the-doc/mets:mets/mets:dmdSec[@ID="index"]/mets:mdWrap/mets:xmlData[//index:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRWork"  
+                        or //index:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRExpression"]
+						or $the-doc/mets:mets/mets:dmdSec[@ID="madsrdf"]/mets:mdWrap/mets:xmlData/rdf:RDF/madsrdf:Title 
+						or $the-doc/mets:mets/mets:dmdSec[@ID="madsrdf"]/mets:mdWrap/mets:xmlData/rdf:RDF/madsrdf:NameTitle )
 						then
+let $_:=if (fn:contains($orig-uri,"no2019118878")) then xdmp:log( "------------------","info") else ()
+let $_:=if (fn:contains($orig-uri,"no2019118878")) then xdmp:log( $the-doc,"info") else ()
+let $_:=if (fn:contains($orig-uri,"no2019118878")) then xdmp:log( "------------------","info") else ()
 
 
 	let $lccn:= fn:normalize-space(fn:tokenize($orig-uri,"/")[fn:last()])
@@ -712,17 +719,23 @@ declare function auth2bf:transform(
 	       (: dailies may not be nametitle or title records; also may have the 985 tag : skip them:)
 	
 	let $marcxml:=$the-doc/mets:mets/mets:dmdSec[@ID="marcxml"]/mets:mdWrap/mets:xmlData/marcxml:record
-	
+	let $_:=if (fn:contains($orig-uri,"no2019118878")) then xdmp:log( fn:concat($orig-uri,":marcxml:", $marcxml),"info") else ()
 	let $already-in-pilot:=   
 		for $tag in $marcxml/marcxml:datafield[@tag="985"]/marcxml:subfield[@code="a"]
       	return if (fn:matches(fn:string($tag) ,"BibframePilot2","i")) then
         			fn:true()
        			else 
         			()
+	let $subjectLccn:= 
+			if (				fn:starts-with($lccn,"sh") or fn:starts-with($lccn,"sj") 				) then
+					"yes"
+			else
+					()
+				
 	let $deprecated:= 
 			if (
 				fn:substring($marcxml/marcxml:leader,6,1)="d" or 
-				$the-doc/mets:mets/mets:dmdSec[@ID="index"]/mets:mdWrap/mets:xmlData/idx:index/idx:rdftype="DeprecatedAuthority"
+				$the-doc/mets:mets/mets:dmdSec[@ID="index"]/mets:mdWrap/mets:xmlData/index:index/index:rdftype="DeprecatedAuthority"
 			) then
 					"yes"
 			else
@@ -737,9 +750,9 @@ declare function auth2bf:transform(
         let $dir := fn:concat($destination-root, string-join($dirtox, '/'), '/')
         let $destination-uri := fn:concat($dir, $resclean, '.xml')
         let $destination-collections := ($destination-root, "/lscoll/lcdb/", "/lscoll/", "/catalog/",
-		 "/catalog/lscoll/", "/catalog/lscoll/lcdb/", 
-		"/bibframe/nametitle-work/",
-		"/resources/works/","/bibframe-process/reloads/2018-12-14/")
+								 "/catalog/lscoll/", "/catalog/lscoll/lcdb/", 
+								"/bibframe/nametitle-work/",
+								"/resources/works/","/bibframe-process/reloads/2018-12-14/")
 
 								(:/resources works is for suggest:)
 		
@@ -749,7 +762,6 @@ declare function auth2bf:transform(
 		let $AUTHURI:= $resclean
 		
 		let $paddedID := $AUTHURI
-
 return
 	if ($deprecated and doc-available($destination-uri)) then
 		(
@@ -757,13 +769,13 @@ return
 		xdmp:document-add-collections($destination-uri,"/deleted/"),
 		xdmp:log(fn:concat("CORB auth : auth2bibframe document deprecated : ",$resclean), "info")
 		)
-		
+	else if ($subjectLccn) then 
+			xdmp:log(fn:concat("CORB auth : auth2bibframe document is a subject, not a name ",$resclean), "info")
 	else     (: redundant for now; need to remove it:)
-		if ($the-doc/mets:mets/mets:dmdSec[@ID="index"]/mets:mdWrap/mets:xmlData[//idx:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRWork" 
-                        or idx:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRExpression"]
-                        and fn:not($already-in-pilot)) then
+		if (fn:not($already-in-pilot)) then
    
-   		(: records being updated: only if not consolidated;
+   		
+		(: records being updated: only if not consolidated;
    		 :  need to figure out how to update  bf w/o overwriting  merge data
 	  	 :) 
    		let $doc-exists:=fn:doc-available($new-uri) 
@@ -778,11 +790,13 @@ return
     	
 		    	let $bfwork:=           
 		    		try {				
-		    				xdmp:xslt-invoke("/admin/bfi/auths/auth2bibframe2/auth2bibframe2.xsl",document{$marcxml},$params)					
+		    				xdmp:xslt-invoke("/prep/auths/auth2bibframe2/auth2bibframe2.xsl",document{$marcxml},$params)					
 		    			 } 
 		    		catch ($e) {
-		    					(
-												xdmp:log(fn:concat("CORB auth : auth2bibframe error; transform failed for ",$resclean), "info")						
+		    					(xdmp:log($e,"info")
+								
+,
+												xdmp:log(fn:concat("CORB auth : auth2bibframe error; transform failed on ",$resclean), "info")						
 		    									
 								)
 		    		}		

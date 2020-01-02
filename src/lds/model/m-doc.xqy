@@ -35,8 +35,8 @@ declare default function namespace "http://www.w3.org/2005/xpath-functions";
 
 declare variable $INVERSES :=
 <set>
-		<rel><name>relatedTo</name><inverse>relatedTo</inverse><label>Related To</label></rel>
-		<rel><name>hasInstance</name><inverse>instanceOf</inverse></rel>
+	<!--	<rel><name>relatedTo</name><inverse>relatedTo</inverse><label>Related To</label></rel>
+		<rel><name>hasInstance</name><inverse>instanceOf</inverse> <label>Instance Of</label></rel>
 		<rel><name>instanceOf</name><inverse>hasInstance</inverse></rel>
 		<rel><name>hasExpression</name><inverse>expressionOf</inverse></rel>
 		<rel><name>expressionOf</name><inverse>hasExpression</inverse></rel>
@@ -51,11 +51,11 @@ declare variable $INVERSES :=
 		<rel><name>accompanies</name><inverse>accompaniedBy</inverse></rel>
 		<rel><name>hasDerivative</name><inverse>derivativeOf</inverse></rel>
 		<rel><name>derivativeOf</name><inverse>hasDerivative</inverse></rel>
-		<rel><name>precededBy</name>	<inverse>succeededBy</inverse></rel>
-		<rel><name>succeededBy</name>	<inverse>precededBy</inverse></rel>
+		<rel><name>precededBy</name><inverse>succeededBy</inverse></rel>
+		<rel><name>succeededBy</name><inverse>precededBy</inverse></rel>
 		<rel><name>references</name><inverse>referencedBy</inverse></rel>
 		<rel><name>referencedBy</name><inverse>references</inverse></rel>
-		<rel><name>issuedWith</name>	<inverse>issuedWith</inverse></rel>		
+		<rel><name>issuedWith</name><inverse>issuedWith</inverse></rel>		
 		<rel><name>otherPhysicalFormat</name><inverse>otherPhysicalFormat</inverse></rel>
 		<rel><name>hasReproduction</name><inverse>reproductionOf</inverse></rel>
 		<rel><name>reproductionOf</name><inverse>hasReproduction</inverse></rel>
@@ -65,8 +65,9 @@ declare variable $INVERSES :=
 		<rel><name>subseriesOf</name><inverse>hasSubseries</inverse></rel>
 		<rel><name>supplement</name><inverse>supplementTo</inverse></rel>
 		<rel><name>supplementTo</name><inverse>supplement</inverse></rel>
-		<rel><name>translation</name><inverse>translationOf</inverse></rel>
-		<rel><name>translationOf</name><inverse>translation</inverse></rel>
+		
+		<rel><name>translation</name><inverse>translationOf</inverse><label>Translated as</label></rel>
+		<rel><name>translationOf</name><inverse>translation</inverse><label>Translation Of</label></rel>
 		<rel><name>originalVersion</name><inverse>originalVersionOf</inverse></rel>
 		<rel><name>originalVersionOf</name><inverse>originalVersion</inverse></rel>
 		<rel><name>index</name><inverse>indexOf</inverse></rel>
@@ -85,7 +86,60 @@ declare variable $INVERSES :=
 		<rel><name>absorbed</name><inverse>absorbedBy</inverse></rel>
 		<rel><name>absorbedBy</name><inverse>absorbed</inverse></rel>
 		<rel><name>separatedFrom</name><inverse>continuedInPartBy</inverse></rel>
-		<rel><name>continuedInPartBy</name><inverse>separatedFrom</inverse></rel>
+		<rel><name>continuedInPartBy</name><inverse>separatedFrom</inverse></rel>-->
+		<rel><name>relatedTo</name><inverse>relatedTo</inverse><label>Related resource</label></rel>
+<rel><name>hasInstance</name><inverse>instanceOf</inverse><label>Has Instance</label></rel>
+<rel><name>instanceOf</name><inverse>hasInstance</inverse><label>Instance of</label></rel>
+<rel><name>hasExpression</name><inverse>expressionOf</inverse><label>Has Expression</label></rel>
+<rel><name>expressionOf</name><inverse>hasExpression</inverse><label>Expression of</label></rel>
+<rel><name>hasItem</name><inverse>itemOf</inverse><label>Has Item</label></rel>
+<rel><name>itemOf</name><inverse>hasItem</inverse><label>Item of</label></rel>
+<rel><name>eventContent</name><inverse>eventContentOf</inverse><label>Event content</label></rel>
+<rel><name>eventContentOf</name><inverse>eventContent</inverse><label>Has event content</label></rel>
+<rel><name>hasEquivalent</name><inverse>hasEquivalent</inverse><label>Equivalence</label></rel>
+<rel><name>hasPart</name><inverse>partOf</inverse><label>Has part</label></rel>
+<rel><name>partOf</name><inverse>hasPart</inverse><label>Is part of</label></rel>
+<rel><name>accompaniedBy</name><inverse>accompanies</inverse><label>Accompanied by</label></rel>
+<rel><name>accompanies</name><inverse>accompaniedBy</inverse><label>Accompanies</label></rel>
+<rel><name>hasDerivative</name><inverse>derivativeOf</inverse><label>Has derivative</label></rel>
+<rel><name>derivativeOf</name><inverse>hasDerivative</inverse><label>Is derivative of</label></rel>
+<rel><name>precededBy</name><inverse>succeededBy</inverse><label>Preceded by</label></rel>
+<rel><name>succeededBy</name><inverse>precededBy</inverse><label>Succeeded by</label></rel>
+<rel><name>references</name><inverse>referencedBy</inverse><label>References</label></rel>
+<rel><name>referencedBy</name><inverse>references</inverse><label>Referenced by</label></rel>
+<rel><name>issuedWith</name><inverse>issuedWith</inverse><label>Issued with</label></rel>
+<rel><name>otherPhysicalFormat</name><inverse>otherPhysicalFormat</inverse><label>Has other physical format</label></rel>
+<rel><name>hasReproduction</name><inverse>reproductionOf</inverse><label>Reproduced as</label></rel>
+<rel><name>reproductionOf</name><inverse>hasReproduction</inverse><label>Reproduction of</label></rel>
+<rel><name>hasSeries</name><inverse>seriesOf</inverse><label>In series</label></rel>
+<rel><name>seriesOf</name><inverse>hasSeries</inverse><label>Series container of</label></rel>
+<rel><name>hasSubseries</name><inverse>subseriesOf</inverse><label>Subseries</label></rel>
+<rel><name>subseriesOf</name><inverse>hasSubseries</inverse><label>Subseries of</label></rel>
+<rel><name>supplement</name><inverse>supplementTo</inverse><label>Supplement</label></rel>
+<rel><name>supplementTo</name><inverse>supplement</inverse><label>Supplement to</label></rel>
+
+<rel><name>translation</name><inverse>translationOf</inverse><label>Translated as</label></rel>
+<rel><name>translationOf</name><inverse>translation</inverse><label>Translation of</label></rel>
+<rel><name>originalVersion</name><inverse>originalVersionOf</inverse><label>Original version</label></rel>
+<rel><name>originalVersionOf</name><inverse>originalVersion</inverse><label>Original version of </label></rel>
+<rel><name>index</name><inverse>indexOf</inverse><label>Has index </label></rel>
+<rel><name>indexOf</name><inverse>index</inverse><label>Index to</label></rel>
+<rel><name>otherEdition</name><inverse>otherEdition</inverse><label>Other edition</label></rel>
+<rel><name>findingAid</name><inverse>findingAidOf</inverse><label>Finding aid</label></rel>
+<rel><name>findingAidOf</name><inverse>findingAid</inverse><label>Finding aid for</label></rel>
+<rel><name>replacementOf</name><inverse>replacedBy</inverse><label>Preceded by</label></rel>
+<rel><name>replacedBy</name><inverse>replacementOf</inverse><label>Succeeded by</label></rel>
+<rel><name>mergerOf</name><inverse>mergedToForm</inverse><label>Merger of</label></rel>
+<rel><name>mergedToForm</name><inverse>mergerOf</inverse><label>Merged to form</label></rel>
+<rel><name>continues</name><inverse>continuedBy</inverse><label>Continues</label></rel>
+<rel><name>continuedBy</name><inverse>continues</inverse><label>Continued by</label></rel>
+<rel><name>continuesInPart</name><inverse>splitInto</inverse><label>Continues in part</label></rel>
+<rel><name>splitInto</name><inverse>continuesInPart</inverse><label>Split into</label></rel>
+<rel><name>absorbed</name><inverse>absorbedBy</inverse><label>Absorption of</label></rel>
+<rel><name>absorbedBy</name><inverse>absorbed</inverse><label>Absorbed by</label></rel>
+<rel><name>separatedFrom</name><inverse>continuedInPartBy</inverse><label>Separated from</label></rel>
+<rel><name>continuedInPartBy</name><inverse>separatedFrom</inverse><label>Continued in part by</label></rel>
+
 </set>;
 
 declare function md:prettify-rdf($rdf, $indent ) {
@@ -216,8 +270,6 @@ declare function md:my-children($my-uri,$node, $offset) {
 	                   "Has Instance(s)"
 	               else "Has Items(s)"
 (: this may dedup multiple titles, but is it right? :)
-let $_:=xdmp:log($results,"info")
-let $_:=xdmp:log("_______","info")
 let $results:=<sparql:results>{
 				for $r in distinct-values($results//*:uri)
 					 
@@ -246,7 +298,7 @@ let $results:=<sparql:results>{
 				</sparql:result>
 
 				}</sparql:results>
-	let $_:=xdmp:log($results,"info")
+	
 	let $sparql-nav:=md:sparql-nav($my-uri,$results,$offset, $limit)
 	
  return md:linked-layout($results, $my-uri,$label, ()) 
@@ -262,17 +314,24 @@ let $objid:=fn:replace($objid,".resources","loc.natlib")
 
 
 
-let $inst:=utils:mets($objid)
-
- let $prov:=$inst//bf:provisionActivityStatement
+let $mets:=utils:mets($objid)
+let $rdf:=$mets//mets:dmdSec[@ID="bibframe"]/mets:mdWrap[@MDTYPE="OTHER"]/mets:xmlData/*[1]
+ let $prov:=if ($mets//idx:aLabel) then 
+ 				$mets//idx:aLabel
+ 			else
+ 				$rdf/*[1]/bf:provisionActivityStatement[1]
+ 
+ 
+let $prov:=if ($prov)  then
+ 			fn:string($prov)
+ 		else
+			fn:string-join($rdf/*[1]/bf:provisionActivity/bf:ProvisionActivity/*," ")
+ 
+let $mat:=fn:string($mets//mets:dmdSec[@ID="index" or @ID="lds-index"]/mets:mdWrap[@MDTYPE="OTHER"]/mets:xmlData/idx:*//idx:materialGroup)
  
 
- let $prov:= if ($prov) then fn:string($prov[1])
- 		else fn:string-join($inst//bf:ProvisionActivity/*," ")
-let $_:=xdmp:log("in prov","info")
+ return if  ($mat and $mat!="Instance") then fn:concat("(",$mat,") ",$prov) else $prov
 
-let $_:=xdmp:log($prov,"info")
-	return $prov
 
 };
 (:parent is in bf, use xpath, then sparql for label
@@ -359,6 +418,7 @@ return if (fn:contains($uri, "entities/relationship")) then
 : 		@bf is the whole doc, to mine for text relations
 : many titles now possible, since not using rdfs:label
 : if you want, as in my direct children, dedup before coming here
+: order by?
 :)
 declare function md:linked-layout($results, $my-uri , $label, $bf) {
 let $my-node:=fn:tokenize($my-uri,"/")[fn:last()]									
@@ -379,10 +439,7 @@ return
 				 		let $node-uri:=fn:string($node/sparql:binding[@name="relateduri"]/sparql:uri)
 				
 						let $node-id:=fn:tokenize($node-uri,"/")[fn:last()]									
-						
-						let$_:=xdmp:log("xxxx","info")
-						let$_:=xdmp:log($node/*:binding[@name="label"],"info")
-
+					
 						let $node-label:=
 											md:titleChop($node/sparql:binding[@name="label"]/sparql:literal,100)
 			 		
@@ -418,8 +475,9 @@ return
 									else if ($stub="stub" and fn:contains($label,"Item") ) then
 										fn:concat("item",fn:substring($node-id,fn:string-length($node-id)-5))
 									else $node-id
-					
-					order by $stub, $node-relation, $node-uri
+
+					order by $stub, $node-relation,fn:replace($node-label,"^[\[\]~ @#*()}{|]+",""), $node-uri
+
 
 					return <li>
 							{if ( fn:contains($node-uri,"example.org")) then
@@ -427,9 +485,13 @@ return
 							 else if ( $my-uri != $node-uri ) then
 										let $related-local-uri:=fn:replace($node-uri,"id.loc.gov",$cfg:DISPLAY-SUBDOMAIN) (:???:)
 										(: relations onl show (ie., vary) for works, not hasinstance, hasitem:)
-										let $inverse:= if (fn:contains($label, "Incoming") and fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 																							
+										let $inverse:= if (fn:contains($label, "Incoming") and fn:not(fn:contains($label,"nstance")) 
+															and fn:not(fn:matches($label,"item","i")) )  then 																							
 														 md:inverseRelationship($node-rel, $node-relation)											
-														else ()
+														else
+															 ()
+														
+															
 										let $relation:= 
 											if (fn:contains($label, "Incoming") and fn:not(fn:contains($label,"nstance")) and fn:not(fn:matches($label,"item","i")) )  then 																																				
 															(:<span style="color:blue;">{fn:substring-before($inverse,"inverse rel not available")}</span>:)
@@ -491,8 +553,8 @@ let $relation:=fn:tokenize(fn:string($rel/sparql:binding[@name="relation"]/sparq
 	:)
 let $token:=fn:tokenize($relation-uri,"/")[fn:last()]
 
-let $inverse:= if (fn:index-of(distinct-values($INVERSES//rel/name), $relation-uri )) then
-				let $i:=			fn:string($INVERSES//rel[fn:string(name) = $relation-uri]/inverse)
+let $inverse:= if (fn:index-of(distinct-values($INVERSES//rel/name), $token )) then
+				let $i:=	fn:string($INVERSES//rel[fn:string(name) = $token]/inverse)
 					return $INVERSES//rel[fn:string(name) =$i]/label
 				else if (fn:contains($relation-uri,"relationships") and fn:ends-with($relation-uri,"of")) then 
 							(:fn:concat($token, "inverse rel not available"):)
@@ -502,11 +564,6 @@ let $inverse:= if (fn:index-of(distinct-values($INVERSES//rel/name), $relation-u
 				else "Related resource"
 
 
-
-
-(:let $_:= xdmp:node-replace($rel/sparql:binding[@name="relation"]/sparql:uri,
-								<sparql:uri>{fn:concat("http://id.loc.gov/ontologies/bibframe/",$inverse)}</sparql:uri>
-				):)
 
 return $inverse
 };

@@ -4,6 +4,11 @@
 ## This is where we'll do our work
 
 cd bibs_full
+************************
+
+this is obsolete? not modified from admin/bfi/bibrecs
+
+************************
 
 # Just some utilities if you need them.  This is how many MARC files there are.  Make a directory for each under the marklogic-staging directory to store the many XML files we'll have to create.  There's also a good random string generator if you need dynamic file naming.
 #countfiles=`ls -w1 | wc -l`

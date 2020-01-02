@@ -413,6 +413,7 @@ return
 						  (
 						  	xdmp:set-response-code(500, $detail-result//error:message[1]/string()),      
 							$detail-result
+							
 						)
 						else if (not(exists($detail-result)) ) then
 						   xdmp:set-response-code(404,"Item Not found")
@@ -422,7 +423,7 @@ return
 			                xdmp:set-response-content-type(concat($mime, "; charset=utf-8")), 
 			                xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
 			                xdmp:add-response-header("Cache-Control", resp:cache-control($duration)), 
-			                '<!DOCTYPE html>',
+			                '<!DOCTYPE html>',							
 			                local:output(false(), $detail-result, $uri, $mime, $behavior)
 		
 			            )
@@ -449,7 +450,7 @@ return
                 xdmp:set-response-content-type(concat($mime, "; charset=utf-8")), 
                 xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
                 xdmp:add-response-header("Cache-Control", resp:cache-control($duration)), 
-                '<!DOCTYPE html>',
+                '<!DOCTYPE html>',				
                 local:output(false(), $detail-result, $uri, $mime, $behavior)		
             )
 		)	

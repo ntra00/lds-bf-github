@@ -81,10 +81,6 @@ declare variable $XML-STRING as xs:string external;
 declare variable $TODAY as xs:string:=fn:substring(fn:string(fn:current-date()),1,10);
 (:fn:concat("/processing/load/bibs/",$TODAY,"/"):)
 
-(: cant figure out how to add this yet:
-declare variable $OVERWRITE as xs:string external ;
-let $OVERWRITE:=""
-:)
 
     
 (:
@@ -99,7 +95,7 @@ let $OVERWRITE:=""
     Generate work URI  
     Get Bib MARC/XML
     
-    Transform MARCXML/BIB to BIBFRAME/RAW
+    Transform: MARCXML/BIB to BIBFRAME/RAW
     
     Works
         Check if exists
@@ -165,7 +161,7 @@ return
 
 (:==========================main program ====================:)
 let $start := xdmp:elapsed-time()
-
+let $OVERWRITE:=""
 
 return 
  if ( fn:not( try {
@@ -225,7 +221,7 @@ return
 			    let $destination-root := $dest
 			    let $dir := fn:concat($destination-root, string-join($dirtox, '/'), '/')
 			    let $destination-uri := fn:concat($dir, $resclean, '.xml')
-			    let $destination-collections := ($destination-root, "/lscoll/lcdb/", "/lscoll/", "/catalog/", "/catalog/lscoll/", "/catalog/lscoll/lcdb/",
+			    let $destination-collections := ($destination-root,  "/catalog/", 
 				    		"/catalog/lscoll/lcdb/bib/", "/bibframe-process/reloads/2017-09-16/","/bibframe-process/yaz-reload/",
 							fn:concat("/processing/load/bibs/",$TODAY,"/"))
 				
@@ -285,7 +281,7 @@ return
 									    	if ($bfraw instance of element(error:error)) then 
 													$bfraw 
 											else 						
-												bibs2mets:get-work($bfraw/rdf:RDF,$workDBURI,$paddedID, $BIBURI, $mxe,  $destination-collections,$destination-uri)
+												bibs2mets:get-work($bfraw/rdf:RDF,$workDBURI,$paddedID, $BIBURI, $mxe,  $destination-collections,$destination-uri, $OVERWRITE)
 									
 											,
 									    	xdmp:log(fn:concat("CORB BIB merge:  ", (xdmp:elapsed-time() - $start) cast as xs:string), "info")

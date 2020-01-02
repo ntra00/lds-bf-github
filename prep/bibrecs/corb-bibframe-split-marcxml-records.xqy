@@ -1,5 +1,5 @@
 xquery version "1.0-ml";
-import module namespace bibs2mets = "http://loc.gov/ndmso/bibs-2-mets" at "modules/module.bibs2mets.xqy";
+import module namespace bibs2mets = "http://loc.gov/ndmso/bibs-2-mets" at "/prep/modules/module.bibs2mets.xqy";
 declare default element namespace "http://www.loc.gov/MARC21/slim";
 declare  namespace marcxml="http://www.loc.gov/MARC21/slim";
 declare variable $TODAY := fn:format-date(fn:current-date(),"[Y0001]-[M01]-[D01]");
@@ -81,7 +81,7 @@ return (
 		local:delete-collection-records()
 	else
 		(),
-	xdmp:log(fn:concat("CORB-BIBFRAME-SPLIT-RECORDS-EXECUTION: ", $URI, (xdmp:elapsed-time() - $start) cast as xs:string), "info")
+	xdmp:log(fn:concat("CORB-BIBFRAME-SPLIT-RECORDS: ", $URI, (xdmp:elapsed-time() - $start) cast as xs:string), "info")
 )(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
 <metaInformation>
 <scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>

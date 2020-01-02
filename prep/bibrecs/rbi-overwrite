@@ -1,0 +1,75 @@
+#!/bin/bash
+#curl single bib and overwrite, either bibid or lccn
+
+
+# if its an lccn, have "lccn" or anything in the second parameter
+
+
+ID=$1
+LCCN=$2
+if [[  $LCCN == "" ]]
+then
+ 	curl "http://mlvlp04.loc.gov:8230/resources/bibs/$ID.xml"  | sed -e "s|\[from old catalog\]||g"   > $SOURCE_UNPROCESSED/single/$ID.xml
+else
+	echo curling permalink for lccn: $lccn/marcxml
+	# sru:
+	curl -L "https://lccn.loc.gov/$ID/marcxml"    | sed -e "s|\[from old catalog\]||g"   > $SOURCE_UNPROCESSED/single/$ID.xml
+	echo "curl -L 'https://lccn.loc.gov/$ID/marcxml'    | sed -e 's|\[from old catalog\]||g'   > $SOURCE_UNPROCESSED/single/$ID.xml"
+fi
+
+BIBID=$1
+
+
+uconv -f utf8 -t utf8 -x nfc --from-callback skip --to-callback  skip < source/singleton.$BIBID.tmp.xml   > source/singleton.$BIBID.xml	
+
+chmod 775 source/*
+chgrp marklogic source/*
+
+CURDIR=`echo $PWD`
+
+# do not check for edited content before loading.
+OVERWRITE="OVERWRITE"
+
+uconv -f utf8 -t utf8 -x nfc --from-callback skip --to-callback  skip < $SOURCE_UNPROCESSED/single/$ID.tmp.xml   > $SOURCE_UNPROCESSED/single/$ID.xml	
+
+chmod 775 $SOURCE_UNPROCESSED/single/$ID*
+chgrp marklogic $SOURCE_UNPROCESSED/single/$ID*
+
+yaz-record-conv  $M2BFDIR/record-conv.vlp3.xml  $SOURCE_UNPROCESSED/single/$ID.xml |sed -e "s|idwebvlp03.loc.gov|id.loc.gov|g" | sed -e "s|mlvlp04.loc.gov:8080|id.loc.gov|g" | sed -e "s|//mlvlp06.loc.gov:8288|http://id.loc.gov|g"   > $SOURCE_PROCESSED/single/$ID.tmp.rdf
+
+# wrap the pkg in <lclocal:graph>:
+xsltproc $MODULES/graphiphy.xsl  $SOURCE_PROCESSED/single/$ID.tmp.rdf  > $LOAD_UNPROCESSED/single/$ID.rdf
+
+rm  $SOURCE_PROCESSED/single/$ID.tmp.rdf 
+
+chmod 775 $LOAD_UNPROCESSED/single/$ID*
+chgrp marklogic $LOAD_UNPROCESSED/single/$ID*
+
+TODAY=`date +%Y-%m-%d`
+
+ echo "load date  = $TODAY"
+
+ 
+$MLCPPATH/mlcp.sh import  \
+ 	    -host localhost \
+        -port $BFDB_XCC_PORT \
+        -username $BFDB_XCC_USER \
+        -password $BFDB_XCC_PASS \
+		-input_file_path $LOAD_UNPROCESSED/single	 \
+		-output_uri_replace "$LOAD_UNPROCESSED/single,''"  \
+		-output_collections /bibframe-process/,/processing/load/bibs/$TODAY/,/bibframe-process/yaz-reload/ \
+		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update \
+   		-input_file_type documents \
+		-transform_module /prep/bibrecs/corb-bibframe-process-yazbib-files.xqy \
+		-transform_param $OVERWRITE  \
+		-transform_namespace "http://loc.gov/ndmso/marc-2-bibframe-yaz/" \
+		-document_type xml \
+        -aggregate_record_element RDF \
+        -aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns# \
+        -thread_count $THREADS \
+        -mode local 
+
+echo $ID loaded?
+
+mv $LOAD_UNPROCESSED/single/$ID*.rdf $LOAD_PROCESSED/single/
+ls -l $LOAD_PROCESSED/single/$ID.rdf

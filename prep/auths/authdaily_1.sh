@@ -10,9 +10,12 @@
 
 # runs for yesterday unless date yyy-mm-dd is passed in as parameter 1
 
+
+source ../config auths
+
 #AUTH2BFDIR=/marklogic/id/auth2bibframe2
 
-AUTH2BFDIR=/marklogic/id/natlibcat/admin/bfi/auths/auth2bibframe2
+#AUTH2BFDIR=/marklogic/id/natlibcat/admin/bfi/auths/auth2bibframe2
 
 YESTERDAY=$1 
  if [[ -n "$YESTERDAY" ]]
@@ -32,13 +35,16 @@ filedate=$yr$mon$day
 echo $filedate
 
 #`date +%Y%m%d | cut -c3-10`
-cd /marklogic/id/natlibcat/admin/bfi/auths
-#symlink the days voyager output here:
-for f in $(ls /marklogic/id/lds-id/prep/marc-auth/names/load/processed/AUTH.ML.*$filedate*a.xml) 
+pwd
+
+#symlink the days id names input here:
+
+
+for f in $(ls $NAMESLOAD/AUTH.ML.*$filedate*a.xml) 
 do
  ln -s $f .
 done
-for f in $(ls /marklogic/id/lds-id/prep/marc-auth/names/load/processed/AUTH.ML.*$filedate*d.xml) 
+for f in $(ls $NAMESLOAD/AUTH.ML.*$filedate*d.xml) 
 do
  ln -s $f .
 done
@@ -53,6 +59,7 @@ suffix="a.xml"
 echo $adds$filedate$suffix
 ls -l $adds$filedate$suffix
 
+
 for mrc in $(ls $adds$filedate$suffix)
 	do
 	echo $mrc : $filedate
@@ -66,11 +73,14 @@ for mrc in $(ls $adds$filedate$suffix)
 		chmod -R 775 A > /dev/null
 		chgrp marklogic A > /dev/null
 		cd A
-			xsltproc  /marklogic/id/natlibcat/admin/bfi/auths/modules/get-marcxml.xsl ../../../$mrc > ../../../$mrc.collection.xml
+			uconv -f utf8 -t utf8 -x nfc -c --from-callback skip --to-callback skip  < ../../../$mrc   > ../../../$mrc.utf.xml
+			
+			xsltproc  $MODULES/get-marcxml.xsl ../../../$mrc.utf.xml > ../../../$mrc.collection.xml
 echo about to split:
-			yaz-marcdump -f utf8 -t utf8 -C 250 -s split_ ../../../$mrc.collection.xml 
+			yaz-marcdump -C 250 -s split_ ../../../$mrc.collection.xml 
 echo done split
 ls -l split*
+read z
 
 		for f in split*
 		do
@@ -78,7 +88,6 @@ ls -l split*
 #			uconv -f utf8 -t utf8 -x nfc -c --from-callback skip --to-callback skip  < $f   > $f.1.tmp
 			
 	
-#  sed -e "s|\[from old catalog\]||g" < $f.1.tmp  >$mrc_$f.xml
 
 	 sed -e "s|\[from old catalog\]||g" < $f  >$mrc_$f.xml
 
@@ -88,7 +97,7 @@ ls -l split*
 			 sed -e "s|mlvlp04.loc.gov:8080|id.loc.gov|g" <$f.tmp.1.rdf >$f.tmp.2.rdf
 			 sed -e "s|//mlvlp06.loc.gov:8288|http://id.loc.gov|g" < $f.tmp.2.rdf  > $f.tmp.3.rdf
 
-			 xsltproc  /marklogic/id/natlibcat/admin/bfi/auths/modules/graphiphy.xsl  $f.tmp.3.rdf   > $f.rdf
+			 xsltproc  $MODULES/graphiphy.xsl  $f.tmp.3.rdf   > $f.rdf
 
 	 
 #			rm $f.tmp
@@ -121,7 +130,7 @@ for mrc in $(ls deleted.bib.marc.$filedated.xml)
 
 		 	
 			yaz-record-conv  $M2BFDIR/record-conv.vlp3.xml  $f > $f.tmp.rdf 
-			 xsltproc  /marklogic/id/natlibcat/admin/bfi/bibrecs/modules/graphiphy.xsl  $f.tmp.rdf   > $f.rdf
+			 xsltproc  $MODULES/graphiphy.xsl  $f.tmp.rdf   > $f.rdf
             rm *tmp*
 #			rm $f.tmp*.rdf
 			rm $f
