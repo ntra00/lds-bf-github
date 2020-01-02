@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <madsrdf:Topic rdf:nodeID="bnodedH9VoGxwXVqLNb4eqYCyju">
+    <rdfs:label xml:lang="en">Administrative and political divisions</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e277141713228066151055280908606221646809">
+    <bf:scale>
+      <bf:Scale rdf:nodeID="bnodetjaVTiPrgPYozckg5BhPQ7">
+        <rdfs:label>Scale 1:1,550,000 </rdfs:label>
+      </bf:Scale>
+    </bf:scale>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnodeuqWaoKSSjXqsTjsapvGWKc">
+        <bf:coordinates>E 104°/N 29°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnodew95Z59T3berr6mob6pq24m">
+        <bf:coordinates>E 109°/N 25°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:classification>
+      <bf:ClassificationLcc rdf:nodeID="bnodeavTBnyYmP3sFVdi2FPmNs7">
+        <bf:classificationPortion>G7823.G9</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodep3NsBKata9SYbvQu1AjMg4">
+        <bf:mainTitle>Kweichow</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:language>
+      <bf:Language rdf:nodeID="bnodetjYYceYatZXZ1V9owPixnT">
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Language>
+    </bf:language>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnodetXGCPGcttLjF4EBLMHgWXR">
+        <bf:coordinates>E 109°/N 25°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:colorContent>
+      <bf:Note rdf:nodeID="bnodegBBa4TES5gqmweSuSfzHer">
+        <rdfs:label>color</rdfs:label>
+      </bf:Note>
+    </bf:colorContent>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodeqaB19qDuxzZf4eWQoDch8a">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n81026035"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85000909"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnode2Bx1baCDbi9711FMjWYhBW">
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnodeo529jHq5K75QzbFR8YyW4y">
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnodeqJ6XfCiAhKLH8Z9kZMESsR">
+                <rdf:value>00386246890</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:classificationLcc>Copy 1</bf:classificationLcc>
+            <bf:sublocation>Geography and Map Division</bf:sublocation>
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodefDvdBey7onpwXavVx41XZB">
+                <rdfs:label>LC copy: Mounted on linen and stamped 140A</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnodedhNLoKj6aYq33QMxFwKAWS">
+                <rdf:value>G7823.G9F7 1969 .K8</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnode9PqMypd77TazVcpSYoU4nC">
+            <bf:mainTitle>Kweichow</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nb"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodeeR1fnMveMvbstspfFGoQFL">
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <rdfs:label>eng</rdfs:label>
+            <bf:creationDate>2018-5-25</bf:creationDate>
+            <bf:changeDate>2018-05-29T14:31:09</bf:changeDate>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e175397676840858413896208056948869405766"/>
+            <bflc:metadataAssigner>twon</bflc:metadataAssigner>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodeeEPk6dfqJNJka1qLjxynzx">
+            <rdfs:label>"Names and boundary representation are not necessarily authoritative"</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodeq749qRzFmsCiBvv3E1kFGb">
+            <rdfs:label>1 map</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnodekn461yQhMLZ92UYsGMHRrM">
+            <rdf:value>2018586330</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:dimensions>43 x 54 cm</bf:dimensions>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodet5CvdP7iHHL8Sfsvi6TBtP">
+            <rdfs:label>Includes location map</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:classification>
+          <bf:Classification rdf:nodeID="bnode79kYLzpEeQyLSKctvg2Cp2">
+            <rdfs:label>7823 G9</rdfs:label>
+          </bf:Classification>
+        </bf:classification>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnodeko9ATyZPrnU8cKrtavxUQ4">
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnode58v9idJ9JJUwL1dZunMTk">
+                <rdfs:label>[publisher not identified]</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodexePtfVZbR5y1bg2XfFyspX">
+                <rdfs:label>[Washington]</rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:date>[1969]</bf:date>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnodetqG9XoJst916AYfpyUWhSW">
+        <bf:coordinates>E 109°/N 29°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnodetZhRUkvSiNMc95myAo9bMn">
+        <bf:coordinates>E 104°/N 25°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026387"/>
+    </bf:genreForm>
+  </bf:Work>
+  <madsrdf:Geographic rdf:nodeID="bnodefhmZYgFiDQk22UNWm8YW9V">
+    <rdfs:label xml:lang="en">Guizhou Sheng (China)</rdfs:label>
+  </madsrdf:Geographic>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <madsrdf:GenreForm rdf:nodeID="bnodeoTSDZGtPKcuM2irr5bWemu">
+    <rdfs:label xml:lang="en">Maps</rdfs:label>
+  </madsrdf:GenreForm>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e175397676840858413896208056948869405766">
+    <rdf:value>e175397676840858413896208056948869405766</rdf:value>
+  </bf:Local>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
+    <rdfs:label xml:lang="en">sheet</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </bf:Language>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n81026035"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85000909"/>
+</rdf:RDF>

@@ -1,0 +1,69 @@
+<marcxml:record xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:idx="info:lc/xq-modules/lcindex" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:ri="http://id.loc.gov/ontologies/RecordInfo#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:mets="http://www.loc.gov/METS/" xmlns:semtriples="http://marklogic.com/semantic" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:streams="info:lc/streams#">
+            <marcxml:leader>00844cz  a2200265n  4500</marcxml:leader>
+            <marcxml:controlfield tag="001">n89634735</marcxml:controlfield>
+            <marcxml:controlfield tag="003">DLC</marcxml:controlfield>
+            <marcxml:controlfield tag="005">20071128052700.0</marcxml:controlfield>
+            <marcxml:controlfield tag="008">890615n| acabaaaan          |a aaa      </marcxml:controlfield>
+            <marcxml:datafield tag="010" ind1=" " ind2=" ">
+              <marcxml:subfield code="a">n  89634735 </marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="035" ind1=" " ind2=" ">
+              <marcxml:subfield code="a">(OCoLC)oca02544537</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="040" ind1=" " ind2=" ">
+              <marcxml:subfield code="a">DLC</marcxml:subfield>
+              <marcxml:subfield code="b">eng</marcxml:subfield>
+              <marcxml:subfield code="c">DLC</marcxml:subfield>
+              <marcxml:subfield code="d">DLC</marcxml:subfield>
+              <marcxml:subfield code="d">MoSW-Mu</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="100" ind1="1" ind2=" ">
+              <marcxml:subfield code="a">Grobe, Charles.</marcxml:subfield>
+              <marcxml:subfield code="t">Piano music.</marcxml:subfield>
+              <marcxml:subfield code="k">Selections (Buds and blossoms)</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="400" ind1="1" ind2=" ">
+              <marcxml:subfield code="a">Grobe, Charles.</marcxml:subfield>
+              <marcxml:subfield code="t">Buds and blossoms</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="430" ind1=" " ind2="0">
+              <marcxml:subfield code="a">Buds and blossoms</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="430" ind1=" " ind2="0">
+              <marcxml:subfield code="a">Buds &amp; blossoms</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="642" ind1=" " ind2=" ">
+              <marcxml:subfield code="a">no. 1</marcxml:subfield>
+              <marcxml:subfield code="5">DLC</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="643" ind1=" " ind2=" ">
+              <marcxml:subfield code="a">Boston</marcxml:subfield>
+              <marcxml:subfield code="b">Oliver Ditson &amp; Co.</marcxml:subfield>
+              <marcxml:subfield code="d">some issues</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="643" ind1=" " ind2=" ">
+              <marcxml:subfield code="a">Philadelphia</marcxml:subfield>
+              <marcxml:subfield code="b">Lee &amp; Walker</marcxml:subfield>
+              <marcxml:subfield code="d">some issues</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="644" ind1=" " ind2=" ">
+              <marcxml:subfield code="a">f</marcxml:subfield>
+              <marcxml:subfield code="5">DLC</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="645" ind1=" " ind2=" ">
+              <marcxml:subfield code="a">t</marcxml:subfield>
+              <marcxml:subfield code="5">DLC</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="646" ind1=" " ind2=" ">
+              <marcxml:subfield code="a">s</marcxml:subfield>
+              <marcxml:subfield code="5">DLC</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="670" ind1=" " ind2=" ">
+              <marcxml:subfield code="a">Grobe, C. Charity, c1857:</marcxml:subfield>
+              <marcxml:subfield code="b">t.p. (Buds and blossoms)</marcxml:subfield>
+            </marcxml:datafield>
+            <marcxml:datafield tag="670" ind1=" " ind2=" ">
+              <marcxml:subfield code="a">Grobe, C. Vesper hymn, c1879:</marcxml:subfield>
+              <marcxml:subfield code="b">t.p. (Buds &amp; blossoms) list t.p. (Buds and blossoms)</marcxml:subfield>
+            </marcxml:datafield>
+          </marcxml:record>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e307101695497528836065873021107045218624">
+    <bf:ensemble>
+      <bf:MusicEnsemble rdf:nodeID="bnoderB75ZyBHinq66Bu3S7ffdC">
+        <bf:count>1</bf:count>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015681"/>
+      </bf:MusicEnsemble>
+    </bf:ensemble>
+    <bf:subject>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85024923"/>
+    </bf:subject>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodedVokU42DcFjm2CsASraPbL">
+        <bf:credits>
+          <bf:Credits rdf:nodeID="bnodepGeA67SjhJWQTeghvBdJ8P">
+            <rdfs:label>Estonian Philharmonic Chamber Choir ; Tallinn Chamber Orchestra ; Risto Joost, conductor</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:soundCharacteristic>
+          <bf:PlaybackChannels rdf:nodeID="bnodejDSQxHPijcWPDA42NLsBFb">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mplayback/ste"/>
+          </bf:PlaybackChannels>
+        </bf:soundCharacteristic>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodebS8TNJC5wDnDJLQsfW1E3H">
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:changeDate>2018-04-09T15:38:55</bf:changeDate>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bflc:profile>profile:bf2:SoundRecording:Instance2</bflc:profile>
+            <bflc:metadataAssigner>bbad</bflc:metadataAssigner>
+            <bf:creationDate>2018-4-9</bf:creationDate>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e100422686467339203629155684986367281992"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnodea7XMJP2hoqdNqNzf3cK5iZ">
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnode8ZkyRdbuMxtWFTfP7YPTqB">
+                <rdfs:label>Ondine Oy</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnoder9MEtdW9C3hdiwsJzZDN59">
+                <rdfs:label>Helsinki</rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:date>[2017]</bf:date>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:soundCharacteristic>
+          <bf:RecordingMethod rdf:nodeID="bnodehK5pR8eskL9JoigZNqMuTB">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+          </bf:RecordingMethod>
+        </bf:soundCharacteristic>
+        <bf:identifiedBy>
+          <bf:PublisherNumber rdf:nodeID="bnodenpgCUDJ4ff2vUyfRn3BoEg">
+            <rdf:value>ODE 1306-2</rdf:value>
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodegZ188pk8bKYYYzLEZePua3">
+                <rdfs:label>Ondine</rdfs:label>
+              </bf:Source>
+            </bf:source>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/>
+        <bf:dimensions>4 3/4 in.</bf:dimensions>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnodetHWijgAEfred5fBiSY1Jno">
+            <rdf:value>2018619045</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:soundCharacteristic>
+          <bf:PlayingSpeed rdf:nodeID="bnodephWSHrzUNNVeBRd5t34hhP">
+            <rdfs:label>1.4 m/s</rdfs:label>
+          </bf:PlayingSpeed>
+        </bf:soundCharacteristic>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pla"/>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodebjVQvX7KZtsXdZn8wPGqk7">
+            <rdfs:label>1 audio disc</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:soundCharacteristic>
+          <bf:RecordingMedium rdf:nodeID="bnode4CNUixxz3GnRxdGgCkmcmK">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrecmedium/opt"/>
+          </bf:RecordingMedium>
+        </bf:soundCharacteristic>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:identifiedBy>
+          <bf:Ean rdf:nodeID="bnodembUMGNk3JYMvM6AFNNK7i1">
+            <rdf:value>761195130629</rdf:value>
+          </bf:Ean>
+        </bf:identifiedBy>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/mtl"/>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnodeaNvMW7QmDxsnPMebHd2Rb5">
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnode5ognM6A3ib1T5p5EXqvjFw">
+                <rdf:value>00332036166</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:ShelfMark rdf:nodeID="bnodennUdgpthPu93T6u8NxwyTa">
+                <rdf:value>SDC</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnode7D2CCmm6Y2AvjMC8i4cw89">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodebXmkg9HvWTqqKUdu5PaQtx">
+                <rdfs:label>Title from disc label</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:mainTitle>Moorland elegies</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:tableOfContents>
+      <bf:TableOfContents rdf:nodeID="bnode9eSuMBKt5YVBsoMVDX3ty4">
+        <rdfs:label>Come, walk with me (5:52) -- Silent is the house (5:58) -- The night is darkening round me (5:57) -- Fall, leaves, fall (5:06) -- She dried her tears (7:21) -- $t Moonlight, summer moonlight $g (3:45) -- $t The sun has set $g (5:39) -- $t The starry night shall tidings bring (6:03) -- Month after month (8:35)</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodesuUJmPSa1ms38ZjHEeaGFR">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr94012901"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/itr"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:capture>
+      <bf:Capture rdf:nodeID="bnode4ohXtHP7mjK4iJvkboLQRZ">
+        <bf:date> 2015 November 9-12</bf:date>
+        <bf:place>
+          <bf:Place rdf:nodeID="bnodegMJAhPgTCgU8jVtxSkMvTG">
+            <rdfs:label>United Methodist Church, Tallinn, Estonia</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Capture>
+    </bf:capture>
+    <bf:contribution>
+      <bflc:PrimaryContribution rdf:nodeID="bnode4sen8fFd269HCMc75EmSKF">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n97088402"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026639"/>
+    </bf:genreForm>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodeh1tNnH4HXT4GofiHc1edXf">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr92036440"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+        <rdfs:label>eng</rdfs:label>
+        <rdfs:label xml:lang="en">English</rdfs:label>
+      </bf:Language>
+    </bf:language>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodevb9GYnEkF1j9VzMN5qzJz3">
+        <bf:mainTitle>Moorland elegies </bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Kõrvits, Tõnu, ‡d 1969-  Moorland elegies</rdfs:label>
+    <bf:duration>54 min., 2 sec.</bf:duration>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnoderhFWDLitp5HaTq2KtcQA78">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n79018755"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnode2BHJASNR8UnsjF4WZxqMqD">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cnd"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2012020287"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:nodeID="bnode7f1UvwE4XWSp6SGcwbZ5r5">
+        <rdfs:label>Program notes, biographical notes, and text in English (16 pages) inserted in container</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:ensemble>
+      <bf:MusicEnsemble rdf:nodeID="bnodep3cHYsNurGQBJGwErb4ZM2">
+        <bf:count>1</bf:count>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015146"/>
+      </bf:MusicEnsemble>
+    </bf:ensemble>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnode8wETwAKn1AdJ3nsTSE3eUL">
+        <bf:copyrightDate>℗2017</bf:copyrightDate>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:responsibilityStatement>Tõnu Kõrvits</bf:responsibilityStatement>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/>
+      </bf:Instance>
+    </bf:hasInstance>
+  </bf:Work>
+  <madsrdf:Topic rdf:nodeID="bnodePfYDVx8Lj1xGBxHHdWM5b">
+    <rdfs:label xml:lang="en">Choruses, Secular (Mixed voices) with string orchestra</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:CorporateName rdf:nodeID="bnodehvVc9iA4Tos6wzBnjxE6S8">
+    <rdfs:label xml:lang="en">Tallinna kammerorkester</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:PersonalName rdf:nodeID="bnode2auxXRMCoY51apuXuUUe3D">
+    <rdfs:label xml:lang="en">Kõrvits, Tõnu, 1969-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodevDdnf4BxhiqTrauLHuU3o1">
+    <rdfs:label xml:lang="en">Joost, Risto, 1980-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:CorporateName rdf:nodeID="bnodeiFEZSD6egcXuvrepCfmRAo">
+    <rdfs:label xml:lang="en">Eesti Filharmoonia Kammerkoor</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:PersonalName rdf:nodeID="bnodecyiE2BYy5vSfVY4iVwBMYX">
+    <rdfs:label xml:lang="en">Brontë, Emily, 1818-1848</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnodehwsJUUjmmxMBnWRWHZP394">
+    <rdfs:label xml:lang="en">Art music</rdfs:label>
+  </madsrdf:GenreForm>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n79018755"/>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+    <rdfs:label>audio disc</rdfs:label>
+  </bf:Carrier>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cnd">
+    <rdfs:label xml:lang="en">Conductor</rdfs:label>
+  </bf:Role>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n97088402"/>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mplayback/ste">
+    <rdfs:label xml:lang="en">stereo</rdfs:label>
+  </rdf:Description>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/nr94012901"/>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015146">
+    <rdfs:label xml:lang="en">mixed chorus</rdfs:label>
+  </rdf:Description>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pla">
+    <rdfs:label xml:lang="en">plastic </rdfs:label>
+  </bf:BaseMaterial>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2012020287"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
+    <rdfs:label xml:lang="en">Singer</rdfs:label>
+  </bf:Role>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/mtl">
+    <rdfs:label xml:lang="en">metal </rdfs:label>
+  </bf:BaseMaterial>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/nr92036440"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/itr">
+    <rdfs:label xml:lang="en">Instrumentalist</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e100422686467339203629155684986367281992">
+    <rdf:value>e100422686467339203629155684986367281992</rdf:value>
+  </bf:Local>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label xml:lang="en">digital</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrecmedium/opt">
+    <rdfs:label xml:lang="en">optical</rdfs:label>
+  </rdf:Description>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
+    <rdfs:label>audio</rdfs:label>
+  </bf:Media>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015681">
+    <rdfs:label xml:lang="en">string orchestra</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026976"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n2011059553"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/names/n79126889"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n81097857"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/names/n82158317"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n94117395"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2005060516"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2006037579"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2009132251"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2009139550"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2015021199"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2018066504"/>
+  <bf:MusicEnsemble rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015516">
+    <rdfs:label xml:lang="en">orchestra</rdfs:label>
+  </bf:MusicEnsemble>
+  <bf:MusicVoice rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015646">
+    <rdfs:label xml:lang="en">singer</rdfs:label>
+  </bf:MusicVoice>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85039316"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85094914"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e82143471618258465542337401078933311011">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:creationDate>2018-11-20</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e104883809761240648593587145933217021707"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:capture>
+      <bf:Capture>
+        <bf:date>2016 July 23-August 3</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Radio Kraków, Poland</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Capture>
+    </bf:capture>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/prm"/>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2006037579"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cnd"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/itr"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n81097857"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2011059553"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/lbt"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2009132251"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2018066504"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2015021199"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2005060516"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2009139550"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n94117395"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:ensemble>
+      <bf:MusicEnsemble>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015516"/>
+        <bf:count>1</bf:count>
+      </bf:MusicEnsemble>
+    </bf:ensemble>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026976"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>bbad</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:creationDate>2018-11-20</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e104883809761240648593587145933217021707"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/mtl"/>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pla"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+        <bf:credits>
+          <bf:Credits>
+            <rdfs:label>Julia Lezhneva, Dilyara Idrisova, Hasnaa Bennani, soprano ; Mary-Ellen Nesi, mezzo-soprano ; Max Emanuel Cencić, countertenor ; Juan Sancho, tenor ; Capella Cracoviensis, on period instruments ; Jan Tomasz Adamus, harpsichord, conductor</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:dimensions>4 3/4 in.</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>3 audio discs</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:qualifier>container</bf:qualifier>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Decca</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>483 1523</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:qualifier>disc 1</bf:qualifier>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Decca</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>483 1524</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:qualifier>disc 2</bf:qualifier>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Decca</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>483 1525</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:qualifier>disc 3</bf:qualifier>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Decca</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>483 1525</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Upc>
+            <rdf:value>028948315239</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>  2018605021</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>"Modern edition of the libretto, Renzo Bez"--Page 30, booklet</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Decca</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2017]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>London, England</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>Nicola Porpora</bf:responsibilityStatement>
+        <bf:soundCharacteristic>
+          <bf:RecordingMethod>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+          </bf:RecordingMethod>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:RecordingMedium>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrecmedium/opt"/>
+          </bf:RecordingMedium>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlayingSpeed>
+            <rdfs:label>1.4 m/s</rdfs:label>
+          </bf:PlayingSpeed>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlaybackChannels>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mplayback/ste"/>
+          </bf:PlaybackChannels>
+        </bf:soundCharacteristic>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Germanico in Germania</bf:mainTitle>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>Title from disc label</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMark>
+                <rdf:value>SDD 09843</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>00500608298</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:ShelfMark>
+                <rdf:value>SSB 57431</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>00500608286</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/ita"/>
+      </bf:Language>
+    </bf:language>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Libretto by Niccolò Coluzzi</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/names/n79126889"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/names/n82158317"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85094914"/>
+    <bf:subject>
+      <bf:Topic>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Program notes and synopsis in English, French, and German (30 pages : illustrations), and libretto with Italian text and English translation (87 pages) inserted in container</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Germanico in Germania</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:voice>
+      <bf:MusicVoice>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015646"/>
+      </bf:MusicVoice>
+    </bf:voice>
+    <rdfs:label>Porpora, Nicola, 1686-1768. Germanico in Germania</rdfs:label>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/prm">
+    <rdfs:label>performed music</rdfs:label>
+  </bf:Content>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+    <rdfs:label>audio disc</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </bf:Language>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/ita">
+    <rdfs:label xml:lang="en">Italian</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
+    <rdfs:label>audio</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/mtl">
+    <rdfs:label xml:lang="en">metal </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pla">
+    <rdfs:label xml:lang="en">plastic </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:PlaybackChannels rdf:about="http://id.loc.gov/vocabulary/mplayback/ste">
+    <rdfs:label xml:lang="en">stereo</rdfs:label>
+  </bf:PlaybackChannels>
+  <bf:RecordingMedium rdf:about="http://id.loc.gov/vocabulary/mrecmedium/opt">
+    <rdfs:label>optical</rdfs:label>
+  </bf:RecordingMedium>
+  <bf:RecordingMethod rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label>digital</rdfs:label>
+  </bf:RecordingMethod>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cnd">
+    <rdfs:label xml:lang="en">Conductor</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/itr">
+    <rdfs:label xml:lang="en">Instrumentalist</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/lbt">
+    <rdfs:label xml:lang="en">Librettist</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
+    <rdfs:label xml:lang="en">Singer</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e104883809761240648593587145933217021707">
+    <rdf:value>e104883809761240648593587145933217021707</rdf:value>
+  </bf:Local>
+</rdf:RDF>

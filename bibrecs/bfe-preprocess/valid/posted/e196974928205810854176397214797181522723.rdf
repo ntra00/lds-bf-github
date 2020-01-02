@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0096534340001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:metadataAssigner>jzie</bflc:metadataAssigner>
+        <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:creationDate>2018-7-2</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e196974928205810854176397214797181522723"/>
+        <rdfs:label>eng</rdfs:label>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>u</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+        <bf:changeDate>2018-06-18T12:57:45</bf:changeDate>
+        <bf:creationDate>1982-12-06</bf:creationDate>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>unknown</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>9653434</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>CarP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:dimensions>22 cm (8vo)</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>23, [1] pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/c0096534340001"/>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>AC901 .B3 vol. 35</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:ShelfMark>
+            <rdf:value>Copy 1</rdf:value>
+          </bf:ShelfMark>
+        </bf:identifiedBy>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>LC copy forms part of the Jefferson Exhibit Collection </rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value> 18019203 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c009653434"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Signatures: 1-3⁴.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Adams, Rhoades, &amp; Co., printers</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>[1809]</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>[Boston]</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>[Boston, Adams, Rhoades, &amp; co., printers, 1809.]</bf:provisionActivityStatement>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>new embargo law,</bflc:titleSortKey>
+        <bf:mainTitle>The new embargo law</bf:mainTitle>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Caption title</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:subtitle>and, Hon. Mr. Giles speech on the same</bf:subtitle>
+        <rdfs:label>The new embargo law,</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>The new embargo law,</rdfs:label>
+  </bf:Instance>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c009653434">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>u</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+        <bf:changeDate>2018-06-18T12:57:45</bf:changeDate>
+        <bf:creationDate>1982-12-06</bf:creationDate>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>unknown</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>9653434</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>CarP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>AC901</bf:classificationPortion>
+        <bf:itemPortion>.B3 vol. 35, no. 1</bf:itemPortion>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/9653434#Agent100-12"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/9653434#Topic650-16"/>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>new embargo law,</bflc:titleSortKey>
+        <bf:mainTitle>The new embargo law</bf:mainTitle>
+        <rdfs:label>The new embargo law,</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdfs:label>The new embargo law,</rdfs:label>
+  </bf:Work>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/9653434#Agent100-12">
+    <bflc:name00MarcKey>1001 $aGiles, William Branch,$d1762-1830.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Giles, William Branch, 1762-1830.</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Giles, William Branch, 1762-1830.</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Giles, William Branch, 1762-1830.</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/resources/works/9653434#Topic650-16">
+    <madsrdf:authoritativeLabel>Embargo, 1807-1809.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>Embargo, 1807-1809.</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/mau"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Source>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e196974928205810854176397214797181522723">
+    <rdf:value>e196974928205810854176397214797181522723</rdf:value>
+  </bf:Local>
+  <bf:Place>
+    <rdfs:label>Boston</rdfs:label>
+  </bf:Place>
+  <bf:Agent>
+    <rdfs:label>Adams, Rhoades, &amp; co., printers</rdfs:label>
+  </bf:Agent>
+</rdf:RDF>

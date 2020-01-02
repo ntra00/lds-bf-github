@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n92109891"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c020384129">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:changeDate>2018-04-24T17:53:57</bf:changeDate>
+        <bf:creationDate>2018-02-23</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20384129</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>HN580.H86 B67 2016</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n92109891"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:instanceOf>
+          <bf:Work>
+            <bf:classification>
+              <bf:ClassificationLcc>
+                <bf:classificationPortion>HN580.H86 B67 2016</bf:classificationPortion>
+              </bf:ClassificationLcc>
+            </bf:classification>
+            <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+            <bf:contribution>
+              <bflc:PrimaryContribution>
+                <bf:agent>
+                  <madsrdf:Geographic>
+                    <madsrdf:Geographic>Husby (Sweden)</madsrdf:Geographic>
+                    <madsrdf:authoritativeLabel>Husby (Sweden)</madsrdf:authoritativeLabel>
+                    <madsrdf:hasIdentifier>Sweden</madsrdf:hasIdentifier>
+                    <madsrdf:hasSource>
+                      <madsrdf:Source>
+                        <madsrdf:citationNote>
+                          <madsrdf:note>
+                            <rdfs:label>cover p. 4 (Stockholmsförorten Husby)</rdfs:label>
+                          </madsrdf:note>
+                        </madsrdf:citationNote>
+                        <madsrdf:citationSource>Bortom kravallerna : konflikt, tillhörighet och representation i Husby, [2016]</madsrdf:citationSource>
+                      </madsrdf:Source>
+                    </madsrdf:hasSource>
+                    <madsrdf:hasSource>
+                      <madsrdf:Source>
+                        <madsrdf:citationNote>
+                          <madsrdf:note>
+                            <rdfs:label>Husby (Sweden Stockholm), populated place, 59° 36' 00" N, 018° 03' 00" E</rdfs:label>
+                          </madsrdf:note>
+                        </madsrdf:citationNote>
+                        <madsrdf:citationSource>NGA.mil April 24, 2018</madsrdf:citationSource>
+                      </madsrdf:Source>
+                    </madsrdf:hasSource>
+                    <madsrdf:hasSource>
+                      <madsrdf:Source>
+                        <madsrdf:citationNote>
+                          <madsrdf:note>
+                            <rdfs:label>"Frustration and resilience a year after Husby riots" May 19, 2014 (For a week in May last year, the international media spotlight was on the small Stockholm suburb of Husby as riots raged there.)</rdfs:label>
+                          </madsrdf:note>
+                        </madsrdf:citationNote>
+                        <madsrdf:citationSource>Radio Sweden online April 24, 2018</madsrdf:citationSource>
+                      </madsrdf:Source>
+                    </madsrdf:hasSource>
+                    <madsrdf:hasVariant>
+                      <madsrdf:hasVariant>
+                        <madsrdf:hasVariant>Stockholm Suburban Area (Sweden)</madsrdf:hasVariant>
+                      </madsrdf:hasVariant>
+                    </madsrdf:hasVariant>
+                  </madsrdf:Geographic>
+                </bf:agent>
+              </bflc:PrimaryContribution>
+            </bf:contribution>
+            <bf:hasInstance>
+              <bf:Instance>
+                <bf:adminMetadata>
+                  <bf:AdminMetadata>
+                    <bflc:metadataAssigner>khil</bflc:metadataAssigner>
+                    <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+                    <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+                    <bf:creationDate>2018-4-24</bf:creationDate>
+                    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+                    <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+                    <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+                    <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+                    <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e196333485409975272233635054216490529186"/>
+                  </bf:AdminMetadata>
+                </bf:adminMetadata>
+                <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+                <bf:dimensions>23 cm.</bf:dimensions>
+                <bf:extent>
+                  <bf:Extent>
+                    <rdfs:label>228 pages</rdfs:label>
+                  </bf:Extent>
+                </bf:extent>
+                <bf:hasItem>
+                  <bf:Item>
+                    <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+                    <bf:identifiedBy>
+                      <bf:Barcode>
+                        <rdf:value>00505914156</rdf:value>
+                      </bf:Barcode>
+                    </bf:identifiedBy>
+                  </bf:Item>
+                </bf:hasItem>
+                <bf:hasSeries>
+                  <bf:Instance>
+                    <bf:seriesEnumeration>258</bf:seriesEnumeration>
+                    <bf:seriesStatement>Monografier utgivna av Stockholms stad, 0282-5899</bf:seriesStatement>
+                  </bf:Instance>
+                </bf:hasSeries>
+                <bf:identifiedBy>
+                  <bf:Isbn>
+                    <bf:qualifier>pbk.</bf:qualifier>
+                  </bf:Isbn>
+                </bf:identifiedBy>
+                <bf:identifiedBy>
+                  <bf:Lccn>
+                    <rdf:value>2017426791</rdf:value>
+                  </bf:Lccn>
+                </bf:identifiedBy>
+                <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+                <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+                <bf:provisionActivity>
+                  <bf:Publication>
+                    <bf:agent>
+                      <bf:Agent>
+                        <rdfs:label>Stockholmia Förlag</rdfs:label>
+                      </bf:Agent>
+                    </bf:agent>
+                    <bf:date>[2016]</bf:date>
+                    <bf:place>
+                      <bf:Place>
+                        <rdfs:label>[Stockholm]</rdfs:label>
+                      </bf:Place>
+                    </bf:place>
+                  </bf:Publication>
+                </bf:provisionActivity>
+                <bf:responsibilityStatement>Paulina de los Reyes och Magnus Hörnqvist (red.).</bf:responsibilityStatement>
+                <bf:title>
+                  <bf:Title>
+                    <bf:mainTitle>Bortom kravallerna</bf:mainTitle>
+                    <bf:subtitle>konflikt, tillhörighet och representation i Husby</bf:subtitle>
+                  </bf:Title>
+                </bf:title>
+              </bf:Instance>
+            </bf:hasInstance>
+            <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/swe"/>
+            <bf:subject>
+              <madsrdf:Topic>
+                <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+                <madsrdf:authoritativeLabel>Husby (Sweden) -- Social conditions</madsrdf:authoritativeLabel>
+              </madsrdf:Topic>
+            </bf:subject>
+            <bf:subject>
+              <madsrdf:Topic>
+                <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+                <madsrdf:authoritativeLabel>Riots -- Sweden -- Husby -- History -- 21st century</madsrdf:authoritativeLabel>
+              </madsrdf:Topic>
+            </bf:subject>
+            <bf:supplementaryContent>
+              <bf:SupplementaryContent>
+                <rdfs:label>Includes bibliographical references</rdfs:label>
+              </bf:SupplementaryContent>
+            </bf:supplementaryContent>
+          </bf:Work>
+        </bf:instanceOf>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/swe"/>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Bortom kravallerna : konflikt, tillhörighet och representation i Husby /</bflc:titleSortKey>
+        <bf:mainTitle>Bortom kravallerna</bf:mainTitle>
+        <bf:subtitle>konflikt, tillhörighet och representation i Husby</bf:subtitle>
+        <rdfs:label>Bortom kravallerna : konflikt, tillhörighet och representation i Husby /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Bortom kravallerna : konflikt, tillhörighet och representation i Husby /</rdfs:label>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/swe">
+    <rdfs:label xml:lang="en">Swedish</rdfs:label>
+  </bf:Language>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edt">
+    <rdfs:label xml:lang="en">Editor</rdfs:label>
+  </bf:Role>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label>LCSH</rdfs:label>
+  </bf:Source>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e196333485409975272233635054216490529186">
+    <rdf:value>e196333485409975272233635054216490529186</rdf:value>
+  </bf:Local>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Reyes, Paulina de los</rdfs:label>
+  </madsrdf:PersonalName>
+</rdf:RDF>

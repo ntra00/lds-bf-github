@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026005"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026177"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026247"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026250"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026406"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026692"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026724"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026725"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n78089065"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n97854793"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n99835560"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2007015854"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2007105108"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2009200617"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2011028079"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2011122995"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2012104222"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2013004152"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2015170966"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2016017477"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2017136050"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no96013286"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no97029122"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nr97028767"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh00005918"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85008752"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh85039316"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e47550944021820622110400853392104944134">
+    <bflc:relationship>
+      <bflc:Relationship>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Based on the video game Hitman by IO-Interactive, a Square Enix company</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bflc:Relationship>
+    </bflc:relationship>
+    <bf:aspectRatio>
+      <bf:AspectRatio>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/maspect/wide"/>
+      </bf:AspectRatio>
+    </bf:aspectRatio>
+    <bf:aspectRatio>
+      <bf:AspectRatio>
+        <rdf:value>2.35:1</rdf:value>
+      </bf:AspectRatio>
+    </bf:aspectRatio>
+    <bf:colorContent>
+      <bf:ColorContent>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>color</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:ColorContent>
+    </bf:colorContent>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/tdi"/>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2012104222"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2007105108"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no97029122"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2013004152"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr97028767"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2017136050"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n97854793"/>
+        <bf:role>
+          <bf:Role>
+            <rdfs:label>composer (expression)</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2011122995"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edm"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n78089065"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/pre"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2016017477"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fmd"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2009200617"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fmp"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2011028079"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fmp"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n99835560"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fmp"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2015170966"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aus"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2007015854"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:duration>96 min.</bf:duration>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026005"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026177"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026247"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026250"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026406"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026692"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>jjud</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/7"/>
+            <bf:changeDate>2018-11-05T16:54:07</bf:changeDate>
+            <bf:creationDate>2018-11-5</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e108548566495532082048557648502480259348"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:aspectRatio>
+          <bf:AspectRatio>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/maspect/wide"/>
+          </bf:AspectRatio>
+        </bf:aspectRatio>
+        <bf:aspectRatio>
+          <bf:AspectRatio>
+            <rdf:value>2.35:1</rdf:value>
+          </bf:AspectRatio>
+        </bf:aspectRatio>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/vd"/>
+        <bf:contentAccessibility>
+          <bf:Note>
+            <rdfs:label>English subtitles for the deaf and hard of hearing (SDH); English descriptive audio for people with visual disabilities</rdfs:label>
+          </bf:Note>
+        </bf:contentAccessibility>
+        <bf:contribution>
+          <bf:Contribution>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no96013286"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fds"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:copyrightDate>©2015</bf:copyrightDate>
+        <bf:credits>
+          <bf:Credits>
+            <rdfs:label>Cast: Rupert Friend, Hannah Ware, Zachary Quinto, Ciarán Hinds, Angelababy, Thomas Kretschmann, Dan Bakkedahl</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:credits>
+          <bf:Credits>
+            <rdfs:label>Director of photography, Ottar Gudnason ; editor, Nicolas de Toth ; music, Marco Beltrami</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:digitalCharacteristic>
+          <bf:FileType>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mfiletype/video"/>
+          </bf:FileType>
+        </bf:digitalCharacteristic>
+        <bf:digitalCharacteristic>
+          <bf:RegionalEncoding>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mregencoding/regionA"/>
+          </bf:RegionalEncoding>
+        </bf:digitalCharacteristic>
+        <bf:digitalCharacteristic>
+          <bf:EncodingFormat>
+            <rdfs:label>Blu-ray</rdfs:label>
+          </bf:EncodingFormat>
+        </bf:digitalCharacteristic>
+        <bf:dimensions>4 3/4 in.</bf:dimensions>
+        <bf:duration>96 min.</bf:duration>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 videodisc</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026724"/>
+        <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026725"/>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:collection>Copyright Collection (Library of Congress)</bf:collection>
+            <bf:date>Received: 2017-04-12</bf:date>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc>
+                <rdf:value>DVE 3150</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:ShelfMark>
+                <rdf:value>1</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>0048009380A</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition>
+                <rdfs:label>copyright deposit--RNR</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition>
+                <rdfs:label>Copyright Collection</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:sublocation>c-Motion Pic &amp; TV/MBRS</bf:sublocation>
+            <bf:usageAndAccessPolicy>
+              <bf:AccessPolicy>
+                <rdfs:label>Viewing copy</rdfs:label>
+              </bf:AccessPolicy>
+            </bf:usageAndAccessPolicy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2018601970</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:CopyrightRegistration>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>U.S. Copyright Office</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>PA0002020773</rdf:value>
+          </bf:CopyrightRegistration>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Upc>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>80</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <rdf:value>024543988854</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Upc>
+            <rdf:value>024543988861</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>20th Century Fox Home Entertainment</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>2298885</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>20th Century Fox Home Entertainment</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>2298886</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Local>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>OCLC</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>(OCoLC)929700709</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:language>
+          <bf:Language>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>English, Spanish, French, [additional languages from onscreen menu]: Portuguese, Russian, Czech, Hungarian, Polish, Turkish or Ukrainian dialogue</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Language>
+        </bf:language>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/v"/>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Spanish or French subtitles [additional subtitles from onscreen menu]: Danish, Finnish, Norwegian, Portuguese, Russian, Swedish, Arabic, Bulgarian, Croatian, Czech, Estonian, Greek, Hebrew, Hungarian, Icelandic, Korean, Latvia, Lettish, Lithuanian, Polish, Portuguese, Romanian, Serbian, Slovak, Slovenian, Turkish, Ukrainian;</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:provisionActivity>
+          <bf:Distribution>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Twentieth Century Fox Home Entertainment</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2015]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>Beverly Hills, California</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Distribution>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>Twentieth Century Fox presents a Daybreak / Adrian Askarieh / Giant Pictures production ; produced by Charles Gordon, Adrian Askarieh, Alex Young, Skip Woods ; director, Aleksander Bach ; story by Skip Woods ; screenplay by Skip Woods and Michael Finch</bf:responsibilityStatement>
+        <bf:soundCharacteristic>
+          <bf:RecordingMethod>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+          </bf:RecordingMethod>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:RecordingMedium>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrecmedium/opt"/>
+          </bf:RecordingMedium>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlaybackChannels>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mplayback/mul"/>
+          </bf:PlaybackChannels>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlaybackCharacteristic>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mspecplayback/dolby"/>
+          </bf:PlaybackCharacteristic>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlaybackCharacteristic>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>DTS-HD Master Audio 7.1</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:PlaybackCharacteristic>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlaybackCharacteristic>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>Dolby digital 5.1</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:PlaybackCharacteristic>
+        </bf:soundCharacteristic>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>Videodisc container; Copyright catalog online; Amazon WWW site, viewed November 5, 2018; Internet movie database WWW site, viewed November 5, 2018</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:systemRequirement>
+          <bf:Note>
+            <rdfs:label>Blu-ray, requires Blu-ray player</rdfs:label>
+          </bf:Note>
+        </bf:systemRequirement>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Hitman</bf:mainTitle>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>Title from container</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:subtitle>Agent 47</bf:subtitle>
+          </bf:Title>
+        </bf:title>
+        <bf:title>
+          <bf:VariantTitle>
+            <bf:mainTitle>Hitman: Agent forty-seven</bf:mainTitle>
+          </bf:VariantTitle>
+        </bf:title>
+        <bf:title>
+          <bf:VariantTitle>
+            <bf:mainTitle>Agent forty-seven</bf:mainTitle>
+          </bf:VariantTitle>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:historyOfWork>Originally released as a motion picture in 2015</bf:historyOfWork>
+    <bf:intendedAudience>
+      <bf:IntendedAudience>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>MPAA rating: R; for sequences of strong violence and some language</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:IntendedAudience>
+    </bf:intendedAudience>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Language>
+    </bf:language>
+    <bf:originDate>2015</bf:originDate>
+    <bf:originPlace>
+      <bf:Place>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n78095330"/>
+        <rdfs:label xml:lang="en">United States</rdfs:label>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:originPlace>
+      <bf:Place>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n79023147"/>
+        <rdfs:label xml:lang="en">Great Britain</rdfs:label>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:originPlace>
+      <bf:Place>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n80125931"/>
+        <rdfs:label xml:lang="en">Germany</rdfs:label>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:soundContent>
+      <bf:SoundContent>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/msoundcontent/sound"/>
+      </bf:SoundContent>
+    </bf:soundContent>
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>Videodisc container; Copyright catalog online; Amazon WWW site, viewed November 5, 2018; Internet movie database WWW site, viewed November 5, 2018</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <bf:subject>
+      <bf:Topic>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85008752"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh00005918"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:summary>
+      <bf:Summary>
+        <rdfs:label>An elite assassin, 47, teams up with a young woman to discover his past and how he became the perfect killing machine, and why others are after those secrets as well</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:mainTitle>Agent 47</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:mainTitle>Hitman: Agent forty-seven</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:mainTitle>Agent forty-seven</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Hitman: Agent 47</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Hitman: Agent 47 (Motion picture)</rdfs:label>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/tdi">
+    <rdfs:label>two-dimensional moving image</rdfs:label>
+  </bf:Content>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/vd">
+    <rdfs:label>videodisc</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:AspectRatio rdf:about="http://id.loc.gov/vocabulary/maspect/wide">
+    <rdfs:label xml:lang="en">wide screen</rdfs:label>
+  </bf:AspectRatio>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/v">
+    <rdfs:label>video</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
+    <rdfs:label xml:lang="en">minimal</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:FileType rdf:about="http://id.loc.gov/vocabulary/mfiletype/video">
+    <rdfs:label xml:lang="en">video file</rdfs:label>
+  </bf:FileType>
+  <bf:PlaybackChannels rdf:about="http://id.loc.gov/vocabulary/mplayback/mul">
+    <rdfs:label xml:lang="en">surround</rdfs:label>
+  </bf:PlaybackChannels>
+  <bf:RecordingMedium rdf:about="http://id.loc.gov/vocabulary/mrecmedium/opt">
+    <rdfs:label>optical</rdfs:label>
+  </bf:RecordingMedium>
+  <bf:RecordingMethod rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label>digital</rdfs:label>
+  </bf:RecordingMethod>
+  <bf:RegionalEncoding rdf:about="http://id.loc.gov/vocabulary/mregencoding/regionA">
+    <rdfs:label xml:lang="en">region A</rdfs:label>
+  </bf:RegionalEncoding>
+  <bf:SoundContent rdf:about="http://id.loc.gov/vocabulary/msoundcontent/sound">
+    <rdfs:label>sound</rdfs:label>
+  </bf:SoundContent>
+  <bf:PlaybackCharacteristic rdf:about="http://id.loc.gov/vocabulary/mspecplayback/dolby">
+    <rdfs:label xml:lang="en">Dolby</rdfs:label>
+  </bf:PlaybackCharacteristic>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+    <rdfs:label xml:lang="en">Actor</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aus">
+    <rdfs:label xml:lang="en">Screenwriter</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edm">
+    <rdfs:label xml:lang="en">Editor of moving image work</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fds">
+    <rdfs:label xml:lang="en">Film distributor</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmd">
+    <rdfs:label xml:lang="en">Film director</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmp">
+    <rdfs:label xml:lang="en">Film producer</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/pre">
+    <rdfs:label xml:lang="en">Presenter</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e108548566495532082048557648502480259348">
+    <rdf:value>e108548566495532082048557648502480259348</rdf:value>
+  </bf:Local>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Twentieth Century Fox Home Entertainment, Inc.</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Motion pictures</rdfs:label>
+  </bf:GenreForm>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Action and adventure films</rdfs:label>
+  </bf:GenreForm>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Thrillers (Motion pictures)</rdfs:label>
+  </bf:GenreForm>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Crime films</rdfs:label>
+  </bf:GenreForm>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Feature films</rdfs:label>
+  </bf:GenreForm>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Fiction films</rdfs:label>
+  </bf:GenreForm>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Bach, Aleksander</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Gordon, Charles, 1947-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Young, Alex, 1971-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Woods, Skip</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Finch, Michael (Screenwriter)</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Friend, Rupert</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Ware, Hannah, 1982-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Quinto, Zachary</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Hinds, Ciarán, 1953-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Yang, Ying, 1989-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Kretschmann, Thomas, 1962-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Bakkedahl, Dan, 1969-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Beltrami, Marco</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">De Toth, Nicolas</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Twentieth Century-Fox Film Corporation</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:Topic>
+    <rdfs:label xml:lang="en">Assassins</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:GenreForm>
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Topic>
+    <rdfs:label xml:lang="en">Genetic engineering</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:GenreForm>
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <rdf:Description>
+    <bf:creationDate>2018-11-5</bf:creationDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+    <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e108548566495532082048557648502480259348"/>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+  </rdf:Description>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Video recordings for the hearing impaired</rdfs:label>
+  </bf:GenreForm>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Video recordings for people with visual disabilities</rdfs:label>
+  </bf:GenreForm>
+</rdf:RDF>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <madsrdf:GenreForm rdf:nodeID="bnodeq2Fu8L4yc2yYpxZVjKHrtB">
+    <rdfs:label xml:lang="en">Scores and parts</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Topic rdf:nodeID="bnodeevh2vAzD36LLdLmz1RHhCs">
+    <madsrdf:componentList>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh99001780"/>
+    </madsrdf:componentList>
+    <rdfs:label xml:lang="en">Songs (High voice) with instrumental ensemble</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e148520264912887585120437536635848279264">
+    <bf:ensemble>
+      <bf:MusicEnsemble rdf:nodeID="bnodef4qVvgXxKt7tmP4z9xQLC6">
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015812"/>
+      </bf:MusicEnsemble>
+    </bf:ensemble>
+    <bf:musicFormat>
+      <bf:MusicFormat rdf:about="http://id.loc.gov/vocabulary/mmusicformat/score">
+        <rdfs:label xml:lang="en">score</rdfs:label>
+      </bf:MusicFormat>
+    </bf:musicFormat>
+    <bf:duration>3 min., 41 sec.</bf:duration>
+    <bf:classification>
+      <bf:ClassificationLcc rdf:nodeID="bnode5kj1H1njgabdqboZwWdPUH">
+        <bf:classificationPortion>M1613.3</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:contribution>
+      <bflc:PrimaryContribution rdf:nodeID="bnodexp9AQBe33x97T47ML6CywK">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2017072525"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnode5JSVr9BU1Nf8AUbkgYbYUc">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnode8DYVLZJWxn378x4481w3hG">
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnode64D2FNxCqgUbKgXmCUCZyr">
+            <rdf:value>2017563130</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:dimensions>28 cm</bf:dimensions>
+        <bf:copyrightDate>©2017</bf:copyrightDate>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnoder93LTKijxhc6cqWA3kjoNB">
+            <bf:subtitle>for soprano vocalist with instrumental ensemble</bf:subtitle>
+            <bf:note>
+              <bf:Note rdf:nodeID="bnode7AQ8JyRrN44jgymYHjanq2">
+                <rdfs:label>Title from cover.</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:mainTitle>Fog</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnodeaz45qJTEwN6SCaJHAbG8JT">
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnode8G4oxRXiXzSeL7cGQwRnmG">
+                <rdf:value>00491826642</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnodebmw1iXLXLPxDQoT7viyS9F">
+                <rdf:value>M1613.3.H716 F65 2017</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:responsibilityStatement>by Scott L. Hines ; [words by] Carl Sandburg.</bf:responsibilityStatement>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodegsvTSTu2p8fd4svuXf2ahb">
+            <rdfs:label>1 score (6 pages) + 12 parts</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnodedNb3XNCxUq23UCx7VohjvC">
+            <bf:date>[2017]</bf:date>
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnode5uyNmFAi8w7tFWVFX7ND7S">
+                <rdfs:label>Alliance Publications, Inc.</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodedEDqi3CYYMY4dosRpoAMB8">
+                <rdfs:label>Sinsinawa, WI</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:identifiedBy>
+          <bf:Upc rdf:nodeID="bnodemi2fM7Wkf81jpNKGdANR2z">
+            <rdf:value>649325040218</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:subject>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85125142"/>
+    </bf:subject>
+    <bf:note>
+      <bf:Note rdf:nodeID="bnodeURfjHjfFDc4M6cEZnNfHi">
+        <rdfs:label>Includes biographical note in English.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:musicMedium>
+      <bf:MusicMedium rdf:nodeID="bnodekDRjNdJzVtFCkYxNmCPEPu">
+        <rdfs:label>For soprano vocalist with instrumental ensemble.</rdfs:label>
+      </bf:MusicMedium>
+    </bf:musicMedium>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014027103"/>
+    </bf:genreForm>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnode69RdGP95dfSw78ttm1f4od">
+        <bf:mainTitle>Fog</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:note>
+      <bf:Note rdf:nodeID="bnodec6YeBubdUTCgZeDqpTWbDd">
+        <rdfs:label>Title from cover.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:musicFormat>
+      <bf:MusicFormat rdf:about="http://id.loc.gov/vocabulary/mmusicformat/part">
+        <rdfs:label xml:lang="en">part</rdfs:label>
+      </bf:MusicFormat>
+    </bf:musicFormat>
+    <bf:originDate>1997</bf:originDate>
+    <bf:language>
+      <bf:Language rdf:nodeID="bnode5TzyHhbYGG4eENwgoCLP2F">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode3SwNBr7KmDKHoRFiP88pMz">
+            <rdfs:label>English words; also printed as text.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Language>
+    </bf:language>
+    <bf:notation>
+      <bf:MusicNotation rdf:nodeID="bnodeqqrRJQ87ubUeFcgbqo5MxM">
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mmusnotation/staff"/>
+      </bf:MusicNotation>
+    </bf:notation>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodeaaWxpfVAJnZvunMWPAR3bF">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n79011105"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:voice>
+      <bf:MusicVoice rdf:nodeID="bnodeeo7za8RKUiHCbe1ToQcSst">
+        <bf:count>1</bf:count>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015666"/>
+      </bf:MusicVoice>
+    </bf:voice>
+  </bf:Work>
+  <madsrdf:PersonalName rdf:nodeID="bnodectxGML675JD5t5WEK7MMuo">
+    <rdfs:label xml:lang="en">Hines, Scott L., 1958-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnodeuM4PbnKpxVDgfrBnvxK8qe">
+    <rdfs:label xml:lang="en">Songs</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName rdf:nodeID="bnode7QMWaXpEfEVzUoPCy1JYaA">
+    <rdfs:label xml:lang="en">Sandburg, Carl, 1878-1967</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Notation rdf:about="http://id.loc.gov/vocabulary/mmusnotation/staff">
+    <rdfs:label xml:lang="en">staff notation</rdfs:label>
+  </bf:Notation>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015812">
+    <rdfs:label xml:lang="en">instrumental ensemble</rdfs:label>
+  </rdf:Description>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n79011105"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n2017072525"/>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015666">
+    <rdfs:label xml:lang="en">soprano voice</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

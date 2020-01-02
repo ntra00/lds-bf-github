@@ -1,0 +1,1 @@
+Fri Jan 18 17:46:01 EST 2019 {"name": "e40536932423119018874256815279708554649","objid": "resources.works.e40536932423119018874256815279708554649","publish": {"status": "error","message": "rapper: Error - URI file:///marklogic/bibliomata/recto/resources/./e40536932423119018874256815279708554649.jsonld - XML parser error: Document is empty"}}

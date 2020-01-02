@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/e61301583856284575917315232731736006023">
+    <bf:instanceOf>
+      <bf:Work rdf:nodeID="bnode2Ei2xzAv1AxVgyk7kqqRKZ">
+        <bf:relatedTo rdf:resource="http://id.loc.gov/resources/works/c014625970"/>
+        <bflc:comment>rkoh</bflc:comment>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85130307"/>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008110707"/>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodegjhpQhPPu7CiAQTZgdNB35">
+            <bf:mainTitle>Ayalah sheluḥah</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="bnodejFv2HJKvhv19PM1tHSFr9Y">
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+            <bf:agent>
+              <madsrdf:PersonalName rdf:nodeID="bnodesdaHdGWnsM7cN9Cvvs1kMd">
+                <rdfs:label>Neuberger, Shraga</rdfs:label>
+              </madsrdf:PersonalName>
+            </bf:agent>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:supplementaryContent>
+          <bf:SupplementaryContent rdf:nodeID="bnode8ye9cJWJZSBSwmDXyQLmoG">
+            <rdfs:label> Includes bibliographical references</rdfs:label>
+          </bf:SupplementaryContent>
+        </bf:supplementaryContent>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/heb"/>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="bnodetZ7tmXSTAKq1JoWc2TVG18">
+            <bf:classificationPortion>BM693.H5</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodeawinHwhJkUM7uMymS2Ycs7">
+        <bf:subtitle>‏בעניני ימים נוראים וחג הסוכות ; ונלווה אליו קונטרס שש אנכי </bf:subtitle>
+        <bf:mainTitle>ספר אילה שלוחה</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bflc:comment>rkoh</bflc:comment>
+    <bf:hasItem>
+      <bf:Item rdf:nodeID="bnodeekKtSxGX65YUxV4yvsDPv2">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodesFXFG3vqcwgS45zgQM58pW">
+            <rdfs:label>c. 1</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:Barcode rdf:nodeID="bnode3RQfHbgUnLHHdSPiu3deuq">
+            <rdf:value>00483978972</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc rdf:nodeID="bnode7tQwzcTeNKW4Rp9jiNJM4K">
+            <rdf:value>BM693.H5 N48 2015</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:responsibilityStatement>מאתי שרגא שמואל בלאאמו"ר נפתלי הלוי ניוברגר, ר"מ בישיבת נר ישראל</bf:responsibilityStatement>
+    <bf:title>
+      <bf:VariantTitle rdf:nodeID="bnodekHaK1ejq8vKngckAdTUgBy">
+        <rdfs:label>אילה שלוחה :‏  ‏ירח האיתנים</rdfs:label>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode7245PCNjS9qXqP6cqAbHae">
+            <rdfs:label>Cover title</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:dimensions>25 cm</bf:dimensions>
+    <bf:title>
+      <bflc:TranscribedTitle rdf:nodeID="bnodep82vb5na3twz2fM7JMj3XL">
+        <bf:mainTitle>Sefer Ayalah sheluḥah</bf:mainTitle>
+      </bflc:TranscribedTitle>
+    </bf:title>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="bnodem7PNtrTEx1DA7tZ5c6qE8B">
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e198870669425029113938070300299421624233"/>
+        <bf:creationDate>2018-01-31</bf:creationDate>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bflc:metadataAssigner>rkoh</bflc:metadataAssigner>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="bnodedfL9kHD2bVwR4a6UzpdL9Q">
+        <bf:place>
+          <bf:Place rdf:nodeID="bnode2Ez6pMweJhLRGmnxgDLf1c">
+            <rdfs:label>באלטימאר</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:date>תשע"ו</bf:date>
+        <bf:agent>
+          <bf:Agent rdf:nodeID="bnodegjZ4DVUPjLwz82jp89UVTY">
+            <rdfs:label>מכון מפרשי הש"ס</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="bnode2BB9HGZtGj58MwbCkUeakM">
+        <rdfs:label>255 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="bnode6SyPuy8kFMuH6XPPvvhAX9">
+        <rdf:value>2016518429</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+  </bf:Instance>
+  <madsrdf:Topic rdf:nodeID="bnodekZNYXz6d1zGvRJybgVtfSt">
+    <rdfs:label xml:lang="en">Repentance--Judaism</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="bnodebNtEaW6jEvwPBuknBatPy7">
+    <rdfs:label xml:lang="en">Sukkot</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="bnode9fjKhte5aaPon6dp7yfYnP">
+    <madsrdf:Topic>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008110707"/>
+    </madsrdf:Topic>
+    <madsrdf:componentList>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85060675"/>
+    </madsrdf:componentList>
+    <rdfs:label xml:lang="en">Sukkot</rdfs:label>
+    <rdfs:label xml:lang="en">Repentance--Judaism</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="bnodecPP8yqRdhe4eqxJ7U3dyga">
+    <rdfs:label xml:lang="en">High Holidays</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/heb">
+    <rdfs:label xml:lang="en">Hebrew</rdfs:label>
+  </bf:Language>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e198870669425029113938070300299421624233">
+    <rdf:value>e198870669425029113938070300299421624233</rdf:value>
+  </bf:Local>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85130307"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c014625970">
+    <rdfs:label xml:lang="en">Śaś anokhi.</rdfs:label>
+  </bf:Work>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+</rdf:RDF>

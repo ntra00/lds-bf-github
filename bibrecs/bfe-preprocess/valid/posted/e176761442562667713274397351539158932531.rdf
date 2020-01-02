@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0204764360001">
+    <bf:responsibilityStatement>Barbara Kiełczawa</bf:responsibilityStatement>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <bf:source>
+          <bf:Source rdf:nodeID="b82resourcesinstancesc0204764360001">
+            <rdfs:label>rdacarrier</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>volume</rdfs:label>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:dimensions>24 cm</bf:dimensions>
+    <rdfs:label>Zarys balneoterapeutycznego zastosowania wód geotermalnych /</rdfs:label>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b12resourcesinstancesc0204764360001">
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/pl"/>
+        <bf:date>2016</bf:date>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="b58resourcesinstancesc0204764360001">
+        <rdfs:label>137 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="b93resourcesinstancesc0204764360001">
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="b95resourcesinstancesc0204764360001">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="b111resourcesinstancesc0204764360001">
+            <rdf:value>20476436</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bf:status>
+          <bf:Status rdf:nodeID="b99resourcesinstancesc0204764360001">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bflc:metadataAssigner>ssoc</bflc:metadataAssigner>
+        <bf:creationDate>2018-04-30</bf:creationDate>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="b107resourcesinstancesc0204764360001">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:changeDate>2018-06-01T17:35:24</bf:changeDate>
+        <bf:source>
+          <bf:Agent rdf:nodeID="b124resourcesinstancesc0204764360001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+          </bf:Agent>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:nodeID="b119resourcesinstancesc0204764360001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:hasItem>
+      <bf:Item rdf:nodeID="bnodetVt1g5hbZCjMR91R4Wkkom">
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc rdf:nodeID="bnodecXEgmDS7dZUpSyWdVmMNJm">
+            <rdf:value>RM819  K54 2016</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:sublocation>c-GenColl</bf:sublocation>
+        <bf:identifiedBy>
+          <bf:Barcode rdf:nodeID="bnodehFZgaEfF3fRrxcm4diutmg">
+            <rdf:value>00483009021</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b23resourcesinstancesc0204764360001">
+        <rdf:value>9788394220594</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="b19resourcesinstancesc0204764360001">
+        <rdf:value>  2017472604</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <bf:source>
+          <bf:Source rdf:nodeID="b74resourcesinstancesc0204764360001">
+            <rdfs:label>rdamedia</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>unmediated</rdfs:label>
+      </bf:Media>
+    </bf:media>
+    <bf:title>
+      <bf:ParallelTitle rdf:nodeID="bnode2CsqbZrtNVx5Gx2hcbVgVJ">
+        <bf:mainTitle> Use of geothermal springs in balneology</bf:mainTitle>
+      </bf:ParallelTitle>
+    </bf:title>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b27resourcesinstancesc0204764360001">
+        <rdf:value>8394220592</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:title>
+      <bf:Title rdf:nodeID="b33resourcesinstancesc0204764360001">
+        <bf:mainTitle>Zarys balneoterapeutycznego zastosowania wód geotermalnych</bf:mainTitle>
+        <rdfs:label>Zarys balneoterapeutycznego zastosowania wód geotermalnych /</rdfs:label>
+        <bflc:titleSortKey>Zarys balneoterapeutycznego zastosowania wód geotermalnych /</bflc:titleSortKey>
+      </bf:Title>
+    </bf:title>
+    <bf:instanceOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/c020476436">
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85011345"/>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85059593"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="b10resourcesworksc020476436">
+            <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:creationDate>2018-04-30</bf:creationDate>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="b28resourcesworksc020476436">
+                <rdf:value>20476436</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="b20resourcesworksc020476436">
+                <bf:code>5</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:source>
+              <bf:Agent rdf:nodeID="b36resourcesworksc020476436">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+              </bf:Agent>
+            </bf:source>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="b24resourcesworksc020476436">
+                <bf:code>isbd</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+            <bf:source>
+              <bf:Agent rdf:nodeID="b41resourcesworksc020476436">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+              </bf:Agent>
+            </bf:source>
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="b12resourcesworksc020476436">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bf:status>
+              <bf:Status rdf:nodeID="b16resourcesworksc020476436">
+                <bf:code>c</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bf:changeDate>2018-06-01T17:35:24</bf:changeDate>
+            <bflc:procInfo>ibc update</bflc:procInfo>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <rdfs:label>Zarys balneoterapeutycznego zastosowania wód geotermalnych /</rdfs:label>
+        <bf:title>
+          <bf:Title rdf:nodeID="b93resourcesworksc020476436">
+            <bflc:titleSortKey>Zarys balneoterapeutycznego zastosowania wód geotermalnych /</bflc:titleSortKey>
+            <rdfs:label>Zarys balneoterapeutycznego zastosowania wód geotermalnych /</rdfs:label>
+            <bf:mainTitle>Zarys balneoterapeutycznego zastosowania wód geotermalnych</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:language>
+          <bf:Language rdf:nodeID="bnodeBbw4m1DcbNcwGAvKG8pcU">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/pol"/>
+          </bf:Language>
+        </bf:language>
+        <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:language>
+          <bf:Language rdf:nodeID="bnodeisXnMgTpBYVYWBHdBXHhvK">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnode2NakBdQ7n5axsHiGDBPpod">
+                <rdfs:label>Summary in English</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Language>
+        </bf:language>
+        <bf:supplementaryContent>
+          <bf:SupplementaryContent rdf:nodeID="bnode42zRGSvUH6cKtBdrvn5QQA">
+            <rdfs:label>Includes bibliographical references (pages 99-112)</rdfs:label>
+          </bf:SupplementaryContent>
+        </bf:supplementaryContent>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85062446"/>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="bnodebyUqQ9bq2A1FWaQybtDK48">
+            <bf:classificationPortion>RM819</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:colorContent>
+          <bf:Note rdf:nodeID="bnode3ew65Z6kE7P6uDdMqGwBow">
+            <rdfs:label>color</rdfs:label>
+          </bf:Note>
+        </bf:colorContent>
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="b71resourcesworksc020476436">
+            <bf:role>
+              <bf:Role rdf:nodeID="b85resourcesworksc020476436">
+                <rdfs:label>author.</rdfs:label>
+                <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+              </bf:Role>
+            </bf:role>
+            <bf:agent rdf:resource="http://id.loc.gov/resources/works/20476436#Agent100-14"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:provisionActivityStatement>Wrocław : Wydział Geoinżynierii, Górnictwa i Geologii Politechniki Wrocławskiej, 2016.</bf:provisionActivityStatement>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b43resourcesinstancesc0204764360001">
+        <bf:date>2016</bf:date>
+        <bf:place>
+          <bf:Place rdf:nodeID="b46resourcesinstancesc0204764360001">
+            <rdfs:label>Wrocław</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent rdf:nodeID="b50resourcesinstancesc0204764360001">
+            <rdfs:label>Wydział Geoinżynierii, Górnictwa i Geologii Politechniki Wrocławskiej</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+      </bf:Publication>
+    </bf:provisionActivity>
+  </bf:Instance>
+  <bf:Identifier rdf:nodeID="b66resourcesworksc020476436">
+    <rdf:value>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+    </rdf:value>
+    <bf:source>
+      <bf:Source rdf:about="http://id.loc.gov/vocabulary/languages"/>
+    </bf:source>
+  </bf:Identifier>
+  <madsrdf:Topic rdf:nodeID="bnodek8gReE4fEBpBUTvQ1iNXJ8">
+    <rdfs:label xml:lang="en">Hot springs</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20476436#Agent710-23">
+    <bflc:name10MatchKey>Politechnika Wrocławska. Wydział Geoinżynierii, Górnictwa i Geologii,</bflc:name10MatchKey>
+    <bflc:name10MarcKey>7102 $aPolitechnika Wrocławska.$bWydział Geoinżynierii, Górnictwa i Geologii,$epublisher.</bflc:name10MarcKey>
+    <rdfs:label>Politechnika Wrocławska. Wydział Geoinżynierii, Górnictwa i Geologii,</rdfs:label>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#CorporateName"/>
+  </bf:Agent>
+  <bf:Role rdf:nodeID="b126resourcesworksc020476436">
+    <bflc:relatorMatchKey>publisher</bflc:relatorMatchKey>
+    <rdfs:label>publisher.</rdfs:label>
+  </bf:Role>
+  <madsrdf:Topic rdf:nodeID="bnode3B387akkyHuG8ERXH87hbk">
+    <rdfs:label xml:lang="en">Health resorts</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Identifier rdf:nodeID="b57resourcesworksc020476436">
+    <rdf:value>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/pol">
+        <rdfs:label xml:lang="en">Polish</rdfs:label>
+      </bf:Language>
+    </rdf:value>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/languages"/>
+  </bf:Identifier>
+  <madsrdf:Topic rdf:nodeID="bnodepavXS72bvyw7bo6JoADJhj">
+    <rdfs:label xml:lang="en">Balneology</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Note rdf:nodeID="b111resourcesworksc020476436">
+    <rdfs:label>Summary in English</rdfs:label>
+  </bf:Note>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20476436#Agent100-14">
+    <bflc:primaryContributorName00MatchKey>Kiełczawa, Barbara,</bflc:primaryContributorName00MatchKey>
+    <rdfs:label>Kiełczawa, Barbara,</rdfs:label>
+    <bflc:name00MatchKey>Kiełczawa, Barbara,</bflc:name00MatchKey>
+    <bflc:name00MarcKey>1001 $aKiełczawa, Barbara,$eauthor.</bflc:name00MarcKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </madsrdf:PersonalName>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source rdf:nodeID="b105resourcesworksc020476436">
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+    <rdfs:label xml:lang="en">Illustrations</rdfs:label>
+  </bf:Illustration>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85062446"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/pl"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85059593"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85011345"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+</rdf:RDF>

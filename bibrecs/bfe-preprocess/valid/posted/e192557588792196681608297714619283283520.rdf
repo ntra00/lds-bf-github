@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026058"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026106"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026530"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026531"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/names/n79061389"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n80050411"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/e273086215741126518646271483723436298367">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>itaylor</bflc:catalogerId>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:procInfo>clone Instance</bflc:procInfo>
+        <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+        <bf:creationDate>2018-11-6</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e240144527958372528004101745660982458264"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n80050411"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctg"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:dimensions>28 cm</bf:dimensions>
+    <bf:editionStatement>1st edition</bf:editionStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label> 1 atlas (60 pages)</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:geographicCoverage>
+      <bf:Place>
+        <rdf:value>3973 H4</rdf:value>
+      </bf:Place>
+    </bf:geographicCoverage>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>itaylor</bflc:catalogerId>
+            <bflc:procInfo>clone Instance</bflc:procInfo>
+            <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+            <bf:creationDate>2018-11-6</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e240144527958372528004101745660982458264"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>G1343.H4G46 R6 2018</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00492722509</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:shelfmark>
+          <bf:ShelfMark>
+            <rdf:value>Copy 1</rdf:value>
+          </bf:ShelfMark>
+        </bf:shelfmark>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>2018593478</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:instanceOf>
+      <bf:Work>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>itaylor</bflc:catalogerId>
+            <bflc:procInfo>clone Instance</bflc:procInfo>
+            <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+            <bf:changeDate>2018-11-09T16:04:01</bf:changeDate>
+            <bf:creationDate>2018-11-6</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e240144527958372528004101745660982458264"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:colorContent>
+          <bf:Note>
+            <rdfs:label>Color illustrations</rdfs:label>
+          </bf:Note>
+        </bf:colorContent>
+        <bf:colorContent>
+          <bf:Note>
+            <rdfs:label>color maps</rdfs:label>
+          </bf:Note>
+        </bf:colorContent>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/cri"/>
+        <bf:contribution>
+          <bflc:PrimaryContribution>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n80050411"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026058"/>
+        <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026106"/>
+        <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026530"/>
+        <bf:geographicCoverage>
+          <bf:GeographicCoverage>
+            <rdfs:label xml:lang="en">Macon County (Ala.)</rdfs:label>
+          </bf:GeographicCoverage>
+        </bf:geographicCoverage>
+        <bf:language>
+          <bf:Language>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+          </bf:Language>
+        </bf:language>
+        <bf:scale>
+          <bf:Scale>
+            <rdfs:label>Scale approximately 1:56,320</rdfs:label>
+          </bf:Scale>
+        </bf:scale>
+        <bf:scale>
+          <bf:Scale>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>1 1/8 inch equals 1 mile</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Scale>
+        </bf:scale>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/names/n79061389"/>
+        <bf:subject>
+          <bf:Topic>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+            <madsrdf:authoritativeLabel>Real property--Alabama-Henry County--Maps</madsrdf:authoritativeLabel>
+          </bf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <bf:Topic>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+            <madsrdf:authoritativeLabel>Landowners--Alabama--Henry County--Maps</madsrdf:authoritativeLabel>
+          </bf:Topic>
+        </bf:subject>
+        <bf:title>
+          <bf:Title>
+            <bf:adminMetadata>
+              <bf:AdminMetadata>
+                <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+                <bf:creationDate>2018-11-6</bf:creationDate>
+                <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+                <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+                <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+                <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+                <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e192557588792196681608297714619283283520"/>
+                <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+              </bf:AdminMetadata>
+            </bf:adminMetadata>
+            <bf:mainTitle>Henry County, Alabama, land atlas &amp; plat book, 2018</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:date>2018</bf:date>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:responsibilityStatement>Compiled and published by Rockford Map Publishers, Inc.</bf:responsibilityStatement>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:mainTitle>Land atlas &amp; plat book, Henry County, Alabama, 2018</bf:mainTitle>
+        <bf:variantType>Title added entry</bf:variantType>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:mainTitle>Land atlas and plat book, Henry County, Alabama, 2018</bf:mainTitle>
+        <bf:variantType>Title added entry</bf:variantType>
+      </bf:VariantTitle>
+    </bf:title>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/cri">
+    <rdfs:label>cartographic image</rdfs:label>
+  </bf:Content>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <madsrdf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Language"/>
+    <rdfs:label>English</rdfs:label>
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </madsrdf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctg">
+    <rdfs:label xml:lang="en">Cartographer</rdfs:label>
+  </bf:Role>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label>LCSH</rdfs:label>
+  </bf:Source>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e192557588792196681608297714619283283520">
+    <rdf:value>e192557588792196681608297714619283283520</rdf:value>
+  </bf:Local>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e240144527958372528004101745660982458264">
+    <rdf:value>e240144527958372528004101745660982458264</rdf:value>
+  </bf:Local>
+  <bf:ShelfMarkLcc>
+    <rdf:value>G1343.M2G46 R6 2018</rdf:value>
+  </bf:ShelfMarkLcc>
+  <bf:ShelfMark>
+    <rdf:value>Copy 1</rdf:value>
+  </bf:ShelfMark>
+  <bf:Barcode>
+    <rdf:value>0049118002A</rdf:value>
+  </bf:Barcode>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Remote-sensing images</rdfs:label>
+  </bf:GenreForm>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Cadastral maps</rdfs:label>
+  </bf:GenreForm>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Atlases</rdfs:label>
+  </bf:GenreForm>
+  <madsrdf:CorporateName>
+    <madsrdf:associatedLanguage>
+      <madsrdf:Language>
+        <madsrdf:associatedLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </madsrdf:Language>
+    </madsrdf:associatedLanguage>
+    <madsrdf:entityDescriptor>cartographer</madsrdf:entityDescriptor>
+    <rdfs:label xml:lang="en">Rockford Map Publishers</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Real property</rdfs:label>
+  </bf:Topic>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Rockford Map Publishers</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:ShelfMarkLcc>
+    <rdf:value>G1343.M2G46 R6 2018</rdf:value>
+  </bf:ShelfMarkLcc>
+  <bf:ShelfMark>
+    <rdf:value>Copy 1</rdf:value>
+  </bf:ShelfMark>
+  <bf:Barcode>
+    <rdf:value>0049118002A</rdf:value>
+  </bf:Barcode>
+  <bf:AdminMetadata>
+    <bflc:procInfo>clone Instance</bflc:procInfo>
+    <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+    <bf:creationDate>2018-11-6</bf:creationDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+    <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e240144527958372528004101745660982458264"/>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+  </bf:AdminMetadata>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Henry County (Ala.)</rdfs:label>
+  </bf:Topic>
+  <bflc:PrimaryContribution>
+    <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n80050411"/>
+  </bflc:PrimaryContribution>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Rockford Map Publishers</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:Title>
+    <bf:mainTitle>Henry County, Alabama, land atlas &amp; plat book, 2018</bf:mainTitle>
+  </bf:Title>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Cadastral maps</rdfs:label>
+  </bf:GenreForm>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Remote-sensing maps</rdfs:label>
+  </bf:GenreForm>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Atlases</rdfs:label>
+  </bf:GenreForm>
+  <bf:GeographicCoverage>
+    <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n79061389"/>
+    <rdfs:label xml:lang="en">Henry County (Ala.)</rdfs:label>
+  </bf:GeographicCoverage>
+  <bf:Topic>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+    <madsrdf:authoritativeLabel>Real property--Alabama--Henry County--Maps</madsrdf:authoritativeLabel>
+  </bf:Topic>
+  <bf:Topic>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+    <madsrdf:authoritativeLabel>Landowners--Alabama--Henry County--Maps</madsrdf:authoritativeLabel>
+  </bf:Topic>
+  <bf:ClassificationLcc>
+    <bf:classificationPortion>G1343.H4G46 R6 2018</bf:classificationPortion>
+  </bf:ClassificationLcc>
+  <bf:Language>
+    <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+  </bf:Language>
+  <bf:Scale>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>1 1/8 inch equals 1 mile</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <rdfs:label>Scale approximately 1:56,320</rdfs:label>
+  </bf:Scale>
+  <bf:Instance>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>itaylor</bflc:catalogerId>
+        <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+        <bf:creationDate>2018-11-6</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e192557588792196681608297714619283283520"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:dimensions>28 cm</bf:dimensions>
+    <bf:editionStatement>The 1st edition</bf:editionStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>1 atlas (60 pages)</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:geographicCoverage>
+      <bf:Place>
+        <rdf:value>3973 H4</rdf:value>
+      </bf:Place>
+    </bf:geographicCoverage>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>itaylor</bflc:catalogerId>
+            <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+            <bf:creationDate>2018-11-6</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e192557588792196681608297714619283283520"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>G1343.H4G46 R6 2018</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00492722509</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:shelfmark>
+          <bf:ShelfMark>
+            <rdf:value>Copy 1</rdf:value>
+          </bf:ShelfMark>
+        </bf:shelfmark>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>2018593478</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:instanceOf>
+      <bf:Work>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/cri"/>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Rockford Map Publishers</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2018</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Rockford, Illinois</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+  </bf:Instance>
+</rdf:RDF>

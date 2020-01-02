@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/e213061788344530522091366711678307393790">
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="bnodemdPsgAZ94uq5sgTdPCi9vW">
+        <bf:place>
+          <bf:Place rdf:nodeID="bnodecziwTjqv5Mhfa4BwVkhETE">
+            <rdfs:label>Warszawa</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:date>2017</bf:date>
+        <bf:agent>
+          <bf:Agent rdf:nodeID="bnodekBtWy6A2qsET471ptCoob8">
+            <rdfs:label>PAN IGiPZ</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="bnodea9WUrvZ3zh43YKtp5bxCi4">
+        <rdf:value>9788361590743</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodeiuyRjALvmawFnSUagSrv1v">
+        <bf:mainTitle>Deregulacja i przekształcenia przedsiębiorstw transportu lądowego w Polsce na tle polityki spójności UE</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:dimensions>24 cm.</bf:dimensions>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="bnodex5TU9yHrnVXojR8RsFpMme">
+        <rdfs:label>269 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem>
+      <bf:Item rdf:nodeID="bnode7Y4yDBTj9cautu4UdTFQEK">
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc rdf:nodeID="bnodenv4WyDhyZFdSMwWxMnxBxx">
+            <rdf:value>HE255.7 .T395 2017 </rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:sublocation>c-GenColl</bf:sublocation>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:Barcode rdf:nodeID="bnoderYKxcTS1XDy6PgvrhoireT">
+            <rdf:value>00434678420</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:title>
+      <bf:ParallelTitle rdf:nodeID="bnodemAY1VpDKhAADNq59fTNVSK">
+        <bf:mainTitle>Deregulation and transformation among Poland's surface-transport companies against the background of the EU cohesion policy</bf:mainTitle>
+      </bf:ParallelTitle>
+    </bf:title>
+    <bf:instanceOf>
+      <bf:Work rdf:nodeID="bnodeoEYumysNNyQB7kgsNJkkFa">
+        <bf:language>
+          <bf:Language rdf:nodeID="bnodeHMZYJH4dzRjDngo9mcM5M">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodemstcEJJ6j6s1YscCZXeU3D">
+                <rdfs:label>Summary in English; table of contents and legends to illustrations also in English</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Language>
+        </bf:language>
+        <bf:contribution>
+          <bf:Contribution rdf:nodeID="bnodedMZEaxhYSpdrWQCPSEMcEY">
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nb2008013928"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="bnodea33iTTV1doWjvuKVivdzp9">
+            <bf:classificationPortion>HE255.7</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodeisE6RRrdDcgmY5bZ1J89eH">
+            <bf:mainTitle>Deregulacja i przekształcenia przedsiębiorstw transportu lądowego w Polsce na tle polityki spójności UE</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:colorContent>
+          <bf:Note rdf:nodeID="bnodeTCGw3yMQiDPgTrhe8HgBA">
+            <rdfs:label>color</rdfs:label>
+          </bf:Note>
+        </bf:colorContent>
+        <bf:geographicCoverage>
+          <bf:GeographicCoverage rdf:nodeID="bnode9tJQHKL32JBBEwbe8Qk7c">
+            <bf:GeographicCoverage rdf:resource="http://id.loc.gov/authorities/subjects/sh85045631"/>
+            <rdfs:label xml:lang="en">Europe</rdfs:label>
+          </bf:GeographicCoverage>
+        </bf:geographicCoverage>
+        <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/map"/>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008123400"/>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnodekSkP4biCRfgitgKLwYiniE">
+            <madsrdf:authoritativeLabel>Transportation--Privatization--Poland</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="bnodeceeLQSZuDV9uqjCc1ibKgo">
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n80053669"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <rdfs:label>Taylor, Zbigniew. Deregulacja i przekształcenia przedsiębiorstw transportu lądowego w Polsce na tle polityki spójności UE</rdfs:label>
+        <bf:geographicCoverage>
+          <bf:GeographicCoverage rdf:nodeID="bnodetjQwxVjVWZBr8xAEBRVSJS">
+            <bf:GeographicCoverage rdf:resource="http://id.loc.gov/authorities/names/n79131071"/>
+            <rdfs:label xml:lang="en">Poland</rdfs:label>
+          </bf:GeographicCoverage>
+        </bf:geographicCoverage>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008114978"/>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnodexqFrYhzA1UYSaJQH6z6rGw">
+            <madsrdf:authoritativeLabel>Transportation--Deregulation--Poland</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:supplementaryContent>
+          <bf:SupplementaryContent rdf:nodeID="bnodexs82gTXqLQswePgje4zPZS">
+            <rdfs:label> Includes bibliographical references (pages 237-254)</rdfs:label>
+          </bf:SupplementaryContent>
+        </bf:supplementaryContent>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/pol"/>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="bnode6j1FoM4aQngVnie94Uubto">
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bflc:metadataAssigner>ssoc</bflc:metadataAssigner>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:creationDate>2018-4-4</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e17476304985139596448722184050959074266"/>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:responsibilityStatement>Zbigniew Taylor, Ariel Ciechański</bf:responsibilityStatement>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="bnodextRWpn5Rh8vdrQ9tj5i5PV">
+        <rdf:value>2017432983</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:hasSeries>
+      <bf:Instance rdf:nodeID="bnodef4W3eMTTnvsC2LHMWN7Vny">
+        <bf:seriesStatement>Prace geograficzne / Instytut Geografii i Przestrzennego Zagospodarowania im. Stanisława Leszczyckiego, Polska Akademia Nauk, 0373-6547</bf:seriesStatement>
+        <bf:seriesEnumeration>nr 257</bf:seriesEnumeration>
+      </bf:Instance>
+    </bf:hasSeries>
+  </bf:Instance>
+  <madsrdf:PersonalName rdf:nodeID="bnodetz1chPiNThp4oTxc21dDdC">
+    <rdfs:label xml:lang="en">Taylor, Zbigniew</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic rdf:nodeID="bnodesWcdprWpriWioezdSX6MAs">
+    <rdfs:label xml:lang="en">Investments, Foreign--Poland</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:PersonalName rdf:nodeID="bnode9vNDzfL5qvqfSrTSZLq4fy">
+    <rdfs:label xml:lang="en">Ciechański, Ariel</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic rdf:nodeID="bnodegZd99kdAbBvmfiVyWUStL4">
+    <rdfs:label xml:lang="en">European Union countries--Economic policy</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/map">
+    <rdfs:label xml:lang="en">Maps</rdfs:label>
+  </bf:Illustration>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n80053669"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e17476304985139596448722184050959074266">
+    <rdf:value>e17476304985139596448722184050959074266</rdf:value>
+  </bf:Local>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008123400"/>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008114978"/>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/pol">
+    <rdfs:label xml:lang="en">Polish</rdfs:label>
+  </bf:Language>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nb2008013928"/>
+</rdf:RDF>

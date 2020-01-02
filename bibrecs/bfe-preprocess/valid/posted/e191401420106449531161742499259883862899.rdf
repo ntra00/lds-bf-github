@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n83170888"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh92005743"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh95010683"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0199679320001">
+    <bf:acquisitionSource>
+      <bf:AcquisitionSource>
+        <rdfs:label>Menzies Library, The Australian National University Acton ACT 0200</rdfs:label>
+      </bf:AcquisitionSource>
+    </bf:acquisitionSource>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>cpey</bflc:catalogerId>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-08-13T13:25:17</bf:changeDate>
+        <bf:creationDate>2017-08-29</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>19967932</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:dimensions>25 cm</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>xiii, 84 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfmarkLcc>
+            <rdf:value>HC79.E5 C6182 2013</rdf:value>
+          </bf:ShelfmarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00483618530</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:immediateAcquisition>
+          <bf:ImmediateAcquisition>
+            <rdfs:label> Purchased 2017-07-31 invoice 192897 from GOBI Library Solutions from EBSCO</rdfs:label>
+          </bf:ImmediateAcquisition>
+        </bf:immediateAcquisition>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <bf:qualifier>ebook</bf:qualifier>
+        <bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+        <rdf:value>9781921862052 </rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2017416877</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <bf:qualifier>(paperback)</bf:qualifier>
+        <rdf:value>9781921862045</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:instanceOf>
+      <bf:Work>
+        <bf:classification>
+          <bf:ClassificationLcc>
+            <bf:classificationPortion>HC79.E5</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:contribution>
+          <bflc:PrimaryContribution>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n83170888"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:language>
+          <bf:Language>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+          </bf:Language>
+        </bf:language>
+        <bf:subject>
+          <bf:Topic>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh92005743"/>
+          </bf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <bf:Topic>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh95010683"/>
+          </bf:Topic>
+        </bf:subject>
+        <bf:supplementaryContent>
+          <bf:SupplementaryContent>
+            <rdfs:label> Includes bibliographical references (pages 75-84).</rdfs:label>
+          </bf:SupplementaryContent>
+        </bf:supplementaryContent>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Building a sustainable and desirable economy-in-society-in-nature </bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>"Report to the United Nations for the 2012 Rio+20 Conference."</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Australian National University E Press</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>[2013]</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Canberra, ACT, Australia</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Acton, A.C.T. : ANU E Press, 2013.</bf:provisionActivityStatement>
+    <bf:responsibilityStatement>Robert Constanza, Crawford School of Public Policy, the Australian National University ; Gar Alperovitz, the Democracy Collaborative and Department of Government and Politics, University of Maryland ;  Herman E. Daly, School of Public Affairs, University of Maryland ; Joshua Farley, Department of Community Development and Applied Economics, and Gund Institute for Ecological Economics, University of Vermont ; Carol Franco, Woods Hole Research Center ; Tim Jackson, Sustainable Lifestyles Research Group, University of Surrey ; Ida Kubiszewski, Crawford School of Public Policy, the Australian National University ; Juliet Schor, Department of Sociology, Boston College ; and Peter Victor, Faculty of Environmental Studies, York University.</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Building a sustainable and desirable economy-in-society-in-nature /</bflc:titleSortKey>
+        <bf:mainTitle>Building a sustainable and desirable economy-in-society-in-nature </bf:mainTitle>
+        <rdfs:label>Building a sustainable and desirable economy-in-society-in-nature /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Building a sustainable and desirable economy-in-society-in-nature /</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacarrier</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdamedia</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/19967932#Agent100-14">
+    <bflc:name00MarcKey>1001 $aConstanza, Robert,$eauthor$4aut</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Constanza, Robert,</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Constanza, Robert,</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Constanza, Robert,</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/19967932#Agent700-26">
+    <bflc:name00MarcKey>7001 $aAlperovitz, Gar,$eauthor$4aut</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Alperovitz, Gar,</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Alperovitz, Gar,</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/19967932#Agent700-27">
+    <bflc:name00MarcKey>7001 $aDaly, Herman E.,$eauthor$4aut</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Daly, Herman E.,</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Daly, Herman E.,</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/19967932#Agent700-28">
+    <bflc:name00MarcKey>7001 $aFarley, Joshua,$eauthor$4aut</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Farley, Joshua,</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Farley, Joshua,</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/19967932#Agent700-29">
+    <bflc:name00MarcKey>7001 $aFranco, Carol,$eauthor$4aut</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Franco, Carol,</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Franco, Carol,</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/19967932#Agent700-30">
+    <bflc:name00MarcKey>7001 $aJackson, Tim,$eauthor$4aut</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Jackson, Tim,</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Jackson, Tim,</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/19967932#Agent700-31">
+    <bflc:name00MarcKey>7001 $aKubiszewski, Ida,$eauthor$4aut</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Kubiszewski, Ida,</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Kubiszewski, Ida,</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/19967932#Agent700-32">
+    <bflc:name00MarcKey>7001 $aSchor, Juliet,$eauthor$4aut</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Schor, Juliet,</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Schor, Juliet,</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/19967932#Agent700-33">
+    <bflc:name00MarcKey>7001 $aVictor, Peter A.,$d1946-$eauthor.$4aut</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Victor, Peter A., 1946-</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Victor, Peter A., 1946-</rdfs:label>
+  </bf:Agent>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/19967932#Topic650-22">
+    <madsrdf:authoritativeLabel>Economic development--Environmental aspects.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b1_b49"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>Economic development--Environmental aspects.</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/19967932#Topic650-23">
+    <madsrdf:authoritativeLabel>Environmental policy.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+    <rdfs:label>Environmental policy.</rdfs:label>
+  </bf:Topic>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/19967932#Topic650-24">
+    <madsrdf:authoritativeLabel>Natural resources.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+    <rdfs:label>Natural resources.</rdfs:label>
+  </bf:Topic>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/19967932#Topic650-25">
+    <madsrdf:authoritativeLabel>Nature--Effect of human beings on.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b1_b45"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>Nature--Effect of human beings on.</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/aca"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv">
+    <rdfs:label xml:lang="en">canceled or invalid</rdfs:label>
+  </bf:Status>
+  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/incorrect"/>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Agent>
+    <rdfs:label>ANU E Press</rdfs:label>
+  </bf:Agent>
+  <bf:Contribution>
+    <bf:agent rdf:resource="http://id.loc.gov/resources/works/19967932#Agent700-27"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <bf:role>
+      <bf:Role>
+        <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+        <rdfs:label>author</rdfs:label>
+      </bf:Role>
+    </bf:role>
+  </bf:Contribution>
+  <bf:Title>
+    <bflc:titleSortKey>Building a sustainable and desirable economy-in-society-in-nature /</bflc:titleSortKey>
+    <bf:mainTitle>Building a sustainable and desirable economy-in-society-in-nature</bf:mainTitle>
+    <rdfs:label>Building a sustainable and desirable economy-in-society-in-nature /</rdfs:label>
+  </bf:Title>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Environmental aspects</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <bf:Contribution>
+    <bf:agent rdf:resource="http://id.loc.gov/resources/works/19967932#Agent700-28"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <bf:role>
+      <bf:Role>
+        <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+        <rdfs:label>author</rdfs:label>
+      </bf:Role>
+    </bf:role>
+  </bf:Contribution>
+  <bf:Place>
+    <rdfs:label>Acton, A.C.T.</rdfs:label>
+  </bf:Place>
+  <bflc:PrimaryContribution>
+    <bf:agent rdf:resource="http://id.loc.gov/resources/works/19967932#Agent100-14"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <bf:role>
+      <bf:Role>
+        <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+        <rdfs:label>author</rdfs:label>
+      </bf:Role>
+    </bf:role>
+  </bflc:PrimaryContribution>
+  <bf:AdminMetadata>
+    <bflc:encodingLevel>
+      <bflc:EncodingLevel>
+        <bf:code>5</bf:code>
+      </bflc:EncodingLevel>
+    </bflc:encodingLevel>
+    <bflc:procInfo>ibc update</bflc:procInfo>
+    <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+    <bf:changeDate>2018-08-13T13:25:17</bf:changeDate>
+    <bf:creationDate>2017-08-29</bf:creationDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionConventions>
+      <bf:DescriptionConventions>
+        <bf:code>isbd</bf:code>
+      </bf:DescriptionConventions>
+    </bf:descriptionConventions>
+    <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess>
+      <bf:GenerationProcess>
+        <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+      </bf:GenerationProcess>
+    </bf:generationProcess>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>19967932</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:source>
+      <bf:Source>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+        <rdfs:label>DLC</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <bf:source>
+      <bf:Source>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+        <rdfs:label>DLC</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <bf:status>
+      <bf:Status>
+        <bf:code>c</bf:code>
+      </bf:Status>
+    </bf:status>
+  </bf:AdminMetadata>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Nature</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b1_b40"/>
+  </madsrdf:Topic>
+  <bf:Contribution>
+    <bf:agent rdf:resource="http://id.loc.gov/resources/works/19967932#Agent700-30"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <bf:role>
+      <bf:Role>
+        <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+        <rdfs:label>author</rdfs:label>
+      </bf:Role>
+    </bf:role>
+  </bf:Contribution>
+  <bf:Contribution>
+    <bf:agent rdf:resource="http://id.loc.gov/resources/works/19967932#Agent700-29"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <bf:role>
+      <bf:Role>
+        <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+        <rdfs:label>author</rdfs:label>
+      </bf:Role>
+    </bf:role>
+  </bf:Contribution>
+  <bf:Contribution>
+    <bf:agent rdf:resource="http://id.loc.gov/resources/works/19967932#Agent700-26"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <bf:role>
+      <bf:Role>
+        <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+        <rdfs:label>author</rdfs:label>
+      </bf:Role>
+    </bf:role>
+  </bf:Contribution>
+  <bf:Contribution>
+    <bf:agent rdf:resource="http://id.loc.gov/resources/works/19967932#Agent700-31"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <bf:role>
+      <bf:Role>
+        <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+        <rdfs:label>author</rdfs:label>
+      </bf:Role>
+    </bf:role>
+  </bf:Contribution>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Economic development</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b1_b48"/>
+  </madsrdf:Topic>
+  <bf:Contribution>
+    <bf:agent rdf:resource="http://id.loc.gov/resources/works/19967932#Agent700-33"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <bf:role>
+      <bf:Role>
+        <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+        <rdfs:label>author.</rdfs:label>
+      </bf:Role>
+    </bf:role>
+  </bf:Contribution>
+  <bf:Contribution>
+    <bf:agent rdf:resource="http://id.loc.gov/resources/works/19967932#Agent700-32"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+    <bf:role>
+      <bf:Role>
+        <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+        <rdfs:label>author</rdfs:label>
+      </bf:Role>
+    </bf:role>
+  </bf:Contribution>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Effect of human beings on</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <bf:ShelfmarkLcc>
+    <rdf:value>HC79.E5 C6182 2013</rdf:value>
+  </bf:ShelfmarkLcc>
+  <bf:Barcode>
+    <rdf:value>0048361850</rdf:value>
+  </bf:Barcode>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Costanza, Robert</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic>
+    <rdfs:label xml:lang="en">Sustainable development</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic>
+    <rdfs:label xml:lang="en">Environmental management</rdfs:label>
+  </madsrdf:Topic>
+</rdf:RDF>

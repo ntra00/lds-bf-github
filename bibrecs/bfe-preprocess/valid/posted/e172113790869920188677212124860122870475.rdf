@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e74889753442348810104482928430943399163">
+    <bf:source>Videodisc container; Amazon WWW site, viewed May 15, 2018; Internet movie database WWW site, viewed May 15, 2018</bf:source>
+    <bf:aspectRatio>
+      <bf:AspectRatio rdf:nodeID="bnode6BqkUytMYV5yTuhjRngRv2">
+        <rdf:value>1.85:1</rdf:value>
+      </bf:AspectRatio>
+    </bf:aspectRatio>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnode5kLv4qrgt9xvzLbQJkJfGg">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no96022994"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/pre"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:colorContent>
+      <bf:ColorContent rdf:nodeID="bnodetzyWYv3GphUb4iSjxH3RnU">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodepf6bXweCdTiFfWUHSZHsRn">
+            <rdfs:label>color</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:ColorContent>
+    </bf:colorContent>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodemQRNHR5LxQRqz5CtJ8gfTv">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2005078975"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aus"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnoderQaNp5D4DScb8XjKTeGyWw">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2001072211"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodev3JzCNNPCmNeKhCoSb7syU">
+        <bf:mainTitle>Clay pigeons</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026247"/>
+    </bf:genreForm>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodenoVLVKvy5d4PEzMui1iuRM">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2004010005"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fmd"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026250"/>
+    </bf:genreForm>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodexePCM6qCky17deUeipW4Jk">
+        <bf:dimensions>
+          <bf:Dimensions rdf:nodeID="bnodej2YaMJBRRkXw4PtMYM1muv">
+            <rdfs:label>4 3/4 in.</rdfs:label>
+          </bf:Dimensions>
+        </bf:dimensions>
+        <bf:supplementaryContent>
+          <bf:SupplementaryContent rdf:nodeID="bnodeooigVmeyJKgG1RMHAHiLPP">
+            <rdfs:label>Special features: Interactive menus, cast and crew filmographies and biographies, and theatrical trailers</rdfs:label>
+          </bf:SupplementaryContent>
+        </bf:supplementaryContent>
+        <bf:soundCharacteristic>
+          <bf:RecordingMethod rdf:nodeID="bnodehXmib8ZBhLDUUmxS86UMV1">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+          </bf:RecordingMethod>
+        </bf:soundCharacteristic>
+        <bf:source>
+          <bf:Source rdf:nodeID="bnodeccfCGYXnP2KUn31GaJv1qo">
+            <rdfs:label>Videodisc container; Amazon WWW site, viewed May 15, 2018; Internet movie database WWW site, viewed May 15, 2018</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:digitalCharacteristic>
+          <bf:EncodingFormat rdf:nodeID="bnodewLagnH38DSWuccZW1aqkA5">
+            <rdfs:label>DVD video</rdfs:label>
+          </bf:EncodingFormat>
+        </bf:digitalCharacteristic>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodefKwwcXeLzt2WZauc8GtaQN">
+            <rdfs:label>Optional Spanish subtitles</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:soundCharacteristic>
+          <bf:PlaybackChannels rdf:nodeID="bnodesQ9xJh22vT6JaPrfnHcSfQ">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mplayback/mul"/>
+          </bf:PlaybackChannels>
+        </bf:soundCharacteristic>
+        <bf:digitalCharacteristic>
+          <bf:FileType rdf:nodeID="bnodenV2WtSKuDfbibwvF7NWFwt">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mfiletype/video"/>
+          </bf:FileType>
+        </bf:digitalCharacteristic>
+        <bf:digitalCharacteristic>
+          <bf:RegionalEncoding rdf:nodeID="bnoderMamwqnw1McXQCnyggky3y">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mregencoding/region1"/>
+          </bf:RegionalEncoding>
+        </bf:digitalCharacteristic>
+        <bf:identifiedBy>
+          <bf:PublisherNumber rdf:nodeID="bnode3hntc2dKydHocrHmVBczPD">
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodekXPnvKWM6dSh6aEKLSnHRS">
+                <rdfs:label>PolyGram Video</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>440 056 531-2</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026725"/>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:videoCharacteristic>
+          <bf:BroadcastStandard rdf:nodeID="bnodemw9fUKSUF2minHEpco3fuf">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mbroadstd/ntsc"/>
+          </bf:BroadcastStandard>
+        </bf:videoCharacteristic>
+        <bf:duration>approximately 104 min.</bf:duration>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/v"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnode3GzG84v3qCDjKM6GqpuyKX">
+            <bf:changeDate>2018-05-22T18:44:44</bf:changeDate>
+            <bflc:metadataAssigner>jjud</bflc:metadataAssigner>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/7"/>
+            <bflc:profile>profile:bf2:MIBluRayDVD:Instance</bflc:profile>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e172113790869920188677212124860122870475"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <rdfs:label>eng</rdfs:label>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:creationDate>2018-5-15</bf:creationDate>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnodebd95UoENqmLD8RBvktA8oY">
+            <bf:usageAndAccessPolicy>
+              <bf:AccessPolicy rdf:nodeID="bnodekTyc31UuFXHVwKV29Dq9pG">
+                <rdfs:label>Viewing copy</rdfs:label>
+              </bf:AccessPolicy>
+            </bf:usageAndAccessPolicy>
+            <bf:identifiedBy>
+              <bf:ShelfMark rdf:nodeID="bnodefvaKuSMWaGp5X6FGZs7ZAD">
+                <rdf:value>1</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition rdf:nodeID="bnodeo9GZ14LeARtwHpB9f328Rj">
+                <rdfs:label>Received: 2008-11-20</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition rdf:nodeID="bnode4FVfYaDYCft6qBPvpwTJe3">
+                <rdfs:label>copyright deposit--407</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:sublocation>c-Motion Pic &amp; TV/MBRS</bf:sublocation>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnodeibwLwEC8o2rLdPjWZG5YQY">
+                <rdf:value>DVE 2460</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition rdf:nodeID="bnodegiLNC8bD935mX4DYonRWJ">
+                <rdfs:label>Copyright Collection</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnodemdo28cP2qDYVnsd7LqpAL1">
+                <rdf:value>00302369756</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:collection>Copyright Collection (Library of Congress)</bf:collection>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:contribution>
+          <bf:Contribution rdf:nodeID="bnode2ps4bchGbmMNrPUtbXmaNa">
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fds"/>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no95029001"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:responsibilityStatement>PolyGram Filmed Entertainment presents in association with Intermedia Films ; a Scott Free production ; produced by Ridley Scott and Chris Zarpas ; directed by David Dobkin ; written by Matt Healy</bf:responsibilityStatement>
+        <bf:copyrightDate>©1999</bf:copyrightDate>
+        <bf:soundCharacteristic>
+          <bf:PlaybackCharacteristic rdf:nodeID="bnodenpbN7DaYwsqT2HoqciAvfE">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mspecplayback/dolby"/>
+          </bf:PlaybackCharacteristic>
+        </bf:soundCharacteristic>
+        <bf:credits>
+          <bf:Credits rdf:nodeID="bnodecdap6W5f1AKXYnHu7UvqsA">
+            <rdfs:label>Cast: Vince Vaughn, Janeane Garofalo, Joaquin Phoenix, Georgina Cates, Scott Wilson</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:contentAccessibility>
+          <bf:Note rdf:nodeID="bnodevz24zcsgyv1AkzcE6Sq4NJ">
+            <rdfs:label>Closed-captioned for the hearing impaired</rdfs:label>
+          </bf:Note>
+        </bf:contentAccessibility>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="bnodeaKbStxvxDHa9eHAyjEuUWc">
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodembNJs5GXeA2uozPyumDSxk">
+                <rdfs:label>OCLC</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>(OCoLC)752291693</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:aspectRatio>
+          <bf:AspectRatio rdf:nodeID="bnodewWSFFuU2uapTbw8ExzBaGq">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodeom21idF1qAiFhLuNU5DxSS">
+                <rdfs:label>"Widescreen version presented in a 'matted' widescreen format preserving the 1.85:1 aspect ratio of its original theatrical exhibition"--Container</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:AspectRatio>
+        </bf:aspectRatio>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodehcKpVxrdP3qpn5LLBAwzrM">
+            <rdfs:label>For private home use only</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:soundCharacteristic>
+          <bf:PlaybackCharacteristic rdf:nodeID="bnode5SpVhUYGfH6GXaXbaQgQPN">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodeqn5rCPXmpTY8pHfrcqv9sD">
+                <rdfs:label>Dolby Digital 5.1</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:PlaybackCharacteristic>
+        </bf:soundCharacteristic>
+        <bf:provisionActivity>
+          <bf:Distribution rdf:nodeID="bnodewMqfENiQ9gVjyngRT4PA1r">
+            <bf:date>[1999]</bf:date>
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnode6vEBn6U1XMr6PNDj2eKQLn">
+                <rdfs:label>PolyGram Video</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodetfH1Yv2Db98Cuirkdq3pio">
+                <rdfs:label>New York, NY</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Distribution>
+        </bf:provisionActivity>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodep6jhQmBeuhQuShpNUA3gr">
+            <bf:mainTitle>Clay pigeons</bf:mainTitle>
+            <bf:note>
+              <bf:Note rdf:nodeID="bnode8E5hEEJsdRhc9NuWZ71fLr">
+                <rdfs:label>Title from container</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Title>
+        </bf:title>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnoderczAB3BAGbV9YeAzSnqd3h">
+            <rdf:value>2018600742</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:soundCharacteristic>
+          <bf:PlaybackCharacteristic rdf:nodeID="bnode8Rdiii1LRhm5QjkoCHVE5j">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodejnQrYSV42jARoVWxij1vNn">
+                <rdfs:label>Dolby Digital 2.0</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:PlaybackCharacteristic>
+        </bf:soundCharacteristic>
+        <bf:aspectRatio>
+          <bf:AspectRatio rdf:nodeID="bnodetae8ABXYm4gYsbYTCPvsE6">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/maspect/full"/>
+          </bf:AspectRatio>
+        </bf:aspectRatio>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/vd"/>
+        <bf:identifiedBy>
+          <bf:Upc rdf:nodeID="bnodeqw8odfZsti4hgaxBFVmrSq">
+            <rdf:value>044005653120</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodeoDQqQydfVxoFDxELy8qeZd">
+            <rdfs:label>1 videodisc</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:soundCharacteristic>
+          <bf:RecordingMedium rdf:nodeID="bnode9Mmj55LG9gGRTkNaoSzTch">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrecmedium/opt"/>
+          </bf:RecordingMedium>
+        </bf:soundCharacteristic>
+        <bf:aspectRatio>
+          <bf:AspectRatio rdf:nodeID="bnodef8xjUb5wqhYvR9Cj9t2wLK">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/maspect/wide"/>
+          </bf:AspectRatio>
+        </bf:aspectRatio>
+        <bf:credits>
+          <bf:Credits rdf:nodeID="bnodeadmqxPKUdxC4pg6kD3YZCR">
+            <rdfs:label>Director of photography, Eric Edwards ; production design, Clark Hunter ; editors, Stan Salfas, Craig Richards ; music, John Lurie</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+      </bf:Instance>
+    </bf:hasInstance>
+    <rdfs:label>Clay pigeons (Motion picture)</rdfs:label>
+    <bf:historyOfWork>Originally released as a motion picture in 1998</bf:historyOfWork>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnode5xhUGC24EkNMqDMQE1MWDN">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no97079965"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodeqmeCpg4yMQHZogfA6AUjhg">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n85199170"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026406"/>
+    </bf:genreForm>
+    <bf:intendedAudience>
+      <bf:IntendedAudience rdf:nodeID="bnodevc2ttW1LFYWbU6P7E45qsk">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodeqs2FWZmEVpeAQ8Wvkf63c7">
+            <rdfs:label>MPAA rating: R</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:IntendedAudience>
+    </bf:intendedAudience>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodefWmopshNSY6P15uVwV4saD">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no99036290"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:summary>
+      <bf:Summary rdf:nodeID="bnodeG4RyCcLRobvek7Gxmr5Bm">
+        <rdfs:label>The FBI investigates a string of murders which seemingly center around Clay, but it is really the charming, double-crossing sociopath Lester who is to blame</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:language>
+      <bf:Language rdf:nodeID="bnode9gtHxyX1q9gZmawYiVj14A">
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Language>
+    </bf:language>
+    <bf:duration>approximately 104 min.</bf:duration>
+    <bf:originPlace>
+      <bf:Place rdf:nodeID="bnodeb4vFADGLWzBES5vUeiLbku">
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n80125931"/>
+        <rdfs:label xml:lang="en">Germany</rdfs:label>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:originPlace>
+      <bf:Place rdf:nodeID="bnodenyyDwY2yZVRKFRQwsWjvPp">
+        <rdfs:label xml:lang="en">United States</rdfs:label>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n78095330"/>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026195"/>
+    </bf:genreForm>
+    <bf:geographicCoverage>
+      <bf:GeographicCoverage rdf:nodeID="bnodebSYBJfPPrYtqYSrqfCY3a3">
+        <bf:GeographicCoverage rdf:resource="http://id.loc.gov/authorities/names/n78095330"/>
+        <rdfs:label xml:lang="en">United States</rdfs:label>
+      </bf:GeographicCoverage>
+    </bf:geographicCoverage>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodewqY568zSkwYqeCzuU3QfCe">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr98029097"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026177"/>
+    </bf:genreForm>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodeisHwiTJeUoirFV3yptsmm4">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no91006599"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fmp"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:soundContent>
+      <bf:SoundContent rdf:nodeID="bnode2g2B1dMhvRmhqwYiizR8s8">
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/msoundcontent/sound"/>
+      </bf:SoundContent>
+    </bf:soundContent>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodeH6SJ77DP2SnukU5hGFL8m">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh95000651"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n78095330"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:originDate>1998</bf:originDate>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodehWnw7JZMHxmzp9qojDaxmP">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no96043586"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:aspectRatio>
+      <bf:AspectRatio rdf:nodeID="bnodebBFeGUTsLDNMfBwrbvQV9K">
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/maspect/wide"/>
+      </bf:AspectRatio>
+    </bf:aspectRatio>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodet64V36qDxm5enCajw8sqDA">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no97049450"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+  </bf:Work>
+  <madsrdf:CorporateName rdf:nodeID="bnodemr3Jxb7u4PWKy9xuXFNkPA">
+    <rdfs:label xml:lang="en">PolyGram Filmed Entertainment (Firm)</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:CorporateName rdf:nodeID="bnodenkbWHghw7vAmrHjCSgqs6m">
+    <rdfs:label xml:lang="en">PolyGram Video (Firm)</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:GenreForm rdf:nodeID="bnodeg4KwLYs7cL1QM3eASpfrAG">
+    <rdfs:label xml:lang="en">Feature films</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:CorporateName rdf:nodeID="bnodekre37kAN1spZtGzmzLHhp5">
+    <rdfs:label xml:lang="en">Scott Free Productions</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:Geographic rdf:nodeID="bnodeVr29dgix1vz7j1DpCvopk">
+    <rdfs:label xml:lang="en">United States</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:GenreForm rdf:nodeID="bnodeeXqj3HhKuLfaKUYVSsaHCr">
+    <rdfs:label xml:lang="en">Motion pictures</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName rdf:nodeID="bnodevtg4SsdzcQHpkx3tftW9ec">
+    <rdfs:label xml:lang="en">Phoenix, Joaquin</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnodemVQiXJbgmDaZQhNi5VBYYL">
+    <rdfs:label xml:lang="en">Video recordings for the hearing impaired</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName rdf:nodeID="bnodeiTxuqrjH2okXZ9P3jLGLzJ">
+    <rdfs:label xml:lang="en">Garofalo, Janeane</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodesC6VGt7hnaEcTGjoExk2RQ">
+    <rdfs:label xml:lang="en">Healy, Matt</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnode3E3V3NTxzYbFKajddtfohs">
+    <rdfs:label xml:lang="en">Detective and mystery films</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Topic rdf:nodeID="bnode2LxXEE8177rEMZ9nsbbSuh">
+    <rdfs:label xml:lang="en">Serial murderers</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:PersonalName rdf:nodeID="bnodewSLgHtS9nrYuKEDFRkw6vr">
+    <rdfs:label xml:lang="en">Dobkin, David, 1969-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodefCCghBM4TKQSHy8DbV6SD">
+    <rdfs:label xml:lang="en">Cates, Georgina</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodeu96ZuKEVSnHx3o7vQs6DKc">
+    <rdfs:label xml:lang="en">Wilson, Scott, 1942-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:CorporateName rdf:nodeID="bnode3s5LYnMU769hQFLPiAQY9t">
+    <rdfs:label xml:lang="en">Intermedia Films</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:GenreForm rdf:nodeID="bnodeuABUzUP2MG91ipUQN2giDy">
+    <rdfs:label xml:lang="en">Crime films</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:GenreForm rdf:nodeID="bnodefvMLe4CRAipaPqPTpV5ftL">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName rdf:nodeID="bnodenodGECnvar9dkpqSds6V35">
+    <rdfs:label xml:lang="en">Vaughn, Vince</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnode396nVY24BnmZQj7ga1Zhq3">
+    <rdfs:label xml:lang="en">Scott, Ridley</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnode8Yo9hWMYBodvjSj4kqeqeK">
+    <rdfs:label xml:lang="en">Fiction films</rdfs:label>
+  </madsrdf:GenreForm>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/maspect/wide">
+    <rdfs:label xml:lang="en">wide screen</rdfs:label>
+  </rdf:Description>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+    <rdfs:label xml:lang="en">Actor</rdfs:label>
+  </bf:Role>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026725"/>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
+    <rdfs:label xml:lang="en">minimal</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mfiletype/video">
+    <rdfs:label xml:lang="en">video file</rdfs:label>
+  </rdf:Description>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prn">
+    <rdfs:label xml:lang="en">Production company</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmp">
+    <rdfs:label xml:lang="en">Film producer</rdfs:label>
+  </bf:Role>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no97049450"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/msoundcontent/sound">
+    <rdfs:label xml:lang="en">sound</rdfs:label>
+  </rdf:Description>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no96022994"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/maspect/full">
+    <rdfs:label xml:lang="en">full screen</rdfs:label>
+  </rdf:Description>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no97079965"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrecmedium/opt">
+    <rdfs:label xml:lang="en">optical</rdfs:label>
+  </rdf:Description>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no99036290"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mspecplayback/dolby">
+    <rdfs:label xml:lang="en">Dolby</rdfs:label>
+  </rdf:Description>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmd">
+    <rdfs:label xml:lang="en">Film director</rdfs:label>
+  </bf:Role>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/vd">
+    <rdfs:label>videodisc</rdfs:label>
+  </bf:Carrier>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh85039316"/>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e172113790869920188677212124860122870475">
+    <rdf:value>e172113790869920188677212124860122870475</rdf:value>
+  </bf:Local>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no91006599"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no2001072211"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/v">
+    <rdfs:label>video</rdfs:label>
+  </bf:Media>
+  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n78095330"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no96043586"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh95000651"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aus">
+    <rdfs:label xml:lang="en">Screenwriter</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fds">
+    <rdfs:label xml:lang="en">Film distributor</rdfs:label>
+  </bf:Role>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mregencoding/region1">
+    <rdfs:label xml:lang="en">region 1</rdfs:label>
+  </rdf:Description>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2005078975"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no95029001"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mbroadstd/ntsc">
+    <rdfs:label xml:lang="en">NTSC</rdfs:label>
+  </rdf:Description>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label xml:lang="en">digital</rdfs:label>
+  </rdf:Description>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/nr98029097"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2004010005"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n85199170"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mplayback/mul">
+    <rdfs:label xml:lang="en">surround</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

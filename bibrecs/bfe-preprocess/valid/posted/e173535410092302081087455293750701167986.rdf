@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <madsrdf:PersonalName rdf:nodeID="bnodevvSMtUExPKV5RBYzpBEogR">
+    <rdfs:label>Pandolfi Mealli, Giovanni Antonio</rdfs:label>
+    <rdfs:label xml:lang="en">Pandolfi Mealli, Giovanni Antonio</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic rdf:nodeID="bnode2uzLpdiY8NfRmv6q1AXKBE">
+    <rdfs:label xml:lang="en">Trio sonatas (Violins (2), continuo)</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e157333159917669420401453343928612129957">
+    <bf:originDate>1669</bf:originDate>
+    <bf:instrument>
+      <bf:MusicInstrument rdf:nodeID="bnode2BpEFcZt8h9M7j6D2ex6Xb">
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015772"/>
+      </bf:MusicInstrument>
+    </bf:instrument>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014027099"/>
+    </bf:genreForm>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:nodeID="bnodeu71saS61F8QDGhafFkfCv3">
+        <rdfs:label>Program notes and biographical notes on the composer in English and Italian (13 p.) inserted in container</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:subject>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85129109"/>
+    </bf:subject>
+    <bf:contribution>
+      <bflc:PrimaryContribution rdf:nodeID="bnode572n5RXnR7YuTQGgytaKe8">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n91088951"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodetTKgEZJS4V84Za9MjeSGcW">
+        <bf:dimensions>4 3/4 in.</bf:dimensions>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnode6ov9aowW6E9XZ7QEqdaTJL">
+            <rdfs:label>1 audio disc</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnodegcb8GtdhY5pDsJKcNN9icX">
+            <rdf:value>  2018618655</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodeoYpYLyrzfZF23Jsm82jmma">
+            <bf:mainTitle>Sonate, Roma 1669</bf:mainTitle>
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodeuJLFipoKTY1awiAakhuNvs">
+                <rdfs:label>Title from disc label</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Title>
+        </bf:title>
+        <bf:soundCharacteristic>
+          <bf:PlaybackChannels rdf:nodeID="bnode4AdtWGKSELW78YJGfrwCm4">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mplayback/ste"/>
+          </bf:PlaybackChannels>
+        </bf:soundCharacteristic>
+        <bf:identifiedBy>
+          <bf:Ean rdf:nodeID="bnodentMmckygWEFp7xq8oaj3BP">
+            <rdf:value>8007194106053</rdf:value>
+          </bf:Ean>
+        </bf:identifiedBy>
+        <bf:soundCharacteristic>
+          <bf:RecordingMedium rdf:nodeID="bnodenLatshTtkHCVJXb8v3DRUE">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrecmedium/opt"/>
+          </bf:RecordingMedium>
+        </bf:soundCharacteristic>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pla"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodec3bCJVJ51SSJm2BUwDgD3g">
+            <bflc:profile>profile:bf2:SoundRecording:Instance</bflc:profile>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e173535410092302081087455293750701167986"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bflc:metadataAssigner>bbad</bflc:metadataAssigner>
+            <bf:changeDate>2018-03-12T15:03:35</bf:changeDate>
+            <bf:creationDate>2018-3-12</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:copyrightDate>℗2017</bf:copyrightDate>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+        <bf:soundCharacteristic>
+          <bf:RecordingMethod rdf:nodeID="bnodewBFQJuuQraeevMk9EvJHaL">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+          </bf:RecordingMethod>
+        </bf:soundCharacteristic>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/mtl"/>
+        <bf:credits>
+          <bf:Credits rdf:nodeID="bnodesYZp6PGVh2fcT4EFSDREKw">
+            <rdfs:label>Opera Quinta ; Fabrizio Longo, conductor</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:identifiedBy>
+          <bf:PublisherNumber rdf:nodeID="bnodevKAykZaPvqt3AN5t27jqdb">
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodepn4yZvZ65bkxB7wdFSuMei">
+                <rdfs:label>Tactus</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>TCC 621602</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:soundCharacteristic>
+          <bf:PlayingSpeed rdf:nodeID="bnodehL8UihWtHFff7jedoMFR5A">
+            <rdfs:label>1.4 m/s</rdfs:label>
+          </bf:PlayingSpeed>
+        </bf:soundCharacteristic>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnodedqBDe8Vo4oNhfAggnMvU4C">
+            <bf:identifiedBy>
+              <bf:ShelfMark rdf:nodeID="bnodei2eNdRiAg6UXTGJDi1n9r1">
+                <rdf:value>SDC</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnodenbZLqcQB1kTKoKkjftyAv9">
+                <rdf:value>0332072067</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnodefphohh5AhomDbFqt4fYpLV">
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnode25TmcmV98fqE4maXYoPpF">
+                <rdfs:label>Tactus</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2017]</bf:date>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodekKMme8nkXvdr8XZMXugGLi">
+                <rdfs:label>[Bologna]</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>Giovanni Antonio Pandolfi Mealli</bf:responsibilityStatement>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnode4UFPPkrULZKtZYzJ1pWsas">
+        <bf:mainTitle>Sonate cioè balletti, sarabande, correnti, passacagli, capriccetti, &amp; una trombetta</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:subject>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85137568"/>
+    </bf:subject>
+    <bf:instrument>
+      <bf:MusicInstrument rdf:nodeID="bnodedFG53bQWTyo7Zq25KQXw3V">
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015782"/>
+      </bf:MusicInstrument>
+    </bf:instrument>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodece7qpzVEthxSU3qTPwMYYM">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cnd"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/itr"/>
+        <bf:agent>
+          <madsrdf:PersonalName rdf:nodeID="bnode3H3H67YBaTuAWkh7sTWmKY">
+            <rdfs:label>longo, fabrizio</rdfs:label>
+          </madsrdf:PersonalName>
+        </bf:agent>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:capture>
+      <bf:Capture rdf:nodeID="bnode6r15uryMa13J2Bzb3v5BZB">
+        <bf:date>Recorded 2013 May Chiesa di S. Margherita, Caserotta, Florence</bf:date>
+      </bf:Capture>
+    </bf:capture>
+  </bf:Work>
+  <madsrdf:Topic rdf:nodeID="bnodeeZkym36BvtKTWjheV9uVwL">
+    <rdfs:label xml:lang="en">String trios (Violins (2), viola)</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:GenreForm rdf:nodeID="bnodejx11u5EumfWjeWGYZRFReo">
+    <rdfs:label xml:lang="en">Sonatas</rdfs:label>
+  </madsrdf:GenreForm>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
+    <rdfs:label>audio</rdfs:label>
+  </bf:Media>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mplayback/ste">
+    <rdfs:label xml:lang="en">stereo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label xml:lang="en">digital</rdfs:label>
+  </rdf:Description>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+    <rdfs:label>audio disc</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015782">
+    <rdfs:label xml:lang="en">violin</rdfs:label>
+  </rdf:Description>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cnd">
+    <rdfs:label xml:lang="en">Conductor</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrecmedium/opt">
+    <rdfs:label xml:lang="en">optical</rdfs:label>
+  </rdf:Description>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pla">
+    <rdfs:label xml:lang="en">plastic </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/itr">
+    <rdfs:label xml:lang="en">Instrumentalist</rdfs:label>
+  </bf:Role>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/mtl">
+    <rdfs:label xml:lang="en">metal </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e173535410092302081087455293750701167986">
+    <rdf:value>e173535410092302081087455293750701167986</rdf:value>
+  </bf:Local>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015772">
+    <rdfs:label xml:lang="en">viola</rdfs:label>
+  </rdf:Description>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n91088951"/>
+</rdf:RDF>

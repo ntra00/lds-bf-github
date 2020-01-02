@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e66294527387695331306496664712232566875">
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodepueDqB6N1UAq7i9Vy3tT6M">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2016081913"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodek4tNcY4RZgRwe8LvP8hVN1">
+        <bf:source>
+          <bf:Source rdf:nodeID="bnodewVJiBQeg5PwB5JAwzYhcR7">
+            <rdfs:label>Videodisc container; Amazon WWW site, viewed March 9, 2018</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodefzR9friY55e4atCZL4HmYf">
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:creationDate>2018-3-9</bf:creationDate>
+            <bflc:metadataAssigner>jjud</bflc:metadataAssigner>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:changeDate>2018-03-09T21:27:53</bf:changeDate>
+            <bflc:profile>profile:bf2:MIBluRayDVD:Instance</bflc:profile>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e193588974147620856848603153675257989757"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/7"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:tableOfContents>
+          <bf:TableOfContents rdf:nodeID="bnodevmcPfRjV6pR914QJc4pE3d">
+            <rdfs:label>Season five. Upstairs, downstairs, downstairs --  And justice for Jack --  A hundred dollars a what? --  Downhill chaser --  A crowded romance --  Room at the bottom --  Chrissy's cousin --  Jack to the rescue --  The not-so-great imposter --  Jack's other mother --  Make room for daddy --  Janet's secret --  Father of the bride --  Furley vs. Furley --  In like Larry --  Teacher's pet --  And baby makes four --  Night of the Ropers --  Double trouble --  Dying to meet you --  The case of the missing blonde --  Honest Jack Tripper -- Season six.  Jack bares all --  Terri makes her move --  Professor Jack --  Some of that jazz --  Lies my roommate told me --  Two flew over the cuckoo's nest --  Eyewitness blues --  Boy meets dummy --  Dates of wrath --  Macho man --  Strangers in the night --  The matchbreakers --  The holy guest aka oh, nun --  Maid to order --  Hearts and flowers --  Urban plowboy --  A friend in need --  Jack's 10 --  Doctor in the house --  Critic's choice --  Paradise lost --  And now here's Jack --  Janet wigs out --  Up in the air --  Mate for each other</rdfs:label>
+          </bf:TableOfContents>
+        </bf:tableOfContents>
+        <bf:aspectRatio>
+          <bf:AspectRatio rdf:nodeID="bnodex6MCmfEuNE568NZqf5tn6j">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/maspect/full"/>
+          </bf:AspectRatio>
+        </bf:aspectRatio>
+        <bf:digitalCharacteristic>
+          <bf:FileType rdf:nodeID="bnode8BoYC899X5sRUg4wUSukLG">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mfiletype/video"/>
+          </bf:FileType>
+        </bf:digitalCharacteristic>
+        <bf:videoCharacteristic>
+          <bf:BroadcastStandard rdf:nodeID="bnodeyeMBmUJVywKhGKZqU2zNj">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mbroadstd/ntsc"/>
+          </bf:BroadcastStandard>
+        </bf:videoCharacteristic>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="bnodecAi44Ndgu7RsowDx6GLXj2">
+            <rdf:value>(OCoLC)934630576</rdf:value>
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodefye6L9NZTftPBRtVLXMKhN">
+                <rdfs:label>OCLC</rdfs:label>
+              </bf:Source>
+            </bf:source>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:digitalCharacteristic>
+          <bf:DigitalCharacteristic rdf:nodeID="bnodeaGvK19MqHihVRtDTzaCqtA">
+            <rdfs:label>DVD video </rdfs:label>
+          </bf:DigitalCharacteristic>
+        </bf:digitalCharacteristic>
+        <bf:digitalCharacteristic>
+          <bf:RegionalEncoding rdf:nodeID="bnodetA2jHg3uEpSSHGGNQgtbSs">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mregencoding/region1"/>
+          </bf:RegionalEncoding>
+        </bf:digitalCharacteristic>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/vd"/>
+        <bf:tableOfContents>
+          <bf:TableOfContents rdf:nodeID="bnodefH5z1TF5s2mVBaSChrRKHj">
+            <rdfs:label>Season three. Double date --  Good old reliable Janet --  The love diary --  The fast --  Helen's rendezvous --  My sister's keeper --  Chrissy and the guru --  Larry's bride --  Chrissy's new boss --  The crush --  The kleptomaniac --  The party's over --  Eleanor's return --  The older woman --  Stanley's hotline --  The catered affair --  The best laid plans --  The harder they fall --  The bake-off --  An anniversary surprise --  Jack moves out --  Triangle troubles -- Season four.  Jack on the lam --  Love thy neighbor --  The new landlord --  Snow job --  Jack the ripper --  The life saver --  Old folks at home --  A camping we will go --  Chrissy's hospitality --  The loan shark --  The love barge --  Ralph's rival --  A black letter day --  The reverend steps out --  Larry loves Janet --  Mighty mouth --  The love lesson --  Handcuffed --  And baby makes two --  Jack's bad boy --  Lee ain't heavy, he's my brother --  The root of all evil --  Secret admirer --  The good-bye guy --  Jack's graduation</rdfs:label>
+          </bf:TableOfContents>
+        </bf:tableOfContents>
+        <bf:identifiedBy>
+          <bf:PublisherNumber rdf:nodeID="bnodenyX9PK2qD88rpqogC1jRcq">
+            <rdf:value>DV62328</rdf:value>
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodeqH9HShM5K4cRdG3DjZb2oK">
+                <rdfs:label>Anchor Bay Entertainment</rdfs:label>
+              </bf:Source>
+            </bf:source>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:contribution>
+          <bf:Contribution rdf:nodeID="bnodefYRZTv9yVSMzZxJWRm8Gq6">
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no96047264"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fds"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:aspectRatio>
+          <bf:AspectRatio rdf:nodeID="bnodejkL6xuGZXUU9KuquCuFcha">
+            <rdf:value>1.33:1</rdf:value>
+          </bf:AspectRatio>
+        </bf:aspectRatio>
+        <bf:duration>4264 min.</bf:duration>
+        <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026725"/>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodeqw6K6Q31KBjx1Z6jSxxcsa">
+            <rdfs:label>29 videodiscs</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:contentAccessibility>
+          <bf:Note rdf:nodeID="bnodeEn5HWhsW7JQXQ4mbGpJJ7">
+            <rdfs:label>Closed captioned</rdfs:label>
+          </bf:Note>
+        </bf:contentAccessibility>
+        <bf:dimensions>
+          <bf:Dimensions rdf:nodeID="bnode5MywaZshyqNqfSkaUuCRma">
+            <rdfs:label>4 3/4 in.</rdfs:label>
+          </bf:Dimensions>
+        </bf:dimensions>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnode7sQwdfX57JRoihXeqsDJrV">
+            <rdf:value>2018600573</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:tableOfContents>
+          <bf:TableOfContents rdf:nodeID="bnodeegr12J64jNyMR6RgjEaHf1">
+            <rdfs:label>Season one.  A man about the house --  And mother makes four --  Roper's niece --  No children, no dogs --  Jack the giant killer --  It's only money -- Season two. Ground rules --  Jack looks for a job --  Janet's promotion --  Strange bedfellows --  Chrissy's date --  Alone together --  Roper's car --  Cyrano de Tripper --  Chrissy's night out --  Stanley Casanova --  Janet's high school sweetheart --  Jack's uncle --  Helen's job --  Three's Christmas --  The gift --  The rivals --  The baby sitters --  Home movies --  Jack in the flower shop --  Jack's Navy pal --  Will the real Jack Tripper --  Days of beer and weeds --  Chrissy come home --  Bird song --  Coffee, tea, or Jack?</rdfs:label>
+          </bf:TableOfContents>
+        </bf:tableOfContents>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodetekrziFCTZgNYVxUxpVQVy">
+            <rdfs:label>"Come and knock on our door collection"--Container</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:copyrightDate>©2014</bf:copyrightDate>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnode5aHkjEkLSmV2busBujCJ3A">
+            <bf:subtitle>the complete series, 1977-1984</bf:subtitle>
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodeevxVNBHYQCaDXDJGF9VZbX">
+                <rdfs:label>Title from container</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:mainTitle>Three's company</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnodef82NDetx7RUzZ2ZWSkjoYF">
+            <bf:identifiedBy>
+              <bf:ShelfMark rdf:nodeID="bnodeVQx6CcmaaCxG9FjNRytu8">
+                <rdf:value>1</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:collection>LC Purchase Collection (Library of Congress)</bf:collection>
+            <bf:usageAndAccessPolicy>
+              <bf:AccessPolicy rdf:nodeID="bnode2sKcejTQTkdCc22PZrWrcn">
+                <rdfs:label>Viewing copy</rdfs:label>
+              </bf:AccessPolicy>
+            </bf:usageAndAccessPolicy>
+            <bf:sublocation>c-Motion Pic &amp; TV/MBRS</bf:sublocation>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition rdf:nodeID="bnodejSXyA4MjvoC3tifALtZ8ZT">
+                <rdfs:label>LC Purchase Collection</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition rdf:nodeID="bnodedU6yZrKB42zDds2LpvxymQ">
+                <rdfs:label>Purchase</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnodemYAEVdXN1BayxY1y5i5hzX">
+                <rdf:value>00302369264</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnodegdio1VxKrtdi9MbCUNiQ5C">
+                <rdf:value>DXA 0164</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:enumerationAndChronology>
+              <bf:Enumeration rdf:nodeID="bnode4P5QDEuFjv5GvSZ2FP8ipJ">
+                <rdfs:label>d1-29 in 1 container</rdfs:label>
+              </bf:Enumeration>
+            </bf:enumerationAndChronology>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:tableOfContents>
+          <bf:TableOfContents rdf:nodeID="bnodesR3NrcUxfkGjxoP47F6ndL">
+            <rdfs:label>Season seven.  A night to remember --  Jack goes to the dentist --  Diamond Jack --  Extra, extra --  Jack gets his --  Opening night --  Cousin, cuisine --  An affair to forget --  The brunch --  The impossible dream --  Breaking up is hard to do --  Larry's sister --  Bob &amp; Carol &amp; Larry &amp; Terri --  Going to pot --  Star struck --  Jack goes the distance --  Jack's double date --  Janet's little helper --  The apartment --  Hair today, gone tomorrow --  Navy blues --  Borrowing trouble -- Season eight.  Jack be quick --  She loves me, she loves me not --  The money machine --  Out on a limb --  Alias Jack Tripper --  Hearing is believing --  Grandma Jack --  Like father, like son --  The odd couples --  Now you see it, now you don't --  The charming stranger --  Janet shapes up --  Itching for trouble --  Baby, it's cold inside --  Look what I found --  Jack's tattoo --  Jack takes off --  Forget me not --  The heiress --  Cupid works overtime --  Friends and lovers</rdfs:label>
+          </bf:TableOfContents>
+        </bf:tableOfContents>
+        <bf:identifiedBy>
+          <bf:Upc rdf:nodeID="bnodebWLkZ3eGnhPd6r8tRcds87">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodetWzdpti8vh9Thz2bpn3Gdy">
+                <rdfs:label>80</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <rdf:value>013132623283</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:provisionActivity>
+          <bf:Distribution rdf:nodeID="bnodefSFN6yXcYTDcYnTZ1B8p1J">
+            <bf:date>[2014]</bf:date>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnode3QAMnWgSPbKfa6eBB1gue4">
+                <rdfs:label>Beverly Hills, CA</rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnodenvh2AnhycJfjeU3m84wkHE">
+                <rdfs:label>Anchor Bay Entertainment</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+          </bf:Distribution>
+        </bf:provisionActivity>
+        <bf:soundCharacteristic>
+          <bf:PlaybackCharacteristic rdf:nodeID="bnode6W85rbCDtDhLaXDjQFVNB4">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mspecplayback/dolby"/>
+          </bf:PlaybackCharacteristic>
+        </bf:soundCharacteristic>
+        <bf:aspectRatio>
+          <bf:AspectRatio rdf:nodeID="bnodepW3hEdkPX2PYfDdVjcsQeE">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnode3XxWkg2p4Hd5yFDyYKW3fF">
+                <rdfs:label>enhanced for 16x9 televisions</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:AspectRatio>
+        </bf:aspectRatio>
+        <bf:credits>
+          <bf:Credits rdf:nodeID="bnode3eQwfW9fVdnp3Kv3Pq3bGG">
+            <rdfs:label>Cast: John Ritter, Joyce DeWitt, Suzanne Somers, Richard Kline, Norman Fell, Audra Lindley, Don Knotts, Jenilee Harrison, Priscilla Barnes</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:soundCharacteristic>
+          <bf:PlaybackChannels rdf:nodeID="bnode2c46dh453GkPxmC9oATLY2">
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mplayback/mon"/>
+          </bf:PlaybackChannels>
+        </bf:soundCharacteristic>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/v"/>
+        <bf:responsibilityStatement>a production of the NRW Company in association with T.T.C. Productions, Inc. ; DLT Entertainment Ltd. ; developed and produced by Don Nicholl, Michael Ross, Bernie West</bf:responsibilityStatement>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode7WzuVEaqfrTJua7Uwjjcxm">
+            <rdfs:label>Special features: the first pilot shot before Joyce DeWitt and Suzanne Somers were cast; never-aired bloopers; vintage memorabilia and still photo galleries; a very special John Ritter remembrance tribute featuring his longtime friend and co-star Joyce DeWitt and featuring Richard Kline and director Dave Powers, co-stars Don Knotts, Jenilee Harrison and Ann Wedgeworth; the second pilot shot before Suzanne Somers was cast; audio commentaries on select episodes; casting Don Knotts and Suzanne Somers; cast and crew interviews; Don Knotts: a tribute; John Ritter: working with a master</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:title>
+          <bf:VariantTitle rdf:nodeID="bnode5fGQr8DCjY5kXMPYnpJRo1">
+            <bf:mainTitle>Three's company. Season 1-8</bf:mainTitle>
+          </bf:VariantTitle>
+        </bf:title>
+        <bf:soundCharacteristic>
+          <bf:SoundCharacteristic rdf:nodeID="bnodecKyZgrkUiGEWu7XcYGrAQY">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnode6dyhUzL1gU2MocNsqaJBjh">
+                <rdfs:label>optical</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+          </bf:SoundCharacteristic>
+        </bf:soundCharacteristic>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:originDate>1977-1984</bf:originDate>
+    <bf:aspectRatio>
+      <bf:AspectRatio rdf:nodeID="bnodexm1eGzTp1WH5bWdSCQG2du">
+        <rdf:value>1.33:1</rdf:value>
+      </bf:AspectRatio>
+    </bf:aspectRatio>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodevqdrDhVbNAyvtnUjwEdh48">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2009100916"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodehL1xpeXCUSNkLBLzcLh5fc">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n86109378"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:source>Sources used: videodisc container</bf:source>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodepDnnC9A7iSiNqkhSKHY1AT">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no92016169"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodebyAscb2knupnTQmFs6te2t">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79018782"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85005927"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:tableOfContents>
+      <bf:TableOfContents rdf:nodeID="bnodeoZEDaE1suwERrYGfhzo17B">
+        <rdfs:label>Season three. Double date --  Good old reliable Janet --  The love diary --  The fast --  Helen's rendezvous --  My sister's keeper --  Chrissy and the guru --  Larry's bride --  Chrissy's new boss --  The crush --  The kleptomaniac --  The party's over --  Eleanor's return --  The older woman --  Stanley's hotline --  The catered affair --  The best laid plans --  The harder they fall --  The bake-off --  An anniversary surprise --  Jack moves out --  Triangle troubles -- Season four.  Jack on the lam --  Love thy neighbor --  The new landlord --  Snow job --  Jack the ripper --  The life saver --  Old folks at home --  A camping we will go --  Chrissy's hospitality --  The loan shark --  The love barge --  Ralph's rival --  A black letter day --  The reverend steps out --  Larry loves Janet --  Mighty mouth --  The love lesson --  Handcuffed --  And baby makes two --  Jack's bad boy --  Lee ain't heavy, he's my brother --  The root of all evil --  Secret admirer --  The good-bye guy --  Jack's graduation</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026252"/>
+    </bf:genreForm>
+    <bf:relatedTo>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/n97055961">
+        <rdfs:label xml:lang="en">Three's company (Television program)</rdfs:label>
+      </bf:Work>
+    </bf:relatedTo>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodegBTfCWCa5m64Xekp9UC5a1">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n87922126"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:tableOfContents>
+      <bf:TableOfContents rdf:nodeID="bnodea1ydhtCzNUNxw349eRCjtX">
+        <rdfs:label>Season seven.  A night to remember --  Jack goes to the dentist --  Diamond Jack --  Extra, extra --  Jack gets his --  Opening night --  Cousin, cuisine --  An affair to forget --  The brunch --  The impossible dream --  Breaking up is hard to do --  Larry's sister --  Bob &amp; Carol &amp; Larry &amp; Terri --  Going to pot --  Star struck --  Jack goes the distance --  Jack's double date --  Janet's little helper --  The apartment --  Hair today, gone tomorrow --  Navy blues --  Borrowing trouble -- Season eight.  Jack be quick --  She loves me, she loves me not --  The money machine --  Out on a limb --  Alias Jack Tripper --  Hearing is believing --  Grandma Jack --  Like father, like son --  The odd couples --  Now you see it, now you don't --  The charming stranger --  Janet shapes up --  Itching for trouble --  Baby, it's cold inside --  Look what I found --  Jack's tattoo --  Jack takes off --  Forget me not --  The heiress --  Cupid works overtime --  Friends and lovers</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:tableOfContents>
+      <bf:TableOfContents rdf:nodeID="bnodepSUsUAELGB4DfZDqAJ5CET">
+        <rdfs:label>Season one.  A man about the house --  And mother makes four --  Roper's niece --  No children, no dogs --  Jack the giant killer --  It's only money -- Season two. Ground rules --  Jack looks for a job --  Janet's promotion --  Strange bedfellows --  Chrissy's date --  Alone together --  Roper's car --  Cyrano de Tripper --  Chrissy's night out --  Stanley Casanova --  Janet's high school sweetheart --  Jack's uncle --  Helen's job --  Three's Christmas --  The gift --  The rivals --  The baby sitters --  Home movies --  Jack in the flower shop --  Jack's Navy pal --  Will the real Jack Tripper --  Days of beer and weeds --  Chrissy come home --  Bird song --  Coffee, tea, or Jack?</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodeh9YUtNMvwijLQkxXaEHscB">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/tlp"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2012072610"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodesde1stHpkjvKTKXkrVwwrT">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2012072603"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026579"/>
+    </bf:genreForm>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnode5doUQmUw5GMzTpmWs3Az26">
+        <bf:mainTitle>Three's company</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:originPlace>
+      <bf:Place rdf:nodeID="bnode5YjYsPCGu9vLs5aP8hZWUh">
+        <rdfs:label xml:lang="en">United States</rdfs:label>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n78095330"/>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:geographicCoverage>
+      <bf:GeographicCoverage rdf:nodeID="bnodehoTPdN3dAsZ7KexzhZc7gM">
+        <bf:GeographicCoverage rdf:resource="http://id.loc.gov/authorities/names/n79041717"/>
+        <rdfs:label xml:lang="en">California</rdfs:label>
+      </bf:GeographicCoverage>
+    </bf:geographicCoverage>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026673"/>
+    </bf:genreForm>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodep21t36M7unDL8XJ9qb3Frx">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2012072181"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:aspectRatio>
+      <bf:AspectRatio rdf:nodeID="bnodei1KafaTfT6jCoHwmRRiRw3">
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/maspect/full"/>
+      </bf:AspectRatio>
+    </bf:aspectRatio>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodemFj6mBmPvR4xzNqW5FZ9xj">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no00072504"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>Three's company (Television program)</rdfs:label>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnoded9axpg69zYSw7Fo7Wxi1tN">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85115350"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79018782"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+        <rdfs:label xml:lang="en">English</rdfs:label>
+        <rdfs:label>eng</rdfs:label>
+      </bf:Language>
+    </bf:language>
+    <bf:colorContent>
+      <bf:ColorContent rdf:nodeID="bnoderMRnC33vDqwGH8XhZaxock">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode3nCPavWZ2NNK6cBUTVVXRk">
+            <rdfs:label>color</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:ColorContent>
+    </bf:colorContent>
+    <bf:soundContent>
+      <bf:SoundContent rdf:nodeID="bnodepSCAEiRQ88wwSZNbZgBaM7">
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/msoundcontent/sound"/>
+      </bf:SoundContent>
+    </bf:soundContent>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodeeuYSwSecKR74bfEc4YBKwV">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no97030430"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:duration>4264 min.</bf:duration>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodectti76wBpKsVAN6d27Gqt3">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79018782"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85074376"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodeenXXtYMHnLqvXGG35nxe2z">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no96054316"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodegcMezV7kVh1STvw42RCmAd">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no90027141"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/tlp"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bflc:relationship>
+      <bflc:Relationship rdf:nodeID="bnode44ftBYXrseZ2KVWf7Pm9jp">
+        <bf:relatedTo rdf:resource="http://id.loc.gov/resources/works/no2010153822"/>
+        <bf:relatedTo>Man about the house (Television program)</bf:relatedTo>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode3JqqGajG57jRBCyozTvnXn">
+            <rdfs:label>Based on the Thames Television program Man about the house, created by Johnnie Mortimer and Brian Cooke</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bflc:relationshipTarget>Based on (work)</bflc:relationshipTarget>
+      </bflc:Relationship>
+    </bflc:relationship>
+    <bf:summary>
+      <bf:Summary rdf:nodeID="bnodeeW5ZXQ5Gjo2sReudLKGpCF">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodegZKE3D27RzwHjASwXjnhS9">
+            <rdfs:label>Summary from container</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <rdfs:label>"Three's Company was a groundbreaking comedy series that tripped and jiggled through a world of slapstick pratfalls and some of the most scandalously titillating comedy America had ever seen, and hasn't seen since"</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodeor44ivdQNHTVS8PPqCgze3">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2012072184"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodev5hYMyMcGGqLpbvmUCfqMV">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/tlp"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n93014502"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodefscBodTbMT8RN6JRyEFmns">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no92028781"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:tableOfContents>
+      <bf:TableOfContents rdf:nodeID="bnodea9DFYDKZMGbieuo4cHn9fV">
+        <rdfs:label>Season five. Upstairs, downstairs, downstairs --  And justice for Jack --  A hundred dollars a what? --  Downhill chaser --  A crowded romance --  Room at the bottom --  Chrissy's cousin --  Jack to the rescue --  The not-so-great imposter --  Jack's other mother --  Make room for daddy --  Janet's secret --  Father of the bride --  Furley vs. Furley --  In like Larry --  Teacher's pet --  And baby makes four --  Night of the Ropers --  Double trouble --  Dying to meet you --  The case of the missing blonde --  Honest Jack Tripper -- Season six.  Jack bares all --  Terri makes her move --  Professor Jack --  Some of that jazz --  Lies my roommate told me --  Two flew over the cuckoo's nest --  Eyewitness blues --  Boy meets dummy --  Dates of wrath --  Macho man --  Strangers in the night --  The matchbreakers --  The holy guest aka oh, nun --  Maid to order --  Hearts and flowers --  Urban plowboy --  A friend in need --  Jack's 10 --  Doctor in the house --  Critic's choice --  Paradise lost --  And now here's Jack --  Janet wigs out --  Up in the air --  Mate for each other</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:historyOfWork>Originally broadcast by ABC as individual episodes of the television situation comedy in 1977-1984</bf:historyOfWork>
+  </bf:Work>
+  <madsrdf:PersonalName rdf:nodeID="bnodeqs7fefjUMKFVXDnYPkpikU">
+    <rdfs:label xml:lang="en">Fell, Norman, 1924-1998</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnode3AHZniWsaiTom8Txn5SxBX">
+    <rdfs:label xml:lang="en">Situation comedies (Television programs)</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName rdf:nodeID="bnodevjvhsGWZt44iD5PQYAkSY9">
+    <rdfs:label xml:lang="en">Nicholl, Don, 1925-1980</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Geographic rdf:nodeID="bnodewq4LKRgJ2nGzBYFW5fgceB">
+    <rdfs:label xml:lang="en">Santa Monica (Calif.)</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:GenreForm rdf:nodeID="bnode94dSuZkF5gZSiqxxcR7bKe">
+    <rdfs:label xml:lang="en">Video recordings for the hearing impaired</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName rdf:nodeID="bnodev3ctE2aFB61pT3btG8W6S7">
+    <rdfs:label xml:lang="en">Knotts, Don, 1924-2006</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnoded9wvBPbfPFCNrYVvevNHwK">
+    <rdfs:label xml:lang="en">Television programs</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Topic rdf:nodeID="bnodevfgHkYcH4MKZvx3dJoqdig">
+    <rdfs:label xml:lang="en">Landlord and tenant</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:CorporateName rdf:nodeID="bnodejaXmXfWmpu1bkVAh46D3Np">
+    <rdfs:label xml:lang="en">DLT Entertainment Ltd.</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:PersonalName rdf:nodeID="bnodegefhBiVQBEZSxnWscfXQP1">
+    <rdfs:label xml:lang="en">DeWitt, Joyce, 1949-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodegNn3MzAnnW1G1t2RZQ18yD">
+    <rdfs:label xml:lang="en">Ross, Michael, 1919-2009</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodehtqw8QcoxhsaYm5qQkY36D">
+    <rdfs:label xml:lang="en">Kline, Richard, 1944-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodepkrmFaqA6328xYnddCZJit">
+    <rdfs:label xml:lang="en">Lindley, Audra</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodewLa94LZuCSokZuwYBausbF">
+    <rdfs:label xml:lang="en">West, Bernie</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:CorporateName rdf:nodeID="bnoded3nZddRCyMof7UMXaZRNrQ">
+    <rdfs:label xml:lang="en">Anchor Bay Entertainment, Inc.</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:Geographic rdf:nodeID="bnodeg8XcFGrLGnhB6MVfvjJ2UW">
+    <rdfs:label xml:lang="en">Santa Monica (Calif.)</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:Topic rdf:nodeID="bnodeayMdC9Me3UaXDzk7vVpHSq">
+    <rdfs:label xml:lang="en">Apartments</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:GenreForm rdf:nodeID="bnodem8t81gUCnpp3thDSC4EXHs">
+    <rdfs:label xml:lang="en">Fiction television programs</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:CorporateName rdf:nodeID="bnodegpD8UL2iDNy96mGjMUsLn3">
+    <rdfs:label xml:lang="en">T.T.C. Productions</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:Geographic rdf:nodeID="bnode7HTvoWkTqqumeis7emvkyE">
+    <rdfs:label xml:lang="en">Santa Monica (Calif.)</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:PersonalName rdf:nodeID="bnodejPnQ8FQd3nhUAFsFqApch6">
+    <rdfs:label xml:lang="en">Barnes, Priscilla, 1955-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnode6pGWNnxutd6vDLQNNWKerT">
+    <rdfs:label xml:lang="en">Ritter, John, 1948-2003</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnodemMr73gVKCisJw97c6riR62">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Topic rdf:nodeID="bnodewfmmcgpvqKJYUQdfiE2DP2">
+    <rdfs:label xml:lang="en">Roommates</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:CorporateName rdf:nodeID="bnodeaY35dBpiXZQGyhPvcLsGMb">
+    <rdfs:label xml:lang="en">NRW Company</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:PersonalName rdf:nodeID="bnodegNDb6doA1sG9RUHcGPrzqf">
+    <rdfs:label xml:lang="en">Somers, Suzanne, 1946-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnodebyy31PuHSZuEAD3f4ec3xT">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName rdf:nodeID="bnodeb2J6M7tZnUeiH6xtRiFWMF">
+    <rdfs:label xml:lang="en">Harrison, Jenilee, 1958-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnode5F2PsAgE6ozhSSczqceQeW">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/no2010153822">
+    <rdfs:label xml:lang="en">Man about the house (Television program)</rdfs:label>
+  </bf:Work>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fds">
+    <rdfs:label xml:lang="en">Film distributor</rdfs:label>
+  </bf:Role>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no00072504"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mplayback/mon">
+    <rdfs:label xml:lang="en">mono</rdfs:label>
+  </rdf:Description>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/tlp">
+    <rdfs:label xml:lang="en">Television producer</rdfs:label>
+  </bf:Role>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
+    <rdfs:label xml:lang="en">minimal</rdfs:label>
+  </bflc:EncodingLevel>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no92028781"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label xml:lang="en">digital</rdfs:label>
+  </rdf:Description>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no97030430"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no90027141"/>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/vd">
+    <rdfs:label>videodisc</rdfs:label>
+  </bf:Carrier>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85005927"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026725"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n2012072184"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no96047264"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/msoundcontent/sound">
+    <rdfs:label xml:lang="en">sound</rdfs:label>
+  </rdf:Description>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no92016169"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mbroadstd/ntsc">
+    <rdfs:label xml:lang="en">NTSC</rdfs:label>
+  </rdf:Description>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh85039316"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n2012072181"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/v">
+    <rdfs:label>video</rdfs:label>
+  </bf:Media>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n86109378"/>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n79018782"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+    <rdfs:label xml:lang="en">Actor</rdfs:label>
+  </bf:Role>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n2012072610"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mfiletype/video">
+    <rdfs:label xml:lang="en">video file</rdfs:label>
+  </rdf:Description>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prn">
+    <rdfs:label xml:lang="en">Production company</rdfs:label>
+  </bf:Role>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mregencoding/region1">
+    <rdfs:label xml:lang="en">region 1</rdfs:label>
+  </rdf:Description>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no96054316"/>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label xml:lang="en">Library of Congress subject headings </rdfs:label>
+  </bf:Source>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e193588974147620856848603153675257989757">
+    <rdf:value>e193588974147620856848603153675257989757</rdf:value>
+  </bf:Local>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n2012072603"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no2009100916"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n93014502"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85074376"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/maspect/full">
+    <rdfs:label xml:lang="en">full screen</rdfs:label>
+  </rdf:Description>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2016081913"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n87922126"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85115350"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mspecplayback/dolby">
+    <rdfs:label xml:lang="en">Dolby</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

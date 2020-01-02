@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e84684696904327716429164108708302372309">
+    <bf:originDate>1917</bf:originDate>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodefFJsqmt5oqtmu99UiKyoAj">
+        <madsrdf:authoritativeLabel>World War, 1914-1918--Songs and music</madsrdf:authoritativeLabel>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:musicMedium>
+      <bf:MusicMedium rdf:nodeID="bnode3KCurixmHybBspYDk8Wejc">
+        <rdfs:label>For mixed chorus SATB</rdfs:label>
+      </bf:MusicMedium>
+    </bf:musicMedium>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnoderQsfUp3vxDxWEDEg5rA9aj">
+        <bf:title>
+          <bf:VariantTitle rdf:nodeID="bnodeoVqMmBPbd7RNyjwd77Zkn5">
+            <bf:mainTitle>Pokóy, Spás̃e</bf:mainTitle>
+          </bf:VariantTitle>
+        </bf:title>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:title>
+          <bf:ParallelTitle rdf:nodeID="bnodeWoinx6dhgDJf4hJ2SAw2N">
+            <bf:subtitle>No. 3 from "Memory eternal to the fallen heroes"</bf:subtitle>
+            <bf:mainTitle>Give rest, O our Savior</bf:mainTitle>
+          </bf:ParallelTitle>
+        </bf:title>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodeaH6Vh9qcUbLyAJSCVzRVwj">
+            <bf:mainTitle>Покой, Спасе наш</bf:mainTitle>
+            <bf:subtitle>Но. 3 из цикла "Вечная память героям"</bf:subtitle>
+          </bf:Title>
+        </bf:title>
+        <bf:responsibilityStatement>Александр Кастальский</bf:responsibilityStatement>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodehc2wnSGostSJJ987oKdgbu">
+            <rdfs:label>Excerpt from the requiem dedicated to the World War I soldiers; for mixed chorus SATB with divisi; includes piano part for rehearsal only</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:responsibilityStatement>Alexander Kastalsky</bf:responsibilityStatement>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodeqy1QrgNMDUJ8FkeDrT7ekD">
+            <rdfs:label>Church Slavic words (Cyrillic and romanized) also printed as text with English translation on cover page 2</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:copyrightDate>2015</bf:copyrightDate>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodewfY4TByLBmdZcfWVCURxiW">
+            <bflc:profile>profile:bf2:NotatedMusic:Instance2</bflc:profile>
+            <bf:changeDate>2018-05-04T16:45:40</bf:changeDate>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bflc:metadataAssigner>ikir</bflc:metadataAssigner>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:creationDate>2018-5-4</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e171828341899561404190988174217883585528"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodebmeRBK8KRo1r3uU64P3MvX">
+            <rdfs:label>"The present edition is based upon the Russian first edition, published by P. Jurgenson, Moscow: 1917, plate no. 38617, 38607."--Editor's notes</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode7Jc7sCRCVazo5eRd973oX5">
+            <rdfs:label>Cover title</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:identifiedBy>
+          <bf:MusicPublisherNumber rdf:nodeID="bnode8QqzJHbUPzGVWvnMcHbWUH">
+            <rdf:value>MRSM Ks161</rdf:value>
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodehyDudGhPJuNSy6BqLzHCcF">
+                <rdfs:label>Musica Russica</rdfs:label>
+              </bf:Source>
+            </bf:source>
+          </bf:MusicPublisherNumber>
+        </bf:identifiedBy>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode9WnurkEAgBNevmxD7AEscC">
+            <rdfs:label>Staff notation.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:dimensions>28 cm</bf:dimensions>
+        <bf:title>
+          <bflc:TranscribedTitle rdf:nodeID="bnode6X8NZREgGnMALhdk3LURuy">
+            <bf:mainTitle>Pokoĭ, Spase nash</bf:mainTitle>
+          </bflc:TranscribedTitle>
+        </bf:title>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnoderov91EAr5SUAMW9wRVooDN">
+            <rdf:value>2017563486</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnodecCjYdbb2MqUWNQp5F4rS4D">
+            <bf:date>[2015]</bf:date>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodefwBrbZGEFPCuE4XpQSXpYg">
+                <rdfs:label>[San Diego, Calif.]</rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnodekAHD98KMytoek9m13RSYLh">
+                <rdfs:label>Musica Russica</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnoderLBnbZR2hyCDLkp7wdvbAX">
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnodepx1huJQQSG4GWqXe5M1T53">
+                <rdf:value>00479700746</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnodedF4m9gspjuquTQB6pKxAux">
+                <rdf:value>M2100.2 .K Copy 1</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodenJ7pevSWZBqoru7jnWCpZ2">
+            <rdfs:label>Editor's notes in English by V. Morosan.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodefrNH9NfUgqNCyRgCib6xQb">
+            <rdfs:label>1 score (8 pages)</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodeuzCbk38gp5WYPu8m8iz27o">
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <madsrdf:authoritativeLabel>Russkai︠a︡ pravoslavnai︠a︡ t︠s︡erkovʹ--Hymns</madsrdf:authoritativeLabel>
+      </madsrdf:Topic>
+    </bf:subject>
+    <rdfs:label>Kastalʹskiĭ, Aleksandr Dmitrievich, 1856-1926. Vechnai︠a︡ pami︠a︡tʹ geroi︠a︡m. Pokoĭ, Spase nash</rdfs:label>
+    <bf:ensemble>
+      <bf:MusicEnsemble rdf:nodeID="bnodedfe2rSuLWFph9eQitZZZoh">
+        <bf:count>1</bf:count>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode2kWGxfPAz2ae9XgZyfmYvi">
+            <rdfs:label>SATB with divisi</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015146"/>
+      </bf:MusicEnsemble>
+    </bf:ensemble>
+    <bf:musicSerialNumber>No. 3</bf:musicSerialNumber>
+    <bf:subject>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85112984"/>
+    </bf:subject>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014027048"/>
+    </bf:genreForm>
+    <bf:contribution>
+      <bflc:PrimaryContribution rdf:nodeID="bnode7XHJRbhT388mwsTucX7Amr">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr89005457"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:musicFormat>
+      <bf:MusicFormat rdf:about="http://id.loc.gov/vocabulary/mmusicformat/score">
+        <rdfs:label xml:lang="en">score</rdfs:label>
+      </bf:MusicFormat>
+    </bf:musicFormat>
+    <bflc:relationship>
+      <bflc:Relationship rdf:nodeID="bnodedUCgUiGDavXXXudsL6J25V">
+        <bflc:relationshipTarget>Based on</bflc:relationshipTarget>
+      </bflc:Relationship>
+    </bflc:relationship>
+    <bf:title>
+      <bf:VariantTitle rdf:nodeID="bnode3fPp3wXwJqtmdo7LPNPLVk">
+        <bf:mainTitle>Pokóy, Spás̃e</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:subject>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85024806"/>
+    </bf:subject>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodehyevXScqiz94qj2CYC8L9f">
+        <bf:mainTitle>Покой, Спасе наш</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026097"/>
+    </bf:genreForm>
+    <bf:title>
+      <bf:VariantTitle rdf:nodeID="bnodeqnarQZXGLQuY9CsW5JQpeD">
+        <bf:mainTitle>Give rest, O our Savior</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:notation>Cyrillic and romanized</bf:notation>
+    <bf:title>
+      <bflc:TranscribedTitle rdf:nodeID="bnodemkYp6qYjjwF69yjz8Ba6AH">
+        <bf:mainTitle>Pokoĭ, Spase nash</bf:mainTitle>
+      </bflc:TranscribedTitle>
+    </bf:title>
+    <bf:notation>
+      <bf:MusicNotation rdf:nodeID="bnodek84cW9MmTADfSUvd5AkqUZ">
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mmusnotation/staff"/>
+      </bf:MusicNotation>
+    </bf:notation>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodej2CdaVfTKoVT3C7M1jJJBC">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n85139572"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/wst"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:language>
+      <bf:Language rdf:nodeID="bnodeJkZrTb4knbPNpBJG6NbSk">
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/chu"/>
+      </bf:Language>
+    </bf:language>
+  </bf:Work>
+  <madsrdf:Topic rdf:nodeID="bnode75FdPd1SHmZezQDf21GUdH">
+    <rdfs:label xml:lang="en">Requiems--Excerpts</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:GenreForm rdf:nodeID="bnodekj7zjaLFqZeyW2iker2mUH">
+    <rdfs:label xml:lang="en">Requiems</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName rdf:nodeID="bnodef4LAPvCrS2MURUUMpSJUtu">
+    <rdfs:label xml:lang="en">Kastalʹskiĭ, Aleksandr Dmitrievich, 1856-1926</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodemk11vZqn1mu2LjwjeZDsHY">
+    <rdfs:label xml:lang="en">Morosan, Vladimir</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnodex5HvQAq2NNdZvsSE4SBveM">
+    <rdfs:label xml:lang="en">Excerpts</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Topic rdf:nodeID="bnodemSXAWUE2rSCBSFyp7GH615">
+    <rdfs:label xml:lang="en">Choruses, Sacred (Mixed voices), Unaccompanied</rdfs:label>
+  </madsrdf:Topic>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015146">
+    <rdfs:label xml:lang="en">mixed chorus</rdfs:label>
+  </rdf:Description>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/chu">
+    <rdfs:label xml:lang="en">Church Slavic</rdfs:label>
+  </bf:Language>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/wst">
+    <rdfs:label xml:lang="en">Writer of supplementary textual content</rdfs:label>
+  </bf:Role>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </bf:Language>
+  <bf:Notation rdf:about="http://id.loc.gov/vocabulary/mmusnotation/staff">
+    <rdfs:label xml:lang="en">staff notation</rdfs:label>
+  </bf:Notation>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label>LCSH</rdfs:label>
+  </bf:Source>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edt">
+    <rdfs:label xml:lang="en">Editor</rdfs:label>
+  </bf:Role>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nr89005457"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n85139572"/>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e171828341899561404190988174217883585528">
+    <rdf:value>e171828341899561404190988174217883585528</rdf:value>
+  </bf:Local>
+</rdf:RDF>

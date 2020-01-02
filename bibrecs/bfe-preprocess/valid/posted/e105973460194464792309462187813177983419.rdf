@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" >
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0200391640002">
+    <rdfs:label>Rhett &amp; Link's book of mythicality : a field guide to curiosity, creativity, &amp; tomfoolery /</rdfs:label>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <bf:source>
+          <bf:Source rdf:nodeID="b99resourcesinstancesc0200391640002">
+            <rdfs:label>rdacarrier</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>volume</rdfs:label>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b23resourcesinstancesc0200391640002">
+        <rdf:value>9780451496294 (hardback)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:instanceOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/c020039164">
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20039164#Work630-29"/>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="b59resourcesworksc020039164">
+            <bf:classificationPortion>PN1992.9235</bf:classificationPortion>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:itemPortion>A2 2017</bf:itemPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20039164#Agent600-27"/>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20039164#Topic650-30"/>
+        <bf:classification>
+          <bf:ClassificationDdc rdf:nodeID="b77resourcesworksc020039164">
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:edition>full</bf:edition>
+            <bf:classificationPortion>B</bf:classificationPortion>
+            <bf:edition>23</bf:edition>
+          </bf:ClassificationDdc>
+        </bf:classification>
+        <bf:classification>
+          <bf:ClassificationDdc rdf:nodeID="b67resourcesworksc020039164">
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:edition>23</bf:edition>
+            <bf:edition>full</bf:edition>
+            <bf:classificationPortion>791.4302/80922</bf:classificationPortion>
+          </bf:ClassificationDdc>
+        </bf:classification>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:contribution>
+          <bf:Contribution rdf:nodeID="b214resourcesworksc020039164">
+            <bf:role>
+              <bf:Role rdf:nodeID="b225resourcesworksc020039164">
+                <rdfs:label>author.</rdfs:label>
+                <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+              </bf:Role>
+            </bf:role>
+            <bf:agent rdf:resource="http://id.loc.gov/resources/works/20039164#Agent700-32"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:contribution>
+          <bf:Contribution rdf:nodeID="b231resourcesworksc020039164">
+            <bf:role>
+              <bf:Role rdf:nodeID="b242resourcesworksc020039164">
+                <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+                <rdfs:label>author.</rdfs:label>
+              </bf:Role>
+            </bf:role>
+            <bf:agent rdf:resource="http://id.loc.gov/resources/works/20039164#Agent700-33"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:title>
+          <bf:Title rdf:nodeID="b117resourcesworksc020039164">
+            <bf:subtitle>a field guide to curiosity, creativity, &amp; tomfoolery</bf:subtitle>
+            <bflc:titleSortKey>Rhett &amp; Link's book of mythicality : a field guide to curiosity, creativity, &amp; tomfoolery /</bflc:titleSortKey>
+            <bf:mainTitle>Rhett &amp; Link's book of mythicality</bf:mainTitle>
+            <rdfs:label>Rhett &amp; Link's book of mythicality : a field guide to curiosity, creativity, &amp; tomfoolery /</rdfs:label>
+          </bf:Title>
+        </bf:title>
+        <bf:classification>
+          <bf:Classification rdf:nodeID="b87resourcesworksc020039164">
+            <bf:classificationPortion>BIO005000</bf:classificationPortion>
+            <bf:source>
+              <bf:Source rdf:nodeID="b91resourcesworksc020039164">
+                <rdfs:label>bisacsh</rdfs:label>
+              </bf:Source>
+            </bf:source>
+          </bf:Classification>
+        </bf:classification>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="b95resourcesworksc020039164">
+            <bf:role>
+              <bf:Role rdf:nodeID="b109resourcesworksc020039164">
+                <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+                <rdfs:label>author.</rdfs:label>
+              </bf:Role>
+            </bf:role>
+            <bf:agent rdf:resource="http://id.loc.gov/resources/works/20039164#Agent100-16"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="b10resourcesworksc020039164">
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="b12resourcesworksc020039164">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+            <bf:source>
+              <bf:Agent rdf:nodeID="b36resourcesworksc020039164">
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+                <rdfs:label>DLC</rdfs:label>
+              </bf:Agent>
+            </bf:source>
+            <bf:creationDate>2017-09-27</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bflc:procInfo>ibc update</bflc:procInfo>
+            <bf:descriptionModifier>
+              <bf:Agent rdf:nodeID="b48resourcesworksc020039164">
+                <rdfs:label>DLC</rdfs:label>
+              </bf:Agent>
+            </bf:descriptionModifier>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="b28resourcesworksc020039164">
+                <rdf:value>20039164</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="b20resourcesworksc020039164">
+                <bf:code>f</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:source>
+              <bf:Source rdf:nodeID="b41resourcesworksc020039164">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+              </bf:Source>
+            </bf:source>
+            <bf:changeDate>2018-04-03T17:06:22</bf:changeDate>
+            <bf:status>
+              <bf:Status rdf:nodeID="b16resourcesworksc020039164">
+                <bf:code>c</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="b24resourcesworksc020039164">
+                <bf:code>isbd</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20039164#Agent600-28"/>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+        <bf:summary>
+          <bf:Summary rdf:nodeID="b135resourcesworksc020039164">
+            <rdfs:label>"From the YouTube superstars and creators of Good Mythical Morning comes the ultimate guide to living a "Mythical" life, featuring stories and photos from their lifelong friendship, as well as awesomely illustrated tips for laughing more, learning more, and never taking yourself too seriously"--</rdfs:label>
+            <bf:source>
+              <bf:Source rdf:nodeID="b139resourcesworksc020039164">
+                <rdfs:label>Provided by publisher.</rdfs:label>
+              </bf:Source>
+            </bf:source>
+          </bf:Summary>
+        </bf:summary>
+        <rdfs:label>Rhett &amp; Link's book of mythicality : a field guide to curiosity, creativity, &amp; tomfoolery /</rdfs:label>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20039164#Topic650-31"/>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="b19resourcesinstancesc0200391640002">
+        <rdf:value>  2017032473</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:title>
+      <bf:Title rdf:nodeID="b37resourcesinstancesc0200391640002">
+        <bf:subtitle>a field guide to curiosity, creativity, &amp; tomfoolery</bf:subtitle>
+        <bflc:titleSortKey>Rhett &amp; Link's book of mythicality : a field guide to curiosity, creativity, &amp; tomfoolery /</bflc:titleSortKey>
+        <bf:mainTitle>Rhett &amp; Link's book of mythicality</bf:mainTitle>
+        <rdfs:label>Rhett &amp; Link's book of mythicality : a field guide to curiosity, creativity, &amp; tomfoolery /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b27resourcesinstancesc0200391640002">
+        <rdf:value>9780451496317 (Ebook)</rdf:value>
+        <bf:status>
+          <bf:Status rdf:nodeID="b31resourcesinstancesc0200391640002">
+            <rdfs:label>invalid</rdfs:label>
+          </bf:Status>
+        </bf:status>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:provisionActivityStatement>New York : Crown Archetype, [2017]</bf:provisionActivityStatement>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/c0200391640001"/>
+    <bf:title>
+      <bf:Title rdf:nodeID="b49resourcesinstancesc0200391640002">
+        <bf:mainTitle>Rhett and Link's book of mythicality</bf:mainTitle>
+        <bflc:titleSortKey>Rhett and Link's book of mythicality</bflc:titleSortKey>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+        <rdfs:label>Rhett and Link's book of mythicality</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <bf:dimensions>25 cm</bf:dimensions>
+    <bf:responsibilityStatement>by Rhett McLaughlin &amp; Link Neal ; with Jake Greene</bf:responsibilityStatement>
+    <bf:editionStatement>First edition</bf:editionStatement>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="bnode5R8sR2jhYCnX34uwiSDMsp">
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:creationDate>2018-4-19</bf:creationDate>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e105973460194464792309462187813177983419"/>
+        <bflc:metadataAssigner>trod</bflc:metadataAssigner>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="bnodeoBVqKWfwcpZEJrqLcznjgU">
+        <bf:place>
+          <bf:Place rdf:nodeID="bnodefHzE9ecxQSKAyR7ZkX26f">
+            <rdfs:label>New York</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent rdf:nodeID="bnode9xkXxm1SHEjLsaN2PKCrJb">
+            <rdfs:label>Crown Archetype</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <bf:source>
+          <bf:Source rdf:nodeID="b91resourcesinstancesc0200391640002">
+            <rdfs:label>rdamedia</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>unmediated</rdfs:label>
+      </bf:Media>
+    </bf:media>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="b112resourcesinstancesc0200391640002">
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bf:status>
+          <bf:Status rdf:nodeID="b118resourcesinstancesc0200391640002">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bf:creationDate>2017-09-27</bf:creationDate>
+        <bf:descriptionModifier>
+          <bf:Agent rdf:nodeID="b150resourcesinstancesc0200391640002">
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:changeDate>2018-04-03T17:06:22</bf:changeDate>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:nodeID="b122resourcesinstancesc0200391640002">
+            <bf:code>f</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:source>
+          <bf:Source rdf:nodeID="b143resourcesinstancesc0200391640002">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+          </bf:Source>
+        </bf:source>
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="b114resourcesinstancesc0200391640002">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="b130resourcesinstancesc0200391640002">
+            <rdf:value>20039164</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="b126resourcesinstancesc0200391640002">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:source>
+          <bf:Agent rdf:nodeID="b138resourcesinstancesc0200391640002">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+          </bf:Agent>
+        </bf:source>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:otherPhysicalFormat rdf:resource="http://id.loc.gov/resources/works/20039164#Instance776-34"/>
+    <bf:note>
+      <bf:Note rdf:nodeID="b103resourcesinstancesc0200391640002">
+        <bf:noteType>bibliography</bf:noteType>
+        <rdfs:label>Includes bibliographical references.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note rdf:nodeID="b79resourcesinstancesc0200391640002">
+        <rdfs:label>illustrations</rdfs:label>
+        <bf:noteType>Physical details</bf:noteType>
+      </bf:Note>
+    </bf:note>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="b75resourcesinstancesc0200391640002">
+        <rdfs:label>269 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+  </bf:Instance>
+  <madsrdf:Geographic rdf:nodeID="b197resourcesworksc020039164">
+    <madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0199"/>
+  </madsrdf:Geographic>
+  <madsrdf:GenreForm rdf:nodeID="b200resourcesworksc020039164">
+    <madsrdf:authoritativeLabel>Biography</madsrdf:authoritativeLabel>
+  </madsrdf:GenreForm>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/nyu"/>
+  <bf:Place rdf:nodeID="b63resourcesinstancesc0200391640002">
+    <rdfs:label>New York</rdfs:label>
+  </bf:Place>
+  <madsrdf:Topic rdf:nodeID="b194resourcesworksc020039164">
+    <madsrdf:authoritativeLabel>Internet personalities</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0196"/>
+  </madsrdf:Topic>
+  <bf:Agent rdf:nodeID="b67resourcesinstancesc0200391640002">
+    <rdfs:label>Crown Archetype</rdfs:label>
+  </bf:Agent>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </bf:Source>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20039164#Agent600-28">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <bflc:name00MarcKey>60010$aNeal, Link.</bflc:name00MarcKey>
+    <rdfs:label>Neal, Link.</rdfs:label>
+    <madsrdf:authoritativeLabel>Neal, Link.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Name"/>
+    <bflc:name00MatchKey>Neal, Link.</bflc:name00MatchKey>
+  </madsrdf:PersonalName>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20039164#Agent700-32">
+    <rdfs:label>Neal, Link,</rdfs:label>
+    <bflc:name00MatchKey>Neal, Link,</bflc:name00MatchKey>
+    <bflc:name00MarcKey>7001 $aNeal, Link,$eauthor.</bflc:name00MarcKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+  </bf:Agent>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20039164#Agent100-16">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <bflc:primaryContributorName00MatchKey>McLaughlin, Rhett,</bflc:primaryContributorName00MatchKey>
+    <bflc:name00MatchKey>McLaughlin, Rhett,</bflc:name00MatchKey>
+    <rdfs:label>McLaughlin, Rhett,</rdfs:label>
+    <bflc:name00MarcKey>1001 $aMcLaughlin, Rhett,$eauthor.</bflc:name00MarcKey>
+  </madsrdf:PersonalName>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20039164#Topic650-30">
+    <rdfs:label>Internet personalities--United States--Biography.</rdfs:label>
+    <madsrdf:componentList rdf:nodeID="b193resourcesworksc020039164"/>
+    <madsrdf:authoritativeLabel>Internet personalities--United States--Biography.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+  </bf:Topic>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/resources/works/20039164#Topic650-31">
+    <bf:source>
+      <bf:Source rdf:nodeID="b210resourcesworksc020039164">
+        <bf:code>bisacsh</bf:code>
+      </bf:Source>
+    </bf:source>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <madsrdf:authoritativeLabel>BIOGRAPHY &amp; AUTOBIOGRAPHY / Entertainment &amp; Performing Arts.</madsrdf:authoritativeLabel>
+    <rdfs:label>BIOGRAPHY &amp; AUTOBIOGRAPHY / Entertainment &amp; Performing Arts.</rdfs:label>
+  </madsrdf:Topic>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20039164#Agent700-33">
+    <bflc:name00MarcKey>7001 $aGreene, Jake,$eauthor.</bflc:name00MarcKey>
+    <rdfs:label>Greene, Jake,</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <bflc:name00MatchKey>Greene, Jake,</bflc:name00MatchKey>
+  </madsrdf:PersonalName>
+  <madsrdf:Title rdf:about="http://id.loc.gov/resources/works/20039164#Work630-29">
+    <madsrdf:authoritativeLabel>Good mythical morning (YouTube)</madsrdf:authoritativeLabel>
+    <bf:title>
+      <bf:Title rdf:nodeID="b174resourcesworksc020039164">
+        <bflc:titleSortKey>Good mythical morning (YouTube)</bflc:titleSortKey>
+        <bflc:title30MatchKey>Good mythical morning (YouTube)</bflc:title30MatchKey>
+        <bf:mainTitle>Good mythical morning (YouTube)</bf:mainTitle>
+        <bflc:title30MarcKey>63000$aGood mythical morning (YouTube)</bflc:title30MarcKey>
+        <rdfs:label>Good mythical morning (YouTube)</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:label>Good mythical morning (YouTube)</rdfs:label>
+  </madsrdf:Title>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source rdf:nodeID="b131resourcesworksc020039164">
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20039164#Agent600-27">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <bflc:name00MarcKey>60010$aMcLaughlin, Rhett.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>McLaughlin, Rhett.</bflc:name00MatchKey>
+    <rdfs:label>McLaughlin, Rhett.</rdfs:label>
+    <madsrdf:authoritativeLabel>McLaughlin, Rhett.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Name"/>
+  </madsrdf:PersonalName>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e105973460194464792309462187813177983419">
+    <rdf:value>e105973460194464792309462187813177983419</rdf:value>
+  </bf:Local>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+</rdf:RDF>

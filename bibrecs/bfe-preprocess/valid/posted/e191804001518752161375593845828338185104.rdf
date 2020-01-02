@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015154">
+    <rdfs:label xml:lang="en">clarinet</rdfs:label>
+  </pmo:IndividualInstrument>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015251">
+    <rdfs:label xml:lang="en">English horn</rdfs:label>
+  </pmo:IndividualInstrument>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015268">
+    <rdfs:label xml:lang="en">flute</rdfs:label>
+  </pmo:IndividualInstrument>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015276">
+    <rdfs:label xml:lang="en">gaita (bagpipe)</rdfs:label>
+  </pmo:IndividualInstrument>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015507">
+    <rdfs:label xml:lang="en">oboe</rdfs:label>
+  </pmo:IndividualInstrument>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015553">
+    <rdfs:label xml:lang="en">piccolo</rdfs:label>
+  </pmo:IndividualInstrument>
+  <pmo:InstrumentEnsemble rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015681">
+    <rdf:type rdf:resource="http://performedmusicontology.org/ontology/IndividualInstrument"/>
+    <rdfs:label xml:lang="en">string orchestra</rdfs:label>
+  </pmo:InstrumentEnsemble>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e9774842889847076129865837406722814361">
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/ntm"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>vwei</bflc:catalogerId>
+            <bflc:profile>profile:bf2:NotatedMusic:Instance2</bflc:profile>
+            <bf:changeDate>2018-09-20T13:11:22</bf:changeDate>
+            <bf:creationDate>2018-8-10</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e191804001518752161375593845828338185104"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <rdfs:label>eng</rdfs:label>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2017568862</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:musicMedium>
+      <bf:MusicMedium>
+        <rdfs:label>For clarinet, flute doubling on piccolo, English horn or oboe, and string orchestra</rdfs:label>
+      </bf:MusicMedium>
+    </bf:musicMedium>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>PMO MOP Test #9</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <pmo:hasMedium>
+      <pmo:DeclaredMedium>
+        <bflc:alternateMediumOfPerformance>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:IndividualMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015251"/>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015507"/>
+                <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+                <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+              </pmo:IndividualMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </bflc:alternateMediumOfPerformance>
+        <pmo:hasDistinctPartCount>2</pmo:hasDistinctPartCount>
+        <pmo:hasDoublingMediumOfPerformance>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:IndividualMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015268"/>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015553"/>
+                <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+                <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+              </pmo:IndividualMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasDoublingMediumOfPerformance>
+        <pmo:hasEnsembleCount>1</pmo:hasEnsembleCount>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:IndividualMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015154"/>
+                <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+                <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+              </pmo:IndividualMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:EnsembleMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015681"/>
+                <pmo:hasEnsembleCount>1</pmo:hasEnsembleCount>
+              </pmo:EnsembleMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+        <pmo:hasRequiredPerformerCount>2</pmo:hasRequiredPerformerCount>
+      </pmo:DeclaredMedium>
+    </pmo:hasMedium>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/ntm">
+    <rdfs:label>Notated music</rdfs:label>
+  </bf:Content>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e191804001518752161375593845828338185104">
+    <rdf:value>e191804001518752161375593845828338185104</rdf:value>
+  </bf:Local>
+  <pmo:MediumPart>
+    <pmo:hasMediumOfPerformance>
+      <pmo:IndividualMediumOfPerformance>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015268"/>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015553"/>
+        <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+        <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+      </pmo:IndividualMediumOfPerformance>
+    </pmo:hasMediumOfPerformance>
+  </pmo:MediumPart>
+  <pmo:MediumPart>
+    <pmo:hasMediumOfPerformance>
+      <pmo:IndividualMediumOfPerformance>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015154"/>
+        <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+        <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+      </pmo:IndividualMediumOfPerformance>
+    </pmo:hasMediumOfPerformance>
+    <pmo:hasMediumOfPerformance>
+      <pmo:EnsembleMediumOfPerformance>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015681"/>
+        <pmo:hasEnsembleCount>1</pmo:hasEnsembleCount>
+      </pmo:EnsembleMediumOfPerformance>
+    </pmo:hasMediumOfPerformance>
+  </pmo:MediumPart>
+  <pmo:MediumPart>
+    <pmo:hasMediumOfPerformance>
+      <pmo:IndividualMediumOfPerformance>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015276"/>
+      </pmo:IndividualMediumOfPerformance>
+    </pmo:hasMediumOfPerformance>
+  </pmo:MediumPart>
+  <pmo:MediumPart>
+    <pmo:hasMediumOfPerformance>
+      <pmo:IndividualMediumOfPerformance>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015251"/>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015507"/>
+        <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+        <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+      </pmo:IndividualMediumOfPerformance>
+    </pmo:hasMediumOfPerformance>
+  </pmo:MediumPart>
+</rdf:RDF>

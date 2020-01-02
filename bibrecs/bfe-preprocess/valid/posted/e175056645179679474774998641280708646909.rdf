@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026058"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n50028514"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e273580971164579732581910747774424461242">
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>G1429.S4 </bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:colorContent>
+      <bf:Note>
+        <rdfs:label>hand colored</rdfs:label>
+      </bf:Note>
+    </bf:colorContent>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/cri"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n50028514"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctg"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026058"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>twon</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:changeDate>2018-10-31T17:58:47</bf:changeDate>
+            <bf:creationDate>2018-10-31</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e175056645179679474774998641280708646909"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:dimensions>72 cm</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 atlas (29 leaves of plates)</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:geographicCoverage>
+          <bf:Place>
+            <rdf:value>4144 S4</rdf:value>
+          </bf:Place>
+        </bf:geographicCoverage>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc>
+                <rdf:value>G1429.S4 H65 1884</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>00335041173</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>LC copy imperfect: disbound</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:shelfmark>
+              <bf:ShelfMark>
+                <rdf:value>Copy 1</rdf:value>
+              </bf:ShelfMark>
+            </bf:shelfmark>
+            <bf:sublocation>Geography and Map Division</bf:sublocation>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2018586851</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>"Entered according to Act of Congress in the year 1884 by G.M. Hopkins, in the office of the Librarian of Congress at Washington"</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>published by G.M. Hopkins, C.E.</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>1884</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>Philadelphia </rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>from official records, private plans and actual surveys</bf:responsibilityStatement>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Atlas of the city of St. Paul, Minnesota</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Language>
+    </bf:language>
+    <bf:scale>
+      <bf:Scale>
+        <rdfs:label>Scales differ</rdfs:label>
+      </bf:Scale>
+    </bf:scale>
+    <bf:subject>
+      <bf:Topic>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <madsrdf:authoritativeLabel>Landowners--Minnesota--Saint Paul--Maps</madsrdf:authoritativeLabel>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <madsrdf:authoritativeLabel>Real property--Minnesota--Saint Paul--Maps</madsrdf:authoritativeLabel>
+      </bf:Topic>
+    </bf:subject>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Atlas of the city of St. Paul, Minnesota </bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/cri">
+    <rdfs:label>cartographic image</rdfs:label>
+  </bf:Content>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctg">
+    <rdfs:label xml:lang="en">Cartographer</rdfs:label>
+  </bf:Role>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label>LCSH</rdfs:label>
+  </bf:Source>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e175056645179679474774998641280708646909">
+    <rdf:value>e175056645179679474774998641280708646909</rdf:value>
+  </bf:Local>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Atlases</rdfs:label>
+  </bf:GenreForm>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Hopkins, Griffith Morgan, Jr.</rdfs:label>
+  </madsrdf:PersonalName>
+</rdf:RDF>

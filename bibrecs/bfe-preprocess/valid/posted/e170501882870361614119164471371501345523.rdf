@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e139349572925122078449413320412711665067">
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026387"/>
+    </bf:genreForm>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnodehcYoQhv27CoG3C8xMMSPnU">
+        <bf:coordinates>E 115°/N 43°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:classification>
+      <bf:ClassificationLcc rdf:nodeID="bnodefzq9sbZebRfSkRKGvUoNPH">
+        <bf:classificationPortion>G7823.R4</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnode4ATfVsQ6WAMUhvHZJoRzXF">
+        <bf:coordinates>E 122°/N 43°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnode3DetcgyGvpDkgTmpZvxkyS">
+        <bf:coordinates>E 122°/N 39°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodecbvwrijDTfqEE96AqZLk1q">
+        <bf:mainTitle>Map of southern Jehol and northern Hopei </bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodexzCCEQURWtNjy6fvs5hQS9">
+        <madsrdf:authoritativeLabel>Transportation--China--Rehe Sheng--Maps</madsrdf:authoritativeLabel>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodesY2tUTtmeBVZnWhLGB3KUB">
+        <madsrdf:authoritativeLabel>Transportation--China--Hebei Sheng--Maps</madsrdf:authoritativeLabel>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnode5JD4e7r8mU14gibqtJX5hR">
+        <bf:coordinates>E 115°/N 39°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnodemgpRNvtPfXbNSdL1Kf5vF5">
+        <bf:coordinates>E 122°/N 39°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:language>
+      <bf:Language rdf:nodeID="bnodejRhPyKbceWt3xWTzdBP4ci">
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Language>
+    </bf:language>
+    <bf:scale>
+      <bf:Scale rdf:nodeID="bnode2YqSpNVF5FTy3aBMKUbLag">
+        <rdfs:label>Scale approximately 1:1,600,000 </rdfs:label>
+      </bf:Scale>
+    </bf:scale>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodex9GxXavcNZ2u3E32DWJ5BC">
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodegnC6jAsZurp4uv7QHq9XPR">
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bflc:metadataAssigner>twon</bflc:metadataAssigner>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e170501882870361614119164471371501345523"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:changeDate>2018-04-23T18:27:03</bf:changeDate>
+            <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:creationDate>2018-4-23</bf:creationDate>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnode5SXrpSFt7se1q4jDRCccQp">
+            <bf:mainTitle>Map of southern Jehol and northern Hopei</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nb"/>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnodeon5izsNawc5XJhKKZV6Smj">
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:classificationLcc>Copy 1</bf:classificationLcc>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnodeoLHDSXS7dhGfDDBzJYLkx2">
+                <rdf:value>G7823.R4P1 1932 .M3</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:sublocation>Geography and Map Division</bf:sublocation>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:responsibilityStatement>with the compliments of the China Weekly Chronicle</bf:responsibilityStatement>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnode5zh2EiN1rC6RnkgMHhRrY7">
+            <rdfs:label>1 map</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnodew3PkC3DmGnsird89Km3ehM">
+            <bf:date>[1932]</bf:date>
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnodesunpmTF8Gzc4kMNJU83ncL">
+                <rdfs:label>China Weekly Chronicle</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodeepS8UjbkYpstDMVMP4VLHh">
+                <rdfs:label>[China]  </rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodemZxwzSPEqtAK7TAt4ujv3N">
+            <rdfs:label>Shows railroads and chief roads</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:dimensions>31 x 41 cm</bf:dimensions>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnode9BDfJAoT5Gsfws5kcmnp3s">
+            <rdf:value>2018586215</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+      </bf:Instance>
+    </bf:hasInstance>
+  </bf:Work>
+  <madsrdf:GenreForm rdf:nodeID="bnode2ZWzgBq3VgjjqEzbnmSQBq">
+    <rdfs:label xml:lang="en">Maps</rdfs:label>
+  </madsrdf:GenreForm>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/ada"/>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e170501882870361614119164471371501345523">
+    <rdf:value>e170501882870361614119164471371501345523</rdf:value>
+  </bf:Local>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
+    <rdfs:label xml:lang="en">sheet</rdfs:label>
+  </bf:Carrier>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </bf:Language>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+</rdf:RDF>

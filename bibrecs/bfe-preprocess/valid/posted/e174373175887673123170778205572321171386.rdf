@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n90648599"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nr2001003417"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85072732"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0203139390001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>mcollins</bflc:catalogerId>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-09-07T00:32:43</bf:changeDate>
+        <bf:creationDate>2018-01-19</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20313939</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:dimensions>19 cm.</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>154 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:immediateAcquisition>
+          <bf:ImmediateAcquisition>
+            <rdfs:label>20180123 0161102 GyWOH</rdfs:label>
+          </bf:ImmediateAcquisition>
+        </bf:immediateAcquisition>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:hasSeries>
+      <bf:Instance>
+        <bf:seriesEnumeration>Band 4</bf:seriesEnumeration>
+        <bf:seriesStatement>Interdisziplinäre Schriftenreihe des Studium Universale Düsseldorf </bf:seriesStatement>
+        <rdfs:label>Interdisziplinäre Schriftenreihe des Studium Universale Düsseldorf</rdfs:label>
+      </bf:Instance>
+    </bf:hasSeries>
+    <bf:identifiedBy>
+      <bf:Local>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>GyWOH</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>har170314885</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2017462577</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <bf:qualifier>(pbk.)</bf:qualifier>
+        <rdf:value>9783957580450 </rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <bf:qualifier>(pbk.)</bf:qualifier>
+        <rdf:value>3957580455 </rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Ean>
+        <rdf:value>9783957580450</rdf:value>
+      </bf:Ean>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c020313939"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Dup, Düsseldorf University Press</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>[2017]</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Düsseldorf</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:date>2017</bf:date>
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/gw"/>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Düsseldorf : Dup, Düsseldorf University Press, [2017]</bf:provisionActivityStatement>
+    <bf:responsibilityStatement>Christoph auf der Horst (Hrsg.)</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Grenzen des Wissens-Wissen der Grenze /</bflc:titleSortKey>
+        <bf:mainTitle>Grenzen des Wissens - Wissen der Grenze</bf:mainTitle>
+        <rdfs:label>Grenzen des Wissens-Wissen der Grenze /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Grenzen des Wissens-Wissen der Grenze /</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacarrier</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c020313939">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-09-07T00:32:43</bf:changeDate>
+        <bf:creationDate>2018-01-19</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20313939</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>BD163 .G7155 2017</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>BD163 .G7155 2017</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>BD163 .G7155 2017</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:colorContent>
+      <bf:Note>
+        <rdfs:label>some color</rdfs:label>
+      </bf:Note>
+    </bf:colorContent>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr2001003417"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n90648599"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/his"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/ger"/>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Cycle of lectures held at Heinrich-Heine-Universität Düsseldorf.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85072732"/>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Includes bibliographical references.</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Grenzen des Wissens-Wissen der Grenze /</bflc:titleSortKey>
+        <bf:mainTitle>Grenzen des Wissens - Wissen der Grenze</bf:mainTitle>
+        <rdfs:label>Grenzen des Wissens-Wissen der Grenze /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdfs:label>Grenzen des Wissens - Wissen der Grenze /</rdfs:label>
+  </bf:Work>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdamedia</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+    <rdfs:label xml:lang="en">Illustrations</rdfs:label>
+  </bf:Illustration>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/ger"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/gw"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edt">
+    <rdfs:label xml:lang="en">Editor</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/his">
+    <rdfs:label xml:lang="en">Host institution</rdfs:label>
+  </bf:Role>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Knowledge, Theory of</rdfs:label>
+  </bf:Topic>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Horst, Christoph auf der</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Heinrich-Heine-Universität Düsseldorf</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Knowledge, Theory of</rdfs:label>
+  </bf:Topic>
+</rdf:RDF>

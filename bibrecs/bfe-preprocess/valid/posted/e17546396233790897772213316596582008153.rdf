@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014027103"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2017026061"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n2001057308"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n85026704"/>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015550">
+    <rdfs:label xml:lang="en">piano</rdfs:label>
+  </pmo:IndividualInstrument>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015646">
+    <rdfs:label xml:lang="en">singer</rdfs:label>
+  </pmo:IndividualInstrument>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85088865"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85125049"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e240981991601516821400058124966181676383">
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>M1801.2</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2001057308"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n85026704"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014027103"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2017026061"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>ikir</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bflc:profile>profile:bf2:NotatedMusic:Instance2</bflc:profile>
+            <bf:changeDate>2018-09-04T15:09:23</bf:changeDate>
+            <bf:creationDate>2018-9-4</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e17546396233790897772213316596582008153"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <rdfs:label>eng</rdfs:label>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:dimensions>28 cm</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 score (pages 124-125)</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfmarkLcc>
+                <rdf:value>M1801.2.K Copy 1</rdf:value>
+              </bf:ShelfmarkLcc>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>0033690075A</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:hasSeries>
+          <bf:Instance>
+            <bf:seriesEnumeration>3. prak</bf:seriesEnumeration>
+            <bf:seriesStatement>B. Kanachʻeani Hobelinakan Kedronakan Handznakhumb (Series)</bf:seriesStatement>
+          </bf:Instance>
+        </bf:hasSeries>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2017566004</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>For high voice and piano</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Cover title</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Armenian words by T. Tchitouni</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>From a collection of Armenian music assembled by F. Mardirosian and gifted to the Music Division by H. Mardirosian.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Staff notation</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Hratarakutʻiwn Hobel. Kedr. Handznakhumbi</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[1947]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>Pēyrutʻ</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>B. Kanachʻean</bf:responsibilityStatement>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Pěchinkō</bf:mainTitle>
+            <bf:subtitle>menerg dashnakov</bf:subtitle>
+          </bf:Title>
+        </bf:title>
+        <bf:title>
+          <bf:ParallelTitle>
+            <bf:mainTitle>Bedjingo</bf:mainTitle>
+            <bf:subtitle>chant &amp; piano</bf:subtitle>
+          </bf:ParallelTitle>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:musicFormat rdf:resource="http://id.loc.gov/vocabulary/mmusicformat/score"/>
+    <bf:musicMedium>
+      <bf:MusicMedium>
+        <rdfs:label>For high voice and piano</rdfs:label>
+      </bf:MusicMedium>
+    </bf:musicMedium>
+    <bf:notation>
+      <bf:MusicNotation>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mmusnotation/staff"/>
+      </bf:MusicNotation>
+    </bf:notation>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85088865"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85125049"/>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:mainTitle>Bedjingo</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <pmo:hasMedium>
+      <pmo:DeclaredMedium>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:IndividualMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015646"/>
+                <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+                <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+              </pmo:IndividualMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:IndividualMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015550"/>
+                <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+                <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+              </pmo:IndividualMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+      </pmo:DeclaredMedium>
+    </pmo:hasMedium>
+    <rdfs:label>Kanachʻean, Barsegh, 1885-1967. Pěchinkō</rdfs:label>
+  </bf:Work>
+  <bf:MusicFormat rdf:about="http://id.loc.gov/vocabulary/mmusicformat/score">
+    <rdfs:label xml:lang="en">score</rdfs:label>
+  </bf:MusicFormat>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:Notation rdf:about="http://id.loc.gov/vocabulary/mmusnotation/staff">
+    <rdfs:label xml:lang="en">staff notation</rdfs:label>
+  </bf:Notation>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e17546396233790897772213316596582008153">
+    <rdf:value>e17546396233790897772213316596582008153</rdf:value>
+  </bf:Local>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Musical settings</rdfs:label>
+  </bf:GenreForm>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Chʻitʻuni, 1881-1960</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Role>
+    <bf:Role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+  </bf:Role>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Songs, Armenian</rdfs:label>
+  </bf:Topic>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Popular music</rdfs:label>
+  </bf:Topic>
+  <pmo:MediumPart>
+    <pmo:hasMediumOfPerformance>
+      <pmo:IndividualMediumOfPerformance>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015646"/>
+        <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+        <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+      </pmo:IndividualMediumOfPerformance>
+    </pmo:hasMediumOfPerformance>
+  </pmo:MediumPart>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Kanachʻean, Barsegh, 1885-1967</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Songs</rdfs:label>
+  </bf:GenreForm>
+</rdf:RDF>

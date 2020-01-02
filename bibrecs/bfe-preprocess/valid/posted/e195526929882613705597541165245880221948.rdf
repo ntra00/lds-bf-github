@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GeographicCoverage rdf:about="http://id.loc.gov/authorities/names/n78095330"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008112536"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85064789"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0203643350001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-02-21T10:40:57</bf:changeDate>
+        <bf:creationDate>2018-02-21</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>aacr</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20364335</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:metadataAssigner>pgeo</bflc:metadataAssigner>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:creationDate>2018-7-2</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e195526929882613705597541165245880221948"/>
+        <rdfs:label>eng</rdfs:label>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:dimensions>25 cm</bf:dimensions>
+    <bf:editionStatement>2017 edition.</bf:editionStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>xvi, 468, 12, 3, 8, pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>KF6419.D86 2017</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>0049218715A</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00492187161</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2017298327</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c020364335"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>Physical details</bf:noteType>
+        <rdfs:label>forms</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Includes bibliographical references and index</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>"Published in August 2017"</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Thomson Reuters</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2017</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Eagan, MN</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:date>2017</bf:date>
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/mnu"/>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>[Eagan, MN] : Thomson Reuters / 2017.</bf:provisionActivityStatement>
+    <bf:responsibilityStatement>by Stephen J. Dunn</bf:responsibilityStatement>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Index present</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>Overview -- Handling the foreign accounts case -- Internal revenue code -- Passive foreign investment companies ("PFICs") -- Tax treaties -- Civil tax assessment -- Federal tax collection -- Criminal tax prosecutions -- State taxation of foreign accounts income -- Bank Secrecy Act -- United States' enforcement drive against foreign accounts -- Paths to compliance -- Expartiation -- Summary.</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Foreign accounts compliance /</bflc:titleSortKey>
+        <bf:mainTitle>Foreign accounts compliance</bf:mainTitle>
+        <rdfs:label>Foreign accounts compliance /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Foreign accounts compliance /</rdfs:label>
+  </bf:Instance>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c020364335">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-02-21T10:40:57</bf:changeDate>
+        <bf:creationDate>2018-02-21</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>aacr</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20364335</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>KF6419</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/20364335#Agent100-11"/>
+        <bf:role>
+          <bf:Role>
+            <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+            <rdfs:label>author.</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:geographicCoverage rdf:resource="http://id.loc.gov/authorities/names/n78095330"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008112536"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85064789"/>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>Overview -- Handling the foreign accounts case -- Internal revenue code -- Passive foreign investment companies ("PFICs") -- Tax treaties -- Civil tax assessment -- Federal tax collection -- Criminal tax prosecutions -- State taxation of foreign accounts income -- Bank Secrecy Act -- United States' enforcement drive against foreign accounts -- Paths to compliance -- Expatriation -- Summary</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Foreign accounts compliance /</bflc:titleSortKey>
+        <bf:mainTitle>Foreign accounts compliance</bf:mainTitle>
+        <rdfs:label>Foreign accounts compliance /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdfs:label>Foreign accounts compliance /</rdfs:label>
+  </bf:Work>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20364335#Agent100-11">
+    <bflc:name00MarcKey>1001 $aDunn, Stephen J.,$eauthor.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Dunn, Stephen J.,</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Dunn, Stephen J.,</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Dunn, Stephen J.,</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/mnu"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e195526929882613705597541165245880221948">
+    <rdf:value>e195526929882613705597541165245880221948</rdf:value>
+  </bf:Local>
+  <bf:GeographicCoverage>
+    <rdfs:label xml:lang="en">United States</rdfs:label>
+  </bf:GeographicCoverage>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Income tax--United States--Foreign income</rdfs:label>
+  </bf:Topic>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Taxpayer compliance--United States</rdfs:label>
+  </bf:Topic>
+</rdf:RDF>

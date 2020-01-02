@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0205595000001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>cpey</bflc:catalogerId>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-08-29</bf:changeDate>
+        <bf:creationDate>2018-06-27</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20559500</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:dimensions>21 cm</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>341 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfmarkLcc>
+            <rdf:value>PR9619.4.P555 Z46 2017</rdf:value>
+          </bf:ShelfmarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>0048501908A</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:immediateAcquisition>
+          <bf:ImmediateAcquisition>
+            <rdfs:label>Purchased 2018-06-04 invoice 597987 from GOBI Library Solutions from EBSCO</rdfs:label>
+          </bf:ImmediateAcquisition>
+        </bf:immediateAcquisition>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2018379394</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <bf:qualifier>(paperback)</bf:qualifier>
+        <rdf:value>9781760294687</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:instanceOf>
+      <bf:Work>
+        <bf:classification>
+          <bf:ClassificationLcc>
+            <bf:classificationPortion>PR9619.4</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:contribution>
+          <bf:Contribution>
+            <bf:agent>
+              <madsrdf:PersonalName>
+                <madsrdf:hasSource>
+                  <madsrdf:Source>
+                    <madsrdf:citationSource>The attachment, 2017: t.p. (Ailsa Piper) p. 340 (storyteller and walker; she has worked as a writer, director, actor, teacher, speaker, and broadcaster)</madsrdf:citationSource>
+                  </madsrdf:Source>
+                </madsrdf:hasSource>
+                <rdfs:label>Piper, Ailsa</rdfs:label>
+              </madsrdf:PersonalName>
+            </bf:agent>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:language>
+          <bf:Language>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+          </bf:Language>
+        </bf:language>
+        <bf:subject>
+          <bf:Topic>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+            <madsrdf:authoritativeLabel>Piper, Ailsa--Correspondence </madsrdf:authoritativeLabel>
+          </bf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <bf:Topic>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+            <madsrdf:authoritativeLabel>Doherty, Tony--Correspondence</madsrdf:authoritativeLabel>
+          </bf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <bf:Topic>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+            <madsrdf:authoritativeLabel>Piper, Ailsa--Friends and associates</madsrdf:authoritativeLabel>
+          </bf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <bf:Topic>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+            <madsrdf:authoritativeLabel>Doherty, Tony--Friends and associates</madsrdf:authoritativeLabel>
+          </bf:Topic>
+        </bf:subject>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>The attachment</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Allen &amp; Unwin</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2017</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Sydney</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Crows Nest, NSW : Allen &amp; Unwin, 2017.</bf:provisionActivityStatement>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>attachment : letters from a most unlikely friendship /</bflc:titleSortKey>
+        <bf:mainTitle>The attachment</bf:mainTitle>
+        <bf:subtitle>letters from a most unlikely friendship</bf:subtitle>
+        <rdfs:label>The attachment : letters from a most unlikely friendship /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>The attachment : letters from a most unlikely friendship /</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacarrier</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdamedia</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20559500#Agent100-14">
+    <bflc:name00MarcKey>1001 $aPiper, Ailsa,$eauthor.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Piper, Ailsa,</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Piper, Ailsa,</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Piper, Ailsa,</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/20559500#Agent600-24">
+    <bflc:name00MarcKey>60010$aPiper, Ailsa$vCorrespondence.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Piper, Ailsa</bflc:name00MatchKey>
+    <madsrdf:authoritativeLabel>Piper, Ailsa--Correspondence.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Piper, Ailsa</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/20559500#Agent600-25">
+    <bflc:name00MarcKey>60010$aDoherty, Tony$vCorrespondence.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Doherty, Tony</bflc:name00MatchKey>
+    <madsrdf:authoritativeLabel>Doherty, Tony--Correspondence.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Doherty, Tony</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/20559500#Agent600-26">
+    <bflc:name00MarcKey>60010$aPiper, Ailsa$xFriends and associates.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Piper, Ailsa</bflc:name00MatchKey>
+    <madsrdf:authoritativeLabel>Piper, Ailsa--Friends and associates.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Piper, Ailsa</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/20559500#Agent600-27">
+    <bflc:name00MarcKey>60010$aDoherty, Tony$xFriends and associates.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Doherty, Tony</bflc:name00MatchKey>
+    <madsrdf:authoritativeLabel>Doherty, Tony--Friends and associates.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Doherty, Tony</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20559500#Agent700-30">
+    <bflc:name00MarcKey>7001 $aDoherty, Tony,$eauthor.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Doherty, Tony,</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Doherty, Tony,</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20559500#Topic650-28">
+    <madsrdf:authoritativeLabel>Authors, Australian--21st century--Correspondence.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b0_b46"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+    <rdfs:label>Authors, Australian--21st century--Correspondence.</rdfs:label>
+  </bf:Topic>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20559500#Topic650-29">
+    <madsrdf:authoritativeLabel>Priests--Australia--Sydney (N.S.W.)--Correspondence.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b0_b25"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+    <rdfs:label>Priests--Australia--Sydney (N.S.W.)--Correspondence.</rdfs:label>
+  </bf:Topic>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/xna"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  <bf:GeographicCoverage rdf:about="http://id.loc.gov/vocabulary/geographicAreas/u-at-ne"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label>LCSH</rdfs:label>
+  </bf:Source>
+  <bf:Place>
+    <rdfs:label>Crows Nest, NSW</rdfs:label>
+  </bf:Place>
+  <bf:Agent>
+    <rdfs:label>Allen &amp; Unwin</rdfs:label>
+  </bf:Agent>
+  <madsrdf:Temporal>
+    <madsrdf:authoritativeLabel>21st century</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b19"/>
+  </madsrdf:Temporal>
+  <madsrdf:Geographic>
+    <madsrdf:authoritativeLabel>Australia</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b22"/>
+  </madsrdf:Geographic>
+  <bflc:PrimaryContribution>
+    <bf:agent rdf:resource="http://id.loc.gov/resources/works/20559500#Agent100-14"/>
+    <bf:role>
+      <bf:Role>
+        <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+        <rdfs:label>author.</rdfs:label>
+      </bf:Role>
+    </bf:role>
+  </bflc:PrimaryContribution>
+  <madsrdf:GenreForm>
+    <madsrdf:authoritativeLabel>Correspondence</madsrdf:authoritativeLabel>
+  </madsrdf:GenreForm>
+  <bf:Summary>
+    <rdfs:label>Dear Ailsa, Sometimes I wonder whether the friendship that has caught us both-a most unlikely friendship I must confess-might find an echo in a far off Irish village somewhere in the wild, windy hills of old Donegal. Or am I allowing that uncontrollable imagination of mine too much slack? This is the story of an unlikely friendship...When priest and Sydneysider Tony Doherty emailed Melbourne-based writer and performer Ailsa Piper to say how much he had enjoyed her latest book, he was met with a swift reply from a similarly enquiring mind. Soon emails were flying back and forth and back again. They exchanged stories of their experiences as sweaty pilgrims and dissected dinner party menus. They shared their delight in Mary Oliver's poetry and wrestled with what it means to love and to grieve. This energetic exchange of words, questions and ideas grew into an unexpected but treasured friendship...Collected here is that correspondence, brimming with empathy, humour and a fierce curiosity about each other and the worlds, shoes and histories that they inhabit. Described by one reader as 'a demonstration of how to have a conversation and a friendship', The Attachment is an intriguing, entertaining and moving celebration of family, faith, connection-even the correct time of day to enjoy rhubarb...Dear Tony, Funny how our ears tune in to things. How our priorities shift based on who and what we know. How we come to care about such abstract or remote things through the experience of another. Lovely, somehow, but so serendipitous. All the other things we might care about. All that we might have missed had we not stopped to care for this person. I'm glad we stopped for each other.</rdfs:label>
+  </bf:Summary>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Priests</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b29"/>
+  </madsrdf:Topic>
+  <bf:AdminMetadata>
+    <bflc:encodingLevel>
+      <bflc:EncodingLevel>
+        <bf:code>5</bf:code>
+      </bflc:EncodingLevel>
+    </bflc:encodingLevel>
+    <bflc:procInfo>ibc update</bflc:procInfo>
+    <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+    <bf:changeDate>2018-06-27T11:54:23</bf:changeDate>
+    <bf:creationDate>2018-06-27</bf:creationDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionConventions>
+      <bf:DescriptionConventions>
+        <bf:code>isbd</bf:code>
+      </bf:DescriptionConventions>
+    </bf:descriptionConventions>
+    <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:generationProcess>
+      <bf:GenerationProcess>
+        <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+      </bf:GenerationProcess>
+    </bf:generationProcess>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>20559500</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:source>
+      <bf:Source>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+        <rdfs:label>DLC</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <bf:source>
+      <bf:Source>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+        <rdfs:label>DLC</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <bf:status>
+      <bf:Status>
+        <bf:code>c</bf:code>
+      </bf:Status>
+    </bf:status>
+  </bf:AdminMetadata>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Authors, Australian</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b40"/>
+  </madsrdf:Topic>
+  <madsrdf:GenreForm>
+    <madsrdf:authoritativeLabel>Correspondence</madsrdf:authoritativeLabel>
+  </madsrdf:GenreForm>
+  <bf:Summary>
+    <rdfs:label>A celebration of friendship, renewal, nature and the human spirit told through letters between a writer and an 80-year-old priest. Original, surprising - both highly entertaining and deeply moving.</rdfs:label>
+  </bf:Summary>
+  <madsrdf:Geographic>
+    <madsrdf:authoritativeLabel>Sydney (N.S.W.)</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b44"/>
+  </madsrdf:Geographic>
+  <bf:Contribution>
+    <bf:agent rdf:resource="http://id.loc.gov/resources/works/20559500#Agent700-30"/>
+    <bf:role>
+      <bf:Role>
+        <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+        <rdfs:label>author.</rdfs:label>
+      </bf:Role>
+    </bf:role>
+  </bf:Contribution>
+  <bf:Title>
+    <bflc:titleSortKey>attachment : letters from a most unlikely friendship /</bflc:titleSortKey>
+    <bf:mainTitle>The attachment</bf:mainTitle>
+    <bf:subtitle>letters from a most unlikely friendship</bf:subtitle>
+    <rdfs:label>The attachment : letters from a most unlikely friendship /</rdfs:label>
+  </bf:Title>
+  <madsrdf:PersonalName>
+    <madsrdf:hasSource>
+      <madsrdf:Source>
+        <madsrdf:citationSource>The attachment, 2017: t.p. (Ailsa Piper) p. 340 (storyteller and walker; she has worker as a writer, director, actor, teacher, speaker, and broadcaster)</madsrdf:citationSource>
+      </madsrdf:Source>
+    </madsrdf:hasSource>
+    <rdfs:label>Piper, Ailsa</rdfs:label>
+  </madsrdf:PersonalName>
+  <rdf:Description>
+    <bf:agent>
+      <madsrdf:PersonalName>
+        <madsrdf:hasSource>
+          <madsrdf:Source>
+            <madsrdf:citationSource>The attachment, 2017: t.p. (Ailsa Piper) p. 340 (storyteller and walker; she has worked as a writer, director, actor, teacher, speaker, and broadcaster)</madsrdf:citationSource>
+          </madsrdf:Source>
+        </madsrdf:hasSource>
+      </madsrdf:PersonalName>
+    </bf:agent>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+  </rdf:Description>
+</rdf:RDF>

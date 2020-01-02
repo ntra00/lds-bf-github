@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c012871787">
+    <rdfs:label>Perfil de la hoguera /</rdfs:label>
+    <bf:summary>
+      <bf:Summary rdf:nodeID="b75resourcesworksc012871787">
+        <rdfs:label>Verse by poet of Esquipulas (1964), one of the winners of the Nicaraguan Ministry of Cultur's "Premio Nacional de Poesía Ruben Darío" for 1999.</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/spa"/>
+    </bf:language>
+    <bf:title>
+      <bf:Title rdf:nodeID="b67resourcesworksc012871787">
+        <bflc:titleSortKey>Perfil de la hoguera /</bflc:titleSortKey>
+        <bf:mainTitle>Perfil de la hoguera</bf:mainTitle>
+        <rdfs:label>Perfil de la hoguera /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="b10resourcesworksc012871787">
+        <bf:creationDate>2002-07-26</bf:creationDate>
+        <bf:source>
+          <bf:Agent rdf:nodeID="b36resourcesworksc012871787">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:source>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="b28resourcesworksc012871787">
+            <rdf:value>12871787</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:status>
+          <bf:Status rdf:nodeID="b16resourcesworksc012871787">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="b24resourcesworksc012871787">
+            <bf:code>aacr</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:source>
+          <bf:Source rdf:nodeID="b41resourcesworksc012871787">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:changeDate>2003-01-15T16:13:27</bf:changeDate>
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="b12resourcesworksc012871787">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:nodeID="b20resourcesworksc012871787">
+            <bf:code>7</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution rdf:nodeID="b49resourcesworksc012871787">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Contribution"/>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/12871787#Agent100-12"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+  </bf:Work>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/12871787#Agent100-12">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <bflc:name00MarcKey>1001 $aMontoya, Ariel,$d1964-</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Montoya, Ariel, 1964-</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Montoya, Ariel, 1964-</bflc:primaryContributorName00MatchKey>
+    <rdfs:label>Montoya, Ariel, 1964-</rdfs:label>
+  </bf:Agent>
+  <bf:Item rdf:about="http://id.loc.gov/resources/items/c0128717870001">
+    <bflc:derivedFrom rdf:resource="http://id.loc.gov/resources/bibs/12871787.marcxml.xml"/>
+    <bflc:itemOf>
+      <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0128717870001">
+        <bflc:comment>khes</bflc:comment>
+        <bf:provisionActivity>
+          <bf:ProvisionActivity rdf:nodeID="b41resourcesinstancesc0128717870001">
+            <bf:agent>
+              <bf:Agent rdf:nodeID="b48resourcesinstancesc0128717870001">
+                <rdfs:label>Amaná Ediciones Centroamericanas</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>2001</bf:date>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+            <bf:place>
+              <bf:Place rdf:nodeID="b44resourcesinstancesc0128717870001">
+                <rdfs:label>Managua, Nicaragua</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:ProvisionActivity>
+        </bf:provisionActivity>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c012871787"/>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="b12resourcesinstancesc0128717870001">
+            <bf:date>2001</bf:date>
+            <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/nq"/>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ProvisionActivity"/>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <rdfs:label>Perfil de la hoguera /</rdfs:label>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="b64resourcesinstancesc0128717870001">
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:source>
+              <bf:Agent rdf:nodeID="b90resourcesinstancesc0128717870001">
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+                <rdfs:label>DLC</rdfs:label>
+              </bf:Agent>
+            </bf:source>
+            <bf:changeDate>2003-01-15T16:13:27</bf:changeDate>
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="b78resourcesinstancesc0128717870001">
+                <bf:code>aacr</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+            <bf:source>
+              <bf:Source rdf:nodeID="b95resourcesinstancesc0128717870001">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+              </bf:Source>
+            </bf:source>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bflc:metadataAssigner>khes</bflc:metadataAssigner>
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="b66resourcesinstancesc0128717870001">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bf:creationDate>2002-07-26</bf:creationDate>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="b74resourcesinstancesc0128717870001">
+                <bf:code>7</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:status>
+              <bf:Status rdf:nodeID="b70resourcesinstancesc0128717870001">
+                <bf:code>c</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="b82resourcesinstancesc0128717870001">
+                <rdf:value>12871787</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:editionStatement>1. ed</bf:editionStatement>
+        <bf:provisionActivityStatement>Managua, Nicaragua : Amaná Ediciones Centroamericanas, 2001.</bf:provisionActivityStatement>
+        <bf:responsibilityStatement>Aríel Montoya</bf:responsibilityStatement>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="b56resourcesinstancesc0128717870001">
+            <rdfs:label>114 p.</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:identifiedBy>
+          <bf:Isbn rdf:nodeID="b23resourcesinstancesc0128717870001">
+            <rdf:value>9992482435</rdf:value>
+          </bf:Isbn>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="b19resourcesinstancesc0128717870001">
+            <rdf:value>  2002433180</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:dimensions>21 cm.</bf:dimensions>
+        <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/c0128717870001"/>
+        <bf:title>
+          <bf:Title rdf:nodeID="b29resourcesinstancesc0128717870001">
+            <bflc:titleSortKey>Perfil de la hoguera /</bflc:titleSortKey>
+            <bf:mainTitle>Perfil de la hoguera</bf:mainTitle>
+            <rdfs:label>Perfil de la hoguera /</rdfs:label>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bflc:itemOf>
+    <bf:shelfMark>
+      <bf:ShelfMark rdf:nodeID="b10resourcesitemsc0128717870001">
+        <rdfs:label>MLCS 2002/04948 (P)</rdfs:label>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:ShelfMark>
+    </bf:shelfMark>
+  </bf:Item>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </bf:Source>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/nq"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+</rdf:RDF>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" >
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0200876060001">
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:nodeID="b78resourcesinstancesc0200876060001">
+            <rdfs:label>rdacarrier</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:responsibilityStatement>Amanda D. Lotz ; foreword by foreword by John Landgraf, Chief Executive Officer, FX Network and FX Productions</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title rdf:nodeID="b33resourcesinstancesc0200876060001">
+        <bflc:titleSortKey>We now disrupt this broadcast : how cable transformed television and the internet revolutionized it all /</bflc:titleSortKey>
+        <bf:mainTitle>We now disrupt this broadcast</bf:mainTitle>
+        <rdfs:label>We now disrupt this broadcast : how cable transformed television and the internet revolutionized it all /</rdfs:label>
+        <bf:subtitle>how cable transformed television and the internet revolutionized it all</bf:subtitle>
+      </bf:Title>
+    </bf:title>
+    <bf:provisionActivityStatement>Cambridge, MA : The MIT Press, [2018]</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="b62resourcesinstancesc0200876060001">
+        <rdfs:label>pages cm</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:instanceOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/c020087606">
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20087606#Topic650-27"/>
+        <bf:classification>
+          <bf:ClassificationDdc rdf:nodeID="b65resourcesworksc020087606">
+            <bf:classificationPortion>384.55/32</bf:classificationPortion>
+            <bf:edition>full</bf:edition>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:edition>23</bf:edition>
+          </bf:ClassificationDdc>
+        </bf:classification>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20087606#Topic650-28"/>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20087606#Topic650-25"/>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="b57resourcesworksc020087606">
+            <bf:itemPortion>L685 2018</bf:itemPortion>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:classificationPortion>PN1992.3.U5</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20087606#Topic650-26"/>
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="b75resourcesworksc020087606">
+            <bf:agent rdf:resource="http://id.loc.gov/resources/works/20087606#Agent100-15"/>
+            <bf:role>
+              <bf:Role rdf:nodeID="b89resourcesworksc020087606">
+                <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+                <rdfs:label>author.</rdfs:label>
+              </bf:Role>
+            </bf:role>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:title>
+          <bf:Title rdf:nodeID="b97resourcesworksc020087606">
+            <bf:mainTitle>We now disrupt this broadcast</bf:mainTitle>
+            <rdfs:label>We now disrupt this broadcast : how cable transformed television and the internet revolutionized it all /</rdfs:label>
+            <bf:subtitle>how cable transformed television and the internet revolutionized it all</bf:subtitle>
+            <bflc:titleSortKey>We now disrupt this broadcast : how cable transformed television and the internet revolutionized it all /</bflc:titleSortKey>
+          </bf:Title>
+        </bf:title>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="b10resourcesworksc020087606">
+            <bf:creationDate>2017-10-23</bf:creationDate>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="b28resourcesworksc020087606">
+                <rdf:value>20087606</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bflc:procInfo>ibc update</bflc:procInfo>
+            <bf:status>
+              <bf:Status rdf:nodeID="b16resourcesworksc020087606">
+                <bf:code>c</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="b24resourcesworksc020087606">
+                <bf:code>isbd</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+            <bf:source>
+              <bf:Source rdf:nodeID="b36resourcesworksc020087606">
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+                <rdfs:label>DLC</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="b12resourcesworksc020087606">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="b20resourcesworksc020087606">
+                <bf:code>8</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:source>
+              <bf:Source rdf:nodeID="b41resourcesworksc020087606">
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+                <rdfs:label>DLC</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <bf:changeDate>2018-05-19T10:18:29</bf:changeDate>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20087606#Topic650-24"/>
+        <bf:contribution>
+          <bf:Contribution rdf:nodeID="b185resourcesworksc020087606">
+            <bf:role>
+              <bf:Role rdf:nodeID="b196resourcesworksc020087606">
+                <bflc:relatorMatchKey>writer of foreword</bflc:relatorMatchKey>
+                <rdfs:label>writer of foreword.</rdfs:label>
+              </bf:Role>
+            </bf:role>
+            <bf:agent rdf:resource="http://id.loc.gov/resources/works/20087606#Agent700-29"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+        <bf:geographicCoverage rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/>
+        <rdfs:label>We now disrupt this broadcast : how cable transformed television and the internet revolutionized it all /</rdfs:label>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="b23resourcesinstancesc0200876060001">
+        <rdf:value>  2017032611</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b47resourcesinstancesc0200876060001">
+        <bf:agent>
+          <bf:Agent rdf:nodeID="b54resourcesinstancesc0200876060001">
+            <rdfs:label>The MIT Press</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:place>
+          <bf:Place rdf:nodeID="b50resourcesinstancesc0200876060001">
+            <rdfs:label>Cambridge, MA</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:date>2018</bf:date>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bflc:projectedProvisionDate>1111-</bflc:projectedProvisionDate>
+    <rdfs:label>We now disrupt this broadcast : how cable transformed television and the internet revolutionized it all /</rdfs:label>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="bnodemp8a9rqpwkf31pdsg9qHs4">
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <rdfs:label>eng</rdfs:label>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e175002341232196541830859708858138317827"/>
+        <bflc:metadataAssigner>trod</bflc:metadataAssigner>
+        <bf:creationDate>2018-6-7</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b27resourcesinstancesc0200876060001">
+        <rdf:value>9780262037679 (hardcover : alk. paper)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:note>
+      <bf:Note rdf:nodeID="b82resourcesinstancesc0200876060001">
+        <rdfs:label>Includes bibliographical references and index.</rdfs:label>
+        <bf:noteType>bibliography</bf:noteType>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b12resourcesinstancesc0200876060001">
+        <bf:date>2018</bf:date>
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/mau"/>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/c0200876060001"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:nodeID="b70resourcesinstancesc0200876060001">
+            <rdfs:label>rdamedia</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="b90resourcesinstancesc0200876060001">
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="b92resourcesinstancesc0200876060001">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:creationDate>2017-10-23</bf:creationDate>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:nodeID="b100resourcesinstancesc0200876060001">
+            <bf:code>8</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:source>
+          <bf:Source rdf:nodeID="b116resourcesinstancesc0200876060001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status rdf:nodeID="b96resourcesinstancesc0200876060001">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bf:changeDate>2018-05-19T10:18:29</bf:changeDate>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="b108resourcesinstancesc0200876060001">
+            <rdf:value>20087606</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="b104resourcesinstancesc0200876060001">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:source>
+          <bf:Source rdf:nodeID="b121resourcesinstancesc0200876060001">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:nodeID="b19resourcesinstancesc0200876060001">
+        <rdfs:label>Index present</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+  </bf:Instance>
+  <madsrdf:Topic rdf:nodeID="b168resourcesworksc020087606">
+    <madsrdf:authoritativeLabel>Technological innovations</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Geographic rdf:nodeID="b126resourcesworksc020087606">
+    <madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+  </madsrdf:Geographic>
+  <madsrdf:Topic rdf:nodeID="b165resourcesworksc020087606">
+    <madsrdf:authoritativeLabel>Television broadcasting</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0167"/>
+  </madsrdf:Topic>
+  <madsrdf:Geographic rdf:nodeID="b140resourcesworksc020087606">
+    <madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+  </madsrdf:Geographic>
+  <madsrdf:Geographic rdf:nodeID="b182resourcesworksc020087606">
+    <madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+  </madsrdf:Geographic>
+  <madsrdf:Topic rdf:nodeID="b179resourcesworksc020087606">
+    <madsrdf:authoritativeLabel>Internet television</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0181"/>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b123resourcesworksc020087606">
+    <madsrdf:authoritativeLabel>Television broadcasting</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0125"/>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b137resourcesworksc020087606">
+    <madsrdf:authoritativeLabel>Cable television</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0139"/>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b151resourcesworksc020087606">
+    <madsrdf:authoritativeLabel>Television</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0153"/>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b154resourcesworksc020087606">
+    <madsrdf:authoritativeLabel>Technological innovations</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/20087606#Topic650-24">
+    <rdfs:label>Television broadcasting--United States.</rdfs:label>
+    <madsrdf:authoritativeLabel>Television broadcasting--United States.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b122resourcesworksc020087606"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+  </madsrdf:ComplexSubject>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/20087606#Topic650-27">
+    <madsrdf:authoritativeLabel>Television broadcasting--Technological innovations.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b164resourcesworksc020087606"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>Television broadcasting--Technological innovations.</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20087606#Agent100-15">
+    <bflc:primaryContributorName00MatchKey>Lotz, Amanda D., 1974-</bflc:primaryContributorName00MatchKey>
+    <bflc:name00MatchKey>Lotz, Amanda D., 1974-</bflc:name00MatchKey>
+    <bflc:name00MarcKey>1001 $aLotz, Amanda D.,$d1974-$eauthor.</bflc:name00MarcKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Lotz, Amanda D., 1974-</rdfs:label>
+  </bf:Agent>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/mau"/>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20087606#Topic650-28">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+    <madsrdf:authoritativeLabel>Internet television--United States.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b178resourcesworksc020087606"/>
+    <rdfs:label>Internet television--United States.</rdfs:label>
+  </bf:Topic>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20087606#Agent700-29">
+    <bflc:name00MatchKey>Landgraf, John,</bflc:name00MatchKey>
+    <rdfs:label>Landgraf, John,</rdfs:label>
+    <bflc:name00MarcKey>7001 $aLandgraf, John,$ewriter of foreword.</bflc:name00MarcKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </madsrdf:PersonalName>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+    <bf:source>
+      <bf:Source rdf:nodeID="b111resourcesworksc020087606">
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+  </bf:Content>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20087606#Topic650-26">
+    <rdfs:label>Television--Technological innovations.</rdfs:label>
+    <madsrdf:componentList rdf:nodeID="b150resourcesworksc020087606"/>
+    <madsrdf:authoritativeLabel>Television--Technological innovations.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+  </bf:Topic>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e175002341232196541830859708858138317827">
+    <rdf:value>e175002341232196541830859708858138317827</rdf:value>
+  </bf:Local>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20087606#Topic650-25">
+    <madsrdf:componentList rdf:nodeID="b136resourcesworksc020087606"/>
+    <madsrdf:authoritativeLabel>Cable television--United States.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+    <rdfs:label>Cable television--United States.</rdfs:label>
+  </bf:Topic>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+  </bf:Agent>
+  <bf:GeographicCoverage rdf:about="http://id.loc.gov/vocabulary/geographicAreas/n-us"/>
+</rdf:RDF>

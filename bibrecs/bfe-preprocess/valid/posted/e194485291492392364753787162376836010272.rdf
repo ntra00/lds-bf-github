@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n87868282"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nr2001049856"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh2002012010"/>
+  <madsrdf:Temporal rdf:about="http://id.loc.gov/authorities/subjects/sh2002012475"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008122860"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85071228"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0207101900001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel rdf:nodeID="b0_b16"/>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-10-18T07:27:23</bf:changeDate>
+        <bf:creationDate>2018-10-18</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20710190</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>ktak</bflc:catalogerId>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:creationDate>2018-12-20</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e194485291492392364753787162376836010272"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:dimensions>21 cm.</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>352 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:heldBy>DLC</bf:heldBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>PL799.Y65 T78 2018</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00503938832</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:sublocation>Asian</bf:sublocation>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:hasSeries>
+      <bf:Instance>
+        <bf:seriesEnumeration>20</bf:seriesEnumeration>
+        <bf:seriesStatement>Shōhon utsushi gōkanshū ; 20</bf:seriesStatement>
+        <rdfs:label>Shōhon utsushi gōkanshū</rdfs:label>
+      </bf:Instance>
+    </bf:hasSeries>
+    <bf:hasSeries>
+      <bf:Instance>
+        <bf:seriesEnumeration>20</bf:seriesEnumeration>
+        <bf:seriesStatement>正本写合卷集</bf:seriesStatement>
+      </bf:Instance>
+    </bf:hasSeries>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2018433921</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c020710190"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>Physical details</bf:noteType>
+        <rdfs:label>illustrations</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>底本:明治大学図書館蔵本</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>独立行政法人日本芸術文化振興会</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>平成30 [2018</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>東京都千代田区</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Tōkyō-to Chiyoda-ku : Dokuritsu Gyōsei Hōjin Nihon Geijutsu Bunka Shinkōkai, Heisei 30 [2018]</bf:provisionActivityStatement>
+    <bf:provisionActivityStatement>東京都千代田区 : 独立行政法人日本芸術文化振興会, 平成30 [2018]</bf:provisionActivityStatement>
+    <bf:responsibilityStatement>編集国立劇場調查養成部</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>月見曠名画一軸 /</bflc:titleSortKey>
+        <bf:mainTitle>月見曠名画一軸</bf:mainTitle>
+        <rdfs:label>月見曠名画一軸 /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Tsukimi no hare meiga no ichijiku /</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacarrier</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c020710190">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-10-18T07:27:23</bf:changeDate>
+        <bf:creationDate>2018-10-18</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20710190</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>PL799.Y65  T78 2018</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/20710190#Agent710-27"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/20710190#Agent880-28"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr2001049856"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n87868282"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ill"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/jpn"/>
+    <bf:originDate>2018</bf:originDate>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85071228"/>
+    <bf:subject>
+      <bf:Topic>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh2002012010"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh2002012475"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh2008122860"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Reproduction of a manifestation originally published: Minamidenma-chō [Edo] :  Tsutaya Kichizō han, 1862?</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>月見曠名画一軸 /</bflc:titleSortKey>
+        <bf:mainTitle>月見曠名画一軸</bf:mainTitle>
+        <rdfs:label>月見曠名画一軸 /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Tsukimi no hare meiga no ichijiku /</bflc:titleSortKey>
+        <bf:mainTitle>Tsukimi no hare meiga no ichijiku</bf:mainTitle>
+        <rdfs:label>Tsukimi no hare meiga no ichijiku /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdfs:label>Yomo, Umehiko, 1822-1896. Tsukimi no hare meiga no ichijiku </rdfs:label>
+  </bf:Work>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdamedia</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20710190#Agent100-12">
+    <bflc:name00MarcKey>1001 $6880-01$aShōen, Umehiko.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Shōen, Umehiko.</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Shōen, Umehiko.</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Shōen, Umehiko.</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20710190#Agent700-25">
+    <bflc:name00MarcKey>7001 $6880-05$aUtagawa, Kunisada,$b2.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Utagawa, Kunisada, 2.</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Utagawa, Kunisada, 2.</rdfs:label>
+  </bf:Agent>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/resources/works/20710190#Agent710-27">
+    <bflc:name10MarcKey>7102 $6880-06$aKokuritsu Gekijō.$bChōsa Yōseibu.</bflc:name10MarcKey>
+    <bflc:name10MatchKey>Kokuritsu Gekijō. Chōsa Yōseibu.</bflc:name10MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Kokuritsu Gekijō. Chōsa Yōseibu.</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20710190#Agent880-13">
+    <bflc:name00MarcKey>8801 $6100-01/$1$a松園梅彦.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>松園梅彦.</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>松園梅彦.</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>松園梅彦.</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20710190#Agent880-26">
+    <bflc:name00MarcKey>8801 $6700-05/$1$a歌川国貞,$b2代目</bflc:name00MarcKey>
+    <bflc:name00MatchKey>歌川国貞, 2代目</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>歌川国貞, 2代目</rdfs:label>
+  </bf:Agent>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/resources/works/20710190#Agent880-28">
+    <bflc:name10MarcKey>8802 $6710-06/$1$a国立劇場.$b調查養成部.</bflc:name10MarcKey>
+    <bflc:name10MatchKey>国立劇場. 調查養成部.</bflc:name10MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>国立劇場. 調查養成部.</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/jpn"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/ja"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ill">
+    <rdfs:label xml:lang="en">Illustrator</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e194485291492392364753787162376836010272">
+    <rdf:value>e194485291492392364753787162376836010272</rdf:value>
+  </bf:Local>
+  <bf:Agent>
+    <rdfs:label>Dokuritsu Gyōsei Hōjin Nihon Geijutsu Bunka Shinkōkai</rdfs:label>
+  </bf:Agent>
+  <bf:Place>
+    <rdfs:label>Tōkyō-to Chiyoda-ku</rdfs:label>
+  </bf:Place>
+</rdf:RDF>

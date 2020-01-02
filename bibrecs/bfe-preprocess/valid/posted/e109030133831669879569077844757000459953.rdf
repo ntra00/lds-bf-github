@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026387"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n88187210"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e18299208595949668399549150040699533501">
+    <bf:cartographicAttributes>
+      <bf:Cartographic>
+        <bf:coordinates>E 121°32ʹ00ʺ/N 25°00ʹ30ʺ</bf:coordinates>
+      </bf:Cartographic>
+    </bf:cartographicAttributes>
+    <bf:cartographicAttributes>
+      <bf:Cartographic>
+        <bf:coordinates>E 121°30ʹ30ʺ/N 25°00ʹ30ʺ</bf:coordinates>
+      </bf:Cartographic>
+    </bf:cartographicAttributes>
+    <bf:cartographicAttributes>
+      <bf:Cartographic>
+        <bf:coordinates>E 121°30ʹ30ʺ/N 25°03ʹ00ʺ</bf:coordinates>
+      </bf:Cartographic>
+    </bf:cartographicAttributes>
+    <bf:cartographicAttributes>
+      <bf:Cartographic>
+        <bf:coordinates>E 121°32ʹ00ʺ/N 25°03ʹ00ʺ</bf:coordinates>
+      </bf:Cartographic>
+    </bf:cartographicAttributes>
+    <bf:cartographicAttributes>
+      <bf:Cartographic>
+        <bf:coordinates>E 121°32ʹ00ʺ/N 25°00ʹ30ʺ</bf:coordinates>
+      </bf:Cartographic>
+    </bf:cartographicAttributes>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>G7914.T5:3C5 </bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:colorContent>
+      <bf:Note>
+        <rdfs:label>color</rdfs:label>
+      </bf:Note>
+    </bf:colorContent>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n88187210"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctg"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026387"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>twon</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+            <bf:creationDate>2018-8-27</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e109030133831669879569077844757000459953"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <rdfs:label>eng</rdfs:label>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nb"/>
+        <bf:classification>
+          <bf:Classification>
+            <rdfs:label>7914 T5:3C5</rdfs:label>
+          </bf:Classification>
+        </bf:classification>
+        <bf:dimensions>74 x 50 cm</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 map</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfmarkLcc>
+                <rdf:value>G7914.T5:3C5 2017 .D3</rdf:value>
+              </bf:ShelfmarkLcc>
+            </bf:identifiedBy>
+            <bf:shelfmark>
+              <bf:ShelfMark>
+                <rdf:value>Copy 1</rdf:value>
+              </bf:ShelfMark>
+            </bf:shelfmark>
+            <bf:sublocation>Geography and Map Division</bf:sublocation>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2018586519</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Includes index, coverage map, and administrative district inset</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Map on verso: Zhongcheng Qu zhong xin jie dao tu, scale 1:5,000</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Da yu chu ban she gu fen you xian gong si</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2017]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>Taibei Shi  </rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>大輿出版社股份有限公司</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2017]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>台北市 </rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Zhongzheng Qu jie dao tu, Taibei Shi</bf:mainTitle>
+            <bf:mainTitle>中正區街道圖, 台北市</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/chi"/>
+      </bf:Language>
+    </bf:language>
+    <bf:scale>
+      <bf:Scale>
+        <rdfs:label>Scale 1:7,500</rdfs:label>
+      </bf:Scale>
+    </bf:scale>
+    <bf:subject>
+      <bf:Topic>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <madsrdf:authoritativeLabel>Chung-cheng ch'ü (Taipei, Taiwan)--Maps</madsrdf:authoritativeLabel>
+      </bf:Topic>
+    </bf:subject>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Zhongzheng Qu jie dao tu, Taibei Shi</bf:mainTitle>
+        <bf:mainTitle>中正區街道圖, 台北市</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+  </bf:Work>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
+    <rdfs:label xml:lang="en">sheet</rdfs:label>
+  </bf:Carrier>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/languages/chi">
+    <rdfs:label xml:lang="en">Chinese</rdfs:label>
+  </rdf:Description>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctg">
+    <rdfs:label xml:lang="en">Cartographer</rdfs:label>
+  </bf:Role>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e109030133831669879569077844757000459953">
+    <rdf:value>e109030133831669879569077844757000459953</rdf:value>
+  </bf:Local>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Da yu chu ban she</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Maps</rdfs:label>
+  </bf:GenreForm>
+</rdf:RDF>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n77002188"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0082130690001">
+    <bflc:relationship>
+      <bflc:Relationship>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>T80580 </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:references>
+          <bf:Instance>
+            <bf:title>
+              <bf:Title>
+                <bf:mainTitle>English Short Title Catalogue</bf:mainTitle>
+              </bf:Title>
+            </bf:title>
+          </bf:Instance>
+        </bf:references>
+      </bflc:Relationship>
+    </bflc:relationship>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>jzie</bflc:catalogerId>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+        <bf:changeDate>2012-02-03T14:14:19</bf:changeDate>
+        <bf:creationDate>1983-07-21</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>8213069</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n77002188"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/bsl"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:dimensions>21 cm (8vo)</bf:dimensions>
+    <bf:editionStatement>The sixth edition, corrected and enlarged.</bf:editionStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>viii, 376 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/c0082130690001"/>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:collection>Pre-1801 Imprint Collection (Library of Congress)</bf:collection>
+        <bf:heldBy>DLC</bf:heldBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>RC106 .F74 1791</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:ShelfMark>
+            <rdf:value>Copy 1</rdf:value>
+          </bf:ShelfMark>
+        </bf:identifiedBy>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>LC copy imperfect: wanting half-title. Description of perfect copy from ESTC.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:title>
+          <bf:VariantTitle>
+            <bf:mainTitle>Practice of physic 1&amp;2</bf:mainTitle>
+            <bf:variantType>Spine title</bf:variantType>
+          </bf:VariantTitle>
+        </bf:title>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value> 07024997 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>A digital reproduction of the copy of this title found at the British Library is available from Eighteenth Century Collections Online (ECCO).</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Signatures: A⁴ B-2A⁸ 2B⁴. </rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Printed for J. Johnson at no. 72 in St. Paul's Church-Yard</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>MDCCXCI [1791]</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>London</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>London, J. Johnson, 1791.</bf:provisionActivityStatement>
+    <bf:responsibilityStatement>by Geo. Fordyce, M.D., F.R.S., senior physician to St. Thomas's Hospital and reader on the practice of physic in London</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Elements of the practice of physic, in two parts. Part I. Containing, The natural history of the human body.</bflc:titleSortKey>
+        <bf:mainTitle>Elements of the practice of physic, in two parts</bf:mainTitle>
+        <bf:subtitle>Part I. Containing, The natural history of the human body</bf:subtitle>
+        <bf:subtitle>Part II. The history and methods of treating fevers and internal inflammations</bf:subtitle>
+        <rdfs:label>Elements of the practice of physic, in two parts. Part I. Containing, The natural history of the human body.</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Elements of the practice of physic, in two parts. Part I. Containing, The natural history of the human body.</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/8213069#Agent100-10">
+    <bflc:name00MarcKey>1001 $aFordyce, George,$d1736-1802.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Fordyce, George, 1736-1802.</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Fordyce, George, 1736-1802.</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Fordyce, George, 1736-1802.</rdfs:label>
+  </bf:Agent>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/enk"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label xml:lang="en">Resource Description and Access</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/bsl">
+    <rdfs:label xml:lang="en">Bookseller</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <bf:AdminMetadata>
+    <bflc:encodingLevel>
+      <bflc:EncodingLevel>
+        <bf:code>u</bf:code>
+      </bflc:EncodingLevel>
+    </bflc:encodingLevel>
+    <bflc:procInfo>ibc update</bflc:procInfo>
+    <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+    <bf:changeDate>2012-02-03T14:14:19</bf:changeDate>
+    <bf:creationDate>1983-07-21</bf:creationDate>
+    <bf:descriptionConventions>
+      <bf:DescriptionConventions>
+        <bf:code>unknown</bf:code>
+      </bf:DescriptionConventions>
+    </bf:descriptionConventions>
+    <bf:descriptionModifier>
+      <bf:Agent>
+        <rdfs:label>DLC</rdfs:label>
+      </bf:Agent>
+    </bf:descriptionModifier>
+    <bf:generationProcess>
+      <bf:GenerationProcess>
+        <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+      </bf:GenerationProcess>
+    </bf:generationProcess>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>8213069</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:source>
+      <bf:Source>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+        <rdfs:label>DLC</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <bf:source>
+      <bf:Source>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+        <rdfs:label>CarP</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <bf:status>
+      <bf:Status>
+        <bf:code>c</bf:code>
+      </bf:Status>
+    </bf:status>
+  </bf:AdminMetadata>
+  <bf:Place>
+    <rdfs:label>London</rdfs:label>
+  </bf:Place>
+  <bf:ClassificationLcc>
+    <bf:classificationPortion>RC106</bf:classificationPortion>
+    <bf:itemPortion>.F74 1791</bf:itemPortion>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+  </bf:ClassificationLcc>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Johnson, Joseph, 1738-1809</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Agent>
+    <rdfs:label>J. Johnson</rdfs:label>
+  </bf:Agent>
+</rdf:RDF>

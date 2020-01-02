@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n2018055268"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0206546700001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>ff07 2018-09-24</bflc:catalogerId>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:creationDate>2018-9-24</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionModifier>DLC</bf:descriptionModifier>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e170515645393339306801354682700329412268"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-09-06T09:59:14</bf:changeDate>
+        <bf:creationDate>2018-08-24</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20654670</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:dimensions>19 cm</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>233 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2018425098</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9788740923865 (pbk.)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Ean>
+        <rdf:value>9788740923865</rdf:value>
+      </bf:Ean>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c020654670"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:date>2016</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>[København]</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>[Mogens Sørensen]</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2016</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Gilleleje</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>[Gilleleje] : [Saxo Publish], 2016.</bf:provisionActivityStatement>
+    <bf:responsibilityStatement>af: Mogens Sørensen</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Naboskab : noveller /</bflc:titleSortKey>
+        <bf:mainTitle>Naboskab</bf:mainTitle>
+        <bf:subtitle>noveller</bf:subtitle>
+        <rdfs:label>Naboskab : noveller /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Naboskab : noveller /</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacarrier</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c020654670">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-09-06T09:59:14</bf:changeDate>
+        <bf:creationDate>2018-08-24</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20654670</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/20654670#Agent100-14"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/dan"/>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Naboskab : noveller /</bflc:titleSortKey>
+        <bf:mainTitle>Naboskab</bf:mainTitle>
+        <bf:subtitle>noveller</bf:subtitle>
+        <rdfs:label>Naboskab : noveller /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdfs:label>Naboskab : noveller /</rdfs:label>
+  </bf:Work>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdamedia</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20654670#Agent100-14">
+    <bflc:name00MarcKey>1001 $aSoerensen, Mogens.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Soerensen, Mogens.</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Soerensen, Mogens.</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Soerensen, Mogens.</rdfs:label>
+  </bf:Agent>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/dan"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e170515645393339306801354682700329412268">
+    <rdf:value>e170515645393339306801354682700329412268</rdf:value>
+  </bf:Local>
+  <rdf:Description>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>PT8177.29.O76 N33 2016</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2018055268"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+  </rdf:Description>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Sørensen, Mogens, 1957-</rdfs:label>
+  </madsrdf:PersonalName>
+  <rdf:Description>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+  </rdf:Description>
+  <bf:Source>
+    <rdfs:label>GyWOH</rdfs:label>
+  </bf:Source>
+</rdf:RDF>

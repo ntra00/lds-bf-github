@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <madsrdf:PersonalName rdf:nodeID="bnode4ApFXai8j2vHPZmcGDGMr6">
+    <rdfs:label xml:lang="en">Gay, John, 1685-1732</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e7278824794737676432352003107097763134">
+    <bf:subject>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85046748"/>
+    </bf:subject>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodewwyEqeaP3ScSbHyfYtbc9r">
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mulm"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:contribution>
+          <bf:Contribution rdf:nodeID="bnodex4ZviciARLkCjoac3i1U7o">
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr91027624"/>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr92038480"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/bsl"/>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr93041862"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnode3KGC2uK6kCdnJDCgAakbBa">
+            <rdfs:label>2 volumes</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:editionStatement>The fifth edition</bf:editionStatement>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnodewt8iaEGpSUvBBNGChpww76">
+            <rdf:value>  2016660581</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnodeiU1wHUm5xwrKeX9rbssrcF">
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:custodialHistory>LC copy has bookplates: PAW [Peter A. Wick].</bf:custodialHistory>
+            <bf:contribution>
+              <bf:Contribution rdf:nodeID="bnodewdFypbwkUteiJaCBAwWVSt">
+                <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n81132238"/>
+                <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fmo"/>
+              </bf:Contribution>
+            </bf:contribution>
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnodewX2R9av4KHBwTzr2QGExxM">
+                <rdf:value>00383077795</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodeveexD5vS7ZqNw3SATUDCaE">
+                <rdfs:label>LC copy inscribed: Bought of David L. O'Neal, Oct., 1989 ....</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:custodialHistory>LC copy has bookplates of Donald S. Tuttle.</bf:custodialHistory>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnode78Lyd91TKn68oJ6yZedkY6">
+                <rdf:value>PR3473 .F3 1737</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:responsibilityStatement>by the late Mr. Gay</bf:responsibilityStatement>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodeuJ3VDrPLZvB8jNYEB7XMiZ">
+            <rdfs:label>Pagination: volume 1: [14], 194 pages; volume 2: [8], 155, [1] pages, [17] leaves of plates.</rdfs:label>
+            <rdfs:label>Volume 2 has title and imprint: Fables / by the late Mr. Gay. Volume the second. London : Printed for J. and P. Knapton ... and T. Cox ..., MDCCXXXVIII [1738].</rdfs:label>
+            <rdfs:label>Edition statement on volume 1 only.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnode94AsN2JxgGPqJAZB9pAMvG">
+            <bf:mainTitle>Fables</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodeq9UHEJdWNjX6pakkMC9mCi">
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bflc:metadataAssigner>jzie</bflc:metadataAssigner>
+            <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:creationDate>2018-01-24</bf:creationDate>
+            <bf:changeDate>2018-01-24T22:02:37</bf:changeDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:changeDate>2018-01-24T22:02:54</bf:changeDate>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e171450939921532091400996586392095738029"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnodemqMSjLEkDJKXG8QFju257h">
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnode3NMbJ9uba5gcPBy1VTRhZM">
+                <rdfs:label>Printed for J. and R. Tonson and J. Watts</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnode2YKMzJrTXfQhc8Awzp5XhG">
+                <rdfs:label>London</rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:date>MDCCXXXVIII-MDCCXXXVIIII [1737-1738]</bf:date>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:contribution>
+          <bf:Contribution rdf:nodeID="bnodeP3RqKtGrnizmJpSQXDfaw">
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/bsl"/>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr97003999"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:dimensions>20 cm (8vo)</bf:dimensions>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:relatedTo>
+      <bf:Work rdf:nodeID="bnode5YkqZ5B3x1BrrcucRNGALB">
+        <bf:relatedTo>Ars Libri Ltd. Library of Peter A. Wick, part two: fables</bf:relatedTo>
+      </bf:Work>
+    </bf:relatedTo>
+    <bf:illustrativeContent>
+      <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+        <rdfs:label xml:lang="en">Illustrations</rdfs:label>
+      </bf:Illustration>
+    </bf:illustrativeContent>
+    <bf:contribution>
+      <bflc:PrimaryContribution rdf:nodeID="bnodecXNh9NGqbC32bVq49EzDiP">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n80045862"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodexgKvsh76yZKHzDrupdic3e">
+        <bf:mainTitle>Fables</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:classification>
+      <bf:ClassificationLcc rdf:nodeID="bnode9p3ELAJeo2fZNzi9K8bezq">
+        <bf:classificationPortion>PR3473 .F3 </bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+        <rdfs:label>eng</rdfs:label>
+        <rdfs:label xml:lang="en">English</rdfs:label>
+      </bf:Language>
+    </bf:language>
+    <bf:relatedTo>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/c0134468700001">
+        <rdfs:label xml:lang="en">English short title catalogue.</rdfs:label>
+      </bf:Work>
+    </bf:relatedTo>
+  </bf:Work>
+  <bf:Illustration rdf:nodeID="bnodeoWgizP7JDf7GUgaZpELPtx">
+    <bf:note>
+      <bf:Note rdf:nodeID="bnodeF7iyK2sspnjygtexKfqot">
+        <rdfs:label>engravings</rdfs:label>
+      </bf:Note>
+    </bf:note>
+  </bf:Illustration>
+  <madsrdf:PersonalName rdf:nodeID="bnodepCDN1191mBS5sUg9fqnUBi">
+    <rdfs:label xml:lang="en">Watts, John, -1763</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodepn5U2BCY4qCUp9MPToW3a">
+    <rdfs:label xml:lang="en">Wick, Peter A.</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:CorporateName rdf:nodeID="bnodecg8bgyvNvLNtBViiSYVCAW">
+    <rdfs:label xml:lang="en">John and Paul Knapton (Firm)</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <madsrdf:Topic rdf:nodeID="bnodermt2ZYFp8MtcZuRdDq3XoW">
+    <rdfs:label xml:lang="en">Fables, English</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:CorporateName rdf:nodeID="bnodegx7wznto4sgu2anikFYVym">
+    <rdfs:label xml:lang="en">J. and R. Tonson</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:PersonalName rdf:nodeID="bnode7T33jHpwB6AhMYX29c5U1v">
+    <rdfs:label xml:lang="en">Cox, Thomas, -1754</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n80045862"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nr91027624"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/nr97003999"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/bsl">
+    <rdfs:label xml:lang="en">Bookseller</rdfs:label>
+  </bf:Role>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mulm">
+    <rdfs:label xml:lang="en">multipart monograph</rdfs:label>
+  </bf:Issuance>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e171450939921532091400996586392095738029">
+    <rdf:value>e171450939921532091400996586392095738029</rdf:value>
+  </bf:Local>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmo">
+    <rdfs:label xml:lang="en">Former owner</rdfs:label>
+  </bf:Role>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/nr92038480"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nr93041862"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n81132238"/>
+</rdf:RDF>

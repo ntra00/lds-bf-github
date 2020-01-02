@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c020466439">
+    <rdfs:label>99 years of the housing question in Sweden /</rdfs:label>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="f940166babb2041c6b875149a4c41059eb4">
+        <bf:identifiedBy>
+          <bf:Isbn rdf:nodeID="f940166babb2041c6b875149a4c41059eb21">
+            <rdf:value>9789144120478</rdf:value>
+          </bf:Isbn>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="f940166babb2041c6b875149a4c41059eb20">
+            <rdf:value>2017464499</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="f940166babb2041c6b875149a4c41059eb18">
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <rdfs:label>eng</rdfs:label>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bflc:metadataAssigner>khil 2018-06-11</bflc:metadataAssigner>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:creationDate>2018-6-11</bf:creationDate>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e106774174568546590165311958650862504379"/>
+            <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="f940166babb2041c6b875149a4c41059eb23">
+            <rdfs:label>325 pages</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:identifiedBy>
+          <bf:Isbn rdf:nodeID="f940166babb2041c6b875149a4c41059eb22">
+            <rdf:value>9144120478</rdf:value>
+          </bf:Isbn>
+        </bf:identifiedBy>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c020287095"/>
+        <bf:editionStatement>1st ed.</bf:editionStatement>
+        <bf:responsibilityStatement>Daniel Movilla Vega, editor</bf:responsibilityStatement>
+        <bf:title>
+          <bf:Title rdf:nodeID="f940166babb2041c6b875149a4c41059eb19">
+            <bf:mainTitle>99 years of the housing question in Sweden</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:dimensions>23 cm</bf:dimensions>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="f940166babb2041c6b875149a4c41059eb25">
+            <bf:agent>
+              <bf:Agent rdf:nodeID="f940166babb2041c6b875149a4c41059eb28">
+                <rdfs:label>Studentlitteratur</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>2017</bf:date>
+            <bf:place>
+              <bf:Place rdf:nodeID="f940166babb2041c6b875149a4c41059eb29">
+                <rdfs:label>Lund, Sweden</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="f940166babb2041c6b875149a4c41059eb24">
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="f940166babb2041c6b875149a4c41059eb27">
+                <rdf:value>00506370267</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:Item>
+        </bf:hasItem>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+        <bf:source>
+          <bf:Source rdf:nodeID="f940166babb2041c6b875149a4c41059eb17">
+            <rdfs:label>rdacontent</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>text</rdfs:label>
+      </bf:Content>
+    </bf:content>
+    <bf:classification>
+      <bf:ClassificationLcc rdf:nodeID="f940166babb2041c6b875149a4c41059eb2">
+        <bf:classificationPortion>NA9016.S8 A17 2017</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:subject>
+      <bf:Topic rdf:nodeID="f940166babb2041c6b875149a4c41059eb7">
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <madsrdf:authoritativeLabel>City planning -- Sweden -- History -- 20th century -- Exhibitions</madsrdf:authoritativeLabel>
+      </bf:Topic>
+    </bf:subject>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="f940166babb2041c6b875149a4c41059eb3">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2017165640"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="f940166babb2041c6b875149a4c41059eb1">
+        <bf:status>
+          <bf:Status rdf:nodeID="f940166babb2041c6b875149a4c41059eb16">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="f940166babb2041c6b875149a4c41059eb13">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="f940166babb2041c6b875149a4c41059eb14">
+            <rdf:value>20466439</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:nodeID="f940166babb2041c6b875149a4c41059eb12">
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:creationDate>2018-04-13</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:changeDate>2018-05-09T08:10:49</bf:changeDate>
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="f940166babb2041c6b875149a4c41059eb15">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:source>
+          <bf:Agent rdf:nodeID="f940166babb2041c6b875149a4c41059eb10">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:nodeID="f940166babb2041c6b875149a4c41059eb11">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+          </bf:Source>
+        </bf:source>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:title>
+      <bf:Title rdf:nodeID="f940166babb2041c6b875149a4c41059eb9">
+        <rdfs:label>99 years of the housing question in Sweden /</rdfs:label>
+        <bflc:titleSortKey>99 years of the housing question in Sweden /</bflc:titleSortKey>
+        <bf:mainTitle>99 years of the housing question in Sweden</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+    </bf:language>
+    <bf:subject>
+      <bf:Topic rdf:nodeID="f940166babb2041c6b875149a4c41059eb8">
+        <madsrdf:authoritativeLabel>Architecture -- Sweden -- History -- Exhibitions</madsrdf:authoritativeLabel>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:nodeID="f940166babb2041c6b875149a4c41059eb6">
+        <madsrdf:authoritativeLabel>Public housing -- Sweden -- Exhibitions</madsrdf:authoritativeLabel>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:nodeID="f940166babb2041c6b875149a4c41059eb5">
+        <madsrdf:authoritativeLabel>Architecture, Modern -- History -- Exhibitions</madsrdf:authoritativeLabel>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      </bf:Topic>
+    </bf:subject>
+  </bf:Work>
+  <bf:Work rdf:nodeID="f940166babb2041c6b875149a4c41059eb31">
+    <bf:title>
+      <bf:VariantTitle rdf:nodeID="f940166babb2041c6b875149a4c41059eb32">
+        <bf:mainTitle>ninety-nine years of the housing question in Sweden</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:Title rdf:nodeID="f940166babb2041c6b875149a4c41059eb30">
+        <bf:mainTitle>99 years of the housing question in Sweden</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+  </bf:Work>
+  <madsrdf:PersonalName rdf:nodeID="f940166babb2041c6b875149a4c41059eb26">
+    <rdfs:label xml:lang="en">Movilla Vega, Daniel</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e106774174568546590165311958650862504379">
+    <rdf:value>e106774174568546590165311958650862504379</rdf:value>
+  </bf:Local>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label>LCSH</rdfs:label>
+  </bf:Source>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2017165640"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edt">
+    <rdfs:label xml:lang="en">Editor</rdfs:label>
+  </bf:Role>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c020287095"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+</rdf:RDF>

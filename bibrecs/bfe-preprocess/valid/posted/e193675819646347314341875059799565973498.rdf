@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026387"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n79099301"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/names/n81074720"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e317798771600337973698120896126236899188">
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>G7905</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:colorContent>
+      <bf:Note>
+        <rdfs:label>color</rdfs:label>
+      </bf:Note>
+    </bf:colorContent>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n79099301"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctg"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:coordinates>
+      <bf:Cartographic>
+        <bf:coordinates>E 130°/N 37°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic>
+        <bf:coordinates>E 124°/N 37°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic>
+        <bf:coordinates>E 124°/N 43°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic>
+        <bf:coordinates>E 130°/N 43°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic>
+        <bf:coordinates>E 130°/N 37°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026387"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bflc:metadataAssigner>twon</bflc:metadataAssigner>
+            <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:changeDate>2018-06-15T19:42:06</bf:changeDate>
+            <bf:creationDate>2018-6-15</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e193675819646347314341875059799565973498"/>
+            <rdfs:label>eng</rdfs:label>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nb"/>
+        <bf:classification>
+          <bf:Classification>
+            <rdfs:label>G7905</rdfs:label>
+          </bf:Classification>
+        </bf:classification>
+        <bf:dimensions>65 x 48 cm</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 map</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:classificationLcc>Copy 1</bf:classificationLcc>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc>
+                <rdf:value>G7905 1962 .U51</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>00386247365</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>LC copy: Mounted on cloth and stamped "739A"</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:sublocation>Geography and Map Division</bf:sublocation>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2018586353</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>"8-62"</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>[Central Intelligence Agency]</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[1962]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>[Washington, D.C.]  </rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>North Korea</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Language>
+    </bf:language>
+    <bf:scale>
+      <bf:Scale>
+        <rdfs:label>Scale 1:1,220,000</rdfs:label>
+      </bf:Scale>
+    </bf:scale>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/names/n81074720"/>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>North Korea</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+  </bf:Work>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
+    <rdfs:label xml:lang="en">sheet</rdfs:label>
+  </bf:Carrier>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctg">
+    <rdfs:label xml:lang="en">Cartographer</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e193675819646347314341875059799565973498">
+    <rdf:value>e193675819646347314341875059799565973498</rdf:value>
+  </bf:Local>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">United States. Central Intelligence Agency</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Maps</rdfs:label>
+  </bf:GenreForm>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Korea (North)</rdfs:label>
+  </bf:Topic>
+</rdf:RDF>

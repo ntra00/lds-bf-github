@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026976"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n78076377"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n79119152"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n80040340"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n80040341"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n81015297"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n81026542"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n81032093"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n81108854"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n82003106"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n82099735"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n83162692"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n85230065"/>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015146">
+    <rdfs:label xml:lang="en">mixed chorus</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015516">
+    <rdfs:label xml:lang="en">orchestra</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015646">
+    <rdfs:label xml:lang="en">singer</rdfs:label>
+  </rdf:Description>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85094914"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e6231614316975792583784298204084662293">
+    <bflc:relationship>
+      <bflc:Relationship>
+        <bf:relatedTo rdf:resource="http://id.loc.gov/resources/works/no97072954"/>
+      </bflc:Relationship>
+    </bflc:relationship>
+    <bf:capture>
+      <bf:Capture>
+        <bf:date>1962 September </bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Sofiensaal, Vienna</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Capture>
+    </bf:capture>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n81026542"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n81015297"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cnd"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n78076377"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n81032093"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/itr"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n79119152"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n80040340"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/lbt"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n80040341"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/lbt"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n82003106"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n81108854"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n83162692"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n82099735"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n85230065"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:ensemble>
+      <bf:MusicEnsemble>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015516"/>
+      </bf:MusicEnsemble>
+    </bf:ensemble>
+    <bf:ensemble>
+      <bf:MusicEnsemble>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015146"/>
+        <bf:count>1</bf:count>
+      </bf:MusicEnsemble>
+    </bf:ensemble>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026976"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>bbad</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bflc:profile>profile:bf2:SoundRecording:Instance</bflc:profile>
+            <bf:creationDate>2018-8-14</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e192267121393928706244289189146309985176"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <rdfs:label>eng</rdfs:label>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/mtl"/>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pla"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+        <bf:copyrightDate>℗2017 </bf:copyrightDate>
+        <bf:credits>
+          <bf:Credits>
+            <rdfs:label>Leontyne Price, soprano ; Giuseppe di Stefano, Piero de Palma, tenor ; Giuseppe Taddei, baritone ; Carlo Cava, Fernando Corena, bass ; supporting soloists ; Wiener Staatsopernchor ; Wiener Philharmoniker ; Herbert von Karajan, conductor</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:dimensions>4 3/4 in.</bf:dimensions>
+        <bf:editionStatement>Limited edition</bf:editionStatement>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>3 audio discs</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMark>
+                <rdf:value>SDD 03819</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>00491728875</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>Copy 1</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMark>
+                <rdf:value>SSB 53425</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>00491728863</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>Copy 2</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>set</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Decca</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>483 1486</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>CD1</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Decca</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>483 1487</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>CD2</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Decca</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>483 1488</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>Blu-ray</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Decca</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>483 1489</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Upc>
+            <rdf:value>028948314867</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>  2018625455</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>London, England</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Decca</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2017]</bf:date>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>Puccini</bf:responsibilityStatement>
+        <bf:soundCharacteristic>
+          <bf:RecordingMethod>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+          </bf:RecordingMethod>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:RecordingMedium>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrecmedium/opt"/>
+          </bf:RecordingMedium>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlayingSpeed>
+            <rdfs:label>1.4 m/s</rdfs:label>
+          </bf:PlayingSpeed>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlaybackChannels>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mplayback/ste"/>
+          </bf:PlaybackChannels>
+        </bf:soundCharacteristic>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Tosca</bf:mainTitle>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>Title from disc label</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/ita"/>
+      </bf:Language>
+    </bf:language>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85094914"/>
+    <bf:summary>
+      <bf:Summary>
+        <rdfs:label>Opera in 3 acts</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Program notes in English with French and German translations and libretto with German, English, and French translations in accompanying booklet (223 pages : illustrations ; 13 cm).</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Tosca</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:voice>
+      <bf:MusicVoice>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015646"/>
+      </bf:MusicVoice>
+    </bf:voice>
+    <rdfs:label>Puccini, Giacomo, 1858-1924. Tosca</rdfs:label>
+  </bf:Work>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/no97072954">
+    <rdfs:label xml:lang="en">Sardou, Victorien, 1831-1908. Tosca (no97072954)</rdfs:label>
+  </bf:Work>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+    <rdfs:label>audio disc</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/languages/ita">
+    <rdfs:label xml:lang="en">Italian</rdfs:label>
+  </rdf:Description>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
+    <rdfs:label>audio</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/mtl">
+    <rdfs:label xml:lang="en">metal </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pla">
+    <rdfs:label xml:lang="en">plastic </rdfs:label>
+  </bf:BaseMaterial>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mplayback/ste">
+    <rdfs:label xml:lang="en">stereo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrecmedium/opt">
+    <rdfs:label xml:lang="en">optical</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label xml:lang="en">digital</rdfs:label>
+  </rdf:Description>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cnd">
+    <rdfs:label xml:lang="en">Conductor</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/itr">
+    <rdfs:label xml:lang="en">Instrumentalist</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/lbt">
+    <rdfs:label xml:lang="en">Librettist</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
+    <rdfs:label xml:lang="en">Singer</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e192267121393928706244289189146309985176">
+    <rdf:value>e192267121393928706244289189146309985176</rdf:value>
+  </bf:Local>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Puccini, Giacomo, 1858-1924</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Operas</rdfs:label>
+  </bf:GenreForm>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Giacosa, Giuseppe, 1847-1906</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Illica, Luigi, 1857-1919</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Price, Leontyne</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Di Stefano, Giuseppe, 1921-2008</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">De Palma, Piero</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Taddei, Giuseppe</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Cava, Carlo</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Corena, Fernando</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Karajan, Herbert von</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Konzertvereinigung Wiener Staatsopernchor</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Wiener Philharmoniker</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Operas</rdfs:label>
+  </bf:Topic>
+</rdf:RDF>

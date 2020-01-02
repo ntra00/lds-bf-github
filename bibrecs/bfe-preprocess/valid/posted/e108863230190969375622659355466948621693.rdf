@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e183013158618712835545558706397781462840">
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b7">
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b14">
+            <bflc:metadataAssigner>twon</bflc:metadataAssigner>
+            <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e108863230190969375622659355466948621693"/>
+            <rdfs:label>eng</rdfs:label>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:creationDate>2018-6-8</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:dimensions>23 x 17 cm</bf:dimensions>
+        <bf:note>
+          <bf:Note rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b13">
+            <rdfs:label>"Base 12873 5-54"</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b16">
+            <bf:note>
+              <bf:Note rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b19">
+                <rdfs:label>LC copy: Mounted on linen and stamped "417"</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:classificationLcc>Copy 1</bf:classificationLcc>
+            <bf:sublocation>Geography and Map Division</bf:sublocation>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b18">
+                <rdf:value>G7910 1954 .U5 </rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:classification>
+          <bf:Classification rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b10">
+            <rdfs:label>7910</rdfs:label>
+          </bf:Classification>
+        </bf:classification>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b15">
+            <rdfs:label>1 map</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b17">
+            <bf:place>
+              <bf:Place rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b21">
+                <rdfs:label>[Washington] </rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:agent>
+              <bf:Agent rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b20">
+                <rdfs:label>[Central Intelligence Agency]</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[1954]</bf:date>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:title>
+          <bf:Title rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b11">
+            <bf:mainTitle>Taiwan</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b12">
+            <rdf:value>2018586340</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b6">
+        <bf:coordinates>E 122°/N 22°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b5">
+        <bf:coordinates>E 120°/N 22°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b2">
+        <bf:coordinates>E 122°/N 22°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b3">
+        <bf:coordinates>E 122°/N 25°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:classification>
+      <bf:ClassificationLcc rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b1">
+        <bf:classificationPortion>G7910</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:title>
+      <bf:Title rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b9">
+        <bf:mainTitle>Taiwan</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b4">
+        <bf:coordinates>E 120°/N 25°</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:scale>
+      <bf:Scale rdf:nodeID="f2f8d56f318424c2fb3856e84d9e74239b8">
+        <rdfs:label>Scale approximately 1:1,750,000</rdfs:label>
+      </bf:Scale>
+    </bf:scale>
+  </bf:Work>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e108863230190969375622659355466948621693">
+    <rdf:value>e108863230190969375622659355466948621693</rdf:value>
+  </bf:Local>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+</rdf:RDF>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026872"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n85139572"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nr91042543"/>
+  <pmo:InstrumentEnsemble rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015146">
+    <rdfs:label xml:lang="en">mixed chorus</rdfs:label>
+  </pmo:InstrumentEnsemble>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85024806"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh89004159"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e85204778479046004882892881397587024532">
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>M2100.2</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr91042543"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n85139572"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/wst"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026872"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>ikir</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bflc:profile>profile:bf2:NotatedMusic:Instance2</bflc:profile>
+            <bf:changeDate>2018-09-18T18:25:01</bf:changeDate>
+            <bf:creationDate>2018-9-18</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e191428640107786947695527057676034200250"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <rdfs:label>eng</rdfs:label>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:copyrightDate>2001</bf:copyrightDate>
+        <bf:dimensions>28 cm</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 score (14 pages)</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfmarkLcc>
+                <rdf:value>M2100.2.K Copy 1</rdf:value>
+              </bf:ShelfmarkLcc>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>00479701878</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:hasSeries>
+          <bf:Instance>
+            <bf:seriesStatement>Monuments of Russian sacred music</bf:seriesStatement>
+            <bf:seriesStatement>Памятники русской духовной музыки</bf:seriesStatement>
+          </bf:Instance>
+        </bf:hasSeries>
+        <bf:identifiedBy>
+          <bf:MusicPublisherNumber>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Musica Russica</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>MRSM Ka 023</rdf:value>
+          </bf:MusicPublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2017566085</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>For mixed chorus SATB with piano part for rehearsal only.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Cover title</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>"The present edition is based on the first Russian edition, published by P. Jurgenson of Moscow in September of 1918, plate no. 38798"--Preface</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Editor's notes by V. Morosan in English</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Church Slavic words from the Canticle of the Most Holy Theotokos (St. Luke I: 46-55) (Cyrillic and romanized) also printed as text with English translation</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Stuff notation</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Musica Russica</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[approximately 2016]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>[San Diego, Calif.]</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>Victor Kalinnikov</bf:responsibilityStatement>
+        <bf:responsibilityStatement>Виктор Калинников</bf:responsibilityStatement>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Величит душа моя Господа</bf:mainTitle>
+            <bf:partNumber>но. 23 из Духовно-музыкальных сочинений</bf:partNumber>
+          </bf:Title>
+        </bf:title>
+        <bf:title>
+          <bf:VariantTitle>
+            <bf:mainTitle>Ṽel̃íchit dushá moyá Ghóspoda</bf:mainTitle>
+          </bf:VariantTitle>
+        </bf:title>
+        <bf:title>
+          <bf:ParallelTitle>
+            <bf:mainTitle>My soul magnifies the Lord</bf:mainTitle>
+            <bf:subtitle>sacred opus 23</bf:subtitle>
+          </bf:ParallelTitle>
+        </bf:title>
+        <bf:title>
+          <bflc:TransliteratedTitle>
+            <bf:mainTitle>Velichit dusha moi︠a︡ Gospoda</bf:mainTitle>
+          </bflc:TransliteratedTitle>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:musicFormat rdf:resource="http://id.loc.gov/vocabulary/mmusicformat/score"/>
+    <bf:musicMedium>
+      <bf:MusicMedium>
+        <rdfs:label>For mixed chorus SATB</rdfs:label>
+      </bf:MusicMedium>
+    </bf:musicMedium>
+    <bf:musicOpusNumber>op. 23</bf:musicOpusNumber>
+    <bf:notation>
+      <bf:MusicNotation>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mmusnotation/staff"/>
+      </bf:MusicNotation>
+    </bf:notation>
+    <bf:notation>Cyrillic and Romanized</bf:notation>
+    <bf:originDate>1918</bf:originDate>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85024806"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh89004159"/>
+    <bf:subject>
+      <bf:Topic>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <madsrdf:authoritativeLabel>Russkai︠a︡ pravoslavnai︠a︡ t︠s︡erkovʹ --Hymns</madsrdf:authoritativeLabel>
+      </bf:Topic>
+    </bf:subject>
+    <bf:title>
+      <bflc:TransliteratedTitle>
+        <bf:mainTitle>Velichit dusha moi︠a︡ Gospoda</bf:mainTitle>
+      </bflc:TransliteratedTitle>
+    </bf:title>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Величит душа моя Господа</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:mainTitle>Ṽel̃íchit dushá moyá Ghóspoda</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:mainTitle>My soul magnifies the Lord</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <pmo:hasMedium>
+      <pmo:DeclaredMedium>
+        <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+        <pmo:hasEnsembleCount>1</pmo:hasEnsembleCount>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:EnsembleMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015146"/>
+                <pmo:hasEnsembleCount>1</pmo:hasEnsembleCount>
+              </pmo:EnsembleMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+        <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+      </pmo:DeclaredMedium>
+    </pmo:hasMedium>
+    <rdfs:label>Kalinnikov, Viktor, 1870-1927. Velichit dusha moi︠a︡ Gospoda</rdfs:label>
+  </bf:Work>
+  <bf:MusicFormat rdf:about="http://id.loc.gov/vocabulary/mmusicformat/score">
+    <rdfs:label xml:lang="en">score</rdfs:label>
+  </bf:MusicFormat>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:Notation rdf:about="http://id.loc.gov/vocabulary/mmusnotation/staff">
+    <rdfs:label xml:lang="en">staff notation</rdfs:label>
+  </bf:Notation>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edt">
+    <rdfs:label xml:lang="en">Editor</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/wst">
+    <rdfs:label xml:lang="en">Writer of supplementary textual content</rdfs:label>
+  </bf:Role>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label>LCSH</rdfs:label>
+  </bf:Source>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e191428640107786947695527057676034200250">
+    <rdf:value>e191428640107786947695527057676034200250</rdf:value>
+  </bf:Local>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Kalinnikov, Viktor, 1870-1927</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Hymns</rdfs:label>
+  </bf:GenreForm>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Morosan, Vladimir</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Choruses, Sacred (Mixed voices), Unaccompanied</rdfs:label>
+  </bf:Topic>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Hymns, Church Slavic</rdfs:label>
+  </bf:Topic>
+</rdf:RDF>

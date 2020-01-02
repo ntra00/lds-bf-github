@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014027103"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n81059831"/>
+  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n92057129"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n98100123"/>
+  <pmo:InstrumentEnsemble rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015516">
+    <rdf:type rdf:resource="http://performedmusicontology.org/ontology/IndividualInstrument"/>
+    <rdfs:label xml:lang="en">orchestra</rdfs:label>
+  </pmo:InstrumentEnsemble>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015550">
+    <rdfs:label xml:lang="en">piano</rdfs:label>
+  </pmo:IndividualInstrument>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015646">
+    <rdfs:label xml:lang="en">singer</rdfs:label>
+  </pmo:IndividualInstrument>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2010114145"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85088865"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e78062164654043800792683127148602915717">
+    <bflc:alternateMediumOfPerformance>
+      <pmo:DeclaredMedium>
+        <pmo:hasDistinctPartCount>2</pmo:hasDistinctPartCount>
+        <pmo:hasEnsembleCount>1</pmo:hasEnsembleCount>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:IndividualMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015646"/>
+                <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+                <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+              </pmo:IndividualMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:EnsembleMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015516"/>
+                <pmo:hasEnsembleCount>1</pmo:hasEnsembleCount>
+              </pmo:EnsembleMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+        <pmo:hasRequiredPerformerCount>2</pmo:hasRequiredPerformerCount>
+      </pmo:DeclaredMedium>
+    </bflc:alternateMediumOfPerformance>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>M1801.2</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/ntm"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n81059831"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n98100123"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014027103"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>ikir</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bflc:profile>profile:bf2:NotatedMusic:Instance2</bflc:profile>
+            <bf:changeDate>2018-09-28T19:36:55</bf:changeDate>
+            <bf:creationDate>2018-9-28</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier>DLC</bf:descriptionModifier>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e101971098708730883496491961810235272910"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:dimensions>31 cm</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 score (4 pages)</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfmarkLcc>
+                <rdf:value>M1801.2.K Copy 1</rdf:value>
+              </bf:ShelfmarkLcc>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>00336904596</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2017566300</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Song dedicated to French Armenian singer Rosy Armen; presented to her in 1965 during her tour in Soviet Union by A. Khachaturian; originally for voice and orchestra; version for voice and piano</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Cover title</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Armenian words by Ashot Grashi.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Stuff notation</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>From the collection formerly owned by Florence Mardirosian; gift to the Library of Congress by Haig Mardirosian</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Maison de musique "Lumiére"</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[1965]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>Beyrouth</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>Aram Khachʻaturean</bf:responsibilityStatement>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Erewan</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:musicFormat rdf:resource="http://id.loc.gov/vocabulary/mmusicformat/score"/>
+    <bf:musicMedium>
+      <bf:MusicMedium>
+        <rdfs:label>For voice and orchestra; arranged for voice and piano.</rdfs:label>
+      </bf:MusicMedium>
+    </bf:musicMedium>
+    <bf:notation>
+      <bf:MusicNotation>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mmusnotation/staff"/>
+      </bf:MusicNotation>
+    </bf:notation>
+    <bf:originDate>1950</bf:originDate>
+    <bf:originPlace>
+      <bf:Place>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n92057129"/>
+        <rdfs:label xml:lang="en">Armenia (Republic)</rdfs:label>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2010114145"/>
+    <bf:subject>
+      <bf:Topic>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n92057129"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85088865"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:mainTitle>Erewan</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Garun Yerevan</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <pmo:hasMedium>
+      <pmo:DeclaredMedium>
+        <pmo:hasDistinctPartCount>2</pmo:hasDistinctPartCount>
+        <pmo:hasEnsembleCount>1</pmo:hasEnsembleCount>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:IndividualMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015646"/>
+                <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+                <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+              </pmo:IndividualMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+            <pmo:hasMediumOfPerformance>
+              <pmo:IndividualMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015550"/>
+                <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+                <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+              </pmo:IndividualMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+        <pmo:hasRequiredPerformerCount>2</pmo:hasRequiredPerformerCount>
+      </pmo:DeclaredMedium>
+    </pmo:hasMedium>
+    <rdfs:label>Khachaturi︠a︡n, Aram, 1903-1978. Garun Yerevan</rdfs:label>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/ntm">
+    <rdfs:label>Notated music</rdfs:label>
+  </bf:Content>
+  <bf:MusicFormat rdf:about="http://id.loc.gov/vocabulary/mmusicformat/score">
+    <rdfs:label xml:lang="en">score</rdfs:label>
+  </bf:MusicFormat>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:Notation rdf:about="http://id.loc.gov/vocabulary/mmusnotation/staff">
+    <rdfs:label xml:lang="en">staff notation</rdfs:label>
+  </bf:Notation>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e101971098708730883496491961810235272910">
+    <rdf:value>e101971098708730883496491961810235272910</rdf:value>
+  </bf:Local>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Khachaturi͡an, Aram, 1903-1978</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Songs</rdfs:label>
+  </bf:GenreForm>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Grashi, Ashot, 1910-1973</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Songs, Armenian--Armenia (Republic)</rdfs:label>
+  </bf:Topic>
+  <madsrdf:Topic>
+    <rdfs:label xml:lang="en">Popular music</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Geographic>
+    <rdfs:label xml:lang="en">Armenia (Republic)</rdfs:label>
+  </madsrdf:Geographic>
+</rdf:RDF>

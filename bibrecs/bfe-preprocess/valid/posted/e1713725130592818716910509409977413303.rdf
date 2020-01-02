@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026739">
+    <rdfs:label xml:lang="en">Country music</rdfs:label>
+  </bf:GenreForm>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026950">
+    <rdfs:label xml:lang="en">Motion picture music</rdfs:label>
+  </bf:GenreForm>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014027054">
+    <rdfs:label xml:lang="en">Rock music</rdfs:label>
+  </bf:GenreForm>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n79018367">
+    <rdfs:label xml:lang="en">Cash, Johnny</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n83017057">
+    <rdfs:label xml:lang="en">Springsteen, Bruce</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n84095418">
+    <rdfs:label xml:lang="en">Smith, Patti</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n90611983">
+    <rdfs:label xml:lang="en">Waits, Tom, 1949-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n91079284">
+    <rdfs:label xml:lang="en">Vega, Suzanne</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n91111190">
+    <rdfs:label xml:lang="en">Carpenter, Mary Chapin, 1958-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n91126993">
+    <rdfs:label xml:lang="en">Earle, Steve</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n92003176">
+    <rdfs:label xml:lang="en">Lovett, Lyle</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n92004345">
+    <rdfs:label xml:lang="en">Shocked, Michelle</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no00043843">
+    <rdfs:label xml:lang="en">Vedder, Eddie</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nr92022715">
+    <rdfs:label xml:lang="en">Khan, Nusrat Fateh Ali</rdfs:label>
+  </madsrdf:PersonalName>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015354">
+    <rdfs:label xml:lang="en">instrument</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015646">
+    <rdfs:label xml:lang="en">singer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015812">
+    <rdfs:label xml:lang="en">instrumental ensemble</rdfs:label>
+  </rdf:Description>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85033470">
+    <rdfs:label xml:lang="en">Country music</rdfs:label>
+  </bf:Topic>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85088056">
+    <rdfs:label xml:lang="en">Motion picture music</rdfs:label>
+  </bf:Topic>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85114675">
+    <rdfs:label xml:lang="en">Rock music</rdfs:label>
+  </bf:Topic>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e218416379832125443559364694094940950401">
+    <bflc:relationship>
+      <bflc:Relationship>
+        <bf:relatedTo rdf:resource="http://id.loc.gov/resources/works/n96099613"/>
+      </bflc:Relationship>
+    </bflc:relationship>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n79018367"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prf"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n91126993"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prf"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n84095418"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prf"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n83017057"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prf"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n91079284"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prf"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n92003176"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prf"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr92022715"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prf"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no00043843"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prf"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n90611983"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prf"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n92004345"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prf"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n91111190"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prf"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:ensemble>
+      <bf:MusicEnsemble>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015812"/>
+        <bf:count>1</bf:count>
+      </bf:MusicEnsemble>
+    </bf:ensemble>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026739"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026950"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014027054"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bflc:profile>profile:bf2:SoundRecording:Instance2</bflc:profile>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:creationDate>2018-7-9</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e1713725130592818716910509409977413303"/>
+            <rdfs:label>eng</rdfs:label>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+        <bf:copyrightDate>c1995</bf:copyrightDate>
+        <bf:credits>
+          <bf:Credits>
+            <rdfs:label>Various performers</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:digitalCharacteristic>
+          <bf:FileType>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mfiletype/audio"/>
+          </bf:FileType>
+        </bf:digitalCharacteristic>
+        <bf:dimensions>4 3/4 in.</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 audio disc</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMark>
+                <rdf:value>SDD 01498</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>0033472086A</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:Upc>
+            <rdf:value>074646752227</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <rdf:value>CK 67522</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2018623392</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Sony Music</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[1995]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>New York, NY</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:soundCharacteristic>
+          <bf:RecordingMethod>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+          </bf:RecordingMethod>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:RecordingMedium>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrecmedium/opt"/>
+          </bf:RecordingMedium>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlayingSpeed>
+            <rdfs:label>1.4 m/s</rdfs:label>
+          </bf:PlayingSpeed>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlaybackChannels>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mplayback/ste"/>
+          </bf:PlaybackChannels>
+        </bf:soundCharacteristic>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Dead man walking</bf:mainTitle>
+            <bf:subtitle>music from and inspired by the motion picture</bf:subtitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:instrument>
+      <bf:MusicInstrument>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015354"/>
+      </bf:MusicInstrument>
+    </bf:instrument>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Language>
+    </bf:language>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85033470"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85088056"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85114675"/>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Program notes inserted in container</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>Dead man walkin' (Bruce Springsteen) (2:43) -- In your mind (Johnny Cash) (4:14) -- Woman on the tier (I'll see you through) (Suzanne Vega)(2:25) -- Promises (Lyle Lovett) (3:03) -- The face of love (Nusrat Fateh Ali Khan with Eddie Vedder) (5:39) -- The fall of Troy (Tom Waits) (2:59) -- Quality of mercy (Michelle Shocked) (3:38) -- Dead man walking (a dream like this) (Mary Chapin Carpenter) (3:34) -- Walk away (Tom Waits) (2:43) -- Ellis unit one (Steve Earle) (4:39) -- Walkin blind (Patti Smith) (4:39) -- The long road (Eddie Vedder with Nusrat Fateh Ali Khan) (5:31)</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Dead man walking</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:mainTitle>Music from and inspired by the motion picture Dead man walking</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:voice>
+      <bf:MusicVoice>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015646"/>
+        <bf:count>1</bf:count>
+      </bf:MusicVoice>
+    </bf:voice>
+    <rdfs:label>Dead man walking</rdfs:label>
+  </bf:Work>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/n96099613">
+    <rdfs:label xml:lang="en">Dead man walking (Motion picture) (n96099613)</rdfs:label>
+  </bf:Work>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+    <rdfs:label>audio disc</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </rdf:Description>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
+    <rdfs:label>audio</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mfiletype/audio">
+    <rdfs:label xml:lang="en">audio file</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mplayback/ste">
+    <rdfs:label xml:lang="en">stereo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrecmedium/opt">
+    <rdfs:label xml:lang="en">optical</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label xml:lang="en">digital</rdfs:label>
+  </rdf:Description>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
+    <rdfs:label xml:lang="en">Performer</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e1713725130592818716910509409977413303">
+    <rdf:value>e1713725130592818716910509409977413303</rdf:value>
+  </bf:Local>
+</rdf:RDF>

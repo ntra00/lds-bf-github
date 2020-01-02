@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <madsrdf:CorporateName rdf:nodeID="bnode7SSnUjy2hiiX6fTqgJ5aKW">
+    <rdfs:label xml:lang="en">Carsey-Werner Productions</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:Geographic rdf:nodeID="bnodee7y5f6rnCguVQ4yc7voEuK">
+    <rdfs:label xml:lang="en">Illinois</rdfs:label>
+  </madsrdf:Geographic>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e221261469268490981854723749284666097439">
+    <bf:duration>approximately 566 min.</bf:duration>
+    <rdfs:label>Roseanne (Television program). Season 8</rdfs:label>
+    <bf:geographicCoverage>
+      <bf:GeographicCoverage rdf:about="http://id.loc.gov/authorities/names/n79053746">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Geographic"/>
+      </bf:GeographicCoverage>
+    </bf:geographicCoverage>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodeqdNN7TULdeZk5YHVsFE9Ey">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2001053689"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+        <rdfs:label xml:lang="en">English</rdfs:label>
+        <rdfs:label>eng</rdfs:label>
+      </bf:Language>
+    </bf:language>
+    <bf:colorContent>
+      <bf:ColorContent rdf:nodeID="bnodex7ckHjYnSdAJV31PS6wXky">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode4LpshSUWMe1jZZSiLsnYoT">
+            <rdfs:label>color</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:ColorContent>
+    </bf:colorContent>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnode2Hv6hzaGsx1aRAxXqkWtWn">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85087517"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79053746"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodegHWPEfkjwQxpjejzno7Sgu">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n94017747"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:tableOfContents>
+      <bf:TableOfContents rdf:nodeID="bnodenEoXjwovpZHpLb2a1gY8hV">
+        <rdfs:label>Shower the people you love with stuff -- Let them eat junk -- Roseanne in the hood -- The last date -- Halloween: the final chapter -- The fifties show -- The getaway (almost) -- The last Thursday in November -- Of mice and Dan -- Direct to video -- December bride -- The thrilla near the vanilla extract -- The white sheep of the family -- Becky Howser, M.D. -- Out of the past -- Construction junction -- We're going to Disney World, part 1 -- Disney World War II, part 2 -- Springtime for David -- Another mouth to shut up -- Morning becomes obnoxious -- Ballroom blitz -- The wedding -- Heart and soul -- Fights and stuff</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodexwcUZgiLn7WmEKySxxRi1W">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no97013060"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodejTqM5S1YjUxfPcQ45KUvDW">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh93004932"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79053746"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026579"/>
+    </bf:genreForm>
+    <bf:historyOfWork>Originally broadcast by ABC as single episodes of a television program in 1995-1996</bf:historyOfWork>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodejwXVvxb4tafLyJrW4GZvT3">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79053746"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85123008"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodexi45ZiwhCC6dzRNkQf916f">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n81036620"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodefkgZqXnx8TE6zCs6p86y1m">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n85041495"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:originPlace>
+      <bf:Place rdf:nodeID="bnodegP63kfJovLqGArVRbN9Ket">
+        <rdfs:label xml:lang="en">United States</rdfs:label>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n78095330"/>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnode3EWKyKuHH1m4DCwGKp1oMB">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no99031303"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodefPb9sviReqTA6jpEXGhk4S">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n88265311"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aus"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026252"/>
+    </bf:genreForm>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodew8gQt6v7wsE7f4SUvNYWC5">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh89005779"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79053746"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:originDate>1995-1996 </bf:originDate>
+    <bf:relatedTo>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/n93116588">
+        <rdfs:label xml:lang="en">Roseanne (Television program)</rdfs:label>
+      </bf:Work>
+    </bf:relatedTo>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodepBH2xHuSVKR1wMrSnKr4q7">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85047009"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79053746"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:soundContent>
+      <bf:SoundContent rdf:about="http://id.loc.gov/vocabulary/msoundcontent/sound">
+        <rdfs:label xml:lang="en">sound</rdfs:label>
+      </bf:SoundContent>
+    </bf:soundContent>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodeg5T9mKJJAQH7Hdk9hC3T3t">
+        <bf:mainTitle>Roseanne. Season 8</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:historyOfWork>Based on a character created by Roseanne</bf:historyOfWork>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodeiL2Wy6Us4ru7b5PoqEP5At">
+        <bf:soundCharacteristic>
+          <bf:SoundCharacteristic rdf:nodeID="bnodeqTjWQUstsSoB2EqZzoQBGt">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodedmgRSWRftdG4eWo2VBv5uG">
+                <rdfs:label>optical</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:SoundCharacteristic>
+        </bf:soundCharacteristic>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="bnodejcpRaYXMCnxtHr6FktgdcR">
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodewHf562g8wY4QYPM2WuHYnB">
+                <rdfs:label>OCLC</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>(OCoLC)828035076</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:title>
+          <bf:VariantTitle rdf:nodeID="bnode68Y2VmwsALMn7sDum5uzpB">
+            <bf:mainTitle>Roseanne. Season 8</bf:mainTitle>
+          </bf:VariantTitle>
+        </bf:title>
+        <bf:responsibilityStatement>Full Moon &amp; High Tide Productions, Inc. in association with the Carsey-Werner Company</bf:responsibilityStatement>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodejiJjqGydtQSKvKfCXFoXNL">
+            <rdfs:label>3 videodiscs</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnodeoxkbxaWVzc2xm9FRNUnHvV">
+            <rdf:value>2018600554</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:contribution>
+          <bf:Contribution rdf:nodeID="bnodecMH3Cra9osNJvJTsgphpd4">
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2006115173"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fds"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodesmXAi5A1ofjyJR9ZhBFBV1">
+            <bf:partNumber>The complete eighth season</bf:partNumber>
+            <bf:mainTitle>Roseanne</bf:mainTitle>
+            <bf:note>
+              <bf:Note rdf:nodeID="bnode7uH5jYzWT4QLojgXD9vbL5">
+                <rdfs:label>Title from container</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Title>
+        </bf:title>
+        <bf:identifiedBy>
+          <bf:PublisherNumber rdf:nodeID="bnode6VdoaxdpA31D4fep5Ug7YB">
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodepoYryCdgKdRvNUWUWvkBHy">
+                <rdfs:label>Mill Creek Entertainment</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>MV52985</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:credits>
+          <bf:Credits rdf:nodeID="bnode2fegi2G94skkX78gceoNV">
+            <rdfs:label>Music, W.G. Snuffy Walden ; cinematography, Daniel Flannery ; editor, Joe Bella ; director, Gail Mancuso, Mark K. Samuels, Roseanne Barr ; series writers, Roseanne Barr, Matt Williams, Eric Gilliland, Sid Youngers, Allan Stephan, Cynthia Mort, David Raether, William Lucas Walker</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:source>
+          <bf:Source rdf:nodeID="bnode8FAxig3r2swh9U8ecdiGzk">
+            <rdfs:label>Videodisc container; Amazon WWW site, viewed February 20, 2018; Wikipedia WWW site, viewed February 20, 2018</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:digitalCharacteristic rdf:resource="http://id.loc.gov/vocabulary/mregencoding/region1"/>
+        <bf:soundCharacteristic rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+        <bf:tableOfContents>
+          <bf:TableOfContents rdf:nodeID="bnodeimDNDemCvKihLWEZGAT2KB">
+            <rdfs:label>Disc 1. Shower the people you love with stuff -- Let them eat junk -- Roseanne in the hood -- The last date -- Halloween: the final chapter -- The fifties show -- The getaway (almost) -- The last Thursday in November -- Of mice and Dan  Disc 2. Direct to video -- December bride -- The thrilla near the vanilla extract -- The white sheep of the family -- Becky Howser, M.D. -- Out of the past -- Construction junction -- We're going to Disney World, part 1 -- Disney World War II, part 2  Disc 3. Springtime for David -- Another mouth to shut up -- Morning becomes obnoxious -- Ballroom blitz -- The wedding -- Heart and soul -- Fights and stuff</rdfs:label>
+          </bf:TableOfContents>
+        </bf:tableOfContents>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodenLzqeGwAUqkpTCr51Aev9x">
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/7"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:changeDate>2018-02-20T18:51:57</bf:changeDate>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bflc:metadataAssigner>jjud</bflc:metadataAssigner>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e173139605815212558739654646863085039652"/>
+            <bflc:profile>profile:bf2:MIBluRayDVD:Instance</bflc:profile>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:creationDate>2018-2-20</bf:creationDate>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:credits>
+          <bf:Credits rdf:nodeID="bnodef8Pq6sLVj7g9bqZeutKq5Q">
+            <rdfs:label>Cast" Roseanne, John Goodman, Laurie Metcalf, Sara Gilbert, Lecy Goranson, Michael Fishman, Johnny Galecki, Estelle Parsons, Martin Mull, Sarah Chalke</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:contentAccessibility>
+          <bf:Note rdf:nodeID="bnodemyivhZhArtCtgQwiH7RNnD">
+            <rdfs:label>Closed-captioned</rdfs:label>
+          </bf:Note>
+        </bf:contentAccessibility>
+        <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026725"/>
+        <bf:identifiedBy>
+          <bf:Upc rdf:nodeID="bnode5KWeYpkaX1y35JMeNCFT3W">
+            <rdf:value>683904111579</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/vd"/>
+        <bf:digitalCharacteristic rdf:resource="http://id.loc.gov/vocabulary/mfiletype/video"/>
+        <bf:duration>approximately 566 min.</bf:duration>
+        <bf:dimensions>
+          <bf:Dimensions rdf:nodeID="bnodebgy97ARdN5cGrV4WkSixty">
+            <rdfs:label>4 3/4 in.</rdfs:label>
+          </bf:Dimensions>
+        </bf:dimensions>
+        <bf:videoCharacteristic rdf:resource="http://id.loc.gov/vocabulary/mbroadstd/ntsc"/>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodef2gYWR5UmLVF4LgxA3FQaT">
+            <rdfs:label>Special features: Interview with Roseanne; 3 optional video commentaries by Roseanne and Michael Fishman</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:provisionActivity>
+          <bf:Distribution rdf:nodeID="bnodetrXES5yWPnNmAwwznqL27S">
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodekDnt5ismYNGZHVkv1dPFk8">
+                <rdfs:label>[Minneapolis, MN]</rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnodedEu81j3uerfSgya8MDCkYx">
+                <rdfs:label>Mill Creek Entertainment</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2013]</bf:date>
+          </bf:Distribution>
+        </bf:provisionActivity>
+        <bf:copyrightDate>©2013</bf:copyrightDate>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="bnodeh9vWdi8o5YjwYG38somjJf">
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodexrF42EfYJ2vGryXZ3fWRex">
+                <rdfs:label>OCLC</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>(OCoLC)884728922</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:digitalCharacteristic>
+          <bf:DigitalCharacteristic rdf:nodeID="bnodenaGf1qz5jeqLCuKts2rcJz">
+            <rdfs:label>DVD video</rdfs:label>
+          </bf:DigitalCharacteristic>
+        </bf:digitalCharacteristic>
+        <bf:identifiedBy>
+          <bf:Upc rdf:nodeID="bnodekpBKxsLrKZLX4T8hsp7nFZ">
+            <rdf:value>683904529855</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/v"/>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnodeePGCp68cGNg15Kvy1iPzU7">
+            <bf:sublocation>c-Motion Pic &amp; TV/MBRS</bf:sublocation>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition rdf:nodeID="bnodesWr4Jjz7Qu8KTANyHNpQtW">
+                <rdfs:label>Purchase</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnodeiA6DB4ZJ3SnL9xg9W6jL9s">
+                <rdf:value>DVE 2203</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:enumerationAndChronology>
+              <bf:Enumeration rdf:nodeID="bnode9g9K23xHcyavDcbLRXvypx">
+                <rdfs:label>d1-3 in 1 container</rdfs:label>
+              </bf:Enumeration>
+            </bf:enumerationAndChronology>
+            <bf:identifiedBy>
+              <bf:ShelfMark rdf:nodeID="bnodejgKXuDx2gD12KeqSMHxrSS">
+                <rdf:value>1</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnodegGAswjMCK97BoJax8K1wSB">
+                <rdf:value>00302369070</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:usageAndAccessPolicy>
+              <bf:AccessPolicy rdf:nodeID="bnodeqh7m5CTEtAugzrnrkz9JjT">
+                <rdfs:label>Viewing copy</rdfs:label>
+              </bf:AccessPolicy>
+            </bf:usageAndAccessPolicy>
+            <bf:collection>LC Purchase Collection (Library of Congress)</bf:collection>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition rdf:nodeID="bnode8ns6yv5grutS9iRV9xcMmF">
+                <rdfs:label>LC Purchase Collection</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:Item>
+        </bf:hasItem>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:intendedAudience>
+      <bf:IntendedAudience rdf:nodeID="bnodevs8uBga6B8vTPDeX5eU6Zi">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode2FjEPxbuzcycT3fo3n27cp">
+            <rdfs:label>Rating: TVPG</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:IntendedAudience>
+    </bf:intendedAudience>
+    <bf:source>Videodisc container; Amazon WWW site, viewed February 20, 2018; Wikipedia WWW site, viewed February 20, 2018</bf:source>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnode9mTMdGQnFjUjd5mTP3zGLr">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2010029471"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnode8JkQCEggmkyGWU8PYQv1Mp">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2013052405"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cre"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodei2Y8c1ib3WEV79HvTd7sxW">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85081522"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79053746"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodedm3XNtmpzdUgN6rQ6d7bWF">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2003061308"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:summary>
+      <bf:Summary rdf:nodeID="bnode6dSvPVfkyrtMSh8mWzUKyq">
+        <rdfs:label>The original desperate housewife is at it again in Season 8 of Roseanne! It was a year that started with Roseanne's baby shower, DJ's Thanksgiving pageant, Jackie's internet addiction, two different Beckys and the arrival of Jerry Garcia Conner. It was the season of Darlene's wedding, Dan's heart attack, award winning loose-meat sandwiches, Ouija board horrors and supermarket samples. The 50s sitcom tribute and the Conner family trip to Disney World top off this unforgettable 8th season</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodetkYdHHN3CX2LuMtfW41CCC">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2005055795"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodedMuyPpdr5hXuatn5yifi3k">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no96057272"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026673"/>
+    </bf:genreForm>
+  </bf:Work>
+  <madsrdf:PersonalName rdf:nodeID="bnodenWcavhaekBkfpLBtzCKdy">
+    <rdfs:label xml:lang="en">Goodman, John, 1952-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnodeowSt4ZWZZAxhfGr1MS5VXC">
+    <rdfs:label xml:lang="en">Situation comedies (Television programs)</rdfs:label>
+  </madsrdf:GenreForm>
+  <bf:GeographicCoverage rdf:nodeID="bnodej4FeSwLSnRyPaK5y7xamCN">
+    <rdfs:label xml:lang="en">Illinois</rdfs:label>
+  </bf:GeographicCoverage>
+  <madsrdf:Topic rdf:nodeID="bnodefwZrGSi9X5gJbjfs3yiK7P">
+    <rdfs:label xml:lang="en">Working class families</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Geographic rdf:nodeID="bnode6gPqGmyfGpTtENDtK5NUR8">
+    <rdfs:label xml:lang="en">Illinois</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:Topic rdf:nodeID="bnodenJRmYBW1aRbB46veojUaiW">
+    <rdfs:label xml:lang="en">Mother and child</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Geographic rdf:nodeID="bnode4dtLHFSZQsHcdDb62oBwhE">
+    <rdfs:label xml:lang="en">Illinois</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:PersonalName rdf:nodeID="bnodeoZ8yprybTXfe2u8ujjb6x7">
+    <rdfs:label xml:lang="en">Metcalf, Laurie, 1955-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodeoNupJmA8JdmWy96vZaXYN3">
+    <rdfs:label xml:lang="en">Gilbert, Sara, 1975-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnodebyWE8bUr9TJqgaCAN5FS8Z">
+    <rdfs:label xml:lang="en">Fiction television programs</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:GenreForm rdf:nodeID="bnodeboGvCtyAUc7DGSd5A5Hb2J">
+    <rdfs:label xml:lang="en">Video recordings for the hearing impaired</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName rdf:nodeID="bnode4csB6y7ca3inLp2eQXYTWW">
+    <rdfs:label xml:lang="en">Roseanne, 1952-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnode2yKeAaiP3ygdeajZb2hcv6">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Geographic rdf:nodeID="bnodecxXoKZAFdS1eYKDAdLBeJi">
+    <rdfs:label xml:lang="en">Illinois</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:PersonalName rdf:nodeID="bnode6TDnswtmW5iPywFmCt12Nr">
+    <rdfs:label xml:lang="en">Mull, Martin</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodesgTuM1mKAhGetQNSp38SwH">
+    <rdfs:label xml:lang="en">Chalke, Sarah</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnodedGPN2rRSssAdAYJzSybdm4">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName rdf:nodeID="bnodeeANJ6L9Bs7RFMUFK7CncEB">
+    <rdfs:label xml:lang="en">Parsons, Estelle</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnoderaeBJVj4yprBYLLVinDz2C">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Geographic rdf:nodeID="bnodehWArq3Yf2D2oGr7oUEx8RF">
+    <rdfs:label xml:lang="en">Illinois</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:Topic rdf:nodeID="bnodedYZrJGdfN9sY4B5SZEmNZd">
+    <rdfs:label xml:lang="en">Sisters</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:PersonalName rdf:nodeID="bnodebyxq6Bq8UCAGQMqY44GPTp">
+    <rdfs:label xml:lang="en">Galecki, Johnny</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic rdf:nodeID="bnode2bn51S8GAodHoXyBsyz1aT">
+    <rdfs:label xml:lang="en">Married people</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:GenreForm rdf:nodeID="bnode8FSiLCbUcLqyN8NJv1qmXD">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:GenreForm rdf:nodeID="bnodewdu17wyQ13WDRcVZLpj8E3">
+    <rdfs:label xml:lang="en">Television programs</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Geographic rdf:nodeID="bnode31t93sVe4Jw45f2r46MvKN">
+    <rdfs:label xml:lang="en">Illinois</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:Topic rdf:nodeID="bnodecxpG4MmuHJn6ZX51ojRcRs">
+    <rdfs:label xml:lang="en">Spouses</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:GenreForm rdf:nodeID="bnode8E2L5TeMDHLc3tK7pcexqX">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Topic rdf:nodeID="bnodeb1gyP4oP7Gpzqo5DwCfbkt">
+    <rdfs:label xml:lang="en">Families</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:PersonalName rdf:nodeID="bnodekZrn1J2qoA3RYVgAsc6PFm">
+    <rdfs:label xml:lang="en">Williams, Matt, 1964-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodek4dtQhMvPX6qmvHPkbMBBc">
+    <rdfs:label xml:lang="en">Fishman, Michael, 1981-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnodem5qfgSh5upuFvEmiBwsChj">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName rdf:nodeID="bnodebwJR3Vh5mUHAkahvTHyPAA">
+    <rdfs:label xml:lang="en">Goranson, Alicia, 1974-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:CorporateName rdf:nodeID="bnodesUAq8cHAzR7tvMwtYabWQ2">
+    <rdfs:label xml:lang="en">Mill Creek Entertainment</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2003061308"/>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
+    <rdfs:label xml:lang="en">minimal</rdfs:label>
+  </bflc:EncodingLevel>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85123008"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fds">
+    <rdfs:label xml:lang="en">Film distributor</rdfs:label>
+  </bf:Role>
+  <bf:FileType rdf:about="http://id.loc.gov/vocabulary/mfiletype/video">
+    <rdfs:label xml:lang="en">video file</rdfs:label>
+  </bf:FileType>
+  <bf:SoundCharacteristic rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label xml:lang="en">digital</rdfs:label>
+  </bf:SoundCharacteristic>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2013052405"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aus">
+    <rdfs:label xml:lang="en">Screenwriter</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cre">
+    <rdfs:label xml:lang="en">Creator</rdfs:label>
+  </bf:Role>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85087517"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85047009"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n88265311"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prn">
+    <rdfs:label xml:lang="en">Production company</rdfs:label>
+  </bf:Role>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2005055795"/>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e173139605815212558739654646863085039652">
+    <rdf:value>e173139605815212558739654646863085039652</rdf:value>
+  </bf:Local>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh89005779"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/v">
+    <rdfs:label>video</rdfs:label>
+  </bf:Media>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh93004932"/>
+  <bf:BroadcastStandard rdf:about="http://id.loc.gov/vocabulary/mbroadstd/ntsc">
+    <rdfs:label xml:lang="en">NTSC</rdfs:label>
+  </bf:BroadcastStandard>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+    <rdfs:label xml:lang="en">Actor</rdfs:label>
+  </bf:Role>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n81036620"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh85039316"/>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/vd">
+    <rdfs:label>videodisc</rdfs:label>
+  </bf:Carrier>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no99031303"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no96057272"/>
+  <bf:RegionalEncoding rdf:about="http://id.loc.gov/vocabulary/mregencoding/region1">
+    <rdfs:label xml:lang="en">region 1</rdfs:label>
+  </bf:RegionalEncoding>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85081522"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026725"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no2006115173"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no97013060"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2001053689"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n85041495"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2010029471"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n94017747"/>
+</rdf:RDF>

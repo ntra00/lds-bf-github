@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0064134790001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>jzie</bflc:catalogerId>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+        <bf:changeDate>2014-04-03T08:43:46</bf:changeDate>
+        <bf:creationDate>1982-06-08</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>unknown</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>6413479</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:dimensions>26 cm (4to)</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>4 unnumbered pages, 204 pages, 77 unnumbered pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/c0064134790001"/>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:collection>Pre-1801 Imprint Collection (Library of Congress) </bf:collection>
+        <bf:heldBy>DLC</bf:heldBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>RA989. F4 A4 1693</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:ShelfMark>
+            <rdf:value>Copy 1</rdf:value>
+          </bf:ShelfMark>
+        </bf:identifiedBy>
+        <bf:sublocation>Rare Book/Special Collections Reading Room (Jefferson LJ239)</bf:sublocation>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value> 32029975 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c006413479"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Signatures: ã² A-2B⁴ 2C² [ver]⁴ 2[ver]⁴(-2V4) [par.]² [sec.]² [dagger]⁴ *⁴ **² ²[dagger]² ²[par.]² a⁴ b² ²a⁴ ²b² ²A⁴.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>De l'imprimerie de Denys Thierry, ruë de la Harpe</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>MDCCV [1705]</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>A Paris</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>A Paris, De l'imprimerie de Denys Thierry. 1705.</bf:provisionActivityStatement>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Etat general des unions faites des biens et revenus des maladeries,</bflc:titleSortKey>
+        <bf:mainTitle>Etat general des unions faites des biens et revenus des maladeries leproseries, aumoneries &amp; autres lieux pieux, aux hospitaux des pauvres malades, leproseries, aumôneries &amp; autres lieux pieux, aux hôpitaux des pauvres malades</bf:mainTitle>
+        <bf:subtitle>divisé par dioceses &amp; par ordre alphabetique</bf:subtitle>
+        <bf:subtitle>en execution de l'edit au Roy du mois de mars, &amp; des declarations des quinze du même mois, &amp; vingt-quatre auost 1693</bf:subtitle>
+        <rdfs:label>Etat general des unions faites des biens et revenus des maladeries,</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Etat general des unions faites des biens et revenus des maladeries,</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c006413479">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>u</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+        <bf:changeDate>2014-04-03T08:43:46</bf:changeDate>
+        <bf:creationDate>1982-06-08</bf:creationDate>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>unknown</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>6413479</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>CarP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>RA989.F4</bf:classificationPortion>
+        <bf:itemPortion>A4 1693</bf:itemPortion>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/6413479#Agent110-11"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/6413479#Agent710-17"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:geographicCoverage rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/e-fr"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/6413479#Topic650-15"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/6413479#Topic650-16"/>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Includes index.</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Etat general des unions faites des biens et revenus des maladeries,</bflc:titleSortKey>
+        <bf:mainTitle>Etat general des unions faites des biens et revenus des maladeries leproseries, aumoneries &amp; autres lieux pieux, aux hospitaux des pauvres malades, leproseries, aumôneries &amp; autres lieux pieux, aux hôpitaux des pauvres malades</bf:mainTitle>
+        <rdfs:label>Etat general des unions faites des biens et revenus des maladeries,</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdfs:label>Etat general des unions faites des biens et revenus des maladeries,</rdfs:label>
+  </bf:Work>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Jurisdiction rdf:about="http://id.loc.gov/resources/works/6413479#Agent110-11">
+    <bflc:name10MarcKey>1101 $aFrance.</bflc:name10MarcKey>
+    <bflc:name10MatchKey>France.</bflc:name10MatchKey>
+    <bflc:primaryContributorName10MatchKey>France.</bflc:primaryContributorName10MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>France.</rdfs:label>
+  </bf:Jurisdiction>
+  <bf:Jurisdiction rdf:about="http://id.loc.gov/resources/works/6413479#Agent710-17">
+    <bflc:name10MarcKey>7101 $aFrance.$bSovereign (1643-1715 : Louis XIV)</bflc:name10MarcKey>
+    <bflc:name10MatchKey>France. Sovereign (1643-1715 : Louis XIV)</bflc:name10MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>France. Sovereign (1643-1715 : Louis XIV)</rdfs:label>
+  </bf:Jurisdiction>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/6413479#Topic650-15">
+    <madsrdf:authoritativeLabel>Hospitals--France.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b0_b37"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>Hospitals--France.</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/6413479#Topic650-16">
+    <madsrdf:authoritativeLabel>Charities--France.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b0_b38"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>Charities--France.</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:GeographicCoverage rdf:about="http://id.loc.gov/vocabulary/geographicAreas/e-fr"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/fre"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/fr"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <bf:Agent>
+    <rdfs:label>De l'imprimerie de Denys Thierry.</rdfs:label>
+  </bf:Agent>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Hospitals</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b26"/>
+  </madsrdf:Topic>
+  <madsrdf:Geographic>
+    <madsrdf:authoritativeLabel>France</madsrdf:authoritativeLabel>
+  </madsrdf:Geographic>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Charities</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b29"/>
+  </madsrdf:Topic>
+  <bf:Place>
+    <rdfs:label>A Paris</rdfs:label>
+  </bf:Place>
+  <madsrdf:Geographic>
+    <madsrdf:authoritativeLabel>France</madsrdf:authoritativeLabel>
+  </madsrdf:Geographic>
+</rdf:RDF>

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0198773400001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2017-08-09T18:20:09</bf:changeDate>
+        <bf:creationDate>2017-08-09</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>19877340</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>n</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:metadataAssigner>dachang</bflc:metadataAssigner>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:creationDate>2018-7-5</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e106802712723463105055997673796839932225"/>
+        <rdfs:label>eng</rdfs:label>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:dimensions>23 cm</bf:dimensions>
+    <bf:editionStatement>Di 1 ban</bf:editionStatement>
+    <bf:editionStatement>第 1 版</bf:editionStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>2, 2, 363 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>JS7365.S453 X56 2017</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00483818865</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Local>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>on1000135785</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2017362130</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9787214201324</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>1000135785</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>7214201321</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c019877340"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>Physical details</bf:noteType>
+        <rdfs:label>illustrations, maps</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>bibliography</bf:noteType>
+        <rdfs:label>Includes bibliographical references.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:date>2017</bf:date>
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/cc"/>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Jiangsu ren min chu ban she</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2017</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Nanjing Shi</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>江苏人民出版社</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2017</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>南京市</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Nanjing Shi : Jiangsu ren min chu ban she, 2017.</bf:provisionActivityStatement>
+    <bf:provisionActivityStatement>南京市 : 江苏人民出版社, 2017.</bf:provisionActivityStatement>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Wo guo te da cheng shi jiao qu ( yu ) xing zheng qu hua ti zhi yan jiu : yi Shanghai wei li = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu.</bflc:titleSortKey>
+        <bf:mainTitle>Wo guo te da cheng shi jiao qu ( yu ) xing zheng qu hua ti zhi yan jiu</bf:mainTitle>
+        <bf:subtitle>yi Shanghai wei li = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu</bf:subtitle>
+        <rdfs:label>Wo guo te da cheng shi jiao qu ( yu ) xing zheng qu hua ti zhi yan jiu : yi Shanghai wei li = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu.</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <bflc:titleSortKey>Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu</bflc:titleSortKey>
+        <bf:mainTitle>Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu</bf:mainTitle>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/ParallelTitle"/>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Title"/>
+        <rdfs:label>Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu</rdfs:label>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>我国特大城市郊区 ( 域 ) 行政区划体制研究 : 以上海为例 = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu.</bflc:titleSortKey>
+        <bf:mainTitle>我国特大城市郊区 ( 域 ) 行政区划体制研究</bf:mainTitle>
+        <bf:subtitle>以上海为例 = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu</bf:subtitle>
+        <rdfs:label>我国特大城市郊区 ( 域 ) 行政区划体制研究 : 以上海为例 = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu.</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Wo guo te da cheng shi jiao qu ( yu ) xing zheng qu hua ti zhi yan jiu : yi Shanghai wei li = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu.</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacarrier</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c019877340">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2017-08-09T18:20:09</bf:changeDate>
+        <bf:creationDate>2017-08-09</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>19877340</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>n</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/19877340#Agent100-16"/>
+        <bf:role>
+          <bf:Role>
+            <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+            <rdfs:label>author.</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/19877340#Agent880-27"/>
+        <bf:role>
+          <bf:Role>
+            <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+            <rdfs:label>author.</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:geographicCoverage rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/a-cc-sm"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/chi"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/19877340#Topic651-26"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/19877340#Topic880-31"/>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Wo guo te da cheng shi jiao qu ( yu ) xing zheng qu hua ti zhi yan jiu : yi Shanghai wei li = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu.</bflc:titleSortKey>
+        <bf:mainTitle>Wo guo te da cheng shi jiao qu ( yu ) xing zheng qu hua ti zhi yan jiu</bf:mainTitle>
+        <bf:subtitle>yi Shanghai wei li = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu</bf:subtitle>
+        <rdfs:label>Wo guo te da cheng shi jiao qu ( yu ) xing zheng qu hua ti zhi yan jiu : yi Shanghai wei li = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu.</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>我国特大城市郊区 ( 域 ) 行政区划体制研究 : 以上海为例 = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu.</bflc:titleSortKey>
+        <bf:mainTitle>我国特大城市郊区 ( 域 ) 行政区划体制研究</bf:mainTitle>
+        <bf:subtitle>以上海为例 = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu</bf:subtitle>
+        <rdfs:label>我国特大城市郊区 ( 域 ) 行政区划体制研究 : 以上海为例 = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu.</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdfs:label>Wo guo te da cheng shi jiao qu ( yu ) xing zheng qu hua ti zhi yan jiu : yi Shanghai wei li = Woguotedachengshijiaoqu (yu) xingzhengquhuatizhiyanjiu.</rdfs:label>
+  </bf:Work>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdamedia</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/19877340#Agent100-16">
+    <bflc:name00MarcKey>1001 $6880-01$aXiong, Jing,$eauthor.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Xiong, Jing,</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Xiong, Jing,</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Xiong, Jing,</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/19877340#Agent880-27">
+    <bflc:name00MarcKey>8801 $6100-01$a熊竞,$eauthor.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>熊竞,</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>熊竞,</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>熊竞,</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/19877340#Topic651-26">
+    <madsrdf:authoritativeLabel>Shanghai (China)--Administrative and political divisions.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b0_b49"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label>Shanghai (China)--Administrative and political divisions.</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/19877340#Topic880-31">
+    <madsrdf:authoritativeLabel>上海 (China)--Administrative and political divisions.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b0_b52"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+    <rdfs:label>上海 (China)--Administrative and political divisions.</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:GeographicCoverage rdf:about="http://id.loc.gov/vocabulary/geographicAreas/a-cc-sm"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/chi"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/cc"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e106802712723463105055997673796839932225">
+    <rdf:value>e106802712723463105055997673796839932225</rdf:value>
+  </bf:Local>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Administrative and political divisions</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Geographic>
+    <madsrdf:authoritativeLabel>上海 (China)</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b39"/>
+  </madsrdf:Geographic>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Administrative and political divisions</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Geographic>
+    <madsrdf:authoritativeLabel>Shanghai (China)</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b54"/>
+  </madsrdf:Geographic>
+</rdf:RDF>

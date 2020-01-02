@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026699"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n2008064000"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh88001706"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh88001708"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e156604897886193971395455449123452157586">
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>G7912.A4</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:colorContent>
+      <bf:Note>
+        <rdfs:label>color</rdfs:label>
+      </bf:Note>
+    </bf:colorContent>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/cri"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2008064000"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctg"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026699"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>twon</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:changeDate>2018-10-18T12:38:55</bf:changeDate>
+            <bf:creationDate>2018-10-17</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e192728705297866615664663585866540888324"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nb"/>
+        <bf:classification>
+          <bf:Classification>
+            <rdfs:label>7912 A4 </rdfs:label>
+          </bf:Classification>
+        </bf:classification>
+        <bf:classification>
+          <bf:Classification>
+            <rdfs:label>7912 A42</rdfs:label>
+          </bf:Classification>
+        </bf:classification>
+        <bf:dimensions>74 x 50 cm, on sheet 50 x 72 cm, folded to 21 x 12 cm</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 map</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc>
+                <rdf:value>G7912.A4E635 2007 .X5</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:shelfmark>
+              <bf:ShelfMark>
+                <rdf:value>Copy 1</rdf:value>
+              </bf:ShelfMark>
+            </bf:shelfmark>
+            <bf:sublocation>Geography and Map Division</bf:sublocation>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2018586639</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Includes tourist information, "Tourist trail directory" map, Alishan Forest Railway table, suggested routes/itinerary, blank areas for commemoration stamp, and color illustrations</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Tourist information and color illustrations on verso</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Chiayi Forest District Office, Forestry Bureau</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2007]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>[Taiwan] </rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:title>
+          <bf:VariantTitle>
+            <bf:mainTitle>Map of Alishan National Forest Recreation Area</bf:mainTitle>
+            <bf:variantType>Title in map area</bf:variantType>
+          </bf:VariantTitle>
+        </bf:title>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Alishan</bf:mainTitle>
+            <bf:subtitle>Alishan (Mount Ali) National Forest Recreation Area</bf:subtitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Language>
+    </bf:language>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/chi"/>
+      </bf:Language>
+    </bf:language>
+    <bf:scale>
+      <bf:Scale>
+        <rdfs:label>Scale not given</rdfs:label>
+      </bf:Scale>
+    </bf:scale>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh88001706"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh88001708"/>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Alishan</bf:mainTitle>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Title from panel</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Title>
+    </bf:title>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/cri">
+    <rdfs:label>cartographic image</rdfs:label>
+  </bf:Content>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
+    <rdfs:label xml:lang="en">sheet</rdfs:label>
+  </bf:Carrier>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/chi">
+    <rdfs:label xml:lang="en">Chinese</rdfs:label>
+  </bf:Language>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctg">
+    <rdfs:label xml:lang="en">Cartographer</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e192728705297866615664663585866540888324">
+    <rdf:value>e192728705297866615664663585866540888324</rdf:value>
+  </bf:Local>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Xing zheng yuan nong ye wei yuan hui (China). Lin wu ju</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Tourist maps</rdfs:label>
+  </bf:GenreForm>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Ali Mountains (Taiwan)</rdfs:label>
+  </bf:Topic>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Ali Mountains Recreational Area (Taiwan)</rdfs:label>
+  </bf:Topic>
+</rdf:RDF>

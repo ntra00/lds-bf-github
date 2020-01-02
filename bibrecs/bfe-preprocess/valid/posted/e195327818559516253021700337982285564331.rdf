@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <madsrdf:CorporateName rdf:nodeID="bnodebvMaSSZQAfSsaLUTXKR7i2">
+    <rdfs:label xml:lang="en">United States. Central Intelligence Agency</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:GenreForm rdf:nodeID="bnodeq7UR6eJfvxXB9KYwW7CXUc">
+    <rdfs:label xml:lang="en">Maps</rdfs:label>
+  </madsrdf:GenreForm>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e166086619028587447347509051709250517590">
+    <bf:colorContent>
+      <bf:Note rdf:nodeID="bnode68odHA28xysZsM9eZ9hCPP">
+        <rdfs:label>color</rdfs:label>
+      </bf:Note>
+    </bf:colorContent>
+    <bf:contribution>
+      <bflc:PrimaryContribution rdf:nodeID="bnodehDHcqeBKN9eky4r3XFM6k2">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n79099301"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctg"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodeqaFKxr9bqERnGV4CLenFYb">
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodemFBdeKPydEgS855k4eNoR">
+            <rdfs:label>1 map</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodet872GVqZofJdMTX8xW4axL">
+            <bf:mainTitle>Hong Kong and Macao</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nb"/>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnode3XzyYz8v5XWqScWGcDtRN7">
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodenbhnA9gkjt8GeKeFD8Xes">
+                <rdfs:label>LC copy: Mounted on linen and stamped "809" </rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:sublocation>Geography and Map Division</bf:sublocation>
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnode62ZXAgh6TLLkejd42r1Y3p">
+                <rdf:value>00386246208</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:classificationLcc>Copy 1</bf:classificationLcc>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnodeqZDMKbnBZpenbUA2JtGGay">
+                <rdf:value>G7823.H45 1967 .U52</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnode69cmoFDbgM2bYswzuLrG4Y">
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+            <bflc:metadataAssigner>twon</bflc:metadataAssigner>
+            <bf:changeDate>2018-05-08T20:40:08</bf:changeDate>
+            <bf:creationDate>2018-5-8</bf:creationDate>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e195327818559516253021700337982285564331"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnodeo3G9v3DWUQGAyo2VDGjFH8">
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnodec9aVhkTydPjKBL4B8TFdNZ">
+                <rdfs:label>[Central Intelligence Agency]</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnode4xSahAMFdY8qK53BLqaavS">
+                <rdfs:label>[Washington]  </rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:date>[1967]</bf:date>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:classification>
+          <bf:Classification rdf:nodeID="bnodecAhXdyyDsVSUTrvE16XNaw">
+            <rdfs:label>7823 H45</rdfs:label>
+          </bf:Classification>
+        </bf:classification>
+        <bf:classification>
+          <bf:Classification rdf:nodeID="bnodeotAfZTtdE1hrUmi5yQPVrj">
+            <rdfs:label>7823 M2</rdfs:label>
+          </bf:Classification>
+        </bf:classification>
+        <bf:dimensions>18 x 24 cm</bf:dimensions>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode3iVUyuHPnS37L3fA4qyJRE">
+            <rdfs:label>"Base 4-67"</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnodebHG33bFLe3SGsinoKH7eE2">
+            <rdf:value>2018586369</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:scale>
+      <bf:Scale rdf:nodeID="bnodesotnTd3dFzUYrajgnH1cRV">
+        <rdfs:label>Scale approximately 1:500,000</rdfs:label>
+      </bf:Scale>
+    </bf:scale>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnode812RUVPKJ4ZoLfeURXgtZq">
+        <bf:coordinates>E 114°30ʹ/N 22°30ʹ</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnodericZm1jC1xEsPuoadacF7P">
+        <bf:coordinates>E 113°30ʹ/N 22°30ʹ</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnodec1RKMSGppFEMVwWDt3Gc3t">
+        <bf:coordinates>E 114°30ʹ/N 22°00ʹ</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:classification>
+      <bf:ClassificationLcc rdf:nodeID="bnodeuR6W2JhnUnBSGgxBTMa5R1">
+        <bf:classificationPortion>G7823.H45</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026387"/>
+    </bf:genreForm>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnodepk7JK7jnz4G4aK6UTNJN9u">
+        <bf:coordinates>E 114°30ʹ/N 22°00ʹ</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+    <bf:language>
+      <bf:Language rdf:nodeID="bnode4nGHEn5uY4nMPmpsbyenme">
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Language>
+    </bf:language>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnode7BEj7uhwG8bKHNh3AnkWAX">
+        <bf:mainTitle>Hong Kong and Macao</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:coordinates>
+      <bf:Cartographic rdf:nodeID="bnoden8oFdJSmTdJtyXvTh167nd">
+        <bf:coordinates>E 113°30ʹ/N 22°00ʹ</bf:coordinates>
+      </bf:Cartographic>
+    </bf:coordinates>
+  </bf:Work>
+  <madsrdf:Topic rdf:nodeID="bnodex4FiGwgQDbYRkN65t4SD97">
+    <rdfs:label xml:lang="en">Hong Kong (China)--Maps</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="bnode3cEDwbysCHcJeQQLw7bY7A">
+    <rdfs:label xml:lang="en">Macau (China : Special Administrative Region)</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e195327818559516253021700337982285564331">
+    <rdf:value>e195327818559516253021700337982285564331</rdf:value>
+  </bf:Local>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+    <rdfs:label>English</rdfs:label>
+  </bf:Language>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctg">
+    <rdfs:label xml:lang="en">Cartographer</rdfs:label>
+  </bf:Role>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n79099301"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
+    <rdfs:label xml:lang="en">sheet</rdfs:label>
+  </bf:Carrier>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+</rdf:RDF>

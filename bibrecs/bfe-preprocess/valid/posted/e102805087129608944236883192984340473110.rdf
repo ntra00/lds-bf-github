@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0203019020001">
+    <bf:instanceOf>
+      <bf:Text rdf:about="http://id.loc.gov/resources/works/c020301902">
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="bnodec8ufqyTXAx5one4NKbW8Pw">
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2009037844"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="bnodegrbExDuQEPfTpS32GrJGw3">
+            <bf:classificationPortion>PL957.5.T73</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:content>
+          <bf:Content rdf:nodeID="b73resourcesworksc020301902">
+            <rdfs:label>text</rdfs:label>
+            <bf:source>
+              <bf:Source rdf:nodeID="b77resourcesworksc020301902">
+                <rdfs:label>rda</rdfs:label>
+              </bf:Source>
+            </bf:source>
+          </bf:Content>
+        </bf:content>
+        <bf:title>
+          <bf:Title rdf:nodeID="b57resourcesworksc020301902">
+            <bf:mainTitle>Kirok ttara ttŏnanŭn Han'guk kojŏn kihaeng</bf:mainTitle>
+            <rdfs:label>Kirok ttara ttŏnanŭn Han'guk kojŏn kihaeng /</rdfs:label>
+            <bflc:titleSortKey>Kirok ttara ttŏnanŭn Han'guk kojŏn kihaeng /</bflc:titleSortKey>
+          </bf:Title>
+        </bf:title>
+        <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+        <bf:title>
+          <bf:Title rdf:nodeID="b65resourcesworksc020301902">
+            <bf:mainTitle>기록 따라 떠나는 한국 고전 기행</bf:mainTitle>
+            <rdfs:label>기록 따라 떠나는 한국 고전 기행 /</rdfs:label>
+            <bflc:titleSortKey>기록 따라 떠나는 한국 고전 기행 /</bflc:titleSortKey>
+          </bf:Title>
+        </bf:title>
+        <rdfs:label>Kirok ttara ttŏnanŭn Han'guk kojŏn kihaeng /</rdfs:label>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnodebEHZEJmhqhm3VGHrWs3GTP">
+            <madsrdf:authoritativeLabel>Travelers' writings, Korean--History and criticism.</madsrdf:authoritativeLabel>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnodeeWDNJAXTSTdUiKyijLsoTM">
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+            <madsrdf:authoritativeLabel>China--Description and travel</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnodepSK3TybmVq9r2Ed6oVZgxh">
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+            <madsrdf:authoritativeLabel>Korea --Description and travel</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:supplementaryContent>
+          <bf:SupplementaryContent rdf:nodeID="bnode8mvvrciPFAKcTh465bogV2">
+            <rdfs:label> Includes bibliographical references (pages 230-239)</rdfs:label>
+          </bf:SupplementaryContent>
+        </bf:supplementaryContent>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/kor"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="b10resourcesworksc020301902">
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:source>
+              <bf:Agent rdf:nodeID="b41resourcesworksc020301902">
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+                <rdfs:label>DLC</rdfs:label>
+              </bf:Agent>
+            </bf:source>
+            <bf:source>
+              <bf:Agent rdf:nodeID="b36resourcesworksc020301902">
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+                <rdfs:label>DLC</rdfs:label>
+              </bf:Agent>
+            </bf:source>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="b28resourcesworksc020301902">
+                <rdf:value>20301902</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bf:creationDate>2018-01-23</bf:creationDate>
+            <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="b20resourcesworksc020301902">
+                <bf:code>5</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:status>
+              <bf:Status rdf:nodeID="b16resourcesworksc020301902">
+                <bf:code>c</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:changeDate>2018-03-08T08:21:08</bf:changeDate>
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="b12resourcesworksc020301902">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="b24resourcesworksc020301902">
+                <bf:code>isbd</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+            <bflc:procInfo>ibc update</bflc:procInfo>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnodepd4i36YuaEvyFHX1DiNQC">
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+            <madsrdf:authoritativeLabel>Travelers' writings--History and criticism</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </bf:subject>
+      </bf:Text>
+    </bf:instanceOf>
+    <bf:editionStatement>초판</bf:editionStatement>
+    <bf:title>
+      <bf:Title rdf:nodeID="b29resourcesinstancesc0203019020001">
+        <bf:mainTitle>Kirok ttara ttŏnanŭn Han'guk kojŏn kihaeng</bf:mainTitle>
+        <rdfs:label>Kirok ttara ttŏnanŭn Han'guk kojŏn kihaeng /</rdfs:label>
+        <bflc:titleSortKey>Kirok ttara ttŏnanŭn Han'guk kojŏn kihaeng /</bflc:titleSortKey>
+      </bf:Title>
+    </bf:title>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b12resourcesinstancesc0203019020001">
+        <bf:date>2017</bf:date>
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/ko"/>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:note>
+      <bf:Note rdf:nodeID="b105resourcesinstancesc0203019020001">
+        <bf:noteType>bibliography</bf:noteType>
+        <rdfs:label>Includes bibliographical references (pages 230-239).</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:editionStatement>Ch'op'an</bf:editionStatement>
+    <bf:carrier>
+      <bf:Carrier rdf:nodeID="b97resourcesinstancesc0203019020001">
+        <bf:source>
+          <bf:Source rdf:nodeID="b101resourcesinstancesc0203019020001">
+            <rdfs:label>rda</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>volume</rdfs:label>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:media>
+      <bf:Media rdf:nodeID="b89resourcesinstancesc0203019020001">
+        <bf:source>
+          <bf:Source rdf:nodeID="b93resourcesinstancesc0203019020001">
+            <rdfs:label>rda</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>unmediated</rdfs:label>
+      </bf:Media>
+    </bf:media>
+    <rdfs:label>Kirok ttara ttŏnanŭn Han'guk kojŏn kihaeng /</rdfs:label>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b23resourcesinstancesc0203019020001">
+        <rdf:value>9788955865042</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:title>
+      <bf:Title rdf:nodeID="b39resourcesinstancesc0203019020001">
+        <rdfs:label>기록 따라 떠나는 한국 고전 기행 /</rdfs:label>
+        <bflc:titleSortKey>기록 따라 떠나는 한국 고전 기행 /</bflc:titleSortKey>
+        <bf:mainTitle>기록 따라 떠나는 한국 고전 기행</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>박 의서 엮음</bf:responsibilityStatement>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="b120resourcesinstancesc0203019020001">
+        <bf:source>
+          <bf:Source rdf:nodeID="b146resourcesinstancesc0203019020001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:changeDate>2018-03-08T08:21:08</bf:changeDate>
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="b122resourcesinstancesc0203019020001">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="b138resourcesinstancesc0203019020001">
+            <rdf:value>20301902</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="b134resourcesinstancesc0203019020001">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:creationDate>2018-01-23</bf:creationDate>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:nodeID="b130resourcesinstancesc0203019020001">
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:status>
+          <bf:Status rdf:nodeID="b126resourcesinstancesc0203019020001">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bf:source>
+          <bf:Agent rdf:nodeID="b151resourcesinstancesc0203019020001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+          </bf:Agent>
+        </bf:source>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b53resourcesinstancesc0203019020001">
+        <bf:place>
+          <bf:Place rdf:nodeID="b56resourcesinstancesc0203019020001">
+            <rdfs:label>Sŏul T'ŭkpyŏlsi</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:date>2017</bf:date>
+        <bf:agent>
+          <bf:Agent rdf:nodeID="b60resourcesinstancesc0203019020001">
+            <rdfs:label>Sech'ang Midiŏ</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:hasItem>
+      <bf:Item rdf:nodeID="bnodesq3Hxo3mEHoTrrDyXh51DL">
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc rdf:nodeID="bnodeh2hKq2JyDafJsxy1uy4dCX">
+            <rdf:value>PL957.5.T73 P368 2017</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode rdf:nodeID="bnodetTrujkWeT7PDzXLiYezmKj">
+            <rdf:value>00506415858</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="bnodedR9MSpXph4gjzB8raHVdYT">
+        <bf:creationDate>2018-5-29</bf:creationDate>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <rdfs:label>eng</rdfs:label>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e102805087129608944236883192984340473110"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:metadataAssigner>hhuh</bflc:metadataAssigner>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:responsibilityStatement>Pak Ŭi-sŏ yŏkkŭm</bf:responsibilityStatement>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b68resourcesinstancesc0203019020001">
+        <bf:agent>
+          <bf:Agent rdf:nodeID="b75resourcesinstancesc0203019020001">
+            <rdfs:label>세창 미디어</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:place>
+          <bf:Place rdf:nodeID="b71resourcesinstancesc0203019020001">
+            <rdfs:label>서울 특별시</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:date>2017</bf:date>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>서울 특별시 : 세창 미디어, 2017.</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="b83resourcesinstancesc0203019020001">
+        <rdfs:label>239 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:provisionActivityStatement>Sŏul T'ŭkpyŏlsi : Sech'ang Midiŏ, 2017.</bf:provisionActivityStatement>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:hasSeries>
+      <bf:Instance rdf:nodeID="b111resourcesinstancesc0203019020001">
+        <rdfs:label>Sech'ang yŏksa sanch'aek</rdfs:label>
+        <bf:seriesStatement>Sech'ang yŏksa sanch'aek ; 004</bf:seriesStatement>
+        <bf:seriesEnumeration>004</bf:seriesEnumeration>
+      </bf:Instance>
+    </bf:hasSeries>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="b19resourcesinstancesc0203019020001">
+        <rdf:value>  2017490614</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:dimensions>18 cm.</bf:dimensions>
+  </bf:Instance>
+  <madsrdf:PersonalName rdf:nodeID="bnodeh9mgXdsiBMH6eythBqi7Sa">
+    <rdfs:label xml:lang="en">Pak, Ŭi-sŏ, 1952-</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ilm"/>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label>LCSH</rdfs:label>
+  </bf:Source>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+    <rdfs:label xml:lang="en">Illustrations</rdfs:label>
+  </bf:Illustration>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/kor"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/ko"/>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e102805087129608944236883192984340473110">
+    <rdf:value>e102805087129608944236883192984340473110</rdf:value>
+  </bf:Local>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n2009037844"/>
+</rdf:RDF>

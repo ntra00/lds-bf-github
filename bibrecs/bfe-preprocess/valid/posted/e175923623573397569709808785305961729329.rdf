@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026536"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026699"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/names/n81022196"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n87846322"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e257118074573952715068944355174709645791">
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>G7823.J48</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:colorContent>
+      <bf:Note>
+        <rdfs:label>color</rdfs:label>
+      </bf:Note>
+    </bf:colorContent>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/cri"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n87846322"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctg"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026536"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026699"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>twon</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+            <bf:creationDate>2019-1-10</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e175923623573397569709808785305961729329"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nb"/>
+        <bf:dimensions>58 x 67 cm, on sheet 60 x 87 cm, folded to 30 x 15 cm</bf:dimensions>
+        <bf:editionStatement>2015 nian 1 yue xin ban</bf:editionStatement>
+        <bf:editionStatement>2015年1月新版</bf:editionStatement>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 map</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:geographicCoverage>
+          <bf:Place>
+            <rdf:value>7823 J48</rdf:value>
+          </bf:Place>
+        </bf:geographicCoverage>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc>
+                <rdf:value>G7823.J48E635 2015 .Z51</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>00335042098</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:shelfmark>
+              <bf:ShelfMark>
+                <rdf:value>Copy 1</rdf:value>
+              </bf:ShelfMark>
+            </bf:shelfmark>
+            <bf:sublocation>Geography and Map Division</bf:sublocation>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:Isbn>
+            <rdf:value>9787503162893</rdf:value>
+          </bf:Isbn>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2019588058</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>中国地图出版社</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Zhongguo di tu chu ban she</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>2015</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>北京市 </rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>Beijing Shi </rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Jiangsu Sheng jiao tong lü you tu </bf:mainTitle>
+            <bf:mainTitle>江苏省交通旅游图</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:title>
+          <bf:ParallelTitle>
+            <bf:mainTitle>Travel map of Jiangsu Province</bf:mainTitle>
+          </bf:ParallelTitle>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/chi"/>
+      </bf:Language>
+    </bf:language>
+    <bf:scale>
+      <bf:Scale>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>1 cm = 9 km</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <rdfs:label>Scale 1:900,000 </rdfs:label>
+      </bf:Scale>
+    </bf:scale>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/names/n81022196"/>
+    <bf:subject>
+      <bf:Topic>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <rdfs:label>Roads--China--Jiangsu Sheng--Maps</rdfs:label>
+      </bf:Topic>
+    </bf:subject>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Jiangsu Sheng jiao tong lü you tu</bf:mainTitle>
+        <bf:mainTitle>江苏省交通旅游图</bf:mainTitle>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Title from panel</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Title>
+    </bf:title>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/cri"/>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
+    <rdfs:label xml:lang="en">sheet</rdfs:label>
+  </bf:Carrier>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/languages/chi">
+    <rdfs:label xml:lang="en">Chinese</rdfs:label>
+  </rdf:Description>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctg">
+    <rdfs:label xml:lang="en">Cartographer</rdfs:label>
+  </bf:Role>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label>LCSH</rdfs:label>
+  </bf:Source>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e175923623573397569709808785305961729329">
+    <rdf:value>e175923623573397569709808785305961729329</rdf:value>
+  </bf:Local>
+</rdf:RDF>

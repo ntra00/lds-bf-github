@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n82157517"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/names/nr95036209"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85131459"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85131460"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/e325493471849954764993263241350065675196">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:creationDate>2018-11-21</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e199005120802999377361967066056832034760"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:dimensions>14 cm</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>21, [1] pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:heldBy>DLC</bf:heldBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>ML410.L7 B 298 1951 Copy 1</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00294226588</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:hasSeries>
+      <bf:Instance>
+        <bf:seriesStatement>В помощь слушателю музыки</bf:seriesStatement>
+      </bf:Instance>
+    </bf:hasSeries>
+    <bf:hasSeries>
+      <bf:Instance>
+        <bf:seriesStatement>V pomoshch slushateliu muzyki</bf:seriesStatement>
+      </bf:Instance>
+    </bf:hasSeries>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>2018560295</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:instanceOf>
+      <bf:Work>
+        <bflc:relationship>
+          <bflc:Relationship>
+            <bflc:relation>Inspired by:</bflc:relation>
+            <bflc:target rdf:resource="http://id.loc.gov/resources/works/n82022652"/>
+          </bflc:Relationship>
+        </bflc:relationship>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>ikir</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:creationDate>2018-11-21</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e199005120802999377361967066056832034760"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:classification>
+          <bf:ClassificationLcc>
+            <bf:classificationPortion>ML410.L7</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:contribution>
+          <bflc:PrimaryContribution>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n82157517"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:language>
+          <bf:Language>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/rus"/>
+          </bf:Language>
+        </bf:language>
+        <bf:notation>
+          <bf:Script>
+            <rdfs:label>Cyrillic</rdfs:label>
+          </bf:Script>
+        </bf:notation>
+        <bf:originDate>1951</bf:originDate>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/names/nr95036209"/>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85131460"/>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Tasso Lista</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Includes bibliographical references.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Государственное музыкальное издательство</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>1951</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Москва</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Gosudarstvennoe muzykalnoe izdatelstvo</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>1951</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Moskva</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:responsibilityStatement>Игорь Бэлза</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Тассо Листа</bf:mainTitle>
+        <bf:subtitle>пояснение</bf:subtitle>
+      </bf:Title>
+    </bf:title>
+    <bf:title>
+      <bflc:TransliteratedTitle>
+        <bf:mainTitle>Tasso Lista</bf:mainTitle>
+      </bflc:TransliteratedTitle>
+    </bf:title>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/n82022652">
+    <rdfs:label xml:lang="en">Goethe, Johann Wolfgang von, 1749-1832. Torquato Tasso (n82022652)</rdfs:label>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </bf:Language>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/rus">
+    <rdfs:label xml:lang="en">Russian</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e199005120802999377361967066056832034760">
+    <rdf:value>e199005120802999377361967066056832034760</rdf:value>
+  </bf:Local>
+  <bf:Title>
+    <bf:mainTitle>Тассо Листа</bf:mainTitle>
+    <bf:subtitle>пояснение</bf:subtitle>
+  </bf:Title>
+  <bflc:TransliteratedTitle>
+    <bf:mainTitle>Tasso Lista</bf:mainTitle>
+  </bflc:TransliteratedTitle>
+  <bf:Publication>
+    <bf:agent>
+      <bf:Agent>
+        <rdfs:label>Государственное музыкальное издательство</rdfs:label>
+      </bf:Agent>
+    </bf:agent>
+    <bf:agent>
+      <bf:Agent>
+        <rdfs:label>Gosudarstvennoe muzykalnoe izdatelstvo</rdfs:label>
+      </bf:Agent>
+    </bf:agent>
+    <bf:date>1951</bf:date>
+    <bf:place>
+      <bf:Place>
+        <rdfs:label>Москва</rdfs:label>
+      </bf:Place>
+    </bf:place>
+    <bf:place>
+      <bf:Place>
+        <rdfs:label>Moskva</rdfs:label>
+      </bf:Place>
+    </bf:place>
+  </bf:Publication>
+  <bf:Instance>
+    <bf:seriesStatement>V pomoshch slushateliu muzyki</bf:seriesStatement>
+    <bf:seriesStatement>В помощь слушателю музыки</bf:seriesStatement>
+  </bf:Instance>
+  <bf:Extent>
+    <rdfs:label>21, [1] pages</rdfs:label>
+  </bf:Extent>
+  <bf:Note>
+    <rdfs:label>Includes bibliographical references.</rdfs:label>
+  </bf:Note>
+  <bf:Item>
+    <bf:heldBy>DLC</bf:heldBy>
+    <bf:identifiedBy>
+      <bf:Barcode>
+        <rdf:value>00294226588</rdf:value>
+      </bf:Barcode>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:ShelfMarkLcc>
+        <rdf:value>ML410.L7 B 298 1951 Copy 1</rdf:value>
+      </bf:ShelfMarkLcc>
+    </bf:identifiedBy>
+  </bf:Item>
+  <bf:Lccn>
+    <rdf:value>2018560295</rdf:value>
+  </bf:Lccn>
+  <bf:AdminMetadata>
+    <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+    <bf:changeDate>2019-01-04T17:19:14</bf:changeDate>
+    <bf:creationDate>2018-11-21</bf:creationDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+    <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e199005120802999377361967066056832034760"/>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+  </bf:AdminMetadata>
+  <rdf:Description>
+    <bflc:relation>Inspired by </bflc:relation>
+    <bf:relatedTo>Goethe, Johann Wolfgang von, 1749-1832. Torquato Tasso</bf:relatedTo>
+  </rdf:Description>
+  <bflc:Relationship>
+    <bflc:relation>Inspired by</bflc:relation>
+    <bf:relatedTo>Goethe, Johann Wolfgang von,  1749-1832. Torquato Tasso</bf:relatedTo>
+  </bflc:Relationship>
+  <bflc:PrimaryContribution>
+    <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n82157517"/>
+    <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+  </bflc:PrimaryContribution>
+  <bf:Title>
+    <bf:mainTitle>Tasso Lista</bf:mainTitle>
+  </bf:Title>
+  <bf:Language>
+    <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/rus"/>
+  </bf:Language>
+  <bf:Script>
+    <rdfs:label>Cyrillic</rdfs:label>
+  </bf:Script>
+  <bf:AdminMetadata>
+    <bflc:catalogerId>ikir</bflc:catalogerId>
+    <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+    <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+    <bf:creationDate>2018-11-21</bf:creationDate>
+    <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+    <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+    <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+    <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e199005120802999377361967066056832034760"/>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+  </bf:AdminMetadata>
+</rdf:RDF>

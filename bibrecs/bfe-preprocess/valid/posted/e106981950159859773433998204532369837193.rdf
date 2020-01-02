@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20437919#Agent880-15">
+    <bflc:primaryContributorName00MatchKey>鹿嶋敬.</bflc:primaryContributorName00MatchKey>
+    <rdfs:label>鹿嶋敬.</rdfs:label>
+    <bflc:name00MarcKey>8801 $6100-01/$1$a鹿嶋敬.</bflc:name00MarcKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <bflc:name00MatchKey>鹿嶋敬.</bflc:name00MatchKey>
+  </madsrdf:PersonalName>
+  <bf:Agent rdf:nodeID="b68resourcesinstancesc0204379190001">
+    <rdfs:label>Shin'yōsha</rdfs:label>
+  </bf:Agent>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0204379190001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="b114resourcesinstancesc0204379190001">
+        <bf:source>
+          <bf:Source rdf:nodeID="b140resourcesinstancesc0204379190001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+          </bf:Source>
+        </bf:source>
+        <bf:changeDate>2018-04-10T07:40:29</bf:changeDate>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="b132resourcesinstancesc0204379190001">
+            <rdf:value>20437919</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="b116resourcesinstancesc0204379190001">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:source>
+          <bf:Source rdf:nodeID="b145resourcesinstancesc0204379190001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+          </bf:Source>
+        </bf:source>
+        <bf:creationDate>2018-04-10</bf:creationDate>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:nodeID="b124resourcesinstancesc0204379190001">
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:status>
+          <bf:Status rdf:nodeID="b120resourcesinstancesc0204379190001">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="b128resourcesinstancesc0204379190001">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdfs:label>Danjo byōdō wa shinka shita ka : danjo kyōdō sankaku kihon keikaku no sakutei shisaku no kanshi kara /</rdfs:label>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b27resourcesinstancesc0204379190001">
+        <rdf:value>4788515288</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="bnode4pDazWoJpXekAFwgz2mYWv">
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <rdfs:label>eng</rdfs:label>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e106981950159859773433998204532369837193"/>
+        <bf:creationDate>2018-5-30</bf:creationDate>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bflc:metadataAssigner>ktak</bflc:metadataAssigner>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:dimensions>20 cm</bf:dimensions>
+    <bf:title>
+      <bf:Title rdf:nodeID="b45resourcesinstancesc0204379190001">
+        <bf:mainTitle>男女平等は進化したか</bf:mainTitle>
+        <bf:subtitle>男女共同参画基本計画の策定, 施策の監視から</bf:subtitle>
+        <rdfs:label>男女平等は進化したか : 男女共同参画基本計画の策定, 施策の監視から /</rdfs:label>
+        <bflc:titleSortKey>男女平等は進化したか : 男女共同参画基本計画の策定, 施策の監視から /</bflc:titleSortKey>
+      </bf:Title>
+    </bf:title>
+    <bf:provisionActivityStatement>Tōkyō-to Chiyoda-ku : Shin'yōsha, 2017.</bf:provisionActivityStatement>
+    <bf:instanceOf>
+      <bf:Text rdf:about="http://id.loc.gov/resources/works/c020437919">
+        <rdfs:label>Danjo byōdō wa shinka shita ka : danjo kyōdō sankaku kihon keikaku no sakutei shisaku no kanshi kara /</rdfs:label>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008113658"/>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2010112823"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="b10resourcesworksc020437919">
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:source>
+              <bf:Source rdf:nodeID="b36resourcesworksc020437919">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+              </bf:Source>
+            </bf:source>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="b28resourcesworksc020437919">
+                <rdf:value>20437919</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bflc:procInfo>ibc update</bflc:procInfo>
+            <bf:source>
+              <bf:Source rdf:nodeID="b41resourcesworksc020437919">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+              </bf:Source>
+            </bf:source>
+            <bf:status>
+              <bf:Status rdf:nodeID="b16resourcesworksc020437919">
+                <bf:code>c</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="b12resourcesworksc020437919">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:creationDate>2018-04-10</bf:creationDate>
+            <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+            <bf:changeDate>2018-04-10T07:40:29</bf:changeDate>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="b20resourcesworksc020437919">
+                <bf:code>5</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="b24resourcesworksc020437919">
+                <bf:code>isbd</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:supplementaryContent>
+          <bf:SupplementaryContent rdf:nodeID="bnode2Q3mzAHEwQBSDiwC66kVqR">
+            <rdfs:label>Includes bibliographical references and index.</rdfs:label>
+          </bf:SupplementaryContent>
+        </bf:supplementaryContent>
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="bnode9EX2p7DHKYJ9QhcAJdk6J9">
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n88273933"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/jpn"/>
+        <bf:originDate>2017</bf:originDate>
+        <bf:title>
+          <bf:Title rdf:nodeID="b89resourcesworksc020437919">
+            <bf:mainTitle>Danjo byōdō wa shinka shita ka</bf:mainTitle>
+            <bflc:titleSortKey>Danjo byōdō wa shinka shita ka : danjo kyōdō sankaku kihon keikaku no sakutei shisaku no kanshi kara /</bflc:titleSortKey>
+            <bf:subtitle>danjo kyōdō sankaku kihon keikaku no sakutei shisaku no kanshi kara</bf:subtitle>
+            <rdfs:label>Danjo byōdō wa shinka shita ka : danjo kyōdō sankaku kihon keikaku no sakutei shisaku no kanshi kara /</rdfs:label>
+          </bf:Title>
+        </bf:title>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+        <bf:title>
+          <bf:Title rdf:nodeID="b99resourcesworksc020437919">
+            <rdfs:label>男女平等は進化したか : 男女共同参画基本計画の策定, 施策の監視から /</rdfs:label>
+            <bf:subtitle>男女共同参画基本計画の策定, 施策の監視から</bf:subtitle>
+            <bflc:titleSortKey>男女平等は進化したか : 男女共同参画基本計画の策定, 施策の監視から /</bflc:titleSortKey>
+            <bf:mainTitle>男女平等は進化したか</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="bnodefmmbxKaNn6oWEmG35tAgLp">
+            <bf:classificationPortion>HD6060.5.J3 K37 2017</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+      </bf:Text>
+    </bf:instanceOf>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="b91resourcesinstancesc0204379190001">
+        <rdfs:label>xiv, 342 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="b19resourcesinstancesc0204379190001">
+        <rdf:value>  2018372044</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <bf:source>
+          <bf:Source rdf:nodeID="b101resourcesinstancesc0204379190001">
+            <rdfs:label>rdamedia</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>unmediated</rdfs:label>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <bf:source>
+          <bf:Source rdf:nodeID="b109resourcesinstancesc0204379190001">
+            <rdfs:label>rdacarrier</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>volume</rdfs:label>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b76resourcesinstancesc0204379190001">
+        <bf:date>2017</bf:date>
+        <bf:place rdf:nodeID="b79resourcesinstancesc0204379190001"/>
+        <bf:agent>
+          <bf:Agent rdf:nodeID="b83resourcesinstancesc0204379190001">
+            <rdfs:label>新曜社</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:responsibilityStatement>鹿嶋敬</bf:responsibilityStatement>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivityStatement>東京都千代田区 : 新曜社, 2017.</bf:provisionActivityStatement>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b23resourcesinstancesc0204379190001">
+        <rdf:value>9784788515284</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:editionStatement>初版</bf:editionStatement>
+    <bf:hasItem>
+      <bf:Item rdf:nodeID="bnodebxakmzoJowZUMyk3rZF4s8">
+        <bf:sublocation>Asian</bf:sublocation>
+        <bf:identifiedBy>
+          <bf:Barcode rdf:nodeID="bnodexwZz7gkzCjPe8eBPSzcivg">
+            <rdf:value>00506260164</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc rdf:nodeID="bnode35oGagkWadfhdpjC9vDdyY">
+            <rdf:value>HD6060.5.J3 K37 2017</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+      </bf:Item>
+    </bf:hasItem>
+  </bf:Instance>
+  <madsrdf:Topic rdf:nodeID="bnode9F7rtk8a8KbzaXxboPERby">
+    <rdfs:label xml:lang="en">Women--Employment--Japan</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20437919#Agent100-14">
+    <bflc:name00MatchKey>Kashima, Takashi.</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Kashima, Takashi.</rdfs:label>
+    <bflc:name00MarcKey>1001 $6880-01$aKashima, Takashi.</bflc:name00MarcKey>
+    <bflc:primaryContributorName00MatchKey>Kashima, Takashi.</bflc:primaryContributorName00MatchKey>
+  </bf:Agent>
+  <bf:Place rdf:nodeID="b64resourcesinstancesc0204379190001">
+    <rdfs:label>Tōkyō-to Chiyoda-ku</rdfs:label>
+  </bf:Place>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/ja"/>
+  <madsrdf:Topic rdf:nodeID="bnodekDQ6eqxhZfb2yCTdqWxnKu">
+    <rdfs:label xml:lang="en">Sex discrimination in employment--Japan</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <madsrdf:PersonalName rdf:nodeID="bnodej747jw91stdpaBDAYQoMun">
+    <rdfs:label xml:lang="en">Kashima, Takashi, 1945-</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e106981950159859773433998204532369837193">
+    <rdf:value>e106981950159859773433998204532369837193</rdf:value>
+  </bf:Local>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source rdf:nodeID="b113resourcesworksc020437919">
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n88273933"/>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/jpn"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2010112823"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008113658"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+</rdf:RDF>

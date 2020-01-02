@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e99012275429855872922228916140828564425">
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:nodeID="bnodecVHRDhWNE66YVCLW1jrHTG">
+        <rdfs:label>Includes bibliographical references.</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodewKqDnmZquPphrsKsKy1RfP">
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnode8YQNgMqYNo8HH16PQLtntR">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodegyaYeU6wHNQb7LJAhVfGHx">
+                <rdfs:label>One of two copies printed on blue paper. Has inscription in volume 1: Je déclare qu'il n'a été tiré que deux exemplaires de cet ouvrage, sur papier blue. Pontier.</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnodemgFi32VHJW8BHRyST7JvG4">
+                <rdf:value>PN984 .F33 1828</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:note>
+              <bf:Note rdf:nodeID="bnode4Xo8yS1PFrVAKMuRgMoG1s">
+                <rdfs:label>LC copy bound in full pinkish-red calf with fine ruled borders and inner dentelles; panelled spine with title and decoration in gilt; marbled endpapers; all edges gilt.</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:contribution>
+              <bf:Contribution rdf:nodeID="bnode5v2ojfXFayqN1LZWDzVVsP">
+                <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n81132238"/>
+                <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fmo"/>
+              </bf:Contribution>
+            </bf:contribution>
+            <bf:custodialHistory>LC copy has bookplate: PAW [Peter A. Wick]. Has inscription: Bought of H.D. Lyon, June 1989 ... with other inscriptions about the book.</bf:custodialHistory>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bflc:relationship>
+      <bflc:Relationship rdf:nodeID="bnodeujEuVkHoYWXhfQ5voguP3o">
+        <bf:relatedTo>Ars Libri Ltd. Library of Peter A. Wick, part two: fables</bf:relatedTo>
+      </bflc:Relationship>
+    </bflc:relationship>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnode3JhmCeDQC8Cxe2Pgv1b2ZM">
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnodehKYti4UL5HqPHfPfn1Trhy">
+            <rdf:value>  2016660728</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodevraRfR2e6Ymxbt3a64jGS8">
+            <bf:mainTitle>Fables choisies</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodem8jsyE95Wac3J8jFLZj47u">
+            <bf:changeDate>2018-02-27T17:16:24</bf:changeDate>
+            <bf:creationDate>2018-2-26</bf:creationDate>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e176505641668247619516013367534166293754"/>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bflc:metadataAssigner>jzie</bflc:metadataAssigner>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnode7YB86aMRYvrJQTJFJmDsZb">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2015122109"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/egr"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodexyqcvnSNAVqNJLuL78wwZ6">
+        <bf:mainTitle>Fables choisies</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodemBDrL4D4VKNg4DsSGLDGdd">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edc"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2015101984"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:illustrativeContent>
+      <bf:Illustration rdf:nodeID="bnodejknX78MiyyZhcExyDyHRUW">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodehYmpupNQHupU8AMqJ52k1F">
+            <rdfs:label>engravings</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+      </bf:Illustration>
+    </bf:illustrativeContent>
+    <bf:classification>
+      <bf:ClassificationLcc rdf:nodeID="bnodevxK7DWr81a5vn942HFCJwA">
+        <bf:classificationPortion>PN984</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnode9R7EPJFyrHykGWxfMwtmW9">
+        <bf:genreForm>
+          <bf:GenreForm rdf:nodeID="bnodetynKDkC4SmJhah7W2hKxuR">
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv"/>
+            <madsrdf:authoritativeLabel>Colored papers (Paper)</madsrdf:authoritativeLabel>
+          </bf:GenreForm>
+        </bf:genreForm>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodexxP7njmvHCvX85ZEiafgJZ">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n85217040"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edc"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:subject>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85046750"/>
+    </bf:subject>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/fre">
+        <rdfs:label xml:lang="en">French</rdfs:label>
+      </bf:Language>
+    </bf:language>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/lat">
+        <rdfs:label xml:lang="en">Latin</rdfs:label>
+      </bf:Language>
+    </bf:language>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodedpcPRWunpaXNkWaMiXqvBd">
+        <bf:responsibilityStatement>de M. Jauffret</bf:responsibilityStatement>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodefXXew66PKwvti4WiKqNyWz">
+            <bf:mainTitle>Fables choisies</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnoderdgu3PVQZjF3tTnx9226b1">
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnodevSPHm7RZUzJY9pxoY58E94">
+                <rdfs:label>Chez A. Delalain, imprimeur-libraire, rue des Mathurins St. Jacques, no. 5</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodedQu9Qr4Jyocxop4J5yxK1C">
+                <rdfs:label>Paris</rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:date>1828</bf:date>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>traduites en vers Latin avec le texte en regard suivies de diverses poésies latines par Adolphe Jauffret, docteur en droit, membre de plusieurs sociétés savantes</bf:responsibilityStatement>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodehs3bjsmZY8S7ktYTbeUuuf">
+            <rdfs:label>Printer from title page versos.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:provisionActivity>
+          <bf:Manufacture rdf:nodeID="bnodetSvpFV19udma5HHxFMrcKx">
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodemKvaFbSPiQzL8MCDyQxxZt">
+                <rdfs:label>Aix</rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnodeqLZ14nVHJzfK26VGMwXLwG">
+                <rdfs:label>Imprimerie de Pontier fils ainé</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+          </bf:Manufacture>
+        </bf:provisionActivity>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodex5BqNComzAMKLD7iNqMbix">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodetQ26eZcpuizJAb7e3Wcv3C">
+                <rdfs:label>Pagination: volume 1: xij, 269 pages; volume 2: 255 pages.</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <rdfs:label>2 volumes</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodep62GEbCWLacYotPc42iJ4W">
+            <rdfs:label>Frontispieces signed: Lith. de Beisson.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:dimensions>22 cm</bf:dimensions>
+      </bf:Instance>
+    </bf:hasInstance>
+  </bf:Work>
+  <madsrdf:Topic rdf:nodeID="bnode2uYTcA9zCVqJSr91YsyaRE">
+    <rdfs:label xml:lang="en">Fables, French</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:PersonalName rdf:nodeID="bnodervkhjNu75mfipFoHP7JXZZ">
+    <rdfs:label xml:lang="en">Beisson, Joseph, 1783-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic rdf:nodeID="bnodeqm5ByCXfXi5BhTDwBBKCkG">
+    <rdfs:label xml:lang="en">Fables, French</rdfs:label>
+    <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85046750"/>
+    <madsrdf:componentList>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh99001577"/>
+    </madsrdf:componentList>
+  </madsrdf:Topic>
+  <madsrdf:GenreForm rdf:nodeID="bnodehJVBicBcZiGGMvF84GaNiD">
+    <rdfs:label xml:lang="en">Translations into French, [German, etc.]</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName rdf:nodeID="bnodefxtRkmrN5RBZDxgcsCYe5T">
+    <rdfs:label xml:lang="en">Jauffret, L. F. (Louis François), 1770-1840</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnode7W8JKfeqRckXZRGSPevxdS">
+    <rdfs:label xml:lang="en">Jauffret, Adolphe</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnoded5Q8ZKYP3mcM7iw7yotvfe">
+    <rdfs:label xml:lang="en">Wick, Peter A.</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:nodeID="bnodecdEHR21DyS9A6atx9RoYrs">
+    <rdfs:label xml:lang="en">Jauffret, Adolphe</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rbmscv">
+    <rdfs:label>RBMS</rdfs:label>
+  </rdf:Description>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e176505641668247619516013367534166293754">
+    <rdf:value>e176505641668247619516013367534166293754</rdf:value>
+  </bf:Local>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+    <rdfs:label xml:lang="en">Illustrations</rdfs:label>
+  </rdf:Description>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edc">
+    <rdfs:label xml:lang="en">Editor of compilation</rdfs:label>
+  </bf:Role>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n81132238"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n85217040"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/egr">
+    <rdfs:label xml:lang="en">Engraver</rdfs:label>
+  </bf:Role>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmo">
+    <rdfs:label xml:lang="en">Former owner</rdfs:label>
+  </bf:Role>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2015101984"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2015122109"/>
+</rdf:RDF>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026977"/>
+  <bf:Place rdf:about="http://id.loc.gov/authorities/names/n79021394"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/names/n81075792"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n81081320"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n87132011"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n87822258"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2004123033"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2007085515"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2009129969"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2010114404"/>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015017">
+    <rdfs:label xml:lang="en">alto voice</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015071">
+    <rdfs:label xml:lang="en">bass voice</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015127">
+    <rdfs:label xml:lang="en">chamber orchestra</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015666">
+    <rdfs:label xml:lang="en">soprano voice</rdfs:label>
+  </rdf:Description>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85095291"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e299099208937883272238964422098799697967">
+    <bf:capture>
+      <bf:Capture>
+        <bf:date>2017 April</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Stiftskirche, Stuttgart, Germany</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Capture>
+    </bf:capture>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n87822258"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2004123033"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2010114404"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2007085515"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2009129969"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n87132011"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cnd"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n81081320"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/itr"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:duration>2 hr., 17 min., 52 sec.</bf:duration>
+    <bf:ensemble>
+      <bf:MusicEnsemble>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015127"/>
+        <bf:count>1</bf:count>
+      </bf:MusicEnsemble>
+    </bf:ensemble>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026977"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>jalb</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bflc:profile>profile:bf2:SoundRecording:Instance</bflc:profile>
+            <bf:creationDate>2018-9-17</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e190121207085136566684055534410512501629"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <rdfs:label>eng</rdfs:label>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+        <bf:credits>
+          <bf:Credits>
+            <rdfs:label>Monica Piccinini, Roberta Mameli, sopranos ; Delphine Galou, contralto ; Luca Tittoto, bass ; Stuttgarter Kammerorchester ; Fabio Biondi, conductor</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:digitalCharacteristic>
+          <bf:FileType>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mfiletype/audio"/>
+          </bf:FileType>
+        </bf:digitalCharacteristic>
+        <bf:dimensions>4 3/4 in.</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>2 audio discs</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMark>
+                <rdf:value>SDD 05959</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>00336937280</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>2 compact discs</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:Ean>
+            <rdf:value>8424562234093</rdf:value>
+          </bf:Ean>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Glossa</rdfs:label>
+              </bf:Source>
+            </bf:source>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2018054021</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Glossa</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2018]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>San Lorenzo de El Escorial, Spain</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>Francesco Feo</bf:responsibilityStatement>
+        <bf:soundCharacteristic>
+          <bf:RecordingMethod>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+          </bf:RecordingMethod>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:RecordingMedium>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrecmedium/opt"/>
+          </bf:RecordingMedium>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlayingSpeed>
+            <rdfs:label>1.4 m/s</rdfs:label>
+          </bf:PlayingSpeed>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlaybackChannels>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mplayback/ste"/>
+          </bf:PlaybackChannels>
+        </bf:soundCharacteristic>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>San Francesco di Sales</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/ita"/>
+      </bf:Language>
+    </bf:language>
+    <bf:originDate>1734</bf:originDate>
+    <bf:originPlace rdf:resource="http://id.loc.gov/authorities/names/n79021394"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/names/n81075792"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85095291"/>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Libretto with English translation and program notes by Gottfried Franz Kasparek in German with English and French translations (45 pages : illustrations, portraits, facsimiles) inserted in containerLibretto with English translation and program notes by Gottfried Franz Kasparek in German with English and French translations (45 pages : illustrations, portraits, facsimiles) inserted in container</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>S Francesco des Sales, apostolo del Chablias</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:voice>
+      <bf:MusicVoice>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015666"/>
+        <bf:count>2</bf:count>
+      </bf:MusicVoice>
+    </bf:voice>
+    <bf:voice>
+      <bf:MusicVoice>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015017"/>
+        <bf:count>1</bf:count>
+      </bf:MusicVoice>
+    </bf:voice>
+    <bf:voice>
+      <bf:MusicVoice>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015071"/>
+        <bf:count>1</bf:count>
+      </bf:MusicVoice>
+    </bf:voice>
+  </bf:Work>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+    <rdfs:label>audio disc</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/languages/ita">
+    <rdfs:label xml:lang="en">Italian</rdfs:label>
+  </rdf:Description>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
+    <rdfs:label>audio</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mfiletype/audio">
+    <rdfs:label xml:lang="en">audio file</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mplayback/ste">
+    <rdfs:label xml:lang="en">stereo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrecmedium/opt">
+    <rdfs:label xml:lang="en">optical</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label xml:lang="en">digital</rdfs:label>
+  </rdf:Description>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cnd">
+    <rdfs:label xml:lang="en">Conductor</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/itr">
+    <rdfs:label xml:lang="en">Instrumentalist</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
+    <rdfs:label xml:lang="en">Singer</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e190121207085136566684055534410512501629">
+    <rdf:value>e190121207085136566684055534410512501629</rdf:value>
+  </bf:Local>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Feo, Francesco, 1691-1761</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Oratorios</rdfs:label>
+  </bf:GenreForm>
+  <bf:Place>
+    <rdfs:label xml:lang="en">Bologna (Italy)</rdfs:label>
+  </bf:Place>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Piccinini, Monica</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Mameli, Roberta</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Galou, Delphine</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Tittoto, Luca, 1971-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Biondi, Fabio</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Stuttgarter Kammerorchester</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Francis, de Sales, Saint, 1567-1622</rdfs:label>
+  </bf:Topic>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Oratorios</rdfs:label>
+  </bf:Topic>
+</rdf:RDF>

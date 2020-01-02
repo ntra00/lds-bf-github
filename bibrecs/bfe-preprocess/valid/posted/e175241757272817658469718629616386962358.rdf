@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0201597770001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>8</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-09-06T14:22:27</bf:changeDate>
+        <bf:creationDate>2017-12-01</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20159777</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>dsuk</bflc:catalogerId>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:creationDate>2019-1-11</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e175241757272817658469718629616386962358"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:copyrightDate>2018</bf:copyrightDate>
+    <bf:dimensions>22 cm</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>viii, 194 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/c0201597770001"/>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:heldBy>DLC</bf:heldBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>K53 2018</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>invalid</rdfs:label>
+          </bf:Status>
+        </bf:status>
+        <rdf:value>9781496208125 (epub)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>invalid</rdfs:label>
+          </bf:Status>
+        </bf:status>
+        <rdf:value>9781496208149 (pdf)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>invalid</rdfs:label>
+          </bf:Status>
+        </bf:status>
+        <rdf:value>9781496208132 (mobi)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2017054273</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9781496206893 (softcover : alk. paper)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c020159777"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:date>2018</bf:date>
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/nbu"/>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>University of Nebraska Press</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2018</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Lincoln</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Lincoln : University of Nebraska Press, [2018]</bf:provisionActivityStatement>
+    <bf:responsibilityStatement>Frederick Turner</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>kid and me : a novel /</bflc:titleSortKey>
+        <bf:mainTitle>The kid and me</bf:mainTitle>
+        <bf:subtitle>a novel</bf:subtitle>
+        <rdfs:label>The kid and me : a novel /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>The kid and me : a novel /</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacarrier</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c020159777">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>8</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-09-06T14:22:27</bf:changeDate>
+        <bf:creationDate>2017-12-01</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20159777</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>dsuk</bflc:catalogerId>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:creationDate>2019-1-11</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e175241757272817658469718629616386962358"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:Classification>
+        <bf:classificationPortion>FIC033000</bf:classificationPortion>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>bisacsh</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Classification>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>PS3620.U765</bf:classificationPortion>
+        <bf:itemPortion>K53 2018</bf:itemPortion>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationDdc>
+        <bf:classificationPortion>813/.6</bf:classificationPortion>
+        <bf:edition>23</bf:edition>
+        <bf:edition>full</bf:edition>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:ClassificationDdc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>PS3620.U765</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>PS3620.U765</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>PS3620.U765</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/20159777#Agent100-19"/>
+        <bf:role>
+          <bf:Role>
+            <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+            <rdfs:label>author.</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:genreForm rdf:resource="http://id.loc.gov/resources/works/20159777#GenreForm655-34"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/vocabulary/marcgt/gov"/>
+    <bf:geographicCoverage rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us-nm"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/20159777#Agent600-31"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/20159777#Topic650-30"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/20159777#Topic650-32"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/20159777#Topic650-33"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/20159777#Topic651-29"/>
+    <bf:summary>
+      <bf:Summary>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>Provided by publisher.</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>"In The Kid and Me, Frederick Turner deftly re-creates the Lincoln County War in what was then New Mexico Territory. The 1878 war pitted an established faction led by James Dolan against new arrivals in the county led by John Tunstall and Alexander McSween. When Tunstall and McSween opened a dry-goods store in 1876 in a direct challenge to Dolan's monopoly on the dry-goods business, trouble was inevitable. Both the Dolan and the Tunstall-McSween factions garnered supporters, including lawmen, criminal gangs, and ranch hands. The ambush and murder of Tunstall by a local sheriff's posse loyal to Dolan sparked a wave of revenge killings and bloody reprisals in which Billy the Kid--one of Tunstall's ranch hands--played a prominent role. Narrated by George Coe, an aged veteran of New Mexico's Lincoln County War but now a devout painter of village churches, The Kid and Me tells what it felt like to ride alongside Billy the Kid, whom Coe both admired and greatly feared. Gang loyalty, extreme violence, political corruption in the highest places, and profound moral ambiguity characterize this tale of what made the American West wild."--</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:summary>
+      <bf:Summary>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>Provided by publisher.</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>"Narrated by George Coe, an aged veteran of New Mexico's Lincoln County War, The Kid and Me tells what it felt like to ride alongside Billy the Kid, whom Coe both admired and greatly feared"--</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>kid and me : a novel /</bflc:titleSortKey>
+        <bf:mainTitle>The kid and me</bf:mainTitle>
+        <bf:subtitle>a novel</bf:subtitle>
+        <rdfs:label>The kid and me : a novel /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdfs:label>The kid and me : a novel /</rdfs:label>
+  </bf:Work>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdamedia</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20159777#Agent100-19">
+    <bflc:name00MarcKey>1001 $aTurner, Frederick W.,$d1937-$eauthor.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Turner, Frederick W., 1937-</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Turner, Frederick W., 1937-</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Turner, Frederick W., 1937-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/20159777#Agent600-31">
+    <bflc:name00MarcKey>60000$aBilly,$cthe Kid,$vFiction.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Billy, the Kid,</bflc:name00MatchKey>
+    <madsrdf:authoritativeLabel>Billy, the Kid--Fiction.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Billy, the Kid,</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/resources/works/20159777#GenreForm655-34">
+    <bf:source>
+      <bf:Source>
+        <bf:code>gsafd</bf:code>
+      </bf:Source>
+    </bf:source>
+    <madsrdf:authoritativeLabel>Western stories.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GenreForm"/>
+    <rdfs:label>Western stories.</rdfs:label>
+  </madsrdf:GenreForm>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20159777#Topic650-30">
+    <madsrdf:authoritativeLabel>Frontier and pioneer life--New Mexico--Fiction.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b0_b71"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+    <rdfs:label>Frontier and pioneer life--New Mexico--Fiction.</rdfs:label>
+  </bf:Topic>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20159777#Topic650-32">
+    <madsrdf:authoritativeLabel>Vendetta--Fiction.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b0_b72"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+    <rdfs:label>Vendetta--Fiction.</rdfs:label>
+  </bf:Topic>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/resources/works/20159777#Topic650-33">
+    <bf:source>
+      <bf:Source>
+        <bf:code>bisacsh</bf:code>
+      </bf:Source>
+    </bf:source>
+    <madsrdf:authoritativeLabel>FICTION / Westerns.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>FICTION / Westerns.</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Place rdf:about="http://id.loc.gov/resources/works/20159777#Topic651-29">
+    <madsrdf:authoritativeLabel>Lincoln County (N.M.)--History--19th century--Fiction.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b0_b50"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+    <rdfs:label>Lincoln County (N.M.)--History--19th century--Fiction.</rdfs:label>
+  </bf:Place>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:GenreForm rdf:about="http://id.loc.gov/vocabulary/marcgt/gov">
+    <rdfs:label>state, provincial, territorial, dependant government publication</rdfs:label>
+  </bf:GenreForm>
+  <bf:GeographicCoverage rdf:about="http://id.loc.gov/vocabulary/geographicAreas/n-us-nm"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </bf:Language>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/nbu"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Source>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e175241757272817658469718629616386962358">
+    <rdf:value>e175241757272817658469718629616386962358</rdf:value>
+  </bf:Local>
+  <madsrdf:Temporal>
+    <madsrdf:authoritativeLabel>19th century</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b32"/>
+  </madsrdf:Temporal>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Frontier and pioneer life</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b34"/>
+  </madsrdf:Topic>
+  <madsrdf:Geographic>
+    <madsrdf:authoritativeLabel>New Mexico</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b36"/>
+  </madsrdf:Geographic>
+  <madsrdf:Geographic>
+    <madsrdf:authoritativeLabel>Lincoln County (N.M.)</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b39"/>
+  </madsrdf:Geographic>
+  <madsrdf:GenreForm>
+    <madsrdf:authoritativeLabel>Fiction</madsrdf:authoritativeLabel>
+  </madsrdf:GenreForm>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>History</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b47"/>
+  </madsrdf:Topic>
+  <madsrdf:GenreForm>
+    <madsrdf:authoritativeLabel>Fiction</madsrdf:authoritativeLabel>
+  </madsrdf:GenreForm>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Vendetta</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b52"/>
+  </madsrdf:Topic>
+  <madsrdf:GenreForm>
+    <madsrdf:authoritativeLabel>Fiction</madsrdf:authoritativeLabel>
+  </madsrdf:GenreForm>
+</rdf:RDF>

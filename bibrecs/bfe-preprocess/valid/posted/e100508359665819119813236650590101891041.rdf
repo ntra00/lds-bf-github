@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:PersonalName rdf:about="http://bibframe.example.org/19892595#Agent700-40">
+    <bflc:name00MarcKey>7001 $6880-05$aGrintsaig, Eliyahu,$eeditor.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Grintsaig, Eliyahu,</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Grintsaig, Eliyahu,</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://bibframe.example.org/19892595#Agent880-41">
+    <bflc:name00MarcKey>8801 $6700-05/(2/r‏$a‏גרינצייג, אליהו.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>‏גרינצייג, אליהו.</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>‏גרינצייג, אליהו.</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/names/n79090052"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n86845383">
+    <bflc:name00MarcKey>1001 $aAbudarham, David ben Joseph,$dactive 14th century,$eauthor.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Abudarham, David ben Joseph, active 14th century,</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Abudarham, David ben Joseph, active 14th century,</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Abudarham, David ben Joseph, active 14th century,</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/authorities/subjects/sh2007101937">
+    <bf:identifiedBy>
+      <bf:Identifier>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>fst01766654</rdf:value>
+      </bf:Identifier>
+    </bf:identifiedBy>
+    <bf:source>
+      <bf:Source>
+        <bf:code>lcsh</bf:code>
+      </bf:Source>
+    </bf:source>
+    <bf:source>
+      <bf:Source>
+        <bf:code>fast</bf:code>
+      </bf:Source>
+    </bf:source>
+    <madsrdf:authoritativeLabel>Benediction--Judaism.</madsrdf:authoritativeLabel>
+    <madsrdf:isMemberofMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>Benediction--Judaism.</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85018839">
+    <bf:identifiedBy>
+      <bf:Identifier>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>fst01730485</rdf:value>
+      </bf:Identifier>
+    </bf:identifiedBy>
+    <bf:source>
+      <bf:Source>
+        <bf:code>lcsh</bf:code>
+      </bf:Source>
+    </bf:source>
+    <bf:source>
+      <bf:Source>
+        <bf:code>fast</bf:code>
+      </bf:Source>
+    </bf:source>
+    <madsrdf:authoritativeLabel>Jewish calendar.</madsrdf:authoritativeLabel>
+    <madsrdf:isMemberofMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>Jewish calendar.</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/authorities/subjects/sh85070855">
+    <bf:identifiedBy>
+      <bf:Identifier>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>fst00984346</rdf:value>
+      </bf:Identifier>
+    </bf:identifiedBy>
+    <bf:source>
+      <bf:Source>
+        <bf:code>fast</bf:code>
+      </bf:Source>
+    </bf:source>
+    <bf:source>
+      <bf:Source>
+        <bf:code>lcsh</bf:code>
+      </bf:Source>
+    </bf:source>
+    <madsrdf:authoritativeLabel>Judaism--Liturgy.</madsrdf:authoritativeLabel>
+    <madsrdf:isMemberofMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>Judaism--Liturgy.</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/authorities/subjects/sh85106125">
+    <bf:identifiedBy>
+      <bf:Identifier>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>fst01074702</rdf:value>
+      </bf:Identifier>
+    </bf:identifiedBy>
+    <bf:source>
+      <bf:Source>
+        <bf:code>fast</bf:code>
+      </bf:Source>
+    </bf:source>
+    <bf:source>
+      <bf:Source>
+        <bf:code>lcsh</bf:code>
+      </bf:Source>
+    </bf:source>
+    <madsrdf:authoritativeLabel>Prayer--Judaism.</madsrdf:authoritativeLabel>
+    <madsrdf:isMemberofMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>Prayer--Judaism.</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0198925950001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>rkoh</bflc:catalogerId>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bf:creationDate>2018-10-25</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e100508359665819119813236650590101891041"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:dimensions>25 cm</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>3 volumes</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:enumerationAndChronology>
+          <bf:Enumeration>
+            <rdfs:label>v. 1</rdfs:label>
+          </bf:Enumeration>
+        </bf:enumerationAndChronology>
+        <bf:enumerationAndChronology>
+          <bf:Chronology>
+            <rdfs:label>2015 or 2016</rdfs:label>
+          </bf:Chronology>
+        </bf:enumerationAndChronology>
+        <bf:heldBy>DLC</bf:heldBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>BM660 .A2 2015</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00483210656</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>c. 1</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:enumerationAndChronology>
+          <bf:Enumeration>
+            <rdfs:label>v. 2</rdfs:label>
+          </bf:Enumeration>
+        </bf:enumerationAndChronology>
+        <bf:enumerationAndChronology>
+          <bf:Chronology>
+            <rdfs:label>2015 or 2016</rdfs:label>
+          </bf:Chronology>
+        </bf:enumerationAndChronology>
+        <bf:heldBy>DLC</bf:heldBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>BM660 .A2 2015</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00483210644</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>c. 1</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:enumerationAndChronology>
+          <bf:Enumeration>
+            <rdfs:label>v. 3</rdfs:label>
+          </bf:Enumeration>
+        </bf:enumerationAndChronology>
+        <bf:enumerationAndChronology>
+          <bf:Chronology>
+            <rdfs:label>2016 or 2017</rdfs:label>
+          </bf:Chronology>
+        </bf:enumerationAndChronology>
+        <bf:heldBy>DLC</bf:heldBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>BM660 .A2 2015</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00485134001</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>c. 1</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Local>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>ocn980705905</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>2017441693</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>19892595</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2017441693</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/fac"/>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c019892595"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mulm"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>bibliography</bf:noteType>
+        <rdfs:label>Includes bibliographical references and indexes.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>Physical details</bf:noteType>
+        <rdfs:label>1 facsimile</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>קרן רא"ם</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>[2015 or 2016-2016 or 2017]</bf:date>
+        <bf:date>תשע״ו-תשע"ז</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>ירושלים</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Yerushalayim : Ḳeren Reʼem, 776-777 [2015 or 2016-2016 or 2017].</bf:provisionActivityStatement>
+    <bf:provisionActivityStatement>‏ירושלים :‏ ‏קרן רא"ם,‏ ‏תשע״ו-תשע"ז.</bf:provisionActivityStatement>
+    <bf:responsibilityStatement>‏רבינו דוד אבודרהם ; נערך מחדש על פי דפוס ראשון מוגה ומפוסק, עם מקורות מלאים, הערות, מקורות וביאורים מאת הרב אליהו גרינצייג</bf:responsibilityStatement>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>ḥeleḳ 1. Tefilot ḥol -- ḥeleḳ 2. Tefilot Shabat u-moʻadim -- ḥeleḳ 3. Seder ha-ʻibur u-ferushe ha-berakhot.</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>‏חלק א'. תפילות חול -- חלק ב'. תפילות שבת ומועדים -- חלק ג'. סדר העיבור ופירושי הברכות.</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:title>
+      <bflc:TransliteratedTitle>
+        <bf:mainTitle>Perushe ha-berakhot ṿeha-tefilot</bf:mainTitle>
+      </bflc:TransliteratedTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:mainTitle>‏רבינו דוד אבודרהם :‏ ‏פירושי הברכות והתפילות</bf:mainTitle>
+        <bf:variantType>Spine title</bf:variantType>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Sefer Abudarham</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Perushe ha-berakhot ṿeha-tefilot /</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacarrier</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/fac">
+    <rdfs:label>facsimiles</rdfs:label>
+  </bf:Illustration>
+  <madsrdf:Title rdf:about="http://id.loc.gov/resources/works/c019892595">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>f</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:changeDate>2018-10-25T15:07:06</bf:changeDate>
+        <bf:creationDate>2017-05-16</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/lccopycat"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>OCLCF</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>YYP</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>YYP</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>OCL</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.2: 2018-10-25T08:49:48-04:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <rdf:value>19892595</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>WEINB</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>WEINB</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>BM660</bf:classificationPortion>
+        <bf:itemPortion>.A2 2015</bf:itemPortion>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>BM660</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n86845383"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://bibframe.example.org/19892595#Agent700-40"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://bibframe.example.org/19892595#Agent880-41"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:hasInstance rdf:resource="http://id.loc.gov/resources/instances/c0198925950001"/>
+    <bf:identifiedBy>
+      <bf:Identifier>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>fst01356532</rdf:value>
+      </bf:Identifier>
+    </bf:identifiedBy>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/heb"/>
+    <bf:source>
+      <bf:Source>
+        <bf:code>fast</bf:code>
+      </bf:Source>
+    </bf:source>
+    <bf:source>
+      <bf:Source>
+        <bf:code>lcsh</bf:code>
+      </bf:Source>
+    </bf:source>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/names/n79090052"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2007101937"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85018839"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85070855"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85106125"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/c019892595"/>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label> Includes bibliographical references and indexes</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>חלק א'. תפילות חול  -- חלק ב'. תפילות שבת ומועדים -- חלק ג'. סדר העיבור ופירושי הברכות</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:title>
+      <bf:Title>
+        <bflc:title40MarcKey>24010$aSefer Abudarham</bflc:title40MarcKey>
+        <bflc:title40MatchKey>Sefer Abudarham</bflc:title40MatchKey>
+        <bflc:titleSortKey>Sefer Abudarham</bflc:titleSortKey>
+        <bf:mainTitle>Sefer Abudarham</bf:mainTitle>
+        <rdfs:label>Sefer Abudarham</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <madsrdf:authoritativeLabel>Siddur.</madsrdf:authoritativeLabel>
+    <madsrdf:isMemberofMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+  </madsrdf:Title>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mulm">
+    <rdfs:label xml:lang="en">multipart monograph</rdfs:label>
+  </bf:Issuance>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdamedia</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <rdf:Description rdf:about="http://id.loc.gov/resources/items/c0198925950001">
+    <bf:heldBy>DLC</bf:heldBy>
+  </rdf:Description>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/heb"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/is"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Source>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+    <rdfs:label>author.</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edt">
+    <bflc:relatorMatchKey>editor</bflc:relatorMatchKey>
+    <rdfs:label>editor.</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e100508359665819119813236650590101891041">
+    <rdf:value>e100508359665819119813236650590101891041</rdf:value>
+  </bf:Local>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Judaism</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <bf:ShelfMarkLcc>
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+    <rdfs:label>BM660.A2 2015</rdfs:label>
+  </bf:ShelfMarkLcc>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Benediction</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Benediction</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <bf:Place>
+    <rdfs:label>‏ירושלים :‏</rdfs:label>
+  </bf:Place>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Judaism</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Liturgy</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Prayer</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Prayer</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Judaism</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <bf:Agent>
+    <rdfs:label>‏קרן רא"ם,‏</rdfs:label>
+  </bf:Agent>
+  <bf:Place>
+    <rdfs:label>Yerushalayim</rdfs:label>
+  </bf:Place>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Judaism</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Judaism</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Liturgy</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Judaism</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <bf:Agent>
+    <rdfs:label>Ḳeren Reʼem</rdfs:label>
+  </bf:Agent>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Siddur</rdfs:label>
+  </bf:Topic>
+</rdf:RDF>

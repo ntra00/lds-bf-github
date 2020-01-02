@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c020384082">
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="b10resourcesworksc020384082">
+        <bf:status>
+          <bf:Status rdf:nodeID="b16resourcesworksc020384082">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:source>
+          <bf:Source rdf:nodeID="b41resourcesworksc020384082">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+          </bf:Source>
+        </bf:source>
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="b12resourcesworksc020384082">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:changeDate>2018-03-27T11:21:32</bf:changeDate>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:nodeID="b20resourcesworksc020384082">
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:source>
+          <bf:Agent rdf:nodeID="b36resourcesworksc020384082">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+          </bf:Agent>
+        </bf:source>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="b24resourcesworksc020384082">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:creationDate>2018-02-23</bf:creationDate>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="b28resourcesworksc020384082">
+            <rdf:value>20384082</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/swe"/>
+    </bf:language>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodexbK3cjZMYpuHdn7VonAscW">
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <madsrdf:authoritativeLabel>Sweden -- Foreign relations -- 20th century</madsrdf:authoritativeLabel>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:classification>
+      <bf:ClassificationLcc rdf:nodeID="bnodehkTPuJYjbv1z9bKGAcg4qp">
+        <bf:classificationPortion>DL868.O35 2017</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <rdfs:label>1918 : året då Sverige blev Sverige /</rdfs:label>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodemo2cmW7A6sybouzDcMeKeC">
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnodefXxrmpFL2rotA3XXj2gJoP">
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnoderBg6uVsavPp2os7z43hvCE">
+                <rdf:value>00505914375</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodetACXuLVaNh8f3jD7JiRaxj">
+            <rdfs:label>302 pages</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:identifiedBy>
+          <bf:Isbn rdf:nodeID="bnodedZSkGeLGDrgDJNUFqTjCC8">
+            <rdf:value>989100156275</rdf:value>
+            <bf:qualifier>hd. bd.</bf:qualifier>
+          </bf:Isbn>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnodeou2YxJgoDeibNEeJG9BiM5">
+            <rdf:value>2017426813</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:editionStatement>Andra tryckningen</bf:editionStatement>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnodeoj1TSWoXJjbb8gqpewGmmu">
+            <bf:date>[2017]</bf:date>
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnodekpnqWDVS8uQcRj2VbP7FYB">
+                <rdfs:label>Albert Bonniers Förlag</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodepoFmnkmAhnB6hzMA6paVHw">
+                <rdfs:label>[Stockholm]</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnode86J1yC3qi7UYMZaeD78CgD">
+            <bf:subtitle>året då Sverige blev Sverige</bf:subtitle>
+            <bf:mainTitle>1918</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:dimensions>23 cm</bf:dimensions>
+        <bf:responsibilityStatement>Per T. Ohlsson</bf:responsibilityStatement>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnode7hqtaw4bnnFXZKRMtdhGTp">
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <madsrdf:authoritativeLabel>Sweden -- History -- 20th century</madsrdf:authoritativeLabel>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodecZj562HuCPw1YAJZbjSc9K">
+        <madsrdf:authoritativeLabel>Sweden -- Politics and government -- 20th century</madsrdf:authoritativeLabel>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:contribution>
+      <bflc:PrimaryContribution rdf:nodeID="b55resourcesworksc020384082">
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/20384082#Agent100-14"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:nodeID="bnodeqLqpEyZEkrG9Kq4pmWoWfe">
+        <rdfs:label>Includes bibliographical references (pages 290-297) and index.</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+        <rdfs:label>text</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:nodeID="b87resourcesworksc020384082">
+            <rdfs:label>rdacontent</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Content>
+    </bf:content>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodewmqJDBZQ8KujyHr1xctrQ">
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodevw4yGmRXVdQ7pKjArZEaGW">
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+            <bf:creationDate>2018-4-30</bf:creationDate>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e107675593899259176359318780888350913613"/>
+            <bflc:metadataAssigner>khil 2018-04-30</bflc:metadataAssigner>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:title>
+      <bf:Title rdf:nodeID="b73resourcesworksc020384082">
+        <rdfs:label>1918 : aaret daa Sverige blev Sverige /</rdfs:label>
+        <bflc:titleSortKey>1918 : aaret daa Sverige blev Sverige /</bflc:titleSortKey>
+        <bf:subtitle>aaret daa Sverige blev Sverige</bf:subtitle>
+      </bf:Title>
+    </bf:title>
+  </bf:Work>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20384082#Agent100-14">
+    <bflc:primaryContributorName00MatchKey>Ohlsson, Per T.</bflc:primaryContributorName00MatchKey>
+    <bflc:name00MatchKey>Ohlsson, Per T.</bflc:name00MatchKey>
+    <bflc:name00MarcKey>1001 $aOhlsson, Per T.</bflc:name00MarcKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Ohlsson, Per T.</rdfs:label>
+  </bf:Agent>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e107675593899259176359318780888350913613">
+    <rdf:value>e107675593899259176359318780888350913613</rdf:value>
+  </bf:Local>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label>LCSH</rdfs:label>
+  </bf:Source>
+</rdf:RDF>

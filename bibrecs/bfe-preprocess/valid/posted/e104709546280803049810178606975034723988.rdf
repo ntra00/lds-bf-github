@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n50008462"/>
+  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n79006404"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n79089957"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh2010013804"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85027788"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c012043678">
+    <rdfs:label xml:lang="en">Library of Congress. Catalogue of the library of Thomas Jefferson (c012043678)</rdfs:label>
+  </bf:Work>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c020601554">
+    <rdfs:label xml:lang="en">Brissot de Warville, J.-P. (Jacques-Pierre), 1754-1793, Discours sur la rareté du numéraire et sur les moyens d'y remédier : prononcé à l'Assemblée générale des Représentans de la Commune de Paris, le 10 Février 1790 (c020601554)</rdfs:label>
+  </bf:Work>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e30604722140270637505551003776750581125">
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>JA36</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n50008462"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>jzie</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+            <bf:changeDate>2018-08-08T20:53:07</bf:changeDate>
+            <bf:creationDate>2018-8-8</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e104709546280803049810178606975034723988"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <rdfs:label>eng</rdfs:label>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:dimensions>23 cm (12mo)</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>10, [2] pages</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item>
+            <bflc:relationship>
+              <bflc:Relationship>
+                <bf:relatedTo rdf:resource="http://id.loc.gov/resources/works/c020601554"/>
+              </bflc:Relationship>
+            </bflc:relationship>
+            <bf:collection>Thomas Jefferson Library Collection (Library of Congress) </bf:collection>
+            <bf:contribution>
+              <bf:Contribution>
+                <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n79089957"/>
+                <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+              </bf:Contribution>
+            </bf:contribution>
+            <bf:custodialHistory>LC copy is Thomas Jefferson's.</bf:custodialHistory>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>LC copy forms part of the Jefferson Exhibit Collection. </rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>  2015659650</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Author and publication date from Sowerby.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Signatures: A⁶.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>[De l'imprimerie nationale]</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[1790]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>[Paris]</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:references>
+          <bf:Work>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>3586</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:title rdf:resource="http://id.loc.gov/resources/works/c012043678"/>
+          </bf:Work>
+        </bf:references>
+        <bf:responsibilityStatement>imprimée par ordred de l'Assemblée nationale.</bf:responsibilityStatement>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Opinion de M. L'Evêque D'Autun sur la fabrication des petites monnoies</bf:mainTitle>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>Caption title</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/>
+      </bf:Language>
+    </bf:language>
+    <bf:subject>
+      <bf:Topic>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79006404"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh2010013804"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85027788"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Opinion de M. L'Evêque D'Autun sur la fabrication des petites monnoies</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/languages/fre">
+    <rdfs:label xml:lang="en">French</rdfs:label>
+  </rdf:Description>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e104709546280803049810178606975034723988">
+    <rdf:value>e104709546280803049810178606975034723988</rdf:value>
+  </bf:Local>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Jefferson, Thomas, 1743-1826</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Talleyrand-Périgord, Charles Maurice de, prince de Bénévent, 1754-1838</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic>
+    <rdfs:label xml:lang="en">Coinage</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Geographic>
+    <rdfs:label xml:lang="en">France</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:GenreForm>
+    <rdfs:label xml:lang="en">Early works to 1800</rdfs:label>
+  </madsrdf:GenreForm>
+</rdf:RDF>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <madsrdf:GenreForm rdf:nodeID="bnodepYAP174AehMNLe4erujDXS">
+    <rdfs:label xml:lang="en">Television programs</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:GenreForm rdf:nodeID="bnode6eNvkgijdNPeQz4MEqYHSh">
+    <rdfs:label xml:lang="en">Western television programs</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Topic rdf:nodeID="bnodeeiTThwDbXpJeLnfXcmpVT6">
+    <rdfs:label xml:lang="en">Stagecoach robberies</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e220945391433705874589852203422675633280">
+    <bf:originDate>1960</bf:originDate>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026737"/>
+    </bf:genreForm>
+    <bf:originPlace>
+      <bf:Place rdf:nodeID="bnodenEbVgsqfdUd7Y3jFXyw5Je">
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n78095330"/>
+        <rdfs:label xml:lang="en">United States</rdfs:label>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnoderwu7C84RhkbcmRZvtJBV9f">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no95006028"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnode5rAQtrocFTW7b9wYtVcN6a">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh2002011074"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:colorContent>
+      <bf:ColorContent rdf:nodeID="bnodefiMQqjj81URycXGLCE9LCu">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodeeiKzLa3eS6KPL1D88XZoep">
+            <rdfs:label>black and white</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:ColorContent>
+    </bf:colorContent>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026673"/>
+    </bf:genreForm>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnode47rakmtDoKXBYqofHJ2dVt">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85052074"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <rdfs:label>Overland Trail (Television program)</rdfs:label>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026252"/>
+    </bf:genreForm>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodeqdMQxvJsFrMuBvYLnv2zj4">
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodeccJgPUAe7TxTpLzcRvHJVV">
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:creationDate>2018-01-31</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:changeDate>2018-01-31T14:49:40</bf:changeDate>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e191379219682616650945892356936342742690"/>
+            <bflc:profile>profile:bf2:MIBluRayDVD:Instance</bflc:profile>
+            <bflc:metadataAssigner>jjud</bflc:metadataAssigner>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/7"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodej1MzRrpB3J9pGtQt6TV2Xr">
+            <rdfs:label>4 videodiscs</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnode7xRW96VVPSX83f6GERvsEu">
+            <bf:enumerationAndChronology>
+              <bf:Enumeration rdf:nodeID="bnodeexky6kHLgG9QnYw1Gcbpkp">
+                <rdfs:label>d1-4 in 1 container</rdfs:label>
+              </bf:Enumeration>
+            </bf:enumerationAndChronology>
+            <bf:collection>LC Purchase Collection</bf:collection>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition rdf:nodeID="bnodecmgf5daRHk1DSa6ooQUQZv">
+                <rdfs:label>Purchase</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnodebKyAsvYimDaM8JUYuz3d2J">
+                <rdf:value>DVE 2181</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition rdf:nodeID="bnodeqCRMckgeTGx6mU7X76gC7v">
+                <rdfs:label>LC Purchase Collection</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnodeu8zt6pPY9fi5xe2Ks3xNny">
+                <rdf:value>00302368855</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:usageAndAccessPolicy>
+              <bf:AccessPolicy rdf:nodeID="bnodeehuTvSwrDJuCSb92gt9yD6">
+                <rdfs:label>Viewing copy</rdfs:label>
+              </bf:AccessPolicy>
+            </bf:usageAndAccessPolicy>
+            <bf:identifiedBy>
+              <bf:ShelfMark rdf:nodeID="bnode4L6h77uG7Wi6wJjHV4WmhJ">
+                <rdf:value>1</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:sublocation>c-Motion Pic &amp; TV/MBRS</bf:sublocation>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:digitalCharacteristic>
+          <bf:DigitalCharacteristic rdf:nodeID="bnodew6RaaV67bFbNge3REf92BA">
+            <rdfs:label>DVD video</rdfs:label>
+          </bf:DigitalCharacteristic>
+        </bf:digitalCharacteristic>
+        <bf:identifiedBy>
+          <bf:PublisherNumber rdf:nodeID="bnodecLBZjRPSeS4CfzsrXhKyVu">
+            <bf:qualifier>(disc 1)</bf:qualifier>
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodemfVyiGEGiFRCf7aWfJ1ery">
+                <rdfs:label>Timeless Media Group</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>61546 </rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:duration>approximately 833 min.</bf:duration>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnodegDRcfHnjKqCFRjcQL4JVVQ">
+            <rdf:value>2018600129</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:PublisherNumber rdf:nodeID="bnodesNPexENdRmuG6rKmgSEnp">
+            <bf:source>
+              <bf:Source rdf:nodeID="bnode5oz5YTc8RGzMS7omJ8H1HH">
+                <rdfs:label>Timeless Media Group</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <bf:qualifier>(disc 2)</bf:qualifier>
+            <rdf:value>61556</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:contribution>
+          <bf:Contribution rdf:nodeID="bnodeghXqrYo3Gx9pFPgiRVKUrb">
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2008055126"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fds"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:digitalCharacteristic rdf:resource="http://id.loc.gov/vocabulary/mfiletype/video"/>
+        <bf:source>
+          <bf:Source rdf:nodeID="bnodeuWkjn8QVmmfCFqCjvEwPvG">
+            <rdfs:label>Videodisc container; Amazon WWW site, viewed January 31, 2018; Internet movie database WWW site, viewed January 31, 2018; Wikipedia WWW site, viewed January 31, 2018</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:dimensions>
+          <bf:Dimensions rdf:nodeID="bnoderogZVuXG2oqKTYwcNBJ1Z1">
+            <rdfs:label>4 3/4 in.</rdfs:label>
+          </bf:Dimensions>
+        </bf:dimensions>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="bnode2FMfaGppST6wfRzojU3uk6">
+            <rdf:value>(OCoLC)778706934</rdf:value>
+            <bf:source>
+              <bf:Source rdf:nodeID="bnode371YgyYp4rseP4ZqjmLwYX">
+                <rdfs:label>OCLC</rdfs:label>
+              </bf:Source>
+            </bf:source>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:credits>
+          <bf:Credits rdf:nodeID="bnode8BnehA3ivQfC9mW4hKL6cv">
+            <rdfs:label>Cast: William Bendix, Doug McCLure. Guest stars include Harry Guardino, John Anderson, Denver Pyle, Werner Klemperer, Claude Akins, Slim Pickens, Mercedes McCambridge, John Carradine, John McIntire</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/v"/>
+        <bf:identifiedBy>
+          <bf:PublisherNumber rdf:nodeID="bnodea1ew4fJrMHukazkmTgLecC">
+            <rdf:value>61576 </rdf:value>
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodemEeugjkdrGC3GQ4MUTkhY6">
+                <rdfs:label>Timeless Media Group</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <bf:qualifier>(disc 4)</bf:qualifier>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:provisionActivity>
+          <bf:Distribution rdf:nodeID="bnodeiW8xuUD3PgsKT4rsmxXFQW">
+            <bf:date>[2012]</bf:date>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnode9FSYrneAGZbPtBh2VcdiM6">
+                <rdfs:label>Eugene, OR</rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnodeoTaPJDmTskGKYwageargs7">
+                <rdfs:label>Timeless Media Group</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+          </bf:Distribution>
+        </bf:provisionActivity>
+        <bf:soundCharacteristic rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+        <bf:identifiedBy>
+          <bf:Isbn rdf:nodeID="bnodepvvMrZ9HaG3fy4aWVQ8xzE">
+            <rdf:value>0741134934</rdf:value>
+          </bf:Isbn>
+        </bf:identifiedBy>
+        <bf:copyrightDate>©2011</bf:copyrightDate>
+        <bf:identifiedBy>
+          <bf:PublisherNumber rdf:nodeID="bnodegvCjpcT5qkPvEkFusmjTJd">
+            <bf:qualifier>(set)</bf:qualifier>
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodetFqF47JLBUKHC8JKRbXKNX">
+                <rdfs:label>Timeless Media Group</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>61536</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodecSkA5ZLH4rffhfy3EAes1A">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnodevDSwDUZZQcSXVPJeaoYHzT">
+                <rdfs:label>Title from container</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:subtitle>the complete series</bf:subtitle>
+            <bf:mainTitle>Overland Trail</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:identifiedBy>
+          <bf:PublisherNumber rdf:nodeID="bnodewRjxPrWbFr9CFpE1xB6ZJ9">
+            <bf:qualifier>(disc 3)</bf:qualifier>
+            <rdf:value>61566</rdf:value>
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodeqsbS7LEdFHQcnDKU15Gpi7">
+                <rdfs:label> Timeless Media Group</rdfs:label>
+              </bf:Source>
+            </bf:source>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:responsibilityStatement>Stagecoach Productions ; an Overland Stage-Bilben production ; Revue Studios</bf:responsibilityStatement>
+        <bf:soundCharacteristic rdf:resource="http://id.loc.gov/vocabulary/mspecplayback/dolby"/>
+        <bf:digitalCharacteristic rdf:resource="http://id.loc.gov/vocabulary/mregencoding/region1"/>
+        <bf:identifiedBy>
+          <bf:Isbn rdf:nodeID="bnodecTGVSnWQ5qGH77wWVdtdbr">
+            <rdf:value>9780741134936</rdf:value>
+          </bf:Isbn>
+        </bf:identifiedBy>
+        <bf:tableOfContents>
+          <bf:TableOfContents rdf:nodeID="bnodecCDYH18GEEccgm2QfcuCuK">
+            <rdfs:label>Disc 1.  Perilous passage --  The O'Mara's ladies--  West of Boston --  The high bridge -- Disc 2.  Westbound stage--  All the O'Mara's horses --  Daughter of the Sioux --  Lawyer in petticoats -- Disc 3.  Vigilantes of Montana --  Fire in the hole --  Mission into Mexico --  First stage to Denver -- Disc 4.  Sour Annie --  The baron comes back --  Escort detail --  The reckoning --  The most dangerous gentleman</rdfs:label>
+          </bf:TableOfContents>
+        </bf:tableOfContents>
+        <bf:videoCharacteristic rdf:resource="http://id.loc.gov/vocabulary/mbroadstd/ntsc"/>
+        <bf:soundCharacteristic>
+          <bf:SoundCharacteristic rdf:nodeID="bnode2i2qhy3CSQNdGsPeuyV1AC">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnode4KSWTx5YzCaMVTLWuWCwJq">
+                <rdfs:label>optical</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:SoundCharacteristic>
+        </bf:soundCharacteristic>
+        <bf:identifiedBy>
+          <bf:Upc rdf:nodeID="bnode7KE7U7RB5sMDzknhkg37Hw">
+            <rdf:value>011301615367</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/vd"/>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodefXtkvVLS5LV1wrMG8a4Y3V">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n86140075"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:duration>approximately 833 min.</bf:duration>
+    <bf:intendedAudience>
+      <bf:IntendedAudience rdf:nodeID="bnodeeiAk7PmZ5PP3GZGhivim7w">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode42iZZ6xMN1wwWLe3HHjThj">
+            <rdfs:label>Not rated</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:IntendedAudience>
+    </bf:intendedAudience>
+    <bf:historyOfWork>Originally broadcast on television by NBC in 1960</bf:historyOfWork>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodevcskVVVo12KgrDco7QUsMK">
+        <bf:mainTitle>Overland Trail</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:soundContent>
+      <bf:SoundContent rdf:about="http://id.loc.gov/vocabulary/msoundcontent/sound">
+        <rdfs:label xml:lang="en">sound</rdfs:label>
+      </bf:SoundContent>
+    </bf:soundContent>
+    <bf:summary>
+      <bf:Summary rdf:nodeID="bnodevCcjLwAYN7R69LXRK2GyjX">
+        <rdfs:label>The Overland Stage superintendent and his young sidekick struggle to keep the stagecoach safe from thieves, vigilantes, Native Americans and general mayhem as they move the stage line west from Missouri, across the Rockies, and on to California</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:source>videodisc container; Amazon WWW site, viewed January 31, 2018; Internet movie database WWW site, viewed January 31, 2018; Wikipedia WWW site, viewed January 31, 2018</bf:source>
+    <bf:tableOfContents>
+      <bf:TableOfContents rdf:nodeID="bnodesNuhjv2Anw3MA9xmkYT6dE">
+        <rdfs:label>Perilous passage -- The O'Mara's ladies-- West of Boston -- The high bridge -- Westbound stage --  All the O'Mara's horses --  Daughter of the Sioux --  Lawyer in petticoats -- Vigilantes of Montana --  Fire in the hole --  Mission into Mexico --  First stage to Denver -- Sour Annie --  The baron comes back --  Escort detail --  The reckoning --  The most dangerous gentleman</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnodeercYe1Kp9SJpEUTrJTRbDH">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n78080685"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bflc:comment>jjud</bflc:comment>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+        <rdfs:label xml:lang="en">English</rdfs:label>
+        <rdfs:label>eng</rdfs:label>
+      </bf:Language>
+    </bf:language>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnoden7x6LYP3EkmDsp38RuP8HZ">
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85033638"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+      </madsrdf:Topic>
+    </bf:subject>
+  </bf:Work>
+  <madsrdf:CorporateName rdf:nodeID="bnodenN9PwitqmV8F83WUEs6oQd">
+    <rdfs:label xml:lang="en">Revue Studios</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:GenreForm rdf:nodeID="bnode31c7jFvDqyTE9ciHvj1NkZ">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Topic rdf:nodeID="bnodevHJ6f25jRmRQkESATk4qKc">
+    <rdfs:label xml:lang="en">Frontier and pioneer life</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:PersonalName rdf:nodeID="bnodeozKSQBRJWiy9ZnSgsHcw6e">
+    <rdfs:label xml:lang="en">McClure, Doug, 1935-1995</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic rdf:nodeID="bnodehZEZ9F94iB2xpj8mVFKy1f">
+    <rdfs:label xml:lang="en">Cowboys</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:PersonalName rdf:nodeID="bnodejysTLAR5GY2hYKo5rcbgvv">
+    <rdfs:label xml:lang="en">Bendix, William, 1906-1964</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnodem3zsFPZ9fGcjmHuGwNNeer">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:GenreForm rdf:nodeID="bnodegMaaAvP2BcpP8e8FybMb2W">
+    <rdfs:label xml:lang="en">Drama</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:GenreForm rdf:nodeID="bnode2fnMe4wkhmz9WrAyNCWh6p">
+    <rdfs:label xml:lang="en">Fiction television programs</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:CorporateName rdf:nodeID="bnode8TXTXAXbQZ5Pjy2QH8JJV8">
+    <rdfs:label xml:lang="en">Timeless Media Group</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:PlaybackCharacteristic rdf:about="http://id.loc.gov/vocabulary/mspecplayback/dolby">
+    <rdfs:label xml:lang="en">Dolby</rdfs:label>
+  </bf:PlaybackCharacteristic>
+  <bf:FileType rdf:about="http://id.loc.gov/vocabulary/mfiletype/video">
+    <rdfs:label xml:lang="en">video file</rdfs:label>
+  </bf:FileType>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fds">
+    <rdfs:label xml:lang="en">Film distributor</rdfs:label>
+  </bf:Role>
+  <bf:SoundCharacteristic rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label xml:lang="en">digital</rdfs:label>
+  </bf:SoundCharacteristic>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:RegionalEncoding rdf:about="http://id.loc.gov/vocabulary/mregencoding/region1">
+    <rdfs:label xml:lang="en">region 1</rdfs:label>
+  </bf:RegionalEncoding>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no95006028"/>
+  <bf:BroadcastStandard rdf:about="http://id.loc.gov/vocabulary/mbroadstd/ntsc">
+    <rdfs:label xml:lang="en">NTSC</rdfs:label>
+  </bf:BroadcastStandard>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
+    <rdfs:label xml:lang="en">minimal</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/v">
+    <rdfs:label>video</rdfs:label>
+  </bf:Media>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/vd">
+    <rdfs:label>videodisc</rdfs:label>
+  </bf:Carrier>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e191379219682616650945892356936342742690">
+    <rdf:value>e191379219682616650945892356936342742690</rdf:value>
+  </bf:Local>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+    <rdfs:label xml:lang="en">Actor</rdfs:label>
+  </bf:Role>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85052074"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2002011074"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prn">
+    <rdfs:label xml:lang="en">Production company</rdfs:label>
+  </bf:Role>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85033638"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n86140075"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh85039316"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no2008055126"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n78080685"/>
+</rdf:RDF>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0201527670001">
+    <bf:instanceOf>
+      <bf:Text rdf:about="http://id.loc.gov/resources/works/c020152767">
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnoderSmSFnsg56E12SUha9i5B5">
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85075307"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh99005342"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79023147"/>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:geographicCoverage>
+          <bf:GeographicCoverage rdf:nodeID="bnode6j8JCT1UKyLgnS5FG8DpsJ">
+            <bf:GeographicCoverage rdf:resource="http://id.loc.gov/authorities/names/n79023147"/>
+            <rdfs:label xml:lang="en">Great Britain</rdfs:label>
+          </bf:GeographicCoverage>
+        </bf:geographicCoverage>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="bnodecVHScMNZCZS4hHiEgGsrGz">
+            <bf:agent>
+              <madsrdf:PersonalName rdf:nodeID="bnodegnnqgEqgiM7ngWNwuZyDX5">
+                <madsrdf:identifiesRWO>
+                  <madsrdf:RWO rdf:nodeID="bnode64zpExkp8sZhriJGxtZtFa">
+                    <madsrdf:occupation>
+                      <madsrdf:Occupation rdf:nodeID="bnodeb2dsKG8MT5LHvPxjyYkoSb">
+                        <rdfs:label>Marketing specialist</rdfs:label>
+                      </madsrdf:Occupation>
+                    </madsrdf:occupation>
+                  </madsrdf:RWO>
+                </madsrdf:identifiesRWO>
+                <rdfs:label>Bailey, Catherine</rdfs:label>
+              </madsrdf:PersonalName>
+            </bf:agent>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:contribution>
+          <bf:Contribution rdf:nodeID="bnode8Dn1xqjDH4dqya1dSHQkgJ">
+            <bf:agent>
+              <madsrdf:PersonalName rdf:nodeID="bnodeu69NvCbgc846JEbNcXQ6Ge">
+                <rdfs:label>Ingram, Jennet</rdfs:label>
+              </madsrdf:PersonalName>
+            </bf:agent>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:title>
+          <bf:Title rdf:nodeID="b73resourcesworksc020152767">
+            <bf:mainTitle>A practical guide to marketing for lawyers</bf:mainTitle>
+            <bflc:titleSortKey>practical guide to marketing for lawyers /</bflc:titleSortKey>
+            <rdfs:label>A practical guide to marketing for lawyers /</rdfs:label>
+          </bf:Title>
+        </bf:title>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnodekpgQyVxZDWMZ1cfo6tTHDS">
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh2008106835"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh99005342"/>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnode4Yrs4Leit1zbTgHMtggZRx">
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79023147"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85001137"/>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="bnode8oE7TTRBG1neLWg1mTPkh2">
+            <bf:classificationPortion>KD491</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <rdfs:label>A practical guide to marketing for lawyers /</rdfs:label>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="b10resourcesworksc020152767">
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="b24resourcesworksc020152767">
+                <bf:code>isbd</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:changeDate>2018-01-24T15:13:04</bf:changeDate>
+            <bf:source>
+              <bf:Agent rdf:nodeID="b36resourcesworksc020152767">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+              </bf:Agent>
+            </bf:source>
+            <bf:creationDate>2017-11-16</bf:creationDate>
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="b12resourcesworksc020152767">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="b28resourcesworksc020152767">
+                <rdf:value>20152767</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="b20resourcesworksc020152767">
+                <bf:code>5</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:source>
+              <bf:Source rdf:nodeID="b41resourcesworksc020152767">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+              </bf:Source>
+            </bf:source>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:status>
+              <bf:Status rdf:nodeID="b16resourcesworksc020152767">
+                <bf:code>c</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bflc:procInfo>ibc update</bflc:procInfo>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+      </bf:Text>
+    </bf:instanceOf>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b12resourcesinstancesc0201527670001">
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/enk"/>
+        <bf:date>2017</bf:date>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:title>
+      <bf:Title rdf:nodeID="b37resourcesinstancesc0201527670001">
+        <bf:mainTitle>A practical guide to marketing for lawyers</bf:mainTitle>
+        <bflc:titleSortKey>practical guide to marketing for lawyers /</bflc:titleSortKey>
+        <rdfs:label>A practical guide to marketing for lawyers /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <bf:identifiedBy>
+      <bf:Local rdf:nodeID="b27resourcesinstancesc0201527670001">
+        <rdf:value>uk37141538</rdf:value>
+        <bf:source>
+          <bf:Source rdf:nodeID="b31resourcesinstancesc0201527670001">
+            <rdfs:label>Uk-RwCLS</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:nodeID="b78resourcesinstancesc0201527670001">
+            <rdfs:label>rdamedia</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="b19resourcesinstancesc0201527670001">
+        <rdf:value>  2017434411</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:nodeID="b86resourcesinstancesc0201527670001">
+            <rdfs:label>rdacarrier</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="b62resourcesinstancesc0201527670001">
+        <rdfs:label>190 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:provisionActivityStatement>Minehead : Law Brief Publishing, 2017.</bf:provisionActivityStatement>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b23resourcesinstancesc0201527670001">
+        <rdf:value>1911035177 (pbk.)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:hasItem>
+      <bf:Item rdf:nodeID="bnodes16STBYMGRNWktna9zam8J">
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:Barcode rdf:nodeID="bnode9R724sf53Y8DakzkXAvsbc">
+            <rdf:value>00483074724</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:usageAndAccessPolicy>
+          <bf:RetentionPolicy rdf:nodeID="bnodes8JoWaXB2cqJrJLbyke2sH">
+            <rdfs:label>1 shelf copy</rdfs:label>
+          </bf:RetentionPolicy>
+        </bf:usageAndAccessPolicy>
+        <bf:enumerationAndChronology>
+          <bf:Enumeration rdf:nodeID="bnodeqBQvBpSr6vV6pKoZwuTzLk">
+            <rdfs:label>copy 1</rdfs:label>
+          </bf:Enumeration>
+        </bf:enumerationAndChronology>
+        <bf:immediateAcquisition>
+          <bf:ImmediateAcquisition rdf:nodeID="bnodevwkrbqYpYuCvFWPtHt6bnd">
+            <rdfs:label>purchase</rdfs:label>
+          </bf:ImmediateAcquisition>
+        </bf:immediateAcquisition>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc rdf:nodeID="bnodeshzYyCw2maLSLs1wMJnVET">
+            <rdf:value>KD491.B35 2017</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:dimensions>24 cm</bf:dimensions>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="bnodeohisZ9h2qboqybY4quo7MG">
+        <bf:place>
+          <bf:Place rdf:nodeID="bnodebKPYPdXy4uCpns1BP5PQQ9">
+            <rdfs:label>Minehead, Somerset</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent rdf:nodeID="bnodefokwSLMxyLsoY6xCgMGeZX">
+            <rdfs:label>Law Brief Publishing</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2017</bf:date>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <rdfs:label>A practical guide to marketing for lawyers /</rdfs:label>
+    <bf:responsibilityStatement>Catherine Bailey (managing director, Bar Marketing Limited, BA (Hons) marketing &amp; engineering), Jennet Ingram (marketing consultant, Bar Marketing Limited, MA, MCIM, chartered marketer)</bf:responsibilityStatement>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="b91resourcesinstancesc0201527670001">
+        <bf:status>
+          <bf:Status rdf:nodeID="b97resourcesinstancesc0201527670001">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="b109resourcesinstancesc0201527670001">
+            <rdf:value>20152767</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate>2018-01-24T15:13:04</bf:changeDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:source>
+          <bf:Source rdf:nodeID="b117resourcesinstancesc0201527670001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Agent rdf:nodeID="b122resourcesinstancesc0201527670001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+          </bf:Agent>
+        </bf:source>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:creationDate>2017-11-16</bf:creationDate>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:nodeID="b101resourcesinstancesc0201527670001">
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="b93resourcesinstancesc0201527670001">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bflc:metadataAssigner>pgeo</bflc:metadataAssigner>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="b105resourcesinstancesc0201527670001">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Instance>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20152767#Agent100-13">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Bailey, Catherine.</rdfs:label>
+    <bflc:name00MarcKey>1001 $aBailey, Catherine.</bflc:name00MarcKey>
+    <bflc:primaryContributorName00MatchKey>Bailey, Catherine.</bflc:primaryContributorName00MatchKey>
+    <bflc:name00MatchKey>Bailey, Catherine.</bflc:name00MatchKey>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic rdf:nodeID="bnode4ScjyDUEjwH1ffYosSvP1M">
+    <rdfs:label xml:lang="en">Lawyers--Great Britain</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Agent rdf:nodeID="b54resourcesinstancesc0201527670001">
+    <rdfs:label>Law Brief Publishing</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <madsrdf:Topic rdf:nodeID="bnode5Ubyv7Fj3Z6gFpjrU93UCq">
+    <rdfs:label xml:lang="en">Marketing</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="bnodenmK32SSUYrjquaByDAJb3r">
+    <rdfs:label xml:lang="en">Advertising--Lawyers</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Geographic rdf:nodeID="bnodekTLEb7vR1srH9xyZEow9Ru">
+    <rdfs:label xml:lang="en">Great Britain</rdfs:label>
+  </madsrdf:Geographic>
+  <bf:Place rdf:nodeID="b50resourcesinstancesc0201527670001">
+    <rdfs:label>Minehead</rdfs:label>
+  </bf:Place>
+  <madsrdf:Topic rdf:nodeID="bnodejDxhz8Utm8fh6VgjEtN9wc">
+    <rdfs:label xml:lang="en">Marketing</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="bnode5pFvb4Jyd5KZ1rr8Mmna3P">
+    <rdfs:label xml:lang="en">Law firms</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Geographic rdf:nodeID="bnodewjto4Y3G6QECp5RmacLJsq">
+    <rdfs:label xml:lang="en">Great Britain</rdfs:label>
+  </madsrdf:Geographic>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source rdf:nodeID="b85resourcesworksc020152767">
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n79023147"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85075307"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh99005342"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85001137"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/enk"/>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008106835"/>
+</rdf:RDF>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0200591810001">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <bf:source>
+          <bf:Source rdf:nodeID="b62resourcesinstancesc0200591810001">
+            <rdfs:label>rdamedia</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>unmediated</rdfs:label>
+      </bf:Media>
+    </bf:media>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="b75resourcesinstancesc0200591810001">
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bflc:metadataAssigner>jowill (IBC test)</bflc:metadataAssigner>
+        <bf:source>
+          <bf:Agent rdf:nodeID="b101resourcesinstancesc0200591810001">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:source>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="b93resourcesinstancesc0200591810001">
+            <rdf:value>20059181</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source rdf:nodeID="b106resourcesinstancesc0200591810001">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:status>
+          <bf:Status rdf:nodeID="b81resourcesinstancesc0200591810001">
+            <bf:code>n</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:nodeID="b85resourcesinstancesc0200591810001">
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="b89resourcesinstancesc0200591810001">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:creationDate>2017-10-12</bf:creationDate>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:changeDate>2017-10-12T09:12:40</bf:changeDate>
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="b77resourcesinstancesc0200591810001">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="bnodemHhXBzYbJp9cFKJGgRScbs">
+        <rdfs:label>xiii, 302 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:title>
+      <bf:Title rdf:nodeID="b29resourcesinstancesc0200591810001">
+        <bf:mainTitle>International Conference, ICSH 2017, Hong Kong, China, June 26-27, 2017, Proceedings</bf:mainTitle>
+        <bflc:titleSortKey>International Conference, ICSH 2017, Hong Kong, China, June 26-27, 2017, Proceedings.</bflc:titleSortKey>
+        <rdfs:label>International Conference, ICSH 2017, Hong Kong, China, June 26-27, 2017, Proceedings.</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>International Conference, ICSH 2017, Hong Kong, China, June 26-27, 2017, Proceedings.</rdfs:label>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="b19resourcesinstancesc0200591810001">
+        <rdf:value>  2017957536</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <bf:source>
+          <bf:Source rdf:nodeID="b70resourcesinstancesc0200591810001">
+            <rdfs:label>rdacarrier</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>volume</rdfs:label>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b39resourcesinstancesc0200591810001">
+        <bf:agent>
+          <bf:Agent rdf:nodeID="b46resourcesinstancesc0200591810001">
+            <rdfs:label>Springer Berlin Heidelberg</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:place>
+          <bf:Place rdf:nodeID="b42resourcesinstancesc0200591810001">
+            <rdfs:label>New York, NY</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:date>2017</bf:date>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:instanceOf>
+      <bf:Text rdf:about="http://id.loc.gov/resources/works/c020059181">
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="b10resourcesworksc020059181">
+            <bf:source>
+              <bf:Agent rdf:nodeID="b41resourcesworksc020059181">
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+                <rdfs:label>DLC</rdfs:label>
+              </bf:Agent>
+            </bf:source>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:changeDate>2017-10-12T09:12:40</bf:changeDate>
+            <bf:source>
+              <bf:Agent rdf:nodeID="b36resourcesworksc020059181">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+              </bf:Agent>
+            </bf:source>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="b28resourcesworksc020059181">
+                <rdf:value>20059181</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bf:status>
+              <bf:Status rdf:nodeID="b16resourcesworksc020059181">
+                <bf:code>n</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="b12resourcesworksc020059181">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bflc:procInfo>ibc update</bflc:procInfo>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="b20resourcesworksc020059181">
+                <bf:code>5</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="b24resourcesworksc020059181">
+                <bf:code>isbd</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+            <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+            <bf:creationDate>2017-10-12</bf:creationDate>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+        <bf:title>
+          <bf:Title rdf:nodeID="b57resourcesworksc020059181">
+            <bf:mainTitle>International Conference, ICSH 2017, Hong Kong, China, June 26-27, 2017, Proceedings</bf:mainTitle>
+            <bflc:titleSortKey>International Conference, ICSH 2017, Hong Kong, China, June 26-27, 2017, Proceedings.</bflc:titleSortKey>
+            <rdfs:label>International Conference, ICSH 2017, Hong Kong, China, June 26-27, 2017, Proceedings.</rdfs:label>
+          </bf:Title>
+        </bf:title>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh89003285"/>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh89005069"/>
+        <rdfs:label>International Conference, ICSH 2017, Hong Kong, China, June 26-27, 2017, Proceedings.</rdfs:label>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Text>
+    </bf:instanceOf>
+    <bf:provisionActivityStatement>New York, NY : Springer Berlin Heidelberg, 2017.</bf:provisionActivityStatement>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b23resourcesinstancesc0200591810001">
+        <rdf:value>9783319679631</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+  </bf:Instance>
+  <madsrdf:Topic rdf:nodeID="bnodesjuTbZXg5ekS3Ukb6pVxiW">
+    <rdfs:label xml:lang="en">Computer science</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="bnodeweP1EDhWDyd1Gebh136eyv">
+    <rdfs:label xml:lang="en">Medical informatics</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/nyu"/>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+    <bf:source>
+      <bf:Source rdf:nodeID="b69resourcesworksc020059181">
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+  </bf:Content>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh89003285"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh89005069"/>
+</rdf:RDF>

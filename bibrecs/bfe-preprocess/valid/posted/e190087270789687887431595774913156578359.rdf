@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026252"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026579"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026673"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026725"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n2009039920"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n79128656"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n80012277"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n80159159"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n85376586"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n91051592"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n91051598"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n92104851"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n92104854"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n92106713"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no2005088669"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2008015889"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2008016319"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no2014123409"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no2014123418"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/e262675046490872927209597299059830668366">
+    <bflc:comment>jjud</bflc:comment>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/7"/>
+        <bflc:metadataAssigner>jjud</bflc:metadataAssigner>
+        <bflc:profile>profile:bf2:MIBluRayDVD:Instance</bflc:profile>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:creationDate>2018-01-12</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:8230/resources/e190087270789687887431595774913156578359"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:aspectRatio>
+      <bf:AspectRatio>
+        <rdf:value>1.33:1</rdf:value>
+        <rdfs:label rdf:resource="http://id.loc.gov/vocabulary/maspect/full"/>
+      </bf:AspectRatio>
+    </bf:aspectRatio>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/vd"/>
+    <bf:contentAccessibility>
+      <bf:Note>
+        <rdfs:label>Closed-captioned</rdfs:label>
+      </bf:Note>
+    </bf:contentAccessibility>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2005088669"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fds"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:copyrightDate>©2008</bf:copyrightDate>
+    <bf:credits>
+      <bf:Credits>
+        <rdfs:label>Cast: Penny Marshall, Cindy Williams, David L. Lander, Michael McKean, Eddie Mekka, Phil Foster, Betty Garrett</rdfs:label>
+      </bf:Credits>
+    </bf:credits>
+    <bf:digitalCharacteristic>
+      <bf:DigitalCharacteristic>
+        <rdfs:label>DVD video</rdfs:label>
+      </bf:DigitalCharacteristic>
+    </bf:digitalCharacteristic>
+    <bf:digitalCharacteristic>
+      <bf:FileType>
+        <rdf:value rdf:resource="http://id.loc.gov/vocabulary/mfiletype/video"/>
+      </bf:FileType>
+    </bf:digitalCharacteristic>
+    <bf:digitalCharacteristic>
+      <bf:RegionalEncoding>
+        <rdf:value rdf:resource="http://id.loc.gov/vocabulary/mregencoding/region1"/>
+      </bf:RegionalEncoding>
+    </bf:digitalCharacteristic>
+    <bf:dimensions>
+      <bf:Dimensions>
+        <rdfs:label>4 3/4 in.</rdfs:label>
+      </bf:Dimensions>
+    </bf:dimensions>
+    <bf:duration>598 min.</bf:duration>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>4 videodiscs</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026725"/>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:collection>LC Purchase Collection (Library of Congress)</bf:collection>
+        <bf:enumerationAndChronology>
+          <bf:Enumeration>
+            <rdfs:label>d1-4 in 1 container</rdfs:label>
+          </bf:Enumeration>
+        </bf:enumerationAndChronology>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>DVE 2026</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00302368697</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:sublocation>c-Motion Pic &amp; TV/MBRS</bf:sublocation>
+        <bf:usageAndAccessPolicy>
+          <bf:AccessPolicy>
+            <rdfs:label>Viewing copy</rdfs:label>
+          </bf:AccessPolicy>
+        </bf:usageAndAccessPolicy>
+        <bf:usageAndAccessPolicy>
+          <bf:AccessPolicy>
+            <rdfs:label>Viewing copy</rdfs:label>
+          </bf:AccessPolicy>
+        </bf:usageAndAccessPolicy>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Upc>
+        <rdf:value>097361326849</rdf:value>
+      </bf:Upc>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Identifier>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>gtin-14</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <rdf:value>00097361326849 </rdf:value>
+      </bf:Identifier>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>141573982X</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9781415739822</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:PublisherNumber>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>Paramount Home Entertainment</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>13268</rdf:value>
+      </bf:PublisherNumber>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>(OCoLC)972174445</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>2018600111</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:instanceOf>
+      <bf:Work>
+        <bflc:comment>jjud</bflc:comment>
+        <bf:contribution>
+          <bf:Contribution>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n79128656"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cre"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:contribution>
+          <bf:Contribution>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n92106713"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cre"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:contribution>
+          <bf:Contribution>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2008016319"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cre"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:contribution>
+          <bf:Contribution>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2014123418"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:contribution>
+          <bf:Contribution>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2014123409"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:contribution>
+          <bf:Contribution>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n80012277"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026252"/>
+        <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026579"/>
+        <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026673"/>
+        <bf:geographicCoverage>
+          <bf:GeographicCoverage>
+            <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n79022855"/>
+            <rdfs:label xml:lang="en">Wisconsin</rdfs:label>
+          </bf:GeographicCoverage>
+        </bf:geographicCoverage>
+        <bf:hasExpression>
+          <bf:Work>
+            <bf:aspectRatio>
+              <bf:AspectRatio>
+                <rdf:value>1.33:1</rdf:value>
+                <rdfs:label rdf:resource="http://id.loc.gov/vocabulary/maspect/full"/>
+              </bf:AspectRatio>
+            </bf:aspectRatio>
+            <bf:colorContent>
+              <bf:ColorContent>
+                <bf:note>
+                  <bf:Note>
+                    <rdfs:label>color</rdfs:label>
+                  </bf:Note>
+                </bf:note>
+              </bf:ColorContent>
+            </bf:colorContent>
+            <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/tdi"/>
+            <bf:contribution>
+              <bf:Contribution>
+                <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n91051592"/>
+                <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+              </bf:Contribution>
+            </bf:contribution>
+            <bf:contribution>
+              <bf:Contribution>
+                <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n91051598"/>
+                <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+              </bf:Contribution>
+            </bf:contribution>
+            <bf:contribution>
+              <bf:Contribution>
+                <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n92104854"/>
+                <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+              </bf:Contribution>
+            </bf:contribution>
+            <bf:contribution>
+              <bf:Contribution>
+                <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n92104851"/>
+                <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+              </bf:Contribution>
+            </bf:contribution>
+            <bf:contribution>
+              <bf:Contribution>
+                <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2008015889"/>
+                <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+              </bf:Contribution>
+            </bf:contribution>
+            <bf:contribution>
+              <bf:Contribution>
+                <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2009039920"/>
+                <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+              </bf:Contribution>
+            </bf:contribution>
+            <bf:contribution>
+              <bf:Contribution>
+                <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n85376586"/>
+                <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+              </bf:Contribution>
+            </bf:contribution>
+            <bf:contribution>
+              <bf:Contribution>
+                <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n80159159"/>
+                <bf:role>
+                  <bf:Role>
+                    <bf:Role>composer (expression)</bf:Role>
+                  </bf:Role>
+                </bf:role>
+              </bf:Contribution>
+            </bf:contribution>
+            <bf:duration>598 min.</bf:duration>
+            <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:originDate>1978-1979 </bf:originDate>
+            <bf:soundContent>
+              <bf:SoundContent>
+                <rdf:value rdf:resource="http://id.loc.gov/vocabulary/msoundcontent/sound"/>
+              </bf:SoundContent>
+            </bf:soundContent>
+            <bf:summary>
+              <bf:Summary>
+                <rdfs:label>"The fourth season of Laverne &amp; Shirley finds our feisty female friends taking on everything from musical auditions to industrial espionage to amnesia! And of course, there are plenty of rollicking romantic foibles in store, too. Along with their friends and neighbors Lenny and Squiggy as well as some terrific and unexpected guest stars, Laverne and Shirley will keep you laughing for years to come"--Videodisc container</rdfs:label>
+              </bf:Summary>
+            </bf:summary>
+          </bf:Work>
+        </bf:hasExpression>
+        <bf:historyOfWork>Originally broadcast on television by ABC in 1978-1979</bf:historyOfWork>
+        <bf:intendedAudience>
+          <bf:IntendedAudience>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>TV rating: Not rated</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:IntendedAudience>
+        </bf:intendedAudience>
+        <bf:originDate>1978-1979 </bf:originDate>
+        <bf:originPlace>
+          <bf:Place>
+            <rdfs:label rdf:resource="http://id.loc.gov/authorities/names/n78095330"/>
+            <rdfs:label xml:lang="en">United States</rdfs:label>
+          </bf:Place>
+        </bf:originPlace>
+        <bf:relatedTo rdf:resource="http://id.loc.gov/resources/works/no2016107925"/>
+        <bf:source>Videodisc container; Amazon WWW site, viewed January 12, 2018; Wikipedia WWW site, viewed January 12, 2018</bf:source>
+        <bf:subject>
+          <madsrdf:Topic>
+            <madsrdf:authoritativeLabel>Single women--Wisconsin--Milwaukee--Drama</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <madsrdf:Topic>
+            <madsrdf:authoritativeLabel>Roommates--Wisconsin--Milwaukee--Drama</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <madsrdf:Topic>
+            <madsrdf:authoritativeLabel>Brewery workers--Wisconsin--Milwaukee--Drama</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <madsrdf:Topic>
+            <madsrdf:authoritativeLabel>Friendship--Wisconsin--Milwaukee--Drama</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <madsrdf:Topic>
+            <madsrdf:authoritativeLabel>Man-woman relationships--Wisconsin--Milwaukee--Drama</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:tableOfContents>
+          <bf:TableOfContents>
+            <rdfs:label>The festival : part 1 -- The festival : part 2 -- Playing the Roxy -- The robbery -- The quiz show -- Laverne &amp; Shirley go to night school -- Date with Eraserhead -- The bully show -- A visit to the cemetery -- A chorus line -- Laverne &amp; Shirley move in -- Dinner for four -- It's a dog's life -- Oh, come all ye bums -- Who's papa? -- The third annual Shotz Talent Show -- Supermarket sweep -- Lenny's crush -- The fire show -- Squiggy in love -- The feminine mistake -- Tenants are revolting -- There's a spy in my beer -- Shirley and the older man</rdfs:label>
+          </bf:TableOfContents>
+        </bf:tableOfContents>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Laverne &amp; Shirley. Season 4</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <rdfs:label>Laverne &amp; Shirley (Television program). Season 4</rdfs:label>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/v"/>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>For private home use only</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Distribution>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Paramount Home Entertainment</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>[2008]</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Hollywood, California</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Distribution>
+    </bf:provisionActivity>
+    <bf:responsibilityStatement>Miller-Milkis Productions, Inc. and Henderson Production Company, Inc. in association with Paramount Television ; created by Garry Marshall, Lowell Ganz and Mark Rothman</bf:responsibilityStatement>
+    <bf:soundCharacteristic>
+      <bf:SoundCharacteristic>
+        <rdfs:label>digital</rdfs:label>
+      </bf:SoundCharacteristic>
+    </bf:soundCharacteristic>
+    <bf:soundCharacteristic>
+      <bf:SoundCharacteristic>
+        <rdfs:label>optical</rdfs:label>
+      </bf:SoundCharacteristic>
+    </bf:soundCharacteristic>
+    <bf:soundCharacteristic>
+      <bf:PlaybackChannels>
+        <rdf:value rdf:resource="http://id.loc.gov/vocabulary/mplayback/mon"/>
+      </bf:PlaybackChannels>
+    </bf:soundCharacteristic>
+    <bf:soundCharacteristic>
+      <bf:PlaybackCharacteristic>
+        <rdf:value rdf:resource="http://id.loc.gov/vocabulary/mspecplayback/dolby"/>
+      </bf:PlaybackCharacteristic>
+    </bf:soundCharacteristic>
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>Videodisc container; Amazon WWW site, viewed January 12, 2018; Wikipedia WWW site, viewed January 12, 2018</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>The festival : part 1 -- The festival : part 2 -- Playing the Roxy -- The robbery -- The quiz show -- Laverne &amp; Shirley go to night school -- Date with Eraserhead -- The bully show -- A visit to the cemetery -- A chorus line -- Laverne &amp; Shirley move in -- Dinner for four -- It's a dog's life -- Oh, come all ye bums -- Who's papa? -- The third annual Shotz Talent Show -- Supermarket sweep -- Lenny's crush -- The fire show -- Squiggy in love -- The feminine mistake -- Tenants are revolting -- There's a spy in my beer -- Shirley and the older man</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Laverne &amp; Shirley</bf:mainTitle>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Title from container</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:partNumber>The fourth season</bf:partNumber>
+      </bf:Title>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <rdfs:label>Laverne and Shirley. The fourth season</rdfs:label>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <rdfs:label>Laverne &amp; Shirley. Season 4</rdfs:label>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <rdfs:label>Laverne and Shirley. Season 4</rdfs:label>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:videoCharacteristic rdf:resource="http://id.loc.gov/vocabulary/mbroadstd/ntsc"/>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/vd">
+    <rdfs:label>videodisc</rdfs:label>
+  </bf:Carrier>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/v">
+    <rdfs:label>video</rdfs:label>
+  </bf:Media>
+  <bf:BroadcastStandard rdf:about="http://id.loc.gov/vocabulary/mbroadstd/ntsc">
+    <rdfs:label xml:lang="en">NTSC</rdfs:label>
+  </bf:BroadcastStandard>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/no2016107925">
+    <rdfs:label xml:lang="en">Laverne &amp; Shirley (Television program)</rdfs:label>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/tdi">
+    <rdfs:label>two-dimensional moving image</rdfs:label>
+  </bf:Content>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/maspect/full">
+    <rdfs:label xml:lang="en">full screen</rdfs:label>
+  </rdf:Description>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
+    <rdfs:label xml:lang="en">minimal</rdfs:label>
+  </bflc:EncodingLevel>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mfiletype/video">
+    <rdfs:label xml:lang="en">video file</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mplayback/mon">
+    <rdfs:label xml:lang="en">mono</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mregencoding/region1">
+    <rdfs:label xml:lang="en">region 1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/msoundcontent/sound">
+    <rdfs:label xml:lang="en">sound</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://id.loc.gov/vocabulary/mspecplayback/dolby">
+    <rdfs:label xml:lang="en">Dolby</rdfs:label>
+  </rdf:Description>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+    <rdfs:label xml:lang="en">Actor</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cre">
+    <rdfs:label xml:lang="en">Creator</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fds">
+    <rdfs:label xml:lang="en">Film distributor</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prn">
+    <rdfs:label xml:lang="en">Production company</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:8230/resources/e190087270789687887431595774913156578359">
+    <rdf:value>e190087270789687887431595774913156578359</rdf:value>
+  </bf:Local>
+  <madsrdf:GenreForm>
+    <rdfs:label xml:lang="en">Television programs</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:GenreForm>
+    <rdfs:label xml:lang="en">Situation comedies (Television programs)</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:GenreForm>
+    <rdfs:label xml:lang="en">Fiction television programs</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Marshall, Garry</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Ganz, Lowell, 1948-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Rothman, Mark</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Marshall, Penny</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Williams, Cindy, 1947 August 22-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Lander, David L.</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">McKean, Michael</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Mekka, Eddie, 1952-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Foster, Phil, 1914-1985</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Garrett, Betty, 1919-2011</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Fox, Charles, 1940-</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Miller-Milkis Productions</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Henderson Production Company</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Paramount Television</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:GenreForm>
+    <rdfs:label xml:lang="en">Video recordings for the hearing impaired</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">Paramount Home Entertainment (Firm)</rdfs:label>
+  </madsrdf:CorporateName>
+</rdf:RDF>

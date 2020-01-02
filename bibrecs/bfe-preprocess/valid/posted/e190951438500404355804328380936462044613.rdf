@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n79023113">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/GeographicCoverage"/>
+  </madsrdf:Geographic>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh00006383"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh99001237"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0205434630001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>pgeo</bflc:catalogerId>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:creationDate>2018-8-17</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e190951438500404355804328380936462044613"/>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <rdfs:label>eng</rdfs:label>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-06-15T13:40:21</bf:changeDate>
+        <bf:creationDate>2018-06-15</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20543463</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:dimensions>24 cm</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>253 pages, 50 unnumbered pages of plates</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfmarkLcc>
+            <rdf:value>KF373.M225C67 2018</rdf:value>
+          </bf:ShelfmarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00510906408</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9780881466621 (hardcover)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2017478384</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>088146662X (hardcover)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c020543463"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:date>2018</bf:date>
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/gau"/>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Mercer University Press</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2018</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Macon, Georgia</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Macon, Georgia : Mercer University Press, 2018.</bf:provisionActivityStatement>
+    <bf:responsibilityStatement>Vincent Coppola</bf:responsibilityStatement>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>A guiding hand -- Beginnings -- In the arena -- Gone fishing -- The company he keeps -- Giving back -- Snapper point -- Ties that bind -- Organization man -- Rosser Malane -- Closing the circle.</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Tommy Malone, trial lawyer : and the light shown through...the guiding hand shaping one of America's greatest trial lawyers /</bflc:titleSortKey>
+        <bf:mainTitle>Tommy Malone, trial lawyer</bf:mainTitle>
+        <bf:subtitle>and the light shown through...the guiding hand shaping one of America's greatest trial lawyers</bf:subtitle>
+        <rdfs:label>Tommy Malone, trial lawyer : and the light shown through...the guiding hand shaping one of America's greatest trial lawyers /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Tommy Malone, trial lawyer : and the light shown through...the guiding hand shaping one of America's greatest trial lawyers /</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacarrier</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c020543463">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-06-15T13:40:21</bf:changeDate>
+        <bf:creationDate>2018-06-15</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20543463</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>KF373</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/20543463#Agent100-14"/>
+        <bf:role>
+          <bf:Role>
+            <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+            <rdfs:label>author.</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:geographicCoverage rdf:resource="http://id.loc.gov/authorities/names/n79023113"/>
+    <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/20543463#Agent600-22"/>
+    <bf:subject>
+      <bf:Topic>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79023113"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh00006383"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh99001237"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>A guiding hand -- Beginnings -- In the arena -- Gone fishing -- The company he keeps -- Giving back -- Snapper point -- Ties that bind -- Organization man -- Rosser Malone -- Closing the circle</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Tommy Malone, trial lawyer : and the light shown through...the guiding hand shaping one of America's greatest trial lawyers /</bflc:titleSortKey>
+        <bf:mainTitle>Tommy Malone, trial lawyer</bf:mainTitle>
+        <bf:subtitle>and the light shown through...the guiding hand shaping one of America's greatest trial lawyers</bf:subtitle>
+        <rdfs:label>Tommy Malone, trial lawyer : and the light shown through...the guiding hand shaping one of America's greatest trial lawyers /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdfs:label>Tommy Malone, trial lawyer : and the light shown through...the guiding hand shaping one of America's greatest trial lawyers /</rdfs:label>
+  </bf:Work>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdamedia</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20543463#Agent100-14">
+    <bflc:name00MarcKey>1001 $aCoppola, Vincent,$eauthor.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Coppola, Vincent,</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Coppola, Vincent,</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Coppola, Vincent,</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Name rdf:about="http://id.loc.gov/resources/works/20543463#Agent600-22">
+    <bflc:name00MarcKey>60010$aMalone, Thomas William.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Malone, Thomas William.</bflc:name00MatchKey>
+    <madsrdf:authoritativeLabel>Malone, Thomas William.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Malone, Thomas William.</rdfs:label>
+  </madsrdf:Name>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+    <rdfs:label xml:lang="en">Illustrations</rdfs:label>
+  </bf:Illustration>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/gau"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e190951438500404355804328380936462044613">
+    <rdf:value>e190951438500404355804328380936462044613</rdf:value>
+  </bf:Local>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Lawyers</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b29"/>
+  </madsrdf:Topic>
+  <madsrdf:Geographic>
+    <madsrdf:authoritativeLabel>United States</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0_b32"/>
+  </madsrdf:Geographic>
+  <madsrdf:GenreForm>
+    <madsrdf:authoritativeLabel>Biography</madsrdf:authoritativeLabel>
+  </madsrdf:GenreForm>
+  <bf:GeographicCoverage>
+    <rdfs:label xml:lang="en">Georgia</rdfs:label>
+  </bf:GeographicCoverage>
+  <madsrdf:Topic>
+    <rdfs:label xml:lang="en">Lawyers</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Geographic>
+    <rdfs:label xml:lang="en">Georgia</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:GenreForm>
+    <rdfs:label xml:lang="en">Biography</rdfs:label>
+  </madsrdf:GenreForm>
+</rdf:RDF>

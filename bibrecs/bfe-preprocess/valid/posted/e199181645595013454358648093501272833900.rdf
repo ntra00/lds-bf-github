@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026639"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014027077"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nr96044349"/>
+  <pmo:InstrumentEnsemble rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015127">
+    <rdfs:label xml:lang="en">chamber orchestra</rdfs:label>
+  </pmo:InstrumentEnsemble>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015342">
+    <rdfs:label xml:lang="en">horn</rdfs:label>
+  </pmo:IndividualInstrument>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015747">
+    <rdfs:label xml:lang="en">trombone</rdfs:label>
+  </pmo:IndividualInstrument>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015748">
+    <rdfs:label xml:lang="en">trumpet</rdfs:label>
+  </pmo:IndividualInstrument>
+  <pmo:IndividualInstrument rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015750">
+    <rdfs:label xml:lang="en">tuba</rdfs:label>
+  </pmo:IndividualInstrument>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85062015"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e40163591492536965603778956308000182047">
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>M1040</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/ntm"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr96044349"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:duration>Duration: approximately 18 min.</bf:duration>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026639"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014027077"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>lyus</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:changeDate>2018-10-03T11:37:12</bf:changeDate>
+            <bf:creationDate>2018-10-2</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier>DLC</bf:descriptionModifier>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e199181645595013454358648093501272833900"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:copyrightDate>©2012</bf:copyrightDate>
+        <bf:dimensions>30 cm</bf:dimensions>
+        <bf:editionStatement>Full score.</bf:editionStatement>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 score (69 pages)</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc>
+                <rdf:value>M1040.H46 S9 2013</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>00294223538</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:hasSeries>
+          <bf:Instance>
+            <bf:seriesStatement>Contemporary</bf:seriesStatement>
+          </bf:Instance>
+        </bf:hasSeries>
+        <bf:identifiedBy>
+          <bf:Ismn>
+            <rdf:value>9790577002927</rdf:value>
+          </bf:Ismn>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:MusicPlate>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Peters Edition Ltd.</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>Edition Peters No. 72418a</rdf:value>
+          </bf:MusicPlate>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:MusicPublisherNumber>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>Publisher's number and plate number vary slightly.</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Peters Edition Ltd.</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>Edition Peters No. 72418</rdf:value>
+          </bf:MusicPublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2017566296</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Composer's program and performance notes in English.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Biographical note in English and German.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Peters Edition Ltd.</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2013?]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>Frankfurt/M.</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>Piers Hellawell</bf:responsibilityStatement>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Syzygy</bf:mainTitle>
+            <bf:subtitle>for brass quintet &amp; chamber orchestra</bf:subtitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:musicFormat rdf:resource="http://id.loc.gov/vocabulary/mmusicformat/score"/>
+    <bf:musicMedium>
+      <bf:MusicMedium>
+        <rdfs:label>For brass quintet (horn, trombone, trumpets (2), tuba) and chamber orchestra.</rdfs:label>
+      </bf:MusicMedium>
+    </bf:musicMedium>
+    <bf:notation>
+      <bf:MusicNotation>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mmusnotation/staff"/>
+      </bf:MusicNotation>
+    </bf:notation>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85062015"/>
+    <bf:subject>
+      <bf:Topic>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <madsrdf:authoritativeLabel>Horn, trombone, trumpets (2), tuba with orchestra -- Scores.</madsrdf:authoritativeLabel>
+      </bf:Topic>
+    </bf:subject>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Syzygy</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <pmo:hasMedium>
+      <pmo:DeclaredMedium>
+        <pmo:hasDistinctPartCount>5</pmo:hasDistinctPartCount>
+        <pmo:hasEnsembleCount>1</pmo:hasEnsembleCount>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:IndividualMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015342"/>
+                <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+                <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+              </pmo:IndividualMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:IndividualMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015748"/>
+                <pmo:hasDistinctPartCount>2</pmo:hasDistinctPartCount>
+                <pmo:hasRequiredPerformerCount>2</pmo:hasRequiredPerformerCount>
+              </pmo:IndividualMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:IndividualMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015747"/>
+                <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+                <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+              </pmo:IndividualMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:IndividualMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015750"/>
+                <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+                <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+              </pmo:IndividualMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+        <pmo:hasMediumPart>
+          <pmo:MediumPart>
+            <pmo:hasMediumOfPerformance>
+              <pmo:EnsembleMediumOfPerformance>
+                <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015127"/>
+                <pmo:hasEnsembleCount>1</pmo:hasEnsembleCount>
+              </pmo:EnsembleMediumOfPerformance>
+            </pmo:hasMediumOfPerformance>
+          </pmo:MediumPart>
+        </pmo:hasMediumPart>
+        <pmo:hasRequiredPerformerCount>5</pmo:hasRequiredPerformerCount>
+      </pmo:DeclaredMedium>
+    </pmo:hasMedium>
+    <rdfs:label>Hellawell, Piers, 1956- Syzygy</rdfs:label>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/ntm">
+    <rdfs:label>Notated music</rdfs:label>
+  </bf:Content>
+  <bf:MusicFormat rdf:about="http://id.loc.gov/vocabulary/mmusicformat/score">
+    <rdfs:label xml:lang="en">score</rdfs:label>
+  </bf:MusicFormat>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Notation rdf:about="http://id.loc.gov/vocabulary/mmusnotation/staff">
+    <rdfs:label xml:lang="en">staff notation</rdfs:label>
+  </bf:Notation>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label>LCSH</rdfs:label>
+  </bf:Source>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e199181645595013454358648093501272833900">
+    <rdf:value>e199181645595013454358648093501272833900</rdf:value>
+  </bf:Local>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Art music</rdfs:label>
+  </bf:GenreForm>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Horn, trombone, trumpets (2), tuba with orchestra</rdfs:label>
+  </bf:Topic>
+  <pmo:MediumPart>
+    <pmo:hasMediumOfPerformance>
+      <pmo:EnsembleMediumOfPerformance>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015127"/>
+        <pmo:hasEnsembleCount>1</pmo:hasEnsembleCount>
+      </pmo:EnsembleMediumOfPerformance>
+    </pmo:hasMediumOfPerformance>
+  </pmo:MediumPart>
+  <pmo:MediumPart>
+    <pmo:hasMediumOfPerformance>
+      <pmo:IndividualMediumOfPerformance>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015342"/>
+        <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+        <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+      </pmo:IndividualMediumOfPerformance>
+    </pmo:hasMediumOfPerformance>
+  </pmo:MediumPart>
+  <pmo:MediumPart>
+    <pmo:hasMediumOfPerformance>
+      <pmo:IndividualMediumOfPerformance>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015747"/>
+        <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+        <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+      </pmo:IndividualMediumOfPerformance>
+    </pmo:hasMediumOfPerformance>
+  </pmo:MediumPart>
+  <pmo:MediumPart>
+    <pmo:hasMediumOfPerformance>
+      <pmo:IndividualMediumOfPerformance>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015748"/>
+        <pmo:hasDistinctPartCount>2</pmo:hasDistinctPartCount>
+        <pmo:hasRequiredPerformerCount>2</pmo:hasRequiredPerformerCount>
+      </pmo:IndividualMediumOfPerformance>
+    </pmo:hasMediumOfPerformance>
+  </pmo:MediumPart>
+  <pmo:MediumPart>
+    <pmo:hasMediumOfPerformance>
+      <pmo:IndividualMediumOfPerformance>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015750"/>
+        <pmo:hasDistinctPartCount>1</pmo:hasDistinctPartCount>
+        <pmo:hasRequiredPerformerCount>1</pmo:hasRequiredPerformerCount>
+      </pmo:IndividualMediumOfPerformance>
+    </pmo:hasMediumOfPerformance>
+  </pmo:MediumPart>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Hellawell, Piers, 1956-</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:GenreForm>
+    <rdfs:label xml:lang="en">Scores</rdfs:label>
+  </bf:GenreForm>
+</rdf:RDF>

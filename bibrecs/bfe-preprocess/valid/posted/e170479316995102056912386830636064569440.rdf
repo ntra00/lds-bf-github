@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/e51236842102610736964813532285542601134">
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="bnodeeuFTEYcjg9RfPTFq13MiJj">
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bflc:metadataAssigner>rkoh</bflc:metadataAssigner>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e170479316995102056912386830636064569440"/>
+        <bf:creationDate>2018-4-3</bf:creationDate>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:instanceOf>
+      <bf:Work rdf:nodeID="bnodehq9ZGyAAeSAGJBRUdZBvK1">
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodem3ibJtpYUDtZs7SwmSgfPm">
+            <bf:mainTitle>Matnat Mosheh</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="bnode5Le3HcBKHGqea8EmQEbkkJ">
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n95120969"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:tableOfContents>
+          <bf:TableOfContents rdf:nodeID="bnode7n3oyYBHjx9uQEWMdojwT2">
+            <rdfs:label>ḥelek 1. Aḳṭuʼalyah ... --</rdfs:label>
+          </bf:TableOfContents>
+        </bf:tableOfContents>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85070287"/>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="bnodep8WhpreRHkStRTP71ofFcQ">
+            <bf:classificationPortion>BM522.59</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/heb"/>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:dimensions>25 cm</bf:dimensions>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="bnodefm4141tMBwSsYAVstASZz1">
+        <rdf:value>2012491190</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:title>
+      <bf:ParallelTitle rdf:nodeID="bnodev8n3mUqedc16MvTzYZ6gRH">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode7oXPyrDVFoK1DCLE6knhBb">
+            <rdfs:label>Running title</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:mainTitle>מתנת משה</bf:mainTitle>
+      </bf:ParallelTitle>
+    </bf:title>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodefrf3coWe81Mmf2Rfiet1nm">
+        <bf:subtitle>קובץ קונטרסים במגוון נושאים ... </bf:subtitle>
+        <bf:mainTitle>ספר מתנת משה</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:hasItem>
+      <bf:Item rdf:nodeID="bnodevuSqgCWy4GA8BCjjaSGiL8">
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:Barcode rdf:nodeID="bnodedafqWTbSzuapCNtgNLq3Uo">
+            <rdf:value>00406282740</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc rdf:nodeID="bnodewafBSu74gJkduiYDHC7hjD">
+            <rdf:value>BM522.59  .A727 2010</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode2JgHwYaHhWw1VdBfxAN6MX">
+            <rdfs:label>c. 1</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:enumerationAndChronology>
+          <bf:Chronology rdf:nodeID="bnode652KUTmpCNYNPk4ajHU8j4">
+            <rdfs:label>2010 or 2011</rdfs:label>
+          </bf:Chronology>
+        </bf:enumerationAndChronology>
+        <bf:enumerationAndChronology>
+          <bf:Enumeration rdf:nodeID="bnodepg8Zx9Ui8fMDUfbMUk8hgJ">
+            <rdfs:label>v. 1</rdfs:label>
+          </bf:Enumeration>
+        </bf:enumerationAndChronology>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="bnodem5D6FcQaPHN3CQ27NNj3qa">
+        <rdfs:label>volumes</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="bnodes9g6nYLUjrUpdNrgr3vqcJ">
+        <bf:date>תשע״א</bf:date>
+        <bf:agent>
+          <bf:Agent rdf:nodeID="bnodeiEXExqhfna7E59tAGeLr41">
+            <rdfs:label>‏[יצחק מנחם קרלינסקי] </rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:place>
+          <bf:Place rdf:nodeID="bnodehMkpj4U7nL4NH6JHWdZPKf">
+            <rdfs:label>בני ברק</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:responsibilityStatement>יצחק מנחם באאמו"ר הרב הגאון משה נתן, זצ"ל, קרליסקי</bf:responsibilityStatement>
+  </bf:Instance>
+  <madsrdf:PersonalName rdf:nodeID="bnodev2Am9f76GsoBFRfqHm2guc">
+    <rdfs:label xml:lang="en">Ḳarlinsḳi, Yitsḥaḳ Menaḥem ben Mosheh Natan</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic rdf:nodeID="bnodemdLmh3cWfuY9hT4udRxxH2">
+    <rdfs:label xml:lang="en">Jewish law</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/heb">
+    <rdfs:label xml:lang="en">Hebrew</rdfs:label>
+  </bf:Language>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e170479316995102056912386830636064569440">
+    <rdf:value>e170479316995102056912386830636064569440</rdf:value>
+  </bf:Local>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85070287"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n95120969"/>
+</rdf:RDF>

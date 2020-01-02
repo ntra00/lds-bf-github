@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <madsrdf:PersonalName rdf:nodeID="bnode4QppuQWVHupDyc1XxrxTnk">
+    <rdfs:label xml:lang="en">Thompson, James Robert, 1784 or 1785-1855</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e118973818060616538493826425744094841405">
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodeiVp55FsHGViaVDudw47z1T">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodeeSSTEmikS4r2qnNYijuUhp">
+            <rdfs:label>"Courtesy Chicago Historical Society."</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodehjZWx2Sqg5UCquvSusP1jK">
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e198123270418974241128539532203789220210"/>
+            <bf:creationDate>2018-3-26</bf:creationDate>
+            <bflc:metadataAssigner>twon</bflc:metadataAssigner>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bflc:profile>profile:bf2:Cartographic:Instance</bflc:profile>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:dimensions>26 x 32 cm</bf:dimensions>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnodesYfcmFCSGN85hCi2hRq7kY">
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodej3wE566ZbUHzcFUSeNkap">
+                <rdfs:label>Chicago</rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:date>[1830]</bf:date>
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnodeBWhZt3Q2xaTTirMvogNsE">
+                <rdfs:label>Published by A.J. Nystrom &amp; Co.</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnode4FiGhVMeFe2ZZc5dAZTtt6">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnode8VPMUH4wTtT48HhmPHMLLq">
+                <rdfs:label>LC copy: mounted on linen</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:classificationLcc>Copy 1</bf:classificationLcc>
+            <bf:sublocation>Geography and Map Division</bf:sublocation>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnode6uTaQx1fAHTC7sYW12SSmv">
+                <rdf:value>G4104.C6G46 1830 .T5</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodejsZtzsk3Qhp3sUQgG1b7xG">
+            <rdfs:label>1 map</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:classification>
+          <bf:Classification rdf:nodeID="bnode4aceMfaSU1ACR7gbfyECqm">
+            <rdfs:label>G4104.C6</rdfs:label>
+          </bf:Classification>
+        </bf:classification>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode3czdzvQuYLPiSVWVD3fPwH">
+            <rdfs:label>Shows landownership</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode8bKSdHCo1mq9vQ59XTcAam">
+            <rdfs:label>"Copy of the First map of Chicago. The original, made by James Thompson August 4, 1830, was destroyed in Chicago fire, October 9, 1871. Copy in possession of Chicago Historical Society."</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnodenQ7oy5qiGpUq86A3PpgdAA">
+            <rdf:value>2018586148</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nb"/>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:scale>
+      <bf:Scale rdf:nodeID="bnode66HXFciAWpyxtLJYSV6K1T">
+        <rdfs:label>Scale approximately 1:20,160 </rdfs:label>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodecJkS8HKapk6a2hJFtcKKAw">
+            <rdfs:label>1/8 of an in. = 210 ft.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Scale>
+    </bf:scale>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodee7ixvNowUFj1QJ45319uMt">
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+        <madsrdf:authoritativeLabel>Landowners--Illinois--Chicago--Maps</madsrdf:authoritativeLabel>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:contribution>
+      <bflc:PrimaryContribution rdf:nodeID="bnodetLHXBvNtQHn6yms6FMJFrd">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2009033723"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctg"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:classification>
+      <bf:ClassificationLcc rdf:nodeID="bnode9egE3ev5RTCxKMSBx3xb9c">
+        <bf:classificationPortion>G4104.C6</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026387"/>
+    </bf:genreForm>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodedBmEskSc1oHotD6XQgug1t">
+        <bf:mainTitle>Chicago in 1830</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+        <rdfs:label>eng</rdfs:label>
+        <rdfs:label xml:lang="en">English</rdfs:label>
+      </bf:Language>
+    </bf:language>
+  </bf:Work>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <madsrdf:GenreForm rdf:nodeID="bnodeupZSthXGqzMkENk1ZyA9Ax">
+    <rdfs:label xml:lang="en">Cadastral maps</rdfs:label>
+    <bflc:target rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026106"/>
+  </madsrdf:GenreForm>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctg">
+    <rdfs:label xml:lang="en">Cartographer</rdfs:label>
+  </bf:Role>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label xml:lang="en">Library of Congress subject headings </rdfs:label>
+  </bf:Source>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2009033723"/>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e198123270418974241128539532203789220210">
+    <rdf:value>e198123270418974241128539532203789220210</rdf:value>
+  </bf:Local>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nb">
+    <rdfs:label xml:lang="en">sheet</rdfs:label>
+  </bf:Carrier>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+</rdf:RDF>

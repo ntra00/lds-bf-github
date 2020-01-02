@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" >
+  <madsrdf:Topic rdf:nodeID="b121resourcesworksc020040322">
+    <madsrdf:authoritativeLabel>Technological innovations</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0200403220001">
+    <bf:note>
+      <bf:Note rdf:nodeID="b84resourcesinstancesc0200403220001">
+        <bf:noteType>bibliography</bf:noteType>
+        <rdfs:label>Includes bibliographical references.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:responsibilityStatement>Swati Jaywant Rao Bute, editor</bf:responsibilityStatement>
+    <rdfs:label>Media diplomacy and its evolving role in the current geopolitical climate /</rdfs:label>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="bnodetrhpBUZPJwH9QRQUjVaB3C">
+        <bf:creationDate>2018-6-7</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bflc:metadataAssigner>trod</bflc:metadataAssigner>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e109621422928062499082192554865660333148"/>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <rdfs:label>eng</rdfs:label>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <bf:source>
+          <bf:Source rdf:nodeID="b72resourcesinstancesc0200403220001">
+            <rdfs:label>rdamedia</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>unmediated</rdfs:label>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:nodeID="b80resourcesinstancesc0200403220001">
+            <rdfs:label>rdacarrier</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:instanceOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/c020040322">
+        <bf:title>
+          <bf:Title rdf:nodeID="b79resourcesworksc020040322">
+            <bf:mainTitle>Media diplomacy and its evolving role in the current geopolitical climate</bf:mainTitle>
+            <rdfs:label>Media diplomacy and its evolving role in the current geopolitical climate /</rdfs:label>
+            <bflc:titleSortKey>Media diplomacy and its evolving role in the current geopolitical climate /</bflc:titleSortKey>
+          </bf:Title>
+        </bf:title>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20040322#Topic650-26"/>
+        <bf:contribution>
+          <bf:Contribution rdf:nodeID="b159resourcesworksc020040322">
+            <bf:agent rdf:resource="http://id.loc.gov/resources/works/20040322#Agent700-29"/>
+            <bf:role>
+              <bf:Role rdf:nodeID="b170resourcesworksc020040322">
+                <bflc:relatorMatchKey>editor</bflc:relatorMatchKey>
+                <rdfs:label>editor.</rdfs:label>
+              </bf:Role>
+            </bf:role>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="b59resourcesworksc020040322">
+            <bf:itemPortion>M425 2018</bf:itemPortion>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:classificationPortion>P96.I53</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20040322#Topic650-24"/>
+        <bf:summary>
+          <bf:Summary rdf:nodeID="b95resourcesworksc020040322">
+            <bf:source>
+              <bf:Source rdf:nodeID="b99resourcesworksc020040322">
+                <rdfs:label>Provided by publisher.</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdfs:label>"This book explores the changing practices in media diplomacy, how new media is changing set definitions of media diplomacy, how and why countries are changing their policies for diplomacy including media diplomacy, how contemporary and new media is helping and will transform old practices of diplomacy, how media is helping, developing better understanding between countries and people"--</rdfs:label>
+          </bf:Summary>
+        </bf:summary>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20040322#Topic650-28"/>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20040322#Topic650-25"/>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20040322#Topic650-27"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="b10resourcesworksc020040322">
+            <bf:creationDate>2017-09-28</bf:creationDate>
+            <bf:changeDate>2018-06-01T08:10:48</bf:changeDate>
+            <bflc:procInfo>ibc update</bflc:procInfo>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="b28resourcesworksc020040322">
+                <rdf:value>20040322</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:status>
+              <bf:Status rdf:nodeID="b16resourcesworksc020040322">
+                <bf:code>c</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bf:source>
+              <bf:Agent rdf:nodeID="b41resourcesworksc020040322">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+              </bf:Agent>
+            </bf:source>
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="b24resourcesworksc020040322">
+                <bf:code>isbd</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="b12resourcesworksc020040322">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="b20resourcesworksc020040322">
+                <bf:code>f</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:source>
+              <bf:Agent rdf:nodeID="b36resourcesworksc020040322">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+              </bf:Agent>
+            </bf:source>
+            <bf:descriptionModifier>
+              <bf:Agent rdf:nodeID="b48resourcesworksc020040322">
+                <rdfs:label>DLC</rdfs:label>
+              </bf:Agent>
+            </bf:descriptionModifier>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:classification>
+          <bf:ClassificationDdc rdf:nodeID="b67resourcesworksc020040322">
+            <bf:edition>23</bf:edition>
+            <bf:classificationPortion>302.23</bf:classificationPortion>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:edition>full</bf:edition>
+          </bf:ClassificationDdc>
+        </bf:classification>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <rdfs:label>Media diplomacy and its evolving role in the current geopolitical climate /</rdfs:label>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:dimensions>27 cm.</bf:dimensions>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b47resourcesinstancesc0200403220001">
+        <bf:place>
+          <bf:Place rdf:nodeID="b50resourcesinstancesc0200403220001">
+            <rdfs:label>Hershey, PA</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:date>2018</bf:date>
+        <bf:agent>
+          <bf:Agent rdf:nodeID="b54resourcesinstancesc0200403220001">
+            <rdfs:label>Information Science Reference</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:title>
+      <bf:Title rdf:nodeID="b37resourcesinstancesc0200403220001">
+        <bf:mainTitle>Media diplomacy and its evolving role in the current geopolitical climate</bf:mainTitle>
+        <rdfs:label>Media diplomacy and its evolving role in the current geopolitical climate /</rdfs:label>
+        <bflc:titleSortKey>Media diplomacy and its evolving role in the current geopolitical climate /</bflc:titleSortKey>
+      </bf:Title>
+    </bf:title>
+    <bf:tableOfContents>
+      <bf:TableOfContents rdf:nodeID="b90resourcesinstancesc0200403220001">
+        <rdfs:label>Social media networking and the future of public diplomacy in Black Africa : insight from recent research and case studies / Endong Floribert Patrick Calvain -- The age of Internet : a tech savvy world and new diplomacy / Aakriti Sethi -- Print media's role in securitization : national security and diplomacy discourses in Nepal / Sudeep Uprety -- New media and its role in stabilizing Nepal : a geopolitical context / Swati Bute -- Fourth generation warfare and the challenges in military-news media relations in India / Ramakrishnan Ramani -- Indian approaches to e-diplomacy : an overview / Sree Kishna Bharadwaj Hotur -- Assessment of the digital diplomatic strategies of India, China, and Japan in SAARC countries / Irina Ionela Pop -- Gulf diplomacy in the digital media age / Melissa Cyrill -- New media diplomacy and the case of Russia today / Kristen A. Traynor, Gleb P. Mytko -- Politics of narrative in South Asia : new media and revitalization of Kashmir problem / Satyam Malaviya -- Social media and international affairs : from the lens of Arab uprisings / Dr. Md. Muddassir Quamar.</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:provisionActivityStatement>Hershey, PA : Information Science Reference, [2018]</bf:provisionActivityStatement>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b12resourcesinstancesc0200403220001">
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/pau"/>
+        <bf:date>2018</bf:date>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b27resourcesinstancesc0200403220001">
+        <bf:status>
+          <bf:Status rdf:nodeID="b31resourcesinstancesc0200403220001">
+            <rdfs:label>invalid</rdfs:label>
+          </bf:Status>
+        </bf:status>
+        <rdf:value>9781522538608 (ebook)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/c0200403220001"/>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="b62resourcesinstancesc0200403220001">
+        <rdfs:label>xviii, 211 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="b19resourcesinstancesc0200403220001">
+        <rdf:value>  2017023184</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b23resourcesinstancesc0200403220001">
+        <rdf:value>9781522538592 (hardcover)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="b96resourcesinstancesc0200403220001">
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="b110resourcesinstancesc0200403220001">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionModifier>
+          <bf:Agent rdf:nodeID="b134resourcesinstancesc0200403220001">
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:status>
+          <bf:Status rdf:nodeID="b102resourcesinstancesc0200403220001">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bf:creationDate>2017-09-28</bf:creationDate>
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="b98resourcesinstancesc0200403220001">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="b114resourcesinstancesc0200403220001">
+            <rdf:value>20040322</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:source>
+          <bf:Agent rdf:nodeID="b122resourcesinstancesc0200403220001">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:source>
+        <bf:changeDate>2018-06-01T08:10:48</bf:changeDate>
+        <bf:source>
+          <bf:Source rdf:nodeID="b127resourcesinstancesc0200403220001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+          </bf:Source>
+        </bf:source>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:nodeID="b106resourcesinstancesc0200403220001">
+            <bf:code>f</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Instance>
+  <madsrdf:Topic rdf:nodeID="b132resourcesworksc020040322">
+    <madsrdf:authoritativeLabel>Information technology</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0134"/>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b149resourcesworksc020040322">
+    <madsrdf:authoritativeLabel>Technological innovations</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b118resourcesworksc020040322">
+    <madsrdf:authoritativeLabel>International relations</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0120"/>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b135resourcesworksc020040322">
+    <madsrdf:authoritativeLabel>Political aspects</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b146resourcesworksc020040322">
+    <madsrdf:authoritativeLabel>Diplomacy</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0148"/>
+  </madsrdf:Topic>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20040322#Topic650-24">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+    <madsrdf:authoritativeLabel>Mass media and international relations.</madsrdf:authoritativeLabel>
+    <rdfs:label>Mass media and international relations.</rdfs:label>
+  </bf:Topic>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e109621422928062499082192554865660333148">
+    <rdf:value>e109621422928062499082192554865660333148</rdf:value>
+  </bf:Local>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20040322#Agent700-29">
+    <bflc:name00MarcKey>7001 $aBute, Swati Jaywant Rao,$d1974-$eeditor.</bflc:name00MarcKey>
+    <rdfs:label>Bute, Swati Jaywant Rao, 1974-</rdfs:label>
+    <bflc:name00MatchKey>Bute, Swati Jaywant Rao, 1974-</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/resources/works/20040322#Topic650-28">
+    <rdfs:label>Internet and international relations.</rdfs:label>
+    <madsrdf:authoritativeLabel>Internet and international relations.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+  </madsrdf:Topic>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20040322#Topic650-25">
+    <rdfs:label>International relations--Technological innovations.</rdfs:label>
+    <madsrdf:authoritativeLabel>International relations--Technological innovations.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+    <madsrdf:componentList rdf:nodeID="b117resourcesworksc020040322"/>
+  </bf:Topic>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/pau"/>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/20040322#Topic650-27">
+    <madsrdf:authoritativeLabel>Diplomacy--Technological innovations.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b145resourcesworksc020040322"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>Diplomacy--Technological innovations.</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source rdf:nodeID="b91resourcesworksc020040322">
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20040322#Topic650-26">
+    <rdfs:label>Information technology--Political aspects.</rdfs:label>
+    <madsrdf:authoritativeLabel>Information technology--Political aspects.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b131resourcesworksc020040322"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+  </bf:Topic>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Source>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+</rdf:RDF>

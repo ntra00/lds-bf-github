@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:mets="http://www.loc.gov/METS/" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:mxe="http://www.loc.gov/mxe" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"><rdf:Description>
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/18984329#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T16:42:56-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>corrected or revised</rdfs:label>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+            <rdfs:label>full</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+            <rdfs:label>isbd</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>18984329</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-06-06T09:45:18</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-29</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+            <bf:code>eng</bf:code>
+          </bf:Language>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+            <rdfs:label>rda</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+            <rdf:value>pcc</rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/heb"/>
+    </bf:language>
+    <bf:illustrativeContent>
+      <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/fac">
+        <rdfs:label>facsimiles</rdfs:label>
+      </bf:Illustration>
+    </bf:illustrativeContent>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026048">
+        <rdfs:label>bibliographies</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026049">
+        <rdfs:label>biographies</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2016403576</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:geographicCoverage>
+      <bf:GeographicCoverage rdf:about="http://id.loc.gov/vocabulary/geographicAreas/a-is"/>
+    </bf:geographicCoverage>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:classificationPortion>BM520.3</bf:classificationPortion>
+        <bf:itemPortion>.V69 2015</bf:itemPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/authorities/names/n2018028867">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Ṿozner, Avraham Eliyahu, ha-Leṿi,</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Ṿozner, Avraham Eliyahu, ha-Leṿi,</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $6880-01$aṾozner, Avraham Eliyahu,$cha-Leṿi,$eauthor.</bflc:name00MarcKey>
+            <rdfs:label>Ṿozner, Avraham Eliyahu, ha-Leṿi,</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role>
+            <rdfs:label>author.</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://bibframe.example.org/18984329#Agent880-16">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>‏ואזנר, אברהם אליהו,‏ ‏הלוי.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>‏ואזנר, אברהם אליהו,‏ ‏הלוי.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>8801 $6100-01/(2/r‏$a‏ואזנר, אברהם אליהו,‏$c‏הלוי.</bflc:name00MarcKey>
+            <rdfs:label>‏ואזנר, אברהם אליהו,‏ ‏הלוי.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>Halikhot sheveṭ ha-Leṿi</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <bflc:title40MatchKey>Halikhot sheveṭ ha-Leṿi</bflc:title40MatchKey>
+        <bflc:title40MarcKey>24010$aHalikhot sheveṭ ha-Leṿi</bflc:title40MarcKey>
+        <rdfs:label>Halikhot sheveṭ ha-Leṿi</rdfs:label>
+        <bflc:titleSortKey>Halikhot sheveṭ ha-Leṿi</bflc:titleSortKey>
+        <bf:mainTitle>Halikhot sheveṭ ha-Leṿi</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+        <rdfs:label>text</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+        </bf:source>
+      </bf:Content>
+    </bf:content>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Includes bibliographical references.</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>[1] ʻAl seder ha-yom. Shaḥarit. Minḥah. ʻArvit</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85070840">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <rdfs:label>Judaism--Customs and practices.</rdfs:label>
+        <madsrdf:authoritativeLabel>Judaism--Customs and practices.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85070835">
+            <madsrdf:authoritativeLabel>Judaism</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh99005422">
+            <madsrdf:authoritativeLabel>Customs and practices</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </madsrdf:componentList>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85070287">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+        <rdfs:label>Jewish law.</rdfs:label>
+        <madsrdf:authoritativeLabel>Jewish law.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Agent rdf:about="http://id.loc.gov/authorities/names/n83300391">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+        <madsrdf:authoritativeLabel>Ṿozner, Shemuʼel, ha-Leṿi, 1913-2015.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+        <bflc:name00MatchKey>Ṿozner, Shemuʼel, ha-Leṿi, 1913-2015.</bflc:name00MatchKey>
+        <bflc:name00MarcKey>60010$aṾozner, Shemuʼel,$cha-Leṿi,$d1913-2015.</bflc:name00MarcKey>
+        <rdfs:label>Ṿozner, Shemuʼel, ha-Leṿi, 1913-2015.</rdfs:label>
+      </bf:Agent>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008110332">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <rdfs:label>Rabbis--Israel--Biography.</rdfs:label>
+        <madsrdf:authoritativeLabel>Rabbis--Israel--Biography.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85110190">
+            <madsrdf:authoritativeLabel>Rabbis</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Geographic>
+            <madsrdf:authoritativeLabel>Israel</madsrdf:authoritativeLabel>
+          </madsrdf:Geographic>
+          <madsrdf:GenreForm>
+            <madsrdf:authoritativeLabel>Biography</madsrdf:authoritativeLabel>
+          </madsrdf:GenreForm>
+        </madsrdf:componentList>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Place rdf:about="http://id.loc.gov/authorities/subjects/sh2008115526">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <rdfs:label>Israel--Biography.</rdfs:label>
+        <madsrdf:authoritativeLabel>Israel--Biography.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Geographic>
+            <madsrdf:authoritativeLabel>Israel</madsrdf:authoritativeLabel>
+          </madsrdf:Geographic>
+          <madsrdf:GenreForm>
+            <madsrdf:authoritativeLabel>Biography</madsrdf:authoritativeLabel>
+          </madsrdf:GenreForm>
+        </madsrdf:componentList>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Place>
+    </bf:subject>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/18984329#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/18984329#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">2015/9999</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/is"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2016403576</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>wb2016411558</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>IsJeAIW</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <rdfs:label>Sefer Halikhot sheveṭ ha-Leṿi :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Sefer Halikhot sheveṭ ha-Leṿi :</rdfs:label>
+        <bflc:titleSortKey>Sefer Halikhot sheveṭ ha-Leṿi :</bflc:titleSortKey>
+        <bf:mainTitle>Sefer Halikhot sheveṭ ha-Leṿi</bf:mainTitle>
+        <bf:subtitle>otsar halikhot ḳodesh, hanhagot ṿe-hadrakhot, pisḳe halakhot ṿe-horaʼot, asher nahag ba-hem ... ha-g. ha-ḳ. Baʻal Sheveṭ ha-Leṿi, z. ts. ṿe-ḳ. l.l.h.h., g.a.b.d. Zikhron Meʼir B.B. ṿe-resh Metivta di-Yeshivat Ḥakhme Lublin</bf:subtitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>nilḳaṭ ṿe-neʻerakh ʻa. y. nekhdo talmido Avraham Eliyahu ha-Leṿi Ṿozner b. la-a. a.m. ṿe-r. ha-g. R.Y.B., sheliṭa</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>‏ספר הליכות שבט הלוי :‏</rdfs:label>
+        <bflc:titleSortKey>‏ספר הליכות שבט הלוי :‏</bflc:titleSortKey>
+        <bf:mainTitle>‏ספר הליכות שבט הלוי :‏</bf:mainTitle>
+        <bf:subtitle>‏אוצר הליכות קודש, הנהגות והדרכות, פסקי הלכות והוראות, אשר נהג בהם ... הגה"ק בעל שבט הלוי, זצוקללה"ה, גאב"ד זכרון מאיר ב"ב וריש מתיבתא דישיבת חכמי לובלין /‏</bf:subtitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>‏נלקט ונערך ע"י נכדו תלמידו אברהם אליהו הלוי ואזנר בלאאמו"ר הגרי"ב, שליט"א</bf:responsibilityStatement>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:variantType>running</bf:variantType>
+        <rdfs:label>Halikhot sheveṭ ha-Leṿi</rdfs:label>
+        <bf:mainTitle>Halikhot sheveṭ ha-Leṿi</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:variantType>running</bf:variantType>
+        <rdfs:label>‏הליכות שבט הלוי</rdfs:label>
+        <bf:mainTitle>‏הליכות שבט הלוי</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Ḳiryat Tsanz, Netanya'h</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Avraham Eliyahu ha-Leṿi Ṿozner</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>Or le-yom 7 Mar-Ḥeshṿan shenat 776- [October 19, 2015-</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Ḳiryat Tsanz, Netanya'h : [Avraham Eliyahu ha-Leṿi Ṿozner], Or le-yom 7 Mar-Ḥeshṿan shenat 776- [October 19, 2015-</bf:provisionActivityStatement>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>‏קרית צאנז, נתני'ה :‏</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>‏[אברהם אליהו הלוי ואזנר],‏</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>‏אור ליום ז' מר-חשון שנת תשע"ו-</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>‏קרית צאנז, נתני'ה :‏; ‏[אברהם אליהו הלוי ואזנר],‏; ‏אור ליום ז' מר-חשון שנת תשע"ו-</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>volume</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>Physical details</bf:noteType>
+        <rdfs:label>facsimile</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:dimensions>25 cm</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/18984329#Work"/>
+    <bf:hasItem>
+      <bf:Item rdf:about="http://bibframe.example.org/18984329#Item050-13">
+        <bf:shelfMark>
+          <bf:ShelfMarkLcc>
+            <rdfs:label>BM520.3.V69 2015</rdfs:label>
+            <bf:source>
+              <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:source>
+          </bf:ShelfMarkLcc>
+        </bf:shelfMark>
+        <bf:itemOf rdf:resource="http://bibframe.example.org/18984329#Instance"/>
+      </bf:Item>
+    </bf:hasItem>
+  </bf:Instance></lclocal:graph>
+  
+</rdf:Description></rdf:RDF>

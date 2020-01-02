@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0195319030001">
+    <rdfs:label>Sztandard slonskij godki : kanona pozbiyrol roczniok andrzyj.</rdfs:label>
+    <bf:hasItem>
+      <bf:Item rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b3">
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b17">
+            <rdf:value>PG6780.Z9 S5465 2016</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:Barcode rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b16">
+            <rdf:value>00435564331</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:sublocation>c-GenColl</bf:sublocation>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:dimensions>20 cm</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <bf:source>
+          <bf:Source rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b26">
+            <rdfs:label>rdamedia</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>unmediated</rdfs:label>
+      </bf:Media>
+    </bf:media>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b4">
+        <rdf:value>  2016370946</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <bf:source>
+          <bf:Source rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b15">
+            <rdfs:label>rdacarrier</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>volume</rdfs:label>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:responsibilityStatement> kanōna pozbiyrol Roczniok Andrzyj</bf:responsibilityStatement>
+    <bf:instanceOf>
+      <bf:Text rdf:about="http://id.loc.gov/resources/works/c019531903">
+        <rdfs:label>Sztandard ślōnskij godki </rdfs:label>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b18">
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b34">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bf:status>
+              <bf:Status rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b35">
+                <bf:code>c</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b29">
+                <rdf:value>19531903</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bflc:procInfo>ibc update</bflc:procInfo>
+            <bf:source>
+              <bf:Agent rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b31">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+              </bf:Agent>
+            </bf:source>
+            <bf:source>
+              <bf:Source rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b30">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+              </bf:Source>
+            </bf:source>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:creationDate>2017-03-01</bf:creationDate>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b33">
+                <bf:code>isbd</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b32">
+                <bf:code>5</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:changeDate>2017-06-09T09:03:33</bf:changeDate>
+            <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/map"/>
+        <bf:geographicCoverage>
+          <bf:GeographicCoverage rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b22">
+            <bf:GeographicCoverage rdf:resource="http://id.loc.gov/authorities/names/n90718759"/>
+            <rdfs:label xml:lang="en">Czech Republic</rdfs:label>
+          </bf:GeographicCoverage>
+        </bf:geographicCoverage>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b20">
+            <bf:classificationPortion> PG6780.Z9</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b21">
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nb2007006450"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:geographicCoverage>
+          <bf:GeographicCoverage rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b23">
+            <bf:GeographicCoverage rdf:resource="http://id.loc.gov/authorities/names/n79131071"/>
+            <rdfs:label xml:lang="en">Poland</rdfs:label>
+          </bf:GeographicCoverage>
+        </bf:geographicCoverage>
+        <bf:language>
+          <bf:Language rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b24">
+            <bf:note>
+              <bf:Note rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b37">
+                <rdfs:label>Text in Polish language and its Silesian dialect</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Language>
+        </bf:language>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b25">
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh99004914"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85104296"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85037527"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85122481"/>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:title>
+          <bf:Title rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b19">
+            <rdfs:label>Sztandard slonskij godki : kanona pozbiyrol roczniok andrzyj.</rdfs:label>
+            <bf:mainTitle>Sztandard ślōnskij godki </bf:mainTitle>
+            <bflc:titleSortKey>Sztandard slonskij godki : kanona pozbiyrol roczniok andrzyj.</bflc:titleSortKey>
+          </bf:Title>
+        </bf:title>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+      </bf:Text>
+    </bf:instanceOf>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b7">
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/pl"/>
+        <bf:date>2016</bf:date>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b5">
+        <rdf:value>9788365300041</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b1">
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b9">
+            <rdf:value>19531903</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b13">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b12">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bflc:metadataAssigner>ssoc</bflc:metadataAssigner>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bf:source>
+          <bf:Agent rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b11">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:source>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:creationDate>2017-03-01</bf:creationDate>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2017-06-09T09:03:33</bf:changeDate>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bf:source>
+          <bf:Agent rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b10">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+          </bf:Agent>
+        </bf:source>
+        <bf:status>
+          <bf:Status rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b14">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b6">
+        <bf:agent>
+          <bf:Agent rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b27">
+            <rdfs:label>Narodowa Oficyna Śląska</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2016</bf:date>
+        <bf:place>
+          <bf:Place rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b28">
+            <rdfs:label>Zabrze</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b2">
+        <rdfs:label>79 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:title>
+      <bf:Title rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b8">
+        <rdfs:label>Sztandard slonskij godki : kanona pozbiyrol roczniok andrzyj.</rdfs:label>
+        <bf:mainTitle>Sztandard ślōnskij godki </bf:mainTitle>
+        <bflc:titleSortKey>Sztandard slonskij godki : kanona pozbiyrol roczniok andrzyj.</bflc:titleSortKey>
+      </bf:Title>
+    </bf:title>
+    <bf:provisionActivityStatement>[Poland] : Marodowa oficyna Slaska, [2016]</bf:provisionActivityStatement>
+  </bf:Instance>
+  <madsrdf:Topic rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b44">
+    <rdfs:label xml:lang="en">Grammar</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b42">
+    <rdfs:label xml:lang="en">Dialects</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:PersonalName rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b40">
+    <rdfs:label xml:lang="en">Roczniok, Andrzej</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Agent rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b39">
+    <rdfs:label>Marodowa oficyna Slaska</rdfs:label>
+  </bf:Agent>
+  <madsrdf:Geographic rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b43">
+    <rdfs:label xml:lang="en">Silesia, Upper (Poland and Czech Republic)</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:Topic rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b41">
+    <rdfs:label xml:lang="en">Polish language</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Place rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b38">
+    <rdfs:label>Poland</rdfs:label>
+  </bf:Place>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/pl"/>
+  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/subjects/sh85122481"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nb2007006450"/>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source rdf:nodeID="f682a92a58c344ff3882837ad6c36fd95b36">
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/map">
+    <rdfs:label xml:lang="en">Maps</rdfs:label>
+  </bf:Illustration>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85037527"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh99004914"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85104296"/>
+</rdf:RDF>

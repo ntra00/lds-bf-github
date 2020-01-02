@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nr95023480"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008102372"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2009123670"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0205414080001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:metadataAssigner>ktak</bflc:metadataAssigner>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:creationDate>2018-7-5</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e199488611986275107960693386188511850606"/>
+        <rdfs:label>eng</rdfs:label>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-06-14T09:26:36</bf:changeDate>
+        <bf:creationDate>2018-06-14</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20541408</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:dimensions>22 cm</bf:dimensions>
+    <bf:editionStatement>初版</bf:editionStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>2 volumes</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:enumerationAndChronology>
+          <bf:Enumeration>
+            <rdfs:label>v. 2</rdfs:label>
+          </bf:Enumeration>
+        </bf:enumerationAndChronology>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>KNX540  .K693 2017</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00484926050</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:sublocation>Law</bf:sublocation>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:enumerationAndChronology>
+          <bf:Enumeration>
+            <rdfs:label>v. 1</rdfs:label>
+          </bf:Enumeration>
+        </bf:enumerationAndChronology>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>KNX540 .K693 2017</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00484926086</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:sublocation>Law</bf:sublocation>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9784817844460 (v. 2)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9784817844453 (v. 1)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2018392790</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>4817844450 (v. 1)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c020541408"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>日本加除出版</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>平成29 [2017</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>東京都豊島区</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Tōkyō-to Toshima-ku : Nihon Kajo Shuppan, Heisei 29 [2017]</bf:provisionActivityStatement>
+    <bf:provisionActivityStatement>東京都豊島区 : 日本加除出版, 平成29 [2017]</bf:provisionActivityStatement>
+    <bf:responsibilityStatement>編著金子修, 山本和彦, 松原正明</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>講座実務家事事件手続法 /</bflc:titleSortKey>
+        <bf:mainTitle>講座実務家事事件手続法</bf:mainTitle>
+        <rdfs:label>講座実務家事事件手続法 /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Kōza jitsumu kaji jiken tetsuzukihō /</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacarrier</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c020541408">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2018-06-14T09:26:36</bf:changeDate>
+        <bf:creationDate>2018-06-14</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.4.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20541408</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>KNX540  .K693 2017</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/20541408#Agent880-29"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/20541408#Agent880-27"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/20541408#Agent700-26"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/20541408#Agent700-28"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr95023480"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/jpn"/>
+    <bf:originDate>2017</bf:originDate>
+    <bf:originPlace>
+      <bf:Place>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n79034998"/>
+        <rdfs:label xml:lang="en">Tokyo (Japan)</rdfs:label>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008102372"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2009123670"/>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Includes bibliographical references and indexes.</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Kōza jitsumu kaji jiken tetsuzukihō /</bflc:titleSortKey>
+        <bf:mainTitle>Kōza jitsumu kaji jiken tetsuzukihō</bf:mainTitle>
+        <rdfs:label>Kōza jitsumu kaji jiken tetsuzukihō /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdfs:label>Kōza jitsumu kaji jiken tetsuzukihō </rdfs:label>
+  </bf:Work>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdamedia</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20541408#Agent700-26">
+    <bflc:name00MarcKey>7001 $6880-04$aKaneko, Osamu,$d1962-</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Kaneko, Osamu, 1962-</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Kaneko, Osamu, 1962-</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20541408#Agent700-28">
+    <bflc:name00MarcKey>7001 $6880-05$aYamamoto, Kazuhiko,$d1961-</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Yamamoto, Kazuhiko, 1961-</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Yamamoto, Kazuhiko, 1961-</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20541408#Agent880-27">
+    <bflc:name00MarcKey>8801 $6700-04/$1$a金子修,$d1962-</bflc:name00MarcKey>
+    <bflc:name00MatchKey>金子修, 1962-</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>金子修, 1962-</rdfs:label>
+  </bf:Agent>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20541408#Agent880-29">
+    <bflc:name00MarcKey>8801 $6700-05/$1$a山本和彦,$d1961-</bflc:name00MarcKey>
+    <bflc:name00MatchKey>山本和彦, 1961-</bflc:name00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>山本和彦, 1961-</rdfs:label>
+  </bf:Agent>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/jpn"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/ja"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edt">
+    <rdfs:label xml:lang="en">Editor</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e199488611986275107960693386188511850606">
+    <rdf:value>e199488611986275107960693386188511850606</rdf:value>
+  </bf:Local>
+  <bf:Place>
+    <rdfs:label>Tōkyō-to Toshima-ku</rdfs:label>
+  </bf:Place>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Matsubara, Masaaki, 1950-</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Domestic relations--Japan</rdfs:label>
+  </bf:Topic>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Domestic relations courts--Japan</rdfs:label>
+  </bf:Topic>
+  <bf:Agent>
+    <rdfs:label>Nihon Kajo Shuppan</rdfs:label>
+  </bf:Agent>
+</rdf:RDF>

@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" >
+  <madsrdf:Topic rdf:nodeID="b178resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>Młodzież</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0180"/>
+  </madsrdf:Topic>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20229207#Agent710-29">
+    <bflc:name10MatchKey>Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego (Poznań). Wydawnictwo.</bflc:name10MatchKey>
+    <rdfs:label>Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego (Poznań). Wydawnictwo.</rdfs:label>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#CorporateName"/>
+    <bflc:name10MarcKey>7102 $aAkademia Wychowania Fizycznego im. Eugeniusza Piaseckiego (Poznań).$bWydawnictwo.$4pbl</bflc:name10MarcKey>
+  </bf:Agent>
+  <madsrdf:Topic rdf:nodeID="b208resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>Młodzież w środowisku wiejskim</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0210"/>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b127resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>ocena</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0129"/>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b154resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>antropometria</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0156"/>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b181resourcesworksc020229207">
+    <rdf:rest rdf:nodeID="b0183"/>
+    <madsrdf:authoritativeLabel>rozwój</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="bnoderPzetfskC9aspt8Q8fNXZt">
+    <rdfs:label xml:lang="en">Rural conditions</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Geographic rdf:nodeID="b157resourcesworksc020229207">
+    <rdf:rest rdf:nodeID="b0159"/>
+    <madsrdf:authoritativeLabel>Polska</madsrdf:authoritativeLabel>
+  </madsrdf:Geographic>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/pbl"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <madsrdf:Topic rdf:nodeID="b151resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>Dzieci w środowisku wiejskim</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0153"/>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b184resourcesworksc020229207">
+    <rdf:rest rdf:nodeID="b0186"/>
+    <madsrdf:authoritativeLabel>ocena</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b121resourcesworksc020229207">
+    <rdf:rest rdf:nodeID="b0123"/>
+    <madsrdf:authoritativeLabel>Dzieci</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="bnode94oRDqsrWj44U2pSBhJRzG">
+    <rdfs:label xml:lang="en">Anthropometry</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b124resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>rozwój</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0126"/>
+  </madsrdf:Topic>
+  <madsrdf:Geographic rdf:nodeID="b214resourcesworksc020229207">
+    <rdf:rest rdf:nodeID="b0216"/>
+    <madsrdf:authoritativeLabel>Polska</madsrdf:authoritativeLabel>
+  </madsrdf:Geographic>
+  <madsrdf:Geographic rdf:nodeID="b133resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>Wielkopolska (region)</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0135"/>
+  </madsrdf:Geographic>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0202292070001">
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b45resourcesinstancesc0202292070001">
+        <bf:place>
+          <bf:Place rdf:nodeID="b48resourcesinstancesc0202292070001">
+            <rdfs:label>Poznań</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent rdf:nodeID="b52resourcesinstancesc0202292070001">
+            <rdfs:label>Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2017</bf:date>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:nodeID="b76resourcesinstancesc0202292070001">
+            <rdfs:label>rdamedia</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:note>
+      <bf:Note rdf:nodeID="bnodexhyGhA2RNcYKs8N32wcCxz">
+        <rdfs:label> "60 lat Wydawnictwa AWF Poznań"--Cover</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:title>
+      <bf:Title rdf:nodeID="b33resourcesinstancesc0202292070001">
+        <bf:mainTitle>Rozwój somatyczny i motoryczny dzieci ze środowiska wiejskiego Wielkopolski na tle przemian środowiskowych na przełomie XX i XXI wieku</bf:mainTitle>
+        <rdfs:label>Rozwój somatyczny i motoryczny dzieci ze środowiska wiejskiego Wielkopolski na tle przemian środowiskowych na przełomie XX i XXI wieku : stan, zmiany i prognozy /</rdfs:label>
+        <bf:subtitle>stan, zmiany i prognozy</bf:subtitle>
+        <bflc:titleSortKey>Rozwój somatyczny i motoryczny dzieci ze środowiska wiejskiego Wielkopolski na tle przemian środowiskowych na przełomie XX i XXI wieku : stan, zmiany i prognozy /</bflc:titleSortKey>
+      </bf:Title>
+    </bf:title>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="b131resourcesinstancesc0202292070001">
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="b133resourcesinstancesc0202292070001">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:source>
+          <bf:Source rdf:nodeID="b162resourcesinstancesc0202292070001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+          </bf:Source>
+        </bf:source>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bf:creationDate>2017-12-21</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="b149resourcesinstancesc0202292070001">
+            <rdf:value>20229207</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate>2017-12-27T08:17:01</bf:changeDate>
+        <bflc:metadataAssigner>ssoc</bflc:metadataAssigner>
+        <bf:source>
+          <bf:Source rdf:nodeID="b157resourcesinstancesc0202292070001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="b145resourcesinstancesc0202292070001">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:status>
+          <bf:Status rdf:nodeID="b137resourcesinstancesc0202292070001">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:responsibilityStatement>Jarosław Janowski</bf:responsibilityStatement>
+    <bf:hasSeries>
+      <bf:Instance rdf:nodeID="b98resourcesinstancesc0202292070001">
+        <bf:seriesEnumeration>nr 442</bf:seriesEnumeration>
+        <rdfs:label>Seria: Monografie</rdfs:label>
+        <bf:seriesStatement>Monografie , 0239-7161</bf:seriesStatement>
+        <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/20229207#Work830-30"/>
+        <bf:identifiedBy>
+          <bf:Issn rdf:nodeID="b106resourcesinstancesc0202292070001">
+            <rdf:value>0239-7161</rdf:value>
+          </bf:Issn>
+        </bf:identifiedBy>
+      </bf:Instance>
+    </bf:hasSeries>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="b60resourcesinstancesc0202292070001">
+        <rdfs:label>205 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b12resourcesinstancesc0202292070001">
+        <bf:date>2017</bf:date>
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/pl"/>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b27resourcesinstancesc0202292070001">
+        <rdf:value>8364747150</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:provisionActivityStatement>Poznań : Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego, 2017.</bf:provisionActivityStatement>
+    <bf:title>
+      <bf:ParallelTitle rdf:nodeID="bnode9PjYdoR9sbaWhc2X4596LG">
+        <bf:subtitle>status, changes and development projections</bf:subtitle>
+        <bf:mainTitle> Somatic and motor development of children from the rural environment of Wielkopolska on the background of environmental changes at the turn of the 20th and 21st centuries </bf:mainTitle>
+      </bf:ParallelTitle>
+    </bf:title>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b23resourcesinstancesc0202292070001">
+        <rdf:value>9788364747151</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:dimensions>24 cm.</bf:dimensions>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="b19resourcesinstancesc0202292070001">
+        <rdf:value>  2017458556</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:hasItem>
+      <bf:Item rdf:nodeID="bnodeqM2fnV9sEaps7MARLnJLT5">
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc rdf:nodeID="bnode6aCr3pwH6u8GNWC9W3dBSB">
+            <rdf:value>GN63 .J36 2017</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode rdf:nodeID="bnode6MDeR3Si6JhNJK9pV6hSNw">
+            <rdf:value>00505840276</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:sublocation>c-GenColl</bf:sublocation>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:instanceOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/c020229207">
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnode8xGcAMtGvsTMTdN4bcTnTb">
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh00005987"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85115892"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85146625"/>
+          </madsrdf:Topic>
+        </bf:subject>
+        <rdfs:label>Rozwój somatyczny i motoryczny dzieci ze środowiska wiejskiego Wielkopolski na tle przemian środowiskowych na przełomie XX i XXI wieku : stan, zmiany i prognozy /</rdfs:label>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnoded9TDJFJQCBZVpiz4FkWsSi">
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85146625"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85115895"/>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnodehopqSoFejH9ViVJWFQby91">
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85146625"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85087577"/>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20229207#Topic650-26"/>
+        <bf:geographicCoverage>
+          <bf:GeographicCoverage rdf:nodeID="bnodevfdmd7BCLBmMMVJDQZKJ9e">
+            <bf:GeographicCoverage rdf:resource="http://id.loc.gov/authorities/names/n79131071"/>
+            <rdfs:label xml:lang="en">Poland</rdfs:label>
+          </bf:GeographicCoverage>
+        </bf:geographicCoverage>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="bnode8CFhgZ45p3jASoZ1G1xcmB">
+            <bf:classificationPortion>GN63</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="b10resourcesworksc020229207">
+            <bf:source>
+              <bf:Agent rdf:nodeID="b41resourcesworksc020229207">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+              </bf:Agent>
+            </bf:source>
+            <bflc:procInfo>ibc update</bflc:procInfo>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:creationDate>2017-12-21</bf:creationDate>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="b28resourcesworksc020229207">
+                <rdf:value>20229207</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="b24resourcesworksc020229207">
+                <bf:code>isbd</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+            <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="b20resourcesworksc020229207">
+                <bf:code>5</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:status>
+              <bf:Status rdf:nodeID="b16resourcesworksc020229207">
+                <bf:code>c</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bf:changeDate>2017-12-27T08:17:01</bf:changeDate>
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="b12resourcesworksc020229207">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bf:source>
+              <bf:Agent rdf:nodeID="b36resourcesworksc020229207">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+              </bf:Agent>
+            </bf:source>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20229207#Topic650-28"/>
+        <bf:title>
+          <bf:Title rdf:nodeID="b89resourcesworksc020229207">
+            <bf:mainTitle>Rozwój somatyczny i motoryczny dzieci ze środowiska wiejskiego Wielkopolski na tle przemian środowiskowych na przełomie XX i XXI wieku</bf:mainTitle>
+            <bflc:titleSortKey>Rozwój somatyczny i motoryczny dzieci ze środowiska wiejskiego Wielkopolski na tle przemian środowiskowych na przełomie XX i XXI wieku : stan, zmiany i prognozy /</bflc:titleSortKey>
+            <bf:subtitle>stan, zmiany i prognozy</bf:subtitle>
+            <rdfs:label>Rozwój somatyczny i motoryczny dzieci ze środowiska wiejskiego Wielkopolski na tle przemian środowiskowych na przełomie XX i XXI wieku : stan, zmiany i prognozy /</rdfs:label>
+          </bf:Title>
+        </bf:title>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/pol"/>
+        <bf:language>
+          <bf:Language rdf:nodeID="bnode6tQMFZMYzPq5s8dT7faMhn">
+            <bf:note>
+              <bf:Note rdf:nodeID="bnode6mGxy91WjtjfiNFKbRiLmR">
+                <rdfs:label>Summary in English</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Language>
+        </bf:language>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnode7gtrpkBU5Y31wLzp6KJYt5">
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85115892"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85146625"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh99002337"/>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20229207#Topic650-27"/>
+        <bf:supplementaryContent>
+          <bf:SupplementaryContent rdf:nodeID="bnodenEg9GsqM59tPPz1zUJ821x">
+            <rdfs:label>Includes bibliographical references (pages 162-185)</rdfs:label>
+          </bf:SupplementaryContent>
+        </bf:supplementaryContent>
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="bnodefjUtvR1QSM3VgNDGpAVCE8">
+            <bf:agent>
+              <madsrdf:PersonalName rdf:nodeID="bnodeeE6BSxptMumoZ6h8FwbHw8">
+                <madsrdf:hasSource>
+                  <madsrdf:Source rdf:nodeID="bnodervLNbWYVQoN5gQfieJmJWN">
+                    <madsrdf:citationSource>NUKAT in VIAF, viewed May 25, 2018 (hdg.: Janowski, Jarosław (wychowanie fizyczne))</madsrdf:citationSource>
+                  </madsrdf:Source>
+                </madsrdf:hasSource>
+                <rdfs:label>Janowski, Jarosław</rdfs:label>
+                <madsrdf:identifiesRWO>
+                  <madsrdf:RWO rdf:nodeID="bnodeqYKooSzrgQ2Ec1UACcYUL1">
+                    <rdfs:label>Janowski, Jarosław (Physical education teacher)</rdfs:label>
+                    <madsrdf:associatedLanguage>
+                      <madsrdf:Language rdf:nodeID="bnode95iH2dSb4b7NVQjsUNHBog">
+                        <madsrdf:associatedLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/pol"/>
+                      </madsrdf:Language>
+                    </madsrdf:associatedLanguage>
+                    <madsrdf:occupation>
+                      <madsrdf:Occupation rdf:nodeID="bnodeipDktgErUVEqMYzCxtFvdk">
+                        <rdfs:label xml:lang="en">Physical education teachers</rdfs:label>
+                        <madsrdf:authoritativeLabel rdf:resource="http://id.loc.gov/authorities/subjects/sh85101539"/>
+                      </madsrdf:Occupation>
+                    </madsrdf:occupation>
+                  </madsrdf:RWO>
+                </madsrdf:identifiesRWO>
+                <madsrdf:hasSource>
+                  <madsrdf:Source rdf:nodeID="bnode5d9Fub7ReB52btNHkemza7">
+                    <madsrdf:citationSource>Rozwój somatyczny i motoryczny dzieci ze środowiska wiejskiego Wielkopolski na tle przemian środowiskowych na przełomie XX i XXI wieku, 2017: t.p. (Jarosław Janowski)</madsrdf:citationSource>
+                  </madsrdf:Source>
+                </madsrdf:hasSource>
+              </madsrdf:PersonalName>
+            </bf:agent>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20229207#Topic650-25"/>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:nodeID="b84resourcesinstancesc0202292070001">
+            <rdfs:label>rdacarrier</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <rdfs:label>Rozwój somatyczny i motoryczny dzieci ze środowiska wiejskiego Wielkopolski na tle przemian środowiskowych na przełomie XX i XXI wieku : stan, zmiany i prognozy /</rdfs:label>
+  </bf:Instance>
+  <madsrdf:Topic rdf:nodeID="bnode3cuoZ9WmATtAGqcfjraYHS">
+    <rdfs:label xml:lang="en">Motor ability in children</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="b211resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>antropometria</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0213"/>
+  </madsrdf:Topic>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20229207#Agent100-14">
+    <bflc:name00MarcKey>1001 $aJanowski, Jarosław$c(wychowanie fizyczne).</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Janowski, Jarosław (wychowanie fizyczne).</bflc:name00MatchKey>
+    <rdfs:label>Janowski, Jarosław (wychowanie fizyczne).</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <bflc:primaryContributorName00MatchKey>Janowski, Jarosław (wychowanie fizyczne).</bflc:primaryContributorName00MatchKey>
+  </madsrdf:PersonalName>
+  <madsrdf:Geographic rdf:nodeID="b187resourcesworksc020229207">
+    <rdf:rest rdf:nodeID="b0189"/>
+    <madsrdf:authoritativeLabel>Polska</madsrdf:authoritativeLabel>
+  </madsrdf:Geographic>
+  <madsrdf:Geographic rdf:nodeID="bnodeqrJFdM3RCUXePtkFhNfBNS">
+    <rdfs:label xml:lang="en">Wielkopolska (Poland)</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:Geographic rdf:nodeID="b130resourcesworksc020229207">
+    <rdf:rest rdf:nodeID="b0132"/>
+    <madsrdf:authoritativeLabel>Polska</madsrdf:authoritativeLabel>
+  </madsrdf:Geographic>
+  <madsrdf:Geographic rdf:nodeID="b160resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>Wielkopolska (region)</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0162"/>
+  </madsrdf:Geographic>
+  <madsrdf:Topic rdf:nodeID="bnodeqsd1a6sYvSTsdNGy4VfY84">
+    <rdfs:label xml:lang="en">Rural children</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="bnodey69G1TgfyQPicr1LeRQRW">
+    <rdfs:label xml:lang="en">Rural children</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Temporal rdf:nodeID="b220resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>1990-</madsrdf:authoritativeLabel>
+  </madsrdf:Temporal>
+  <bf:Identifier rdf:nodeID="b66resourcesworksc020229207">
+    <rdf:value>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+    </rdf:value>
+    <bf:source>
+      <bf:Source rdf:about="http://id.loc.gov/vocabulary/languages"/>
+    </bf:source>
+  </bf:Identifier>
+  <madsrdf:Geographic rdf:nodeID="b190resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>Wielkopolska (region)</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0192"/>
+  </madsrdf:Geographic>
+  <bf:Note rdf:nodeID="b109resourcesworksc020229207">
+    <rdfs:label>Streszcz. w jęz. ang</rdfs:label>
+  </bf:Note>
+  <bf:Identifier rdf:nodeID="b57resourcesworksc020229207">
+    <bf:source rdf:resource="http://id.loc.gov/vocabulary/languages"/>
+    <rdf:value>
+      <madsrdf:Language rdf:about="http://id.loc.gov/vocabulary/languages/pol">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Language"/>
+        <rdfs:label xml:lang="en">Polish</rdfs:label>
+      </madsrdf:Language>
+    </rdf:value>
+  </bf:Identifier>
+  <madsrdf:Temporal rdf:nodeID="b193resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>1990-</madsrdf:authoritativeLabel>
+  </madsrdf:Temporal>
+  <madsrdf:Geographic rdf:nodeID="bnodebgXL2jqGPWy9mCudQSSjCs">
+    <rdfs:label xml:lang="en">Wielkopolska (Poland)</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:Temporal rdf:nodeID="b136resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>1990-</madsrdf:authoritativeLabel>
+  </madsrdf:Temporal>
+  <madsrdf:Temporal rdf:nodeID="b163resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>1990-</madsrdf:authoritativeLabel>
+  </madsrdf:Temporal>
+  <madsrdf:Geographic rdf:nodeID="bnodeh3Bp2ZxmGnr69UNBRVAqbg">
+    <rdfs:label xml:lang="en">Wielkopolska (Poland)</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:Geographic rdf:nodeID="bnode44hfkPYufg5WMjNvf45urQ">
+    <rdfs:label xml:lang="en">Wielkopolska (Poland)</rdfs:label>
+  </madsrdf:Geographic>
+  <madsrdf:Geographic rdf:nodeID="b217resourcesworksc020229207">
+    <madsrdf:authoritativeLabel>Wielkopolska (region)</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b0219"/>
+  </madsrdf:Geographic>
+  <madsrdf:Topic rdf:nodeID="bnode2eGcqFAdLkrMpyvYRBhngR">
+    <rdfs:label xml:lang="en">Growth</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20229207#Topic650-28">
+    <madsrdf:authoritativeLabel>Młodzież w środowisku wiejskim--antropometria--Polska--Wielkopolska (region)--1990-.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b207resourcesworksc020229207"/>
+    <rdfs:label>Młodzież w środowisku wiejskim--antropometria--Polska--Wielkopolska (region)--1990-.</rdfs:label>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+    <bf:source>
+      <bf:Source rdf:nodeID="b223resourcesworksc020229207">
+        <bf:code>jhpk</bf:code>
+      </bf:Source>
+    </bf:source>
+  </bf:Topic>
+  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/subjects/sh85146625"/>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20229207#Topic650-25">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+    <bf:source>
+      <bf:Source rdf:nodeID="b139resourcesworksc020229207">
+        <bf:code>jhpk</bf:code>
+      </bf:Source>
+    </bf:source>
+    <madsrdf:authoritativeLabel>Dzieci--rozwój--ocena--Polska--Wielkopolska (region)--1990-.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b120resourcesworksc020229207"/>
+    <rdfs:label>Dzieci--rozwój--ocena--Polska--Wielkopolska (region)--1990-.</rdfs:label>
+  </bf:Topic>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source rdf:nodeID="b103resourcesworksc020229207">
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85115892"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85087577"/>
+  <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+    <rdfs:label xml:lang="en">Illustrations</rdfs:label>
+  </bf:Illustration>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20229207#Topic650-26">
+    <bf:source>
+      <bf:Source rdf:nodeID="b166resourcesworksc020229207">
+        <bf:code>jhpk</bf:code>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>Dzieci w środowisku wiejskim--antropometria--Polska--Wielkopolska (region)--1990-.</rdfs:label>
+    <madsrdf:componentList rdf:nodeID="b150resourcesworksc020229207"/>
+    <madsrdf:authoritativeLabel>Dzieci w środowisku wiejskim--antropometria--Polska--Wielkopolska (region)--1990-.</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+  </bf:Topic>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/20229207#Topic650-27">
+    <madsrdf:componentList rdf:nodeID="b177resourcesworksc020229207"/>
+    <madsrdf:authoritativeLabel>Młodzież--rozwój--ocena--Polska--Wielkopolska (region)--1990-.</madsrdf:authoritativeLabel>
+    <rdfs:label>Młodzież--rozwój--ocena--Polska--Wielkopolska (region)--1990-.</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <bf:source>
+      <bf:Source rdf:nodeID="b196resourcesworksc020229207">
+        <bf:code>jhpk</bf:code>
+      </bf:Source>
+    </bf:source>
+  </madsrdf:ComplexSubject>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh99002337"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/20229207#Work830-30">
+    <rdfs:label>Monografie - Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego w Poznaniu</rdfs:label>
+    <bf:identifiedBy>
+      <bf:Issn rdf:nodeID="b126resourcesinstancesc0202292070001">
+        <rdf:value>0239-7161</rdf:value>
+      </bf:Issn>
+    </bf:identifiedBy>
+    <bf:title>
+      <bf:Title rdf:nodeID="b114resourcesinstancesc0202292070001">
+        <bf:mainTitle>Monografie - Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego w Poznaniu</bf:mainTitle>
+        <rdfs:label>Monografie - Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego w Poznaniu</rdfs:label>
+        <bflc:title30MatchKey>Monografie - Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego w Poznaniu</bflc:title30MatchKey>
+        <bflc:titleSortKey>Monografie - Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego w Poznaniu</bflc:titleSortKey>
+        <bflc:title30MarcKey>830 0$aMonografie - Akademia Wychowania Fizycznego im. Eugeniusza Piaseckiego w Poznaniu$vnr 442.$x0239-7161</bflc:title30MarcKey>
+      </bf:Title>
+    </bf:title>
+  </bf:Work>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85115895"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/pl"/>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh00005987"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+</rdf:RDF>

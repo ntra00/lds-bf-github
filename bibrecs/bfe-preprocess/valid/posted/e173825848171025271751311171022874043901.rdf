@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026783"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014027009"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n2017054797"/>
+  <bf:MusicVoice rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015259">
+    <rdfs:label xml:lang="en">female voice</rdfs:label>
+  </bf:MusicVoice>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2010008467"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2011002283"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85088865"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c018898485">
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/prm"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2017054797"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prf"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014027009"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>jalb</bflc:catalogerId>
+            <bflc:profile>profile:bf2:SoundRecording:Work</bflc:profile>
+            <bf:creationDate>2019-1-2</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e173825848171025271751311171022874043901"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:appliedMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/mtl"/>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pla"/>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+        <bf:copyrightDate>p2017</bf:copyrightDate>
+        <bf:credits>
+          <bf:Credits>
+            <rdfs:label>Martin Carr ; with Mary Wycherley, vocals and additional musicians.</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:dimensions>4 3/4 in.</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 audio disc</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:identifiedBy>
+          <bf:Ean>
+            <rdf:value>4015698012736</rdf:value>
+          </bf:Ean>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:AudioIssueNumber>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Tapete Records</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value> TR 389</rdf:value>
+          </bf:AudioIssueNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Local>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>OCoLC</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>on1015226920</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2019600008</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Tapete Records</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2017]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>Place of publication not identified</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>Martin Carr</bf:responsibilityStatement>
+        <bf:soundCharacteristic>
+          <bf:RecordingMethod>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+          </bf:RecordingMethod>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:RecordingMedium>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrecmedium/opt"/>
+          </bf:RecordingMedium>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlayingSpeed>
+            <rdfs:label>1.4 m. per sec.</rdfs:label>
+          </bf:PlayingSpeed>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlaybackChannels>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mplayback/ste"/>
+          </bf:PlaybackChannels>
+        </bf:soundCharacteristic>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>New shapes of life</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Language>
+    </bf:language>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2010008467"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2011002283"/>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>New shapes of life -- Damocles -- The main man -- Future reflections -- A mess of everything -- Three studies of the male back -- The van -- The last song</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>New shapes of life</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/prm">
+    <rdfs:label>performed music</rdfs:label>
+  </bf:Content>
+  <rdf:Description rdf:about="http://id.loc.gov/resources/works/e193574455325946701536136704716814848325">
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2017054797"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <madsrdf:PersonalName>
+            <rdfs:label>Wycherley, Mary</rdfs:label>
+          </madsrdf:PersonalName>
+        </bf:agent>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/sng"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014027009"/>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>jalb</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:changeDate>2019-01-04T15:32:21</bf:changeDate>
+            <bf:creationDate>2019-1-2</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e173825848171025271751311171022874043901"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/sd"/>
+        <bf:credits>
+          <bf:Credits>
+            <rdfs:label>Mary Wycherley, vocals ; with accompaniment</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:digitalCharacteristic>
+          <bf:FileType>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mfiletype/audio"/>
+          </bf:FileType>
+        </bf:digitalCharacteristic>
+        <bf:dimensions>4 3/4 in.</bf:dimensions>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>1 audio disc</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMark>
+                <rdf:value>SDD 12303</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>00332909988</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>Copy 1</rdfs:label>
+              </bf:Note>
+            </bf:note>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Tapete Records</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>TR 389</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Upc>
+            <rdf:value>4015698012736</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2019600008</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c018898485"/>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/s"/>
+        <bf:provisionActivity>
+          <bf:Publication>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Tapete Records</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2017]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>[Place of publication not identified]</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>Martin Carr</bf:responsibilityStatement>
+        <bf:soundCharacteristic>
+          <bf:RecordingMethod>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+          </bf:RecordingMethod>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:RecordingMedium>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrecmedium/opt"/>
+          </bf:RecordingMedium>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlayingSpeed>
+            <rdfs:label>1.4 m/s</rdfs:label>
+          </bf:PlayingSpeed>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlaybackChannels>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mplayback/ste"/>
+          </bf:PlaybackChannels>
+        </bf:soundCharacteristic>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>New shapes of life</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Language>
+    </bf:language>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85088865"/>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>New shapes of life -- Damocles -- The main man -- Future reflections -- A mess of everything -- Three studies of the male back -- The van -- The last song</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>New shapes of life</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:voice>
+      <bf:MusicVoice>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015259"/>
+        <bf:count>1</bf:count>
+      </bf:MusicVoice>
+    </bf:voice>
+    <rdfs:label>Carr, Martin, 1968- New shapes of life</rdfs:label>
+  </rdf:Description>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/sd">
+    <rdfs:label>audio disc</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/s">
+    <rdfs:label>audio</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:FileType rdf:about="http://id.loc.gov/vocabulary/mfiletype/audio">
+    <rdfs:label xml:lang="en">audio file</rdfs:label>
+  </bf:FileType>
+  <bf:AppliedMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/mtl">
+    <rdfs:label xml:lang="en">metal </rdfs:label>
+  </bf:AppliedMaterial>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pla">
+    <rdfs:label xml:lang="en">plastic </rdfs:label>
+  </bf:BaseMaterial>
+  <bf:PlaybackChannels rdf:about="http://id.loc.gov/vocabulary/mplayback/ste">
+    <rdfs:label xml:lang="en">stereo</rdfs:label>
+  </bf:PlaybackChannels>
+  <bf:RecordingMedium rdf:about="http://id.loc.gov/vocabulary/mrecmedium/opt">
+    <rdfs:label>optical</rdfs:label>
+  </bf:RecordingMedium>
+  <bf:RecordingMethod rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label>digital</rdfs:label>
+  </bf:RecordingMethod>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prf">
+    <rdfs:label xml:lang="en">Performer</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/sng">
+    <rdfs:label xml:lang="en">Singer</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e173825848171025271751311171022874043901">
+    <rdf:value>e173825848171025271751311171022874043901</rdf:value>
+  </bf:Local>
+  <rdf:Description>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/prm"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n2017054797"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014026783"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2014027009"/>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>New shapes of life</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+  </rdf:Description>
+</rdf:RDF>

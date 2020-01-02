@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/e261203810821006472914053114549178581670">
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="bnodeih6QiwvevmLmjYcbJTyh4e">
+        <bf:agent>
+          <bf:Agent rdf:nodeID="bnodeepedCUQZ8piC96GAmiZDnQ">
+            <rdfs:label>Gallery Books</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:place>
+          <bf:Place rdf:nodeID="bnodew7fFgeQ8PAcFndtWY1T4Zx">
+            <rdfs:label>New York</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:date>2017</bf:date>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:editionStatement>First Gallery Books hardcover edition</bf:editionStatement>
+    <bflc:projectedProvisionDate>1710</bflc:projectedProvisionDate>
+    <bf:responsibilityStatement>by Maddox ; illustrations by Jessica Safron</bf:responsibilityStatement>
+    <bf:instanceOf>
+      <bf:Work rdf:nodeID="bnodex4znct46qinnzetirewp5U">
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:classification>
+          <bf:ClassificationDdc rdf:nodeID="bnodewpPVWfukN8JojuvurvsMWY">
+            <bf:classificationPortion>814/.6</bf:classificationPortion>
+          </bf:ClassificationDdc>
+        </bf:classification>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodes29apPwT4QiVzFzRetTjqt">
+            <bf:mainTitle>Fuck whales</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="bnode5BziwQQLSZtYuC3VHK8H3x">
+            <bf:classificationPortion>AC8.5 M33 2017</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="bnodecHxHCgvfZ1i2zUobyCzW55">
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2006061965"/>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:originDate>2017</bf:originDate>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="bnodepNGzQYpWdkXu7tMbamP6Hj">
+        <bf:qualifier>(hardback)</bf:qualifier>
+        <rdf:value>9781476794976 </rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="bnodebbkTMfZrSyaNdzr3gwzJsg">
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bflc:metadataAssigner>trod</bflc:metadataAssigner>
+        <bf:creationDate>2018-3-29</bf:creationDate>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e109568449739972754615780609680190923969"/>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="bnodesF68cY2HjBvrzZbajyxSjp">
+        <rdf:value>2017025280</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodebyWe1WaXQytuztTBUJgYxS">
+        <bf:mainTitle>Fuck whales</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+  </bf:Instance>
+  <madsrdf:PersonalName rdf:nodeID="bnodetYdwKFqD5JTSUTLc8ZvAT1">
+    <rdfs:label xml:lang="en">Maddox</rdfs:label>
+  </madsrdf:PersonalName>
+  <rdf:Description rdf:about="file:///base/data/home/apps/s%7Erdf-translator/2.408516547054015808/ClassificationDdc">
+    <rdfs:label>ClassificationDdc</rdfs:label>
+  </rdf:Description>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label xml:lang="en">English</rdfs:label>
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e109568449739972754615780609680190923969">
+    <rdf:value>e109568449739972754615780609680190923969</rdf:value>
+  </bf:Local>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2006061965"/>
+</rdf:RDF>

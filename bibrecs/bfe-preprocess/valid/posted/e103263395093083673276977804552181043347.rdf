@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Source rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b27">
+    <rdfs:label>DLC</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+  </bf:Source>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/20127624#Agent100-15">
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <bflc:primaryContributorName00MatchKey>Novielli, Maria Roberta, 1964-</bflc:primaryContributorName00MatchKey>
+    <bflc:name00MatchKey>Novielli, Maria Roberta, 1964-</bflc:name00MatchKey>
+    <bflc:name00MarcKey>1001 $aNovielli, Maria Roberta,$d1964-$eauthor.</bflc:name00MarcKey>
+    <rdfs:label>Novielli, Maria Roberta, 1964-</rdfs:label>
+  </bf:Agent>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0201276240001">
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b15">
+            <rdfs:label>rdamedia</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <rdfs:label>Floating worlds : a short history of Japanese animation /</rdfs:label>
+    <bf:tableOfContents>
+      <bf:TableOfContents rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b7">
+        <rdfs:label>From pre-cinema to the birth of the industry -- Winds of war and reconstruction -- A new world -- How the West was won -- Simulacra -- "Alone, not lonely": the x-generation.</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b2">
+        <rdfs:label>pages cm</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:responsibilityStatement>Maria Roberta Novielli</bf:responsibilityStatement>
+    <bflc:projectedProvisionDate>1805-</bflc:projectedProvisionDate>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <bf:source>
+          <bf:Source rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b9">
+            <rdfs:label>rdacarrier</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>volume</rdfs:label>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:provisionActivityStatement>Boca Raton : Taylor &amp; Francis, 2018.</bf:provisionActivityStatement>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/c0201276240001"/>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b5">
+        <bf:date>2018</bf:date>
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/flu"/>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b3">
+        <rdf:value>9781138571280 (hardback : alk. paper)</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b1">
+        <bflc:metadataAssigner>trod</bflc:metadataAssigner>
+        <rdfs:label>eng</rdfs:label>
+        <bf:creationDate>2018-6-7</bf:creationDate>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e103263395093083673276977804552181043347"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b6">
+        <bf:date>2018</bf:date>
+        <bf:place>
+          <bf:Place rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b17">
+            <rdfs:label>Boca Raton</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b16">
+            <rdfs:label>Taylor &amp; Francis</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:instanceOf>
+      <bf:Text rdf:about="http://id.loc.gov/resources/works/c020127624">
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:classification rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b12"/>
+        <bf:geographicCoverage rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/a-ja"/>
+        <bf:classification>
+          <bf:ClassificationDdc rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b13">
+            <bf:classificationPortion>791.43/340952</bf:classificationPortion>
+            <bf:edition>full</bf:edition>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:edition>23</bf:edition>
+          </bf:ClassificationDdc>
+        </bf:classification>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b10">
+            <bf:source>
+              <bf:Agent rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b21">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+              </bf:Agent>
+            </bf:source>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b24">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b19">
+                <rdf:value>20127624</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bf:status>
+              <bf:Status rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b25">
+                <bf:code>c</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bf:creationDate>2017-11-03</bf:creationDate>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b23">
+                <bf:code>8</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:changeDate>2018-06-07T20:42:40</bf:changeDate>
+            <bflc:procInfo>ibc update</bflc:procInfo>
+            <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+            <bf:source>
+              <bf:Source rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b20">
+                <rdfs:label>DLC</rdfs:label>
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+              </bf:Source>
+            </bf:source>
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b22">
+                <bf:code>isbd</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:title rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b11"/>
+        <bf:contribution rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b14"/>
+        <rdfs:label>Floating worlds : a short history of Japanese animation /</rdfs:label>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20127624#Topic650-24"/>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+      </bf:Text>
+    </bf:instanceOf>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:title>
+      <bf:Title rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b8">
+        <bf:mainTitle>Floating worlds</bf:mainTitle>
+        <bflc:titleSortKey>Floating worlds : a short history of Japanese animation /</bflc:titleSortKey>
+        <bf:subtitle>a short history of Japanese animation</bf:subtitle>
+        <rdfs:label>Floating worlds : a short history of Japanese animation /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b4">
+        <rdf:value>  2017048748</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+  </bf:Instance>
+  <bf:Local rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b28">
+    <rdf:value>20127624</rdf:value>
+  </bf:Local>
+  <bf:Status rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b39">
+    <bf:code>c</bf:code>
+  </bf:Status>
+  <bf:Agent rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b26">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <madsrdf:Topic rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b30">
+    <madsrdf:authoritativeLabel>History and criticism</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <bf:Role rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b31">
+    <rdfs:label>author.</rdfs:label>
+    <bflc:relatorMatchKey>author</bflc:relatorMatchKey>
+  </bf:Role>
+  <madsrdf:Topic rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b34">
+    <rdf:rest rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b35"/>
+    <madsrdf:authoritativeLabel>Animated films</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <bf:GenerationProcess rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b36">
+    <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+  </bf:GenerationProcess>
+  <madsrdf:Geographic rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b32">
+    <rdf:rest rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b33"/>
+    <madsrdf:authoritativeLabel>Japan</madsrdf:authoritativeLabel>
+  </madsrdf:Geographic>
+  <bf:DescriptionConventions rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b38">
+    <bf:code>isbd</bf:code>
+  </bf:DescriptionConventions>
+  <bflc:EncodingLevel rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b37">
+    <bf:code>8</bf:code>
+  </bflc:EncodingLevel>
+  <bf:Source rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b29">
+    <rdfs:label>rdacontent</rdfs:label>
+  </bf:Source>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20127624#Topic650-24">
+    <madsrdf:componentList rdf:nodeID="fa0133c16e79449ffb4cd939a963166e2b18"/>
+    <rdfs:label>Animated films--Japan--History and criticism.</rdfs:label>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+    <madsrdf:authoritativeLabel>Animated films--Japan--History and criticism.</madsrdf:authoritativeLabel>
+  </bf:Topic>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+  </bf:Agent>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e103263395093083673276977804552181043347">
+    <rdf:value>e103263395093083673276977804552181043347</rdf:value>
+  </bf:Local>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/flu"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+</rdf:RDF>

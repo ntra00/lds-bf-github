@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026252"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026579"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026673"/>
+  <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026725"/>
+  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n79007751"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/n97001231"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no2004001207"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no2014137621"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2015073394"/>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/no2015073432"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no2015146630"/>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no2015146734"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85001066"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh85039316"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85147274"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh96004236"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh99014263"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e170299633681354774992479997574603144748">
+    <bflc:relationship>
+      <bflc:Relationship>
+        <bflc:target rdf:resource="http://id.loc.gov/resources/works/no2017010994"/>
+      </bflc:Relationship>
+    </bflc:relationship>
+    <bf:aspectRatio>
+      <bf:AspectRatio>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/maspect/wide"/>
+      </bf:AspectRatio>
+    </bf:aspectRatio>
+    <bf:colorContent>
+      <bf:ColorContent>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>color</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:ColorContent>
+    </bf:colorContent>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/tdi"/>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2015073432"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aus"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cre"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/tlp"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2015073394"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/act"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aus"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cre"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/tlp"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n97001231"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/brd"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/pre"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2015146734"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2004001207"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2015146630"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/prn"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:duration>220 min.</bf:duration>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026252"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026579"/>
+    <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026673"/>
+    <bf:geographicCoverage>
+      <bf:GeographicCoverage>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n80126293"/>
+        <rdfs:label xml:lang="en">New York (State)</rdfs:label>
+      </bf:GeographicCoverage>
+    </bf:geographicCoverage>
+    <bf:hasInstance>
+      <bf:Instance>
+        <bf:adminMetadata>
+          <bf:AdminMetadata>
+            <bflc:catalogerId>jjud</bflc:catalogerId>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/7"/>
+            <bf:changeDate>2018-11-26T21:22:12</bf:changeDate>
+            <bf:creationDate>2018-11-26</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e195385218663206343672712695282902647180"/>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:aspectRatio>
+          <bf:AspectRatio>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/maspect/wide"/>
+          </bf:AspectRatio>
+        </bf:aspectRatio>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/vd"/>
+        <bf:contentAccessibility>
+          <bf:Note>
+            <rdfs:label>In English with optional English subtitles for the deaf and hard of hearing (SDH)</rdfs:label>
+          </bf:Note>
+        </bf:contentAccessibility>
+        <bf:contribution>
+          <bf:Contribution>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2014137621"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fds"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:copyrightDate>©2014</bf:copyrightDate>
+        <bf:credits>
+          <bf:Credits>
+            <rdfs:label>Cast: Ilana Glazer, Abbi Jacobson</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:credits>
+          <bf:Credits>
+            <rdfs:label>Executive producer[s], Abbi Jacobson, Ilana Glazer, Amy Poehler, Dave Becky, Sam Saifer, Tony Hernandez</rdfs:label>
+          </bf:Credits>
+        </bf:credits>
+        <bf:digitalCharacteristic>
+          <bf:FileType>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mfiletype/video"/>
+          </bf:FileType>
+        </bf:digitalCharacteristic>
+        <bf:digitalCharacteristic>
+          <bf:RegionalEncoding>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mregencoding/region1"/>
+          </bf:RegionalEncoding>
+        </bf:digitalCharacteristic>
+        <bf:digitalCharacteristic>
+          <bf:EncodingFormat>
+            <rdfs:label>DVD video</rdfs:label>
+          </bf:EncodingFormat>
+        </bf:digitalCharacteristic>
+        <bf:dimensions>4 3/4 in.</bf:dimensions>
+        <bf:duration>220 min.</bf:duration>
+        <bf:extent>
+          <bf:Extent>
+            <rdfs:label>2 videodiscs</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:genreForm rdf:resource="http://id.loc.gov/authorities/genreForms/gf2011026725"/>
+        <bf:hasItem>
+          <bf:Item>
+            <bf:collection>Copyright Collection (Library of Congress)</bf:collection>
+            <bf:date>Received: 2016-12-14</bf:date>
+            <bf:enumerationAndChronology>
+              <bf:Enumeration>
+                <rdfs:label>d1-2 in 1 container</rdfs:label>
+              </bf:Enumeration>
+            </bf:enumerationAndChronology>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc>
+                <rdf:value>DVE 3200</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:ShelfMark>
+                <rdf:value>1</rdf:value>
+              </bf:ShelfMark>
+            </bf:identifiedBy>
+            <bf:identifiedBy>
+              <bf:Barcode>
+                <rdf:value>0048039821A</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition>
+                <rdfs:label>copyright deposit--RNR</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:immediateAcquisition>
+              <bf:ImmediateAcquisition>
+                <rdfs:label>Copyright Collection</rdfs:label>
+              </bf:ImmediateAcquisition>
+            </bf:immediateAcquisition>
+            <bf:sublocation>c-Motion Pic &amp; TV/MBRS</bf:sublocation>
+            <bf:usageAndAccessPolicy>
+              <bf:AccessPolicy>
+                <rdfs:label>Viewing copy</rdfs:label>
+              </bf:AccessPolicy>
+            </bf:usageAndAccessPolicy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:identifiedBy>
+          <bf:CopyrightRegistration>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>U.S. Copyright Office</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>PA0002007411</rdf:value>
+          </bf:CopyrightRegistration>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Upc>
+            <rdf:value>032429209290</rdf:value>
+          </bf:Upc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:PublisherNumber>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>Paramount</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>59165911000</rdf:value>
+          </bf:PublisherNumber>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Local>
+            <bf:source>
+              <bf:Source>
+                <rdfs:label>OCLC</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>(OCoLC)893982523 </rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Lccn>
+            <rdf:value>2018602077</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/v"/>
+        <bf:provisionActivity>
+          <bf:Distribution>
+            <bf:agent>
+              <bf:Agent>
+                <rdfs:label>Paramount</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[2014]</bf:date>
+            <bf:place>
+              <bf:Place>
+                <rdfs:label>Hollywood, California</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Distribution>
+        </bf:provisionActivity>
+        <bf:responsibilityStatement>Paper Kite Productions ; 3 Arts Entertainment ; Jax Media ; a presentation of Comedy Central ; created by Abbi Jacobson, Ilana Glazer</bf:responsibilityStatement>
+        <bf:soundCharacteristic>
+          <bf:RecordingMethod>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrectype/digital"/>
+          </bf:RecordingMethod>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:RecordingMedium>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mrecmedium/opt"/>
+          </bf:RecordingMedium>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlaybackChannels>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mplayback/ste"/>
+          </bf:PlaybackChannels>
+        </bf:soundCharacteristic>
+        <bf:soundCharacteristic>
+          <bf:PlaybackCharacteristic>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mspecplayback/dolby"/>
+          </bf:PlaybackCharacteristic>
+        </bf:soundCharacteristic>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>Videodisc container; Copyright catalog online; Amazon WWW site, viewed November 26, 2018; Wikipedia WWW site, viewed November 26, 2018</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:supplementaryContent>
+          <bf:SupplementaryContent>
+            <rdfs:label>Special features: Disc 1. Lincoln alts ; Uncut Pussy weed cold open ; Killian Casey alts ; Chicken kicks ; Uncut working girls cold open ; Rachel Dratch outtakes ; Garol outtakes ; Janeane Garofalo alts ; Abbi sells her drawing for $17.50 ; Galleries [Behind the scenes ; Mike Perry animations] -- Disc 2. Improv show extras ; Janelle cariacature scene ; Talent show ; Amy Sedaris alts ; Bed montage ; Uncut apartment hunters cold open ; Dale off the phone ; Amy Sedaris car outtakes ; Abbi carrying Ilana ; Amy Poehler and Seth Morris ; DVD commentaries [Pussy weed ; Working girls ; Apartment hunters ; The last supper]</rdfs:label>
+          </bf:SupplementaryContent>
+        </bf:supplementaryContent>
+        <bf:supplementaryContent>
+          <bf:SupplementaryContent>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>View cover art</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <rdfs:label>http://midwesttapes.com/images/movies/000/000/000/011/179/000000000011179108.jpg</rdfs:label>
+          </bf:SupplementaryContent>
+        </bf:supplementaryContent>
+        <bf:tableOfContents>
+          <bf:TableOfContents>
+            <rdfs:label>Disc 1. What a wonderful world (21 min.) / directed by Lucia Aniello ; written by Abbi Jacobson, Ilana Glazer -- Pussy weed (21 min.) / directed by John Lee ; written by Abbi Jacobson, Ilana Glazer -- Working girls (21 min.) / directed by Lucia Aniello ; written by Lucia Aniello, Paul W. Downs -- The lockout (21 min.) / directed by Lucia Aniello ; written by Abbi Jacobson, Ilana Glazer -- Fattest asses (21 min.) / directed by John Lee ; written by Abbi Jacobson, Ilana Glazer</rdfs:label>
+          </bf:TableOfContents>
+        </bf:tableOfContents>
+        <bf:tableOfContents>
+          <bf:TableOfContents>
+            <rdfs:label>Disc 2. Stolen phone (21 min.) / directed by Lucia Aniello ; written by Chris Kelly -- Hurricane Wanda (21 min.) / directed by John Lee ; written by Tami Sagher -- Destination wedding (21 min.) / directed by Nicholas Jasenovec ; written by Abbi Jacobson, Ilana Glazer -- Apartment hunters (21 min.) / directed by Nicholas Jasenovec ; written by Tami Sagher -- The last supper (21 min.) / directed by Amy Poehler ; written by Abbi Jacobson, Ilana Glazer</rdfs:label>
+          </bf:TableOfContents>
+        </bf:tableOfContents>
+        <bf:title>
+          <bf:Title>
+            <bf:mainTitle>Broad City</bf:mainTitle>
+            <bf:note>
+              <bf:Note>
+                <rdfs:label>Title from container</rdfs:label>
+              </bf:Note>
+            </bf:note>
+            <bf:partNumber>Season 1</bf:partNumber>
+          </bf:Title>
+        </bf:title>
+        <bf:videoCharacteristic>
+          <bf:BroadcastStandard>
+            <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mbroadstd/ntsc"/>
+          </bf:BroadcastStandard>
+        </bf:videoCharacteristic>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:historyOfWork>Episodes originally broadcast on television by Comedy Central in 2014</bf:historyOfWork>
+    <bf:intendedAudience>
+      <bf:IntendedAudience>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>MPAA rating: Not rated ; "Parental advisory: Explicit content. Warning: this program is recommended for mature audiences only. It contains adult language and situations" -- Container</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:IntendedAudience>
+    </bf:intendedAudience>
+    <bf:language>
+      <bf:Language>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:Language>
+    </bf:language>
+    <bf:originDate>2014</bf:originDate>
+    <bf:originPlace>
+      <bf:Place>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n78095330"/>
+        <rdfs:label xml:lang="en">United States</rdfs:label>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:soundContent>
+      <bf:SoundContent>
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/msoundcontent/sound"/>
+      </bf:SoundContent>
+    </bf:soundContent>
+    <bf:source>
+      <bf:Source>
+        <rdfs:label>Videodisc container; Copyright catalog online; Amazon WWW site, viewed November 26, 2018; Wikipedia WWW site, viewed November 26, 2018</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <bf:subject>
+      <bf:Topic>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79007751"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85147274"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79007751"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh96004236"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79007751"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh99014263"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n79007751"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85001066"/>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85039316"/>
+      </bf:Topic>
+    </bf:subject>
+    <bf:summary>
+      <bf:Summary>
+        <rdfs:label>Follow the adventures of two best friends working the big city. No matter how bad it gets, and despite their glaring dissimilarities, these "broads" are always down with whatever hits them--sort of</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>What a wonderful world (21 min.) / directed by Lucia Aniello ; written by Abbi Jacobson, Ilana Glazer -- Pussy weed (21 min.) / directed by John Lee ; written by Abbi Jacobson, Ilana Glazer -- Working girls (21 min.) / directed by Lucia Aniello ; written by Lucia Aniello, Paul W. Downs -- The lockout (21 min.) / directed by Lucia Aniello ; written by Abbi Jacobson, Ilana Glazer -- Fattest asses (21 min.) / directed by John Lee ; written by Abbi Jacobson, Ilana Glazer -- Stolen phone (21 min.) / directed by Lucia Aniello ; written by Chris Kelly -- Hurricane Wanda (21 min.) / directed by John Lee ; written by Tami Sagher -- Destination wedding (21 min.) / directed by Nicholas Jasenovec ; written by Abbi Jacobson, Ilana Glazer -- Apartment hunters (21 min.) / directed by Nicholas Jasenovec ; written by Tami Sagher -- The last supper (21 min.) / directed by Amy Poehler ; written by Abbi Jacobson, Ilana Glazer</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Broad City</bf:mainTitle>
+        <bf:partNumber>Season 1</bf:partNumber>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Broad City (Television program). Season 1</rdfs:label>
+  </bf:Work>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/tdi">
+    <rdfs:label>two-dimensional moving image</rdfs:label>
+  </bf:Content>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/no2017010994">
+    <rdfs:label xml:lang="en">Broad City (Television program) (no2017010994)</rdfs:label>
+  </bf:Work>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/vd">
+    <rdfs:label>videodisc</rdfs:label>
+  </bf:Carrier>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+    <rdfs:label xml:lang="en">English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:AspectRatio rdf:about="http://id.loc.gov/vocabulary/maspect/wide">
+    <rdfs:label xml:lang="en">wide screen</rdfs:label>
+  </bf:AspectRatio>
+  <bf:BroadcastStandard rdf:about="http://id.loc.gov/vocabulary/mbroadstd/ntsc">
+    <rdfs:label xml:lang="en">NTSC</rdfs:label>
+  </bf:BroadcastStandard>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/v">
+    <rdfs:label>video</rdfs:label>
+  </bf:Media>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
+    <rdfs:label xml:lang="en">minimal</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:FileType rdf:about="http://id.loc.gov/vocabulary/mfiletype/video">
+    <rdfs:label xml:lang="en">video file</rdfs:label>
+  </bf:FileType>
+  <bf:PlaybackChannels rdf:about="http://id.loc.gov/vocabulary/mplayback/ste">
+    <rdfs:label xml:lang="en">stereo</rdfs:label>
+  </bf:PlaybackChannels>
+  <bf:RecordingMedium rdf:about="http://id.loc.gov/vocabulary/mrecmedium/opt">
+    <rdfs:label>optical</rdfs:label>
+  </bf:RecordingMedium>
+  <bf:RecordingMethod rdf:about="http://id.loc.gov/vocabulary/mrectype/digital">
+    <rdfs:label>digital</rdfs:label>
+  </bf:RecordingMethod>
+  <bf:RegionalEncoding rdf:about="http://id.loc.gov/vocabulary/mregencoding/region1">
+    <rdfs:label xml:lang="en">region 1</rdfs:label>
+  </bf:RegionalEncoding>
+  <bf:SoundContent rdf:about="http://id.loc.gov/vocabulary/msoundcontent/sound">
+    <rdfs:label>sound</rdfs:label>
+  </bf:SoundContent>
+  <bf:PlaybackCharacteristic rdf:about="http://id.loc.gov/vocabulary/mspecplayback/dolby">
+    <rdfs:label xml:lang="en">Dolby</rdfs:label>
+  </bf:PlaybackCharacteristic>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/act">
+    <rdfs:label xml:lang="en">Actor</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aus">
+    <rdfs:label xml:lang="en">Screenwriter</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/brd">
+    <rdfs:label xml:lang="en">Broadcaster</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cre">
+    <rdfs:label xml:lang="en">Creator</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fds">
+    <rdfs:label xml:lang="en">Film distributor</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/pre">
+    <rdfs:label xml:lang="en">Presenter</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/prn">
+    <rdfs:label xml:lang="en">Production company</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/tlp">
+    <rdfs:label xml:lang="en">Television producer</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e195385218663206343672712695282902647180">
+    <rdf:value>e195385218663206343672712695282902647180</rdf:value>
+  </bf:Local>
+</rdf:RDF>

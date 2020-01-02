@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e146368293362312961893529171256629786258">
+    <bflc:comment>hhuh</bflc:comment>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodefRxjyaqE5o9me31u6BmmFS">
+        <bf:mainTitle>Han'guk ŭi put</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:illustrativeContent>
+      <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+        <rdfs:label xml:lang="en">Illustrations</rdfs:label>
+      </bf:Illustration>
+    </bf:illustrativeContent>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:nodeID="bnode43mUYSnCa43CHFqZGEnzt6">
+        <rdfs:label>Includes bibliographical references.</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:title>
+      <bflc:TranscribedTitle rdf:nodeID="bnodeHBiPcFtHiotDQ3zj1E51R">
+        <bf:mainTitle>한국 의 붓</bf:mainTitle>
+      </bflc:TranscribedTitle>
+    </bf:title>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnode3wknWiQarKfFm79nE7ToEg">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+        <bf:agent>
+          <madsrdf:PersonalName rdf:nodeID="bnodefgk9wbKs6DHC6HsVEXMaXh">
+            <rdfs:label>Chŏng, Chin-myŏng, 1960- </rdfs:label>
+          </madsrdf:PersonalName>
+        </bf:agent>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodemZK8gefNE27vGJvcYwTdBH">
+        <madsrdf:authoritativeLabel>Paintbrushes--Korea--History</madsrdf:authoritativeLabel>
+        <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh85017347"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodeouyu4YA3E7CtgCKux1Ujv8">
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnode89tjEeXGFp5eS8RBa2Uxvp">
+            <rdfs:label>320 pages</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:instanceOf>
+          <bf:Work rdf:nodeID="bnodeE45haJFDqkeRpUnuTZ55y">
+            <bf:contribution>
+              <bflc:PrimaryContribution rdf:nodeID="bnodegnNdMyngg4UubyWrytJfxY">
+                <bf:agent>
+                  <madsrdf:PersonalName rdf:nodeID="bnodeh7rf4YDoRS7Wb5JCcz6FFk">
+                    <rdfs:label>Chŏng, Chin-myŏng, 1960-</rdfs:label>
+                  </madsrdf:PersonalName>
+                </bf:agent>
+                <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+              </bflc:PrimaryContribution>
+            </bf:contribution>
+            <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+            <bf:title>
+              <bflc:TranscribedTitle rdf:nodeID="bnode8WyF22ZAVB5mSbz71DALSp">
+                <bf:mainTitle>한국 의 붓</bf:mainTitle>
+              </bflc:TranscribedTitle>
+            </bf:title>
+            <bflc:comment>hhuh</bflc:comment>
+            <bf:title>
+              <bf:Title rdf:nodeID="bnodecRHVsLoe4xF41Sz1fFUGnj">
+                <bf:mainTitle>Han'guk ŭi put </bf:mainTitle>
+              </bf:Title>
+            </bf:title>
+            <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+          </bf:Work>
+        </bf:instanceOf>
+        <bf:title>
+          <bflc:TranscribedTitle rdf:nodeID="bnodewKkLBc48vZtUVZ4UErJpt4">
+            <bf:mainTitle>Han'guk ŭi put </bf:mainTitle>
+          </bflc:TranscribedTitle>
+        </bf:title>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodeaGoPmH9VHzoUmivs9SRc5s">
+            <bf:subtitle>붓장 유 필무 에게서 듣는 우리 붓 이야기</bf:subtitle>
+            <bf:mainTitle>한국 의 붓</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:dimensions>23 cm</bf:dimensions>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnode4ANUe5r1TTKnfHzEYkUToH">
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodecNBqiC1TEy7RB8jyZN9x3z">
+                <rdfs:label>서울시</rdfs:label>
+              </bf:Place>
+            </bf:place>
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnoderaY1Giv9pv5csTGRyibLQd">
+                <rdfs:label>학민사</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>2017</bf:date>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bflc:comment>hhuh</bflc:comment>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodebJiddWeZjzrUEHrgFvk1CJ">
+            <bf:creationDate>2018-01-25</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:changeDate>2018-01-25T16:35:55</bf:changeDate>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bflc:metadataAssigner>hhuh</bflc:metadataAssigner>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e102486102585455250463684860686594419794"/>
+            <bf:changeDate>2018-01-25T16:55:05</bf:changeDate>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/4"/>
+            <bf:changeDate>2018-01-25T16:06:28</bf:changeDate>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:responsibilityStatement>정 진명 지음</bf:responsibilityStatement>
+        <bf:editionStatement>1판.</bf:editionStatement>
+        <bf:identifiedBy>
+          <bf:Isbn rdf:nodeID="bnodeiDw9KZ71DUmKTN6dX6Sq8J">
+            <rdf:value>9788971932452</rdf:value>
+          </bf:Isbn>
+        </bf:identifiedBy>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnodedctYQi8epnRYY73sKc7k8L">
+            <rdf:value>  2017489681</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:contribution>
+      <bflc:PrimaryContribution rdf:nodeID="bnodemy77p48CZ2YSoBgPw9eBKH">
+        <bf:agent>
+          <madsrdf:PersonalName rdf:nodeID="bnodegNXwCyxu185bT8jUqzccdh">
+            <rdfs:label>Chŏng, Chin-myŏng, 1960-</rdfs:label>
+          </madsrdf:PersonalName>
+        </bf:agent>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+  </bf:Work>
+  <madsrdf:Topic rdf:nodeID="bnode4ueu4BExvS1etGLUPYDxVL">
+    <rdfs:label xml:lang="en">Paintbrushes</rdfs:label>
+    <madsrdf:Topic rdf:resource="http://id.loc.gov/authorities/subjects/sh99003398"/>
+  </madsrdf:Topic>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e102486102585455250463684860686594419794">
+    <rdf:value>e102486102585455250463684860686594419794</rdf:value>
+  </bf:Local>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85017347"/>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/4">
+    <rdfs:label xml:lang="en">core</rdfs:label>
+  </bflc:EncodingLevel>
+</rdf:RDF>

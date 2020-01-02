@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/authorities/names/no2009012034"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0058718470001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>jzie</bflc:catalogerId>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+        <bf:changeDate>2004-02-12T17:19:23</bf:changeDate>
+        <bf:creationDate>1981-04-10</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>5871847</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/no2009012034"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/bsl"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:dimensions>17 cm (12mo)</bf:dimensions>
+    <bf:editionStatement>Onzieme edition originale / revue &amp; augmentée par l'auteur ; exactement conférée sur l'edition de Paris 1782, où l'on a corrigé des fautes très-essentielles.</bf:editionStatement>
+    <bf:extent>
+      <bf:Extent>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>Pagination: volume 1: XXXII, 350 pages, 2 unnumbered pages; volume 2: IV, 378 pages, 2 unnumbered pages.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <rdfs:label>2 volumes</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/c0058718470001"/>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:collection>Pre-1801 Imprint Collection (Library of Congress) </bf:collection>
+        <bf:custodialHistory>LC copy has handwritten notes in ink and pencil in both volumes. </bf:custodialHistory>
+        <bf:heldBy>DLC</bf:heldBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>RC81 .T62 1792</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:ShelfMark>
+            <rdf:value>Copy 1</rdf:value>
+          </bf:ShelfMark>
+        </bf:identifiedBy>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>LC copy of volume 1 imperfect: wanting first leaf. Description of perfect copy from Bibliothèque nationale de France catalogue général.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:sublocation>Rare Book/Special Collections Reading Room (Jefferson LJ239)</bf:sublocation>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value> 07024988 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c000511237"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mulm"/>
+    <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Chez Franç. Grasset &amp; comp., lib. &amp; imp. et chez les principaux libraires de l'Europe</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>MDCCXCII [1792]</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>A Lausanne</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Lausanne, Chez F. Grasset &amp; comp., 1792.</bf:provisionActivityStatement>
+    <bf:responsibilityStatement>par Mr. Tissot, docteur et professeur en médecine, de la Société royale de Londres, de l'Ac. med. ph. de Basle, de la Soc. Econom. de Berne, de la Soc. phys. experimentale de Rotterdam, &amp;c.</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Avis au peuple sur sa santé,</bflc:titleSortKey>
+        <bf:mainTitle>Avis au peuple sur sa santé</bf:mainTitle>
+        <rdfs:label>Avis au peuple sur sa santé,</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Avis au peuple sur sa santé,</rdfs:label>
+  </bf:Instance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c000511237">
+    <bflc:consolidates rdf:resource="http://id.loc.gov/resources/bibs/005871847"/>
+    <bflc:consolidates rdf:resource="http://id.loc.gov/resources/bibs/006151027"/>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>f</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+        <bf:changeDate>1986-12-17T00:00:00</bf:changeDate>
+        <bf:creationDate>1986-03-18</bf:creationDate>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>aacr</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>511237</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>ICU</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>ICU</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>n</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>RC81</bf:classificationPortion>
+        <bf:itemPortion>.T62 1774</bf:itemPortion>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>RC81</bf:classificationPortion>
+        <bf:itemPortion>.T62x 1794</bf:itemPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>RC81</bf:classificationPortion>
+        <bf:itemPortion>.T62 1792</bf:itemPortion>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/511237#Agent100-10"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/fre"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/511237#Topic650-17"/>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Avis au peuple sur sa santé /</bflc:titleSortKey>
+        <bf:mainTitle>Avis au peuple sur sa santé</bf:mainTitle>
+        <rdfs:label>Avis au peuple sur sa santé /</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdfs:label>Avis au peuple sur sa santé /</rdfs:label>
+  </bf:Work>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mulm">
+    <rdfs:label xml:lang="en">multipart monograph</rdfs:label>
+  </bf:Issuance>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/511237#Agent100-10">
+    <bflc:name00MarcKey>1001 $aTissot, S. A. D.$q(Samuel Auguste David),$d1728-1797.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Tissot, S. A. D. (Samuel Auguste David), 1728-1797.</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Tissot, S. A. D. (Samuel Auguste David), 1728-1797.</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Tissot, S. A. D. (Samuel Auguste David), 1728-1797.</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:ComplexSubject rdf:about="http://id.loc.gov/resources/works/511237#Topic650-17">
+    <madsrdf:authoritativeLabel>Medicine, Popular--Early works to 1800.</madsrdf:authoritativeLabel>
+    <madsrdf:componentList rdf:nodeID="b1_b26"/>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>Medicine, Popular--Early works to 1800.</rdfs:label>
+  </madsrdf:ComplexSubject>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/fre"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/sz"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label xml:lang="en">Resource Description and Access</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>English</rdfs:label>
+  </bf:Language>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/bsl">
+    <rdfs:label xml:lang="en">Bookseller</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <bf:Place>
+    <rdfs:label>Lausanne</rdfs:label>
+  </bf:Place>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Early works to 1800</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <madsrdf:Topic>
+    <madsrdf:authoritativeLabel>Medicine, Popular</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b1_b31"/>
+  </madsrdf:Topic>
+  <madsrdf:CorporateName>
+    <rdfs:label xml:lang="en">François Grasset et comp.</rdfs:label>
+  </madsrdf:CorporateName>
+  <bf:Agent>
+    <rdfs:label>Chez F. Grasset &amp; comp.</rdfs:label>
+  </bf:Agent>
+</rdf:RDF>

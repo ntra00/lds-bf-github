@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/names/n82086022"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85070287"/>
+  <bf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85070840"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0193989570001">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:catalogerId>rkoh</bflc:catalogerId>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2017-09-25T13:06:08</bf:changeDate>
+        <bf:creationDate>2016-08-15</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:Local>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <rdf:value>19398957</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:carrier>
+      <bf:Carrier>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>rda</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>volume</rdfs:label>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:dimensions>25 cm</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>2 volume</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:enumerationAndChronology>
+          <bf:Enumeration>
+            <rdfs:label>v. 1</rdfs:label>
+          </bf:Enumeration>
+        </bf:enumerationAndChronology>
+        <bf:enumerationAndChronology>
+          <bf:Chronology>
+            <rdfs:label>April or May 2016</rdfs:label>
+          </bf:Chronology>
+        </bf:enumerationAndChronology>
+        <bf:heldBy>DLC</bf:heldBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>BM520.88.A53 A23 2016</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00483210450</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>c. 1</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:enumerationAndChronology>
+          <bf:Enumeration>
+            <rdfs:label>v. 2 </rdfs:label>
+          </bf:Enumeration>
+        </bf:enumerationAndChronology>
+        <bf:enumerationAndChronology>
+          <bf:Chronology>
+            <rdfs:label>April or May 2016</rdfs:label>
+          </bf:Chronology>
+        </bf:enumerationAndChronology>
+        <bf:heldBy>DLC</bf:heldBy>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>BM520.88.A53 A23 2016</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:Barcode>
+            <rdf:value>00483210462</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>c. 1</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2017441603</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>IsJeAIW</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdf:value>wb2016416136</rdf:value>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c019398957"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mulm"/>
+    <bf:media>
+      <bf:Media>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>rda</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>unmediated</rdfs:label>
+      </bf:Media>
+    </bf:media>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Probably complete in 5 volumes: OCLC 993234934--cd08 2018-10-16.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>[publisher not identified]</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>Nisan 776- [April or May 2016-]</bf:date>
+        <bf:date>ניסו תשע"ו-</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label> [Israel] </rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Yerushalayim : [publisher not identified], 776 [2015 or 2016]</bf:provisionActivityStatement>
+    <bf:responsibilityStatement>בן ציון אבא שאול באאמו"ר רבי אליהו אבא שאול, שליט"א</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>אור ההלכה</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:title>
+      <bflc:TransliteratedTitle>
+        <bf:mainTitle>Or ha-halakhah</bf:mainTitle>
+      </bflc:TransliteratedTitle>
+    </bf:title>
+    <rdfs:label>Or ha-halakhah /</rdfs:label>
+  </bf:Instance>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c019398957">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:changeDate>2017-09-25T13:06:08</bf:changeDate>
+        <bf:creationDate>2016-08-15</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:identifiedBy>
+          <bf:Local>
+            <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <rdf:value>19398957</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>BM520.88.A53</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:content>
+      <bf:Content>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>rda</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>text</rdfs:label>
+      </bf:Content>
+    </bf:content>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent>
+          <madsrdf:PersonalName>
+            <rdfs:label>Aba Shaʼul, Ben Tsiyon ben Eliyahu, 1976-</rdfs:label>
+          </madsrdf:PersonalName>
+        </bf:agent>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/heb"/>
+    <bf:place>
+      <madsrdf:HierarchicalGeographic>
+        <madsrdf:componentList rdf:nodeID="b0_b33"/>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Place"/>
+        <rdfs:label>Israel--Jerusalem.</rdfs:label>
+      </madsrdf:HierarchicalGeographic>
+    </bf:place>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/names/n82086022"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85070287"/>
+    <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh85070840"/>
+    <bf:tableOfContents>
+      <bf:TableOfContents>
+        <rdfs:label>חלק א. השכמת הבוקר, ציצית, תפילין, פסוקי דזמרה -- חלק ב. ברכות ק"ש, קריאת שמע, תפילה, מחנך קדוש --</rdfs:label>
+      </bf:TableOfContents>
+    </bf:tableOfContents>
+    <bf:title>
+      <bf:Title>
+        <bf:mainTitle>Or ha-halakhah</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <rdfs:label>Aba Shaʼul, Ben Tsiyon ben Eliyahu, 1976-.Or ha-halakhah</rdfs:label>
+  </bf:Work>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mulm">
+    <rdfs:label xml:lang="en">multipart monograph</rdfs:label>
+  </bf:Issuance>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/19398957#Agent100-13">
+    <bflc:name00MarcKey>1001 $6880-01$aAba Shaʼul, Ben Tsiyon.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Aba Shaʼul, Ben Tsiyon.</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Aba Shaʼul, Ben Tsiyon.</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Aba Shaʼul, Ben Tsiyon.</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/19398957#Agent880-14">
+    <bflc:name00MarcKey>8801 $6100-01/(2/r$aאבא שאול, בן ציון.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>אבא שאול, בן ציון.</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>אבא שאול, בן ציון.</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>אבא שאול, בן ציון.</rdfs:label>
+  </madsrdf:PersonalName>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/heb"/>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/is"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Source>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <bf:Place>
+    <rdfs:label>Yerushalayim</rdfs:label>
+  </bf:Place>
+  <madsrdf:Country>
+    <rdf:rest rdf:nodeID="b0_b23"/>
+    <rdfs:label>Israel</rdfs:label>
+  </madsrdf:Country>
+  <madsrdf:City>
+    <rdfs:label>Jerusalem</rdfs:label>
+  </madsrdf:City>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Karo, Joseph ben Ephraim, 1488-1575. Oraḥ ḥayim</rdfs:label>
+  </bf:Topic>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Judaism--Customs and practices</rdfs:label>
+  </bf:Topic>
+  <bf:Topic>
+    <rdfs:label xml:lang="en">Jewish law</rdfs:label>
+  </bf:Topic>
+  <bf:Agent>
+    <rdfs:label>publisher not identified</rdfs:label>
+  </bf:Agent>
+</rdf:RDF>

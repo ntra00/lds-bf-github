@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:pmo="http://performedmusicontology.org/ontology/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n79089957"/>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0059059510001">
+    <bflc:indexedIn>
+      <bf:Instance>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Location</bf:noteType>
+            <rdfs:label>21129</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:title>
+          <bf:Title>
+            <rdfs:label>Shaw &amp; Shoemaker</rdfs:label>
+          </bf:Title>
+        </bf:title>
+      </bf:Instance>
+    </bflc:indexedIn>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>u</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+        <bf:changeDate>2003-09-23T09:53:16</bf:changeDate>
+        <bf:creationDate>1983-04-19</bf:creationDate>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>unknown</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>5905951</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>CarP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bflc:metadataAssigner>jzie</bflc:metadataAssigner>
+        <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:creationDate>2018-6-18</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e197405852865907564247259218863912021419"/>
+        <rdfs:label>eng</rdfs:label>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:dimensions>20 cm (8vo)</bf:dimensions>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>15, [1] pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:hasItem rdf:resource="http://id.loc.gov/resources/items/c0059059510001"/>
+    <bf:hasItem>
+      <bf:Item>
+        <bf:collection>Thomas Jefferson Library Collection (Library of Congress) </bf:collection>
+        <bf:contribution>
+          <bf:Contribution>
+            <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n79089957"/>
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/fmo"/>
+          </bf:Contribution>
+        </bf:contribution>
+        <bf:custodialHistory>LC copy is Thomas Jefferson's</bf:custodialHistory>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc>
+            <rdf:value>AC901 .M5 vol. 999</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:identifiedBy>
+          <bf:ShelfMark>
+            <rdf:value>Copy 1</rdf:value>
+          </bf:ShelfMark>
+        </bf:identifiedBy>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>LC copy forms part of the Jefferson Exhibit Collection. Bound to 22 cm.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label> With: Jefferson, Thomas. The proceedings of the government of the United States ... New-York, 1812. Issued separately.</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value> 18003668 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:instanceOf rdf:resource="http://id.loc.gov/resources/works/c005905951"/>
+    <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Signatures: [1]⁴ 2⁴</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <bflc:applicableInstitution>
+          <bf:Agent>
+            <bf:code>DLC</bf:code>
+          </bf:Agent>
+        </bflc:applicableInstitution>
+        <rdfs:label>With his Adresse au Conseil législatif du territoire d'Orléans. Nouvelle Orléans, 1808.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:provisionActivity>
+      <bf:Publication>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>A.&amp; G. Way, printers</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>1810</bf:date>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>City of Washington</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>City of Washington: A &amp; G. Way, printers, 1810.</bf:provisionActivityStatement>
+    <bf:references>
+      <bf:Work>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>3503</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:title rdf:resource="http://id.loc.gov/resources/works/c014630451"/>
+      </bf:Work>
+    </bf:references>
+    <bf:references>
+      <bf:Work>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>21129</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:title rdf:resource="http://id.loc.gov/resources/works/c001693611"/>
+      </bf:Work>
+    </bf:references>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Speech of Julien Poydras, esq., the delegate from the territory of Orleans, in support of the right of the public to the batture in front of the suburb St. Mary. Wednesday, March 14, 1810.</bflc:titleSortKey>
+        <bf:mainTitle>Speech of Julien Poydras, Esq., the delegate from the territory of Orleans, in support of the right of the public to the batture in front of the suburb St. Mary</bf:mainTitle>
+        <bf:subtitle>Wednesday, March 14, 1810</bf:subtitle>
+        <rdfs:label>Speech of Julien Poydras, esq., the delegate from the territory of Orleans, in support of the right of the public to the batture in front of the suburb St. Mary. Wednesday, March 14, 1810.</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdfs:label>Speech of Julien Poydras, esq., the delegate from the territory of Orleans, in support of the right of the public to the batture in front of the suburb St. Mary. Wednesday, March 14, 1810.</rdfs:label>
+  </bf:Instance>
+  <bf:Text rdf:about="http://id.loc.gov/resources/works/c005905951">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>u</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bflc:profile>profile:bf2:RareMat:Instance</bflc:profile>
+        <bf:changeDate>2003-09-23T09:53:16</bf:changeDate>
+        <bf:creationDate>1983-04-19</bf:creationDate>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions>
+            <bf:code>unknown</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>5905951</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>CarP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:status>
+          <bf:Status>
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:classificationPortion>E379.N5</bf:classificationPortion>
+        <bf:itemPortion>P89</bf:itemPortion>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:contribution>
+      <bflc:PrimaryContribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/5905951#Agent100-11"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent rdf:resource="http://id.loc.gov/resources/works/5905951#Agent710-18"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/ctb"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+    <bf:subject rdf:resource="http://id.loc.gov/resources/works/5905951#Topic650-17"/>
+    <bf:title>
+      <bf:Title>
+        <bflc:titleSortKey>Speech of Julien Poydras, esq., the delegate from the territory of Orleans, in support of the right of the public to the batture in front of the suburb St. Mary. Wednesday, March 14, 1810.</bflc:titleSortKey>
+        <bf:mainTitle>Speech of Julien Poydras, esq., the delegate from the territory of Orleans, in support of the right of the public to the batture in front of the suburb St. Mary</bf:mainTitle>
+        <bf:subtitle>Wednesday, March 14, 1810</bf:subtitle>
+        <rdfs:label>Speech of Julien Poydras, esq., the delegate from the territory of Orleans, in support of the right of the public to the batture in front of the suburb St. Mary. Wednesday, March 14, 1810.</rdfs:label>
+      </bf:Title>
+    </bf:title>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"/>
+    <rdfs:label>Speech of Julien Poydras, esq., the delegate from the territory of Orleans, in support of the right of the public to the batture in front of the suburb St. Mary. Wednesday, March 14, 1810.</rdfs:label>
+  </bf:Text>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+  <bf:Agent rdf:about="http://id.loc.gov/resources/works/5905951#Agent100-11">
+    <bflc:name00MarcKey>1001 $aPoydras, Julien,$d1746-1824.</bflc:name00MarcKey>
+    <bflc:name00MatchKey>Poydras, Julien, 1746-1824.</bflc:name00MatchKey>
+    <bflc:primaryContributorName00MatchKey>Poydras, Julien, 1746-1824.</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#PersonalName"/>
+    <rdfs:label>Poydras, Julien, 1746-1824.</rdfs:label>
+  </bf:Agent>
+  <madsrdf:CorporateName rdf:about="http://id.loc.gov/resources/works/5905951#Agent710-18">
+    <bflc:applicableInstitution>
+      <bf:Agent>
+        <bf:code>DLC</bf:code>
+      </bf:Agent>
+    </bflc:applicableInstitution>
+    <bflc:name10MarcKey>7102 $aThomas Jefferson Library Collection (Library of Congress)$5DLC</bflc:name10MarcKey>
+    <bflc:name10MatchKey>Thomas Jefferson Library Collection (Library of Congress)</bflc:name10MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>Thomas Jefferson Library Collection (Library of Congress)</rdfs:label>
+  </madsrdf:CorporateName>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/resources/works/5905951#Topic650-17">
+    <madsrdf:authoritativeLabel>New Orleans Batture (La.)</madsrdf:authoritativeLabel>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Topic"/>
+    <rdfs:label>New Orleans Batture (La.)</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c001693611">
+    <rdfs:label xml:lang="en">Shaw, Ralph R. (Ralph Robert), 1907-1972. American bibliography, a preliminary checklist for 1801-1819. (c001693611)</rdfs:label>
+  </bf:Work>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/c014630451">
+    <rdfs:label xml:lang="en">Library of Congress. Catalogue of the library of Thomas Jefferson (c014630451)</rdfs:label>
+  </bf:Work>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/dcu"/>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Source>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/fmo">
+    <rdfs:label xml:lang="en">Former owner</rdfs:label>
+  </bf:Role>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e197405852865907564247259218863912021419">
+    <rdf:value>e197405852865907564247259218863912021419</rdf:value>
+  </bf:Local>
+  <bf:Agent>
+    <rdfs:label>A &amp; G. Way, printers</rdfs:label>
+  </bf:Agent>
+  <bf:Place>
+    <rdfs:label>City of Washington</rdfs:label>
+  </bf:Place>
+  <madsrdf:PersonalName>
+    <rdfs:label xml:lang="en">Jefferson, Thomas, 1743-1826</rdfs:label>
+  </madsrdf:PersonalName>
+</rdf:RDF>

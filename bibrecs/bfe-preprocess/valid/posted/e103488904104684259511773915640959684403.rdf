@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <bf:Work rdf:about="http://id.loc.gov/resources/works/e148895320113243927013569333562061496650">
+    <bf:originDate>1905</bf:originDate>
+    <bf:musicMedium>
+      <bf:MusicMedium rdf:nodeID="bnode3zo9mE7jNfEMMJeMDbUxxz">
+        <rdfs:label>For mixed chorus SATB</rdfs:label>
+      </bf:MusicMedium>
+    </bf:musicMedium>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnode9NDisCUggjcuKpPQT4h3xv">
+        <bf:mainTitle>Во царствии Твоем</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:genreForm>
+      <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026872"/>
+    </bf:genreForm>
+    <bf:musicSerialNumber>No. 4</bf:musicSerialNumber>
+    <bf:notation>Cyrillic and romanized</bf:notation>
+    <bf:title>
+      <bflc:TranscribedTitle rdf:nodeID="bnode5pQ25EZ8ssjbiLfKEUsbFo">
+        <bf:mainTitle>Vo t︠s︡arstvii Tvoem</bf:mainTitle>
+      </bflc:TranscribedTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle rdf:nodeID="bnodeviAKXNpqoUJX2E9ygNv4De">
+        <bf:mainTitle>In Thy Kingdom</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:subject>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh89004159"/>
+    </bf:subject>
+    <bf:contribution>
+      <bflc:PrimaryContribution rdf:nodeID="bnodeuyLQkr5c8NJZnFvX2mG2gB">
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/cmp"/>
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/nr91042543"/>
+      </bflc:PrimaryContribution>
+    </bf:contribution>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/chu">
+        <rdfs:label xml:lang="en">Church Slavic</rdfs:label>
+      </bf:Language>
+    </bf:language>
+    <bf:classification>
+      <bf:ClassificationLcc rdf:nodeID="bnodecnL8XwRrw9di5uj37nyg1s">
+        <bf:classificationPortion>M2100.2</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:subject>
+      <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh85024806"/>
+    </bf:subject>
+    <bf:notation>
+      <bf:MusicNotation rdf:nodeID="bnodewu6R7KMn2oNBQKTktzayJT">
+        <bflc:target rdf:resource="http://id.loc.gov/vocabulary/mmusnotation/staff"/>
+      </bf:MusicNotation>
+    </bf:notation>
+    <rdfs:label>Kalinnikov, Viktor, 1870-1927. Vo t︠s︡arstvii Tvoem</rdfs:label>
+    <bf:musicFormat>
+      <bf:MusicFormat rdf:about="http://id.loc.gov/vocabulary/mmusicformat/score">
+        <rdfs:label xml:lang="en">score</rdfs:label>
+      </bf:MusicFormat>
+    </bf:musicFormat>
+    <bf:hasInstance>
+      <bf:Instance rdf:nodeID="bnodessCHi2HjvsAy58z5bBTPmd">
+        <bf:identifiedBy>
+          <bf:MusicPublisherNumber rdf:nodeID="bnode4hpvvdAMtca57qEoCV6b84">
+            <bf:source>
+              <bf:Source rdf:nodeID="bnodespzZaaUQGttDMXC64awccw">
+                <rdfs:label>Musica Russica</rdfs:label>
+              </bf:Source>
+            </bf:source>
+            <rdf:value>MRSM Ka 004</rdf:value>
+          </bf:MusicPublisherNumber>
+        </bf:identifiedBy>
+        <bf:dimensions>28 cm</bf:dimensions>
+        <bf:issuance rdf:resource="http://id.loc.gov/vocabulary/issuance/mono"/>
+        <bf:title>
+          <bf:ParallelTitle rdf:nodeID="bnodeeCLcyz6V2rwsMQ6SiLfxtC">
+            <bf:mainTitle>In Thy Kingdom</bf:mainTitle>
+            <bf:subtitle>Sacred opus 4</bf:subtitle>
+          </bf:ParallelTitle>
+        </bf:title>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodeaDgoxisxVPLzvYZJoZo6h">
+            <rdfs:label>For mixed chorus SATB with piano part for rehearsal only</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:carrier rdf:resource="http://id.loc.gov/vocabulary/carriers/nc"/>
+        <bf:media rdf:resource="http://id.loc.gov/vocabulary/mediaTypes/n"/>
+        <bf:provisionActivity>
+          <bf:Publication rdf:nodeID="bnoderhzSxdUDiR55FvDx7g9AEd">
+            <bf:agent>
+              <bf:Agent rdf:nodeID="bnodea45N2How828MJvnFU43Eu1">
+                <rdfs:label>Musica Russica</rdfs:label>
+              </bf:Agent>
+            </bf:agent>
+            <bf:date>[approximately 2016]</bf:date>
+            <bf:place>
+              <bf:Place rdf:nodeID="bnodehcH66aDyuRsh5dTM3uU3Lq">
+                <rdfs:label>[San Diego, Calif.]</rdfs:label>
+              </bf:Place>
+            </bf:place>
+          </bf:Publication>
+        </bf:provisionActivity>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode7VCrKhs9qvGzbdGsraZoqy">
+            <rdfs:label>"na Bozhestvennoĭ Liturgii = at the Divine Liturgy"--Caption</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodetEKeFpiMr3v9yZj2xPx345">
+            <rdfs:label>Cover title</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:baseMaterial rdf:resource="http://id.loc.gov/vocabulary/mmaterial/pap"/>
+        <bf:title>
+          <bflc:TranscribedTitle rdf:nodeID="bnodetwwcCbn1XHytsxhEgMMzMK">
+            <bf:mainTitle>Vo t︠s︡arstvii Tvoem</bf:mainTitle>
+          </bflc:TranscribedTitle>
+        </bf:title>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="bnodesDttuPHTEndx1QRnUigbwH">
+            <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bflc:profile>profile:bf2:NotatedMusic:Instance2</bflc:profile>
+            <bf:creationDate>2018-4-13</bf:creationDate>
+            <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bflc:metadataAssigner>ikir</bflc:metadataAssigner>
+            <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e103488904104684259511773915640959684403"/>
+            <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+            <bf:changeDate>2018-04-13T18:37:18</bf:changeDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+        <bf:hasSeries>
+          <bf:Instance rdf:nodeID="bnodeqFNMCpDBsa9bdA5K357i6x">
+            <bf:seriesStatement>Monuments of Russian sacred music</bf:seriesStatement>
+          </bf:Instance>
+        </bf:hasSeries>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodeDnpKvomKo6r2NX3jfjZMj">
+            <bf:subtitle>Но. 4 из Духовно-музыкальных сочинений</bf:subtitle>
+            <bf:mainTitle>Во царствии Твоем</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:extent>
+          <bf:Extent rdf:nodeID="bnodewtE6iyWXwFH45JcUUqNfUV">
+            <rdfs:label>1 score (10 pages)</rdfs:label>
+          </bf:Extent>
+        </bf:extent>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodeftrp9HTYTSjFRUdTauD3KL">
+            <rdfs:label>"Present edition is based on the first Russian edition, published by P. Jurgenson of Moscow, plate no. 30666, censor's date: 23 December 1906"--Preface</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:copyrightDate>2002</bf:copyrightDate>
+        <bf:responsibilityStatement>Viktor Kalinnikov</bf:responsibilityStatement>
+        <bf:hasItem>
+          <bf:Item rdf:nodeID="bnodeoLuxvKkMaGFu3a1LEnS8gw">
+            <bf:identifiedBy>
+              <bf:ShelfMarkLcc rdf:nodeID="bnodebTdaXikqe28ig5biMpkqRu">
+                <rdf:value>M2100.2 .K Copy 1</rdf:value>
+              </bf:ShelfMarkLcc>
+            </bf:identifiedBy>
+            <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            <bf:identifiedBy>
+              <bf:Barcode rdf:nodeID="bnodexkmnFQpYeaZZRk9hCW29KV">
+                <rdf:value>0047970174A</rdf:value>
+              </bf:Barcode>
+            </bf:identifiedBy>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodekpjzRBrn7x7aZh748YugjZ">
+            <rdfs:label>Church Slavic words (Cyrillic and romanized) also printed as text with English translation</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:responsibilityStatement>Виктор Калинников</bf:responsibilityStatement>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode9CszUbtuy7kqJYAX7LwHoJ">
+            <rdfs:label>Editor's notes by V. Morosan in English</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodew6HV48zwpnFzW7avtYzwGD">
+            <rdfs:label>Staff notation</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:title>
+          <bf:VariantTitle rdf:nodeID="bnodevrxzbR5QcTp9WyComWFt57">
+            <bf:mainTitle>Vo tsárstṽii Tvoyém</bf:mainTitle>
+          </bf:VariantTitle>
+        </bf:title>
+        <bf:hasSeries>
+          <bf:Instance rdf:nodeID="bnode48rGzg5JSdzt2nZZCk1t8b">
+            <bf:seriesStatement>Памятники русской духовной музыки</bf:seriesStatement>
+          </bf:Instance>
+        </bf:hasSeries>
+        <bf:identifiedBy>
+          <bf:Lccn rdf:nodeID="bnodetEkdFPgK3nj4GuvGdnVGJa">
+            <rdf:value>2017563383</rdf:value>
+          </bf:Lccn>
+        </bf:identifiedBy>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:subject>
+      <madsrdf:Topic rdf:nodeID="bnodedzmkPbNAP1xcLCG6UQDtea">
+        <madsrdf:authoritativeLabel>Russkaia pravoslavnaia tserkov'--Hymns</madsrdf:authoritativeLabel>
+        <bf:source rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+      </madsrdf:Topic>
+    </bf:subject>
+    <bf:title>
+      <bf:VariantTitle rdf:nodeID="bnodehqbZFwPspTRGZv5QAurjBV">
+        <bf:mainTitle>Vo tsárstṽii Tvoyém </bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:contribution>
+      <bf:Contribution rdf:nodeID="bnode5QTnvwSSEWy2BHmqn7nNnx">
+        <bf:agent rdf:resource="http://id.loc.gov/authorities/names/n85139572"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/wst"/>
+        <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/edt"/>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:ensemble>
+      <bf:MusicEnsemble rdf:nodeID="bnodejhTnnoeAbWiM2FfsB51bbZ">
+        <bf:count>1</bf:count>
+        <bflc:target rdf:resource="http://id.loc.gov/authorities/performanceMediums/mp2013015146"/>
+      </bf:MusicEnsemble>
+    </bf:ensemble>
+  </bf:Work>
+  <madsrdf:GenreForm rdf:nodeID="bnode6JXXHUXuWrejwJGrMmeQUc">
+    <rdfs:label xml:lang="en">Hymns</rdfs:label>
+  </madsrdf:GenreForm>
+  <madsrdf:Topic rdf:nodeID="bnodeszdNA1sPUCKh6HFDbw78mU">
+    <rdfs:label xml:lang="en">Choruses, Sacred (Mixed voices), Unaccompanied</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:PersonalName rdf:nodeID="bnode2N7UaUTqmnaZijHESpHqoW">
+    <rdfs:label xml:lang="en">Morosan, Vladimir</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:Topic rdf:nodeID="bnodenW1Lkr8V8xEdcC8qC2AMvy">
+    <rdfs:label xml:lang="en">Hymns, Church Slavic</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:PersonalName rdf:nodeID="bnodeqniuLMRsXgMPgeei8RNGZp">
+    <rdfs:label xml:lang="en">Kalinnikov, Viktor, 1870-1927</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/nr91042543"/>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e103488904104684259511773915640959684403">
+    <rdf:value>e103488904104684259511773915640959684403</rdf:value>
+  </bf:Local>
+  <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/lcsh">
+    <rdfs:label>LCSH</rdfs:label>
+  </bf:Source>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/wst">
+    <rdfs:label xml:lang="en">Writer of supplementary textual content</rdfs:label>
+  </bf:Role>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/cmp">
+    <rdfs:label xml:lang="en">Composer</rdfs:label>
+  </bf:Role>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Notation rdf:about="http://id.loc.gov/vocabulary/mmusnotation/staff">
+    <rdfs:label xml:lang="en">staff notation</rdfs:label>
+  </bf:Notation>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <rdf:Description rdf:about="http://id.loc.gov/authorities/performanceMediums/mp2013015146">
+    <rdfs:label xml:lang="en">mixed chorus</rdfs:label>
+  </rdf:Description>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+    <rdfs:label xml:lang="en">paper </rdfs:label>
+  </bf:BaseMaterial>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/authorities/names/n85139572"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/edt">
+    <rdfs:label xml:lang="en">Editor</rdfs:label>
+  </bf:Role>
+</rdf:RDF>

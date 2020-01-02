@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" >
+  <madsrdf:Topic rdf:nodeID="b100resourcesworksc020314082">
+    <madsrdf:authoritativeLabel>History of the 20th - 21st centuries</madsrdf:authoritativeLabel>
+  </madsrdf:Topic>
+  <bf:Place rdf:nodeID="bnode4syLAhiaG3n3V5YapBLsZV">
+    <rdfs:label>Łódź</rdfs:label>
+  </bf:Place>
+  <madsrdf:Geographic rdf:nodeID="bnodee1CMABnS9Hg8Sew5KSUuKi">
+    <rdfs:label xml:lang="en">Wrocław (Poland)</rdfs:label>
+  </madsrdf:Geographic>
+  <bf:Agent rdf:nodeID="b56resourcesinstancesc0203140820001">
+    <rdfs:label>"KsiężyMłyn" Dom Wydawniczy</rdfs:label>
+  </bf:Agent>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/c0203140820001">
+    <bf:provisionActivityStatement>Łódź : "KsiężyMłyn" Dom Wydawniczy, [2017]</bf:provisionActivityStatement>
+    <bf:title>
+      <bf:Title rdf:nodeID="b37resourcesinstancesc0203140820001">
+        <rdfs:label>Sekrety Wrocławia /</rdfs:label>
+        <bf:mainTitle>Sekrety Wrocławia</bf:mainTitle>
+        <bflc:titleSortKey>Sekrety Wrocławia /</bflc:titleSortKey>
+      </bf:Title>
+    </bf:title>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:hasItem>
+      <bf:Item rdf:nodeID="bnodekHSXmaNrTD6bM8WGBUyjwd">
+        <bf:sublocation>c-GenColl</bf:sublocation>
+        <bf:identifiedBy>
+          <bf:Barcode rdf:nodeID="bnodeap3Bfpba2AgMnrVuX6Q2NM">
+            <rdf:value>00506120949</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc rdf:nodeID="bnodef1VXXiPvZCfAB3tDUohTVP">
+            <rdf:value>DK4780.13 .B37 2017</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:nodeID="b80resourcesinstancesc0203140820001">
+            <rdfs:label>rdamedia</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:dimensions>25 cm</bf:dimensions>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="b19resourcesinstancesc0203140820001">
+        <rdf:value>  2017469352</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:editionStatement>Wydanie 1</bf:editionStatement>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="b93resourcesinstancesc0203140820001">
+        <bf:status>
+          <bf:Status rdf:nodeID="b99resourcesinstancesc0203140820001">
+            <bf:code>c</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bf:generationProcess>
+          <bf:GenerationProcess rdf:nodeID="b95resourcesinstancesc0203140820001">
+            <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:creationDate>2017-12-04</bf:creationDate>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bflc:procInfo>ibc update</bflc:procInfo>
+        <bf:source>
+          <bf:Agent rdf:nodeID="b119resourcesinstancesc0203140820001">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:source>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:nodeID="b103resourcesinstancesc0203140820001">
+            <bf:code>5</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bf:source>
+          <bf:Agent rdf:nodeID="b124resourcesinstancesc0203140820001">
+            <rdfs:label>DLC</rdfs:label>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+          </bf:Agent>
+        </bf:source>
+        <bf:changeDate>2018-04-27T16:37:07</bf:changeDate>
+        <bf:identifiedBy>
+          <bf:Local rdf:nodeID="b111resourcesinstancesc0203140820001">
+            <rdf:value>20314082</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:nodeID="b107resourcesinstancesc0203140820001">
+            <bf:code>isbd</bf:code>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:extent>
+      <bf:Extent rdf:nodeID="b64resourcesinstancesc0203140820001">
+        <rdfs:label>158 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="b12resourcesinstancesc0203140820001">
+        <bf:date>2017</bf:date>
+        <bf:place rdf:resource="http://id.loc.gov/vocabulary/countries/pl"/>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <bf:source>
+          <bf:Source rdf:nodeID="b88resourcesinstancesc0203140820001">
+            <rdfs:label>rdacarrier</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <rdfs:label>volume</rdfs:label>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:responsibilityStatement>Tamara Barriga</bf:responsibilityStatement>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="bnodeh2ESKRDhNiKxP2zfBKswbT">
+        <bf:place>
+          <bf:Place rdf:nodeID="bnodeb2AwFJrzDZj36muDoC14A6">
+            <rdfs:label> Łódź </rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent rdf:nodeID="bnode4kAHVKQqVu3mN88WpFsdmf">
+            <rdfs:label>Księży Młyn Dom Wydawniczy</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Local rdf:nodeID="b27resourcesinstancesc0203140820001">
+        <rdf:value>lx2017067751</rdf:value>
+        <bf:source>
+          <bf:Source rdf:nodeID="b31resourcesinstancesc0203140820001">
+            <rdfs:label>PlWaKWL</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <rdfs:label>Sekrety Wrocławia /</rdfs:label>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="b23resourcesinstancesc0203140820001">
+        <rdf:value>9788377294000</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="bnodejfAyCUkAGFrrgpWctCbqfk">
+        <bf:creationDate>2018-4-27</bf:creationDate>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bflc:metadataAssigner>ssoc</bflc:metadataAssigner>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e107382277841600191874793197154900586226"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:instanceOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/c020314082">
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="bnoded75xa8jFGbapzPuFNKGtQq">
+            <bf:classificationPortion>DK4780.13</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnode4E3iwcGxsnH1XSEMMCUtNa">
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh87002399"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n80050802"/>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:geographicCoverage>
+          <bf:GeographicCoverage rdf:nodeID="bnodeoCtqgmUV74aTC2qERnLpkU">
+            <rdfs:label xml:lang="en">Poland</rdfs:label>
+            <bf:GeographicCoverage rdf:resource="http://id.loc.gov/authorities/names/n79131071"/>
+          </bf:GeographicCoverage>
+        </bf:geographicCoverage>
+        <bf:title>
+          <bf:Title rdf:nodeID="b73resourcesworksc020314082">
+            <bf:mainTitle>Sekrety Wrocławia</bf:mainTitle>
+            <rdfs:label>Sekrety Wrocławia /</rdfs:label>
+            <bflc:titleSortKey>Sekrety Wrocławia /</bflc:titleSortKey>
+          </bf:Title>
+        </bf:title>
+        <bf:supplementaryContent>
+          <bf:SupplementaryContent rdf:nodeID="bnodeep9j46gBXd5h9JcKu4zwru">
+            <rdfs:label> Includes bibliographical references (pages 150-153)</rdfs:label>
+          </bf:SupplementaryContent>
+        </bf:supplementaryContent>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:contribution rdf:nodeID="b55resourcesworksc020314082"/>
+        <bf:contribution>
+          <bflc:PrimaryContribution rdf:nodeID="bnodeuSqgqiKPFMuJD7g1gwWrNB">
+            <bf:role rdf:resource="http://id.loc.gov/vocabulary/relators/aut"/>
+            <bf:agent>
+              <madsrdf:PersonalName rdf:nodeID="bnode8sv7A8BpijKgJyhgpREnQx">
+                <madsrdf:hasSource>
+                  <madsrdf:Source rdf:nodeID="bnode94t5TEZck9kHjsAH7xm6gH">
+                    <madsrdf:citationSource>Sekrety Wrocławia, [2017]: t.p. (Tamara Barriga)</madsrdf:citationSource>
+                  </madsrdf:Source>
+                </madsrdf:hasSource>
+                <rdfs:label>Barriga, Tamara</rdfs:label>
+                <madsrdf:identifiesRWO>
+                  <madsrdf:RWO rdf:nodeID="bnode4UxzBtc8y3b7No8axVUKXu">
+                    <rdfs:label>Barriga, Tamara</rdfs:label>
+                    <madsrdf:associatedLanguage>
+                      <madsrdf:Language rdf:nodeID="bnodefbrqZbeCr3dXAZnJno5iYK">
+                        <madsrdf:associatedLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/pol"/>
+                      </madsrdf:Language>
+                    </madsrdf:associatedLanguage>
+                  </madsrdf:RWO>
+                </madsrdf:identifiesRWO>
+              </madsrdf:PersonalName>
+            </bf:agent>
+          </bflc:PrimaryContribution>
+        </bf:contribution>
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/pol"/>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnodeoiyw3K9CPETQHh43HDxNJV">
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/names/n80050802"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh2002012476"/>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:subject rdf:resource="http://id.loc.gov/resources/works/20314082#Topic650-21"/>
+        <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnodevgwedS5Cogsz25nrMGQbnf">
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh95001980"/>
+            <madsrdf:componentList rdf:resource="http://id.loc.gov/authorities/subjects/sh2002012475"/>
+          </madsrdf:Topic>
+        </bf:subject>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+        <rdfs:label>Sekrety Wrocławia /</rdfs:label>
+        <bf:adminMetadata>
+          <bf:AdminMetadata rdf:nodeID="b10resourcesworksc020314082">
+            <bflc:profile>profile:bf2:IBC:Instance</bflc:profile>
+            <bf:creationDate>2017-12-04</bf:creationDate>
+            <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+            <bf:changeDate>2018-04-27T16:37:07</bf:changeDate>
+            <bflc:procInfo>ibc update</bflc:procInfo>
+            <bf:generationProcess>
+              <bf:GenerationProcess rdf:nodeID="b12resourcesworksc020314082">
+                <rdfs:label>DLC marc2bibframe2 v1.3.0-SNAPSHOT</rdfs:label>
+              </bf:GenerationProcess>
+            </bf:generationProcess>
+            <bflc:encodingLevel>
+              <bflc:EncodingLevel rdf:nodeID="b20resourcesworksc020314082">
+                <bf:code>5</bf:code>
+              </bflc:EncodingLevel>
+            </bflc:encodingLevel>
+            <bf:descriptionConventions>
+              <bf:DescriptionConventions rdf:nodeID="b24resourcesworksc020314082">
+                <bf:code>isbd</bf:code>
+              </bf:DescriptionConventions>
+            </bf:descriptionConventions>
+            <bf:identifiedBy>
+              <bf:Local rdf:nodeID="b28resourcesworksc020314082">
+                <rdf:value>20314082</rdf:value>
+              </bf:Local>
+            </bf:identifiedBy>
+            <bf:source>
+              <bf:Agent rdf:nodeID="b36resourcesworksc020314082">
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Source"/>
+                <rdfs:label>DLC</rdfs:label>
+              </bf:Agent>
+            </bf:source>
+            <bf:status>
+              <bf:Status rdf:nodeID="b16resourcesworksc020314082">
+                <bf:code>c</bf:code>
+              </bf:Status>
+            </bf:status>
+            <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+            <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+            <bf:source>
+              <bf:Source rdf:nodeID="b41resourcesworksc020314082">
+                <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+                <rdfs:label>DLC</rdfs:label>
+              </bf:Source>
+            </bf:source>
+          </bf:AdminMetadata>
+        </bf:adminMetadata>
+      </bf:Work>
+    </bf:instanceOf>
+  </bf:Instance>
+  <madsrdf:Temporal rdf:nodeID="bnodepLgLorr91gHZQXsQnoUWst">
+    <rdfs:label xml:lang="en">19th century</rdfs:label>
+  </madsrdf:Temporal>
+  <madsrdf:Topic rdf:nodeID="b97resourcesworksc020314082">
+    <madsrdf:authoritativeLabel>Wrocław XIX-XX w</madsrdf:authoritativeLabel>
+    <rdf:rest rdf:nodeID="b099"/>
+  </madsrdf:Topic>
+  <madsrdf:PersonalName rdf:about="http://id.loc.gov/resources/works/20314082#Agent100-13">
+    <bflc:primaryContributorName00MatchKey>Barriga, Tamara.</bflc:primaryContributorName00MatchKey>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+    <bflc:name00MatchKey>Barriga, Tamara.</bflc:name00MatchKey>
+    <bflc:name00MarcKey>1001 $aBarriga, Tamara.</bflc:name00MarcKey>
+    <rdfs:label>Barriga, Tamara.</rdfs:label>
+  </madsrdf:PersonalName>
+  <madsrdf:GenreForm rdf:nodeID="bnodev7MFqx2SQGQwPJT3Lq52hZ">
+    <rdfs:label xml:lang="en">Miscellanea</rdfs:label>
+  </madsrdf:GenreForm>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+  <madsrdf:Temporal rdf:nodeID="bnodebPfTrNLJAwfkotqnDeEoku">
+    <rdfs:label xml:lang="en">20th century</rdfs:label>
+  </madsrdf:Temporal>
+  <madsrdf:Geographic rdf:nodeID="bnodefsvGiNuFiPbhiD1FK2bpEp">
+    <rdfs:label xml:lang="en">Wrocław (Poland)--History</rdfs:label>
+  </madsrdf:Geographic>
+  <bf:Place rdf:nodeID="b52resourcesinstancesc0203140820001">
+    <rdfs:label>Łódź</rdfs:label>
+  </bf:Place>
+  <madsrdf:Geographic rdf:nodeID="bnode6keDrz8pXDULWiKvZUCuxh">
+    <madsrdf:Geographic>
+      <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/subjects/sh95001980"/>
+    </madsrdf:Geographic>
+    <rdfs:label xml:lang="en">Wrocław (Poland)--History</rdfs:label>
+  </madsrdf:Geographic>
+  <bf:Agent rdf:nodeID="bnode5vJ2DWjeFt8tnujVQeXALd">
+    <rdfs:label>Księży Młyn Dom Wydawniczy</rdfs:label>
+  </bf:Agent>
+  <bf:Topic rdf:about="http://id.loc.gov/resources/works/20314082#Topic650-21">
+    <madsrdf:authoritativeLabel>Wrocław XIX-XX w.--History of the 20th - 21st centuries.</madsrdf:authoritativeLabel>
+    <rdfs:label>Wrocław XIX-XX w.--History of the 20th - 21st centuries.</rdfs:label>
+    <madsrdf:componentList rdf:nodeID="b96resourcesworksc020314082"/>
+    <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+  </bf:Topic>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <madsrdf:Language rdf:about="http://id.loc.gov/vocabulary/languages/pol">
+    <rdfs:label xml:lang="en">Polish</rdfs:label>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Language"/>
+  </madsrdf:Language>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <bf:source>
+      <bf:Source rdf:nodeID="b85resourcesworksc020314082">
+        <rdfs:label>rdacontent</rdfs:label>
+      </bf:Source>
+    </bf:source>
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+    <rdfs:label xml:lang="en">Illustrations</rdfs:label>
+  </bf:Illustration>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e107382277841600191874793197154900586226">
+    <rdf:value>e107382277841600191874793197154900586226</rdf:value>
+  </bf:Local>
+  <madsrdf:Temporal rdf:about="http://id.loc.gov/authorities/subjects/sh2002012476"/>
+  <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/aut">
+    <rdfs:label xml:lang="en">Author</rdfs:label>
+  </bf:Role>
+  <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/pl"/>
+  <madsrdf:Geographic rdf:about="http://id.loc.gov/authorities/names/n80050802"/>
+  <madsrdf:GenreForm rdf:about="http://id.loc.gov/authorities/subjects/sh87002399"/>
+  <madsrdf:Temporal rdf:about="http://id.loc.gov/authorities/subjects/sh2002012475"/>
+</rdf:RDF>

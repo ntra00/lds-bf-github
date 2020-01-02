@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <madsrdf:Topic rdf:nodeID="bnode4sQhrMa4cyXhQxfjDCtKkq">
+    <rdfs:label xml:lang="en">Rabbis--Israel--Biography</rdfs:label>
+  </madsrdf:Topic>
+  <madsrdf:Topic rdf:nodeID="bnode9t47PJT4EPnji1Z9BjA6p1">
+    <rdfs:label xml:lang="en">Rabbis--Morocco--Biography</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/e281857627624609045922380902443907381287">
+    <bf:extent>
+      <bf:Extent rdf:nodeID="bnode6s1YSx65HhP2uVU9HRgbLg">
+        <rdfs:label>416 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:title>
+      <bflc:TranscribedTitle rdf:nodeID="bnodeu1ZW5kqAvVXqCYeau3gTYJ">
+        <bf:mainTitle>Sefer Arim nisi </bf:mainTitle>
+      </bflc:TranscribedTitle>
+    </bf:title>
+    <bf:hasItem>
+      <bf:Item rdf:nodeID="bnode9wHfUR2A4DterJ6jFXY3Qt">
+        <bf:identifiedBy>
+          <bf:Barcode rdf:nodeID="bnode2d8p3RJKdMGvn3HCKMtpra">
+            <rdf:value>00483978984</rdf:value>
+          </bf:Barcode>
+        </bf:identifiedBy>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnode3FvX4P1fZjGocKWQDC3RBX">
+            <rdfs:label>c. 1</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:identifiedBy>
+          <bf:ShelfMarkLcc rdf:nodeID="bnodexxGhJ1uSXbrtpJFfzhzdiU">
+            <rdf:value>BM755.A693  S44 2016</rdf:value>
+          </bf:ShelfMarkLcc>
+        </bf:identifiedBy>
+        <bf:heldBy rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+      </bf:Item>
+    </bf:hasItem>
+    <bf:dimensions>25 cm</bf:dimensions>
+    <bf:note>
+      <bf:Note rdf:nodeID="bnoderazxSQtWj9f5g6ZxRHqY2f">
+        <rdfs:label>עמודים [167]-סוף כוללים: ספר דברי חיים ... מאת חיים אמסלם, עם שער מיוחד</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:editionStatement>מאשר אספתי אחת הנה ואחת הנה וממה שקלטה אזני ... חיים אמסלם</bf:editionStatement>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="bnodeaSE1yujp11FmMMX1HVXRDG">
+        <rdf:value>2016518430</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="bnodebpiMm3vGtFSxQkpaexmBti">
+        <bf:changeDate>2018-02-06T13:45:40</bf:changeDate>
+        <bflc:metadataAssigner>rkoh</bflc:metadataAssigner>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:creationDate>2018-11-5</bf:creationDate>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e19963834871807605362978713344709301954"/>
+        <bflc:encodingLevel rdf:resource="http://id.loc.gov/vocabulary/menclvl/f"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodexxUaWwZY2i7zk6shHRykYL">
+        <bf:subtitle>מקצת תולדות חייו ושיירי תורתו של האדם הגדול בענקים ארי במסתרים המקובל ... רבי נסים אמסלם, זצוק״ל וזיע״א</bf:subtitle>
+        <bf:mainTitle>ספר ארים ניסי</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="bnodeiHZfj6M6if7RJMsrjV1UYw">
+        <bf:agent>
+          <bf:Agent rdf:nodeID="bnodewUxM7LR5iKMJTxcqfG7EcC">
+            <rdfs:label>‏עמותת "מקבץ נדחי ישראל"</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>י"ד אדר ב' התשע"ו</bf:date>
+        <bf:place>
+          <bf:Place rdf:nodeID="bnode2swq5Q6wxXQUAERJhgGCe6">
+            <rdfs:label>ירושלים</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bflc:projectedProvisionDate>rkoh</bflc:projectedProvisionDate>
+    <bf:title>
+      <bf:VariantTitle rdf:nodeID="bnodekDBpaQctxqdKyBpM2c9AAA">
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodei7FdkfAAH5c8p2wYUGKudM">
+            <rdfs:label>Spine title</rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <rdfs:label>ארים ניסי ;‏  ‏דברי חיים</rdfs:label>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:instanceOf>
+      <bf:Work rdf:nodeID="bnode3UUzpH18mweWHwqhYLQjDY">
+        <bf:language rdf:resource="http://id.loc.gov/vocabulary/languages/heb"/>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh87007394"/>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnodew3ZGvcJ3rNKkbLAeFsAmnB">
+            <madsrdf:authoritativeLabel>Amsellem, Nissim, 1918-2016</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:colorContent>
+          <bf:Note rdf:nodeID="bnode5eYk6fXd1SnKAfX1FPzvsU">
+            <rdfs:label>(chiefly color)</rdfs:label>
+          </bf:Note>
+        </bf:colorContent>
+        <bf:relatedTo>
+          <bf:Work rdf:nodeID="bnodeqSyJdWpyu7Mi23Xucywv28">
+            <bf:relatedTo>Amsellem, Nissim, 1918-2016. Divre Ḥayim</bf:relatedTo>
+          </bf:Work>
+        </bf:relatedTo>
+        <bf:content rdf:resource="http://id.loc.gov/vocabulary/contentTypes/txt"/>
+        <bf:subject>
+          <madsrdf:Topic rdf:nodeID="bnode6P1JqYe177VNYuZKBmpita">
+            <madsrdf:authoritativeLabel>Bible.  Old Testament--Commentaries</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </bf:subject>
+        <bf:classification>
+          <bf:ClassificationLcc rdf:nodeID="bnodeiPYU1qbUF2Bw6dSwmo7s4U">
+            <bf:classificationPortion>BM755.A693</bf:classificationPortion>
+          </bf:ClassificationLcc>
+        </bf:classification>
+        <bf:originPlace>
+          <bf:Place rdf:nodeID="bnodeiCipPPat9fSExbHiu1M4zZ">
+            <rdfs:label xml:lang="en">Morocco</rdfs:label>
+            <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n79069715"/>
+          </bf:Place>
+        </bf:originPlace>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2008110332"/>
+        <bf:subject rdf:resource="http://id.loc.gov/authorities/subjects/sh2010109248"/>
+        <bf:title>
+          <bf:Title rdf:nodeID="bnodegT4vdQprQrWsvL21NSxPQK">
+            <bf:mainTitle>Sefer Arim nisi</bf:mainTitle>
+          </bf:Title>
+        </bf:title>
+        <bf:originPlace>
+          <bf:Place rdf:nodeID="bnodebac39ZQ33pfFr9h4CtguX">
+            <rdfs:label xml:lang="en">Israel</rdfs:label>
+            <bflc:target rdf:resource="http://id.loc.gov/authorities/names/n79003285"/>
+          </bf:Place>
+        </bf:originPlace>
+        <bf:illustrativeContent rdf:resource="http://id.loc.gov/vocabulary/millus/ill"/>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:title>
+      <bf:VariantTitle rdf:nodeID="bnodespYFrGS8GPah8EXQXYSCd9">
+        <rdfs:label>‏ארים ניסי :‏  ‏תולדות חייו, פיוטיו, כתביו וחידושיו של הגאון הצדיק והחסיד רבי ניסים אמסלם זצוק"ל</rdfs:label>
+        <bf:note>
+          <bf:Note rdf:nodeID="bnodecv2BhzzhdK3jHVzs6GAH2z">
+            <rdfs:label>Cover title</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:VariantTitle>
+    </bf:title>
+  </bf:Instance>
+  <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+    <rdfs:label>unmediated</rdfs:label>
+  </bf:Media>
+  <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+    <rdfs:label>single unit</rdfs:label>
+  </bf:Issuance>
+  <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+    <rdfs:label>volume</rdfs:label>
+  </bf:Carrier>
+  <madsrdf:Topic rdf:nodeID="bnodehaixLZ7wBGykPuCFbMDxJX">
+    <rdfs:label xml:lang="en">Jewish sermons, Hebrew</rdfs:label>
+  </madsrdf:Topic>
+  <bf:Lccn rdf:nodeID="bnodekupGKzR9x5CuWagCzUHeHP">
+    <rdf:value>2016518430</rdf:value>
+  </bf:Lccn>
+  <bf:Title rdf:nodeID="bnode5PaSNjS3yqeSJCSWrNB55h">
+    <bf:mainTitle>Sefer Arim nisi</bf:mainTitle>
+  </bf:Title>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+  <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+    <rdfs:label>text</rdfs:label>
+  </bf:Content>
+  <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/f">
+    <rdfs:label xml:lang="en">full</rdfs:label>
+  </bflc:EncodingLevel>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh87007394"/>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/heb">
+    <rdfs:label xml:lang="en">Hebrew</rdfs:label>
+  </bf:Language>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+    <rdfs:label xml:lang="en">Illustrations</rdfs:label>
+  </bf:Illustration>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e19963834871807605362978713344709301954">
+    <rdf:value>e19963834871807605362978713344709301954</rdf:value>
+  </bf:Local>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2008110332"/>
+  <madsrdf:Topic rdf:about="http://id.loc.gov/authorities/subjects/sh2010109248"/>
+</rdf:RDF>

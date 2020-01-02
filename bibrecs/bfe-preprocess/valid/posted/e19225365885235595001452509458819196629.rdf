@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><rdf:RDF xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <bf:Instance rdf:about="http://id.loc.gov/resources/instances/e8234299443602596324644549431057314971">
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="bnodeqshVzoqAZMeXTZBx1fvUhK">
+        <bf:qualifier>(hardcover : alk. paper)</bf:qualifier>
+        <rdf:value>9781501330353 </rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="bnode8FDE9XLMsDC6dMUDAFHo4r">
+        <bf:qualifier>(ePDF)</bf:qualifier>
+        <rdf:value>9781501330377 </rdf:value>
+        <bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:adminMetadata>
+      <bf:AdminMetadata rdf:nodeID="bnode8afce7QQWMzGwKwbpexKd4">
+        <bf:creationDate>2018-3-29</bf:creationDate>
+        <bflc:metadataAssigner>trod</bflc:metadataAssigner>
+        <bf:identifiedBy rdf:resource="http://mlvlp04.loc.gov:3000/resources/e19225365885235595001452509458819196629"/>
+        <bf:descriptionModifier rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionLanguage rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+        <bf:assigner rdf:resource="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        <bflc:profile>profile:bf2:Monograph:Instance</bflc:profile>
+        <bf:descriptionAuthentication rdf:resource="http://id.loc.gov/vocabulary/marcauthen/pcc"/>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <bf:responsibilityStatement>edited by An Nguyen</bf:responsibilityStatement>
+    <bf:instanceOf>
+      <bf:Work rdf:about="http://id.loc.gov/resources/works/c019900178">
+        <rdfs:label xml:lang="en">News, numbers and public opinion in a data-driven world (c019900178)</rdfs:label>
+      </bf:Work>
+    </bf:instanceOf>
+    <bf:title>
+      <bf:Title rdf:nodeID="bnodes3Y1qi9gRntw11nKZ8K9aT">
+        <bf:mainTitle>News, numbers and public opinion in a data-driven world</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:provisionActivity>
+      <bf:Publication rdf:nodeID="bnodeoBg9d7w5drbDuJGrkJKjQ3">
+        <bf:agent>
+          <bf:Agent rdf:nodeID="bnodeq924QvE2RoHyE283AkmjAa">
+            <rdfs:label>Bloomsbury Academic</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2018</bf:date>
+        <bf:place>
+          <bf:Place rdf:nodeID="bnodewuKcWiPPG6DsgBz7U4sfjT">
+            <rdfs:label>New York</rdfs:label>
+          </bf:Place>
+        </bf:place>
+      </bf:Publication>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Lccn rdf:nodeID="bnode7KC58f3e3Qq6KuVrvSfQ7w">
+        <rdf:value>2017026067</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn rdf:nodeID="bnodei4p4nNkWW4hexKo7FFYSx6">
+        <bf:status rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+        <bf:qualifier>(ePub)</bf:qualifier>
+        <rdf:value>9781501330360</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bflc:projectedProvisionDate>1712</bflc:projectedProvisionDate>
+  </bf:Instance>
+  <bf:Work rdf:nodeID="bnodeKJysLpAjVMqjuT6AbJ9p7">
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+        <rdfs:label>text</rdfs:label>
+      </bf:Content>
+    </bf:content>
+  </bf:Work>
+  <bf:Local rdf:about="http://mlvlp04.loc.gov:3000/resources/e19225365885235595001452509458819196629">
+    <rdf:value>e19225365885235595001452509458819196629</rdf:value>
+  </bf:Local>
+  <bf:Status rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv">
+    <rdfs:label xml:lang="en">canceled or invalid</rdfs:label>
+  </bf:Status>
+  <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+    <rdfs:label>rda</rdfs:label>
+  </bf:DescriptionConventions>
+  <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+    <rdfs:label>eng</rdfs:label>
+  </bf:Language>
+  <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+    <rdfs:label>DLC</rdfs:label>
+  </bf:Agent>
+  <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+    <rdfs:label>pcc</rdfs:label>
+  </bf:DescriptionAuthentication>
+</rdf:RDF>
