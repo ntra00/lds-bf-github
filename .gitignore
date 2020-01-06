@@ -35,3 +35,17 @@ prep/bibrecs/manifest/**
 prep/bibrecs/source/**
 prep/bibrecs/bfe-preprocess/**
 prep/bibrecs/*test*
+
+# marc2bibframe2
+prep/bibrecs/xsl
+
+prep/bibrecs/batchupdates/**
+prep/bibrecs/load/**
+prep/bibrecs/source/**
+prep/bibrecs/bfe-preprocess/**
+prep/bibrecs/*test*
+prep/auths/auth2bibframe2/xsl/**
+prep/auths/batchupdates/**
+prep/auths/load/**
+prep/auths/source/**
+prep/auths/out/**

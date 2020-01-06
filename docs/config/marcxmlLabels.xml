@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<labels>
+	<!-- key=lookup, plural=plural display, text() is display value  -->
+	<entry plural="LCCNs" key="010">LCCN</entry>
+	<entry plural="Authority Name" key="100">Authority Name</entry>
+	<entry plural="Source Found Notes" key="670">Source Found Note</entry>
+	<entry plural="Variant Names" key="400">Variant Name</entry>
+	<entry plural="Source Not Found Notes" key="675">Source Not Found Note</entry>
+	<entry plural="Alternate Titles" key="alternativetitleInfo">Alternate Title</entry>
+	<entry plural="Abbreviated Titles" key="abbreviatedtitleInfo">Abbreviated Title</entry>
+	<entry plural="Translated Titles" key="translatedtitleInfo">Translated Title</entry>
+	<entry plural="Enumerated Titles" key="enumeratedtitleInfo">Enumerated Title</entry>
+	<entry plural="Series Titles" key="seriestitleInfo">Series Title</entry>
+	<entry plural="Types of Material" key="typeOfResource">Type of Material</entry>
+	<entry plural="Languages" key="language">Language</entry>
+	<entry plural="Subjects" key="subject">Subject</entry>
+	<entry plural="Call Numbers" key="classification">Call Number</entry>
+	<entry plural="Identifiers" key="identifier">Identifier</entry>
+	<entry plural="LCCNs" key="identifier" type="lccn">LCCN</entry>
+	<entry plural="Physical Description" key="physicalDescription">Physical Description</entry>
+	<entry plural="Record Information" key="recordInfo">Record Information</entry>
+	<entry plural="Names" key="name">Name</entry>
+
+	<entry plural="Performing Ensembles" key="corporatePerformer">Performing Ensemble</entry>
+	<entry plural="Conference Names" key="conferencename">Conference Name</entry>
+	<entry plural="Corporate Names" key="corporatename">Corporate Name</entry>
+	<entry plural="Creators" key="corporateCreator">Creator</entry>
+	<entry plural="Enumerated Names" key="enumeratedname">Enumerated Name</entry>
+
+	<entry plural="Notes" key="note">Note</entry>
+	<entry plural="Assignment Notes" key="gottlieb assignment">Assignment</entry>
+	<entry plural="Permissions Notes" key="Copyright Notice">Permissions note</entry>
+	<entry plural="Copyright Information" key="copyright link">Copyright Information</entry>
+
+	<entry plural="Contents" key="contents">Contents</entry>
+	<entry plural="Digital Conversion" key="digital conversion">Digital Conversion</entry>
+	<entry plural="Contents" key="content">Contents</entry>
+	<entry plural="Permissions" key="Copyright Notice">Permissions</entry>
+	<entry plural="Performers" key="performer">Performer Note</entry>
+	<entry plural="Venues" key="venue">Venue</entry>
+	<entry plural="Genre" key="genre">Genre</entry>
+	<entry plural="Related Items" key="relatedItem">Related Item</entry>
+
+	<entry plural="Places of Publication" key="place">Place of Publication/Creation</entry>
+	<entry plural="Places of Publication" key="placeTerm">Place of Publication/Creation</entry>
+	<entry plural="Publishers" key="publisher">Publisher</entry>
+	<entry plural="Dates Issued" key="dateIssued">Date Issued</entry>
+	<entry plural="Dates Created" key="dateCreated">Date Created</entry>
+	<entry plural="Dates Recorded" key="dateCaptured">Date Recorded</entry>
+	<entry plural="Copyright Dates" key="copyrightDate">Copyright Date</entry>
+	<entry plural="Dates" key="dateOther">Date</entry>
+	<entry plural="Dates Modified" key="dateModified">Date Modified</entry>
+	<entry plural="Dates Valid" key="dateValid">Date Valid</entry>
+	<entry plural="Issuances" key="issuance">Issuance</entry>
+	<entry plural="Editions" key="edition">Edition</entry>
+	<entry plural="Frequencies" key="frequency">Frequency</entry>
+	<entry plural="Place Codes" key="placeCode">Place Code</entry>
+	<entry plural="Physical Descriptions" key="extent">Physical Description</entry>
+	<entry plural="Topics" key="topic">Topic</entry>
+	<entry plural="Geographics" key="geographic">Geographic</entry>
+	<entry plural="Record Content Sources" key="recordContentSource">Record Content Source</entry>
+	<entry plural="Record Creation Dates" key="recordCreationDate">Record Creation Date</entry>
+	<entry plural="Record Change Dates" key="recordChangeDate">Record Change Date</entry>
+	<entry plural="Record Identifiers" key="recordIdentifier">Record Identifier</entry>
+	<entry plural="Non Sorts" key="nonSort">Non Sort</entry>
+	<entry plural="Name Parts" key="namePart">Name Part</entry>
+	<entry plural="Forms" key="form">Form</entry>
+	<entry plural="Uncontrolled" key="unControlled">Uncontrolled</entry>
+	<entry plural="Controlled" key="controlled">Controlled</entry>
+	<entry plural="Part Numbers" key="partNumber">Part Number</entry>
+	<entry plural="Cartographics" key="cartographics">Cartographics</entry>
+	<entry plural="Scale" key="scale">Scale</entry>
+	<entry plural="Coordinates" key="coordinates">Coordinates</entry>
+	<entry plural="Roles" key="role">Role</entry>
+	<entry plural="Abstract" key="abstract">Abstract</entry>
+	<entry plural="Temporal" key="temporal">Temporal</entry>
+	<entry plural="Access Conditions" key="accessCondition">Access Condition</entry>
+	<entry plural="Tables of Contents" key="tableOfContents">Table of Contents</entry>
+	<entry plural="Corporate" key="corporate">Corporate</entry>
+	<entry plural="Alternative" key="alternative">Alternate</entry>
+	<entry plural="Uniform" key="uniform">Uniform</entry>
+	<entry plural="MARC" key="marc">MARC</entry>
+	<entry plural="LCSH" key="lcsh">LCSH</entry>
+	<entry plural="Start" key="start">Start</entry>
+	<entry plural="End" key="end">End</entry>
+	<entry plural="LCC" key="lcc">LCC</entry>
+	<entry plural="ISBN" key="isbn">ISBN</entry>
+	<entry plural="MESH" key="mesh">MESH</entry>
+	<entry plural="Constituent" key="constituent">Constituent</entry>
+	<entry plural="Related" key="related">Related</entry>
+	<entry plural="Local" key="local">Local</entry>
+	<entry plural="DDC" key="ddc">DDC</entry>
+	<entry plural="Dates" key="date">Date</entry>
+	<entry plural="Dates Published" key="dateOther">Date Published</entry>
+	<entry plural="Library codes" key="location">Library code</entry>
+	<entry plural="Repositories" key="physicalLocation">Repository</entry>
+	<entry plural="LCCNs" key="lccn">LCCN</entry>
+	<entry plural="URIs" key="uri">URI</entry>
+	<entry plural="Hosts" key="host">Host</entry>
+	<entry plural="Personal" key="personal">Personal</entry>
+	<entry plural="ISO639-2B" key="iso639-2b">ISO639-2B</entry>
+	<entry plural="Creator notes" key="statement of responsibility">Creator note</entry>
+	<entry plural="Performers" key="performers">Performer</entry>
+
+	<entry plural="Published/Created" key="originInfo">Published/Created</entry>
+	<entry plural="Internet Media Types" key="internetMediaType">Internet Media Type</entry>
+	
+	<entry plural="Subtitle" key="subTitle">Subtitle</entry>
+	<entry plural="Codes" key="code">Code</entry>
+	<entry plural="Text" key="text">Text</entry>
+	<entry plural="Target Audiences" key="targetAudience">Target Audience</entry>
+	<entry plural="Identifiers" key="hdl">Identifier</entry>
+	<entry plural="Digital Origin" key="DigitalOrigin ">Digital Origin</entry>
+	<entry plural="Reformatting Quality" key="reformattingQuality ">Reformatting Quality</entry>
+	<!-- local name roles not in relators -->
+	<entry plural="Recordists" key="Recording engineer">Recordist</entry>
+	<entry plural="Issue Numbers" key="issue number">Issue Number</entry>
+	<entry plural="UPC Numbers" key="upc">UPC Number</entry>
+	<entry plural="Barcodes" key="barcode">Barcode</entry>
+</labels>

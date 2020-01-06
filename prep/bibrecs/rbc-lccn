@@ -1,0 +1,27 @@
+#!/bin/bash
+#  Use rbc a bunch of times then one rbl to load them
+
+#curl metaproxy or run yaz for a singleton
+
+
+lccn=$1
+echo $lccn
+tm=$(date '+%H-%M-%S')
+
+# curl "http://mlvlp04.loc.gov:8230/resources/bibs/$BIBID.xml"  | sed -e "s|\[from old catalog\]||g"   > source/singleton.$BIBID.xml
+echo curling permaling for lccn: $lccn/marcxml
+# sru:
+curl -L "https://lccn.loc.gov/$lccn/marcxml"    | sed -e "s|\[from old catalog\]||g"   > source/singleton.$lccn.xml
+
+
+chmod 775 source/*
+chgrp marklogic source/*
+
+CURDIR=`echo $PWD`
+
+M2BFDIR=/marklogic/id/marc2bibframe2
+   yaz-record-conv  $M2BFDIR/record-conv.xml  $CURDIR/source/singleton.$lccn.xml >$CURDIR/singleload/singleton.$lccn.rdf
+chmod 775 $CURDIR/singleload/*
+chgrp marklogic $CURDIR/singleload/*
+
+rm $CURDIR/source/singleton.$lccn*

@@ -1,0 +1,138 @@
+/********************
+ds-header.css
+********************/
+/********************
+topnav
+********************/
+#topnav, #topnav * {
+margin:0;
+padding: 0;
+}
+#topnav {
+clear: both;
+background: #900 url(/static/lds/images/line.gif) 0 0 no-repeat;
+padding-top: 2px;
+height: 40px;
+}
+#topnav #top_container {
+background-color: #fff;
+width: 100%;
+height: 40px;
+}
+div#left_header {
+	float: left;
+}
+div#right_header {
+	float: right;
+	width: 255px;
+}
+#topnav img {
+border:0;
+}
+#topnav ul#menu {
+height: 40px;
+width: 535px;
+margin: 0;
+padding: 0;
+position: relative;
+}
+#topnav ul#menu li {
+margin: 0;
+display: block;
+padding: 0;
+list-style: none;
+position: absolute;
+}
+#logo_lc {
+background: transparent url(/static/lds/images/loc_logo.gif) no-repeat;
+left: 0;
+top: 2px;
+width: 193px;
+height: 40px;
+}
+#global_nav {
+left: 194px;
+top: 0px;
+width: 332px;
+height: 40px;
+font: normal 10px/10px Verdana, Arial, Helvetica, sans-serif;
+padding: 0;
+}
+ul#menu li#logo_lc a {
+display: block;
+width: 193px;
+height: 40px;
+text-decoration: none;
+}
+ul#menu li#logo_lc a:visited, ul#menu li#logo a:visited {
+text-decoration: none;
+}
+ul#menu li#global_nav a:link, ul#menu li#global_nav a:hover, ul#menu li#global_nav a:visited {
+text-decoration: underline;
+}
+form.metasearch {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	height: 40px;
+	font: normal 0px/0px Verdana, Arial, Helvetica, sans-serif;
+	width: 254px;
+}
+form.metasearch span.options {
+	margin: 0;
+	padding: 0;
+}
+form.metasearch span.options a:link, form.metasearch span.options a:hover, form.metasearch span.options a:visited {
+	margin: 0;
+	padding: 0;
+	color: #666;
+	font: normal 10px verdana, Helvetica, sans-serif;
+	text-decoration: none;
+}
+form.metasearch span.search_wrap input {
+	margin: 0px;
+	padding: 0px;
+	height: 22px;
+	width: 200px;
+	background-color: #fff;
+	border: 2px solid #e2e2e2;
+	font: normal 11px Verdana, Helvetica, sans-serif;
+}
+form.metasearch span.search_wrap input.button {
+	background-color: #0069aa;
+	width: 35px;
+	height: 26px;
+	vertical-align: bottom;
+	color: #fff;
+	margin: 0px;
+	padding: 0 5px 0px 5px;
+	border: 3px solid #e2e2e2;
+	font: bold 12px Verdana, Helvetica, sans-serif;
+}
+
+/* HEADER - breadcrumbs */
+#crumb_nav {
+  clear: both;
+  padding: 8px;
+  color: #fff;
+  background-color: #000;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #333;
+  text-align: left;
+  font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+}
+#crumb_nav span, #crumb_nav span.crumb-gt {
+	font-weight: normal;
+}
+#crumb_nav span.ds-searchresultcrumb {
+  color: #ccc;
+  font-weight: bold;
+}
+#crumb_nav a:link, #crumb_nav a:visited {
+  color: #ccc;
+  text-decoration: underline;
+}
+#crumb_nav a:focus, #crumb_nav a:hover, #crumb_nav a:active {
+  color: #fff;
+  text-decoration: underline;
+}

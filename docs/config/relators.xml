@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marcRelators>
+<!-- nate added plurals 6/25/08 -->	
+	<relator plural="Actors" code="act">Actor</relator>
+	<relator plural="Adapters" code="adp">Adapter</relator>
+	<relator plural="Annotators" code="ann">Annotator</relator>
+	<relator plural="Applicants" code="app">Applicant</relator>
+	<relator plural="Architects" code="arc">Architect</relator>
+	<relator plural="Arrangers" code="arr">Arranger</relator>
+	<relator plural="Artists" code="art">Artist</relator>
+	<relator plural="Assignees" code="asg">Assignee</relator>
+	<relator plural="Associated names" code="asn">Associated name</relator>
+	<relator plural="Attributed names" code="att">Attributed name</relator>
+	<relator plural="Auctioneers" code="auc">Auctioneer</relator>
+	<relator plural="Authors" code="aut">Author</relator>
+	<relator plural="Authors in quotations or text abstracts" code="aqt">Author in quotations or text abstracts</relator>
+	<relator plural="Authors of afterword, colophon, etc." code="aft">Author of afterword, colophon, etc.</relator>
+	<relator plural="Authors of dialogs" code="aud">Author of dialog</relator>
+	<relator plural="Authors of introductions" code="aui">Author of introduction</relator>
+	<relator plural="Authors of screenplays" code="aus">Author of screenplay</relator>
+	<relator plural="Bibliographic antecedents" code="ant">Bibliographic antecedent</relator>
+	<relator plural="Binders" code="bnd">Binder</relator>
+	<relator plural="Binding designers" code="bdd">Binding designer</relator>
+	<relator plural="Book designers" code="bkd">Book designer</relator>
+	<relator plural="Book producers" code="bkp">Book producer</relator>
+	<relator plural="Bookjacket designers" code="bjd">Bookjacket designer</relator>
+	<relator plural="Bookplate designers" code="bpd">Bookplate designer</relator>
+	<relator plural="Booksellers" code="bsl">Bookseller</relator>
+	<relator plural="Calligraphers" code="cll">Calligrapher</relator>
+	<relator plural="Cartographers" code="ctg">Cartographer</relator>
+	<relator plural="Censors" code="cns">Censor</relator>
+	<relator plural="Choreographers" code="chr">Choreographer</relator>
+	<relator plural="Clients" code="cli">Client</relator>
+	<relator plural="Collaborators" code="clb">Collaborator</relator>
+	<relator plural="Collectors" code="col">Collector</relator>
+	<relator plural="Collotypers" code="clt">Collotyper</relator>
+	<relator plural="Commentators" code="cmm">Commentator</relator>
+	<relator plural="Commentators for written text" code="cwt">Commentator for written text</relator>
+	<relator plural="Compilers" code="com">Compiler</relator>
+	<relator plural="Complainants" code="cpl">Complainant</relator>
+	<relator plural="Complainant-appellants" code="cpt">Complainant-appellant</relator>
+	<relator plural="Complainant-appellees" code="cpe">Complainant-appellee</relator>
+	<relator plural="Composers" code="cmp">Composer</relator>
+	<relator plural="Compositors" code="cmt">Compositor</relator>
+	<relator plural="Conceptors" code="ccp">Conceptor</relator>
+	<relator plural="Conductors" code="cnd">Conductor</relator>
+	<relator plural="Consultants" code="csl">Consultant</relator>
+	<relator plural="Consultants to a project" code="csp">Consultant to a project</relator>
+	<relator plural="Contestants" code="cos">Contestant</relator>
+	<relator plural="Contestant-appellants" code="cot">Contestant-appellant</relator>
+	<relator plural="Contestant-appellees" code="coe">Contestant-appellee</relator>
+	<relator plural="Contestees" code="cts">Contestee</relator>
+	<relator plural="Contestee-appellants" code="ctt">Contestee-appellant</relator>
+	<relator plural="Contestee-appellees" code="cte">Contestee-appellee</relator>
+	<relator plural="Contractors" code="ctr">Contractor</relator>
+	<relator plural="Contributors" code="ctb">Contributor</relator>
+	<relator plural="Copyright claimants" code="cpc">Copyright claimant</relator>
+	<relator plural="Copyright holders" code="cph">Copyright holder</relator>
+	<relator plural="Correctors" code="crr">Corrector</relator>
+	<relator plural="Correspondents" code="crp">Correspondent</relator>
+	<relator plural="Costume designers" code="cst">Costume designer</relator>
+	<relator plural="Creators" code="cre">Creator</relator>
+	<relator plural="Curators" code="cur">Curator</relator>
+	<relator plural="Dancers" code="dnc">Dancer</relator>
+	<relator plural="Dedicatees" code="dte">Dedicatee</relator>
+	<relator plural="Dedicators" code="dto">Dedicator</relator>
+	<relator plural="Defendants" code="dfd">Defendant</relator>
+	<relator plural="Defendant-appellants" code="dft">Defendant-appellant</relator>
+	<relator plural="Defendant-appellees" code="dfe">Defendant-appellee</relator>
+	<relator plural="Degree grantors" code="dgg">Degree grantor</relator>
+	<relator plural="Delineators" code="dln">Delineator</relator>
+	<relator plural="Depositors" code="dpt">Depositor</relator>
+	<relator plural="Designers" code="dsr">Designer</relator>
+	<relator plural="Directors" code="drt">Director</relator>
+	<relator plural="Dissertants" code="dis">Dissertant</relator>
+	<relator plural="Distributors" code="dst">Distributor</relator>
+	<relator plural="Donors" code="dnr">Donor</relator>
+	<relator plural="Draftsmans" code="drm">Draftsman</relator>
+	<relator plural="Dubious authors" code="dub">Dubious author</relator>
+	<relator plural="Editors" code="edt">Editor</relator>
+	<relator plural="Electrotypers" code="elt">Electrotyper</relator>
+	<relator plural="Engineers" code="eng">Engineer</relator>
+	<relator plural="Engravers" code="egr">Engraver</relator>
+	<relator plural="Etchers" code="etr">Etcher</relator>
+	<relator plural="Experts" code="exp">Expert</relator>
+	<relator plural="Facsimilists" code="fac">Facsimilist</relator>
+	<relator plural="Film editors" code="flm">Film editor</relator>
+	<relator plural="Forgers" code="frg">Forger</relator>
+	<relator plural="Former owners" code="fmo">Former owner</relator>
+	<relator plural="Funders" code="fnd">Funder</relator>
+	<relator plural="Graphic technicians" code="-grt">Graphic technician</relator>
+	<relator plural="Honorees" code="hnr">Honoree</relator>
+	<relator plural="Hosts" code="hst">Host</relator>
+	<relator plural="Illuminators" code="ilu">Illuminator</relator>
+	<relator plural="Illustrators" code="ill">Illustrator</relator>
+	<relator plural="Inscribers" code="ins">Inscriber</relator>
+	<relator plural="Instrumentalists" code="itr">Instrumentalist</relator>
+	<relator plural="Interviewees" code="ive">Interviewee</relator>
+	<relator plural="Interviewers" code="ivr">Interviewer</relator>
+	<relator plural="Inventors" code="inv">Inventor</relator>
+	<relator plural="Landscape architects" code="lsa">Landscape architect</relator>
+	<relator plural="Lenders" code="len">Lender</relator>
+	<relator plural="Libelants" code="lil">Libelant</relator>
+	<relator plural="Libelant-appellants" code="lit">Libelant-appellant</relator>
+	<relator plural="Libelant-appellees" code="lie">Libelant-appellee</relator>
+	<relator plural="Libelees" code="lel">Libelee</relator>
+	<relator plural="Libelee-appellants" code="let">Libelee-appellant</relator>
+	<relator plural="Libelee-appellees" code="lee">Libelee-appellee</relator>
+	<relator plural="Librettists" code="lbt">Librettist</relator>
+	<relator plural="Licensees" code="lse">Licensee</relator>
+	<relator plural="Licensors" code="lso">Licensor</relator>
+	<relator plural="Lithographers" code="ltg">Lithographer</relator>
+	<relator plural="Lyricists" code="lyr">Lyricist</relator>
+	<relator plural="Metadata contacts" code="mdc">Metadata contact</relator>
+	<relator plural="Metal-engravers" code="mte">Metal-engraver</relator>
+	<relator plural="Moderators" code="mod">Moderator</relator>
+	<relator plural="Monitors" code="mon">Monitor</relator>
+	<relator plural="Musicians" code="mus">Musician</relator>
+	<relator plural="Narrators" code="nrt">Narrator</relator>
+	<relator plural="Opponents" code="opn">Opponent</relator>
+	<relator plural="Organizers of meeting" code="orm">Organizer of meeting</relator>
+	<relator plural="Originators" code="org">Originator</relator>
+	<relator plural="Others" code="oth">Other</relator>
+	<relator plural="Owners" code="own">Owner</relator>
+	<relator plural="Papermakers" code="ppm">Papermaker</relator>
+	<relator plural="Patent applicants" code="pta">Patent applicant</relator>
+	<relator plural="Patent holders" code="pth">Patent holder</relator>
+	<relator plural="Patrons" code="pat">Patron</relator>
+	<relator plural="Performers" code="prf">Performer</relator>
+	<relator plural="Photographers" code="pht">Photographer</relator>
+	<relator plural="Plaintiffs" code="ptf">Plaintiff</relator>
+	<relator plural="Plaintiff-appellants" code="ptt">Plaintiff-appellant</relator>
+	<relator plural="Plaintiff-appellees" code="pte">Plaintiff-appellee</relator>
+	<relator plural="Platemakers" code="plt">Platemaker</relator>
+	<relator plural="Printers" code="prt">Printer</relator>
+	<relator plural="Printers of plates" code="pop">Printer of plates</relator>
+	<relator plural="Process contacts" code="prc">Process contact</relator>
+	<relator plural="Producers" code="pro">Producer</relator>
+	<relator plural="Production personnels" code="prd">Production personnel</relator>
+	<relator plural="Programmers" code="prg">Programmer</relator>
+	<relator plural="Proofreaders" code="pfr">Proofreader</relator>
+	<relator plural="Publishers" code="pbl">Publisher</relator>
+	<relator plural="Publishing directors" code="pbd">Publishing director</relator>
+	<relator plural="Recipients" code="rcp">Recipient</relator>
+	<relator plural="Recording engineers" code="rce">Recording engineer</relator>
+	<relator plural="Redactors" code="red">Redactor</relator>
+	<relator plural="Renderers" code="ren">Renderer</relator>
+	<relator plural="Research team heads" code="rth">Research team head</relator>
+	<relator plural="Research team members" code="rtm">Research team member</relator>
+	<relator plural="Researchers" code="res">Researcher</relator>
+	<relator plural="Respondents" code="rsp">Respondent</relator>
+	<relator plural="Respondent-appellants" code="rst">Respondent-appellant</relator>
+	<relator plural="Respondent-appellees" code="rse">Respondent-appellee</relator>
+	<relator plural="Reviewers" code="rev">Reviewer</relator>
+	<relator plural="Rubricators" code="rbr">Rubricator</relator>
+	<relator plural="Scenarists" code="sce">Scenarist</relator>
+	<relator plural="Scientific advisors" code="sad">Scientific advisor</relator>
+	<relator plural="Scribes" code="scr">Scribe</relator>
+	<relator plural="Sculptors" code="scl">Sculptor</relator>
+	<relator plural="Secretarys" code="sec">Secretary</relator>
+	<relator plural="Signers" code="sgn">Signer</relator>
+	<relator plural="Singers" code="sng">Singer</relator>
+	<relator plural="Speakers" code="spk">Speaker</relator>
+	<relator plural="Sponsors" code="spn">Sponsor</relator>
+	<relator plural="Standards bodies" code="stn">Standards body</relator>
+	<relator plural="Stereotypers" code="str">Stereotyper</relator>
+	<relator plural="Surveyors" code="srv">Surveyor</relator>
+	<relator plural="Thesis advisors" code="ths">Thesis advisor</relator>
+	<relator plural="Transcribers" code="trc">Transcriber</relator>
+	<relator plural="Translators" code="trl">Translator</relator>
+	<relator plural="Type designers" code="tyd">Type designer</relator>
+	<relator plural="Typographers" code="tyg">Typographer</relator>
+	<relator plural="Vocalists" code="voc">Vocalist</relator>
+	<relator plural="Witnesses" code="wit">Witness</relator>
+	<relator plural="Woodcutters" code="wdc">Woodcutter</relator>
+	<relator plural="Wood-engravers" code="wde">Wood-engraver</relator>
+	<relator plural="Writers of accompanying material" code="wam">Writer of accompanying material</relator>
+</marcRelators>
