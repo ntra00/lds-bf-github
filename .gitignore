@@ -44,9 +44,4 @@ prep/bibrecs/load/**
 prep/bibrecs/source/**
 prep/bibrecs/bfe-preprocess/**
 prep/bibrecs/*test*
-prep/auths/auth2bibframe2/xsl/**
-prep/auths/batchupdates/**
-prep/auths/load/**
-prep/auths/source/**
-prep/auths/out/**
-
+prep/logs/**

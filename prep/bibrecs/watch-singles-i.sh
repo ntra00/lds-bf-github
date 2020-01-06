@@ -2,7 +2,6 @@
 
 source ../config bibrecs
 
-
 CURDIR=`echo $PWD`
 
 ct=$(ls -ltra $SOURCE_PROCESSED/single/ | wc -l)
@@ -22,7 +21,7 @@ if [[  $ct != 0 ]]; then
 	 ls -l  $LOAD_UNPROCESSED/single/
 	 
 # reload instances with batch id collection
-   ./load_bib_yaz.sh 
+   ./loadrdf_single.sh 
    else
       echo "waiting for previous watch session : $watchct"
    fi
