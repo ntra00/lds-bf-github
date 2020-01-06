@@ -33,27 +33,10 @@ echo $filedate ...is filedate...
 
 cd $SOURCE_UNPROCESSED
 pwd
-# don't use marcxml from mets? just redo?
-#for f in $(ls $NAMESLOAD/AUTH.ML.*$filedate*a.xml) 
-#do
- #ln -s $f .
-#done
-#for f in $(ls $NAMESLOAD/AUTH.ML.*$filedate*d.xml) 
-#do
-# ln -s $f .
-#done
 
 
-
-adds='AUTH.ML.D'
-suffix="a.xml"
-echo $adds$filedate$suffix
-ls -l $adds$filedate$suffix
-pwd
-echo "$filedate|$YESTERDAY"
 ls /marklogic/opt/marcdump/auth/*$filedate*
-read  x
-
+read x
 
 for mrc in $(ls /marklogic/opt/marcdump/auth/*$filedate*) 
 do
@@ -62,7 +45,7 @@ do
 		
 		directory=$YESTERDAY
 		mkdir $directory
-		chmod -R 775  $directory > /dev/null
+		chmod  775  $directory > /dev/null
 		chgrp marklogic $directory > /dev/null
 		cd $directory
 		mkdir A
