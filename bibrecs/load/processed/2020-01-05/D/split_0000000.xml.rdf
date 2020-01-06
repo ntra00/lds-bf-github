@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:mets="http://www.loc.gov/METS/" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:mxe="http://www.loc.gov/mxe" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"><rdf:Description>
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/20833676#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-06T01:11:01-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
+            <rdfs:label>preliminary</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+            <rdfs:label>isbd</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20833676</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-05T09:35:45</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-01</bf:creationDate>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>IXA</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>IXA</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+            <bf:code>eng</bf:code>
+          </bf:Language>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>YUS</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>STF</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>CLU</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>OCLCF</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>ZCU</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>AZS</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+            <rdfs:label>rda</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lccopycat">
+            <rdf:value>lccopycat</rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lcode">
+            <rdf:value>lcode</rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/ara"/>
+    </bf:language>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026048">
+        <rdfs:label>bibliographies</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2018462196</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:geographicCoverage>
+      <bf:GeographicCoverage rdf:about="http://id.loc.gov/vocabulary/geographicAreas/a-is"/>
+    </bf:geographicCoverage>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no2011002176">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Abū Hāshim, ʻĀdil,</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Abū Hāshim, ʻĀdil,</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $6880-01$aAbū Hāshim, ʻĀdil,$eauthor.</bflc:name00MarcKey>
+            <rdfs:label>Abū Hāshim, ʻĀdil,</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role>
+            <rdfs:label>author.</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://bibframe.example.org/20833676#Agent880-17">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>أبو هاشم، عادل.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>أبو هاشم، عادل.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>8801 $6100-01//r$aأبو هاشم، عادل.</bflc:name00MarcKey>
+            <rdfs:label>أبو هاشم، عادل.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>ʻIndamā tuṣbiḥu al-khiyānah wajhat naẓar!.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>ʻIndamā tuṣbiḥu al-khiyānah wajhat naẓar!.</rdfs:label>
+        <bflc:titleSortKey>ʻIndamā tuṣbiḥu al-khiyānah wajhat naẓar!.</bflc:titleSortKey>
+        <bf:mainTitle>ʻIndamā tuṣbiḥu al-khiyānah wajhat naẓar!</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>عندما تصبح الخيانة وجهة نظر!.</rdfs:label>
+        <bflc:titleSortKey>عندما تصبح الخيانة وجهة نظر!.</bflc:titleSortKey>
+        <bf:mainTitle>عندما تصبح الخيانة وجهة نظر!</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+        <rdfs:label>text</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+        </bf:source>
+      </bf:Content>
+    </bf:content>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Includes bibliographical references.</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:summary>
+      <bf:Summary>
+        <rdfs:label>Arab-Israeli conflict; Israel; Politics and government.</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:subject>
+      <bf:Topic rdf:about="http://bibframe.example.org/20833676#Topic650-32">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <rdfs:label>Arab-Israeli conflict--1993</rdfs:label>
+        <madsrdf:authoritativeLabel>Arab-Israeli conflict--1993</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh87002535">
+            <madsrdf:authoritativeLabel>Arab-Israeli conflict</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Temporal>
+            <madsrdf:authoritativeLabel>1993-</madsrdf:authoritativeLabel>
+          </madsrdf:Temporal>
+        </madsrdf:componentList>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Place rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh85068700">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <rdfs:label>Israel--Politics and government.</rdfs:label>
+        <madsrdf:authoritativeLabel>Israel--Politics and government.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Geographic>
+            <madsrdf:authoritativeLabel>Israel</madsrdf:authoritativeLabel>
+          </madsrdf:Geographic>
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh2002011436">
+            <madsrdf:authoritativeLabel>Politics and government</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </madsrdf:componentList>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Place>
+    </bf:subject>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/20833676#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/20833676#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">2018</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/su"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2018462196</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9783899112283</rdf:value>
+        <bf:qualifier>paperback</bf:qualifier>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>3899112288</rdf:value>
+        <bf:qualifier>paperback</bf:qualifier>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:acquisitionSource>
+      <bf:AcquisitionSource>
+        <bf:acquisitionTerms>340.00 EGP</bf:acquisitionTerms>
+      </bf:AcquisitionSource>
+    </bf:acquisitionSource>
+    <rdfs:label>ʻIndamā tuṣbiḥu al-khiyānah wajhat naẓar!.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>ʻIndamā tuṣbiḥu al-khiyānah wajhat naẓar!.</rdfs:label>
+        <bflc:titleSortKey>ʻIndamā tuṣbiḥu al-khiyānah wajhat naẓar!.</bflc:titleSortKey>
+        <bf:mainTitle>ʻIndamā tuṣbiḥu al-khiyānah wajhat naẓar!</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>ʻĀdil Abū Hāshim</bf:responsibilityStatement>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>عندما تصبح الخيانة وجهة نظر!.</rdfs:label>
+        <bflc:titleSortKey>عندما تصبح الخيانة وجهة نظر!.</bflc:titleSortKey>
+        <bf:mainTitle>عندما تصبح الخيانة وجهة نظر!</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>عادل أبو هاشم</bf:responsibilityStatement>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:variantType>portion</bf:variantType>
+        <rdfs:label>Khiyānah wajhat naẓar!.</rdfs:label>
+        <bf:mainTitle>Khiyānah wajhat naẓar!</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:variantType>portion</bf:variantType>
+        <rdfs:label>خيانة وجهة نظر!.</rdfs:label>
+        <bf:mainTitle>خيانة وجهة نظر!</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:editionStatement>al-Ṭabʻah al-ūlá</bf:editionStatement>
+    <bf:editionStatement>الطبعة الأولى</bf:editionStatement>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Bayrūt</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Bīsān lil-Nashr wa-al-Tawzīʻ</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2018</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Bayrūt : Bīsān lil-Nashr wa-al-Tawzīʻ, 2018.</bf:provisionActivityStatement>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>بيروت</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>بيسان للنشر والتوزيع،</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2018</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>بيروت : بيسان للنشر والتوزيع،; 2018.</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>496 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:dimensions>24 cm</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/20833676#Work"/>
+  </bf:Instance></lclocal:graph>
+  
+</rdf:Description></rdf:RDF>

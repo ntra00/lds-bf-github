@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ../config auths
+source /marklogic/nate/lds/lds-bf/prep/config auths
 CURDIR=`echo $PWD`
 
 ct=$(ls -ltra $SOURCE_PROCESSED/single/*.rdf | wc -l)
@@ -16,7 +16,8 @@ if [[  $ct != 0 ]]; then
       sleep 1
       mv `ls -tr $SOURCE_PROCESSED/single/*.rdf | head -$ct` $LOAD_UNPROCESSED/single/
 
-# reload auths 
+# load auths 
+
     ./load_auth_single.sh
           
    else

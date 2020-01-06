@@ -2,6 +2,7 @@
 lccn=$1
 cd ../auths/
 
-./rnc  $lccn
+./source2rdf.sh  $lccn
+
 cd ../bibrecs/
 

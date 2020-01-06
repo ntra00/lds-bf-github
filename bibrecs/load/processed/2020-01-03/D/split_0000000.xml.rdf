@@ -1,0 +1,3313 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:mets="http://www.loc.gov/METS/" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:mxe="http://www.loc.gov/mxe" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"><rdf:Description>
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/19490574#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
+            <rdfs:label>preliminary</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+            <rdfs:label>isbd</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>19490574</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T03:51:39</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-02-10</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+            <bf:code>eng</bf:code>
+          </bf:Language>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+            <rdfs:label>rda</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lcode">
+            <rdf:value>lcode</rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/ind"/>
+    </bf:language>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026048">
+        <rdfs:label>bibliographies</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/vocabulary/marcgt/gov">
+        <rdfs:label>federal or national government publication</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2014328552</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <rdfs:label>Pengembangan minapolitan berbasis perairan umum daratan.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Pengembangan minapolitan berbasis perairan umum daratan.</rdfs:label>
+        <bflc:titleSortKey>Pengembangan minapolitan berbasis perairan umum daratan.</bflc:titleSortKey>
+        <bf:mainTitle>Pengembangan minapolitan berbasis perairan umum daratan</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://mlvlp04.loc.gov:8080/vocabulary/contentTypes/txt">
+        <rdfs:label>text</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+        </bf:source>
+      </bf:Content>
+    </bf:content>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Includes bibliographical references.</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:language>
+      <bf:Language>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>In Indonesian</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Language>
+    </bf:language>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n2010163431">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Jurisdiction"/>
+            <bflc:name10MatchKey>Indonesia. Badan Penelitian dan Pengembangan Kelautan dan Perikanan.</bflc:name10MatchKey>
+            <bflc:name10MarcKey>7101 $aIndonesia.$bBadan Penelitian dan Pengembangan Kelautan dan Perikanan.</bflc:name10MarcKey>
+            <rdfs:label>Indonesia. Badan Penelitian dan Pengembangan Kelautan dan Perikanan.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/19490574#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/19490574#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">2012</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/io"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2014328552</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9789793692425</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <rdfs:label>Pengembangan minapolitan berbasis perairan umum daratan.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Pengembangan minapolitan berbasis perairan umum daratan.</rdfs:label>
+        <bflc:titleSortKey>Pengembangan minapolitan berbasis perairan umum daratan.</bflc:titleSortKey>
+        <bf:mainTitle>Pengembangan minapolitan berbasis perairan umum daratan</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Jakarta</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Badan Penelitian dan Pengembangan Kelautan dan Perikanan bekerjasama dengan Indonesian Marine and Fisheries Socio-Economics Research Network</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2012</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Jakarta : Badan Penelitian dan Pengembangan Kelautan dan Perikanan bekerjasama dengan Indonesian Marine and Fisheries Socio-Economics Research Network, [2012]</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>viii, 195 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:dimensions>23 cm</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://mlvlp04.loc.gov:8080/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://mlvlp04.loc.gov:8080/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/19490574#Work"/>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/21349804#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel/>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions/>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>21349804</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/StillImage"/>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/21349804#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/21349804#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Collection"/>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/21349804#Work"/>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/19265556#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
+            <rdfs:label>preliminary</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+            <rdfs:label>isbd</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>19265556</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T08:16:37</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-09-08</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+            <bf:code>eng</bf:code>
+          </bf:Language>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+            <rdfs:label>rda</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lcode">
+            <rdf:value>lcode</rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/por"/>
+    </bf:language>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2016320499</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n82163378">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Kucinski, B.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Kucinski, B.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aKucinski, B.</bflc:name00MarcKey>
+            <rdfs:label>Kucinski, B.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>Os visitantes :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>visitantes :</rdfs:label>
+        <bflc:titleSortKey>visitantes :</bflc:titleSortKey>
+        <bf:mainTitle>Os visitantes</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+        <rdfs:label>text</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+        </bf:source>
+      </bf:Content>
+    </bf:content>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/19265556#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/19265556#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">2016</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/bl"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2016320499</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9788535927504</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <rdfs:label>Os visitantes :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Os visitantes :</rdfs:label>
+        <bflc:titleSortKey>visitantes :</bflc:titleSortKey>
+        <bf:mainTitle>Os visitantes</bf:mainTitle>
+        <bf:subtitle>novela</bf:subtitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>B. Kucinski</bf:responsibilityStatement>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>São Paulo, SP</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Companhia das Letras</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2016</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>São Paulo, SP : Companhia das Letras, 2016.</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>85 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:dimensions>21 cm</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/19265556#Work"/>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/6293527#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel/>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions/>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>6293527</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T10:10:52</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-02-06</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>CarP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionModifier>
+          <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/fre"/>
+    </bf:language>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>unk84196238 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:classificationPortion>M28</bf:classificationPortion>
+        <bf:itemPortion>.S</bf:itemPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n79122078">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Sousa, John Philip, 1854-1932.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Sousa, John Philip, 1854-1932.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aSousa, John Philip,$d1854-1932.</bflc:name00MarcKey>
+            <rdfs:label>Sousa, John Philip, 1854-1932.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>Esprit du corps.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Esprit du corps.</rdfs:label>
+        <bflc:titleSortKey>Esprit du corps.</bflc:titleSortKey>
+        <bf:mainTitle>Esprit du corps</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/6293527#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/6293527#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/xx"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>unk84196238 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <rdfs:label>Esprit du corps.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Esprit du corps.</rdfs:label>
+        <bflc:titleSortKey>Esprit du corps.</bflc:titleSortKey>
+        <bf:mainTitle>Esprit du corps</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>n.p.</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:date>n.d</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>[n.p., n.d.]</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>5 p.</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>Physical details</bf:noteType>
+        <rdfs:label>fol.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Piano 2 hands.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/6293527#Work"/>
+    <bf:hasItem>
+      <bf:Item rdf:about="http://bibframe.example.org/6293527#Item050-9">
+        <bf:shelfMark>
+          <bf:ShelfMarkLcc>
+            <rdfs:label>M28.S</rdfs:label>
+            <bf:source>
+              <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:source>
+          </bf:ShelfMarkLcc>
+        </bf:shelfMark>
+        <bf:itemOf rdf:resource="http://bibframe.example.org/6293527#Instance"/>
+      </bf:Item>
+    </bf:hasItem>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/19176883#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/7">
+            <rdfs:label>minimal</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+            <rdfs:label>isbd</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>19176883</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T10:37:29</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-10</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+            <bf:code>eng</bf:code>
+          </bf:Language>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+            <rdfs:label>rda</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+            <rdf:value>pcc </rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/lcode">
+            <rdf:value>lcode</rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/ara"/>
+    </bf:language>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2016338804</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://bibframe.example.org/19176883#Agent100-13">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Ḥamzah, Rajab.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Ḥamzah, Rajab.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $6880-01$aḤamzah, Rajab.</bflc:name00MarcKey>
+            <rdfs:label>Ḥamzah, Rajab.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>al-Bāʻith</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Bāʻith</rdfs:label>
+        <bflc:titleSortKey>Bāʻith</bflc:titleSortKey>
+        <bf:mainTitle>al-Bāʻith</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+        <rdfs:label>text</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+        </bf:source>
+      </bf:Content>
+    </bf:content>
+    <bf:summary>
+      <bf:Summary>
+        <rdfs:label>Novel.</rdfs:label>
+      </bf:Summary>
+    </bf:summary>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://bibframe.example.org/19176883#Agent880-22">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>حمزة، رجب.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>حمزة، رجب.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>8801 $6100-01/(3/r$aحمزة، رجب.</bflc:name00MarcKey>
+            <rdfs:label>حمزة، رجب.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>باعث</rdfs:label>
+        <bflc:titleSortKey>باعث</bflc:titleSortKey>
+        <bf:mainTitle>الباعث</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/19176883#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/19176883#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">2015</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/ua"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2016338804</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9789777980265</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:acquisitionSource>
+      <bf:AcquisitionSource>
+        <bf:acquisitionTerms>20.00 EGP</bf:acquisitionTerms>
+      </bf:AcquisitionSource>
+    </bf:acquisitionSource>
+    <rdfs:label>al-Bāʻith</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>al-Bāʻith</rdfs:label>
+        <bflc:titleSortKey>Bāʻith</bflc:titleSortKey>
+        <bf:mainTitle>al-Bāʻith</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>Rajab Ḥamzah</bf:responsibilityStatement>
+    <bf:editionStatement>al-Ṭabʻah al-ūlá</bf:editionStatement>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>al-Qāhirah</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Dār al-Ḥulm lil-Nashr wa-al-Tawzīʻ</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2015</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>al-Qāhirah : Dār al-Ḥulm lil-Nashr wa-al-Tawzīʻ, [2015]</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>135 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:dimensions>20 cm</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>الباعث</rdfs:label>
+        <bflc:titleSortKey>باعث</bflc:titleSortKey>
+        <bf:mainTitle>الباعث</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>رجب حمزة</bf:responsibilityStatement>
+    <bf:editionStatement>الطبعة الأولى</bf:editionStatement>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>القاهرة</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>دار الحلم للنشر والتوزيع،</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2015</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>القاهرة : دار الحلم للنشر والتوزيع،; [2015]</bf:provisionActivityStatement>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/19176883#Work"/>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/5569645#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/3">
+            <rdfs:label>abbreviated</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/aacr">
+            <rdfs:label>aacr</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>5569645</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T11:08:07</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-02-11</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionModifier>
+          <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026387">
+        <rdfs:label>maps</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:colorContent>
+      <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/mul">
+        <rdfs:label>multicolored</rdfs:label>
+      </bf:ColorContent>
+    </bf:colorContent>
+    <bf:baseMaterial>
+      <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+        <rdfs:label>paper</rdfs:label>
+      </bf:BaseMaterial>
+    </bf:baseMaterial>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+    </bf:language>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>   98685431 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:scale>
+      <bf:Scale>
+        <rdfs:label>1099000</rdfs:label>
+        <bf:note>
+          <bf:Note>
+            <rdfs:label>linear horizontal</rdfs:label>
+          </bf:Note>
+        </bf:note>
+      </bf:Scale>
+    </bf:scale>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:classificationPortion>G3700 1840</bf:classificationPortion>
+        <bf:itemPortion>.D81 TIL</bf:itemPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:geographicCoverage>
+      <bf:GeographicCoverage>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+        </bf:source>
+        <rdfs:label>3700</rdfs:label>
+      </bf:GeographicCoverage>
+    </bf:geographicCoverage>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://bibframe.example.org/5569645#Agent100-14">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Drayton, J.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Drayton, J.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aDrayton, J.</bflc:name00MarcKey>
+            <rdfs:label>Drayton, J.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>United States of America.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>United States of America.</rdfs:label>
+        <bflc:titleSortKey>United States of America.</bflc:titleSortKey>
+        <bf:mainTitle>United States of America</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:scale>
+      <bf:Scale>
+        <rdfs:label>Scale [1:1,099,000]</rdfs:label>
+      </bf:Scale>
+    </bf:scale>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n83227915">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Yeager, Joseph, approximately 1792-1859.</bflc:name00MatchKey>
+            <bflc:name00MarcKey>7001 $aYeager, Joseph,$dapproximately 1792-1859.</bflc:name00MarcKey>
+            <rdfs:label>Yeager, Joseph, approximately 1792-1859.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n50031569">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Murray, Hugh, 1779-1846.</bflc:name00MatchKey>
+            <bflc:name00MarcKey>7001 $aMurray, Hugh,$d1779-1846.</bflc:name00MarcKey>
+            <rdfs:label>Murray, Hugh, 1779-1846.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:place>
+      <bf:Place>
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#HierarchicalGeographic"/>
+        <rdfs:label>United States</rdfs:label>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Country>
+            <rdfs:label>United States</rdfs:label>
+          </madsrdf:Country>
+        </madsrdf:componentList>
+      </bf:Place>
+    </bf:place>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/5569645#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/5569645#Instance">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">1840</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/xx"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono">
+        <rdfs:label>single map</rdfs:label>
+      </bf:Issuance>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>   98685431 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <rdfs:label>United States of America.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>United States of America.</rdfs:label>
+        <bflc:titleSortKey>United States of America.</bflc:titleSortKey>
+        <bf:mainTitle>United States of America</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>S.l.</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:date>1840</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>[S.l., 1840]</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>1 map</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>Physical details</bf:noteType>
+        <rdfs:label>col.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:dimensions>x  cm.</bf:dimensions>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>From Encyclopedia of [Geog ?] by Hugh Murray pub. Lea &amp; Blanchard, 1840.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>With inset of Florida.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Engraved by J. Yeager.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/5569645#Work"/>
+    <bf:hasItem>
+      <bf:Item rdf:about="http://bibframe.example.org/5569645#Item050-12">
+        <bf:shelfMark>
+          <bf:ShelfMarkLcc>
+            <rdfs:label>G3700 1840.D81 TIL</rdfs:label>
+            <bf:source>
+              <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:source>
+          </bf:ShelfMarkLcc>
+        </bf:shelfMark>
+        <bf:itemOf rdf:resource="http://bibframe.example.org/5569645#Instance"/>
+      </bf:Item>
+    </bf:hasItem>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/9547329#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/1">
+            <rdfs:label>full not examined</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions/>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>9547329</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T11:09:20</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-05-18</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>CarP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+            <bf:code>eng</bf:code>
+          </bf:Language>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+    </bf:language>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>unk82088860 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:classificationPortion>BV649</bf:classificationPortion>
+        <bf:itemPortion>.H77 1774 (Office)</bf:itemPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n86071739">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Holmes, William.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Holmes, William.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aHolmes, William.</bflc:name00MarcKey>
+            <rdfs:label>Holmes, William.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>Proposals of some things to be done in church government...</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Proposals of some things to be done in church government...</rdfs:label>
+        <bflc:titleSortKey>Proposals of some things to be done in church government...</bflc:titleSortKey>
+        <bf:mainTitle>Proposals of some things to be done in church government</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n90725270">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Jurisdiction"/>
+            <bflc:name10MatchKey>American Imprint Collection (Library of Congress)</bflc:name10MatchKey>
+            <bflc:name10MarcKey>7101 $aAmerican Imprint Collection (Library of Congress)$5DLC</bflc:name10MarcKey>
+            <rdfs:label>American Imprint Collection (Library of Congress)</rdfs:label>
+            <bflc:applicableInstitution>
+              <bf:Agent>
+                <bf:code>DLC</bf:code>
+              </bf:Agent>
+            </bflc:applicableInstitution>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/9547329#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/9547329#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">1774</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/xx"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>unk82088860 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <rdfs:label>Proposals of some things to be done in church government...</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Proposals of some things to be done in church government...</rdfs:label>
+        <bflc:titleSortKey>Proposals of some things to be done in church government...</bflc:titleSortKey>
+        <bf:mainTitle>Proposals of some things to be done in church government</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Newbury-port, E. Lunt and H. W. Tinges</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:date>1774</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Newbury-port, E. Lunt and H. W. Tinges, 1774.</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>43 p. 8 ̊</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/9547329#Work"/>
+    <bf:hasItem>
+      <bf:Item rdf:about="http://bibframe.example.org/9547329#Item050-10">
+        <bf:shelfMark>
+          <bf:ShelfMarkLcc>
+            <rdfs:label>BV649.H77 1774 (Office)</rdfs:label>
+            <bf:source>
+              <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:source>
+          </bf:ShelfMarkLcc>
+        </bf:shelfMark>
+        <bf:itemOf rdf:resource="http://bibframe.example.org/9547329#Instance"/>
+      </bf:Item>
+    </bf:hasItem>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/20480779#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/3">
+            <rdfs:label>abbreviated</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/aacr">
+            <rdfs:label>aacr</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20480779</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T11:58:15</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-03-13</bf:creationDate>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:classificationPortion>PJ5055.13.R2117+</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no2018060292">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Bar, Ariella.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Bar, Ariella.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aBar, Ariella.</bflc:name00MarcKey>
+            <rdfs:label>Bar, Ariella.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>Classification number reserved for Bar, Ariella.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Classification number reserved for Bar, Ariella.</rdfs:label>
+        <bflc:titleSortKey>Classification number reserved for Bar, Ariella.</bflc:titleSortKey>
+        <bf:mainTitle>Classification number reserved for Bar, Ariella</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/20480779#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/20480779#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">xxxx</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <rdfs:label>Classification number reserved for Bar, Ariella.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Classification number reserved for Bar, Ariella.</rdfs:label>
+        <bflc:titleSortKey>Classification number reserved for Bar, Ariella.</bflc:titleSortKey>
+        <bf:mainTitle>Classification number reserved for Bar, Ariella</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/20480779#Work"/>
+    <bf:hasItem>
+      <bf:Item rdf:about="http://bibframe.example.org/20480779#Item050-6">
+        <bf:shelfMark>
+          <bf:ShelfMarkLcc>
+            <rdfs:label>PJ5055.13.R2117+</rdfs:label>
+            <bf:source>
+              <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:source>
+          </bf:ShelfMarkLcc>
+        </bf:shelfMark>
+        <bf:itemOf rdf:resource="http://bibframe.example.org/20480779#Instance"/>
+      </bf:Item>
+    </bf:hasItem>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/17330282#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/4">
+            <rdfs:label>core</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/aacr">
+            <rdfs:label>aacr</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>17330282</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T12:11:26</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2012-06-04</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+            <rdf:value>pcc</rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/srp"/>
+    </bf:language>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://bibframe.example.org/17330282#Agent100-12">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Lazić, Viktor.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Lazić, Viktor.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aLazić, Viktor.</bflc:name00MarcKey>
+            <rdfs:label>Lazić, Viktor.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>U srcu Sumatre.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>U srcu Sumatre.</rdfs:label>
+        <bflc:titleSortKey>U srcu Sumatre.</bflc:titleSortKey>
+        <bf:mainTitle>U srcu Sumatre</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/17330282#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/17330282#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">2011</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/rb"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>xxvxxx</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <rdfs:label>U srcu Sumatre.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>U srcu Sumatre.</rdfs:label>
+        <bflc:titleSortKey>U srcu Sumatre.</bflc:titleSortKey>
+        <bf:mainTitle>U srcu Sumatre</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Beograd</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Laguna</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2011</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Beograd : Laguna, 2011.</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>277 p.</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:seriesStatement>Biblioteka Venac</bf:seriesStatement>
+    <bf:seriesEnumeration>kolo3, knjiga 6</bf:seriesEnumeration>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/17330282#Work"/>
+    <bf:hasItem>
+      <bf:Item rdf:about="http://bibframe.example.org/17330282#Item050-11">
+        <bf:shelfMark>
+          <bf:ShelfMark>
+            <rdfs:label>In process</rdfs:label>
+            <bf:source>
+              <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:source>
+          </bf:ShelfMark>
+        </bf:shelfMark>
+        <bf:itemOf rdf:resource="http://bibframe.example.org/17330282#Instance"/>
+      </bf:Item>
+    </bf:hasItem>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/11736053#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel/>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/aacr">
+            <rdfs:label>aacr</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11736053</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T13:07:17</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-11-06</bf:creationDate>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/zul"/>
+    </bf:language>
+    <rdfs:label>Ilanga.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Ilanga.</rdfs:label>
+        <bflc:titleSortKey>Ilanga.</bflc:titleSortKey>
+        <bf:mainTitle>Ilanga</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/11736053#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/11736053#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/serl"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">1900/..</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/sa"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Currently published</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:frequency>
+      <bf:Frequency rdf:about="http://id.loc.gov/vocabulary/frequencies/wkl">
+        <rdfs:label>weekly</rdfs:label>
+      </bf:Frequency>
+    </bf:frequency>
+    <rdfs:label>Ilanga.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Ilanga.</rdfs:label>
+        <bflc:titleSortKey>Ilanga.</bflc:titleSortKey>
+        <bf:mainTitle>Ilanga</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Durban, Natal</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Banner News Agency Ltd.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>1965-</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Durban, Natal : Banner News Agency Ltd., 1965-</bf:provisionActivityStatement>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/11736053#Work"/>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/20356449#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
+            <rdfs:label>preliminary</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+            <rdfs:label>isbd</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20356449</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T13:53:22</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-02-13</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+            <rdf:value>pcc</rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/spa"/>
+    </bf:language>
+    <bf:illustrativeContent>
+      <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+        <rdfs:label>illustrations</rdfs:label>
+      </bf:Illustration>
+    </bf:illustrativeContent>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:about="http://id.loc.gov/authorities/genreForms/gf2014026048">
+        <rdfs:label>bibliographies</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent rdf:about="http://id.loc.gov/vocabulary/msupplcont/index">
+        <rdfs:label>Index present</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2017285703</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:geographicCoverage>
+      <bf:GeographicCoverage rdf:about="http://id.loc.gov/vocabulary/geographicAreas/nc"/>
+    </bf:geographicCoverage>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no2018000392">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Cruz, Ernesto, 1931-</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Cruz, Ernesto, 1931-</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aCruz, Ernesto,$d1931-$eauthor.</bflc:name00MarcKey>
+            <rdfs:label>Cruz, Ernesto, 1931-</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role>
+            <rdfs:label>author.</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>INCAE :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>INCAE :</rdfs:label>
+        <bflc:titleSortKey>INCAE :</bflc:titleSortKey>
+        <bf:mainTitle>INCAE</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+        <rdfs:label>text</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+        </bf:source>
+      </bf:Content>
+    </bf:content>
+    <bf:supplementaryContent>
+      <bf:SupplementaryContent>
+        <rdfs:label>Includes bibliographical references and index.</rdfs:label>
+      </bf:SupplementaryContent>
+    </bf:supplementaryContent>
+    <bf:subject>
+      <bf:Topic rdf:about="http://bibframe.example.org/20356449#Topic610-23">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <madsrdf:authoritativeLabel>Instituto Centroamericano de Administración de Empresas--History.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n81101519">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#CorporateName"/>
+            <madsrdf:authoritativeLabel>Instituto Centroamericano de Administración de Empresas</madsrdf:authoritativeLabel>
+            <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+            <bf:source>
+              <bf:Source>
+                <bf:code>lcsh</bf:code>
+              </bf:Source>
+            </bf:source>
+            <bflc:name10MatchKey>Instituto Centroamericano de Administración de Empresas</bflc:name10MatchKey>
+            <bflc:name10MarcKey>61020$aInstituto Centroamericano de Administración de Empresas$xHistory.</bflc:name10MarcKey>
+            <rdfs:label>Instituto Centroamericano de Administración de Empresas</rdfs:label>
+          </bf:Agent>
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh85061212">
+            <madsrdf:authoritativeLabel>History</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </madsrdf:componentList>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://bibframe.example.org/20356449#Topic650-24">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <rdfs:label>Business education--Central America--History.</rdfs:label>
+        <madsrdf:authoritativeLabel>Business education--Central America--History.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh85018279">
+            <madsrdf:authoritativeLabel>Business education</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Geographic>
+            <madsrdf:authoritativeLabel>Central America</madsrdf:authoritativeLabel>
+          </madsrdf:Geographic>
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh85061212">
+            <madsrdf:authoritativeLabel>History</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+        </madsrdf:componentList>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://bibframe.example.org/20356449#Topic650-25">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <rdfs:label>Master of business administration degree--Central America.</rdfs:label>
+        <madsrdf:authoritativeLabel>Master of business administration degree--Central America.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh85081991">
+            <madsrdf:authoritativeLabel>Master of business administration degree</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Geographic>
+            <madsrdf:authoritativeLabel>Central America</madsrdf:authoritativeLabel>
+          </madsrdf:Geographic>
+        </madsrdf:componentList>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/20356449#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/20356449#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">2017</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/nq"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2017285703</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9789996432576</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9996432572</rdf:value>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <rdfs:label>INCAE :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>INCAE :</rdfs:label>
+        <bflc:titleSortKey>INCAE :</bflc:titleSortKey>
+        <bf:mainTitle>INCAE</bf:mainTitle>
+        <bf:subtitle>los años formativos</bf:subtitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>Ernesto Cruz, JD, PhD</bf:responsibilityStatement>
+    <bf:title>
+      <bf:VariantTitle>
+        <rdfs:label>Instituto Centroamericano de Administración de Empresas</rdfs:label>
+        <bf:mainTitle>Instituto Centroamericano de Administración de Empresas</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Managua</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Editorial Hispamer</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2017</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Managua : Editorial Hispamer, [2017]</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>485 pages</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>Physical details</bf:noteType>
+        <rdfs:label>illustrations</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:dimensions>21 cm</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/20356449#Work"/>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/21224137#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
+            <rdfs:label>preliminary</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+            <rdfs:label>isbd</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>21224137</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T14:43:13</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-02</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+            <rdf:value>pcc</rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+    </bf:language>
+    <bf:illustrativeContent>
+      <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+        <rdfs:label>illustrations</rdfs:label>
+      </bf:Illustration>
+    </bf:illustrativeContent>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/vocabulary/marcgt/gov">
+        <rdfs:label>state, provincial, territorial, dependant government publication</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2018493919</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:geographicCoverage>
+      <bf:GeographicCoverage rdf:about="http://id.loc.gov/vocabulary/geographicAreas/n-us-ca"/>
+    </bf:geographicCoverage>
+    <rdfs:label>2019 nonresidential alternative calculation method reference manual :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>2019 nonresidential alternative calculation method reference manual :</rdfs:label>
+        <bflc:titleSortKey>2019 nonresidential alternative calculation method reference manual :</bflc:titleSortKey>
+        <bf:mainTitle>2019 nonresidential alternative calculation method reference manual</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+        <rdfs:label>text</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+        </bf:source>
+      </bf:Content>
+    </bf:content>
+    <bf:subject>
+      <bf:Topic rdf:about="http://bibframe.example.org/21224137#Topic650-24">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <rdfs:label>Commercial buildings--Energy conservation--Standards--California.</rdfs:label>
+        <madsrdf:authoritativeLabel>Commercial buildings--Energy conservation--Standards--California.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh85028921">
+            <madsrdf:authoritativeLabel>Commercial buildings</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh00005625">
+            <madsrdf:authoritativeLabel>Energy conservation</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh00007508">
+            <madsrdf:authoritativeLabel>Standards</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Geographic>
+            <madsrdf:authoritativeLabel>California</madsrdf:authoritativeLabel>
+          </madsrdf:Geographic>
+        </madsrdf:componentList>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://bibframe.example.org/21224137#Topic650-25">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <rdfs:label>Industrial buildings--Energy conservation--Standards--California.</rdfs:label>
+        <madsrdf:authoritativeLabel>Industrial buildings--Energy conservation--Standards--California.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh85065835">
+            <madsrdf:authoritativeLabel>Industrial buildings</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh00005625">
+            <madsrdf:authoritativeLabel>Energy conservation</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh00007508">
+            <madsrdf:authoritativeLabel>Standards</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Geographic>
+            <madsrdf:authoritativeLabel>California</madsrdf:authoritativeLabel>
+          </madsrdf:Geographic>
+        </madsrdf:componentList>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://bibframe.example.org/21224137#Topic650-26">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <rdfs:label>Buildings--Energy conservation--Standards--California.</rdfs:label>
+        <madsrdf:authoritativeLabel>Buildings--Energy conservation--Standards--California.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh85017769">
+            <madsrdf:authoritativeLabel>Buildings</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh00005625">
+            <madsrdf:authoritativeLabel>Energy conservation</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh00007508">
+            <madsrdf:authoritativeLabel>Standards</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Geographic>
+            <madsrdf:authoritativeLabel>California</madsrdf:authoritativeLabel>
+          </madsrdf:Geographic>
+        </madsrdf:componentList>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://bibframe.example.org/21224137#Topic650-27">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <rdfs:label>Energy conservation--Standards--California.</rdfs:label>
+        <madsrdf:authoritativeLabel>Energy conservation--Standards--California.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh00005625">
+            <madsrdf:authoritativeLabel>Energy conservation</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh00007508">
+            <madsrdf:authoritativeLabel>Standards</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Geographic>
+            <madsrdf:authoritativeLabel>California</madsrdf:authoritativeLabel>
+          </madsrdf:Geographic>
+        </madsrdf:componentList>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://bibframe.example.org/21224137#Topic650-28">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#ComplexSubject"/>
+        <rdfs:label>Architecture and energy conservation--Standards--California.</rdfs:label>
+        <madsrdf:authoritativeLabel>Architecture and energy conservation--Standards--California.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <madsrdf:componentList rdf:parseType="Collection">
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh85006885">
+            <madsrdf:authoritativeLabel>Architecture and energy conservation</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh00007508">
+            <madsrdf:authoritativeLabel>Standards</madsrdf:authoritativeLabel>
+          </madsrdf:Topic>
+          <madsrdf:Geographic>
+            <madsrdf:authoritativeLabel>California</madsrdf:authoritativeLabel>
+          </madsrdf:Geographic>
+        </madsrdf:componentList>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://bibframe.example.org/21224137#Agent700-29">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Froess, Larry,</bflc:name00MatchKey>
+            <bflc:name00MarcKey>7001 $aFroess, Larry,$eauthor.</bflc:name00MarcKey>
+            <rdfs:label>Froess, Larry,</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role>
+            <rdfs:label>author.</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://bibframe.example.org/21224137#Agent700-30">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Wichert, R.J.,</bflc:name00MatchKey>
+            <bflc:name00MarcKey>7001 $aWichert, R.J.,$eauthor.</bflc:name00MarcKey>
+            <rdfs:label>Wichert, R.J.,</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role>
+            <rdfs:label>author.</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://bibframe.example.org/21224137#Agent710-31">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <bflc:name10MatchKey>California Energy Commission. Building Standards Office,</bflc:name10MatchKey>
+            <bflc:name10MarcKey>7102 $aCalifornia Energy Commission.$bBuilding Standards Office,$eissuing body.</bflc:name10MarcKey>
+            <rdfs:label>California Energy Commission. Building Standards Office,</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role>
+            <rdfs:label>issuing body.</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:hasInstance>
+      <bf:Instance rdf:about="http://bibframe.example.org/21224137#Instance856-32">
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Electronic"/>
+        <bf:title>
+          <bf:Title>
+            <rdfs:label>2019 nonresidential alternative calculation method reference manual : for the 2019 Building Energy Efficiency Standards, Title 24, part 6, and associated administrative regulations in part 1 /</rdfs:label>
+            <bflc:titleSortKey>2019 nonresidential alternative calculation method reference manual : for the 2019 Building Energy Efficiency Standards, Title 24, part 6, and associated administrative regulations in part 1 /</bflc:titleSortKey>
+            <bf:mainTitle>2019 nonresidential alternative calculation method reference manual</bf:mainTitle>
+            <bf:subtitle>for the 2019 Building Energy Efficiency Standards, Title 24, part 6, and associated administrative regulations in part 1</bf:subtitle>
+          </bf:Title>
+        </bf:title>
+        <bf:hasItem>
+          <bf:Item rdf:about="http://bibframe.example.org/21224137#Item856-32">
+            <bf:electronicLocator rdf:resource="http://bibpurl.oclc.org/web/93783"/>
+            <bf:electronicLocator rdf:resource="https://www.energy.ca.gov/2019publications/CEC-400-2019-006/CEC-400-2019-006-CMF.pdf"/>
+            <bf:itemOf rdf:resource="http://bibframe.example.org/21224137#Instance856-32"/>
+          </bf:Item>
+        </bf:hasItem>
+        <bf:instanceOf rdf:resource="http://bibframe.example.org/21224137#Work"/>
+      </bf:Instance>
+    </bf:hasInstance>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/21224137#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/21224137#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">2019</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/cau"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2018493919</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:classification>
+      <bf:Classification>
+        <rdfs:label>E2015.E49 M3nc 2019r</rdfs:label>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>cadocs</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Classification>
+    </bf:classification>
+    <bf:identifiedBy>
+      <bf:ReportNumber>
+        <rdf:value>CEC-400-2019-006-CMF</rdf:value>
+      </bf:ReportNumber>
+    </bf:identifiedBy>
+    <rdfs:label>2019 nonresidential alternative calculation method reference manual :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>2019 nonresidential alternative calculation method reference manual :</rdfs:label>
+        <bflc:titleSortKey>2019 nonresidential alternative calculation method reference manual :</bflc:titleSortKey>
+        <bf:mainTitle>2019 nonresidential alternative calculation method reference manual</bf:mainTitle>
+        <bf:subtitle>for the 2019 Building Energy Efficiency Standards, Title 24, part 6, and associated administrative regulations in part 1</bf:subtitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>California Energy Commission, Building Standards Office, Efficiency Division ; Larry Froess, RJ Wichert, primary authors</bf:responsibilityStatement>
+    <bf:title>
+      <bf:VariantTitle>
+        <bf:variantType>portion</bf:variantType>
+        <rdfs:label>Nonresidential alternative calculation method reference manual</rdfs:label>
+        <bf:mainTitle>Nonresidential alternative calculation method reference manual</bf:mainTitle>
+      </bf:VariantTitle>
+    </bf:title>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Sacramento, Calif.</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>California Energy Commission</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2019</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>[Sacramento, Calif.] : California Energy Commission, [2019]</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>1 volume (various pagings)</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>Physical details</bf:noteType>
+        <rdfs:label>illustrations (some color)</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:dimensions>28 cm</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Cover title.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>"May 2019."</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Energy Commission pub. no.: CEC-400-2019-006-CMF.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/21224137#Work"/>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/19627242#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/3">
+            <rdfs:label>abbreviated</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/aacr">
+            <rdfs:label>aacr</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>19627242</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T14:45:51</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2000-03-13</bf:creationDate>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:classificationPortion>PJ7976.I23+</bf:classificationPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no2011054939">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Ziyādah, Ḥammūr.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Ziyādah, Ḥammūr.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aZiyādah, Ḥammūr.</bflc:name00MarcKey>
+            <rdfs:label>Ziyādah, Ḥammūr.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>Classification number reserved for Ziyādah, Ḥammūr.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Classification number reserved for Ziyādah, Ḥammūr.</rdfs:label>
+        <bflc:titleSortKey>Classification number reserved for Ziyādah, Ḥammūr.</bflc:titleSortKey>
+        <bf:mainTitle>Classification number reserved for Ziyādah, Ḥammūr</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/19627242#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/19627242#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">xxxx</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <rdfs:label>Classification number reserved for Ziyādah, Ḥammūr.</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Classification number reserved for Ziyādah, Ḥammūr.</rdfs:label>
+        <bflc:titleSortKey>Classification number reserved for Ziyādah, Ḥammūr.</bflc:titleSortKey>
+        <bf:mainTitle>Classification number reserved for Ziyādah, Ḥammūr</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/19627242#Work"/>
+    <bf:hasItem>
+      <bf:Item rdf:about="http://bibframe.example.org/19627242#Item050-6">
+        <bf:shelfMark>
+          <bf:ShelfMarkLcc>
+            <rdfs:label>PJ7976.I23+</rdfs:label>
+            <bf:source>
+              <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:source>
+          </bf:ShelfMarkLcc>
+        </bf:shelfMark>
+        <bf:itemOf rdf:resource="http://bibframe.example.org/19627242#Instance"/>
+      </bf:Item>
+    </bf:hasItem>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/21351154#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
+            <rdfs:label>preliminary</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/aacr">
+            <rdfs:label>aacr</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>21351154</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T14:55:12</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-03</bf:creationDate>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>KKU</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>KKU</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+            <bf:code>eng</bf:code>
+          </bf:Language>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>OCLCG</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>OCLCQ</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>OCLCF</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>OCLCO</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>OCLCQ</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+            <rdf:value>pcc</rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/hrv"/>
+    </bf:language>
+    <bf:illustrativeContent>
+      <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/ill">
+        <rdfs:label>illustrations</rdfs:label>
+      </bf:Illustration>
+    </bf:illustrativeContent>
+    <bf:illustrativeContent>
+      <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/map">
+        <rdfs:label>maps</rdfs:label>
+      </bf:Illustration>
+    </bf:illustrativeContent>
+    <bf:illustrativeContent>
+      <bf:Illustration rdf:about="http://id.loc.gov/vocabulary/millus/plt">
+        <rdfs:label>plates</rdfs:label>
+      </bf:Illustration>
+    </bf:illustrativeContent>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2019479088</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:classificationPortion>JV105</bf:classificationPortion>
+        <bf:itemPortion>.G73 1939?</bf:itemPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n86113702">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Grgurić, H. (Hrvoje), 1893-</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Grgurić, H. (Hrvoje), 1893-</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aGrgurić, H.$q(Hrvoje),$d1893-$eauthor.</bflc:name00MarcKey>
+            <rdfs:label>Grgurić, H. (Hrvoje), 1893-</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role>
+            <rdfs:label>author.</rdfs:label>
+          </bf:Role>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>Borba za kolonije :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Borba za kolonije :</rdfs:label>
+        <bflc:titleSortKey>Borba za kolonije :</bflc:titleSortKey>
+        <bf:mainTitle>Borba za kolonije</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+        <rdfs:label>text</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+        </bf:source>
+      </bf:Content>
+    </bf:content>
+    <bf:subject>
+      <bf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh85028562">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+        <rdfs:label>Colonies.</rdfs:label>
+        <madsrdf:authoritativeLabel>Colonies.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:subject>
+      <bf:Topic rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh85064628">
+        <rdf:type rdf:resource="http://www.loc.gov/mads/rdf/v1#Topic"/>
+        <rdfs:label>Imperialism.</rdfs:label>
+        <madsrdf:authoritativeLabel>Imperialism.</madsrdf:authoritativeLabel>
+        <madsrdf:isMemberOfMADSScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+        <bf:source>
+          <bf:Source>
+            <bf:code>lcsh</bf:code>
+          </bf:Source>
+        </bf:source>
+      </bf:Topic>
+    </bf:subject>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/21351154#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/21351154#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">1938</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/ci"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>  2019479088</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>ocm15063100</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <rdfs:label>Borba za kolonije :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Borba za kolonije :</rdfs:label>
+        <bflc:titleSortKey>Borba za kolonije :</bflc:titleSortKey>
+        <bf:mainTitle>Borba za kolonije</bf:mainTitle>
+        <bf:subtitle>na evropskoj pozornici</bf:subtitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>H. Grgurić</bf:responsibilityStatement>
+    <bf:editionStatement>Drugo izdanje</bf:editionStatement>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Croatia</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>publisher not identified</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>1939</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>[Croatia : publisher not identified], 1939.</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>314 pages, 79 unnumbered pages of plates</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>Physical details</bf:noteType>
+        <rdfs:label>illustrations, 1 map</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:dimensions>24 cm</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>"150 originalnih snimaka, 1 geografska karta."</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>"An uncommon publication, in the Serbo-Croatian language, supports German aspirations to regain its colonies lost during World War I. Published on the eve of World War II, it is based on contemporary German sources. Illustrations represent scenes from the former African colonies and the accopanying adverisements promote contemporary German photography."-- Accompanying blurb from antiquarian Daša Pahor.</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/21351154#Work"/>
+    <bf:hasItem>
+      <bf:Item rdf:about="http://bibframe.example.org/21351154#Item050-11">
+        <bf:shelfMark>
+          <bf:ShelfMarkLcc>
+            <rdfs:label>JV105.G73 1939?</rdfs:label>
+            <bf:source>
+              <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:source>
+          </bf:ShelfMarkLcc>
+        </bf:shelfMark>
+        <bf:itemOf rdf:resource="http://bibframe.example.org/21351154#Instance"/>
+      </bf:Item>
+    </bf:hasItem>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/5836472#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel/>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions/>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>5836472</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T15:01:27</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-12-10</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>CarP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionModifier>
+          <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Cartography"/>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026058">
+        <rdfs:label>atlases</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:colorContent>
+      <bf:ColorContent rdf:about="http://id.loc.gov/vocabulary/mcolor/mul">
+        <rdfs:label>multicolored</rdfs:label>
+      </bf:ColorContent>
+    </bf:colorContent>
+    <bf:baseMaterial>
+      <bf:BaseMaterial rdf:about="http://id.loc.gov/vocabulary/mmaterial/pap">
+        <rdfs:label>paper</rdfs:label>
+      </bf:BaseMaterial>
+    </bf:baseMaterial>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+    </bf:language>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://id.loc.gov/authorities/genreForms/gf2011026058">
+        <rdfs:label>atlases</rdfs:label>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>unk82039077 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:classification>
+      <bf:ClassificationLcc>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:classificationPortion>G1201.E6</bf:classificationPortion>
+        <bf:itemPortion>J62 1966 (G&amp;M)</bf:itemPortion>
+      </bf:ClassificationLcc>
+    </bf:classification>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n50039883">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Jordan, E. L. (Emil Leopold), 1900-1994.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Jordan, E. L. (Emil Leopold), 1900-1994.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aJordan, E. L.$q(Emil Leopold),$d1900-1994.</bflc:name00MarcKey>
+            <rdfs:label>Jordan, E. L. (Emil Leopold), 1900-1994.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>Hammond's Travel encyclopedia of America,</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Hammond's Travel encyclopedia of America,</rdfs:label>
+        <bflc:titleSortKey>Hammond's Travel encyclopedia of America,</bflc:titleSortKey>
+        <bf:mainTitle>Hammond's Travel encyclopedia of America</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/5836472#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/5836472#Instance">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">1966</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/nju"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>unk82039077 </rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <rdfs:label>Hammond's Travel encyclopedia of America,</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Hammond's Travel encyclopedia of America,</rdfs:label>
+        <bflc:titleSortKey>Hammond's Travel encyclopedia of America,</bflc:titleSortKey>
+        <bf:mainTitle>Hammond's Travel encyclopedia of America</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:editionStatement>Classic ed</bf:editionStatement>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Maplewood, N.J.</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>Hammond Incorporated</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>1966</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Maplewood, N.J., Hammond Incorporated, [1966].</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>288 p.</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:note>
+      <bf:Note>
+        <bf:noteType>Physical details</bf:noteType>
+        <rdfs:label>illus. (part col.), maps (part col.)</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/5836472#Work"/>
+    <bf:hasItem>
+      <bf:Item rdf:about="http://bibframe.example.org/5836472#Item050-10">
+        <bf:shelfMark>
+          <bf:ShelfMarkLcc>
+            <rdfs:label>G1201.E6 J62 1966 (G&amp;M)</rdfs:label>
+            <bf:source>
+              <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:source>
+          </bf:ShelfMarkLcc>
+        </bf:shelfMark>
+        <bf:itemOf rdf:resource="http://bibframe.example.org/5836472#Instance"/>
+      </bf:Item>
+    </bf:hasItem>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/20986450#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
+            <rdfs:label>preliminary</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+            <rdfs:label>isbd</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>20986450</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T17:15:04</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-18</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+            <bf:code>eng</bf:code>
+          </bf:Language>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+            <rdfs:label>rda</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+            <rdf:value>pcc</rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/ger"/>
+    </bf:language>
+    <rdfs:label>Die Urkunden des Deutschordens-Zentralarchivs in Wien :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Urkunden des Deutschordens-Zentralarchivs in Wien :</rdfs:label>
+        <bflc:titleSortKey>Urkunden des Deutschordens-Zentralarchivs in Wien :</bflc:titleSortKey>
+        <bf:mainTitle>Die Urkunden des Deutschordens-Zentralarchivs in Wien</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+        <rdfs:label>text</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+        </bf:source>
+      </bf:Content>
+    </bf:content>
+    <bf:hasSeries>
+      <bf:Work>
+        <bf:identifiedBy>
+          <bf:Issn>
+            <rdf:value>0481-3626</rdf:value>
+          </bf:Issn>
+        </bf:identifiedBy>
+      </bf:Work>
+    </bf:hasSeries>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/20986450#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/20986450#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">2019</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/gw"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:acquisitionTerms>EUR44.00</bf:acquisitionTerms>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9783897398979</rdf:value>
+        <bf:qualifier>v. 4</bf:qualifier>
+        <bf:qualifier>hardbound</bf:qualifier>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:acquisitionTerms>EUR44.00</bf:acquisitionTerms>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>3897398974</rdf:value>
+        <bf:qualifier>v. 4</bf:qualifier>
+        <bf:qualifier>hardbound</bf:qualifier>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Ean>
+        <rdf:value>9783897398979</rdf:value>
+      </bf:Ean>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>har180484969</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>GyWOH</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <rdfs:label>Die Urkunden des Deutschordens-Zentralarchivs in Wien :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Die Urkunden des Deutschordens-Zentralarchivs in Wien :</rdfs:label>
+        <bflc:titleSortKey>Urkunden des Deutschordens-Zentralarchivs in Wien :</bflc:titleSortKey>
+        <bf:mainTitle>Die Urkunden des Deutschordens-Zentralarchivs in Wien</bf:mainTitle>
+        <bf:subtitle>Regesten-- Teilband IV. Januar 1527-April 1597</bf:subtitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>nach dem Manuskript von Marian Tumler ; herausgegeben von Udo Arnold</bf:responsibilityStatement>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Ilmtal-Weinstrasse</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>VDG</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2019</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Ilmtal-Weinstrasse : VDG, [2019]</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>pages 1407-1880</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:dimensions>23 cm.</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:seriesStatement>Quellen und Studien zur Geschichte des Deutschen Ordens, 0481-3626</bf:seriesStatement>
+    <bf:seriesEnumeration>60 / IV</bf:seriesEnumeration>
+    <bf:seriesStatement>Veröffentlichungen der Internationalen Historischen Kommission zur Erforschung des Deutschen Ordens</bf:seriesStatement>
+    <bf:seriesEnumeration>Band 11 / IV</bf:seriesEnumeration>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/20986450#Work"/>
+  </bf:Instance></lclocal:graph>
+  
+  <lclocal:graph><bf:Work rdf:about="http://bibframe.example.org/21315752#Work">
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC marc2bibframe2 v1.6.0-SNAPSHOT</rdfs:label>
+            <bf:generationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-04T02:32:02-05:00</bf:generationDate>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+        <bf:status>
+          <bf:Status>
+            <rdfs:label>deleted</rdfs:label>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel rdf:about="http://id.loc.gov/vocabulary/menclvl/5">
+            <rdfs:label>preliminary</rdfs:label>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/isbd">
+            <rdfs:label>isbd</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>21315752</rdf:value>
+            <bf:assigner>
+              <bf:Agent rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+            </bf:assigner>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T17:23:01</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-23</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Agent"/>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng">
+            <bf:code>eng</bf:code>
+          </bf:Language>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda">
+            <rdfs:label>rda</rdfs:label>
+          </bf:DescriptionConventions>
+        </bf:descriptionConventions>
+        <bf:descriptionAuthentication>
+          <bf:DescriptionAuthentication rdf:about="http://id.loc.gov/vocabulary/marcauthen/pcc">
+            <rdf:value>pcc</rdf:value>
+          </bf:DescriptionAuthentication>
+        </bf:descriptionAuthentication>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Text"/>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/ger"/>
+    </bf:language>
+    <rdfs:label>Die Urkunden des Deutschordens-Zentralarchivs in Wien :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Urkunden des Deutschordens-Zentralarchivs in Wien :</rdfs:label>
+        <bflc:titleSortKey>Urkunden des Deutschordens-Zentralarchivs in Wien :</bflc:titleSortKey>
+        <bf:mainTitle>Die Urkunden des Deutschordens-Zentralarchivs in Wien</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:content>
+      <bf:Content rdf:about="http://id.loc.gov/vocabulary/contentTypes/txt">
+        <rdfs:label>text</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent"/>
+        </bf:source>
+      </bf:Content>
+    </bf:content>
+    <bf:hasSeries>
+      <bf:Work>
+        <bf:identifiedBy>
+          <bf:Issn>
+            <rdf:value>0481-3626</rdf:value>
+          </bf:Issn>
+        </bf:identifiedBy>
+      </bf:Work>
+    </bf:hasSeries>
+    <bf:hasInstance rdf:resource="http://bibframe.example.org/21315752#Instance"/>
+  </bf:Work><bf:Instance rdf:about="http://bibframe.example.org/21315752#Instance">
+    <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Print"/>
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:date rdf:datatype="http://id.loc.gov/datatypes/edtf">2019</bf:date>
+        <bf:place>
+          <bf:Place rdf:about="http://id.loc.gov/vocabulary/countries/gw"/>
+        </bf:place>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:identifiedBy>
+      <bf:Isbn>
+        <rdf:value>9783897399297</rdf:value>
+        <bf:qualifier>v. 5</bf:qualifier>
+        <bf:qualifier>hardbound</bf:qualifier>
+      </bf:Isbn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Ean>
+        <rdf:value>9783897399297</rdf:value>
+      </bf:Ean>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>har190014322</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>GyWOH</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <rdfs:label>Die Urkunden des Deutschordens-Zentralarchivs in Wien :</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <rdfs:label>Die Urkunden des Deutschordens-Zentralarchivs in Wien :</rdfs:label>
+        <bflc:titleSortKey>Urkunden des Deutschordens-Zentralarchivs in Wien :</bflc:titleSortKey>
+        <bf:mainTitle>Die Urkunden des Deutschordens-Zentralarchivs in Wien</bf:mainTitle>
+        <bf:subtitle>Regesten--Teilband V. April 1597-Januar 1680</bf:subtitle>
+      </bf:Title>
+    </bf:title>
+    <bf:responsibilityStatement>nach dem Manuskript von Marian Tumler ; herausgegeben von Udo Arnold</bf:responsibilityStatement>
+    <bf:provisionActivity>
+      <bf:ProvisionActivity>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Publication"/>
+        <bf:place>
+          <bf:Place>
+            <rdfs:label>Weimar</rdfs:label>
+          </bf:Place>
+        </bf:place>
+        <bf:agent>
+          <bf:Agent>
+            <rdfs:label>VDG</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:date>2019</bf:date>
+      </bf:ProvisionActivity>
+    </bf:provisionActivity>
+    <bf:provisionActivityStatement>Weimar : VDG, [2019]</bf:provisionActivityStatement>
+    <bf:extent>
+      <bf:Extent>
+        <rdfs:label>vi, pages 1881-2354</rdfs:label>
+      </bf:Extent>
+    </bf:extent>
+    <bf:dimensions>23 cm.</bf:dimensions>
+    <bf:media>
+      <bf:Media rdf:about="http://id.loc.gov/vocabulary/mediaTypes/n">
+        <rdfs:label>unmediated</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia"/>
+        </bf:source>
+      </bf:Media>
+    </bf:media>
+    <bf:carrier>
+      <bf:Carrier rdf:about="http://id.loc.gov/vocabulary/carriers/nc">
+        <rdfs:label>volume</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier"/>
+        </bf:source>
+      </bf:Carrier>
+    </bf:carrier>
+    <bf:seriesStatement>Quellen und Studien zur Geschichte des Deutschen Ordens, 0481-3626</bf:seriesStatement>
+    <bf:seriesEnumeration>Band 60/V</bf:seriesEnumeration>
+    <bf:seriesStatement>Veröffentlichungen der Internationalen Historischen Kommission zur Erforschung des Deutschen Ordens</bf:seriesStatement>
+    <bf:seriesEnumeration>Band 11/V</bf:seriesEnumeration>
+    <bf:instanceOf rdf:resource="http://bibframe.example.org/21315752#Work"/>
+  </bf:Instance></lclocal:graph>
+  
+</rdf:Description></rdf:RDF>

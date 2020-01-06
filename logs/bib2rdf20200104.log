@@ -1,0 +1,93 @@
+------------------
+/marklogic/applications/nate/lds/lds-bf
+/marklogic/applications
+bibrecs
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs
+/marklogic/applications/marc2bibframe2
+/marklogic/applications/nate/lds/lds-bf/prep/modules
+/marklogic/applications/mlcp/bin
+4
+localhost
+8028
+id-admin
+111888-USER-admin
+id-admin
+111888-USER-admin
+rs7.loc.gov
+p7515861
+Irvkf5L[pHzy
+ID_XCC_USER_PROD=id-admin
+ID_XCC_PASS_PROD=111888-USER-admin
+echo ID_XCC_PORT=8082
+http://mlvlp04.loc.gov:8230
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs/source/unprocessed
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs/source/processed
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/processed
+------------------
+load date  = 2020-01-03
+200103=filedate
+now converting split_0000000.xml	 
+now converting split_0000001.xml	 
+now converting split_0000002.xml	 
+now converting split_0000003.xml	 
+now converting split_0000004.xml	 
+now converting split_0000005.xml	 
+now converting split_0000006.xml	 
+now converting split_0000007.xml	 
+now converting split_0000008.xml	 
+now converting split_0000009.xml	 
+now converting split_0000010.xml	 
+now converting split_0000011.xml	 
+now converting split_0000012.xml	 
+now converting split_0000013.xml	 
+now converting split_0000014.xml	 
+now converting split_0000015.xml	 
+now converting split_0000016.xml	 
+now converting split_0000017.xml	 
+now converting split_0000018.xml	 
+now converting split_0000019.xml	 
+now converting split_0000020.xml	 
+now converting split_0000021.xml	 
+now converting split_0000022.xml	 
+now converting split_0000023.xml	 
+now converting split_0000024.xml	 
+now converting split_0000025.xml	 
+now converting split_0000026.xml	 
+now converting split_0000027.xml	 
+now converting split_0000028.xml	 
+now converting split_0000029.xml	 
+now converting split_0000030.xml	 
+now converting split_0000031.xml	 
+now converting split_0000032.xml	 
+now converting split_0000033.xml	 
+now converting split_0000034.xml	 
+now converting split_0000035.xml	 
+now converting split_0000036.xml	 
+now converting split_0000037.xml	 
+now converting split_0000038.xml	 
+now converting split_0000039.xml	 
+now converting split_0000040.xml	 
+now converting split_0000041.xml	 
+now converting split_0000042.xml	 
+now converting split_0000043.xml	 
+now converting split_0000044.xml	 
+now converting split_0000045.xml	 
+now converting split_0000046.xml	 
+now converting split_0000047.xml	 
+now converting split_0000048.xml	 
+now converting split_0000049.xml	 
+now converting split_0000050.xml	 
+now converting split_0000051.xml	 
+now converting split_0000052.xml	 
+now converting split_0000053.xml	 
+now converting split_0000054.xml	 
+now converting split_0000055.xml	 
+now converting split_0000056.xml	 
+now converting split_0000057.xml	 
+now converting split_0000058.xml	 
+now converting split_0000059.xml	 
+now converting split_0000060.xml	 
+now converting split_0000061.xml	 
+finished with adds, starting deletes
+done yaz conversion of marcxml to bibframe, look for rdf in /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/source/processed/2020-01-03

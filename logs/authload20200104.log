@@ -1,0 +1,66 @@
+------------------
+/marklogic/applications/nate/lds/lds-bf
+/marklogic/applications
+auths
+/marklogic/applications/nate/lds/lds-bf/prep/auths
+/marklogic/applications/marc2bibframe2
+/marklogic/applications/nate/lds/lds-bf/prep/modules
+/marklogic/applications/mlcp/bin
+4
+localhost
+8028
+id-admin
+111888-USER-admin
+id-admin
+111888-USER-admin
+rs7.loc.gov
+p7515861
+Irvkf5L[pHzy
+ID_XCC_USER_PROD=id-admin
+ID_XCC_PASS_PROD=111888-USER-admin
+echo ID_XCC_PORT=8082
+http://mlvlp04.loc.gov:8230
+/marklogic/applications/nate/lds/lds-bf/prep/auths/source/unprocessed
+/marklogic/applications/nate/lds/lds-bf/prep/auths/source/processed
+/marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed
+/marklogic/applications/nate/lds/lds-bf/prep/auths/load/processed
+------------------
+load date  = 2020-01-03
+200103=filedate
+loading files from loads dir in rdf for: 2020-01-03
+yaz daily loads for 2020-01-03 starting:
+/marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000000.xml.rdf
+/marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000001.xml.rdf
+/marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000002.xml.rdf
+/marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000003.xml.rdf
+/marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000004.xml.rdf
+/marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000005.xml.rdf
+now running each split file separately so there are no errors:
+loading /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000000.xml.rdf
+
+ /marklogic/applications/mlcp/bin/mlcp.sh import   	    -host localhost         -port 8028         -username id-admin         -password 111888-USER-admin 		-input_file_path /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000000.xml.rdf	 		-output_uri_replace /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A,  		-output_collections /authorities/bfworks/,/resources/works/,/processing/load_bfworks/2020-01-03/,/catalog/,/lscoll/lcdb/works/,/authorities/yazbfworks/,/bibframe/hubworks/ 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update    		-input_file_type documents 		-transform_module /prep/auths/authorities-yaz2bf.xqy 		-transform_namespace http://loc.gov/ndmso/authorities-yaz-2-bibframe 		-document_type xml         -aggregate_record_element RDF         -aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns#         -thread_count 4         -mode local
+
+loading /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000001.xml.rdf
+
+ /marklogic/applications/mlcp/bin/mlcp.sh import   	    -host localhost         -port 8028         -username id-admin         -password 111888-USER-admin 		-input_file_path /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000001.xml.rdf	 		-output_uri_replace /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A,  		-output_collections /authorities/bfworks/,/resources/works/,/processing/load_bfworks/2020-01-03/,/catalog/,/lscoll/lcdb/works/,/authorities/yazbfworks/,/bibframe/hubworks/ 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update    		-input_file_type documents 		-transform_module /prep/auths/authorities-yaz2bf.xqy 		-transform_namespace http://loc.gov/ndmso/authorities-yaz-2-bibframe 		-document_type xml         -aggregate_record_element RDF         -aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns#         -thread_count 4         -mode local
+
+loading /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000002.xml.rdf
+
+ /marklogic/applications/mlcp/bin/mlcp.sh import   	    -host localhost         -port 8028         -username id-admin         -password 111888-USER-admin 		-input_file_path /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000002.xml.rdf	 		-output_uri_replace /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A,  		-output_collections /authorities/bfworks/,/resources/works/,/processing/load_bfworks/2020-01-03/,/catalog/,/lscoll/lcdb/works/,/authorities/yazbfworks/,/bibframe/hubworks/ 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update    		-input_file_type documents 		-transform_module /prep/auths/authorities-yaz2bf.xqy 		-transform_namespace http://loc.gov/ndmso/authorities-yaz-2-bibframe 		-document_type xml         -aggregate_record_element RDF         -aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns#         -thread_count 4         -mode local
+
+loading /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000003.xml.rdf
+
+ /marklogic/applications/mlcp/bin/mlcp.sh import   	    -host localhost         -port 8028         -username id-admin         -password 111888-USER-admin 		-input_file_path /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000003.xml.rdf	 		-output_uri_replace /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A,  		-output_collections /authorities/bfworks/,/resources/works/,/processing/load_bfworks/2020-01-03/,/catalog/,/lscoll/lcdb/works/,/authorities/yazbfworks/,/bibframe/hubworks/ 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update    		-input_file_type documents 		-transform_module /prep/auths/authorities-yaz2bf.xqy 		-transform_namespace http://loc.gov/ndmso/authorities-yaz-2-bibframe 		-document_type xml         -aggregate_record_element RDF         -aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns#         -thread_count 4         -mode local
+
+loading /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000004.xml.rdf
+
+ /marklogic/applications/mlcp/bin/mlcp.sh import   	    -host localhost         -port 8028         -username id-admin         -password 111888-USER-admin 		-input_file_path /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000004.xml.rdf	 		-output_uri_replace /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A,  		-output_collections /authorities/bfworks/,/resources/works/,/processing/load_bfworks/2020-01-03/,/catalog/,/lscoll/lcdb/works/,/authorities/yazbfworks/,/bibframe/hubworks/ 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update    		-input_file_type documents 		-transform_module /prep/auths/authorities-yaz2bf.xqy 		-transform_namespace http://loc.gov/ndmso/authorities-yaz-2-bibframe 		-document_type xml         -aggregate_record_element RDF         -aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns#         -thread_count 4         -mode local
+
+loading /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000005.xml.rdf
+
+ /marklogic/applications/mlcp/bin/mlcp.sh import   	    -host localhost         -port 8028         -username id-admin         -password 111888-USER-admin 		-input_file_path /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A/split_0000005.xml.rdf	 		-output_uri_replace /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/A,  		-output_collections /authorities/bfworks/,/resources/works/,/processing/load_bfworks/2020-01-03/,/catalog/,/lscoll/lcdb/works/,/authorities/yazbfworks/,/bibframe/hubworks/ 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update    		-input_file_type documents 		-transform_module /prep/auths/authorities-yaz2bf.xqy 		-transform_namespace http://loc.gov/ndmso/authorities-yaz-2-bibframe 		-document_type xml         -aggregate_record_element RDF         -aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns#         -thread_count 4         -mode local
+
+deletes for 2020-01-03 starting: /marklogic/applications/nate/lds/lds-bf/prep/auths/load/unprocessed/2020-01-03/D
+rdfxml done
+checking urls posted
+done loadrdf ingest of yazzed bibs to bf database

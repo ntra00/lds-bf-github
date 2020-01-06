@@ -1,0 +1,98 @@
+------------------
+/marklogic/applications/nate/lds/lds-bf
+/marklogic/applications
+bibrecs
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs
+/marklogic/applications/marc2bibframe2
+/marklogic/applications/nate/lds/lds-bf/prep/modules
+/marklogic/applications/mlcp/bin
+4
+localhost
+8028
+id-admin
+111888-USER-admin
+id-admin
+111888-USER-admin
+rs7.loc.gov
+p7515861
+Irvkf5L[pHzy
+ID_XCC_USER_PROD=id-admin
+ID_XCC_PASS_PROD=111888-USER-admin
+echo ID_XCC_PORT=8082
+http://mlvlp04.loc.gov:8230
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs/source/unprocessed
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs/source/processed
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/processed
+------------------
+load date  = 2020-01-03
+200103=filedate
+loading files from loads dir in rdf for: 2020-01-03
+yaz daily loads for 2020-01-03 starting:
+running each split file separately so there are no errors:
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000000.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000001.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000002.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000003.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000004.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000005.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000006.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000007.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000008.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000009.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000010.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000011.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000012.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000013.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000014.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000015.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000016.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000017.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000018.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000019.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000020.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000021.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000022.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000023.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000024.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000025.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000026.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000027.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000028.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000029.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000030.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000031.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000032.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000033.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000034.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000035.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000036.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000037.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000038.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000039.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000040.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000041.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000042.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000043.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000044.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000045.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000046.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000047.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000048.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000049.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000050.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000051.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000052.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000053.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000054.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000055.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000056.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000057.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000058.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000059.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000060.xml.rdf
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/A/split_0000061.xml.rdf
+deletes for 2020-01-03 starting: /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-03/D
+rdfxml done
+checking urls posted
+done loadrdf ingest of yazzed bibs to bf database

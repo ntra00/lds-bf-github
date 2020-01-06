@@ -1,0 +1,1996 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:mets="http://www.loc.gov/METS/" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:mxe="http://www.loc.gov/mxe" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"><rdf:Description>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11219481#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>no2019166746</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca12565287</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no2019166746">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Dalvand, Reza</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Dalvand, Reza</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aDalvand, Reza</bflc:name00MarcKey>
+            <rdfs:label>Dalvand, Reza</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11219481</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T09:50:58</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-11</bf:creationDate>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>IlMpPL</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>IlMpPL</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Brown, D. The day of your arrival, 2019: title page (Dolores Brown ; Reza Dalvand) page opposite title page (©Illustrations: Reza Dalvand, 2019) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/10962894#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>no2019014122</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca11769333</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n2019005064">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Scalise, Steve, 1965-</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Scalise, Steve, 1965-</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aScalise, Steve,$d1965-</bflc:name00MarcKey>
+            <rdfs:label>Scalise, Steve, 1965-</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/10962894#Agent400-13">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aScalise, Stephen Joseph,$d1965-</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>10962894</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T10:25:01</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-01-28</bf:creationDate>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>CaBVa</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>CaBVa</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Back in the game, 2018: title page (Steve Scalise) about the authors (Congressman Steve Scalise was elected to the US Congress in May 2008. A native of Jefferson Parish, Louisiana.) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Wikipedia, viewed January 28, 2019 (Steve Scalise. Stephen Joseph Scalise (born October 6, 1965) is the current United States House of Representatives Minority Whip and representative for Louisiana's 1st congressional district, serving since 2008.) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/2665896#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 94048587</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca03608177</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n2020000049">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Adams, Marc</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Adams, Marc</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aAdams, Marc</bflc:name00MarcKey>
+            <rdfs:label>Adams, Marc</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Last identity on undifferentiated record; reported for deletion.</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>2665896</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T11:02:07</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1994-05-19</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/aacr"/>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>NjP</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>Uk</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>ABAU-M</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>[Author of Working with plastic laminates] </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Working with plastic laminates, c1994: CIP t.p. (Marc Adams) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11188513#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 2019060197</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n2019060197">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Househ, Mowafa S.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Househ, Mowafa S.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aHouseh, Mowafa S.</bflc:name00MarcKey>
+            <rdfs:label>Househ, Mowafa S.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11188513</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T11:27:49</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-07</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Health informatics vision, 2019: t.p. (Mowafa S. Househ, Information and Computing Technology Division, College of Science and Engineering, Hamad Bin Khalifa University (HBKU), Doha, Qatar) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11256653#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 2019074487</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n2018061614">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Kent, Leland</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Kent, Leland</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aKent, Leland</bflc:name00MarcKey>
+            <rdfs:label>Kent, Leland</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+    </bf:language>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11256653</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T11:28:43</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-31</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Abandoned North Florida, 2019: title page (Leland Kent) page 4 of cover (photographer) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Arcadia publishing website, December 31, 2019: Abandoned North Florida&gt;Author (ELAND KENT grew up in Birmingham, Alabama; bachelor's degree, University of Alabama at Birmingham; later became a self-taught photographer; created a blog, Abandoned Southeast, in 2016 to document and share the urban ruins he has explored; urrently lives in Florida) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/3240774#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>no 98107986</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca04813069</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>no 98107986</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no98107986">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Stoessel, Ollie</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Stoessel, Ollie</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>10010$aStoessel, Ollie</bflc:name00MarcKey>
+            <rdfs:label>Stoessel, Ollie</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>3240774</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T11:37:51</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1998-09-11</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/aacr"/>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>MoSW-Mu</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>MoSW-Mu</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Stoessel, O. St. Louis Centennial march and two step, c1909: t.p. (Ollie Stoessel) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/6966940#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>no2006099016</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca07054345</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n80098505">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Oswatitsch, K.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Oswatitsch, K.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aOswatitsch, K.</bflc:name00MarcKey>
+            <rdfs:label>Oswatitsch, K.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Duplicate authority, reported to LC for deletion November 26, 2019 in favor of n  80098505, Oswatitsch, Klaus.</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>6966940</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T14:34:50</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-08-23</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/aacr"/>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>FU</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>FU</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>MnU</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Theoretical analysis of stationary potential flows and boundary layers at high speed, 1948: t.p. (K. Oswatitsch, National Advisory Committee for Aeronautics, Washington, D.C.) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11149551#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/serl"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>ns2019002174</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>skya12049872</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>CaEvSKY</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca12384412</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <rdfs:label>Colección Ciencias sociales (Buenos Aires, Argentina)</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <bflc:title30MatchKey>Colección Ciencias sociales (Buenos Aires, Argentina)</bflc:title30MatchKey>
+        <bflc:title30MarcKey>130 0$aColección Ciencias sociales (Buenos Aires, Argentina)</bflc:title30MarcKey>
+        <rdfs:label>Colección Ciencias sociales (Buenos Aires, Argentina)</rdfs:label>
+        <bflc:titleSortKey>Colección Ciencias sociales (Buenos Aires, Argentina)</bflc:titleSortKey>
+        <bf:mainTitle>Colección Ciencias sociales (Buenos Aires, Argentina)</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:originPlace>
+      <bf:Place rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n79079054">
+        <rdfs:label>Buenos Aires (Argentina)</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+        </bf:source>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/spa"/>
+    </bf:language>
+    <bf:genreForm>
+      <bf:GenreForm rdf:about="http://mlvlp04.loc.gov:8080/authorities/subjects/sh85120249">
+        <rdfs:label>Series (Publications)</rdfs:label>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>lcsh</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:GenreForm>
+    </bf:genreForm>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Unnumbered</rdfs:label>
+      </bf:Note>
+    </bf:note>
+    <bf:title>
+      <bf:Title>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/VariantTitle"/>
+        <bf:mainTitle>Ciencias sociales (Buenos Aires, Argentina) </bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bflc:seriesTreatment>
+      <bflc:SeriesProvider>
+        <rdfs:label>Buenos Aires; Espacio Editorial</rdfs:label>
+      </bflc:SeriesProvider>
+    </bflc:seriesTreatment>
+    <bflc:seriesTreatment>
+      <bflc:SeriesAnalysis>
+        <rdfs:label>Full </rdfs:label>
+        <bflc:applicableInstitution>
+          <bf:Agent>
+            <bf:code>MX-SlUA</bf:code>
+          </bf:Agent>
+        </bflc:applicableInstitution>
+      </bflc:SeriesAnalysis>
+    </bflc:seriesTreatment>
+    <bflc:seriesTreatment>
+      <bflc:SeriesTracing>
+        <rdfs:label>Traced </rdfs:label>
+        <bflc:applicableInstitution>
+          <bf:Agent>
+            <bf:code>DPCC</bf:code>
+          </bf:Agent>
+        </bflc:applicableInstitution>
+        <bflc:applicableInstitution>
+          <bf:Agent>
+            <bf:code>MX-SlUA</bf:code>
+          </bf:Agent>
+        </bflc:applicableInstitution>
+      </bflc:SeriesTracing>
+    </bflc:seriesTreatment>
+    <bflc:seriesTreatment>
+      <bflc:SeriesClassification>
+        <rdfs:label>Separately </rdfs:label>
+        <bflc:applicableInstitution>
+          <bf:Agent>
+            <bf:code>MX-SlUA</bf:code>
+          </bf:Agent>
+        </bflc:applicableInstitution>
+      </bflc:SeriesClassification>
+    </bflc:seriesTreatment>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Reported to LC for deletion September 20, 2019, in favor of n  94059013, Colección Ciencias sociales (Editorial Espacio)</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11149551</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T14:39:03</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-08-23</bf:creationDate>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>MX-SlUA</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>MX-SlUA</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>MnU</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Guía para la redacción de un proyecto de investigación, 2017: series title page (Colección Ciencias Sociales) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/1468248#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 82043949</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca00740943</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n2006089163">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Gidmark, Jill B.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Gidmark, Jill B.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aGidmark, Jill B.</bflc:name00MarcKey>
+            <rdfs:label>Gidmark, Jill B.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Reported to LC for deletion November 4, 2019, in favor of n 2006089163 (Barnum, Jill, 1947-2006)</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>1468248</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T14:44:20</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1982-04-01</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/aacr"/>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>MnU</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Her Melville sea dictionary, c1982: CIP t.p. (Jill B. Gidmark) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Encyclopedia of American literature of the sea and Great Lakes, 2000: CIP t.p. (Jill B. Gidmark) data sheet (b. Nov. 22, 1947) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/4037228#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>no 93029283</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca03492572</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no93029275">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Burton, Beatrice, 1894-1983</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Burton, Beatrice, 1894-1983</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aBurton, Beatrice,$d1894-1983</bflc:name00MarcKey>
+            <rdfs:label>Burton, Beatrice, 1894-1983</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/4037228#Agent400-14">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aMorgan, Beatrice Burton,$d1894-1983</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>4037228</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T14:55:04</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1993-09-30</bf:creationDate>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OU</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OU</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>OU</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>The flapper's daughter, 1933: t.p. (Beatrice Burton) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Sweet talk, 1934: title page (Beatrice Burton Morgan) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>OCLC database, 8-12-93 (hdg.: Morgan, Beatrice (Burton) Mrs., 1894- ; Morgan, Beatrice Burton, 1894- ; usage: Beatrice Burton) (hdg.: Burton, Beatrice, b. 1894) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>NUC pre-1956 (hdg.: Morgan, Mrs. Beatrice (Burton), 1894- ; usage: Beatrice Burton; Beatrice Burton Morgan; note under each record: full name: Mrs. Beatrice Payne (Burton) Morgan) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Wikidata via Wikipedia, September 16, 2019 (VIAF identifier: 66043759; instance of: human; place of birth: Cleveland; place of death: Naples; date of death: +1983-04-13T00:00:00Z; date of birth: +1894-05-13T00:00:00Z; sex or gender: female; given name: Beatrice; country of citizenship: United States of America; FAST-ID: 1514491; Commons category: Beatrice Burton; LCAuth identifier: no93029283; occupation: novelist, writer; SNAC Ark ID (P3430): w6bc61pc; ISNI (P213): 0000000039236521; surname: Burton; description/label: Ameerika Ühendriikide kirjanik, American writer, Amerikaans romanschrijfster , Beatrice Burton, écrivaine américaine, escriptora estatunidenca, escritora estadounidense, scriitoare americană, scrivor american, shkrimtare amerikane, usona verkisto, yhdysvaltalainen kirjailija, американська письменниця, סופרת אמריקאית, كاتبة أمريكية) http://www.wikidata.org/entity/Q4877134 </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11081286#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>no2019084397</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca12145788</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/11081286#Agent110-9">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <bflc:name10MarcKey>1102 $aOperational Research Society</bflc:name10MarcKey>
+            <bflc:primaryContributorName10MatchKey/>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/11081286#Agent410-10">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <bflc:name10MarcKey>4102 $aOR Society</bflc:name10MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/11081286#Agent410-11">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <bflc:name10MarcKey>4102 $aOR Club</bflc:name10MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Reported to LC for deletion November 25, 2019, in favor of nb2006015464 (Operational Research Club (Great Britain)) and n  85076053 (Operational Research Society (Great Britain))</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11081286</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T15:28:02</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-06-07</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlcs"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlcs"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>MnU</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Journal of business analytics website, viewed June 7, 2019: homepage (The Journal of Business Analytics is an official journal of the Operational Research Society) https://www.tandfonline.com/action/journalInformation?show=aimsScope&amp;journalCode=tjba20 </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Operational Research Society website, viewed June 7, 2019: Who We Are page (History of The OR Society...The OR Club, the world's first body set up to cater for the operational research profession, was duly inaugurated in April 1948 with an initial membership of fifty.) https://www.theorsociety.com/who-we-are/history-of-the-or-society/ </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/2888371#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 83121296</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca00957401</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>skya2045764</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>CaEvSKY</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n83121296">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Hernández, Agustín</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Hernández, Agustín</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aHernández, Agustín</bflc:name00MarcKey>
+            <rdfs:label>Hernández, Agustín</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/spa"/>
+    </bf:language>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/2888371#Agent400-12">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aHernández Hernández, Agustín</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>2888371</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T16:42:51</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1983-05-24</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>MX-SlUA</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Noelle, L. Agustín Hernández, arquitectura y pensamiento, 1982 (subj.) t.p. (Agustín Hernández) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Fernando López Carmona arquitecto, 2010: t.p. (Agustín Hernández Hernández) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Proyecto de corrección geométrica: catedral y sagrario metropolitanos, 2017: title page (Agustín Hernández Hernández) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11135236#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 2019047082</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no2019115571">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Davis, Taylor, 1959-</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Davis, Taylor, 1959-</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aDavis, Taylor,$d1959-</bflc:name00MarcKey>
+            <rdfs:label>Davis, Taylor, 1959-</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11135236</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T19:17:52</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-08-07</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/aacr"/>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Davis, Cherubini, 2009. </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Wikipedia, August 7, 2019 (Taylor Davis; b. 1959, Palm Springs, California; residence: Boston Massachusetts; American artist and teacher, best known for her innovative wood sculptures; Davis, Cherubini, in contention) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11059178#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>no2019071759</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca12071860</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no2019071759">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Moresi, Gates Michele</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Moresi, Gates Michele</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aMoresi, Gates Michele</bflc:name00MarcKey>
+            <rdfs:label>Moresi, Gates Michele</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:originPlace>
+      <bf:Place rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n78095330">
+        <rdfs:label>United States</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+        </bf:source>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+    </bf:language>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11059178</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T19:25:23</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-14</bf:creationDate>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>NN</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>NN</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Pictures with purpose, 2019: title page (Gates Michele Moresi) p. 3 of cover (Supervisory Museum Curator of Collections at the National Museum of African American History and Culture) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/4002405#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>nr 91044223</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca03075590</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n83001094">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Frankensteinová, Hana</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Frankensteinová, Hana</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aFrankensteinová, Hana</bflc:name00MarcKey>
+            <rdfs:label>Frankensteinová, Hana</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Reported for deletion in favor of n  83001094</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>4002405</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T21:04:33</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1991-12-11</bf:creationDate>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>NjP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>NjP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>NNFr</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Her Max Švabinsky, 1949-: díl 3, t.p. (Hana Frankensteinová) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/10051331#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>nb2016000456</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca10360179</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n85238466">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Kondakov, Nykodym Pavlovych, 1844-1925</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Kondakov, Nykodym Pavlovych, 1844-1925</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aKondakov, Nykodym Pavlovych,$d1844-1925</bflc:name00MarcKey>
+            <rdfs:label>Kondakov, Nykodym Pavlovych, 1844-1925</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:originPlace>
+      <bf:Place rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n81017756">
+        <rdfs:label>Ukraine</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+        </bf:source>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/ukr"/>
+    </bf:language>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/10051331#Agent400-16">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aKondakov, Nikodim Pavlovich</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Reported for deletion in favor of n  85238466</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>10051331</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T21:13:32</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-01-08</bf:creationDate>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>Uk</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>Uk</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>NNFr</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Sofii︠a︡ Kyïvsʹka, 2011- (volume 4): t.p. (Kondakov Nykodym Pavlovych (1844-1925)) p.5 (Ukrainian scientist) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/6822949#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>no2006038345</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca06912852</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no2006038345">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Keene, Paul, 1920-</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Keene, Paul, 1920-</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aKeene, Paul,$d1920-</bflc:name00MarcKey>
+            <rdfs:label>Keene, Paul, 1920-</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Duplicate record: reported for deletion in favor of nr2006004966</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>6822949</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T21:33:01</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2006-04-12</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/aacr"/>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>ICU</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>ICU</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DNGA</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Paul Keene, 2005: t.p. (Paul Keene) p. 74 (b. 1920, Philadelphia, PA; artist) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/10401515#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>nb2017005988</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>009869804</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>Uk</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/10401515#Agent110-8">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <bflc:name10MarcKey>1102 $aCulturespaces (Firm)</bflc:name10MarcKey>
+            <bflc:primaryContributorName10MatchKey/>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:originPlace>
+      <bf:Place rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n79006404">
+        <rdfs:label>France</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+        </bf:source>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/fre"/>
+    </bf:language>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>10401515</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T21:36:03</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-15</bf:creationDate>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>Uk</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>Uk</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Florence, 2015: t.p. (Culturespaces, an art foundation) verso (based in France) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/2449038#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 84200237</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca01297842</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/2449038#Agent110-8">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <bflc:name10MarcKey>1102 $aAnežský klášter (Museum)</bflc:name10MarcKey>
+            <bflc:primaryContributorName10MatchKey/>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/2449038#Agent410-9">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <bflc:name10MarcKey>4102 $aAnežky klášter (Museum)</bflc:name10MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/2449038#Agent410-10">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <bflc:name10MarcKey>4102 $aKlášter blahoslavené Anežky (Museum)</bflc:name10MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Duplicate record; reported for deletion in favor of no 99026196</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>2449038</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-02T21:40:06</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1985-02-06</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/aacr"/>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DNGA</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Kohl, L. Ludvík Kohl, 1746-1821, 1984: t.p. (Anežský klášter) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Pražský informátor, 1976: p. 95 (under Kláštery: blahoslavené Anežky) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+</rdf:Description></rdf:RDF>

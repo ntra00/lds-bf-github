@@ -1,7 +1,7 @@
 #!/bin/bash
 # curl todays adds
-
-source ../config bibrecs
+source /marklogic/id/nate/lds/lds-bf/prep/config bibrecs
+#source ../config bibrecs
 
 
 CURDIR=`echo $PWD`
@@ -29,24 +29,24 @@ if [ -d $TODAY ]; then
 
 pwd
 
-	rm manifest/bibsload*
-	grep -n '"001"' *| cut -d">" -f2|cut -d "<" -f1 > manifest/bibsload.manifest.txt
-	if [ -f manifest/bibsload.manifest.txt ]; then
+	rm $CURDIR/manifest/bibsload*
+	grep -n '"001"' *| cut -d">" -f2|cut -d "<" -f1 > $CURDIR/manifest/bibsload.manifest.txt
+	if [ -f $CURDIR/manifest/bibsload.manifest.txt ]; then
 
 		while read bibid
 		do
 			docid=$(printf '%09d' $bibid)
 			url=http://mlvlp04.loc.gov:8230/resources/instances/c${docid}0001.rdf
-			echo $docid: $url >> manifest/bibsload.curlsraw.txt
-			curl -I $url >> manifest/bibsload.curlsraw.txt 
+			echo $docid: $url >> $CURDIR/manifest/bibsload.curlsraw.txt
+			curl -I $url >> $CURDIR/manifest/bibsload.curlsraw.txt 
 
-		done < manifest/$TODAY.bibsload.manifest.txt
+		done < $CURDIR/manifest/$TODAY.bibsload.manifest.txt
 
-		grep -n "404 Item" manifest/bibsload.curlsraw.txt > manifest/bibsload.curls404.txt
+		grep -n "404 Item" $CURDIR/manifest/bibsload.curlsraw.txt > $CURDIR/manifest/bibsload.curls404.txt
 		echo " curls404 has today's 404s"
-		cat  manifest/bibsload.curls404.txt
+		cat  $CURDIR/manifest/bibsload.curls404.txt
 		
-		if [ -f manifest/bibsload.curls404.txt ]; then
+		if [ -f $CURDIR/manifest/bibsload.curls404.txt ]; then
 			while read x
 			do
 			   	echo $x
@@ -55,15 +55,15 @@ pwd
 			   	echo "$line404 | $curlline"
 			#   	echo sed the id and the curl output to curls.tmp
 
-			    	sed -n ${curlline},${line404}p <   manifest/bibsload.curlsraw.txt > manifest/bibsload.curls.tmp
-				cat  /manifest/bibsload.curls.tmp >> manifest/bibsload.curls.txt
+			    	sed -n ${curlline},${line404}p <   $CURDIR/manifest/bibsload.curlsraw.txt > $CURDIR/manifest/bibsload.curls.tmp
+				cat  $CURDIR/manifest/bibsload.curls.tmp >> $CURDIR/manifest/bibsload.curls.txt
 
 #			 	echo "append the tmp line to the txt line; one line per 404 bib"
 
-			done < manifest/bibsload.curls404.txt
+			done < $CURDIR/manifest/bibsload.curls404.txt
 
 			cd $CURDIR
-			cat  manifest/bibsload.curls.txt
+			cat manifest/bibsload.curls.txt
 			cat manifest/bibsload.curls.txt| cut -d":" -f2-4 |grep -v Item >>  manifest/bibsload.curls.notfound.txt
 
 			mv manifest/bibsload.curls.notfound.txt  manifest/$TODAY.bibsload.curls.notfound.txt
@@ -88,7 +88,7 @@ echo "no data A dir for $TODAY"
 while read bibid;
 do
 cat /var/opt/MarkLogic/Logs/Error.log |grep $bibid
-done <  manifest/$TODAY.bibsload.curls.notfound.txt
+done <  $CURDIR/manifest/$TODAY.bibsload.curls.notfound.txt
 
 fi
 

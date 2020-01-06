@@ -1,0 +1,37 @@
+------------------
+/marklogic/applications/nate/lds/lds-bf
+/marklogic/applications
+bibrecs
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs
+/marklogic/applications/marc2bibframe2
+/marklogic/applications/nate/lds/lds-bf/prep/modules
+/marklogic/applications/mlcp/bin
+4
+localhost
+8028
+id-admin
+111888-USER-admin
+id-admin
+111888-USER-admin
+rs7.loc.gov
+p7515861
+Irvkf5L[pHzy
+ID_XCC_USER_PROD=id-admin
+ID_XCC_PASS_PROD=111888-USER-admin
+echo ID_XCC_PORT=8082
+http://mlvlp04.loc.gov:8230
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs/source/unprocessed
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs/source/processed
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed
+/marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/processed
+------------------
+load date  = 2020-01-05
+200105=filedate
+loading files from loads dir in rdf for: 2020-01-05
+yaz daily loads for 2020-01-05 starting:
+running each split file separately so there are no errors:
+loading /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-05/A/split_0000000.xml.rdf
+deletes for 2020-01-05 starting: /marklogic/applications/nate/lds/lds-bf/prep/bibrecs/load/unprocessed/2020-01-05/D
+rdfxml done
+checking urls posted
+done loadrdf ingest of yazzed bibs to bf database

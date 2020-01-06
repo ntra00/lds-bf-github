@@ -1,0 +1,55 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <leader>00804dz  a2200193n  4500</leader>
+  <controlfield tag="001">4438615</controlfield>
+  <controlfield tag="005">20200105212651.0</controlfield>
+  <controlfield tag="008">891128n| azannaab           |a aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n  89667492 </subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(DLC)n  89667492</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="d">DLC</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="f">1895</subfield>
+    <subfield code="g">1970</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Blocklinger, Peggy O&apos;More,</subfield>
+    <subfield code="d">1895-1970</subfield>
+  </datafield>
+  <datafield tag="500" ind1="1" ind2=" ">
+    <subfield code="w">r</subfield>
+    <subfield code="i">Real identity:</subfield>
+    <subfield code="a">O&apos;More, Peggy,</subfield>
+    <subfield code="d">1895-1970</subfield>
+  </datafield>
+  <datafield tag="500" ind1="1" ind2=" ">
+    <subfield code="w">nnnc</subfield>
+    <subfield code="a">Bowman, Jeanne,</subfield>
+    <subfield code="d">1895-</subfield>
+  </datafield>
+  <datafield tag="663" ind1=" " ind2=" ">
+    <subfield code="a">Works by this author are entered under the name used in the item.  For a listing of other names used by this author, search also under</subfield>
+    <subfield code="b">Bowman, Jeanne, 1895-</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Old catalog hdg.: O&apos;More, Peggy, 1897-</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Contemp. auth., c1969</subfield>
+    <subfield code="b">(Blocklinger, Peggy O&apos;More, 1895-; Peggy O&apos;More; pseuds.: Betty Blocklinger, Jeanne Bowman)</subfield>
+  </datafield>
+  <datafield tag="953" ind1=" " ind2=" ">
+    <subfield code="a">br00</subfield>
+  </datafield>
+</record>
+</collection>

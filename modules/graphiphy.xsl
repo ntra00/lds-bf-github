@@ -33,13 +33,27 @@
 		</lclocal:graph>
 		<!-- <xsl:apply-templates select="*[not(bf:Instance[bf:instanceOf/@rdf:resource=$workid])]"/> -->
 	</xsl:template>
+	<!-- auths -->
+	<xsl:template match="bf:Work[contains(@rdf:about,'id.loc.gov/resources/works') and '#Work' = substring(@rdf:about,string-length(@rdf:about)- 4)]" mode="copy">
+		<xsl:variable name="workid">
+			<xsl:value-of select="@rdf:about"/>
+		</xsl:variable>
+		<lclocal:graph>
+			<xsl:copy>
+				<xsl:apply-templates select="@* | node()|text()" mode="copy"/>
+			</xsl:copy>
+			<xsl:copy-of select="following-sibling::bf:Instance[bf:instanceOf/@rdf:resource=$workid]"/>
+		</lclocal:graph>
+		<!-- <xsl:apply-templates select="*[not(bf:Instance[bf:instanceOf/@rdf:resource=$workid])]"/> -->
+	</xsl:template>
 	<xsl:template match=" @* | node()" mode="copy">
 		<xsl:copy>
 			<xsl:apply-templates select="@* | node()|text()" mode="copy"/>
 		</xsl:copy>
 	</xsl:template>
-</xsl:stylesheet><!-- Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+</xsl:stylesheet>
+<!-- Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
 <metaInformation>
-<scenarios ><scenario default="yes" name="Scenario1" userelativepaths="yes" externalpreview="no" url="split_0000000.xml.rdf" htmlbaseurl="" outputurl="" processortype="internal" useresolver="yes" profilemode="0" profiledepth="" profilelength="" urlprofilexml="" commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" validateoutput="no" validator="internal" customvalidator=""/></scenarios><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+<scenarios ><scenario default="yes" name="Scenario1" userelativepaths="yes" externalpreview="no" url="file:///z:/my documents/split_0000001.xml.tmp.3.rdf" htmlbaseurl="" outputurl="" processortype="internal" useresolver="yes" profilemode="0" profiledepth="" profilelength="" urlprofilexml="" commandline="" additionalpath="" additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" validateoutput="no" validator="internal" customvalidator=""/></scenarios><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
 </metaInformation>
 -->

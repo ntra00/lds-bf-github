@@ -1,0 +1,796 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <leader>00462dz  a2200133n  4500</leader>
+  <controlfield tag="001">11219481</controlfield>
+  <controlfield tag="005">20200102095058.0</controlfield>
+  <controlfield tag="008">191111n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2019166746</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12565287</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">IlMpPL</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">IlMpPL</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Dalvand, Reza</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Illustrators</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Brown, D. The day of your arrival, 2019:</subfield>
+    <subfield code="b">title page (Dolores Brown ; Reza Dalvand) page opposite title page (©Illustrations: Reza Dalvand, 2019)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00955dz  a2200193n  4500</leader>
+  <controlfield tag="001">10962894</controlfield>
+  <controlfield tag="005">20200102102501.0</controlfield>
+  <controlfield tag="008">190128n| azannaabn          |a aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2019014122</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca11769333</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">CaBVa</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">CaBVa</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="f">1965-10-06</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Scalise, Steve,</subfield>
+    <subfield code="d">1965-</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="a">Jefferson Parish (La.)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="373" ind1=" " ind2=" ">
+    <subfield code="a">Republican Party (U.S. : 1854- )</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Legislators</subfield>
+    <subfield code="2">lcsh</subfield>
+    <subfield code="s">2008</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Scalise, Stephen Joseph,</subfield>
+    <subfield code="d">1965-</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Back in the game, 2018:</subfield>
+    <subfield code="b">title page (Steve Scalise) about the authors (Congressman Steve Scalise was elected to the US Congress in May 2008. A native of Jefferson Parish, Louisiana.)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Wikipedia, viewed January 28, 2019</subfield>
+    <subfield code="b">(Steve Scalise. Stephen Joseph Scalise (born October 6, 1965) is the current United States House of Representatives Minority Whip and representative for Louisiana&apos;s 1st congressional district, serving since 2008.)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00511dz  a2200157n  4500</leader>
+  <controlfield tag="001">2665896</controlfield>
+  <controlfield tag="005">20200102110207.0</controlfield>
+  <controlfield tag="008">940519n| acannaabn          |n aba      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n  94048587 </subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca03608177</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="d">NjP</subfield>
+    <subfield code="d">Uk</subfield>
+    <subfield code="d">DLC</subfield>
+    <subfield code="d">ABAU-M</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Adams, Marc</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Last identity on undifferentiated record; reported for deletion.</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">[Author of Working with plastic laminates]</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Working with plastic laminates, c1994:</subfield>
+    <subfield code="b">CIP t.p. (Marc Adams)</subfield>
+  </datafield>
+  <datafield tag="953" ind1=" " ind2=" ">
+    <subfield code="a">jg02</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00491dz  a2200121n  4500</leader>
+  <controlfield tag="001">11188513</controlfield>
+  <controlfield tag="005">20200102112749.0</controlfield>
+  <controlfield tag="008">191007n| azannaabn          |n aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2019060197</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Househ, Mowafa S.</subfield>
+  </datafield>
+  <datafield tag="373" ind1=" " ind2=" ">
+    <subfield code="a">Jāmiʻat Ḥamad ibn Khalīfah</subfield>
+    <subfield code="2">lcnaf</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Health informatics vision, 2019:</subfield>
+    <subfield code="b">t.p. (Mowafa S. Househ, Information and Computing Technology Division, College of Science and Engineering, Hamad Bin Khalifa University (HBKU), Doha, Qatar)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00714dz  a2200133n  4500</leader>
+  <controlfield tag="001">11256653</controlfield>
+  <controlfield tag="005">20200102112843.0</controlfield>
+  <controlfield tag="008">191231n| azannaabn          |n aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2019074487</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="d">DLC</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Kent, Leland</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Abandoned North Florida, 2019:</subfield>
+    <subfield code="b">title page (Leland Kent) page 4 of cover (photographer)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Arcadia publishing website, December 31, 2019:</subfield>
+    <subfield code="b">Abandoned North Florida&gt;Author (ELAND KENT grew up in Birmingham, Alabama; bachelor&apos;s degree, University of Alabama at Birmingham; later became a self-taught photographer; created a blog, Abandoned Southeast, in 2016 to document and share the urban ruins he has explored; urrently lives in Florida)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00439dz  a2200157n  4500</leader>
+  <controlfield tag="001">3240774</controlfield>
+  <controlfield tag="005">20200102113751.0</controlfield>
+  <controlfield tag="008">980911n| acannaab           |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no 98107986 </subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca04813069 </subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(DLC)no 98107986</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">MoSW-Mu</subfield>
+    <subfield code="c">MoSW-Mu</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2="0">
+    <subfield code="a">Stoessel, Ollie</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Stoessel, O. St. Louis Centennial march and two step, c1909:</subfield>
+    <subfield code="b">t.p. (Ollie Stoessel)</subfield>
+  </datafield>
+  <datafield tag="953" ind1=" " ind2=" ">
+    <subfield code="a">xx00</subfield>
+  </datafield>
+  <datafield tag="985" ind1=" " ind2=" ">
+    <subfield code="c">OCLC</subfield>
+    <subfield code="e">LSPC</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00576dz  a2200133n  4500</leader>
+  <controlfield tag="001">6966940</controlfield>
+  <controlfield tag="005">20200102143450.0</controlfield>
+  <controlfield tag="008">060823n| acannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2006099016</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca07054345</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">FU</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="c">FU</subfield>
+    <subfield code="d">MnU</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Oswatitsch, K.</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Duplicate authority, reported to LC for deletion November 26, 2019 in favor of n  80098505, Oswatitsch, Klaus.</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Theoretical analysis of stationary potential flows and boundary layers at high speed, 1948:</subfield>
+    <subfield code="b">t.p. (K. Oswatitsch, National Advisory Committee for Aeronautics, Washington, D.C.)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00957dz  a2200253n  4500</leader>
+  <controlfield tag="001">11149551</controlfield>
+  <controlfield tag="005">20200102143903.0</controlfield>
+  <controlfield tag="008">190823n| azaabaaan          |a ana     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">ns2019002174</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(CaEvSKY)skya12049872</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12384412</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">MX-SlUA</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">MX-SlUA</subfield>
+    <subfield code="d">MnU</subfield>
+  </datafield>
+  <datafield tag="130" ind1=" " ind2="0">
+    <subfield code="a">Colección Ciencias sociales (Buenos Aires, Argentina)</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="g">Buenos Aires (Argentina)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">spa</subfield>
+  </datafield>
+  <datafield tag="380" ind1=" " ind2=" ">
+    <subfield code="a">Series (Publications)</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="381" ind1=" " ind2=" ">
+    <subfield code="a">Unnumbered</subfield>
+  </datafield>
+  <datafield tag="430" ind1=" " ind2="0">
+    <subfield code="a">Ciencias sociales (Buenos Aires, Argentina)</subfield>
+  </datafield>
+  <datafield tag="643" ind1=" " ind2=" ">
+    <subfield code="a">Buenos Aires</subfield>
+    <subfield code="b">Espacio Editorial</subfield>
+  </datafield>
+  <datafield tag="644" ind1=" " ind2=" ">
+    <subfield code="a">f</subfield>
+    <subfield code="5">MX-SlUA</subfield>
+  </datafield>
+  <datafield tag="645" ind1=" " ind2=" ">
+    <subfield code="a">t</subfield>
+    <subfield code="5">DPCC</subfield>
+    <subfield code="5">MX-SlUA</subfield>
+  </datafield>
+  <datafield tag="646" ind1=" " ind2=" ">
+    <subfield code="a">s</subfield>
+    <subfield code="5">MX-SlUA</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Reported to LC for deletion September 20, 2019, in favor of n  94059013, Colección Ciencias sociales (Editorial Espacio)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Guía para la redacción de un proyecto de investigación, 2017:</subfield>
+    <subfield code="b">series title page (Colección Ciencias Sociales)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00629dz  a2200157n  4500</leader>
+  <controlfield tag="001">1468248</controlfield>
+  <controlfield tag="005">20200102144420.0</controlfield>
+  <controlfield tag="008">820401n| acannaabn          |n aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n  82043949 </subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca00740943</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="d">DLC</subfield>
+    <subfield code="d">MnU</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Gidmark, Jill B.</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Reported to LC for deletion November 4, 2019, in favor of n 2006089163 (Barnum, Jill, 1947-2006)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Her Melville sea dictionary, c1982:</subfield>
+    <subfield code="b">CIP t.p. (Jill B. Gidmark)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Encyclopedia of American literature of the sea and Great Lakes, 2000:</subfield>
+    <subfield code="b">CIP t.p. (Jill B. Gidmark) data sheet (b. Nov. 22, 1947)</subfield>
+  </datafield>
+  <datafield tag="953" ind1=" " ind2=" ">
+    <subfield code="a">ba07</subfield>
+    <subfield code="b">lh02</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>02064dz  a2200265n  4500</leader>
+  <controlfield tag="001">4037228</controlfield>
+  <controlfield tag="005">20200102145504.0</controlfield>
+  <controlfield tag="008">930930n| azannaabn          |a aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no 93029283 </subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca03492572</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">OU</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">OU</subfield>
+    <subfield code="d">OU</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="f">1894-05-13</subfield>
+    <subfield code="g">1983-04-13</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="053" ind1=" " ind2="0">
+    <subfield code="a">PS3525.O643</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Burton, Beatrice,</subfield>
+    <subfield code="d">1894-1983</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="a">Cleveland (Ohio)</subfield>
+    <subfield code="b">Naples (Fla.)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Novelists</subfield>
+    <subfield code="a">Dramatists</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Females</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Morgan, Beatrice Burton,</subfield>
+    <subfield code="d">1894-1983</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">The flapper&apos;s daughter, 1933:</subfield>
+    <subfield code="b">t.p. (Beatrice Burton)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Sweet talk, 1934:</subfield>
+    <subfield code="b">title page (Beatrice Burton Morgan)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">OCLC database, 8-12-93</subfield>
+    <subfield code="b">(hdg.: Morgan, Beatrice (Burton) Mrs., 1894- ; Morgan, Beatrice Burton, 1894- ; usage: Beatrice Burton) (hdg.: Burton, Beatrice, b. 1894)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">NUC pre-1956</subfield>
+    <subfield code="b">(hdg.: Morgan, Mrs. Beatrice (Burton), 1894- ; usage: Beatrice Burton; Beatrice Burton Morgan; note under each record: full name: Mrs. Beatrice Payne (Burton) Morgan)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Wikidata via Wikipedia, September 16, 2019</subfield>
+    <subfield code="b">(VIAF identifier: 66043759; instance of: human; place of birth: Cleveland; place of death: Naples; date of death: +1983-04-13T00:00:00Z; date of birth: +1894-05-13T00:00:00Z; sex or gender: female; given name: Beatrice; country of citizenship: United States of America; FAST-ID: 1514491; Commons category: Beatrice Burton; LCAuth identifier: no93029283; occupation: novelist, writer; SNAC Ark ID (P3430): w6bc61pc; ISNI (P213): 0000000039236521; surname: Burton; description/label: Ameerika Ühendriikide kirjanik, American writer, Amerikaans romanschrijfster , Beatrice Burton, écrivaine américaine, escriptora estatunidenca, escritora estadounidense, scriitoare americană, scrivor american, shkrimtare amerikane, usona verkisto, yhdysvaltalainen kirjailija, американська письменниця, סופרת אמריקאית, كاتبة أمريكية)</subfield>
+    <subfield code="u">http://www.wikidata.org/entity/Q4877134</subfield>
+  </datafield>
+  <datafield tag="953" ind1=" " ind2=" ">
+    <subfield code="a">xx00</subfield>
+  </datafield>
+  <datafield tag="985" ind1=" " ind2=" ">
+    <subfield code="c">OCLC</subfield>
+    <subfield code="e">LSPC</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>01180dz  a2200181n  4500</leader>
+  <controlfield tag="001">11081286</controlfield>
+  <controlfield tag="005">20200102152802.0</controlfield>
+  <controlfield tag="008">190607n| azannaabn          |a ana      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2019084397</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12145788</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC-S</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC-S</subfield>
+    <subfield code="d">MnU</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="s">1948</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Operational Research Society</subfield>
+  </datafield>
+  <datafield tag="410" ind1="2" ind2=" ">
+    <subfield code="a">OR Society</subfield>
+  </datafield>
+  <datafield tag="410" ind1="2" ind2=" ">
+    <subfield code="a">OR Club</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Reported to LC for deletion November 25, 2019, in favor of nb2006015464 (Operational Research Club (Great Britain)) and n  85076053 (Operational Research Society (Great Britain))</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Journal of business analytics website, viewed June 7, 2019:</subfield>
+    <subfield code="b">homepage (The Journal of Business Analytics is an official journal of the Operational Research Society)</subfield>
+    <subfield code="u">https://www.tandfonline.com/action/journalInformation?show=aimsScope&amp;journalCode=tjba20</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Operational Research Society website, viewed June 7, 2019:</subfield>
+    <subfield code="b">Who We Are page (History of The OR Society...The OR Club, the world&apos;s first body set up to cater for the operational research profession, was duly inaugurated in April 1948 with an initial membership of fifty.)</subfield>
+    <subfield code="u">https://www.theorsociety.com/who-we-are/history-of-the-or-society/</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00818dz  a2200205n  4500</leader>
+  <controlfield tag="001">2888371</controlfield>
+  <controlfield tag="005">20200102164251.0</controlfield>
+  <controlfield tag="008">830524n| azannaabn          |a aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n  83121296 </subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca00957401</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(CaEvSKY)skya2045764</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="d">OCoLC</subfield>
+    <subfield code="d">DLC</subfield>
+    <subfield code="d">MX-SlUA</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Hernández, Agustín</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Males</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">spa</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Hernández Hernández, Agustín</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Noelle, L. Agustín Hernández, arquitectura y pensamiento, 1982 (subj.)</subfield>
+    <subfield code="b">t.p. (Agustín Hernández)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Fernando López Carmona arquitecto, 2010:</subfield>
+    <subfield code="b">t.p. (Agustín Hernández Hernández)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Proyecto de corrección geométrica: catedral y sagrario metropolitanos, 2017:</subfield>
+    <subfield code="b">title page (Agustín Hernández Hernández)</subfield>
+  </datafield>
+  <datafield tag="953" ind1=" " ind2=" ">
+    <subfield code="a">bh10</subfield>
+    <subfield code="b">bg05</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00647dz  a2200157n  4500</leader>
+  <controlfield tag="001">11135236</controlfield>
+  <controlfield tag="005">20200102191752.0</controlfield>
+  <controlfield tag="008">190807n| acannaabn          |n aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2019047082</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="e">rda</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="f">1959</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Davis, Taylor,</subfield>
+    <subfield code="d">1959-</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="a">Palm Springs (Calif.)</subfield>
+    <subfield code="e">Boston (Mass.)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Artists</subfield>
+    <subfield code="a">Sculptors</subfield>
+    <subfield code="a">Art teachers</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Davis, Cherubini, 2009.</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Wikipedia, August 7, 2019</subfield>
+    <subfield code="b">(Taylor Davis; b. 1959, Palm Springs, California; residence: Boston Massachusetts; American artist and teacher, best known for her innovative wood sculptures; Davis, Cherubini, in contention)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00651dz  a2200169n  4500</leader>
+  <controlfield tag="001">11059178</controlfield>
+  <controlfield tag="005">20200102192523.0</controlfield>
+  <controlfield tag="008">190514n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2019071759</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12071860</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">NN</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">NN</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Moresi, Gates Michele</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="c">United States</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="373" ind1=" " ind2=" ">
+    <subfield code="a">National Museum of African American History and Culture (U.S.)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Museum curators</subfield>
+    <subfield code="a">Authors</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Pictures with purpose, 2019:</subfield>
+    <subfield code="b">title page (Gates Michele Moresi) p. 3 of cover (Supervisory Museum Curator of Collections at the National Museum of African American History and Culture)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00467dz  a2200157n  4500</leader>
+  <controlfield tag="001">4002405</controlfield>
+  <controlfield tag="005">20200102210433.0</controlfield>
+  <controlfield tag="008">911211n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">nr 91044223 </subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca03075590</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">NjP</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">NjP</subfield>
+    <subfield code="d">NNFr</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Frankensteinová, Hana</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Reported for deletion in favor of n  83001094</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Her Max Švabinsky, 1949-:</subfield>
+    <subfield code="b">díl 3, t.p. (Hana Frankensteinová)</subfield>
+  </datafield>
+  <datafield tag="953" ind1=" " ind2=" ">
+    <subfield code="a">xx00</subfield>
+  </datafield>
+  <datafield tag="985" ind1=" " ind2=" ">
+    <subfield code="c">RLIN</subfield>
+    <subfield code="e">LSPC</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00727dz  a2200229n  4500</leader>
+  <controlfield tag="001">10051331</controlfield>
+  <controlfield tag="005">20200102211332.0</controlfield>
+  <controlfield tag="008">160108n| azannaabn          |a baa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">nb2016000456</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca10360179</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">Uk</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">Uk</subfield>
+    <subfield code="d">NNFr</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="f">1844</subfield>
+    <subfield code="g">1925</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Kondakov, Nykodym Pavlovych,</subfield>
+    <subfield code="d">1844-1925</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="c">Ukraine</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="372" ind1=" " ind2=" ">
+    <subfield code="a">Science</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Scientists</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">male</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">ukr</subfield>
+  </datafield>
+  <datafield tag="378" ind1=" " ind2=" ">
+    <subfield code="q">Nykodym Pavlovych</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Kondakov, Nikodim Pavlovich</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Reported for deletion in favor of n  85238466</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Sofii︠a︡ Kyïvsʹka, 2011- (volume 4):</subfield>
+    <subfield code="b">t.p. (Kondakov Nykodym Pavlovych (1844-1925)) p.5 (Ukrainian scientist)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00440dz  a2200133n  4500</leader>
+  <controlfield tag="001">6822949</controlfield>
+  <controlfield tag="005">20200102213301.0</controlfield>
+  <controlfield tag="008">060412n| acannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2006038345</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca06912852</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ICU</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="c">ICU</subfield>
+    <subfield code="d">DNGA</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Keene, Paul,</subfield>
+    <subfield code="d">1920-</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Duplicate record: reported for deletion in favor of nr2006004966</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Paul Keene, 2005:</subfield>
+    <subfield code="b">t.p. (Paul Keene) p. 74 (b. 1920, Philadelphia, PA; artist)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00434dz  a2200157n  4500</leader>
+  <controlfield tag="001">10401515</controlfield>
+  <controlfield tag="005">20200102213603.0</controlfield>
+  <controlfield tag="008">170315n| azannaabn          |n ana      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">nb2017005988</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(Uk)009869804</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">Uk</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">Uk</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Culturespaces (Firm)</subfield>
+  </datafield>
+  <datafield tag="368" ind1=" " ind2=" ">
+    <subfield code="a">Art foundation</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="c">France</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">fre</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Florence, 2015:</subfield>
+    <subfield code="b">t.p. (Culturespaces, an art foundation) verso (based in France)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00675dz  a2200181n  4500</leader>
+  <controlfield tag="001">2449038</controlfield>
+  <controlfield tag="005">20200102214006.0</controlfield>
+  <controlfield tag="008">850206n| acannaabn          |a ana      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n  84200237 </subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca01297842</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="c">DLC</subfield>
+    <subfield code="d">DNGA</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Anežský klášter (Museum)</subfield>
+  </datafield>
+  <datafield tag="410" ind1="2" ind2=" ">
+    <subfield code="a">Anežky klášter (Museum)</subfield>
+  </datafield>
+  <datafield tag="410" ind1="2" ind2=" ">
+    <subfield code="a">Klášter blahoslavené Anežky (Museum)</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Duplicate record; reported for deletion in favor of no 99026196</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Kohl, L. Ludvík Kohl, 1746-1821, 1984:</subfield>
+    <subfield code="b">t.p. (Anežský klášter)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Pražský informátor, 1976:</subfield>
+    <subfield code="b">p. 95 (under Kláštery: blahoslavené Anežky)</subfield>
+  </datafield>
+  <datafield tag="953" ind1=" " ind2=" ">
+    <subfield code="a">ee20</subfield>
+  </datafield>
+</record>
+</collection>

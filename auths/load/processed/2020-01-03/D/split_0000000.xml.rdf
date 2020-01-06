@@ -1,0 +1,1568 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:mets="http://www.loc.gov/METS/" xmlns:marcxml="http://www.loc.gov/MARC21/slim" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:mxe="http://www.loc.gov/mxe" xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:bflc="http://id.loc.gov/ontologies/bflc/"><rdf:Description>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11201737#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 2019063205</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n2019063205">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Kechina, E. A.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Kechina, E. A.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aKechina, E. A.</bflc:name00MarcKey>
+            <rdfs:label>Kechina, E. A.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/11201737#Agent400-8">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aКечина, Е. А.</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Non-Latin script reference not evaluated</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11201737</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T06:42:53</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-22</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Rezulʹtaty dozornogo ėpidemiologicheskogo nadzora po ot︠s︡enke situat︠s︡ii po VICh-infekt︠s︡ii sredi grupp naselenii︠a︡ s vysokim riskom infit︠s︡irovanii︠a︡ VICh, 2018: cover (Кечина Е.А. = Kechina E.A.; doktor sot︠s︡iologicheskikh nauk, professor) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11257829#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 2020000208</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/11257829#Agent100-7">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Totaro, Raffaele, 1993-</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Totaro, Raffaele, 1993-</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aTotaro, Raffaele,$d1993-</bflc:name00MarcKey>
+            <rdfs:label>Totaro, Raffaele, 1993-</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:originPlace>
+      <bf:Place rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n79021783">
+        <rdfs:label>Italy</rdfs:label>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/subjectSchemes/naf"/>
+        </bf:source>
+      </bf:Place>
+    </bf:originPlace>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/Males"/>
+    </bf:language>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11257829</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T07:53:40</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-03</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>L'arte di Eiichiro Oda, 2019: title page (Raffaele Totaro) back cover (born 1993; bibliophile, student, and writer in his spare time) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/8299387#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>sh2010108275</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>470630</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>sh2010108275</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Record generated for validation purposes.</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>8299387</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T08:13:01</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2010-06-02</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Work cat.: Plan du traité des origines typographiques, 1762 </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11256731#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 2019074570</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/11256731#Agent110-7">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <bflc:name10MarcKey>1102 $aÉcole pratique des hautes études (France).$bLaboratoire de cartographie</bflc:name10MarcKey>
+            <bflc:primaryContributorName10MatchKey/>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/11256731#Agent410-8">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <bflc:name10MarcKey>4102 $aLaboratoire de cartographie (France)</bflc:name10MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/11256731#Agent410-9">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <bflc:name10MarcKey>4102 $aLaboratoire de cartographie de l'École pratique des hautes études</bflc:name10MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/11256731#Agent410-10">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Organization"/>
+            <bflc:name10MarcKey>4102 $aManagement Kongo Development</bflc:name10MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11256731</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T11:05:13</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-12-31</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Tunisie distribution de la population, 1958?: map recto (Laboratoire de cartographie de l'École pratique des hautes études) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11231693#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 2019069100</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no2018110523">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Bradley, Susan, 1956-</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Bradley, Susan, 1956-</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aBradley, Susan,$d1956-$tUnderstanding Hinduism (Essential Library (Firm))</bflc:name00MarcKey>
+            <rdfs:label>Bradley, Susan, 1956-</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <rdfs:label>Understanding Hinduism (Essential Library (Firm))</rdfs:label>
+    <bf:title>
+      <bf:Title>
+        <bflc:title00MatchKey>Understanding Hinduism (Essential Library (Firm))</bflc:title00MatchKey>
+        <bflc:title00MarcKey>1001 $aBradley, Susan,$d1956-$tUnderstanding Hinduism (Essential Library (Firm))</bflc:title00MarcKey>
+        <rdfs:label>Understanding Hinduism (Essential Library (Firm))</rdfs:label>
+        <bflc:titleSortKey>Understanding Hinduism (Essential Library (Firm))</bflc:titleSortKey>
+        <bf:mainTitle>Understanding Hinduism (Essential Library (Firm))</bf:mainTitle>
+      </bf:Title>
+    </bf:title>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11231693</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T13:01:02</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-11-26</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Understanding Hinduism, 2019. </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/1693268#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>nr 92041149</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca03279178</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n83040446">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Shalabī, ʻAlī Muḥammad</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Shalabī, ʻAlī Muḥammad</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aShalabī, ʻAlī Muḥammad</bflc:name00MarcKey>
+            <rdfs:label>Shalabī, ʻAlī Muḥammad</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/1693268#Agent400-9">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aشلبي، علي محمد</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/1693268#Agent400-10">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aعلي محمد شلبي</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Machine-derived non-Latin script reference project.</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Non-Latin script references not evaluated.</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>1693268</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T13:59:59</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1992-11-20</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/aacr"/>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>NjP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>NjP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>His al-Miṣrīyūn wa-al-jundīyah fī al-qarn al-tāsiʻ ʻashar, 1988: t.p. (al-Duktūr ʻAlī Muḥammad Shalabī, ustādh al-tārīkh al-ḥadīth al-musāʻid, Kull. al-Ādāb, Jām. al-Manṣūrah) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/10093687#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>no2016027088</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca10403189</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no2010055419">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Al-Sarhan, Saud</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Al-Sarhan, Saud</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aAl-Sarhan, Saud</bflc:name00MarcKey>
+            <rdfs:label>Al-Sarhan, Saud</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+    </bf:language>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/10093687#Agent400-11">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aSarhan, Saud Al-</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/10093687#Agent400-12">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aAlSarhan, Saud Saleh</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/10093687#Agent400-13">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aSarhan Saleh, Saud Al-</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>10093687</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T14:19:23</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-02-28</bf:creationDate>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>NjP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>NjP</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>ViFGM</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Rebuilding Yemen, 2015: t.p. (Saud Al-Sarhan) page 174 (Director of Research and Head of the Contemporary Political Thought Unit at King Faisal Centre for Research and Islamic Studies; visiting fellow at Exeter University and the National Council on U.S.-Arab Relations) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>OCLC, viewed May 20, 2016 (access points: Al-Sarhan, Saud; Al-Sarhan, Saud Saleh) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>University of Exeter web site, viewed May 20, 2016 under Open Research Exeter (Al Sarhan, Saud Saleh; Saud Saleh AlSarhan [no space in surname]; Doctor of Philosophy in Arab and Islamic Studies) https://ore.exeter.ac.uk/repository/handle/10036/3374 </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/7788105#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>no2009019391</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca08009379</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no2009019391">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Abū Ṣifṣāf, ʻAbd al-Karīm</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Abū Ṣifṣāf, ʻAbd al-Karīm</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aAbū Ṣifṣāf, ʻAbd al-Karīm</bflc:name00MarcKey>
+            <rdfs:label>Abū Ṣifṣāf, ʻAbd al-Karīm</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/7788105#Agent400-9">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aأبو صفصاف، عبد الكريم</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/7788105#Agent400-10">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aAbū Ṣafṣāf, ʻAbd al-Karīm</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/7788105#Agent400-11">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aAbū Ṣufṣāf, ʻAbd al-Karīm</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Non-Latin script reference not evaluated.</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>7788105</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T14:27:46</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2009-02-09</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/aacr"/>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>PU-ME</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>PU-ME</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Ḥarakat Muḥammad ʻAbduh wa-ʻAbd al-Ḥamīd ibn Bādīs, 2007-2008: v. 1, t.p. (عبد الكريم أبو صفصاف = ʻAbd al-Karīm Abū Ṣifṣāf) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11257970#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 2020000341</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n2020000341">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Holland, Mary K.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Holland, Mary K.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aHolland, Mary K.</bflc:name00MarcKey>
+            <rdfs:label>Holland, Mary K.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11257970</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T14:30:13</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-03</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>The moral worlds of contemporary realism, 2020: CIP title page (Mary K. Holland) acknowledgements ("my home institution SUNY New Paltz"; and her students) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Online search 2020-01-03: (Mary K. Holland  Professor, Department of English, State University of New York, New Paltz ; Ph.D. in English 2004 University of California, Los Angeles ; M.A. in English Language and Literature 1995 University of Maryland, College Park http://newpaltz.academia.edu/MaryHolland/CurriculumVitae) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/10401343#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 2017014740</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n2017014740">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>ʻAfāsī, Mashārī</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>ʻAfāsī, Mashārī</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aʻAfāsī, Mashārī</bflc:name00MarcKey>
+            <rdfs:label>ʻAfāsī, Mashārī</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/ara"/>
+    </bf:language>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/10401343#Agent400-12">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $a‏عفاسي، مشاري.</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Non-Latin script reference not evaluated</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>10401343</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T14:37:16</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-03-15</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Tarāḥamī yā qulūb, 201-?: label (‏(عفاسي، مشاري </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/3443475#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 87105480</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>n 87105480</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n87105480">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Cruz, Ernesto F.</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Cruz, Ernesto F.</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>10010$aCruz, Ernesto F.</bflc:name00MarcKey>
+            <rdfs:label>Cruz, Ernesto F.</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>3443475</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T14:46:45</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1987-06-19</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/aacr"/>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>nuc87-58645: His Simplified methods of analysis ... 1985 (hdg. on MiEM rept.: Cruz, Ernesto F.; usage: Ernesto F. Cruz) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/2221268#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>no 95051431</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca03948485</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>no 95051431</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n97014237">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Nuʻaym, Nūrah ʻAbd Allāh al-ʻAlī</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Nuʻaym, Nūrah ʻAbd Allāh al-ʻAlī</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>10010$aNuʻaym, Nūrah ʻAbd Allāh al-ʻAlī</bflc:name00MarcKey>
+            <rdfs:label>Nuʻaym, Nūrah ʻAbd Allāh al-ʻAlī</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>2221268</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T14:47:36</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1995-10-30</bf:creationDate>
+        <bf:descriptionConventions rdf:resource="http://id.loc.gov/vocabulary/descriptionConventions/aacr"/>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>InU</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>InU</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>al-Waḍʻ al-iqtiṣādī fī al-Jazīrah al-ʻArabīyah, 1992: t.p. (Nūrah ʻAbd Allāh al-ʻAlī al-Nuʻaym) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/10899171#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>no2018152332</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca11640463</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/no2018152332">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Maḥmūd, ʻAbd al-Majīd (Public prosecutor)</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Maḥmūd, ʻAbd al-Majīd (Public prosecutor)</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aMaḥmūd, ʻAbd al-Majīd$c(Public prosecutor)</bflc:name00MarcKey>
+            <rdfs:label>Maḥmūd, ʻAbd al-Majīd (Public prosecutor)</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:language>
+      <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/ara"/>
+    </bf:language>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/10899171#Agent400-13">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aمحمود، عبد المجيد$c(نائب عام)</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Non-Latin script reference not evaluated.</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>10899171</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T15:01:49</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-11-06</bf:creationDate>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>CtY-N</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>CtY-N</rdfs:label>
+          </bf:Source>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Maḥmūd, ʻAbd al-Majīd (Public prosecutor). al-Muwājahah al-qānūnīyah li-ẓāhirat al-fasād, 2017: title page (المستشار الدكتور عبد المجيد محمود = al-Mustashār al-Duktūr ʻAbd al-Majīd Maḥmūd) cover (المستشار الدكتور عبد المجيد محمود، النائب العام الأسبق = al-Mustashār al-Duktūr ʻAbd al-Majīd Maḥmūd, al-Nāʼib al-ʻĀmm al-asbaq) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/10296565#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 2016059298</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n2016059298">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Mnjama, Nathan, 1950-</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Mnjama, Nathan, 1950-</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aMnjama, Nathan,$d1950-</bflc:name00MarcKey>
+            <rdfs:label>Mnjama, Nathan, 1950-</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>10296565</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T16:07:26</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2016-10-31</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Managing knowledge resources and records in modern organizations, 2017: eCIP t.p. (Nathan Mnjama) data view screen (b. 11/23/1950) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/11257828#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 2020000196</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/11257828#Agent100-7">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Toscano, Francesco, 1991-</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Toscano, Francesco, 1991-</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aToscano, Francesco,$d1991-</bflc:name00MarcKey>
+            <rdfs:label>Toscano, Francesco, 1991-</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/11257828#Agent400-11">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4001 $aToscano, Francesco "Tosky,"$d1991-</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:contribution>
+      <bf:Contribution>
+        <bf:agent>
+          <bf:Agent rdf:about="http://id.loc.gov/resources/works/11257828#Agent400-12">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MarcKey>4000 $aTosky,$d1991-</bflc:name00MarcKey>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>11257828</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T17:02:23</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-03</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>L'arte di Eiichiro Oda, 2019: title page (Francesco "Tosky" Toscano) back cover (Francesco Tosana, born 1991 in Caserta Province; laurea triennale in linguistic and cultural mediation from Univ. "Orientale di Napoli; now studying public communication at Perugia; currently involvoled with development of "One Piece.it," Italian website dedicated to works of Eiichiro Oda; a soccer enthusiast, he also writes for  "Calcionews24"; credentialed as "giornalista pubblicista") </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Nerdgt.it (website), viewed Jan. 2, 2020: autori (Tosky) </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+  <lclocal:graph><bf:Work rdf:about="http://id.loc.gov/resources/works/5736856#Work">
+    <bf:issuance>
+      <bf:Issuance rdf:about="http://id.loc.gov/vocabulary/issuance/mono"/>
+    </bf:issuance>
+    <bf:identifiedBy>
+      <bf:Lccn>
+        <rdf:value>n 2002041610</rdf:value>
+      </bf:Lccn>
+    </bf:identifiedBy>
+    <bf:identifiedBy>
+      <bf:Local>
+        <rdf:value>oca05846330</rdf:value>
+        <bf:source>
+          <bf:Source>
+            <rdfs:label>OCoLC</rdfs:label>
+          </bf:Source>
+        </bf:source>
+      </bf:Local>
+    </bf:identifiedBy>
+    <bf:contribution>
+      <bf:Contribution>
+        <rdf:type rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"/>
+        <bf:agent>
+          <bf:Agent rdf:about="http://mlvlp04.loc.gov:8080/authorities/names/n2020000401">
+            <rdf:type rdf:resource="http://id.loc.gov/ontologies/bibframe/Person"/>
+            <bflc:name00MatchKey>Falkner, James</bflc:name00MatchKey>
+            <bflc:primaryContributorName00MatchKey>Falkner, James</bflc:primaryContributorName00MatchKey>
+            <bflc:name00MarcKey>1001 $aFalkner, James</bflc:name00MarcKey>
+            <rdfs:label>Falkner, James</rdfs:label>
+          </bf:Agent>
+        </bf:agent>
+        <bf:role>
+          <bf:Role rdf:about="http://id.loc.gov/vocabulary/relators/ctb"/>
+        </bf:role>
+      </bf:Contribution>
+    </bf:contribution>
+    <bf:note>
+      <bf:Note>
+        <rdfs:label>Last identity on undifferentiated record; reported for deletion.</rdfs:label>
+        <bf:status>nonpublic</bf:status>
+      </bf:Note>
+    </bf:note>
+    <bf:adminMetadata>
+      <bf:AdminMetadata>
+        <bf:status>
+          <bf:Status>
+            <bf:code>d</bf:code>
+          </bf:Status>
+        </bf:status>
+        <bflc:encodingLevel>
+          <bflc:EncodingLevel>
+            <bf:code>4</bf:code>
+          </bflc:EncodingLevel>
+        </bflc:encodingLevel>
+        <bf:identifiedBy>
+          <bf:Local>
+            <rdf:value>5736856</rdf:value>
+          </bf:Local>
+        </bf:identifiedBy>
+        <bf:changeDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-01-03T18:35:43</bf:changeDate>
+        <bf:creationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2002-08-22</bf:creationDate>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:source>
+          <bf:Source rdf:about="http://id.loc.gov/vocabulary/organizations/dlc"/>
+        </bf:source>
+        <bf:descriptionLanguage>
+          <bf:Language rdf:about="http://id.loc.gov/vocabulary/languages/eng"/>
+        </bf:descriptionLanguage>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>Uk</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>DLC</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionModifier>
+          <bf:Agent>
+            <rdfs:label>InU</rdfs:label>
+          </bf:Agent>
+        </bf:descriptionModifier>
+        <bf:descriptionConventions>
+          <bf:DescriptionConventions rdf:about="http://id.loc.gov/vocabulary/descriptionConventions/rda"/>
+        </bf:descriptionConventions>
+        <bf:note>
+          <bf:Note>
+            <bf:noteType>Data source</bf:noteType>
+            <rdfs:label>Farm tenancies, 1997: t.p. (James Falkner) BL AL sent 12 Nov. 2003 </rdfs:label>
+          </bf:Note>
+        </bf:note>
+        <bf:generationProcess>
+          <bf:GenerationProcess>
+            <rdfs:label>DLC MAuth2BF transform-tool: 2019-10-11T13:00</rdfs:label>
+          </bf:GenerationProcess>
+        </bf:generationProcess>
+      </bf:AdminMetadata>
+    </bf:adminMetadata>
+  </bf:Work></lclocal:graph>
+</rdf:Description></rdf:RDF>

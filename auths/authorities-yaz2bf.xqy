@@ -31,22 +31,26 @@ declare function yaz2bf:transform(
   $context as map:map
 ) as map:map*
 {
-    let $auth2bfBase:="/prep/auths/auth2bibframe2/"
-	let $the-doc := map:get($content, "value")
+let $_:=xdmp:log("CORB auth : auth2bibframe starting): ", "info")
+    
+	let $set := map:get($content, "value")
 	let $orig-uri := map:get($content, "uri")  
-	return if ($the-doc/rdf:RDF/bf:Work or  $the-doc/rdf:RDF/bf:Instance or $the-doc/rdf:RDF/bf:Item                )						
+	 for $the-doc in $set/rdf:Description/lclocal:graph
+	
+	return if ($the-doc/bf:Work           )						
 						then
 
-
-	let $lccn:= fn:normalize-space(fn:tokenize($orig-uri,"/")[fn:last()])
-	let $lccn:=fn:replace($lccn,".rdf","")
-	let $new-uri:=fn:concat("loc.natlib.works.",fn:replace($lccn,".rdf",""))
+	let $lccn:=$the-doc/bf:Work/bf:identifiedBy/bf:Lccn[fn:not(bf:status)]/rdf:value
+	let $lccn:=fn:replace(fn:string($lccn)," ","")
+					
+	
+	let $new-uri:=fn:concat("loc.natlib.works.",$lccn)
 	       (: dailies may not be nametitle or title records; also may have the 985 tag : skip them:)
 	
 	(: pilot and deprecated are testable? :)
 let $already-in-pilot:=()
-let $deprecated:= if ($the-doc/rdf:RDF/bf:Work[1]/bf:adminMetadata[1]/bf:AdminMetadata/bf:status/bf:Status[fn:string(bf:code)="d"] or
-						fn:not($the-doc/rdf:RDF/bf:Work[1]/bf:adminMetadata[1]/bf:AdminMetadata/bf:status/bf:Status)) then
+let $deprecated:= if ($the-doc/bf:Work[1]/bf:adminMetadata[1]/bf:AdminMetadata/bf:status/bf:Status[fn:string(bf:code)="d"] or
+						fn:not($the-doc/bf:Work[1]/bf:adminMetadata[1]/bf:AdminMetadata/bf:status/bf:Status)) then
 							fn:true()
 					else  fn:false()
     (:-------------------------from ingest-voyager-bib  -------------------------:)
@@ -57,9 +61,9 @@ let $deprecated:= if ($the-doc/rdf:RDF/bf:Work[1]/bf:adminMetadata[1]/bf:AdminMe
         let $destination-root := $dest
         let $dir := fn:concat($destination-root, string-join($dirtox, '/'), '/')
         let $destination-uri := fn:concat($dir, $resclean, '.xml')
-        let $destination-collections := ($destination-root, "/lscoll/lcdb/", "/lscoll/", "/catalog/", "/catalog/lscoll/", "/catalog/lscoll/lcdb/",
+        let $destination-collections := ($destination-root,  "/catalog/",  "/catalog/lscoll/lcdb/",
 				"/bibframe/nametitle-work/","/bibframe-process/yazbfworks/", "/resources/works/",		
-				"/bibframe-process/reloads/2018-12-14/","/bibframe/hubworks/")
+				"/bibframe-process/reloads/2018-12-14/","/bibframe/hubworks/","/bibframe-process/reloads/2020-01-02/")
     (:-------------------------from ingest-voyager-bib  -------------------------:)
 
 	let $AUTHURI:= $resclean
@@ -93,7 +97,7 @@ return
     	let $put:=map:put($params, "idfield", "001")
   (: the-doc is rdf, not mets, so we need to add the expected idx stuff, staring wtih memberofURI :)
 		let $expr:=
-			for $t in $the-doc//bf:title/bf:Title/bflc:title00MarcKey|$the-doc//bf:title/bf:Title/bflc:title10MarcKey|$the-doc//bf:title/bf:Title/bflc:title11MarcKey
+			for $t in $the-doc/bf:Work/bf:title/bf:Title/bflc:title00MarcKey|$the-doc/bf:Work/bf:title/bf:Title/bflc:title10MarcKey|$the-doc/bf:Work/bf:title/bf:Title/bflc:title11MarcKey
 			return
 		 		if ( fn:matches(fn:string($t),"\$l|\$o") ) then
 			 		<idx:memberOfURI>http://id.loc.gov/authorities/names/collection_FRBRExpression</idx:memberOfURI>
@@ -120,8 +124,8 @@ return
 			  <idx:memberOfURI>http://id.loc.gov/authorities/names/collection_FRBRWork</idx:memberOfURI>
 			 }
 		  </mets:xmlData></mets:mdWrap></mets:dmdSec></mets:mets>  
-      	
-    	let $bfwork:=   $the-doc        
+      	(: main auth2bf wants rdf as root :)
+    	let $bfwork:=  <rdf:RDF>{ $the-doc        }</rdf:RDF>
     		
  
     	return

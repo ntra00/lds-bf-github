@@ -1,0 +1,1906 @@
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+<record>
+  <leader>00467nz  a2200145n  4500</leader>
+  <controlfield tag="001">11258542</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073112.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000888</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670309</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ICrlF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">ICrlF</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Patrick, Denise Lewis.</subfield>
+    <subfield code="t">No ordinary sound (2019)</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">135 page adaptation of the 222 page novel.</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Patrick, Denise Lewis. No ordinary sound, 2019:</subfield>
+    <subfield code="b">back cover (abridged edition)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00507nz  a2200169n  4500</leader>
+  <controlfield tag="001">11258543</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073112.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |a aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000889</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670310</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ICrlF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">ICrlF</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Martin, Emmett.</subfield>
+    <subfield code="t">What is hard?</subfield>
+    <subfield code="l">Spanish</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">spa</subfield>
+  </datafield>
+  <datafield tag="381" ind1=" " ind2=" ">
+    <subfield code="a">Godino</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Martin, Emmett.</subfield>
+    <subfield code="t">Es duro?</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Martin, Emmett. Es duro? = What is hard?, 2020:</subfield>
+    <subfield code="b">title page (translated by Cecilia González Godino)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00529nz  a2200181n  4500</leader>
+  <controlfield tag="001">11258544</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073112.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000890</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670311</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">IlMpPL</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">IlMpPL</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Pupo, Indira</subfield>
+  </datafield>
+  <datafield tag="372" ind1=" " ind2=" ">
+    <subfield code="a">Translating services</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Translators</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Females</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">spa</subfield>
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Tarshis, L. El terremoto de San Francisco, 1906, 2020:</subfield>
+    <subfield code="b">title page verso (translated by Indira Pupo)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00598nz  a2200181n  4500</leader>
+  <controlfield tag="001">11258545</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073112.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |a aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000891</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670312</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ICrlF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">ICrlF</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Bright, Rachel.</subfield>
+    <subfield code="t">Lion inside.</subfield>
+    <subfield code="l">Spanish</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">spa</subfield>
+  </datafield>
+  <datafield tag="381" ind1=" " ind2=" ">
+    <subfield code="a">Gallo Krahe</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Bright, Rachel.</subfield>
+    <subfield code="t">León dentro</subfield>
+  </datafield>
+  <datafield tag="500" ind1="1" ind2=" ">
+    <subfield code="w">r</subfield>
+    <subfield code="i">Translator:</subfield>
+    <subfield code="a">Gallo Krahe, Elena</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Bright, Rachel. Un león dentro, 2017 :</subfield>
+    <subfield code="b">page facing title page (original title: The lion inside ; translator by Elena Gallo Krahe)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00646nz  a2200181n  4500</leader>
+  <controlfield tag="001">11258546</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073112.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |a ana     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000892</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670313</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DHMM</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DHMM</subfield>
+  </datafield>
+  <datafield tag="151" ind1=" " ind2=" ">
+    <subfield code="a">Appenweier (Germany)</subfield>
+  </datafield>
+  <datafield tag="451" ind1=" " ind2=" ">
+    <subfield code="a">Appenweir (Germany)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">US Holocaust Memorial Museum catalog, 3 January 2020</subfield>
+    <subfield code="b">(Appenweier (Germany))</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">GEOnet, 3 January 2020</subfield>
+    <subfield code="b">(Appenweier; PPL, 48°32ʹ17ʺN, 007°58ʹ54ʺE; Baden-Württemberg, Germany; variant: Appenweir)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">https://www.appenweier.de/, 3 January 2020</subfield>
+  </datafield>
+  <datafield tag="781" ind1=" " ind2="0">
+    <subfield code="z">Germany</subfield>
+    <subfield code="z">Appenweier</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00594nz  a2200169n  4500</leader>
+  <controlfield tag="001">11258547</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073112.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000893</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670314</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">WMM</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">WMM</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">McIlwain, David</subfield>
+    <subfield code="c">(Ph.D. in politics)</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="c">Australia</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="373" ind1=" " ind2=" ">
+    <subfield code="a">Macquarie University</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Males</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">McIlwain, David. Michael Oakeshott and Leo Strauss, 2019:</subfield>
+    <subfield code="b">title page (David Mcllwain) cover page 4 (received his Ph.D. in Politics from Macquarie University, Australia, in 2018)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00540nz  a2200169n  4500</leader>
+  <controlfield tag="001">11258548</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073112.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000894</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670315</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ICrlF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">ICrlF</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2019</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Shaw, Janet Beeler,</subfield>
+    <subfield code="d">1937-</subfield>
+    <subfield code="t">Smoke on the wind (2019)</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">110 page adaptation of the 184 page novel.</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Shaw, Janet Beeler. Smoke on the wind, 2019:</subfield>
+    <subfield code="b">back cover (Abridged edition) front cover (Kaya, 1764)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00694nz  a2200205n  4500</leader>
+  <controlfield tag="001">11258549</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073112.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000895</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670316</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">UPB</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">UPB</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="f">1976</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="053" ind1=" " ind2="4">
+    <subfield code="a">PQ7798.429.C45</subfield>
+    <subfield code="5">UPB</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Schillagi, Hernán,</subfield>
+    <subfield code="d">1976-</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="a">San Martín (Mendoza, Argentina : Department)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Authors</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Males</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">spa</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Schillagi, Hernán. Los cuadernos de Gloria, 2017:</subfield>
+    <subfield code="b">title page (Hernán Schillagi) front flap (Hernán Schillagi was born 1976 in the city of San Martín (Mendoza, Argentina))</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00997nz  a2200217n  4500</leader>
+  <controlfield tag="001">11258550</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073112.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000896</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670317</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">UPB</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">UPB</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="f">1970</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="053" ind1=" " ind2="4">
+    <subfield code="a">PQ7489.2.F43</subfield>
+    <subfield code="5">UPB</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Fernández Q., Gustavo,</subfield>
+    <subfield code="d">1970-</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="a">San José (Costa Rica)</subfield>
+    <subfield code="e">Desamparados (Costa Rica : Canton)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="373" ind1=" " ind2=" ">
+    <subfield code="a">Instituto Nacional de Fomento Cooperativo (Costa Rica)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Authors</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Males</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">spa</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Fernández Q., Gustavo. La boca del monte, 2019:</subfield>
+    <subfield code="b">title page (Gustavo Fernández Q.) front flap (Gustavo Fernández Q. was born 1970 in San José [Cosat Rica]; he spent his childhood and youth in the canton of Desamparados; official at the Instituto Nacional de Fomento Cooperativo; began writing with a book of short stories La Acuarilis (2013) and La boca del monte is his first novel)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00554nz  a2200169n  4500</leader>
+  <controlfield tag="001">11258551</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073112.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000901</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670322</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ICrlF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">ICrlF</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2019</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Greene, Jacqueline Dembar.</subfield>
+    <subfield code="t">Sound of applause (2019)</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">119 page adaptation of the 200 page novel.</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Greene, Jacqueline Dembar. The sound of applause, 2019:</subfield>
+    <subfield code="b">back cover (Abridged edition) front cover (Rebecca, 1914)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00739nz  a2200193n  4500</leader>
+  <controlfield tag="001">11258552</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073112.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |a aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000902</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670323</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ICrlF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">ICrlF</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2018</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Grimmelshausen, Hans Jakob Christoph von,</subfield>
+    <subfield code="d">1625-1676.</subfield>
+    <subfield code="t">Simplicissimus.</subfield>
+    <subfield code="l">English</subfield>
+    <subfield code="s">(Underwood)</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="381" ind1=" " ind2=" ">
+    <subfield code="a">Underwood</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Grimmelshausen, Hans Jakob Christoph von,</subfield>
+    <subfield code="d">1625-1676.</subfield>
+    <subfield code="t">Adventures of Simplicius Simplicissimus</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Grimmelshausen, Hans Jakob Christoph von. The adventures of Simplicius Simplicissimus, 2018 :</subfield>
+    <subfield code="b">t.p. (translated by J.A. Underwood</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">OCLC Jan. 3, 2020</subfield>
+    <subfield code="b">(Simplicissimus)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00470nz  a2200157n  4500</leader>
+  <controlfield tag="001">11258553</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073112.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |a aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000903</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670324</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ICrlF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">ICrlF</subfield>
+  </datafield>
+  <datafield tag="100" ind1="0" ind2=" ">
+    <subfield code="a">Orbie,</subfield>
+    <subfield code="d">1984-</subfield>
+    <subfield code="t">Corde à linge.</subfield>
+    <subfield code="l">English</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="400" ind1="0" ind2=" ">
+    <subfield code="a">Orbie,</subfield>
+    <subfield code="d">1984-</subfield>
+    <subfield code="t">Clothesline</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Orbie. The clothesline, 2019 :</subfield>
+    <subfield code="b">title page verso (original title: La corde à linge)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00787nz  a2200169n  4500</leader>
+  <controlfield tag="001">11258554</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073113.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n ana     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000904</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670325</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">IEN</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">IEN</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="s">1989-03-30</subfield>
+    <subfield code="t">2005-12</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Trans International Bank</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="e">Ibadan (Nigeria)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Trans International Bank. Annual report and accounts, 1990:</subfield>
+    <subfield code="b">title page (Trans International Bank PLC) page 4 (commenced commercial banking operations on 30 March 1989) page 3 of cover (head office in Ibadan)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Wikipedia, January 3, 2020:</subfield>
+    <subfield code="b">Spring Bank page (Spring Bank was formed in December 2005 by the merger of six Nigerian financial institutions, including Trans International Bank Plc)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00520nz  a2200169n  4500</leader>
+  <controlfield tag="001">11258555</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073113.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |a aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000911</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670332</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ICrlF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">ICrlF</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2016</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Inkpen, Mick.</subfield>
+    <subfield code="t">Fred</subfield>
+  </datafield>
+  <datafield tag="380" ind1=" " ind2=" ">
+    <subfield code="a">Children&apos;s literature</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Inkpen, Mick.</subfield>
+    <subfield code="t">I love you, Fred</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Inkpen, Mick. I love you, Fred, 2019:</subfield>
+    <subfield code="b">page facing title page (Originally published as Fred in 2016)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00607nz  a2200145n  4500</leader>
+  <controlfield tag="001">11258556</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073113.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000912</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670333</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">Az</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">Az</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Fiske, Shirley A.</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Grant, Raymond W. Minerals and gems of Arizona, 2019:</subfield>
+    <subfield code="b">title frame (Camera: Steve Kaminski, Shirley Fiske; Editor: Shirley Fiske; Provided by the Mineralogical Society of Arizona)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Email from Shirley Fiske, December 28, 2019:</subfield>
+    <subfield code="b">(Shirley Ann Fiske, DO; Sun City West, AZ  85375; birthdate  05-15-1951)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00707nz  a2200169n  4500</leader>
+  <controlfield tag="001">11258557</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073113.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000913</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670334</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">OrPS</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">OrPS</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Sanders, Tal</subfield>
+  </datafield>
+  <datafield tag="373" ind1=" " ind2=" ">
+    <subfield code="a">Pacific University</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">male</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Sanders, Tal. An introduction to technical theatre, 2018:</subfield>
+    <subfield code="b">title page (Tal Sanders) page 4 of cover (Tal Sanders holds an MFA in design from California Institute of the Arts. An associate professor of theatre, he serves as faculty scenic and lighting designer as well as technical director for Theatre and Dance at Pacific University)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00464nz  a2200157n  4500</leader>
+  <controlfield tag="001">11258558</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073113.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |b aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000921</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670342</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ICU</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">ICU</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Dovgalʹ, O.</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Довгаль, О.</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Non-Latin script reference not evaluated.</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">O. Tri gusi︠a︡, 1942:</subfield>
+    <subfield code="b">title page (О. Довгаль = O. Dovgalʹ, artist)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00778nz  a2200133n  4500</leader>
+  <controlfield tag="001">11258559</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073113.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000922</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670343</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">CaBVa</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">CaBVa</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Adachi, Erinne Sevigny</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Mensing-de Jong, Angela. Polepole, 2019:</subfield>
+    <subfield code="b">title page (Erinne Sevigny Adachi) cover flap (Erinne Sevigny Adachi has a degree in professional writing from MacEwan University and a postgraduate certificate in book publishing from Humber College; works as a book designer and publishing consultant under the banner of Pencil Consult; an Albertan mix of French-Canadian and Metis heritage; a direct descendant of Jasper Haws (of Jasper National Park); lives in Edmonton, Alberta)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00559nz  a2200181n  4500</leader>
+  <controlfield tag="001">11258560</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073113.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000923</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670344</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">CSdS</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">CSdS</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Rose, Christine</subfield>
+    <subfield code="c">(Translator)</subfield>
+  </datafield>
+  <datafield tag="372" ind1=" " ind2=" ">
+    <subfield code="a">Translating and interpreting</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Translators</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Females</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+    <subfield code="a">pol</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Lem, S. Memoirs found in a bathtub, [1986]:</subfield>
+    <subfield code="b">title page (Christine Rose; translator [from Polish to English])</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00750nz  a2200229n  4500</leader>
+  <controlfield tag="001">11258561</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073113.0</controlfield>
+  <controlfield tag="008">200103n| azaabaaan          |a ana     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000931</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670352</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ICrlF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">ICrlF</subfield>
+  </datafield>
+  <datafield tag="130" ind1=" " ind2="0">
+    <subfield code="a">Searchlight books.</subfield>
+    <subfield code="p">Celebrating failure</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="g">Minneapolis (Minn.)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="373" ind1=" " ind2=" ">
+    <subfield code="a">Lerner Publications Company</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="380" ind1=" " ind2=" ">
+    <subfield code="a">Series (Publications)</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="430" ind1=" " ind2="0">
+    <subfield code="a">Celebrating failure (Lerner Publications Company)</subfield>
+  </datafield>
+  <datafield tag="643" ind1=" " ind2=" ">
+    <subfield code="a">Minneapolis</subfield>
+    <subfield code="b">Lerner Publications</subfield>
+  </datafield>
+  <datafield tag="644" ind1=" " ind2=" ">
+    <subfield code="a">f</subfield>
+    <subfield code="5">ICrlF</subfield>
+  </datafield>
+  <datafield tag="645" ind1=" " ind2=" ">
+    <subfield code="a">t</subfield>
+    <subfield code="5">DPCC</subfield>
+    <subfield code="5">ICrlF</subfield>
+  </datafield>
+  <datafield tag="646" ind1=" " ind2=" ">
+    <subfield code="a">s</subfield>
+    <subfield code="5">ICrlF</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Krasner, Barbara. Great science fails, ©2020:</subfield>
+    <subfield code="b">title page (Searchlight books. Celebrating failure)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00764nz  a2200157n  4500</leader>
+  <controlfield tag="001">11258562</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073114.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n ana     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000932</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670353</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">IEN</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">IEN</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Endocrine and Metabolism Society of Nigeria.</subfield>
+    <subfield code="b">Annual General Meeting and Scientific Conference</subfield>
+  </datafield>
+  <datafield tag="368" ind1=" " ind2=" ">
+    <subfield code="a">Congresses and conventions</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">See also related access points for individual instances of this conference which include specific information about the number, date, or place of the individual conference.</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Conference brochure &amp; book of abstracts, 2018:</subfield>
+    <subfield code="b">title page (Annual General Meeting and Scientific Conference, Endocrine and Metabolism Society of Nigeria)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>02286nz  a2200205n  4500</leader>
+  <controlfield tag="001">11258563</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073114.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000941</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670362</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">WMM</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">WMM</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Zverovich, Vadim</subfield>
+  </datafield>
+  <datafield tag="373" ind1=" " ind2=" ">
+    <subfield code="a">University of the West of England, Bristol</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Males</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Zverovich, Vadim. Research topics in graph theory and its applications, 2019:</subfield>
+    <subfield code="b">title page (by Vadim Zverovich) cover page 4 (M.Sc., Ph.D., is the Head of the Research Group in Mathematics and its Applications at the University of the West of England. An accomplished researcher, he is also a Fellow of the United Kingdom Operational Research Society, and was previously a Fellow of the prestigious Alexander von Humboldt Foundation in Germany. In 2016, he was awarded Higher Education Academy fellowship status, and, in 2017, the Faculty of Environment and Technology of the University of the West of England named him its researcher of the year. His research interests include graph theory and its applications, networks, probabilistic methods, combinatorial optimisation and emergency responses. With 30 years of research experience, he has published over 60 papers and established an internationally recognised academic track record in the mathematical sciences covering both theoretical and applied aspects)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">University of the West of England, Bristol website, viewed November 21, 2019:</subfield>
+    <subfield code="b">People (Dr. Vadim Zverovich; Senior Lecturer in Operational Research; M.Sc. (1989), Ph.D. (1993), Docent (2000). Areas of expertise: graph theory and its applications, for example: sensor networks and transport networks, probabilistic methods, combinatorics and combinatorial optimisation, decision making techniques)</subfield>
+    <subfield code="u">https://people.uwe.ac.uk/Person/VadimZverovich</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Semantic Scholar, viewed November 21, 2019</subfield>
+    <subfield code="b">(Vadim Zverovich; list includes articles by Vadim Zverovich and Vadim E. Zverovich, and, in both cases, they list his affiliation with the University of the West of England)</subfield>
+    <subfield code="u">https://www.semanticscholar.org/search?q=vadim%20zverovich&amp;sort=relevance</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">OCLC, viewed November 21, 2019</subfield>
+    <subfield code="b">(headings: Zverovich, Vadim; Zverovich, Vadim E.)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00643nz  a2200229n  4500</leader>
+  <controlfield tag="001">11258564</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073114.0</controlfield>
+  <controlfield tag="008">200103n| azaabaaan          |n ana     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000951</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670372</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ICrlF</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">ICrlF</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="k">2015</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="130" ind1=" " ind2="0">
+    <subfield code="a">Zendoodle colorscapes</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="g">New York (N.Y.)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="373" ind1=" " ind2=" ">
+    <subfield code="a">Castle Point Books</subfield>
+  </datafield>
+  <datafield tag="380" ind1=" " ind2=" ">
+    <subfield code="a">Series (Publications)</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="643" ind1=" " ind2=" ">
+    <subfield code="a">New York</subfield>
+    <subfield code="b">Castle Point Books</subfield>
+  </datafield>
+  <datafield tag="644" ind1=" " ind2=" ">
+    <subfield code="a">f</subfield>
+    <subfield code="5">ICrlF</subfield>
+  </datafield>
+  <datafield tag="645" ind1=" " ind2=" ">
+    <subfield code="a">t</subfield>
+    <subfield code="5">DPCC</subfield>
+    <subfield code="5">ICrlF</subfield>
+  </datafield>
+  <datafield tag="646" ind1=" " ind2=" ">
+    <subfield code="a">s</subfield>
+    <subfield code="5">ICrlF</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Wummel, Jeanette. Cuddly creatures, 2019:</subfield>
+    <subfield code="b">t.p. (Zendoodle colorscapes)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>01103nz  a2200181n  4500</leader>
+  <controlfield tag="001">11258565</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073114.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n ana     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000952</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670373</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DHMM</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DHMM</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="s">19460531</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Polski Związek byłych Więźniów Politycznych Hitlerowskich Więzień i Obozów Koncentracyjnych</subfield>
+  </datafield>
+  <datafield tag="368" ind1=" " ind2=" ">
+    <subfield code="a">Associations, institutions, etc.</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="372" ind1=" " ind2=" ">
+    <subfield code="a">Ex-concentration camp inmates</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Ciernista droga, 1947:</subfield>
+    <subfield code="b">page 32 (Polski Związek byłych Więźniów Politycznych Hitlerowskich Więzień i Obozów Koncentracyjnych)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Polski Związek byłych Więźniów Politycznych Hitlerowskich Więzień i Obozów Koncentracyjnych website, viewed Nov. 20, 2019:</subfield>
+    <subfield code="b">(organization of former Polish political prisoners of German Nazi concentration camps, prisons, and other places of confinement during World War II; officialy registered in Warsaw, 31 May 1946; organization dissolved August 31, 1949; re-registered January11, 1990)</subfield>
+    <subfield code="u">http://pzbwok.pl/</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>01395nz  a2200193n  4500</leader>
+  <controlfield tag="001">11258566</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073114.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |a ana     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000953</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670374</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">ABAU</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">ABAU</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">National Research Council (U.S.).</subfield>
+    <subfield code="b">Transportation Research Board.</subfield>
+    <subfield code="b">Committee on Strength and Deformation Characteristics of Pavement Sections</subfield>
+  </datafield>
+  <datafield tag="368" ind1=" " ind2=" ">
+    <subfield code="a">Committees</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="e">Washington, D.C.</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="372" ind1=" " ind2=" ">
+    <subfield code="a">Pavements--Materials--Dynamic testing--Research</subfield>
+    <subfield code="a">Strength of materials--Testing--Research</subfield>
+    <subfield code="a">Deformations (Mechanics)--Research</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="410" ind1="2" ind2=" ">
+    <subfield code="a">National Research Council (U.S.).</subfield>
+    <subfield code="b">Transportation Research Board.</subfield>
+    <subfield code="b">Soil Mechanics Section.</subfield>
+    <subfield code="b">Committee on Strength and Deformation Characteristics of Pavement Sections</subfield>
+  </datafield>
+  <datafield tag="510" ind1="2" ind2=" ">
+    <subfield code="w">r</subfield>
+    <subfield code="i">Hierarchical superior:</subfield>
+    <subfield code="a">National Research Council (U.S.).</subfield>
+    <subfield code="b">Transportation Research Board.</subfield>
+    <subfield code="b">Soil Mechanics Section</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Its Test procedures for characterizing dynamic stress-strain properties of pavement materials, 1975:</subfield>
+    <subfield code="b">foreword ( ... This report was written as a part of the activities of the Transportation Research Board&apos;s Committee on Strength and Deformation Characteristics of Pavement Sections ... ) page 40 (Sponsorship of this special report ... Soil Mechanics Section ... Committee on Strength and Deformation Characteristics of Pavement Sections)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>01094nz  a2200229n  4500</leader>
+  <controlfield tag="001">11258567</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073114.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |a aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000954</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670375</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">CSdS</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">CSdS</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="f">1892-07-02</subfield>
+    <subfield code="g">1976</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Totterdell, G. H.</subfield>
+    <subfield code="q">(George Henry),</subfield>
+    <subfield code="d">1892-1976</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="a">Eastwood (Nottinghamshire, England)</subfield>
+    <subfield code="f">Essex (England)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="372" ind1=" " ind2=" ">
+    <subfield code="a">Law enforcement</subfield>
+    <subfield code="a">Criminal investigation</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Police</subfield>
+    <subfield code="a">Detectives</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Males</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="w">nne</subfield>
+    <subfield code="a">Totterdell, George Henry,</subfield>
+    <subfield code="d">1892-</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Country copper, [1956]:</subfield>
+    <subfield code="b">title page (Superintendant G.H. Totterdell, C.I.D., of the Essex County Police) page 9 (born July 2, 1892 in Eastwood, Essex, England)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">LC catalog, 12-09-2019</subfield>
+    <subfield code="b">(Totterdell, George Henry, 1892- ; usage: G.H. Totterdell)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Chelmsford War Memorial website, 12-09-2019</subfield>
+    <subfield code="b">(under Second World War: Ronald Gordon TOTTERDELL: &quot;Ronald was born in 1921 in Essex, the second son of George Henry Rookwood Totterdell (1892-1976)&quot;)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00915nz  a2200205n  4500</leader>
+  <controlfield tag="001">11258568</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073114.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |a aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000955</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670376</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">UPB</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">UPB</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="f">1769</subfield>
+    <subfield code="g">1859</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Ninfield,</subfield>
+    <subfield code="d">1769-1859</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Poets</subfield>
+    <subfield code="a">Clergy</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Males</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="500" ind1="1" ind2=" ">
+    <subfield code="w">r</subfield>
+    <subfield code="i">Real identity:</subfield>
+    <subfield code="a">Sharpe, John,</subfield>
+    <subfield code="d">1769-1859</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Gentleman&apos;s magazine, 1796:</subfield>
+    <subfield code="b">volume 66 (August), page 684 (Elegy on the death of R. Burns, the Ayrshire plowman, [by] Ninfield)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">ANQ, 2013:</subfield>
+    <subfield code="b">volume 26, number 1, pages 20-23 (Identifying &quot;Ninfield&quot;: the contributions of John Sharpe to the Gentleman&apos;s magazine, 1795-98, [by] Emily Lorraine de Montluzin; Rev. John Sharp, 1769-1860, amateur poet who used the pseudonym Ninfield; rector of Castle Eaton and curate of Ninfield)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00499nz  a2200145n  4500</leader>
+  <controlfield tag="001">11258569</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073115.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |a aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000961</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670382</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DGU</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DGU</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Mistral, Gabriela,</subfield>
+    <subfield code="d">1889-1957.</subfield>
+    <subfield code="t">Desolación.</subfield>
+    <subfield code="k">Selections (Espinosa)</subfield>
+  </datafield>
+  <datafield tag="500" ind1="1" ind2=" ">
+    <subfield code="w">r</subfield>
+    <subfield code="i">Editor:</subfield>
+    <subfield code="a">Espinosa V., Ismael</subfield>
+    <subfield code="q">(Espinosa Vargas)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Desolación, 1994:</subfield>
+    <subfield code="b">title page (Desolación : diez poemas / Ismael Espinosa, editor)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00488nz  a2200181n  4500</leader>
+  <controlfield tag="001">11258570</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073115.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000971</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670392</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">UPB</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">UPB</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="s">1802</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Pace, James,</subfield>
+    <subfield code="d">active 1802</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Poets</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Males</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">eng</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Scots magazine, 1802:</subfield>
+    <subfield code="b">volume 64, page 594 (The memory of Burns, [by] James Pace)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00712nz  a2200217n  4500</leader>
+  <controlfield tag="001">11258571</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073115.0</controlfield>
+  <controlfield tag="008">200103n| azaaaaaan          |a ana     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000972</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670393</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">IEN</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">IEN</subfield>
+  </datafield>
+  <datafield tag="130" ind1=" " ind2="0">
+    <subfield code="a">Production guide</subfield>
+  </datafield>
+  <datafield tag="410" ind1="2" ind2=" ">
+    <subfield code="a">National Horticultural Research Institute (Ibadan, Nigeria).</subfield>
+    <subfield code="t">Production guide</subfield>
+  </datafield>
+  <datafield tag="642" ind1=" " ind2=" ">
+    <subfield code="a">no. 1</subfield>
+    <subfield code="5">DPCC</subfield>
+    <subfield code="5">IEN</subfield>
+  </datafield>
+  <datafield tag="643" ind1=" " ind2=" ">
+    <subfield code="a">Ibadan, Nigeria</subfield>
+    <subfield code="b">National Horticultural Research Institute</subfield>
+  </datafield>
+  <datafield tag="644" ind1=" " ind2=" ">
+    <subfield code="a">f</subfield>
+    <subfield code="5">IEN</subfield>
+  </datafield>
+  <datafield tag="645" ind1=" " ind2=" ">
+    <subfield code="a">t</subfield>
+    <subfield code="5">DPCC</subfield>
+    <subfield code="5">IEN</subfield>
+  </datafield>
+  <datafield tag="646" ind1=" " ind2=" ">
+    <subfield code="a">s</subfield>
+    <subfield code="5">IEN</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Production guide for onions, 201-?:</subfield>
+    <subfield code="b">series title page (Production guide no. 1)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">OCLC, Jan. 3, 2020</subfield>
+    <subfield code="b">(hdg.: Production guide)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00462nz  a2200133n  4500</leader>
+  <controlfield tag="001">11258572</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073115.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n ana     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000981</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670402</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">IEN</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">IEN</subfield>
+  </datafield>
+  <datafield tag="110" ind1="2" ind2=" ">
+    <subfield code="a">Nigerian Society of Chemical Engineers.</subfield>
+    <subfield code="b">Education Workshop</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Proceedings of the ... Education Workshop, 2010:</subfield>
+    <subfield code="b">title page (Education Workshop; The Nigerian Society of Chemical Engineers)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00928nz  a2200229n  4500</leader>
+  <controlfield tag="001">11258573</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073115.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |a aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000982</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670403</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">UPB</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">UPB</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="f">1986</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="053" ind1=" " ind2="4">
+    <subfield code="a">PQ9929.S25</subfield>
+    <subfield code="5">UPB</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Salvador, Jorge,</subfield>
+    <subfield code="d">1986-</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="a">Luanda (Angola)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Authors</subfield>
+    <subfield code="a">Journalists</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Males</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">por</subfield>
+  </datafield>
+  <datafield tag="378" ind1=" " ind2=" ">
+    <subfield code="q">Jorge Domingos</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Domingos Salvador, Jorge,</subfield>
+    <subfield code="d">1986-</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Salvador, Jorge. Mukandas angolanas, 2014:</subfield>
+    <subfield code="b">title page (Jorge Salvador) page 103 (Jorge Domingos Salvador was born 1986 in Luanda, Angola; licenciado in Social Communication from the Universidade Privada de Angola (UPRA); currently works as a journalist for the Revista Economia &amp; Mercado and is the founding president of the Associação Kamba Solidário)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00545nz  a2200169n  4500</leader>
+  <controlfield tag="001">11258574</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073115.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000983</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670404</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">IEN</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">IEN</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Adedeji, Olubukola</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="c">Nigeria</subfield>
+    <subfield code="f">Ife (Nigeria)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="372" ind1=" " ind2=" ">
+    <subfield code="a">Botany</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="373" ind1=" " ind2=" ">
+    <subfield code="a">Obafemi Awolowo University</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">That I may know plants, 2019:</subfield>
+    <subfield code="b">title page (Olubukola Adedeji, Professor of Botany, Obafemi Awolowo University, Ile-Ife, Nigeria)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00886nz  a2200205n  4500</leader>
+  <controlfield tag="001">11258575</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073115.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000984</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670405</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">UPB</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">UPB</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="f">1979</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="053" ind1=" " ind2="4">
+    <subfield code="a">PQ7499.3.L685</subfield>
+    <subfield code="5">UPB</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Loukota, Adelaida,</subfield>
+    <subfield code="d">1979-</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="a">Guatemala (Guatemala)</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Authors</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">Females</subfield>
+    <subfield code="2">lcdgt</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">spa</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Loukota, Adelaida. Algo que le pasa a otras personas, 2018:</subfield>
+    <subfield code="b">title page (Adelaida Loukota) front flap (Adelaida Loukota; born 1979 in Guatemala City; writer; has published the books Inconclusiones (Edición de autor, 2000), Amalia ya no está (Incubus, 2001), Callecorreos [cowritten with Mynor González] (Zoomsuperestudio, 2002) and Historia de un caballero y una no princesa (LoQueLeo, 2017)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>01035nz  a2200133n  4500</leader>
+  <controlfield tag="001">11258576</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073115.0</controlfield>
+  <controlfield tag="008">200103n| azannaabn          |n aaa     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020000991</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670412</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">CaBVa</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">CaBVa</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Forsyth, Scott</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">The wild coasts of Canada, 2019:</subfield>
+    <subfield code="b">title page (photographs and text by Scott Forsyth) about the author (Scott Forsyth is a professional photographer specializing in the Canadian landscape; staff photographer and expedition team member for Adventure Canada and Maple Leaf Adventures; a fellowship in the Royal Canadian Geographical Society and the Explorers Club, and serving as a Canadian Geographical Photographer in Residence; works as a family physician in Calgary, Alberta; a civil aviation medical examiner for the federal Ministry of Transport and as a clinical lecturer in the Department of Family Medicine at the University of Calgary; has served as chair of the board of directors for the Calgary West Central Primary Care Network)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00911nz  a2200241n  4500</leader>
+  <controlfield tag="001">11258577</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104073115.0</controlfield>
+  <controlfield tag="008">200103n| azaaaaaan          |a ana     c</controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">no2020001001</subfield>
+  </datafield>
+  <datafield tag="035" ind1=" " ind2=" ">
+    <subfield code="a">(OCoLC)oca12670422</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">UPB</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">UPB</subfield>
+  </datafield>
+  <datafield tag="130" ind1=" " ind2="0">
+    <subfield code="a">Colección Premio Centroamericano &quot;15 de septiembre&quot; 2018&quot;.</subfield>
+    <subfield code="p">Serie Yolanda Oreamuno</subfield>
+  </datafield>
+  <datafield tag="380" ind1=" " ind2=" ">
+    <subfield code="a">Series (Publications)</subfield>
+    <subfield code="a">Monographic series</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="430" ind1=" " ind2="0">
+    <subfield code="a">Premio Centroamericano &quot;15 de septiembre&quot; 2018&quot;.</subfield>
+    <subfield code="p">Serie Yolanda Oreamuno</subfield>
+  </datafield>
+  <datafield tag="430" ind1=" " ind2="0">
+    <subfield code="a">Serie Yolanda Oreamuno</subfield>
+  </datafield>
+  <datafield tag="430" ind1=" " ind2="0">
+    <subfield code="a">Yolanda Oreamuno, Serie</subfield>
+  </datafield>
+  <datafield tag="642" ind1=" " ind2=" ">
+    <subfield code="a">no. 1</subfield>
+    <subfield code="5">DPCC</subfield>
+    <subfield code="5">UPB</subfield>
+  </datafield>
+  <datafield tag="643" ind1=" " ind2=" ">
+    <subfield code="a">Guatemala</subfield>
+    <subfield code="b">Editorial Cultura</subfield>
+  </datafield>
+  <datafield tag="644" ind1=" " ind2=" ">
+    <subfield code="a">f</subfield>
+    <subfield code="5">UPB</subfield>
+  </datafield>
+  <datafield tag="645" ind1=" " ind2=" ">
+    <subfield code="a">t</subfield>
+    <subfield code="5">DPCC</subfield>
+    <subfield code="5">UPB</subfield>
+  </datafield>
+  <datafield tag="646" ind1=" " ind2=" ">
+    <subfield code="a">s</subfield>
+    <subfield code="5">UPB</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Loukota, Adelaida. Algo que le pasa a otras personas, 2018:</subfield>
+    <subfield code="b">title page (Colección Premio Centroamericano &quot;15 de septiembre&quot; 2018&quot;. Serie Yolanda Oreamuno, No. 1)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00625nz  a2200157n  4500</leader>
+  <controlfield tag="001">11258578</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104081424.0</controlfield>
+  <controlfield tag="008">200104n| azannaabn          |a aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2020000409</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Balsan, Elodie,</subfield>
+    <subfield code="d">1810-1893</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Martin, Elodie,</subfield>
+    <subfield code="d">1810-1893</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Balsan, Madame Pierre,</subfield>
+    <subfield code="d">1810-1893</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Souvenirs de madame Pierre Balsan (1810-1870), 2017:</subfield>
+    <subfield code="b">p. 9 (Elodie Martin (1810-1893), wife of Pierre Balsan) p. 15 (b. Elodie Marie Marguerite Martin, b. Dec. 15, 1810; d. Apr. 5, 1893)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Bib. nat., Jan. 4, 2020</subfield>
+    <subfield code="b">(Balsan, Madame Pierre (1810-1893))</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00363nz  a2200121n  4500</leader>
+  <controlfield tag="001">11258579</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104090955.0</controlfield>
+  <controlfield tag="008">200104n| azannaabn          |n aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2020000410</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Moncond&apos;huy, Léonore</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Le service civique, dernier rempart de la République?, 2017:</subfield>
+    <subfield code="b">title page (Léonore Moncond&apos;huy)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00387nz  a2200133n  4500</leader>
+  <controlfield tag="001">11258580</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104094912.0</controlfield>
+  <controlfield tag="008">200104n| azannaabn          |a aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2020000411</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="100" ind1="0" ind2=" ">
+    <subfield code="a">Author of The visit to Derby</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Visit to Derby, Author of The</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">The miner&apos;s daughter, 1860:</subfield>
+    <subfield code="b">title page (Author of The visit to Derby)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00471nz  a2200133n  4500</leader>
+  <controlfield tag="001">11258581</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104123854.0</controlfield>
+  <controlfield tag="008">200104n| azannaabn          |a aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2020000412</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Bradley, Mary E.</subfield>
+    <subfield code="q">(Mary Emily),</subfield>
+    <subfield code="d">1835-1898.</subfield>
+    <subfield code="t">Short stories.</subfield>
+    <subfield code="k">Selections</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Bradley, Mary E.</subfield>
+    <subfield code="q">(Mary Emily),</subfield>
+    <subfield code="d">1835-1898.</subfield>
+    <subfield code="t">Arthur and other stories, in prose and verse</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Arthur and other stories, in prose and verse, 1860.</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00392nz  a2200133n  4500</leader>
+  <controlfield tag="001">11258582</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104132731.0</controlfield>
+  <controlfield tag="008">200104n| azannaabn          |a aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2020000413</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="100" ind1="0" ind2=" ">
+    <subfield code="a">Author of Philip and Arthur</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Philip and Arthur, Author of</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Ash Wednesday in the nursery, 1860:</subfield>
+    <subfield code="b">title page (Author of Philip and Arthur)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00737cz  a2200157n  4500</leader>
+  <controlfield tag="001">11258583</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104164751.0</controlfield>
+  <controlfield tag="008">200104n| azannaabn          |n ana      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2020000414</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="s">2017</subfield>
+  </datafield>
+  <datafield tag="111" ind1="2" ind2=" ">
+    <subfield code="a">Kruglyĭ stol &quot;Okti︠a︡brʹskai︠a︡ revoli︠u︡t︠s︡ii︠a︡ i ėvoli︠u︡t︠s︡ionnyĭ putʹ Kazakhstana&quot;</subfield>
+    <subfield code="d">(2017 :</subfield>
+    <subfield code="c">Almaty, Kazakhstan)</subfield>
+  </datafield>
+  <datafield tag="411" ind1="2" ind2=" ">
+    <subfield code="a">Okti︠a︡brʹskai︠a︡ revoli︠u︡t︠s︡ii︠a︡ i ėvoli︠u︡t︠s︡ionnyĭ putʹ Kazakhstana (Kruglyĭ stol)</subfield>
+    <subfield code="d">(2017 :</subfield>
+    <subfield code="c">Almaty, Kazakhstan)</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="c">Kazakhstan</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Okti︠a︡brʹskai︠a︡ revoli︠u︡t︠s︡ii︠a︡ i ėvoli︠u︡t︠s︡ionnyĭ putʹ Kazakhstana, 2017</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00610cz  a2200193n  4500</leader>
+  <controlfield tag="001">11258584</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104170620.0</controlfield>
+  <controlfield tag="008">200104n| azannaabn          |a aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2020000416</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="f">1943-04-22</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="c">Kazakhstan</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="374" ind1=" " ind2=" ">
+    <subfield code="a">Skiers</subfield>
+    <subfield code="a">Journalists</subfield>
+    <subfield code="2">lcsh</subfield>
+  </datafield>
+  <datafield tag="375" ind1=" " ind2=" ">
+    <subfield code="a">male</subfield>
+  </datafield>
+  <datafield tag="377" ind1=" " ind2=" ">
+    <subfield code="a">kaz</subfield>
+    <subfield code="a">rus</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Amanzholov, U. S.</subfield>
+    <subfield code="q">(Ural Sarsenovich),</subfield>
+    <subfield code="d">1943-</subfield>
+  </datafield>
+  <datafield tag="400" ind1="1" ind2=" ">
+    <subfield code="a">Amanzholov, Ural Sarsenovich,</subfield>
+    <subfield code="d">1943-</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Gornye lyzhi, 2019:</subfield>
+    <subfield code="b">title page verso (veteran of downhill ski racing, journalist) page 4 ( was born April 22, 1943)</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>01195cz  a2200181n  4500</leader>
+  <controlfield tag="001">11258585</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104173127.0</controlfield>
+  <controlfield tag="008">200104n| azannaabn          |a ana      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2020000419</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="111" ind1="2" ind2=" ">
+    <subfield code="a">Mezhdunarodnai︠a︡ nauchnai︠a︡ konferent︠s︡ii︠a︡ &quot;Pozhilye li︠u︡di na evraziĭskom prostranstve&quot;</subfield>
+    <subfield code="d">(2018 :</subfield>
+    <subfield code="c">Alma-Ata, Kazakhstan)</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="c">Kazakhstan</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="411" ind1="2" ind2=" ">
+    <subfield code="a">Междyнародная научная конференция &quot;Пожилые люди на евразийском пространстве&quot;</subfield>
+    <subfield code="d">(2018 :</subfield>
+    <subfield code="c">Alma-Ata, Kazakhstan)</subfield>
+  </datafield>
+  <datafield tag="411" ind1="2" ind2=" ">
+    <subfield code="a">Konferent︠s︡ii︠a︡ &quot;Pozhilye li︠u︡di na evraziĭskom prostranstve&quot;, Mezhdunarodnai︠a︡ nauchnai︠a︡</subfield>
+  </datafield>
+  <datafield tag="411" ind1="2" ind2=" ">
+    <subfield code="a">Kонференция &quot;Пожилые люди на евразийском пространстве&quot;, Междyнародная научная</subfield>
+    <subfield code="d">(2018 :</subfield>
+    <subfield code="c">Alma-Ata, Kazakhstan)</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Non-Latin script references not evaluated.</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Pozhilye li︠u︡di na evraziĭskom prostranstve :</subfield>
+    <subfield code="b">interesy, problemy i perspektivy. Sbornik materialov mezhdunarodnoĭ nuchnoĭ konferent︠s︡ii Almaty, 16 okti︠a︡bri︠a︡ 2018 g.</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>01087cz  a2200181n  4500</leader>
+  <controlfield tag="001">11258586</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104173854.0</controlfield>
+  <controlfield tag="008">200104n| azannaabn          |a ana      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2020000421</subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="046" ind1=" " ind2=" ">
+    <subfield code="s">2019</subfield>
+    <subfield code="2">edtf</subfield>
+  </datafield>
+  <datafield tag="111" ind1="2" ind2=" ">
+    <subfield code="a">Mezhdunarodnai︠a︡ nauchno-prakticheskai︠a︡ konferent︠s︡ii︠a︡ &quot;Profilaktika ėkstremizma: Uspekhi i trudnosti&quot;</subfield>
+    <subfield code="d">(2019 :</subfield>
+    <subfield code="c">Nur-Sultan, Kazakhstan)</subfield>
+  </datafield>
+  <datafield tag="370" ind1=" " ind2=" ">
+    <subfield code="c">Kazakhstan</subfield>
+    <subfield code="2">naf</subfield>
+  </datafield>
+  <datafield tag="411" ind1="2" ind2=" ">
+    <subfield code="a">Международная научно-практическая конференция &quot;Профилактика экстремизма: Успехи и трудности&quot;</subfield>
+    <subfield code="d">(2019 :</subfield>
+    <subfield code="c">Nur-Sultan, Kazakhstan)</subfield>
+  </datafield>
+  <datafield tag="411" ind1="2" ind2=" ">
+    <subfield code="a">Konferent︠s︡ii︠a︡ &quot;Profilaktika ėkstremizma: Uspekhi i trudnosti&quot;, Mezhdunarodnai︠a︡ nauchno-prakticheskai︠a︡</subfield>
+  </datafield>
+  <datafield tag="411" ind1="2" ind2=" ">
+    <subfield code="a">Kонференция &quot;Профилактика экстремизма: Успехи и трудности&quot; , Международная научно-практическая</subfield>
+    <subfield code="d">(2019 :</subfield>
+    <subfield code="c">Nur-Sultan, Kazakhstan)</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Profilaktika ėkstremizma, 2019</subfield>
+  </datafield>
+</record>
+<record>
+  <leader>00406cz  a2200133n  4500</leader>
+  <controlfield tag="001">11258587</controlfield>
+  <controlfield tag="003">DLC</controlfield>
+  <controlfield tag="005">20200104184531.0</controlfield>
+  <controlfield tag="008">200104n| azannaabn          |n aaa      </controlfield>
+  <datafield tag="010" ind1=" " ind2=" ">
+    <subfield code="a">n 2020000422</subfield>
+    <subfield code="z">no 99000061 </subfield>
+  </datafield>
+  <datafield tag="040" ind1=" " ind2=" ">
+    <subfield code="a">DLC</subfield>
+    <subfield code="b">eng</subfield>
+    <subfield code="e">rda</subfield>
+    <subfield code="c">DLC</subfield>
+  </datafield>
+  <datafield tag="100" ind1="1" ind2=" ">
+    <subfield code="a">Mander, Tony</subfield>
+  </datafield>
+  <datafield tag="667" ind1=" " ind2=" ">
+    <subfield code="a">Previously on undifferentiated name record: no 99000061</subfield>
+  </datafield>
+  <datafield tag="670" ind1=" " ind2=" ">
+    <subfield code="a">Have you seen Drum recently, 1995:</subfield>
+    <subfield code="b">credits (Tony Mander, camera)</subfield>
+  </datafield>
+</record>
+</collection>
