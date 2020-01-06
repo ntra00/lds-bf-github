@@ -1,6 +1,6 @@
 #!/bin/bash
 
-loads all the singles in load/unprocessed/single
+#loads all the singles in load/unprocessed/single
 
 # ex: nohup ./load_bib_yaz.sh 
 
@@ -12,6 +12,8 @@ CURDIR=`echo $PWD`
 TODAY=`date +%Y-%m-%d`
 
 echo loading from  $LOAD_UNPROCESSED/single/*
+
+ls -l  $LOAD_UNPROCESSED/single/*
 
 
  $MLCPPATH/mlcp.sh import  \
