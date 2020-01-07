@@ -41,7 +41,6 @@ cd $SOURCE_UNPROCESSED
 pwd
 echo in unproc
 
-ls -l *$filedate*
 echo $filedate=filedate
 
 # First break up the large MARC 2709 files into smaller chunks, 250 per file.  Still 2709. 

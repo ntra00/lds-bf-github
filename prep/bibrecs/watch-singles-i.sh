@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ../config bibrecs
+source /marklogic/nate/lds/lds-bf/prep/config bibrecs
 
 CURDIR=`echo $PWD`
 
