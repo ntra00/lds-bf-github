@@ -2,9 +2,9 @@ xquery version "1.0-ml";
 
 module namespace auth2bf = "http://loc.gov/ndmso/authorities-2-bibframe";
 
-import module namespace bibframe2index    = "info:lc/id-modules/bibframe2index#"   at "/prep/modules/module.BIBFRAME-2-INDEX.xqy";
-import module namespace	bf4ts   		  = "info:lc/xq-modules/bf4ts#"   		   at "/prep/modules/module.BIBFRAME-4-Triplestore.xqy";
-import module namespace bibs2mets 		  = "http://loc.gov/ndmso/bibs-2-mets" 	at 	"/prep/modules/module.bibs2mets.xqy";
+import module namespace bibframe2index    = "info:lc/id-modules/bibframe2index#"   at "/modules/module.BIBFRAME-2-INDEX.xqy";
+import module namespace	bf4ts   		  = "info:lc/xq-modules/bf4ts#"   		   at "/modules/module.BIBFRAME-4-Triplestore.xqy";
+import module namespace bibs2mets 		  = "http://loc.gov/ndmso/bibs-2-mets" 	at 	"/modules/module.bibs2mets.xqy";
 
 declare namespace 	rdf					= "http://www.w3.org/1999/02/22-rdf-syntax-ns#";
 declare namespace	rdfs   			    = "http://www.w3.org/2000/01/rdf-schema#";
@@ -400,7 +400,7 @@ return
     			
     		let $mxe:= $the-doc/mets:mets/mets:dmdSec[@ID="mxe"]/mets:mdWrap/mets:xmlData/mxe:record
     		let $idx:= try{bibframe2index:bibframe2index($bfwork, $mxe)			}
-			catch($e){xdmp:log(fn:concat("CORB auth : auth2bibframe idx failed for ",$resclean), "info")
+						catch($e){xdmp:log(fn:concat("CORB auth : auth2bibframe idx failed for ",$resclean), "info")
 			}
     		
     	    let $new-doc:=
@@ -466,7 +466,6 @@ return
 (: this is the main function for yaz, too :)
 
 declare function auth2bf:link-and-make-mets($bfwork, $orig-uri, $new-uri,$lccn, $AUTHURI, $destination-uri, $the-doc){
-
 				(: get link for translationOf :)
 	          	(:let $title-lang:=fn:string($marcxml//marcxml:datafield[fn:starts-with(fn:string(@tag),"1")]/marcxml:subfield[@code="l"]):)
 	          	let $title-lang:=fn:substring-after(fn:string($bfwork/rdf:RDF/bf:Work/bf:title[1]/bf:Title[1]/*[self::* instance of element(bflc:title00MarcKey) or self::* instance of element(bflc:title10MarcKey) or self::* instance of element(bflc:title11MarcKey) or self::* instance of element(bflc:title30MarcKey)][1]),"$l")	
@@ -599,14 +598,13 @@ let $relateds:=
 	
 	let $nametitle-expression:=if ($the-doc/mets:mets/mets:dmdSec[@ID="index"]/mets:mdWrap/mets:xmlData//index:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRExpression") then "/resources/expressions/" else ()
 	let $rel-colls:=($haslinks, $expressions,$titlerelations, $had7xx,$textrelations, $nametitle-expression)
-	let $bfwork:= if ( $distinct-translations or $distinct-relateds or $related-7xxs or $text-relation-nodes) then
+	(:let $bfwork:= if ( $distinct-translations or $distinct-relateds or $related-7xxs or $text-relation-nodes) then
 						<rdf:RDF>
 							<bf:Work rdf:about="{fn:normalize-space(fn:substring-before($bfwork/rdf:RDF/bf:Work/@rdf:about,'#'))}">
 							<rdf:type rdf:resource="http://id.loc.gov/ontologies/lclocal/Hub"/>
 							{
 								$bfwork/rdf:RDF/bf:Work/*[fn:not(index-of($sevenxx-properties,fn:name(.)))],
-							
-								
+															
 								(: keep relateds that are blank nodes :)							
 								$distinct-translations,
 								$distinct-relateds,
@@ -623,6 +621,31 @@ let $relateds:=
 								{$bfwork/rdf:RDF/bf:Work/*}
 							</bf:Work>
 				 	</rdf:RDF>
+				:)
+				let $bfwork:= 
+						<rdf:RDF>
+							<bf:Work rdf:about="{fn:normalize-space(fn:substring-before($bfwork/bf:Work/@rdf:about,'#'))}">
+							<rdf:type rdf:resource="http://id.loc.gov/ontologies/lclocal/Hub"/>
+							{if ( $distinct-translations or $distinct-relateds or $related-7xxs or $text-relation-nodes) then
+								
+								(
+								$bfwork/bf:Work/*[fn:not(index-of($sevenxx-properties,fn:name(.)))],
+															
+									(: keep relateds that are blank nodes :)							
+									$distinct-translations,
+									$distinct-relateds,
+									$related-7xxs/*,
+									(: no auth relateds are kept; all are stubs $related-7xxs/*, :)
+									for $n in $text-relation-nodes return
+										<bflc:relationship>{$n}</bflc:relationship>
+								)
+							else 
+							(
+								$bfwork//bf:Work/*
+								)
+							}
+
+          				</bf:Work></rdf:RDF>
 				
 				
           		let $mxe:= $the-doc/mets:mets/mets:dmdSec[@ID="mxe"]/mets:mdWrap/mets:xmlData/mxe:record
@@ -637,6 +660,7 @@ let $relateds:=
 							 	xdmp:log(fn:concat("CORB auths indexing error  for ", $AUTHURI), "info")
 							 )
 				   }
+			
 				let $sem:= try {
 								bf4ts:bf4ts($bfwork)			
 								}
@@ -686,7 +710,8 @@ let $relateds:=
                             <mets:div TYPE="workRecord" DMDID="bibframe  mxe madsrdf semtriples ldsindex"/>
                         </mets:structMap> 		
             	</mets:mets>
-            			     	
+            				
+
     		return ($new-doc, $rel-colls)
 
 
@@ -708,9 +733,6 @@ declare function auth2bf:transform(
 						or $the-doc/mets:mets/mets:dmdSec[@ID="madsrdf"]/mets:mdWrap/mets:xmlData/rdf:RDF/madsrdf:Title 
 						or $the-doc/mets:mets/mets:dmdSec[@ID="madsrdf"]/mets:mdWrap/mets:xmlData/rdf:RDF/madsrdf:NameTitle )
 						then
-let $_:=if (fn:contains($orig-uri,"no2019118878")) then xdmp:log( "------------------","info") else ()
-let $_:=if (fn:contains($orig-uri,"no2019118878")) then xdmp:log( $the-doc,"info") else ()
-let $_:=if (fn:contains($orig-uri,"no2019118878")) then xdmp:log( "------------------","info") else ()
 
 
 	let $lccn:= fn:normalize-space(fn:tokenize($orig-uri,"/")[fn:last()])
@@ -719,7 +741,7 @@ let $_:=if (fn:contains($orig-uri,"no2019118878")) then xdmp:log( "-------------
 	       (: dailies may not be nametitle or title records; also may have the 985 tag : skip them:)
 	
 	let $marcxml:=$the-doc/mets:mets/mets:dmdSec[@ID="marcxml"]/mets:mdWrap/mets:xmlData/marcxml:record
-	let $_:=if (fn:contains($orig-uri,"no2019118878")) then xdmp:log( fn:concat($orig-uri,":marcxml:", $marcxml),"info") else ()
+	
 	let $already-in-pilot:=   
 		for $tag in $marcxml/marcxml:datafield[@tag="985"]/marcxml:subfield[@code="a"]
       	return if (fn:matches(fn:string($tag) ,"BibframePilot2","i")) then

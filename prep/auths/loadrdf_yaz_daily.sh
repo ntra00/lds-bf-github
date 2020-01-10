@@ -37,6 +37,7 @@ DAILY_DEL=$LOAD_UNPROCESSED/$YESTERDAY/D
 
  cd $CURDIR
 echo "yaz daily loads for $YESTERDAY starting:"
+ls $DAILY_ADD/*.rdf
 
 echo running each split file separately so there are no errors:
 for file in $(ls $DAILY_ADD/*.rdf); do

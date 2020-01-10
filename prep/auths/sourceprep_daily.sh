@@ -36,7 +36,6 @@ pwd
 
 
 ls /marklogic/opt/marcdump/auth/*$filedate*
-read x
 
 for mrc in $(ls /marklogic/opt/marcdump/auth/*$filedate*) 
 do
@@ -44,7 +43,7 @@ do
 	echo $mrc : $filedate
 		
 		directory=$YESTERDAY
-		mkdir $directory
+		mkdir $directory >/dev/null
 		chmod  775  $directory > /dev/null
 		chgrp marklogic $directory > /dev/null
 		cd $directory
@@ -78,7 +77,7 @@ for mrc in $(ls /marklogic/opt/marcdump/deletedauths/deleted.auth.marc.*$filedat
 	echo $mrc
 		
 		directory=$YESTERDAY
-		mkdir $directory
+		mkdir $directory >/dev/null
 		chmod -R 775 $directory > /dev/null
 		chgrp marklogic $directory > /dev/null
 		cd $directory

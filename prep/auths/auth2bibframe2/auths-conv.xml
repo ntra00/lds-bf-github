@@ -1,5 +1,5 @@
 <backend syntax="xml" name="rdf-lookup">
-  <xslt stylesheet="/marklogic/id/natlibcat/admin/bfi/auths/auth2bibframe2/auth2bibframe2.xsl"/>
+  <xslt stylesheet="/marklogic/nate/lds/lds-bf/prep/auths/auth2bibframe2/auth2bibframe2.xsl"/>
   <rdf-lookup timeout="3">
     <namespace prefix="bf" href="http://id.loc.gov/ontologies/bibframe/" />
     <namespace prefix="bflc" href="http://id.loc.gov/ontologies/bflc/"/>

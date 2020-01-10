@@ -1,37 +1,12 @@
-!/bin/bash
-#loads whatever is in load; copied from bibs rbl
-# rnc curls to source, transforms to singleload, moves to load
-#rnl loads from load, moves to loaded, which should be cleared out periodically
-CURDIR=`echo $PWD`
+#!/bin/bash
 
-M2BFDIR=/marklogic/id/marc2bibframe2
+# source2rdf_single.sh curls to source, transforms to source/processed
+#loadrdf_single.sh  loads from load/unprocesses, moves to load/processed, which should be cleared out periodically
+#$1 is lccn
+source  /marklogic/nate/lds/lds-bf/prep/config auths
+./source2rdf_single.sh $1
+ls -l  $SOURCE_PROCESSED/single/
+read x
+ mv  $SOURCE_PROCESSED/single/$1*  $LOAD_UNPROCESSED/single/
 
-
-TODAY=`date +%Y-%m-%d`
-
- echo "load date  = $TODAY"
-THREADS=8
-MLCPPATH=/marklogic/id/id-prep/mlcp/bin
-PASSWD=`/marklogic/id/id-prep/marc/keys/passwd-ml.sh`
-#       -input_file_pattern $CURDIR/singleload/singleton.*.rdf \
- 
-# /marklogic/id/natlibcat/admin/bfi/auths/lccn/authorities/names
-# -input_file_path /marklogic/id/natlibcat/admin/bfi/auths/load \
-#-transform_module /admin/bfi/auths/modules/authorities-yaz2bf.xqy \
-
- $MLCPPATH/mlcp.sh import  \
-        -host localhost \
-        -port 8203 \
-        -username id-admin \
-        -password $PASSWD \
-	   -input_file_path  /marklogic/id/nate/lds/lds-bf/prep/auths/load \
-       -output_uri_replace "/marklogic/id/nate/lds/lds-bf/prep/auths/load/,''"  \
-        -transform_module /auths/modules/authorities-yaz2bf.xqy \
-        -transform_namespace "http://loc.gov/ndmso/authorities-yaz-2-bibframe" \
-        -output_collections /authorities/bfworks/,/resources/works/,/bibframe/superworks/,/processing/load_bfworks/$TODAY/,/catalog/,/lscoll/lcdb/,/lscoll/,/lscoll/lcdb/works/,/catalog/lscoll/,/catalog/lscoll/lcdb/,/catalog/lscoll/lcdb/works/,/authorities/yazbfworks/,/bibframe-process/reloads/2017-09-16/ \
-        -output_permissions lc_xmlsh,update,id-user-role,read \
-        -thread_count $THREADS \
-        -mode local
-
-mv  load/* loaded/
-
+./loadrdf_single.sh

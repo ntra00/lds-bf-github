@@ -53,7 +53,7 @@ LOAD_PROCESSED=$DIR/load/processed
 DEL_UNPROCESSED=$DIR/del/unprocessed
 DEL_PROCESSED=$DIR/del/processed
 
-if [[ $DEBUG -eq "debug" ]]; then
+if [[ $DEBUG != "" ]]; then
 
 echo "------------------"
 

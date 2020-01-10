@@ -163,7 +163,8 @@ let $sem:=	try{ sem:rdf-serialize(
 
 				}			
 			catch($e){
-					( 
+					(
+						
 						xdmp:log(fn:concat("CORB bf4ts error: ", fn:string($rdfxml/*[1]/@rdf:about) ),"info")
 						
 						

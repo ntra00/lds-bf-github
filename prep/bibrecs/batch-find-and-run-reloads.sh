@@ -4,19 +4,18 @@
 # then executes each yaz using "rbc"
 
 
-source ../config bibrecs
+source /marklogic/nate/lds/lds-bf/prep/config bibrecs
 
 CURDIR=`pwd`
 echo $CURDIR
 
-     cat /var/opt/MarkLogic/Logs/ErrorLog_4.txt |grep  ./rbi| cut -d ":" -f7-12 |grep -v "e" |sort |uniq > batchupdates/display-reloads.txt
-     cat /var/opt/MarkLogic/Logs/ErrorLog_4.txt |grep  ./post-auth.sh | cut -d ":" -f7-12 |sort |uniq >> batchupdates/display-reloads.txt
+     cat /var/opt/MarkLogic/Logs/ErrorLog_1.txt |grep  ./rbi| cut -d ":" -f7-12 |grep -v "e" |sort |uniq > batchupdates/display-reloads.txt
+     cat /var/opt/MarkLogic/Logs/ErrorLog_1.txt |grep  ./post-auth.sh | cut -d ":" -f7-12 |sort |uniq >> batchupdates/display-reloads.txt
 
 	sed "s|rbi|rbc|g" <  batchupdates/display-reloads.txt >  batchupdates/batch-display-reloads.txt
 
 cat  batchupdates/batch-display-reloads.txt|wc -l
 
-read x
 
 while read line
 do

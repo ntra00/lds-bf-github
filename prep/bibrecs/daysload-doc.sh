@@ -1,11 +1,10 @@
 #!/bin/bash
 
-cd /marklogic/id/natlibcat/admin/bfi/bibrecs/
+source  /marklogic/nate/lds/lds-bf/prep/config bibrecs
 # make an xml file for doc label change checking
-curdir=`pwd`
-# mkdir $curdir/manifest
+CURDIR=`pwd`
 
-cd bibs_daily
+cd $LOAD_PROCESSED
 pwd
 
 TODAY=$1
@@ -16,8 +15,7 @@ then
 else
   TODAY=`date +%Y-%m-%d -d "1 day ago"`
 
- #TODAY=`date +%Y-%m-%d`
-
+ 
 fi
 
 echo today:
@@ -29,22 +27,22 @@ fi
 pwd
 
 	
-	grep -n '"001"' *| cut -d">" -f2|cut -d "<" -f1 > $curdir/manifest/bibsload.manifest.txt
-	if [ -f $curdir/manifest/bibsload.manifest.txt ]; then
-	   echo "<?xml version='1.0' encoding='UTF-8'?>" >  $curdir/manifest/daysload.$TODAY.xml
-	   echo "<daysload day='$TODAY'>" >>  $curdir/manifest/daysload.$TODAY.xml
+	grep -n '"001"' *| cut -d">" -f2|cut -d "<" -f1 > $CURDIR/manifest/bibsload.manifest.txt
+	if [ -f $CURDIR/manifest/bibsload.manifest.txt ]; then
+	   echo "<?xml version='1.0' encoding='UTF-8'?>" >  $CURDIR/manifest/daysload.$TODAY.xml
+	   echo "<daysload day='$TODAY'>" >>  $CURDIR/manifest/daysload.$TODAY.xml
 
 		while read bibid
 		do
 			docid=$(printf '%09d' $bibid)
 			objid=/resources/works/c${docid}
 			echo $objid
-			echo "<record objid='${objid}'/>" >> $curdir/manifest/daysload.$TODAY.xml
+			echo "<record objid='${objid}'/>" >> $CURDIR/manifest/daysload.$TODAY.xml
 
-		done < $curdir/manifest/$TODAY.bibsload.manifest.txt
-	  echo "</daysload>" >>  $curdir/manifest/daysload.$TODAY.xml
-chmod 775 $curdir/manifest/daysload.$TODAY.xml
-chgrp marklogic  $curdir/manifest/daysload.$TODAY.xml
+		done < $CURDIR/manifest/$TODAY.bibsload.manifest.txt
+	  echo "</daysload>" >>  $CURDIR/manifest/daysload.$TODAY.xml
+chmod 775 $CURDIR/manifest/daysload.$TODAY.xml
+chgrp marklogic  $CURDIR/manifest/daysload.$TODAY.xml
 
 fi
 

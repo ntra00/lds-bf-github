@@ -15,7 +15,8 @@
   <xsl:strip-space elements="*"/>
  
   <xsl:param name="baseuri" select="'http://id.loc.gov/resources/works/'"/>
-  <xsl:param name="idfield" select="'001'"/>
+  <!-- <xsl:param name="idfield" select="'001'"/> -->
+  <xsl:param name="idfield" select="'010a'"/>
   <xsl:param name="serialization" select="'rdfxml'"/>
   <xsl:variable name="vUpper" select= "'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/>
   <xsl:variable name="vLower" select= "'abcdefghijklmnopqrstuvwxyz'"/>
@@ -121,7 +122,7 @@
 
 	<!-- auths only , 1xx name label for matching against 4xx, 5xx sees -->
 	<xsl:variable name="primaryNameLabel"><xsl:apply-templates select="//marc:datafield[@tag='100' or @tag='110' or @tag='111'][1]" mode="tNameLabel"></xsl:apply-templates></xsl:variable>
-	 	<xsl:variable name="last-edit">2019-12-18T13:00</xsl:variable>
+	 	<xsl:variable name="last-edit">2020-01-08</xsl:variable>
 	 
 	<xsl:template match="/">
 
@@ -156,19 +157,20 @@
 		</xsl:variable>
 
 		<xsl:variable name="recordid">
-			<xsl:apply-templates mode="recordid" select=".">
+			<xsl:apply-templates mode="recordid-auth" select=".">
 				<xsl:with-param name="baseuri" select="$baseuri"/>
 				<xsl:with-param name="idfield" select="$idfield"/>
 				<xsl:with-param name="recordno" select="$recordno"/>
 			</xsl:apply-templates>
 		</xsl:variable>
+		
 
 		<!-- generate main Work entity -->	
 		
 		<xsl:choose>
 			<xsl:when test="$serialization = 'rdfxml' ">
 				<bf:Work>
-					<xsl:attribute name="rdf:about"><xsl:value-of select="translate($recordid,' ','')"/>#Work</xsl:attribute>					
+					<xsl:attribute name="rdf:about"><xsl:value-of select="$recordid"/>#Work</xsl:attribute>					
 					<!-- pass fields through conversion specs for Work properties 
 					except 400? -->
 					<!-- lccns in 001 have spaces; fix with translate -->
@@ -194,6 +196,49 @@
 		</xsl:choose>
 
 	</xsl:template>
+<xsl:template match="marc:record" mode="recordid-auth">
+    <xsl:param name="baseuri" select="'http://example.org/'"/>
+    <xsl:param name="idfield" select="'010a'"/>
+    <xsl:param name="recordno"/>
+    <xsl:variable name="tag" select="substring($idfield,1,3)"/>
+    <xsl:variable name="subfield">
+      <xsl:choose>
+        <xsl:when test="substring($idfield,4,1)">
+          <xsl:value-of select="substring($idfield,4,1)"/>
+        </xsl:when>
+        <xsl:otherwise>a</xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:variable name="recordid">
+      <xsl:choose>
+        <xsl:when test="$tag &lt; 10">
+          <xsl:if test="count(marc:controlfield[@tag=$tag]) = 1">
+            <xsl:call-template name="url-encode">
+              <xsl:with-param name="str" select="normalize-space(marc:controlfield[@tag=$tag])"/>
+            </xsl:call-template>
+          </xsl:if>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:if test="count(marc:datafield[@tag=$tag]/marc:subfield[@code=$subfield]) = 1">
+            <xsl:call-template name="url-encode">
+              <xsl:with-param name="str" select="normalize-space(translate(marc:datafield[@tag=$tag]/marc:subfield[@code=$subfield],' ',''))"/>
+            </xsl:call-template>
+          </xsl:if>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+    <xsl:choose>
+      <xsl:when test="$recordid != ''">
+        <xsl:value-of select="$baseuri"/><xsl:value-of select="$recordid"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:message terminate="no">
+          <xsl:text>WARNING: Unable to determine record ID for record </xsl:text><xsl:value-of select="$recordno"/><xsl:text>. Using generated ID.</xsl:text>
+        </xsl:message>
+        <xsl:value-of select="$baseuri"/><xsl:value-of select="generate-id(.)"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
 
 	<!-- suppress text from unmatched nodes 
 		-->

@@ -16,8 +16,6 @@ then
 else
   TODAY=`date +%Y-%m-%d -d "1 day ago"`
 
- #TODAY=`date +%Y-%m-%d`
-
 fi
 
 echo today:
