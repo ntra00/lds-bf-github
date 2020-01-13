@@ -54,7 +54,8 @@ do
 						
 			yaz-marcdump -C 250 -s split_ $mrc
 			
-			
+ct=$(ls  split*| wc -l)			
+echo "converting $ct split files for addition ..."
 			for f in split*
 			do
 					yaz-marcdump  -i marc -o marcxml $f  > $f.tmp.xml	 	
@@ -77,15 +78,18 @@ for mrc in $(ls /marklogic/opt/marcdump/deletedauths/deleted.auth.marc.*$filedat
 	echo $mrc
 		
 		directory=$YESTERDAY
-		mkdir $directory >/dev/null
-		chmod -R 775 $directory > /dev/null
-		chgrp marklogic $directory > /dev/null
+		#mkdir $directory >/dev/null
+		#chmod -R 775 $directory > /dev/null
+		#chgrp marklogic $directory > /dev/null
 		cd $directory
 		mkdir D
 		chmod -R  775  D > /dev/null
 		chgrp marklogic D > /dev/null
 		cd D
 		yaz-marcdump -f utf8 -t utf8 -C 250 -s split_ $mrc > /dev/null  
+
+ctd=$(ls  split*| wc -l)
+echo "converting $ctd split files for deletion ..."
 
 		for f in split*
 		do

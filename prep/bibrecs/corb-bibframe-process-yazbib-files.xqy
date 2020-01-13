@@ -190,7 +190,7 @@ return
 	       			else 
 	        			()
 		 return if ($already-in-pilot) then
-						xdmp:log(fn:concat("CORB BIBYAZ merge: skip: ",$orig-uri , ", has 985." ), "info")
+						xdmp:log(fn:concat("CORB BIBYAZ merge: skip: ",fn:string($work/@rdf:about) , ", has 985." ), "info")
 				else
 					
 					

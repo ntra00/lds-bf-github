@@ -1,5 +1,5 @@
 xquery version "1.0-ml";
-import module namespace bibs2mets = "http://loc.gov/ndmso/bibs-2-mets" at "/prep/modules/module.bibs2mets.xqy";
+import module namespace bibs2mets = "http://loc.gov/ndmso/bibs-2-mets" at "/modules/module.bibs2mets.xqy";
 declare default element namespace "http://www.loc.gov/MARC21/slim";
 declare  namespace marcxml="http://www.loc.gov/MARC21/slim";
 declare variable $TODAY := fn:format-date(fn:current-date(),"[Y0001]-[M01]-[D01]");

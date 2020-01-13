@@ -2,6 +2,7 @@
 
 source  /marklogic/nate/lds/lds-bf/prep/config bibrecs
 # make an xml file for doc label change checking
+# after sourceprep, goes through the file system looking for 001s and creates a manifest of OBJIDs in xml
 CURDIR=`pwd`
 
 cd $LOAD_PROCESSED

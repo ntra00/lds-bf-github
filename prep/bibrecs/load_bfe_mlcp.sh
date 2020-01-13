@@ -7,11 +7,12 @@
 # 8203 transform uses   /admin/bfi/bibrecs/modules/bfe2mets.xqy
 # ex:  ./load_bfe_mlcp.sh 
 
-source ../config bibrecs
+source /marklogic/applications/nate/lds/lds-bf/config bibrecs
+
 CURDIR=`echo $PWD`
 
 
-BFEDIR=/marklogic/bibliomata/recto/resources/
+#BFEDIR=/marklogic/bibliomata/recto/resources/
 cd $BFEDIR
 
 ct=$(find -maxdepth 1 -mtime 0 -type f | wc -l)
@@ -28,12 +29,6 @@ WARNDIR=$CURDIR/bfe-preprocess/warn/
 VALIDDIR=$CURDIR/bfe-preprocess/valid
 MISCDIR=$CURDIR/bfe-preprocess/misc/
 
-#rm  $CURDIR/bfe-preprocess/*.rdf
-#rm $ZERODIR*.rdf
-#rm $WARNDIR*.rdf
-#rm $ERRORDIR*.rdf
-#rm $VALIDDIR/*.rdf
-#rm $MISCDIR*.rdf
 
 echo "==========================="
 echo "Processing $ct records in bfe" 
@@ -41,20 +36,13 @@ echo "==========================="
 #only today:
 for f in $(find -maxdepth 1  -mtime 0  -type f)
 
-#do all:
-# for f in $(find -maxdepth 1 -type f)
-#do 23 days worth
-# for f in $(find -maxdepth 1  -mtime -30  -type f)
+	#do all:
+	# for f in $(find -maxdepth 1 -type f)
+	#do 23 days worth
+	# for f in $(find -maxdepth 1  -mtime -30  -type f)
 
 do
-
-#echo starting $f >>  $CURDIR/bfe-preprocess/log.txt
-#	zero=$(rapper -i rdfxml -o ntriples $f -c 	2>&1 | grep " 0 triples" | wc -l)
-#	warning=$(rapper -i rdfxml -o ntriples $f -c  2>&1 | grep "rapper: Warning" |grep -v "Unicode Normal Form C" |wc -l)
-#	error=$(rapper -i rdfxml -o ntriples $f  -c   2>&1 | grep "rapper: Error" | wc -l)
-#	vocab1=$(cat $f   | grep "bibframe.org/vocab" | wc -l)
-#	rdfdesc=$(cat $f  | grep "rdf:Description" | wc -l)
-		
+	
 				
     nodeID=$(echo $f| cut -d "/" -f2| cut -d "." -f1)
 	dirname="valid"
@@ -147,7 +135,7 @@ if [[  $postingct > 0 ]]
 	echo loading files from bfe
 
 	$MLCPPATH/mlcp.sh import  \
-        -host mlvlp04.loc.gov \
+        -host $BFDB_HOST \
         -port $BFDB_XCC_PORT \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS  \

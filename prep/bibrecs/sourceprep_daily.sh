@@ -176,5 +176,8 @@ echo " done splitting the add/edit docs from $YESTERDAY"
 echo "done splitting the delete docs from $YESTERDAY (sourceprep.sh)"
 echo "ready to process bibs in batch from source unprocessed $YESTERDAY "
 
+
+# build manifest text and xml files:
+./daysload-doc.sh $YESTERDAY
 #---------------------- marc2bf ---------------------------------------------
 
