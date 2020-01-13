@@ -1,13 +1,13 @@
 xquery version "1.0-ml";
 
-import module namespace cfg = "http://www.marklogic.com/ps/config" at "../config.xqy";
-import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "../lib/l-query.xqy";
-import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "../lib/l-param.xqy";
-import module namespace vf = "http://www.marklogic.com/ps/view/v-facets" at "../view/v-facets.xqy";
-import module namespace ssk = "info:lc/xq-modules/search-skin" at "../../src/xq/modules/natlibcat-skin.xqy";
-import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "../view/v-search.xqy";
-import module namespace resp = "info:lc/xq-modules/http-response-utils" at "../../src/xq/modules/http-response-utils.xqy";
-import module namespace mime = "info:lc/xq-modules/mime-utils" at "../..//xq/modules/mime-utils.xqy";
+import module namespace cfg = "http://www.marklogic.com/ps/config" at "/lds/config.xqy";
+import module namespace lq = "http://www.marklogic.com/ps/lib/l-query" at "/lds/lib/l-query.xqy";
+import module namespace lp = "http://www.marklogic.com/ps/lib/l-param" at "/lds/lib/l-param.xqy";
+import module namespace vf = "http://www.marklogic.com/ps/view/v-facets" at "/lds/view/v-facets.xqy";
+import module namespace ssk = "info:lc/xq-modules/search-skin" at "/xq/modules/natlibcat-skin.xqy";
+import module namespace vs = "http://www.marklogic.com/ps/view/v-search" at "/lds/view/v-search.xqy";
+import module namespace resp = "info:lc/xq-modules/http-response-utils" at "/xq/modules/http-response-utils.xqy";
+import module namespace mime = "info:lc/xq-modules/mime-utils" at "/xq/modules/mime-utils.xqy";
 declare namespace mlapp = "http://www.marklogic.com/mlapp";
 declare namespace e = "http://marklogic.com/entity";
 declare default function namespace "http://www.w3.org/2005/xpath-functions";
