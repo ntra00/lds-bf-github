@@ -36,7 +36,6 @@ ONIX_PASSWORD=""
 
 BFDB_BASEURI="http://something.loc.gov:something"
 ########
-########
 
 
 
@@ -49,4 +48,6 @@ LOAD_PROCESSED=$DIR/load/processed
 DEL_UNPROCESSED=$DIR/del/unprocessed
 DEL_PROCESSED=$DIR/del/processed
 
+# bibframe editor resources
+BFEDIR=/marklogic/bibliomata/recto/resources/
 

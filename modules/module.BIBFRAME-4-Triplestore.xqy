@@ -154,17 +154,19 @@ declare variable $skip-nodes:=( for $n in $skip-literals/* return fn:string($n))
 :   @return rdf:RDF node
 :)
 declare function bf4ts:bf4ts($rdfxml as element() ) as node()*  {
+if ($rdfxml/@rdf:about="") then
+ 	xdmp:log("CORB bf4ts error: No work/about " ,"info")
+	else
+		let $out-format:="triplexml"			
 
-let $out-format:="triplexml"			
-
-let $sem:=	try{ sem:rdf-serialize( 
+		let $sem:=	try{ sem:rdf-serialize( 
 					sem:rdf-parse(bf4ts:filter($rdfxml)),  $out-format 
 					)
 
 				}			
 			catch($e){
-					( 
-						xdmp:log(fn:concat("CORB bf4ts error: ", fn:string($rdfxml/*[1]/@rdf:about) ),"info")
+					(xdmp:log(fn:concat("CORB bf4ts error: ",fn:string($rdfxml/*[1]/@rdf:about),"... ",xdmp:quote($e//error:format-string)),"info")
+						(:xdmp:log(fn:concat("CORB bf4ts error: ", fn:string($rdfxml/*[1]/@rdf:about) ),"info"):)
 						
 						
 					)

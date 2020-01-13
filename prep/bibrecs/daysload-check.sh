@@ -60,7 +60,6 @@ pwd
 			done < $CURDIR/manifest/bibsload.curls404.txt
 
 			cd $CURDIR
-			cat  $CURDIR/manifest/bibsload.curls.txt
 			cat $CURDIR/manifest/bibsload.curls.txt| cut -d":" -f2-4 |grep -v Item >>  $CURDIR/manifest/bibsload.curls.notfound.txt
 
 			mv $CURDIR/manifest/bibsload.curls.notfound.txt  $CURDIR/manifest/$TODAY.bibsload.curls.notfound.txt

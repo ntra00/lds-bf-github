@@ -26,19 +26,15 @@ prep/auths/out/**
 prep/auths/manifest/**
 
 
-# marc2bibframe2
-
-prep/bibrecs/xsl/**
 prep/bibrecs/batchupdates/**
 prep/bibrecs/load/**
 prep/bibrecs/manifest/**
 prep/bibrecs/source/**
 prep/bibrecs/bfe-preprocess/**
 prep/bibrecs/*test*
-
-# marc2bibframe2
-prep/bibrecs/xsl
-
+prep/bibrecs/nohup*
+# marc2bibframe2:
+prep/bibrecs/xsl/**
 prep/bibrecs/batchupdates/**
 prep/bibrecs/load/**
 prep/bibrecs/source/**

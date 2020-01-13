@@ -459,7 +459,7 @@ declare function bfe2mets:insert-items($bfraw as element(rdf:RDF),  $paddedID,  
 		 
 		 			bfe2mets:get-items($bfraw, $paddedID)			
 		
-	let $item-collections := ($BASE_COLLECTIONS, "/resources/items/"  , "/bibframe","/bibframe/editor/",  "/lscoll/lcdb/items/")      	
+	let $item-collections := ($BASE_COLLECTIONS, "/resources/items/"  , "/bibframe/","/bibframe/editor/",  "/lscoll/lcdb/items/")      	
     
 	let $insert-items :=
         for $i in $items-mets

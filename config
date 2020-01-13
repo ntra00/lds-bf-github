@@ -53,6 +53,9 @@ LOAD_PROCESSED=$DIR/load/processed
 DEL_UNPROCESSED=$DIR/del/unprocessed
 DEL_PROCESSED=$DIR/del/processed
 
+# bibframe editor resources
+BFEDIR=/marklogic/bibliomata/recto/resources/
+
 if [[ $DEBUG -eq "debug" ]]; then
 
 echo "------------------"

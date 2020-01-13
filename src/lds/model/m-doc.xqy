@@ -913,9 +913,9 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $so
 		   					 		"Work stub from Authority" 
 							 else if (fn:contains($uri,"works.n")) then
 									 "Work from Authority" 
-							 else if ($workid-length > 12 and fn:contains($uri,"works.c")) then 
+							 else if ($workid-length > 14 and fn:contains($uri,"works.c")) then 
 							 		"Work Stub from Bib"
-							  else if ($workid-length > 12 and fn:contains($uri,"works.e")) then 
+							  else if ($workid-length = 15 and fn:contains($uri,"works.e")) then 
 							  		"Work stub from Editor"
 							  else if (fn:contains($uri,"works.c")) then 
 							  		"Work from Bib"							  

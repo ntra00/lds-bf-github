@@ -1123,9 +1123,7 @@ let $instanceOf:=if ($instanceOf/@rdf:resource)  then
 						element bf:instanceOf {
 						          attribute rdf:resource { $workuri-4-instance }
 						  }
-(:let $_:=xdmp:log("--------------------","info")
- let $_:=xdmp:log(fn:string($instanceOf),"info")
-let $_:=xdmp:log("--------------------","info"):)
+
 				let $itemURI := fn:concat("http://id.loc.gov/resources/items/", $iID)
 		        (:
 
@@ -1381,7 +1379,7 @@ declare function bibs2mets:get-items-new(
 	items get id's relative to position in the whole doc
 	 :)    
        (: nate continue here on renaming items with elccn number:)
-	let $_:=xdmp:log(fn:concat("get-items new:", $paddedID, "|", $workDBURI),"info")
+	(:let $_:=xdmp:log(fn:concat("get-items new:", $paddedID, "|", $workDBURI),"info"):)
 	
 let $item-collections := ($BASE_COLLECTIONS, "/resources/items/"  , "/bibframe/","/bibframe/convertedBibs/",  "/lscoll/lcdb/items/")      
 	
