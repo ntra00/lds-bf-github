@@ -42,3 +42,4 @@ rm $SOURCE_UNPROCESSED/single/$ID*
 echo "source processed:"
 
 ls -l $SOURCE_PROCESSED/single/
+date

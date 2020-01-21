@@ -61,7 +61,7 @@ cd $SOURCE_UNPROCESSED/$YESTERDAY/A
 echo "finished with adds, starting deletes"
 
 cd $CURDIR/source/unprocessed/$YESTERDAY/D
-
+date
 
 
 

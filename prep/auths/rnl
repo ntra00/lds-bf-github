@@ -6,7 +6,6 @@
 source  /marklogic/nate/lds/lds-bf/prep/config auths
 ./source2rdf_single.sh $1
 ls -l  $SOURCE_PROCESSED/single/
-read x
  mv  $SOURCE_PROCESSED/single/$1*  $LOAD_UNPROCESSED/single/
 
 ./loadrdf_single.sh

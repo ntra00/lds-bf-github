@@ -32,9 +32,9 @@
  # xcc://id:pw@mlvlp04.loc.gov:port/ \
  
 #set dirs etc:
-source ../config bibrecs
+source /marklogic/nate/lds/lds-bf/prep/config bibrecs
 
-CHANGEURIS="$1-uris.xqy"
+CHANGEURIS="batchupdates/$1-uris.xqy"
 CHANGECODE=$2
 COLLECTIONS="/processing/$1/" 
 
@@ -56,7 +56,7 @@ java   -Xmx32G  -XX:+UseConcMarkSweepGC -cp $CORBPATH/marklogic-xcc-8.0-5.jar:$C
    $CHANGECODE \
    $THREADS \
    $CHANGEURIS \
-   /prep/bibrecs/batchupdates/ \
+   /prep/bibrecs/ \
    0 \
    false
 

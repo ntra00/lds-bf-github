@@ -37,4 +37,4 @@ echo
 echo "--------------"
 
 mv  $LOAD_UNPROCESSED/single/* $LOAD_PROCESSED/single
-ls -l $LOAD_PROCESSED/single/*
+ls -l $LOAD_PROCESSED/single/* |wc -l

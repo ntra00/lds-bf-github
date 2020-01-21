@@ -26,9 +26,8 @@ if [ -d $TODAY ]; then
  cd $TODAY/A
 fi
 pwd
-
 	
-	grep -n '"001"' *| cut -d">" -f2|cut -d "<" -f1 > $CURDIR/manifest/bibsload.manifest.txt
+	grep -n '"001"' * | cut -d">" -f2|cut -d "<" -f1 > $CURDIR/manifest/bibsload.manifest.txt
 	if [ -f $CURDIR/manifest/bibsload.manifest.txt ]; then
 	   echo "<?xml version='1.0' encoding='UTF-8'?>" >  $CURDIR/manifest/daysload.$TODAY.xml
 	   echo "<daysload day='$TODAY'>" >>  $CURDIR/manifest/daysload.$TODAY.xml
