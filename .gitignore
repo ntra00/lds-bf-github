@@ -3,8 +3,21 @@
 
 # Ignore 
 **/.svn
+#gradle:
+shared.properties
+config.xqy
+.gradle
 
-prep/config
+gradle/*
+gradlew
+gradlew.bat
+.gradle
+gradlew-params
+build/*
+
+
+
+config
 
 src/id-main/**
 src/static/tohap/**
