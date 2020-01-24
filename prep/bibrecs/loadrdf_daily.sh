@@ -13,7 +13,7 @@ YESTERDAY=$1
  then
  	YESTERDAY=$YESTERDAY
  else
-# 	TODAY=`date +%Y-%m-%d`
+
 	YESTERDAY=`date +%Y-%m-%d -d "1 day ago"`
  fi
  echo "load date  = $YESTERDAY"
@@ -23,8 +23,7 @@ mon=$(echo $YESTERDAY | cut -c6-7)
 day=$(echo $YESTERDAY | cut -c9-10)
 filedate=$yr$mon$day
 
-#filedate=$(echo $YESTERDAY | cut -c3-10)
-echo $filedate
+
 
 echo $filedate=filedate
 
@@ -48,12 +47,12 @@ for file in $(ls $DAILY_ADD/*.rdf); do
         echo "loading $file"
 
  $MLCPPATH/mlcp.sh import  \
- 	    -host localhost \
+  	    -host localhost \
         -port $BFDB_XCC_PORT \
         -username $BFDB_XCC_USER \
-        -password $BFDB_XCC_PASS \
-		-input_file_path $file	 \
-		-output_uri_replace "$DAILY_ADD,''"  \
+         -password $BFDB_XCC_PASS \
+ 		-input_file_path $file	 \
+ 		-output_uri_replace "$DAILY_ADD,''"  \
 		-output_collections /bibframe-process/,/processing/load/bibs/$YESTERDAY/,/bibframe-process/yaz-reload/ \
 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update \
    		-input_file_type documents \
@@ -68,8 +67,10 @@ for file in $(ls $DAILY_ADD/*.rdf); do
 done
 
 		echo "deletes for $YESTERDAY starting: $DAILY_DEL"
+for file in $(ls $DAILY_DEL/*.rdf); do
 		
-$MLCPPATH/mlcp.sh import  \
+
+	$MLCPPATH/mlcp.sh import  \
  	    -host localhost \
         -port $BFDB_XCC_PORT \
         -username $BFDB_XCC_USER \
@@ -87,11 +88,14 @@ $MLCPPATH/mlcp.sh import  \
         -thread_count $THREADS \
         -mode local
 
+done
+
 echo rdfxml done
 echo  checking urls posted
 
    #./daysload-check.sh $YESTERDAY
 echo done loadrdf  ingest of yazzed bibs to bf database
+
 yr=$(echo $YESTERDAY | cut -c3-4)
 mon=$(echo $YESTERDAY | cut -c6-7)
 day=$(echo $YESTERDAY | cut -c9-10)
@@ -102,5 +106,6 @@ mv $LOAD_UNPROCESSED/$YESTERDAY $LOAD_PROCESSED
 rm -R $SOURCE_PROCESSED/$YESTERDAY
 
 #cat  ../logs/bibdaily_4$filedate.log |grep split  |cut -d ':' -f5|sort
+
 
 

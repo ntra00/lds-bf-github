@@ -1156,12 +1156,13 @@ return
 (:		<dl  class ="{$css-class}" style="margin-left: {$indent}px">{:)
 			if ($rdf instance of element (bf:AdminMetadata ) )  then 
 				<div class="facet-box " style="margin-left: {$indent}px; width:90%">
-					<div class="title " ><h3 id="title-facet-1" class="title-name">Admin Metadata</h3>
+					<div class="title " >
+					<h3 id="title-facet-1" class="title-name">Admin Metadata</h3>
 					<a class="title-toggle" href="javascript:initFacetToggles();">
-						<img id="toggle-facet-1" src="/static/lds/images/accordion-open.png" alt="Toggle"/>
+						<img id="toggle-facet-1" src="/static/lds/images/accordion-closed.png" alt="Toggle"/>
 					</a><br class="break"/>
 					</div><!-- title -->
-					<div class="content" id="facet-1" style="display: block;">
+					<div class="content" id="facet-1" style="display: none;">
 							 <dl  id="facet-1" class ="{$css-class}" style="margin-left: {$indent}px;">{$result}</dl>	
 							 				</div>	
 					</div>

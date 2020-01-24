@@ -13,8 +13,15 @@ TODAY=`date +%Y-%m-%d`
 
 echo loading from  $LOAD_UNPROCESSED/single/*
 
-ls -l  $LOAD_UNPROCESSED/single/*
+#ls -l  $LOAD_UNPROCESSED/single/*
+if [ -z "$(ls -A  $LOAD_UNPROCESSED/single/)" ]; then
+   echo "Empty"
+echo nothing in   $LOAD_UNPROCESSED/single/*  to load
 
+else
+
+ct=$(ls -l  $LOAD_UNPROCESSED/single/*|wc -l)
+echo $ct files starting
 
  $MLCPPATH/mlcp.sh import  \
 	-host mlvlp04.loc.gov \
@@ -38,3 +45,5 @@ echo "--------------"
 
 mv  $LOAD_UNPROCESSED/single/* $LOAD_PROCESSED/single
 ls -l $LOAD_PROCESSED/single/* |wc -l
+
+fi

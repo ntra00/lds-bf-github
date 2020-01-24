@@ -37,7 +37,7 @@ declare function yaz2bf:transform(
 let $_:=xdmp:log(fn:concat("CORB auth yaz load starting: " ,$orig-uri) ,"info")
 
 	return 
-	for $the-doc in $set/rdf:RDF/rdf:Description/bf:Work
+	for $the-doc in $set/rdf:RDF/rdf:Description/bf:Work|$set/rdf:RDF/bf:Work
 
 	(:let $lccn:= fn:normalize-space(fn:tokenize($orig-uri,"/")[fn:last()]):)
 	let $lccn:=$the-doc/bf:identifiedBy/bf:Lccn[fn:not(bf:status) or fn:not(fn:string(bf:status/bf:Status/@rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv")) ]/rdf:value
