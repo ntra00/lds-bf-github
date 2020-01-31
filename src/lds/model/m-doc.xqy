@@ -843,7 +843,7 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $so
 			let $reloadable:= if (fn:contains($uri,"works") and
 								 fn:not(fn:contains($uri, "works.n")) and 
 								 fn:not(fn:contains($uri, "s.e")) and 
-								 ( $loaddate < xs:date("2019-11-30") 
+								 ( $loaddate < xs:date("2020-01-31") 
 								 ) and 
 								 index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/convertedBibs/" ) and 
 								 fn:not(
@@ -856,13 +856,13 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $so
 									let $token:=fn:replace($token,"^c0*","")
 										return fn:concat("./rbi ", $token)
 								else if (fn:contains($uri,"instances") and
-											 ($loaddate < xs:date("2019-11-30")) and
+											 ($loaddate < xs:date("2020-01-31")) and
 										  	  fn:not(fn:contains($uri, "s.e"))
 										) then
 										let $token:=fn:replace(fn:tokenize($uri,"\.")[fn:last()],"^c0*","")
 												return fn:concat("./rbi ", fn:substring($token,1,fn:string-length($token)-4))
 								else if  (fn:contains($uri, "works.n") and
-								 		 $loaddate < xs:date("2019-11-30") and 
+								 		 $loaddate < xs:date("2020-01-31") and 
 										 fn:not(index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/consolidatedBibs/" ))
 								 )  then
 										let $token:= fn:tokenize($uri,"\.")[fn:last()]
@@ -876,6 +876,9 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $so
 							xdmp:log(fn:concat("BF Database viewed: ", $uri, ": ", $reloadable),"info")
 						 else 
 						 ()
+			let $loaded-display:=if ( $reloadable	) then
+								 (<span style="color:red;">{$loaded} </span> ,  <span style="margin-left:30px;">* to be reloaded within 5 minutes.</span>)
+							else <span >{$loaded}</span>
 			
 			
 			let $resourceslink:=

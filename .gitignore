@@ -24,7 +24,7 @@ prep/auths/load/**
 prep/auths/source/**
 prep/auths/out/**
 prep/auths/manifest/**
-
+prep/auths/nohup*
 
 prep/bibrecs/batchupdates/**
 prep/bibrecs/load/**

@@ -653,8 +653,8 @@ declare function display:display-rdf($rdf, $indent ) {
 			)}			
 			</dl>
 		
-	else if ($rdf instance of element(bf:Work) or $rdf instance of element(bf:Instance) or $rdf instance of element(bf:Item) ) then
-		<div>{display:class($rdf, $indent )		}</div>
+	else if ($rdf instance of element(bf:Work) or $rdf instance of element(bf:Instance) or $rdf instance of element(bf:Item) or $rdf instance of element(bf:Hub)  ) then
+		<div><h3>hi</h3>{display:class($rdf, $indent )		}</div>
 		(:<div class="boxed" >{display:class($rdf, $indent )		}</div>:)
 			
 		else()
@@ -1250,7 +1250,7 @@ if ($rdf instance of element (bf:instanceOf) or
 	                   			             ("123",display:class($i, $indent +10) )					)
 	(: literal property :)			                       
   else if ( index-of($literal-props, fn:local-name($rdf) ) ) then
-                if ($rdf instance of element(rdfs:label) and ( $rdf/parent::bf:Title or  $rdf/parent::bf:Work or $rdf/parent::bf:Topic ) ) then
+                if ($rdf instance of element(rdfs:label) and ( $rdf/parent::bf:Title or  $rdf/parent::bf:Work   or  $rdf/parent::bf:Hub or $rdf/parent::bf:Topic ) ) then
                         <br/>
                 else
 				    (<dt class="label">{ fn:string($display:RDFprops/property[@name=fn:local-name($rdf)]) }</dt>,
