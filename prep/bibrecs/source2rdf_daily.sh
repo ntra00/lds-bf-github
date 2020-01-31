@@ -53,7 +53,7 @@ cd $SOURCE_UNPROCESSED/$YESTERDAY/A
 
 			rm *tmp*
 
-			chmod -R  775  * > /dev/null
+			chmod  775  * > /dev/null
 		    chgrp marklogic * > /dev/null
 
 		done
@@ -72,7 +72,7 @@ date
 			rm *tmp*
 
 			
-		    chmod -R  775  * > /dev/null
+		    chmod   775  * > /dev/null
 	        chgrp marklogic * > /dev/null
 
 		done

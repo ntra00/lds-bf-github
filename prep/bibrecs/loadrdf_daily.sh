@@ -99,13 +99,14 @@ echo done loadrdf  ingest of yazzed bibs to bf database
 yr=$(echo $YESTERDAY | cut -c3-4)
 mon=$(echo $YESTERDAY | cut -c6-7)
 day=$(echo $YESTERDAY | cut -c9-10)
-filedate=$yr$mon$day
+filedate=20$yr$mon$day
 
 
 mv $LOAD_UNPROCESSED/$YESTERDAY $LOAD_PROCESSED
 rm -R $SOURCE_PROCESSED/$YESTERDAY
+ # assumes this job was logged like this (in crontab):
 
-#cat  ../logs/bibdaily_4$filedate.log |grep split  |cut -d ':' -f5|sort
+cat  ../logs/bibload$filedate.log |grep split  |cut -d ':' -f5|sort
 
 
 

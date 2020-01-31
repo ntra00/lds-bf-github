@@ -27,6 +27,7 @@ if [ -d $TODAY ]; then
 pwd
 
 	rm $CURDIR/manifest/bibsload*
+
 	grep -n '"001"' *| cut -d">" -f2|cut -d "<" -f1 > $CURDIR/manifest/bibsload.manifest.txt
 	if [ -f $CURDIR/manifest/bibsload.manifest.txt ]; then
 
@@ -37,7 +38,7 @@ pwd
 			echo $docid: $url >> $CURDIR/manifest/bibsload.curlsraw.txt
 			curl -I $url >> $CURDIR/manifest/bibsload.curlsraw.txt 
 
-		done < $CURDIR/manifest/$TODAY.bibsload.manifest.txt
+		done < $CURDIR/manifest/bibsload.manifest.txt
 
 		grep -n "404 Item" $CURDIR/manifest/bibsload.curlsraw.txt > $CURDIR/manifest/bibsload.curls404.txt
 		echo " curls404 has today's 404s"

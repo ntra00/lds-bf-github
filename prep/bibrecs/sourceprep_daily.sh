@@ -51,14 +51,17 @@ for mrc in $(ls /marklogic/opt/marcdump/bib/*$filedate*)
 	echo $mrc
 pwd
 echo $mrc is the file to split
-
-		
+	
 
 		directory=$YESTERDAY
 		echo about to make mkdir $directory
 		
 		mkdir $directory
-		
+	#	if  [[ -d $directory ]] ;
+		#then
+		#	echo " already prepped $YESTERDAY. Delete the date in $SOURCE_UNPROCESSED if you want to reprocesss"
+		#else
+
 		chmod -R 775  $directory > /dev/null
 		chgrp marklogic $directory > /dev/null
 		cd $directory
@@ -86,6 +89,7 @@ echo $mrc is the file to split
 		    chgrp marklogic * > /dev/null
 
 		done
+	 #fi # if the directory existed
 		cd ../..
 done
 
@@ -94,7 +98,7 @@ for mrc in $(ls /marklogic/opt/marcdump/deletedbibs/deleted.bib.marc.*$filedate*
 	echo $mrc
 		
 		directory=$YESTERDAY
-		mkdir $directory
+#		mkdir $directory
 		chmod  775 $directory > /dev/null
 		chgrp marklogic $directory > /dev/null
 		cd $directory
@@ -126,10 +130,7 @@ echo "next, daily ADD records ingested to /bibframe-process/records with batch n
 echo "then process deletes: change the ingest program to look for  d in leader, remove from catalog"
 echo loading files from id-main name titles  $YESTERDAY
  
-# import chunks as split*
 
-# process the Adds first (eg., ../2017-07-22/A )
- 
  $MLCPPATH/mlcp.sh import  \
         -host localhost \
         -port $BFDB_XCC_PORT \
@@ -138,7 +139,7 @@ echo loading files from id-main name titles  $YESTERDAY
 		-input_file_path $SOURCE_UNPROCESSED/$YESTERDAY/A \
 		-output_uri_replace "$SOURCE_UNPROCESSED/$YESTERDAY/A,''"  \
 		-output_collections /bibframe-process/,/bibframe-process/chunks/,/processing/load/bibchunks/$YESTERDAY/ \
-		-output_uri_prefix "/bibframe-process/chunks" \
+		-output_uri_prefix /bibframe-process/chunks/$YESTERDAY/A \
 		-input_file_pattern split.*\.xml \
 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update \
     	-input_file_type documents \
@@ -148,15 +149,19 @@ echo loading files from id-main name titles  $YESTERDAY
         -thread_count $THREADS \
         -mode local \
 
+echo about to post delete chunks:
+
+
+
 $MLCPPATH/mlcp.sh import  \
         -host localhost \
         -port $BFDB_XCC_PORT \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS \
 		-input_file_path $SOURCE_UNPROCESSED/$YESTERDAY/D \
-		-output_uri_replace "SOURCE_UNPROCESSED/$YESTERDAY/D,''"  \
+		-output_uri_replace "$SOURCE_UNPROCESSED/$YESTERDAY/D,''"  \
 		-output_collections /bibframe-process/,/bibframe-process/chunks/,/processing/load/bibchunks/$YESTERDAY/,/processing/load/bibchunks/deletes/ \
-		-output_uri_prefix "/bibframe-process/chunks" \
+		-output_uri_prefix /bibframe-process/chunks/$YESTERDAY/D \
 		-input_file_pattern split.*\.xml \
 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update \
 	   	-input_file_type documents \
@@ -173,7 +178,7 @@ cd   $CURDIR
 echo " done splitting the add/edit docs from $YESTERDAY"
 
 ./corb-bibframe-split-bib-chunks.sh $YESTERDAY D
-echo "done splitting the delete docs from $YESTERDAY (sourceprep.sh)"
+echo "done splitting the delete docs from $YESTERDAY in sourceprep.sh "
 echo "ready to process bibs in batch from source unprocessed $YESTERDAY "
 
 
