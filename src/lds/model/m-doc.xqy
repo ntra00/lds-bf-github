@@ -836,10 +836,7 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $so
 			let $loaded:=fn:substring($mets//mets:metsHdr/@LASTMODDATE,1,10)
 			let $loaddate:=xs:date($loaded)
 
-			let $loaded-display:=if (fn:starts-with($loaded,"2017")	or fn:starts-with($loaded,"2018")		) then
-								 (<span style="color:red;">{$loaded} </span> , " *to be reloaded in 2 minutes")
-							else <span >{$loaded}</span>
-							(: reload command for nametitles or bibs that were loaded before 8/31/18 and not merged: :)
+							(: reload command for nametitles or bibs that were loaded before v 1.5.2, 1/31/20 and not merged: :)
 			let $reloadable:= if (fn:contains($uri,"works") and
 								 fn:not(fn:contains($uri, "works.n")) and 
 								 fn:not(fn:contains($uri, "s.e")) and 
@@ -861,8 +858,9 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $so
 										) then
 										let $token:=fn:replace(fn:tokenize($uri,"\.")[fn:last()],"^c0*","")
 												return fn:concat("./rbi ", fn:substring($token,1,fn:string-length($token)-4))
+								(: nametitles don't have to be so recent :)
 								else if  (fn:contains($uri, "works.n") and
-								 		 $loaddate < xs:date("2020-01-31") and 
+								 		 $loaddate < xs:date("2019-01-31") and 
 										 fn:not(index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/consolidatedBibs/" ))
 								 )  then
 										let $token:= fn:tokenize($uri,"\.")[fn:last()]

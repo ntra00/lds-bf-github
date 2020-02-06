@@ -654,7 +654,7 @@ declare function display:display-rdf($rdf, $indent ) {
 			</dl>
 		
 	else if ($rdf instance of element(bf:Work) or $rdf instance of element(bf:Instance) or $rdf instance of element(bf:Item) or $rdf instance of element(bf:Hub)  ) then
-		<div><h3>hi</h3>{display:class($rdf, $indent )		}</div>
+		<div>{display:class($rdf, $indent )		}</div>
 		(:<div class="boxed" >{display:class($rdf, $indent )		}</div>:)
 			
 		else()
