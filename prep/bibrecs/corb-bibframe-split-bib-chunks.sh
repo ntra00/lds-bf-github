@@ -29,7 +29,7 @@
 
 #split the 1000 records in /bibframe/process into singletons 
 
-source ../config bibrecs
+source /marklogic/nate/lds/lds-bf/prep/config bibrecs
 LOADTYPE=$1
 BIBTYPE=$2
 

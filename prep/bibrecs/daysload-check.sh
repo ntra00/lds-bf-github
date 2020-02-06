@@ -84,7 +84,7 @@ echo "no data A dir for $TODAY"
 
 while read bibid;
 do
-cat /var/opt/MarkLogic/Logs/Error.log |grep $bibid
+cat /var/opt/MarkLogic/Logs/ErrorLog.txt |grep $bibid
 done <  $CURDIR/manifest/$TODAY.bibsload.curls.notfound.txt
 
 fi

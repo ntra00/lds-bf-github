@@ -177,8 +177,7 @@ return
 		 then
 				let $bibid:= fn:replace(fn:string($work/@rdf:about), "^http://bibframe.example.org/([0-9]+)#Work$","$1")
 				
-				let $_:=xdmp:log(fn:concat("CORB BIBYAZ delete/hide: ", $bibid),"info")
-					return
+				return
 							m2bfyaz:remove-from-coll($bibid)
   			else
 			

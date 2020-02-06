@@ -151,7 +151,7 @@ declare variable $skip-nodes:=( for $n in $skip-literals/* return fn:string($n))
 :   It removes, for example, literals, but leaves in a lot of blank nodes in case they can be better queried via sparql or end up being public
 :
 :   @param  $rdf        node() is the rdf:rdf with bf:Work/Instance/Item as a child. 
-:   @return rdf:RDF node
+:   @return sem:triples node
 :)
 declare function bf4ts:bf4ts($rdfxml as element() ) as node()*  {
 
@@ -241,7 +241,13 @@ element {xs:QName(fn:name($node))} {
             (attribute rdf:resource {fn:concat("//",fn:string($node/@rdf:resource))}                
                 )
 		else if ($node/@rdf:about) then 
-				$node/@rdf:about
+			let $uri:=fn:replace(fn:string($node/@rdf:about)," ","")
+			let $uri:=if ( fn:contains($uri, "http") and fn:not(fn:starts-with($uri, "http")) )	 then 
+							fn:concat("http", fn:substring-after($uri,"http")) 
+					 else $uri
+			let $uri:=fn:normalize-unicode($uri)
+					return attribute rdf:about {$uri}
+				(:$node/@rdf:about:)
 		else if ($node/@rdf:resource and fn:not(fn:matches(fn:string($node/@rdf:resource),"^.+//.+$") ) ) then
 				element rdfs:label {fn:string($node/@rdf:resource)}
 

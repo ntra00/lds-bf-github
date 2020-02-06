@@ -657,7 +657,7 @@ let $contribs:=
 			for $rnode in   $resource/self::bf:Work/bf:contribution/*/bf:role
     			let $role:=   
 					  if ($rnode/bf:Role/rdfs:label) then     				 	
-			            	xs:string($rnode/bf:Role/rdfs:label)					
+			            	xs:string($rnode/bf:Role/rdfs:label[1])					
 					  else if ($rnode/@rdf:resource) then 
 					        	fn:string($rnode/@rdf:resource) 
 					  else if ($rnode/bf:Role/@rdf:about ) then  (:relators/act eg.:)
@@ -696,18 +696,20 @@ declare function bibframe2index:get_bibframe_creator
 {
     for $t in   $resource/self::bf:Work/bf:contribution/*[(self::* instance of element(bflc:PrimaryContribution) ) or rdf:type/rdf:resource="http://id.loc.gov/ontologies/bflc/PrimaryContribution"]
     return
-        element index:creator {		
+		for $agent in $t/bf:agent
+        return 
+			element index:creator {		
 
-			if ($t/bf:agent/@rdf:resource )then 
-				(fn:string($t/bf:agent/@rdf:resource))
-			else if ($t/bf:agent/*/rdfs:label )then 
-				for $l in $t/bf:agent/*
+			if ($agent/@rdf:resource )then 
+				(fn:string($agent/@rdf:resource))
+			else if ($agent/*/rdfs:label )then 
+				for $l in $agent/*
 					return $l/rdfs:label[1]/fn:string()
-			else if ($t/bf:agent/madsrdf:*/@rdf:about )then 
-				(fn:string($t/bf:agent/madsrdf:*/@rdf:about))
+			else if ($agent/madsrdf:*/@rdf:about )then 
+				(fn:string($agent/madsrdf:*[1]/@rdf:about))
 			else
-            	($t/bf:agent/bf:Agent[1]/*[fn:matches(fn:local-name(),"primaryContributorName[0-9]{2}MatchKey")]/@xml:lang,
-            		xs:string($t/bf:agent/bf:Agent/*[fn:matches(fn:local-name(),"primaryContributorName[0-9]{2}MatchKey")])
+            	($agent/bf:Agent[1]/*[fn:matches(fn:local-name(),"primaryContributorName[0-9]{2}MatchKey")]/@xml:lang,
+            		xs:string($agent/bf:Agent/*[fn:matches(fn:local-name(),"primaryContributorName[0-9]{2}MatchKey")])
 				)			
 			}
 
@@ -914,7 +916,7 @@ let $mxetitle:=
 					 if ($t/bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MatchKey$")]) then
 		            	 		fn:string($t/bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MatchKey$")])
 							else (: instances from editor have no rdfs:label :)
-								if (fn:string($t/bf:mainTitle) !="") then		
+								if (fn:string($t/bf:mainTitle[1]) !="") then		
 									fn:string($t/bf:mainTitle[1])
 
 							else if ($t/rdfs:label[@xml:lang="en"]) then
