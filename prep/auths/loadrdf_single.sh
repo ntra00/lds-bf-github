@@ -11,6 +11,8 @@ TODAY=`date +%Y-%m-%d`
 
 CURDIR=`echo $PWD`
 
+echo loading whatever is in  $LOAD_UNPROCESSED/single:
+
 ls -l $LOAD_UNPROCESSED/single/$LCCN*
 
 echo loading from id-main name titles  $LOAD_UNPROCESSED/single/$LCCN.rdf
@@ -31,5 +33,5 @@ echo loading from id-main name titles  $LOAD_UNPROCESSED/single/$LCCN.rdf
         -mode local 
 
 cd $CURDIR
-
+echo moved to $LOAD_PROCESSED
 mv  $LOAD_UNPROCESSED/single/* $LOAD_PROCESSED/single/

@@ -242,7 +242,7 @@ element {xs:QName(fn:name($node))} {
             (attribute rdf:resource {fn:concat("//",fn:string($node/@rdf:resource))}                
                 )
 		else if ($node/@rdf:about) then 
-				$node/@rdf:about
+			let $uri:=fn:replace(fn:string($node/@rdf:about
 		else if ($node/@rdf:resource and fn:not(fn:matches(fn:string($node/@rdf:resource),"^.+//.+$") ) ) then
 				element rdfs:label {fn:string($node/@rdf:resource)}
 

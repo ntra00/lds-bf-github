@@ -657,7 +657,7 @@ let $contribs:=
 			for $rnode in   $resource/self::bf:Work/bf:contribution/*/bf:role
     			let $role:=   
 					  if ($rnode/bf:Role/rdfs:label) then     				 	
-			            	xs:string($rnode/bf:Role/rdfs:label)					
+			            	xs:string($rnode/bf:Role/rdfs:label[1])					
 					  else if ($rnode/@rdf:resource) then 
 					        	fn:string($rnode/@rdf:resource) 
 					  else if ($rnode/bf:Role/@rdf:about ) then  (:relators/act eg.:)

@@ -1299,7 +1299,7 @@ let $items := (: avoid related works with instances with specific xpath:)
 						  try {
 			   				  bf4ts:bf4ts( element rdf:RDF { $item-modified } )
 					 
-					 		} catch($e){	( xdmp:log( $e,"info"),
+					 		} catch($e){	( (),
 					     					xdmp:log(fn:concat("CORB BFE/BIB sem conversion error for ", $iID), "info")
 											
 										)
