@@ -24,7 +24,7 @@ ct=$(ls -l  $LOAD_UNPROCESSED/single/*|wc -l)
 echo $ct files starting
 
  $MLCPPATH/mlcp.sh import  \
-	-host mlvlp04.loc.gov \
+	-host localhost \
         -port $BFDB_XCC_PORT \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS \

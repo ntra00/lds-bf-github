@@ -43,7 +43,7 @@ declare variable $view as xs:string := xdmp:get-request-field("view","html");  (
 
 declare variable $display:Relationships as element() :=
 <set>
-		<rel><name>relatedTo</name><inverse>relatedTo</inverse></rel>
+		<!--<rel><name>relatedTo</name><inverse>relatedTo</inverse></rel>-->
 		<!--<rel><name>relationship</name><inverse>relatedTo</inverse></rel>-->
 		<!--<rel><name>hasInstance</name><inverse>instanceOf</inverse></rel>-->
 		<rel><name>instanceOf</name><inverse>hasInstance</inverse></rel>
@@ -1083,6 +1083,7 @@ return
 };
 :)
 declare function display:class($rdf, $indent){
+(: bflc:Relationship:)
 let $css-class:=if ($rdf instance of element (bf:AdminMetadata ) ) then "boxed" else "blanknode"
 let $width:= (100 - $indent )
 let $result:=
@@ -1141,7 +1142,7 @@ let $result:=
 								  else if ($rdf instance of element(bf:Language)  and $rdf/bf:identifiedBy) then
 								  		(:action happens below :)
 											<br/>										
-								  else  <br/>																		
+								  else  <br/>																								
 	                            }
 	        </dd>,
             		   		
@@ -1219,8 +1220,10 @@ if ($rdf instance of element (bf:instanceOf) or
 	$rdf instance of element (bf:hasItem) or 
 	(:$rdf instance of element (bf:expressionOf) or 
 	$rdf instance of element (bf:hasExpression) or :)
-	$rdf instance of element(bflc:derivedFrom) 
-	(: or $rdf instance of element (bf:relatedTo):)
+	$rdf instance of element(bflc:derivedFrom)  	or  
+	(:$rdf instance of element (bf:relatedTo) or:)
+	fn:starts-with(fn:name($rdf), "lclocal:")
+	 or  ($rdf instance of element (bf:relatedTo) and not($rdf/parent::* instance of element (bflc:Relationship)))
  ) then
         ()
     
@@ -1265,10 +1268,16 @@ if ($rdf instance of element (bf:instanceOf) or
 				)
   (: blank node property or text related? :)
   else if ($rdf/bf:Work) then 
-              (<dt class="label">1{ fn:string($display:RDFprops/property[@name=fn:local-name($rdf)]) }</dt>,
+              (<dt class="label">{ fn:string($display:RDFprops/property[@name=fn:local-name($rdf)]) }</dt>,
 				 <dd class="bibdata"> (Work) </dd>,
 				 <div>{display:class($rdf/bf:Work, $indent+5 )}</div>
 				 (:<div class="boxed">{display:class($rdf/bf:Work, $indent+5 )}</div>:)
+				)
+	else if ($rdf/bf:Hub) then 
+              (<dt class="label">{ fn:string($display:RDFprops/property[@name=fn:local-name($rdf)]) }</dt>,
+				 <dd class="bibdata"> (Hub) </dd>,
+				 <div>{display:class($rdf/bf:Hub, $indent+5 )}</div>
+				 
 				)
   else if ($rdf/bf:Instance) then 
               (<dt class="label">{ fn:string($display:RDFprops/property[@name=fn:local-name($rdf)]) }</dt>,
@@ -1340,17 +1349,17 @@ if ($rdf instance of element (bf:instanceOf) or
 			}
 		</dd>)        			          
  else if (fn:not(index-of( $props-order, fn:local-name($rdf) )) ) then
- 		(<dt class="label">{fn:name($rdf)}</dt>,
+ 		(<dt class="label">3{fn:name($rdf)}</dt>,
  		 <dd class="bibdata">{if (fn:string($rdf)) then fn:string($rdf) else display:linkme($rdf, "value")}</dd>
 		)
 		(: need to fix: why is this property not selected above someplace? bflc??? :)
 else if ($rdf  instance of element(bflc:relation )) then
-		(<dt class="label">Role</dt>,
+		(<dt class="label"> Role</dt>,
  		 <dd class="bibdata">{$rdf/*/rdfs:label}</dd>
 		)
  else for $i in $rdf/*
  		order by index-of($class-order,fn:local-name($i))
- 	 		return display:class($i, $indent+5 ))
+return 	 		display:class($i, $indent+5 ))
 				
 				
 }; 

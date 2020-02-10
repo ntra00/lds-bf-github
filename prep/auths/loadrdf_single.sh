@@ -23,11 +23,11 @@ echo loading from id-main name titles  $LOAD_UNPROCESSED/single/$LCCN.rdf
         -port $BFDB_XCC_PORT \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS \
-		-input_file_path $LOAD_UNPROCESSED/single \
-		-output_uri_replace "$LOAD_UNPROCESSED/single,''"  \
-		-transform_module /prep/auths/authorities-yaz2bf.xqy \
-		-transform_namespace "http://loc.gov/ndmso/authorities-yaz-2-bibframe" \
- 		-output_collections /authorities/bfworks/,/resources/works/,/processing/load_bfworks/$TODAY/,/catalog/,/lscoll/lcdb/works/,/authorities/yazbfworks/,/bibframe/hubworks/ \
+	-input_file_path $LOAD_UNPROCESSED/single \
+	-output_uri_replace "$LOAD_UNPROCESSED/single,''"  \
+	-transform_module /prep/auths/authorities-yaz2bf.xqy \
+	-transform_namespace "http://loc.gov/ndmso/authorities-yaz-2-bibframe" \
+	-output_collections /authorities/bfworks/,/resources/works/,/processing/load_bfworks/$TODAY/,/catalog/,/lscoll/lcdb/works/,/authorities/yazbfworks/,/bibframe/hubworks/ \
         -output_permissions lc_xmlsh,update,id-user-role,read \
         -thread_count $THREADS \
         -mode local 

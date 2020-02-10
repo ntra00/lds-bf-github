@@ -914,7 +914,7 @@ let $mxetitle:=
 					 if ($t/bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MatchKey$")]) then
 		            	 		fn:string($t/bflc:*[fn:matches(fn:local-name(),"^title[0-9]{2}MatchKey$")])
 							else (: instances from editor have no rdfs:label :)
-								if (fn:string($t/bf:mainTitle) !="") then		
+								if (fn:string($t/bf:mainTitle[1])!="") then		
 									fn:string($t/bf:mainTitle[1])
 
 							else if ($t/rdfs:label[@xml:lang="en"]) then
