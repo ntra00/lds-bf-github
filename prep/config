@@ -23,7 +23,7 @@ DIR="$(pwd)"
 M2BFDIR=$APPLICATIONS_DIR/marc2bibframe2
 AUTH2BFDIR=$BFHOME/prep/auths/auth2bibframe2
 NAMESLOAD=/marklogic/id/lds-id/prep/marc-auth/names/load/processed
-MODULES=$BFHOME/prep/modules
+MODULES=$BFHOME/modules
 MLCPPATH=$APPLICATIONS_DIR/mlcp/bin
 CORBPATH=$APPLICATIONS_DIR/corb
 
