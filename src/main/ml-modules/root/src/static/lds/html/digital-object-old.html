@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="/static/natlibcat/css/datastore-new.css" media="screen" />
+<link href="http://www.loc.gov/share/sites/8usedrUw/share-min.css" rel="stylesheet" type="text/css" media="screen, all" />
+<script type="text/javascript" src="http://www.loc.gov/share/sites/8usedrUw/share-jquery-min.js"></script><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript">
+(function($) {
+	$(document).ready(function() {
+		//Default Action
+		$(".tab_content").hide(); //Hide all content
+		$("ul.tabnav li:first").addClass("active").show(); //Activate first tab
+		$(".tab_content:first").show(); //Show first tab content
+	
+		//On Click Event
+		$("ul.tabnav li").click(function() {
+			$("ul.tabnav li").removeClass("active"); //Remove any "active" class
+			$(this).addClass("active"); //Add "active" class to selected tab
+			$(".tab_content").hide(); //Hide all tab content
+			var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+			$(activeTab).fadeIn(); //Fade in the active content
+			return false;
+		});
+		
+		$('a.tabLink').click(function(event) {
+		  var link = $(event.target);
+			if ('' != $(link).attr('rel')) {
+				var tab = $(link).attr('rel');
+				$('#' + tab).click();
+			} else {
+				var tab = $(link).attr('href');
+				$(tab).click();
+				return false;
+			}
+		});
+	});
+})(jQuery);
+
+</script>
+</head>
+
+<body>
+<!-- insert this DIV after the paging and share tool line -->
+<div id="container">
+<!-- this is the title and statement of responsibility for the object -->
+<h1>First in, last out : stories by the Wild Weasels<br />
+<span>Society of Wild Weasels ; [edited by Colonel Edward T. Rock, USAF (Ret.)]</span></h1>
+<!-- END title -->
+
+<!-- the ID sidebar contains related divs to the actual item -->
+<div id="sidebar">
+
+<!-- use this to link to the collection/collections for the digital item -->
+<div id="collection">
+<h2 class="hidden">Related Resources</h2>
+<h3>Collection</h3>
+<ul class="std">
+  <li><a href="#">Such and Such Collection</a></li>
+</ul>
+</div>
+<!-- end id:#sidebar #collection -->
+
+<!-- use this to link to browses for related subjects, names and LC classes -->
+<div id="related">
+<h3>Browse More Like This</h3>
+
+<div id="browse-subjects">
+<h4>Subjects</h4>
+<ul class="std">
+<li><a href="http://loccatalog.loc.gov/nlc/browse.xqy?dtitle=First%20in%2C%20last%20out%20%3A%20stories%20by%20the%20Wild%20Weasels%20&amp;q=weasels&amp;qname=keyword&amp;uri=loc.natlib.lcdb.13990048&amp;index=4&amp;browse-order=ascending&amp;bq=Electronic%20warfare%20aircraft.&amp;browse=subject">Electronic warfare aircraft.</a></li>
+<li><a href="http://loccatalog.loc.gov/nlc/browse.xqy?dtitle=First%20in%2C%20last%20out%20%3A%20stories%20by%20the%20Wild%20Weasels%20&amp;q=weasels&amp;qname=keyword&amp;uri=loc.natlib.lcdb.13990048&amp;index=4&amp;browse-order=ascending&amp;bq=Vietnam%20War%2C%201961-1975--Aerial%20operations%2C%20American.&amp;browse=subject">Vietnam War, 1961-1975--Aerial operations, American.</a></li>
+<li><a href="http://loccatalog.loc.gov/nlc/browse.xqy?dtitle=First%20in%2C%20last%20out%20%3A%20stories%20by%20the%20Wild%20Weasels%20&amp;q=weasels&amp;qname=keyword&amp;uri=loc.natlib.lcdb.13990048&amp;index=4&amp;browse-order=ascending&amp;bq=Vietnam%20War%2C%201961-1975--Personal%20narratives%2C%20American.&amp;browse=subject">Vietnam War, 1961-1975--Personal narratives, American.</a></li>
+</ul>
+</div>
+
+<div id="browse-names">
+<h4>Names</h4>
+<ul class="std">
+  <li><a href="http://loccatalog.loc.gov/nlc/browse.xqy?dtitle=First%20in%2C%20last%20out%20%3A%20stories%20by%20the%20Wild%20Weasels%20&amp;q=weasels&amp;qname=keyword&amp;uri=loc.natlib.lcdb.13990048&amp;index=4&amp;browse-order=ascending&amp;bq=Vietnam%20War%2C%201961-1975--Personal%20narratives%2C%20American.&amp;browse=subject">Smith, Elaine Martha, 1910-</a></li>
+</ul>
+</div>
+
+<div id="browse-class">
+<h4>LC Classifications</h4>
+<ul class="std">
+  
+  <li><a href="http://loccatalog.loc.gov/nlc/browse.xqy?dtitle=First%20in%2C%20last%20out%20%3A%20stories%20by%20the%20Wild%20Weasels%20&amp;q=weasels&amp;qname=keyword&amp;uri=loc.natlib.lcdb.13990048&amp;index=4&amp;browse-order=ascending&amp;bq=UG1242.E43&amp;browse=class">UG1242.E43</a></li>
+</ul>
+</div>
+
+</div><!-- end id:#sidebar #collection -->
+
+<div id="not-online">
+<h3 class="hidden">Not Online</h3>
+<p>This [item] [collection] [etc] is not available online. For more information on accessing this material: <a href="http://www.loc.gov/rr/askalib/">Ask a Librarian</a></p></div>
+<div id="duplication">
+<h3>Obtain Copies</h3>
+<ul class="std">
+  <li><a href="#">Duplication Services</a></li>
+</ul>
+</div>
+<div id="feedback">
+<h3>Comments</h3>
+<ul class="std">
+  <li><a href="#">Send us your feedback/suggestions</a></li>
+</ul>
+</div>
+</div>
+
+<div id="ds-maincontent">
+
+<!-- the ds-viewport class is a container for the viewport or other digital object player; if it is empty, then it will disappear -->
+<div id="ds-digitalport">
+<div id="viewport-on">
+&nbsp;
+</div><!-- end class:viewport-on -->
+</div><!-- end class:ds-viewport -->
+
+<!-- the tabs are for bib views digital behaviors, etc. -->
+<ul class="tabnav">
+      <li class="first"><a href="#tab1">Access/Details</a></li>
+      <li><a href="#tab2">Rights/Restrictions</a></li>
+      <li><a href="#tab3">Citation Formats</a></li>
+      <li><a href="#tab4">Other Tab</a></li>
+</ul><!-- end class:tabnav -->
+<div class="tab_container">
+        <div id="tab1" class="tab_content">
+        <div class="access-box">
+        <h2 class="hidden">Access</h2>
+          <ul class="std">
+            <li>Access Online: <strong>Zoom/Pan</strong> | <a href="#">Contact Sheet</a> | <a href="#">Page Turner</a> | <a href="#">Download TIF</a> | <a href="#">Behavior</a> | <a href="#">Behavior</a> </li>
+            <li>Links: <a href="#">Table of Contents </a>| <a href="#">Publishers Desciption</a> | <a href="#">Abstract/Review</a></li>
+            <li>Library Location: <a href="#">Performing Arts Reading Room (LM 135)</a></li>
+            <li>View/Request: <a href="http://catalog.loc.gov/cgi-bin/Pwebrecon.cgi?DB=local&amp;CMD=lccn%222004099254%22&amp;v3=1&amp;CNT=10">LC Online Catalog</a> | <a href="http://catalog.loc.gov/cgi-bin/Pwebrecon.cgi?PAGE=REQUESTBIB&amp;bbid=13990048" target="_new">Request Material (onsite only)</a></li>
+          </ul></div>
+
+          <div id="ds-bibrecord">
+          <h2 class="hidden">Details</h2>
+         <img src="http://loccatalog.loc.gov/media/loc.natlib.lcdb.13990048/0001.tif/200" alt="Book cover image" width="200" /><dl class="record"><dt class="label">LC control no.</dt><dd class="bibdata">  2004099254<br/></dd><dt class="label">Type of material</dt><dd class="bibdata">Book (Print, Microform, Electronic, etc.)</dd><dt class="label">Main title</dt><dd class="bibdata-title">First in, last out : stories by the Wild <span class="highlt">Weasels</span> / by the Society of Wild <span class="highlt">Weasels</span> ; [edited by Colonel Edward T. Rock, USAF (Ret.)].<br/></dd><dt class="label">Portion of title</dt><dd class="bibdata">Stories by the Wild <span class="highlt">Weasels</span><br/></dd><dt class="label">Cover title</dt><dd class="bibdata">First person stories by Wild <span class="highlt">Weasel</span> Pilots, EWOs and their associates<br/></dd><dt class="label">Published/Created</dt><dd class="bibdata">Bloomington, Ind. : AuthorHouse, 2005.<br/></dd><dt class="label">Related names</dt><dd class="bibdata-name"><a href="/nlc/search.xqy?collection=all&amp;count=10&amp;pg=1&amp;mime=text%2Fhtml&amp;sort=score-desc&amp;q=&quot;Rock%2C%20Edward%20T&quot;&amp;qname=idx:byName">Rock, Edward T.</a><br/><a href="/nlc/search.xqy?collection=all&amp;count=10&amp;pg=1&amp;mime=text%2Fhtml&amp;sort=score-desc&amp;q=&quot;Society%20of%20Wild%20Weasels&quot;&amp;qname=idx:byName">Society of Wild <span class="highlt">Weasels</span>.</a><br/></dd><dt class="label">Description</dt><dd class="bibdata">xxviii, 628 p. : ill., ports. ; 24 cm.<br/></dd><dt class="label">ISBN</dt><dd class="bibdata">1420816217 (hbk.)<br/>1420816209 (pbk.)<br/></dd><dt class="label">Subjects</dt><dd class="bibdata-subject"><a href="/nlc/search.xqy?collection=all&amp;count=10&amp;pg=1&amp;mime=text%2Fhtml&amp;sort=score-desc&amp;q=&quot;Electronic%20warfare%20aircraft&quot;&amp;qname=idx:subjectLexicon">Electronic warfare aircraft.</a><br/><a href="/nlc/search.xqy?collection=all&amp;count=10&amp;pg=1&amp;mime=text%2Fhtml&amp;sort=score-desc&amp;q=&quot;Vietnam%20War%2C%201961-1975--Aerial%20operations%2C%20American&quot;&amp;qname=idx:subjectLexicon">Vietnam War, 1961-1975--Aerial operations, American.</a><br/><a href="/nlc/search.xqy?collection=all&amp;count=10&amp;pg=1&amp;mime=text%2Fhtml&amp;sort=score-desc&amp;q=&quot;Vietnam%20War%2C%201961-1975--Personal%20narratives%2C%20American&quot;&amp;qname=idx:subjectLexicon">Vietnam War, 1961-1975--Personal narratives, American.</a><br/></dd><dt class="label">LC classification</dt><dd class="bibdata">UG1242.E43 F55 2005<br/></dd><dt class="label">Dewey class no.</dt><dd class="bibdata">959.704/348 22<br/></dd><dt class="label">Other system no.</dt><dd class="bibdata">(OCoLC)ocm63515845<br/></dd><dt class="label">Geographic area code</dt><dd class="bibdata">n-us--- a-vt---<br/></dd><dt class="label">Quality code</dt><dd class="bibdata">lccopycat</dd></dl>
+         </div>
+        </div>
+        <div id="tab2" class="tab_content">
+       <h2 class="hidden">Rights and Restrictions</h2>
+<p> There are no known restrictions on publication or distribution of   images in the Liljenquist Family Collection of Civil War Photographs. </p>
+<p> <strong>Access:</strong> Restricted. Served by appointment   only. Digital images are available in the Prints &amp; Photographs   Online Catalog where the image content is easier to see than in the   original ambrotypes and tintypes. As a preservation measure, the digital   images are used in preference to serving originals. </p>
+<p> <strong>Reproduction (photocopying, hand-held camera copying,                 photoduplication and other forms of copying allowed by &quot;fair            use&quot;):</strong> Digital images are available. Additional copying is restricted because of the fragility of the materials. </p>
+<p><strong>Publication and other forms of distribution:</strong> There are no known restrictions on publication or distribution of the   [type of material] in the [name of collection].   These [types of materials] can be published without requesting permission.</p>
+<p> <strong>Credit Line:</strong> Library of Congress, [name of] Division, [reproduction number, e.g., LC-DIG-ppmsca-26460]</p>
+      </div>
+        <div id="tab3" class="tab_content">
+        <h2 class="hidden">Citation Formats</h2>
+          <p><em>The selection of citation formats provided below is based on reference standards. However, formatting rules   can vary widely between applications and fields of interest or study.   The specific requirements for  your project  should be applied.</em></p>
+          <h3>APA (6th ed.)</h3>
+          <p>Rock, E. T., &amp; Society of Wild Weasels. (2005). <em>First in, last out: Stories by the Wild Weasels</em>. Bloomington, Ind: AuthorHouse. </p>
+          <h3>Chicago (Author-Date, 15th ed.)</h3>
+          <p>Rock, Edward T. 2005. <em>First in, last out: stories by the Wild Weasels</em>. Bloomington, Ind: AuthorHouse. </p>
+          <h3>Harvard (18th ed.)</h3>
+          <p>ROCK, E. T. (2005). <em>First in, last out: stories by the Wild Weasels</em>. Bloomington, Ind, AuthorHouse. </p>
+          <h3>MLA (7th ed.)</h3>
+          <p>Rock, Edward T. <em>First In, Last Out: Stories by the Wild Weasels</em>. Bloomington, Ind: AuthorHouse, 2005. Print. </p>
+          <h3>Turabian (6th ed.)</h3>
+          <p>Rock, Edward T. <em>First in, Last Out: Stories by the Wild Weasels</em>. Bloomington, Ind: AuthorHouse, 2005. </p>
+
+        </div>
+        <div id="tab4" class="tab_content">
+        <h2 class="hidden">Other Tab</h2>
+          <h3>Other Tab Subtitle</h3>
+          <p>Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+        </div>
+    </div><!-- end class:tab_container -->
+
+</div><!-- end #ds-maincontent -->
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+	<br class="clearfloat" />
+<!-- end #container --></div>
+</body>
+</html>

@@ -13,13 +13,15 @@ gradlew
 gradlew.bat
 .gradle
 gradlew-params
-build/*
-
+build*
+build/**
+src/main/ml-config/root/**
 
 
 config
 
 src/id-main/**
+
 src/static/tohap/**
 src/splashpages/**
 src/api/**

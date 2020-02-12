@@ -1,0 +1,7 @@
+
+lccn=$1
+cd ../auths/
+
+./rnc  $lccn
+cd ../bibrecs/
+

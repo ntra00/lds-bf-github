@@ -1,0 +1,27 @@
+/********************
+ds-footer.css
+********************/
+#footer {
+	clear: both;
+	font: 11px verdana, helvetica, sans-serif;
+	height: 30px;
+	text-align: left;
+	border-color: #005194;
+	border-width: 0px;
+	background: #efefef url(http://www.loc.gov/images/line_100.gif) top left no-repeat;
+	padding: 15px 0px 0px 15px;
+}
+#footer a {
+	color: #666;
+	font-size: 11px;
+	font-family: verdana, helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+}
+#footer a:hover {
+	color: #333;
+	font-size: 11px;
+	font-family: verdana, helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+}

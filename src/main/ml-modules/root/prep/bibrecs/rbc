@@ -1,0 +1,5 @@
+#!/bin/bash
+# rbi does convert, load. Use rbc a bunch of times then one rbl to load them
+# shortcut to sourc2rdf_single	
+
+./source2rdf_single.sh $1 $2

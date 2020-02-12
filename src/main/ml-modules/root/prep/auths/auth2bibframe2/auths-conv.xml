@@ -1,0 +1,98 @@
+<backend syntax="xml" name="rdf-lookup">
+  <xslt stylesheet="/marklogic/nate/lds/lds-bf/prep/auths/auth2bibframe2/auth2bibframe2.xsl"/>
+  <rdf-lookup timeout="3">
+    <namespace prefix="bf" href="http://id.loc.gov/ontologies/bibframe/" />
+    <namespace prefix="bflc" href="http://id.loc.gov/ontologies/bflc/"/>
+    <lookup xpath="//bf:contribution/bf:Contribution/bf:agent/bf:Agent">
+      <key field="bflc:name00MatchKey"/>
+      <key field="bflc:name01MatchKey"/>
+      <key field="bflc:name11MatchKey"/>
+      <server url="http://idwebvlp03.loc.gov/authorities/names/label/%s" method="HEAD"/>
+    </lookup>
+  </rdf-lookup>
+  <!-- genreform -->
+    <rdf-lookup timeout="3">
+    <namespace prefix="bf" href="http://id.loc.gov/ontologies/bibframe/"/>
+    <namespace prefix="bflc" href="http://id.loc.gov/ontologies/bflc/"/>
+    <namespace prefix="rdf" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+	<namespace prefix="madsrdf" href="http://www.loc.gov/mads/rdf/v1#"/>
+    <namespace prefix="rdfs" href="http://www.w3.org/2000/01/rdf-schema#"/>
+	<lookup xpath="//bf:Work/bf:genreForm/bf:GenreForm[bf:source/bf:Source/rdfs:label = 'lcgft' or bf:source/bf:Source/bf:code = 'lcgft' ]">
+      <key field="rdfs:label"/>	 
+      <server url="http://idwebvlp03.loc.gov/authorities/genreForms/label/%s" method="HEAD"/>
+    </lookup>
+  </rdf-lookup>
+  <!-- source or agent  org codes -->
+    <rdf-lookup timeout="3">
+    <namespace prefix="bf" href="http://id.loc.gov/ontologies/bibframe/"/>
+    <namespace prefix="bflc" href="http://id.loc.gov/ontologies/bflc/"/>
+    <namespace prefix="rdf" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+	<namespace prefix="madsrdf" href="http://www.loc.gov/mads/rdf/v1#"/>
+    <namespace prefix="rdfs" href="http://www.w3.org/2000/01/rdf-schema#"/>
+	<lookup xpath="
+				  //bf:source[not(@rdf:resource)]/bf:Source[not(@rdf:about)][bf:code]|
+				  //bflc:applicableInstitution/bf:Agent[not(@rdf:about)][bf:code]">
+      <key field="bf:code"/>	 
+      <server url="http://idwebvlp03.loc.gov/vocabulary/organizations/label/%s" method="HEAD"/>
+    </lookup>
+  </rdf-lookup>
+  <rdf-lookup timeout="3">
+    <namespace prefix="bf" href="http://id.loc.gov/ontologies/bibframe/"/>
+    <namespace prefix="bflc" href="http://id.loc.gov/ontologies/bflc/"/>
+    <namespace prefix="rdf" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+	<namespace prefix="madsrdf" href="http://www.loc.gov/mads/rdf/v1#"/>
+    <namespace prefix="rdfs" href="http://www.w3.org/2000/01/rdf-schema#"/>
+	<lookup xpath="//bf:source[not(@rdf:resource)]/bf:Source[not(@rdf:about)][rdfs:label]">
+      <key field="rdfs:label"/>	 
+      <server url="http://idwebvlp03.loc.gov/vocabulary/organizations/label/%s" method="HEAD"/>
+    </lookup>
+  </rdf-lookup>
+  <rdf-lookup timeout="3">
+    <namespace prefix="bf" href="http://id.loc.gov/ontologies/bibframe/"/>
+    <namespace prefix="bflc" href="http://id.loc.gov/ontologies/bflc/"/>
+    <namespace prefix="rdf" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+	<namespace prefix="madsrdf" href="http://www.loc.gov/mads/rdf/v1#"/>
+    <namespace prefix="rdfs" href="http://www.w3.org/2000/01/rdf-schema#"/>    
+	<lookup xpath="//bf:Work/bf:genreForm/bf:GenreForm[bf:source/bf:Source/rdfs:label = 'lcsh' or bf:source/bf:Source/bf:code = 'lcsh' ]">
+      <key field="rdfs:label"/>	  
+      <server url="http://idwebvlp03.loc.gov/authorities/subjects/label/%s" method="HEAD"/>
+    </lookup>
+  </rdf-lookup>
+  <!-- language -->
+    <rdf-lookup  timeout="3">
+    <namespace prefix="bf" href="http://id.loc.gov/ontologies/bibframe/"/>
+    <namespace prefix="bflc" href="http://id.loc.gov/ontologies/bflc/"/>
+    <namespace prefix="rdf" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+	<namespace prefix="madsrdf" href="http://www.loc.gov/mads/rdf/v1#"/>
+    <namespace prefix="rdfs" href="http://www.w3.org/2000/01/rdf-schema#"/>
+	<lookup xpath="//bf:Work/bf:language/bf:Language[not(@rdf:about) and rdfs:label]">
+      <key field="rdfs:label"/>	 
+      <server url="http://idwebvlp03.loc.gov/vocabulary/languages/label/%s" method="HEAD"/>
+    </lookup>
+  </rdf-lookup>
+  <!-- place -->
+    <rdf-lookup timeout="3">
+    <namespace prefix="bf" href="http://id.loc.gov/ontologies/bibframe/"/>
+    <namespace prefix="bflc" href="http://id.loc.gov/ontologies/bflc/"/>
+    <namespace prefix="rdf" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+	<namespace prefix="madsrdf" href="http://www.loc.gov/mads/rdf/v1#"/>
+    <namespace prefix="rdfs" href="http://www.w3.org/2000/01/rdf-schema#"/>
+	<lookup xpath="//bf:Work/bf:originPlace/bf:Place[not(@rdf:about)][rdfs:label][bf:source/bf:Source/@rdf:about='http://id.loc.gov/vocabulary/subjectSchemes/naf']">
+      <key field="rdfs:label"/>	 
+      <server url="http://idwebvlp03.loc.gov/authorities/names/label/%s" method="HEAD"/>
+    </lookup>
+  </rdf-lookup>
+   <!-- http://id.loc.gov/authorities/performanceMediums/label/mixed%20chorus  nate test -->
+   <rdf-lookup timeout="3">
+    <namespace prefix="bf" href="http://id.loc.gov/ontologies/bibframe/"/>
+    <namespace prefix="bflc" href="http://id.loc.gov/ontologies/bflc/"/>
+    <namespace prefix="rdf" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <namespace prefix="rdfs" href="http://www.w3.org/2000/01/rdf-schema#"/>
+    <lookup xpath="//bf:musicMedium[not(@rdf:resource)]/bf:MusicMedium[not(@rdf:about)][not(bf:note)]">      
+      <key field="rdfs:label"/>
+      <server url="http://id.loc.gov/authorities/performanceMediums/label/%s" method="HEAD"/>
+    </lookup>
+  </rdf-lookup>
+  
+</backend>
+

@@ -1,0 +1,41 @@
+#!/bin/bash
+#curl single bib and overwrite, either bibid or lccn
+
+source ../config bibrecs
+
+./source2rdf_single.sh $1 $2
+
+
+CURDIR=`echo $PWD`
+
+# do not check for edited content before loading.
+OVERWRITE="OVERWRITE"
+
+TODAY=`date +%Y-%m-%d`
+
+ echo "load date  = $TODAY"
+
+ 
+$MLCPPATH/mlcp.sh import  \
+ 	    -host localhost \
+        -port $BFDB_XCC_PORT \
+        -username $BFDB_XCC_USER \
+        -password $BFDB_XCC_PASS \
+		-input_file_path $LOAD_UNPROCESSED/single	 \
+		-output_uri_replace "$LOAD_UNPROCESSED/single,''"  \
+		-output_collections /bibframe-process/,/processing/load/bibs/$TODAY/,/bibframe-process/yaz-reload/ \
+		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update \
+   		-input_file_type documents \
+		-transform_module /prep/bibrecs/corb-bibframe-process-yazbib-files.xqy \
+		-transform_param $OVERWRITE  \
+		-transform_namespace "http://loc.gov/ndmso/marc-2-bibframe-yaz/" \
+		-document_type xml \
+        -aggregate_record_element RDF \
+        -aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns# \
+        -thread_count $THREADS \
+        -mode local 
+
+echo $ID loaded?
+
+mv $LOAD_UNPROCESSED/single/$ID*.rdf $LOAD_PROCESSED/single/
+ls -l $LOAD_PROCESSED/single/$ID.rdf
