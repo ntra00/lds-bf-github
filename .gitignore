@@ -15,7 +15,7 @@ gradlew.bat
 gradlew-params
 build*
 build/**
-src/main/ml-config/root/**
+src/main/ml-modules/root/**
 
 
 config
