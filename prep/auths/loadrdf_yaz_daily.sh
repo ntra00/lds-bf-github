@@ -64,13 +64,16 @@ for file in $(ls $DAILY_ADD/*.rdf); do
 done
 
 		echo "deletes for $YESTERDAY starting: $DAILY_DEL"
-		
-$MLCPPATH/mlcp.sh import  \
+
+for file in $(ls $DAILY_DEL/*.rdf); do
+        echo "loading $file"	
+	
+	$MLCPPATH/mlcp.sh import  \
  	    -host localhost \
         -port $BFDB_XCC_PORT \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS \
-		-input_file_path $DAILY_DEL	 \
+		-input_file_path $file	 \
 		-output_uri_replace "$DAILY_DEL,''"  \
 		-output_collections /authorities/bfworks/,/resources/works/,/processing/load_bfworks/$YESTERDAY/,/catalog/,/lscoll/lcdb/works/,/authorities/yazbfworks/,/bibframe/hubworks/ \
 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update \
@@ -82,6 +85,8 @@ $MLCPPATH/mlcp.sh import  \
     	-aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns# \
         -thread_count $THREADS \
         -mode local
+done
+
 
 echo rdfxml done
 echo  checking urls posted

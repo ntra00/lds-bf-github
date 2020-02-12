@@ -154,8 +154,9 @@ declare variable $skip-nodes:=( for $n in $skip-literals/* return fn:string($n))
 :   @return rdf:RDF node
 :)
 declare function bf4ts:bf4ts($rdfxml as element() ) as node()*  {
-if ($rdfxml/@rdf:about="") then
- 	xdmp:log("CORB bf4ts error: No work/about " ,"info")
+if ($rdfxml/*[1]/@rdf:about="" or fn:not($rdfxml/@rdf:about) ) then
+ 	()
+	(:xdmp:log(fn:concat("CORB bf4ts error: No work/about " ,  " ",fn:name($rdfxml/*[1]), " ", $rdfxml//bf:mainTitle[1]/fn:string() )  ,"info"):)
 	else
 		let $out-format:="triplexml"			
 
