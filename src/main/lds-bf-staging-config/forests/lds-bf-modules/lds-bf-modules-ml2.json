@@ -1,0 +1,1 @@
+{"forest-name":"lds-bf-modules-ml2", "enabled":true, "host":"mlvlp04.loc.gov", "data-directory":"%%mlForestDataDirectory%%", "large-data-directory":"", "fast-data-directory":"", "updates-allowed":"all", "availability":"online", "rebalancer-enable":true, "range":null, "failover-enable":true, "database-replication":null, "database":"lds-bf-modules"}

@@ -1,0 +1,1 @@
+{"forest-name":"lds-003-2", "enabled":true, "host":"%%mlHostName3%%", "data-directory":"%%mlForestDataDirectory%%", "large-data-directory":"", "fast-data-directory":"", "updates-allowed":"all", "availability":"online", "rebalancer-enable":true, "range":null, "failover-enable":true, "database-replication":null, "database":"natlibcat"}
