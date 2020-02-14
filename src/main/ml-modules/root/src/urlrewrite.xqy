@@ -209,7 +209,17 @@ return
 		      return(
 			   		concat("/lds/permalink.xqy?uri=", $objid, "&amp;mime=", $accept)
 			   )
+			else if(matches($path, "^/loc\.natlib\.(lcdb|instances)\..+\.editor-pkg\.jsonld")) then
+	 	
+		      let $accept := 
+			  					 "application/bf-edit+json"
+								
 
+		      let $tmppath := replace($path, "/", "")
+		      let $objid := substring-before($tmppath, ".editor-pkg.jsonld")
+		      return(
+			   		concat("/lds/permalink.xqy?uri=", $objid, "&amp;mime=", $accept)
+			   )	 
 		else if(matches($path, "^/loc\.natlib\.(lcdb|instances)\..+\.marc-pkg\.xml$")) then
 	 	
 		      let $accept := 

@@ -184,13 +184,23 @@ return
 				else
 					xdmp:set-response-code(404,"Item Not found")
         	)
-        else if (matches($mime, "application/bf-2marc\+xml")) then			
+      else if (matches($mime, "application/bf-edit\+json")) then			
+			(
+	            xdmp:set-response-content-type("application/ld+json; charset=utf-8"), 
+	            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
+	            xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
+				if (exists(utils:mets($uri))) then
+	            	document{utils:rdf-export($uri,"jsonld")} 
+				else
+					xdmp:set-response-code(404,"Item Not found")
+        	)
+		 else if (matches($mime, "application/bf-2marc\+xml")) then			
 			(
 	            xdmp:set-response-content-type("application/rdf+xml; charset=utf-8"), 
 	            xdmp:add-response-header("X-LOC-MLNode", resp:private-loc-mlnode()),
 	            xdmp:add-response-header("Cache-Control", resp:cache-control($duration)),
 				if (exists(utils:mets($uri))) then
-	            	document{utils:rdf-2marc($uri,"rdfxml")} 
+	            	document{utils:rdf-export($uri,"rdfxml")} 
 				else
 					xdmp:set-response-code(404,"Item Not found")
         	)

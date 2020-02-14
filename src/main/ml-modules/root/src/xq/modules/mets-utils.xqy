@@ -371,7 +371,7 @@ declare function utils:rdf-ser($uri as xs:string, $ser as xs:string) {
 :	uri is formatted as objid:  loc.natlib.instances.e20194234910001
 :)
 	 
-declare function utils:rdf-2marc($uri as xs:string, $ser as xs:string) {
+declare function utils:rdf-export($uri as xs:string, $ser as xs:string) {
 	(: convert bibframe rdf is in a dmdsec :)
 	let $instance-mets:=document{utils:mets($uri)}               
    
@@ -400,12 +400,15 @@ declare function utils:rdf-2marc($uri as xs:string, $ser as xs:string) {
 				    let $item-mets:=document{utils:mets($item-id)}
    						return $item-mets/mets:mets/mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF/bf:Item
    
-   let $_:=xdmp:log($instance-uri,"info")
+   (:let $_:=xdmp:log($instance-uri,"info"):)
    
-   let $mime:= "application/rdf+xml; charset=utf-8"				   
-   let $serialize:="rdfxml"    
+   let $mime:=  if ($ser="rdfxml" )  then  
+   						"application/rdf+xml; charset=utf-8"				   
+  			 	else "application/ld+json; charset=utf-8"				   
+  
+   (:let $serialize:="rdfxml"    :)
    
-   let $resp:= if ($serialize="rdfxml" )then 
+	let $resp:=  
    						<rdf:RDF						
 	                xmlns:rdf		="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
 					xmlns:rdfs  	= "http://www.w3.org/2000/01/rdf-schema#"						
@@ -420,17 +423,23 @@ declare function utils:rdf-2marc($uri as xs:string, $ser as xs:string) {
 							{$work}
 							{$items}
 						</rdf:RDF>
-   				else try{
-							sem:rdf-serialize(sem:rdf-parse($instance/node(),"rdfxml"),$serialize)
-						}
-					 catch($e) { ( (),
-					 	xdmp:log(fn:concat("DISPLAY: RDF conversion error for ",$uri),"info")					 	
-					 	)
-					 }
-   	
+
+let $resp:=if ($ser="rdfxml" )then 
+						$resp
+   				else (:resp=jsonld:)
+					let $bftrix:=rdfxml2trix:rdfxml2trix($resp)					
+					 return try{
+						
+							 trix2jsonld-ml:trix2jsonld($bftrix)		
+							}
+					 		catch($e) { ( (),
+					 				xdmp:log(fn:concat("DISPLAY: JSONLD conversion error for ",$uri),"info")					 	
+					 		)
+					 	}
+let $_:=xdmp:log($resp,"info")   	
 	
 	return 
-		if (not(empty($instance) )) then		 		
+		if (not(empty($resp) )) then		 		
 			(
 			        xdmp:set-response-content-type($mime), 		            
 					xdmp:add-response-header("Access-Control-Allow-Origin", "*") ,

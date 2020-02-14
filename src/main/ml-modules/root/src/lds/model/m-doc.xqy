@@ -1141,9 +1141,11 @@ let $ajax:=
 														<li>
                                        						<a href="{$formats-base}.marc-pkg.xml">MARC Conversion pkg</a>														
                                        					</li>
+																												
 													else 
 														()
 													}
+												
                                        			</ul>,
                                        			
                                        			<h2>Bookmark This Description</h2>,
@@ -1170,8 +1172,15 @@ let $ajax:=
 															<input   type="hidden" name="url" value="{$formats-base}.jsonld"/>
 															<button value="submit for edit">Submit to Editor</button>
 														</form>-->
-														<p>{$formats-base}.jsonld</p>
-                                       					 <a href="http://mlvlp04.loc.gov:3000/bfe/index.html?action={$load-action}&amp;url={$formats-base}.jsonld&amp;profile={$editor-profile}">Load to Editor</a>
+														{if (fn:contains($uri,"instances")) then
+																(	<p>{$formats-base}.editor-pkg.jsonld</p>,
+																	<a href="http://mlvlp04.loc.gov:3000/bfe/index.html?action={$load-action}&amp;url={$formats-base}.editor-pkg.jsonld&amp;profile={$editor-profile}">Load to Editor</a>
+																)
+															else
+																(<p>{$formats-base}.jsonld</p>,
+		                                       					 <a href="http://mlvlp04.loc.gov:3000/bfe/index.html?action={$load-action}&amp;url={$formats-base}.jsonld&amp;profile={$editor-profile}">Load to Editor</a>
+																 )
+														 }
 														</span>														
 	                                       				</li>
 	                                       			</ul>)
