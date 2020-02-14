@@ -1,0 +1,831 @@
+{
+    "database-name": "lds-bf",
+    "forest": [
+        "lds-003-1",
+        "lds-003-2",
+        "lds-003-3",
+        "lds-003-4",
+        "lds-003-5",
+        "lds-003-6",
+        "lds-001-1",
+        "lds-001-2",
+        "lds-001-3",
+        "lds-001-4",
+        "lds-001-5",
+        "lds-001-6",
+        "lds-002-1",
+        "lds-002-2",
+        "lds-002-3",
+        "lds-002-4",
+        "lds-002-5",
+        "lds-002-6"
+    ],
+    "security-database": "Security",
+    "schema-database": "Schemas",
+    "enabled": true,
+    "retired-forest-count": 0,
+    "language": "en",
+    "stemmed-searches": "advanced",
+    "word-searches": false,
+    "word-positions": true,
+    "fast-phrase-searches": true,
+    "fast-reverse-searches": false,
+    "triple-index": true,
+    "triple-positions": false,
+    "fast-case-sensitive-searches": true,
+    "fast-diacritic-sensitive-searches": true,
+    "fast-element-word-searches": true,
+    "element-word-positions": true,
+    "fast-element-phrase-searches": true,
+    "element-value-positions": false,
+    "attribute-value-positions": false,
+    "field-value-searches": false,
+    "field-value-positions": false,
+    "three-character-searches": false,
+    "three-character-word-positions": false,
+    "fast-element-character-searches": false,
+    "trailing-wildcard-searches": false,
+    "trailing-wildcard-word-positions": false,
+    "fast-element-trailing-wildcard-searches": false,
+    "two-character-searches": false,
+    "one-character-searches": false,
+    "uri-lexicon": true,
+    "collection-lexicon": true,
+    "reindexer-enable": true,
+    "reindexer-throttle": 5,
+    "reindexer-timestamp": 19256958,
+    "directory-creation": "manual",
+    "maintain-last-modified": false,
+    "maintain-directory-last-modified": false,
+    "inherit-permissions": true,
+    "inherit-collections": true,
+    "inherit-quality": true,
+    "in-memory-limit": 262144,
+    "in-memory-list-size": 512,
+    "in-memory-tree-size": 128,
+    "in-memory-range-index-size": 16,
+    "in-memory-reverse-index-size": 16,
+    "in-memory-triple-index-size": 64,
+    "large-size-threshold": 1024,
+    "locking": "strict",
+    "journaling": "off",
+    "journal-size": 100,
+    "journal-count": 2,
+    "preallocate-journals": false,
+    "preload-mapped-data": true,
+    "preload-replica-mapped-data": true,
+    "range-index-optimize": "facet-time",
+    "positions-list-max-size": 256,
+    "format-compatibility": "automatic",
+    "index-detection": "automatic",
+    "expunge-locks": "automatic",
+    "tf-normalization": "scaled-log",
+    "merge-priority": "lower",
+    "merge-max-size": 32768,
+    "merge-min-size": 1024,
+    "merge-min-ratio": 1,
+    "merge-timestamp": 0,
+    "retain-until-backup": false,
+    "database-backup": [
+        {
+            "backup-id": "233974424952126244",
+            "backup-enabled": true,
+            "backup-directory": "/marklogic/backups/lds-bf",
+            "backup-type": "weekly",
+            "backup-period": 1,
+            "backup-day": ["thursday"],
+            "backup-start-time": "19:00:00-04:00",
+            "backup-timestamp": "2019-08-08T16:18:50.073612-04:00",
+            "max-backups": 2,
+            "backup-security-database": true,
+            "backup-schemas-database": true,
+            "backup-triggers-database": true,
+            "include-replicas": true,
+            "incremental-backup": false,
+            "journal-archiving": false,
+            "journal-archive-path": "",
+            "journal-archive-lag-limit": 15
+        },
+        {
+            "backup-id": "12805988762030868561",
+            "backup-enabled": true,
+            "backup-directory": "/marklogic/backups/lds-bf",
+            "backup-type": "once",
+            "backup-start-date": "2019-08-08",
+            "backup-start-time": "19:00:00-04:00",
+            "backup-timestamp": "2019-08-08T16:18:15.49265-04:00",
+            "max-backups": 2,
+            "backup-security-database": true,
+            "backup-schemas-database": true,
+            "backup-triggers-database": true,
+            "include-replicas": true,
+            "incremental-backup": false,
+            "journal-archiving": false,
+            "journal-archive-path": "",
+            "journal-archive-lag-limit": 15
+        }
+    ],
+    "element-word-query-through": [
+        {
+            "namespace-uri": "http://schemas.microsoft.com/office/word/2003/wordml",
+            "localname": "p"
+        },
+        {
+            "namespace-uri": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+            "localname": "p"
+        }
+    ],
+    "phrase-through": [
+        {
+            "namespace-uri": "http://marklogic.com/entity",
+            "localname": [
+                "coordinate",
+                "credit-card-number",
+                "date",
+                "email",
+                "facility",
+                "gpe",
+                "id",
+                "location",
+                "money",
+                "nationality",
+                "organization",
+                "percent",
+                "person",
+                "phone-number",
+                "religion",
+                "time",
+                "url",
+                "utm"
+            ]
+        },
+        {
+            "namespace-uri": "http://schemas.microsoft.com/office/word/2003/auxHint",
+            "localname": "t"
+        },
+        {
+            "namespace-uri": "http://schemas.microsoft.com/office/word/2003/wordml",
+            "localname": [
+                "br",
+                "cr",
+                "fldChar",
+                "fldData",
+                "fldSimple",
+                "hlink",
+                "noBreakHyphen",
+                "permEnd",
+                "permStart",
+                "pgNum",
+                "proofErr",
+                "r",
+                "softHyphen",
+                "sym",
+                "t",
+                "tab"
+            ]
+        },
+        {
+            "namespace-uri": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+            "localname": [
+                "bookmarkEnd",
+                "bookmarkStart",
+                "commentRangeEnd",
+                "commentRangeStart",
+                "customXml",
+                "endnoteReference",
+                "fldSimple",
+                "footnoteReference",
+                "hyperlink",
+                "ins",
+                "instrText",
+                "proofErr",
+                "r",
+                "sdt",
+                "sdtContent",
+                "smartTag",
+                "t"
+            ]
+        },
+        {
+            "namespace-uri": "http://www.loc.gov/djvu",
+            "localname": "WORD"
+        },
+        {
+            "namespace-uri": "http://www.w3.org/1999/xhtml",
+            "localname": [
+                "a",
+                "abbr",
+                "acronym",
+                "b",
+                "big",
+                "br",
+                "center",
+                "cite",
+                "code",
+                "dfn",
+                "em",
+                "font",
+                "i",
+                "kbd",
+                "q",
+                "samp",
+                "small",
+                "span",
+                "strong",
+                "sub",
+                "sup",
+                "tt",
+                "var"
+            ]
+        }
+    ],
+    "phrase-around": [
+        {
+            "namespace-uri": "http://schemas.microsoft.com/office/word/2003/wordml",
+            "localname": [
+                "delInstrText",
+                "delText",
+                "endnote",
+                "footnote",
+                "instrText",
+                "pict",
+                "rPr"
+            ]
+        },
+        {
+            "namespace-uri": "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+            "localname": [
+                "commentReference",
+                "customXmlPr",
+                "del",
+                "pPr",
+                "rPr",
+                "sdtPr"
+            ]
+        },
+        {
+            "namespace-uri": "info:lc/xq-modules/noindex",
+            "localname": "noindex_ia"
+        }
+    ],
+    "range-element-index": [
+        {
+            "scalar-type": "unsignedLong",
+            "namespace-uri": "http://marklogic.com/xdmp/dls",
+            "localname": "version-id",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "digitized",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "subjectLexicon",
+            "collation": "http://marklogic.com/collation/en/S1",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "imprint",
+            "collation": "http://marklogic.com/collation/en/S1",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "pubPlace",
+            "collation": "http://marklogic.com/collation/en/S1",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "titleLexicon",
+            "collation": "http://marklogic.com/collation/en/S1",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "nameTitle",
+            "collation": "http://marklogic.com/collation/en/S1",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "uniformTitle",
+            "collation": "http://marklogic.com/collation/en/S1",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "mainCreator",
+            "collation": "http://marklogic.com/collation/en/S1",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "language",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "lcclass",
+            "collation": "http://marklogic.com/collation/en/S1",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "beginpubdate",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "pubdateSort",
+            "collation": "http://marklogic.com/collation/en/S1",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "nameSort",
+            "collation": "http://marklogic.com/collation/en/S1",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "typeOfMaterial",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "dateTime",
+            "namespace-uri": "http://marklogic.com/xdmp/property",
+            "localname": "last-modified",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "dateTime",
+            "namespace-uri": "http://marklogic.com/xdmp/dls",
+            "localname": "created",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "dateTime",
+            "namespace-uri": "http://marklogic.com/xdmp/dls",
+            "localname": "replaced",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "lccfacet",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "lcc1",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "materialGroup",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "role",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "lcc2",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "location",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "title",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "nameTitleAuto",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "lcc3",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "int",
+            "namespace-uri": "http://www.loc.gov/holdings",
+            "localname": "bibid",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "int",
+            "namespace-uri": "http://www.indexdata.com/turbomarc",
+            "localname": "c001",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "int",
+            "namespace-uri": "http://www.indexdata.com/turbomarc",
+            "localname": "c004",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "loc1",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "loc2",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "geoScale",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "gYear",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "begyear",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "gYear",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "pubyrSort",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "http://java.sun.com/xml/ns/jdbc",
+            "localname": "location_code",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "aLabel",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "vLabel",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "rdftype",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "cDate",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "mDate",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "relation",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "lccn",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "cs",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "memberOfURI",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "contentSource",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "cs",
+            "collation": "http://marklogic.com/collation/",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "scheme",
+            "collation": "http://marklogic.com/collation/",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "WorkHash",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "WorkHashable",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "Workaap",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "date",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "mDate",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "date",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "cDate",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        }
+    ],
+    "range-element-attribute-index": [
+        {
+            "scalar-type": "string",
+            "parent-namespace-uri": "http://www.loc.gov/METS/",
+            "parent-localname": "mets",
+            "namespace-uri": "",
+            "localname": "OBJID",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "dateTime",
+            "parent-namespace-uri": "http://www.loc.gov/METS/",
+            "parent-localname": "metsHdr",
+            "namespace-uri": "",
+            "localname": "LASTMODDATE",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "dateTime",
+            "parent-namespace-uri": "http://www.indexdata.com/turbomarc",
+            "parent-localname": "r",
+            "namespace-uri": "",
+            "localname": "dT",
+            "collation": "",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "parent-namespace-uri": "http://www.loc.gov/djvu",
+            "parent-localname": "PAGECOLUMN",
+            "namespace-uri": "http://www.w3.org/XML/1998/namespace",
+            "localname": "id",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        }
+    ],
+    "element-word-lexicon": [
+        {
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "lcclass",
+            "collation": "http://marklogic.com/collation/en/S1"
+        },
+        {
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "mainCreator",
+            "collation": "http://marklogic.com/collation/en/S1"
+        },
+        {
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "titleLexicon",
+            "collation": "http://marklogic.com/collation/en/S1"
+        },
+        {
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "subjectLexicon",
+            "collation": "http://marklogic.com/collation/en/S1"
+        }
+    ],
+    "field": [
+        {
+            "field-name": "",
+            "include-root": true,
+            "stemmed-searches": "off",
+            "word-searches": true,
+            "fast-phrase-searches": false,
+            "fast-case-sensitive-searches": false,
+            "fast-diacritic-sensitive-searches": false,
+            "excluded-element": [
+                {
+                    "namespace-uri": "http://www.indexdata.com/turbomarc",
+                    "localname": "r",
+                    "attribute-namespace-uri": "",
+                    "attribute-localname": "",
+                    "attribute-value": ""
+                },
+                {
+                    "namespace-uri": "info:lc/xq-modules/noindex",
+                    "localname": "noindex",
+                    "attribute-namespace-uri": "",
+                    "attribute-localname": "",
+                    "attribute-value": ""
+                },
+                {
+                    "namespace-uri": "info:lc/xq-modules/noindex",
+                    "localname": "noindex_ia",
+                    "attribute-namespace-uri": "",
+                    "attribute-localname": "",
+                    "attribute-value": ""
+                }
+            ]
+        },
+        {
+            "field-name": "kisn-issn",
+            "include-root": false,
+            "included-element": [
+                {
+                    "namespace-uri": "info:lc/xq-modules/lcindex",
+                    "localname": "identifier",
+                    "weight": 1,
+                    "attribute-namespace-uri": "",
+                    "attribute-localname": "idtype",
+                    "attribute-value": "issn"
+                }
+            ]
+        }
+    ],
+    "geospatial-element-index": [
+        {
+            "namespace-uri": "http://www.georss.org/georss/11",
+            "localname": "point",
+            "coordinate-system": "wgs84",
+            "point-format": "point",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "namespace-uri": "http://www.georss.org/georss/11",
+            "localname": "polygon",
+            "coordinate-system": "wgs84",
+            "point-format": "point",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        }
+    ],
+    "database-replication": null,
+    "rebalancer-enable": true,
+    "rebalancer-throttle": 5,
+    "assignment-policy": {"assignment-policy-name": "bucket"}
+}
