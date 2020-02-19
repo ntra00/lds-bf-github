@@ -263,10 +263,10 @@ let $lccn-doc:=cts:uris((),(),
 							else 
 							$lccn-uri
 				
-			let $_:=xdmp:log( fn:concat("DISPLAdcY: ", $lccn-doc, ":",$lccn-uri),"info")
+			
 			let $objid:=fn:concat("loc.natlib.",$node,"s.",$lccn-uri)
-			return ($objid,
-			xdmp:log($objid,"info")
+			return ($objid
+			
 			)
 
         else
@@ -390,6 +390,7 @@ declare function utils:rdf-export($uri as xs:string, $ser as xs:string) {
    
    
    let $items-search:=searchts:return-my-items($instance-uri)
+   
    (:<results xmlns="http://www.w3.org/2005/sparql-results#"><result><binding name="relateduri"><uri>http://id.loc.gov/resources/items/c0211146780001-1</uri></binding></result></results>:)
 	let $items:= for $i in $items-search//sparql:result/sparql:binding
 					let $item-uri:=fn:string($i/sparql:uri)
@@ -436,7 +437,7 @@ let $resp:=if ($ser="rdfxml" )then
 					 				xdmp:log(fn:concat("DISPLAY: JSONLD conversion error for ",$uri),"info")					 	
 					 		)
 					 	}
-let $_:=xdmp:log($resp,"info")   	
+(:let $_:=xdmp:log($resp,"info")   	:)
 	
 	return 
 		if (not(empty($resp) )) then		 		

@@ -209,14 +209,16 @@ return
 		      return(
 			   		concat("/lds/permalink.xqy?uri=", $objid, "&amp;mime=", $accept)
 			   )
-			else if(matches($path, "^/loc\.natlib\.(lcdb|instances)\..+\.editor-pkg\.jsonld")) then
+		else if (matches($path, "^/loc\.natlib\.(lcdb|instances)\..+\.editor-pkg\.(xml|jsonld)")) then
 	 	
-		      let $accept := 
+		      let $accept := if (fn:ends-with($path,"jsonld")) then
 			  					 "application/bf-edit+json"
+								 else 
+								 	"application/bf-edit+xml"
 								
 
 		      let $tmppath := replace($path, "/", "")
-		      let $objid := substring-before($tmppath, ".editor-pkg.jsonld")
+		      let $objid := substring-before($tmppath, ".editor-pkg")
 		      return(
 			   		concat("/lds/permalink.xqy?uri=", $objid, "&amp;mime=", $accept)
 			   )	 
