@@ -401,6 +401,19 @@ declare function utils:rdf-export($uri as xs:string, $ser as xs:string) {
 				    let $item-mets:=document{utils:mets($item-id)}
    						return $item-mets/mets:mets/mets:dmdSec[@ID="bibframe"]/mets:mdWrap/mets:xmlData/rdf:RDF/bf:Item
    
+   let $item-links:=if ($items) then
+   						for $i in $items-search//sparql:result/sparql:binding
+							let $item-uri:=fn:string($i/sparql:uri)
+							return <bf:hasItem rdf:resource="{$i}"/>
+   					else ()
+let $instance:= if ($item-links) then
+				<bf:Instance>{$instance/@rdf:about,
+						$instance/*[not(self::* instance of element(bf:adminMetadata))],
+						$item-links,
+						$instance/bf:adminMetadata
+						}</bf:Instance>
+					
+   					else $instance
    (:let $_:=xdmp:log($instance-uri,"info"):)
    
    let $mime:=  if ($ser="rdfxml" )  then  
