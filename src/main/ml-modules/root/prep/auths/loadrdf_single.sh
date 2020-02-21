@@ -17,10 +17,13 @@ ls -l $LOAD_UNPROCESSED/single/$LCCN*
 
 echo loading from id-main name titles  $LOAD_UNPROCESSED/single/$LCCN.rdf
 
+# CHANGE TO VIA MODULES PORT??
+# BFDB_XCC_VIAMODULES_PORT=8203
+#  -port $BFDB_XCC_PORT \
 
  $MLCPPATH/mlcp.sh import  \
-	-host mlvlp04.loc.gov \
-        -port $BFDB_XCC_PORT \
+	-host localhost \
+        -port $BFDB_XCC_VIAMODULES_PORT \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS \
 	-input_file_path $LOAD_UNPROCESSED/single \

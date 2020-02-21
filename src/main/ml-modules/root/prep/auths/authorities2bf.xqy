@@ -598,13 +598,16 @@ let $relateds:=
 	
 	let $nametitle-expression:=if ($the-doc/mets:mets/mets:dmdSec[@ID="index"]/mets:mdWrap/mets:xmlData//index:memberOfURI="http://id.loc.gov/authorities/names/collection_FRBRExpression") then "/resources/expressions/" else ()
 	let $rel-colls:=($haslinks, $expressions,$titlerelations, $had7xx,$textrelations, $nametitle-expression)
-	(:let $bfwork:= if ( $distinct-translations or $distinct-relateds or $related-7xxs or $text-relation-nodes) then
-						<rdf:RDF>
-							<bf:Work rdf:about="{fn:normalize-space(fn:substring-before($bfwork/rdf:RDF/bf:Work/@rdf:about,'#'))}">
-							<rdf:type rdf:resource="http://id.loc.gov/ontologies/lclocal/Hub"/>
-							{
-								$bfwork/rdf:RDF/bf:Work/*[fn:not(index-of($sevenxx-properties,fn:name(.)))],
-															
+	
+	let $bfwork:= 
+					<rdf:RDF>
+						<bf:Work rdf:about="{fn:normalize-space(fn:substring-before($bfwork/bf:Work/@rdf:about,'#'))}">
+						<rdf:type rdf:resource="http://id.loc.gov/ontologies/lclocal/Hub"/>
+						{if ( $distinct-translations or $distinct-relateds or $related-7xxs or $text-relation-nodes) then
+							
+							(
+							$bfwork/bf:Work/*[fn:not(index-of($sevenxx-properties,fn:name(.)))],
+														
 								(: keep relateds that are blank nodes :)							
 								$distinct-translations,
 								$distinct-relateds,
@@ -612,40 +615,14 @@ let $relateds:=
 								(: no auth relateds are kept; all are stubs $related-7xxs/*, :)
 								for $n in $text-relation-nodes return
 									<bflc:relationship>{$n}</bflc:relationship>
-							}
-          				</bf:Work></rdf:RDF>
-				else 
-					<rdf:RDF>
-							<bf:Work rdf:about="{fn:normalize-space(fn:substring-before($bfwork/rdf:RDF/bf:Work/@rdf:about,'#'))}">
-					 		<rdf:type rdf:resource="http://id.loc.gov/ontologies/lclocal/Hub"/>
-								{$bfwork/rdf:RDF/bf:Work/*}
-							</bf:Work>
-				 	</rdf:RDF>
-				:)
-				let $bfwork:= 
-						<rdf:RDF>
-							<bf:Work rdf:about="{fn:normalize-space(fn:substring-before($bfwork/bf:Work/@rdf:about,'#'))}">
-							<rdf:type rdf:resource="http://id.loc.gov/ontologies/lclocal/Hub"/>
-							{if ( $distinct-translations or $distinct-relateds or $related-7xxs or $text-relation-nodes) then
-								
-								(
-								$bfwork/bf:Work/*[fn:not(index-of($sevenxx-properties,fn:name(.)))],
-															
-									(: keep relateds that are blank nodes :)							
-									$distinct-translations,
-									$distinct-relateds,
-									$related-7xxs/*,
-									(: no auth relateds are kept; all are stubs $related-7xxs/*, :)
-									for $n in $text-relation-nodes return
-										<bflc:relationship>{$n}</bflc:relationship>
-								)
-							else 
-							(
-								$bfwork//bf:Work/*
-								)
-							}
+							)
+						else 
+						(
+							$bfwork//bf:Work/*
+							)
+						}
 
-          				</bf:Work></rdf:RDF>
+      				</bf:Work></rdf:RDF>
 				
 				
           		let $mxe:= $the-doc/mets:mets/mets:dmdSec[@ID="mxe"]/mets:mdWrap/mets:xmlData/mxe:record
@@ -660,9 +637,11 @@ let $relateds:=
 							 	xdmp:log(fn:concat("CORB auths indexing error  for ", $AUTHURI), "info")
 							 )
 				   }
-			
+			let $_:= xdmp:log( fn:concat("CORB auth : ",$lccn," about to bf4ts"),"info")
 				let $sem:= try {
-								bf4ts:bf4ts($bfwork)			
+								(bf4ts:bf4ts($bfwork)			
+								,xdmp:log(fn:concat("CORB auth : bf4ts transform tried for ",$AUTHURI), "info") 
+								)
 								}
           				   catch ($e) {
 						   		xdmp:log(fn:concat("CORB auth : bf4ts transform failed for ",$AUTHURI), "info") 
@@ -843,7 +822,7 @@ return
             					  $content,
 								  $context
             					),
-            					xdmp:log( fn:concat("CORB auth : ",$orig-uri," loaded as ", $new-uri),"info")
+            					xdmp:log( fn:concat("CORB auth : ",$orig-uri," loaded as this uri ", $new-uri),"info")
 								
             				)
              			} catch($e) {
