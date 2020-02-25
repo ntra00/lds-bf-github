@@ -3,7 +3,7 @@
 # source2rdf_single.sh curls to source, transforms to source/processed
 #loadrdf_single.sh  loads from load/unprocesses, moves to load/processed, which should be cleared out periodically
 #$1 is lccn
-source  /marklogic/nate/lds/lds-bf/prep/config auths
+source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
 ./source2rdf_single.sh $1
 ls -l  $SOURCE_PROCESSED/single/
  mv  $SOURCE_PROCESSED/single/$1*  $LOAD_UNPROCESSED/single/

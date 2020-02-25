@@ -20,9 +20,9 @@
 # from id-main:    -output_permissions id-admin-role,update,id-admin-role,insert,id-user-role,read,id-admin-role,read \
 # expects id-main to have /processing/load/bfworks/[today, ie., YYYY-MM-DD]/
 
-# run config and set the directgory to /marklogic/applications/nate/lds/lds-bf/prep/auths
+# run config and set the directory to /marklogic/applications/nate/lds/lds-bf/prep/auths
 
-source ../config auths
+source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
 
 
 TODAY=$1 

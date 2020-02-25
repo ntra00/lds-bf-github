@@ -12,9 +12,8 @@
 
 # runs for yesterday unless date yyy-mm-dd is passed in as parameter 1
 
-#source ../config bibrecs
 
-source /marklogic/nate/lds/lds-bf/prep/config bibrecs
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config bibrecs
 
 CURDIR=`echo $PWD`
 

@@ -8,12 +8,12 @@ echo $watchct= watchcount
    if [[ !$watchct  ]]; then
 
 echo starting reloader
-source /marklogic/nate/lds/lds-bf/prep/config bibrecs
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config bibrecs
 
 #date >> /home/ntra/reloader.log
 CURDIR=`pwd`
 echo $CURDIR
-
+read q
 prev=$(date  "+%R" -d "1 min ago")
 this=$(date "+%R")
   TODAY=`date +%Y-%m-%d`
@@ -23,7 +23,6 @@ echo $matcher
     cat /var/opt/MarkLogic/Logs/ErrorLog.txt |grep  ./rbi| grep "$matcher" | cut -d ":" -f7-12 |grep -v "e" |sort |uniq > batchupdates/reloads.txt
 
      cat /var/opt/MarkLogic/Logs/ErrorLog.txt |grep  ./post-auth.sh | grep "$matcher" |  cut -d ":" -f7-12 |sort |uniq >> batchupdates/reloads.txt
-     
 sed "s|rbi|rbc|g" <  batchupdates/reloads.txt >  batchupdates/reloads-now.txt
 
 cat  batchupdates/reloads-now.txt|wc -l

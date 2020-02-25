@@ -3,7 +3,8 @@
 #modified to work like bibdaily4 (load only a single record by ID)
 #curl metaproxy or run yaz for a singleton and load right away
 
- source ../config bibrecs
+
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config  bibrecs
 
 ./source2rdf_single.sh $1 $2
 

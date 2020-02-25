@@ -6,8 +6,7 @@
 # curls the xml from id, stores in source, as .xml, converts using yaz to source/.rdf
 # watch-auths moves them to load before running rnl (copied from rbl)
 
-source ../config auths
-
+source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
 CURDIR=`echo $PWD`
 LCCN=$1 
 

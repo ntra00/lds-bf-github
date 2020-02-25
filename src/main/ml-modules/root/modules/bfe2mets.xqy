@@ -1001,15 +1001,30 @@ return (: try catch for the whole process to better return json result to editor
 						else  if ($body/bf:Instance/bf:instanceOf/child::*[1]/rdf:type[@rdf:resource="http://id.loc.gov/ontologies/bibframe/Work"]) then									   
 							$body/bf:Instance/bf:instanceOf/child::*[1]
 						(: ibc with non-Instance root node, non-Work instanceOf :)
+						else if ($body/lclocal:Hub) then
+						
+							let $wtype:="http://id.loc.gov/ontologies/lclocal/Hub"
+							return
+								element  bf:Work {
+									$body/lclocal:Hub/@*,
+									element rdf:type {attribute rdf:resource {$wtype} },									
+									$body/lclocal:Hub/*
+									
+								}
 						else if ($body/child::*[1]/bf:instanceOf/*) then
 							let $wtype:=fn:concat("http://id.loc.gov/ontologies/bibframe/",fn:local-name($body/child::*[1]/bf:instanceOf/*))
 							return
-								<bf:Work>
-									<rdf:type rdf:resource="{$wtype}"/>
-									{	$body/child::*[1]/bf:instanceOf/child::*[1]/@*,
-										$body/child::*[1]/bf:instanceOf/child::*[1]/*
-									}
-								</bf:Work>
+								element  bf:Work {
+									$body/child::*[1]/bf:instanceOf/child::*[1]/@*,
+									element rdf:type {attribute rdf:resource {$wtype} },																		
+									$body/child::*[1]/bf:instanceOf/child::*[1]/*
+									
+								}
+							(: this was for upsided down payload: item/instance/work, but when you pss the work on as a full package, it has no instance; needs work.
+						I think that was an anomaly.
+						else if ( $body/bf:Item/bf:itemOf/bf:Instance/bf:instanceOf/bf:Work) then
+						 	$body/bf:Item/bf:itemOf/bf:Instance/bf:instanceOf/bf:Work
+							:)
 						else 
 							for $type in $worktypes
 								return
@@ -1017,8 +1032,7 @@ return (: try catch for the whole process to better return json result to editor
 							       return $w
 				(:if $workraw1 is null, process instances , items   only   :)
 					
-			let $ibc:=for $n at $x in  $body//bf:AdminMetadata/bflc:procInfo[text() = "update instance"]
-	
+				let $ibc:=for $n at $x in  $body//bf:AdminMetadata/bflc:procInfo[text() = "update instance"]	
 									 return $x 
 				let $result:= if ($workraw1  ) then
 

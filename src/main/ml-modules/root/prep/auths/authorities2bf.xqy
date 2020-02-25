@@ -640,7 +640,8 @@ let $relateds:=
 			let $_:= xdmp:log( fn:concat("CORB auth : ",$lccn," about to bf4ts"),"info")
 				let $sem:= try {
 								(bf4ts:bf4ts($bfwork)			
-								,xdmp:log(fn:concat("CORB auth : bf4ts transform tried for ",$AUTHURI), "info") 
+								,xdmp:log(bf4ts:bf4ts($bfwork)	, "info") 
+								
 								)
 								}
           				   catch ($e) {

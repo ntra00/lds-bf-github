@@ -11,8 +11,7 @@
 # runs for yesterday unless date yyy-mm-dd is passed in as parameter 1
 
 # cant be ../config if run by crontab:
-source /marklogic/nate/lds/lds-bf/prep/config auths
-
+source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
 YESTERDAY=$1 
  if [[ -n "$YESTERDAY" ]]
  then

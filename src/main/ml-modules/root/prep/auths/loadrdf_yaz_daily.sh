@@ -6,7 +6,7 @@
 # if re-running, copy from $LOAD_PROCESSED first
 
 # cant be ../config if run by crontab:
-source /marklogic/nate/lds/lds-bf/prep/config auths
+source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
 
 CURDIR=`echo $PWD`
 

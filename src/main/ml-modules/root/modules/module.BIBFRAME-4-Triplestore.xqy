@@ -159,10 +159,16 @@ if ($rdfxml/*[1]/@rdf:about="" or fn:not($rdfxml/@rdf:about) ) then
 	(:xdmp:log(fn:concat("CORB bf4ts error: No work/about " ,  " ",fn:name($rdfxml/*[1]), " ", $rdfxml//bf:mainTitle[1]/fn:string() )  ,"info"):)
 	else
 		let $out-format:="triplexml"			
+(:let $_:=xdmp:log(bf4ts:filter($rdfxml),"info"):)
 
-		let $sem:=	try{ sem:rdf-serialize( 
-					sem:rdf-parse(bf4ts:filter($rdfxml)),  $out-format 
-					)
+
+
+		let $sem:=	try{ 
+				sem:rdf-serialize( 
+									sem:rdf-parse(bf4ts:filter($rdfxml)),  $out-format 				
+						)
+					,xdmp:log(bf4ts:filter($rdfxml),"info")
+					,xdmp:log("see above","info")
 
 				}			
 			catch($e){
@@ -177,6 +183,7 @@ if ($rdfxml/*[1]/@rdf:about="" or fn:not($rdfxml/@rdf:about) ) then
 };
 
 declare function bf4ts:filter($rdfxml as element() ) as node()* {
+let $_:= xdmp:log(fn:name($rdfxml) ,"info")
 
 let $bf:= $rdfxml/child::node()[fn:name()][1]
 return

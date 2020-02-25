@@ -1,6 +1,7 @@
 #!/bin/bash
 
-source /marklogic/nate/lds/lds-bf/prep/config bibrecs
+
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config  bibrecs
 
 CURDIR=`echo $PWD`
 

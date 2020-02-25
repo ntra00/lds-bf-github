@@ -3,7 +3,7 @@
 # no trailing slash
 
 APPLICATIONS_DIR="/marklogic/applications"
-BFHOME="$APPLICATIONS_DIR/nate/lds/lds-bf"
+BFHOME="$APPLICATIONS_DIR/lds-bf-github/src/main/ml-modules/root"
 cd $BFHOME
 
 # one of auths  or  bibrecs

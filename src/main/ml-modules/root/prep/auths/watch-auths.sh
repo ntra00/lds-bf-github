@@ -1,5 +1,6 @@
 #!/bin/bash
-source /marklogic/nate/lds/lds-bf/prep/config auths
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
+
 CURDIR=`echo $PWD`
 
 ct=$(ls -ltra $SOURCE_PROCESSED/single/*.rdf | wc -l)

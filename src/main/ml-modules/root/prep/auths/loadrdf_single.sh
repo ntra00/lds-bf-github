@@ -5,7 +5,7 @@
 # ex: nohup ./load_auth_single.sh 
 
 
-source ../config auths
+source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
 TODAY=`date +%Y-%m-%d`
 
 
@@ -15,15 +15,15 @@ echo loading whatever is in  $LOAD_UNPROCESSED/single:
 
 ls -l $LOAD_UNPROCESSED/single/$LCCN*
 
-echo loading from id-main name titles  $LOAD_UNPROCESSED/single/$LCCN.rdf
+echo loading from file system at   $LOAD_UNPROCESSED/single/$LCCN.rdf, using $BFDB_XCC_PORT  
 
 # CHANGE TO VIA MODULES PORT??
 # BFDB_XCC_VIAMODULES_PORT=8203
 #  -port $BFDB_XCC_PORT \
-
+#-port $BFDB_XCC_VIAMODULES_PORT \
  $MLCPPATH/mlcp.sh import  \
 	-host localhost \
-        -port $BFDB_XCC_VIAMODULES_PORT \
+          -port $BFDB_XCC_PORT \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS \
 	-input_file_path $LOAD_UNPROCESSED/single \

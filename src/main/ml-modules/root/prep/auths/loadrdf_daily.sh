@@ -23,8 +23,7 @@
 # run config and set the directgory to /marklogic/applications/nate/lds/lds-bf/prep/auths
 
 # cant be ../config if run by crontab:
-source /marklogic/nate/lds/lds-bf/prep/config auths
-
+source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
 TODAY=$1 
  if [ -n "$TODAY" ]
  then

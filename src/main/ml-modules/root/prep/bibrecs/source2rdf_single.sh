@@ -6,7 +6,8 @@
 # bib example: ./rbc 5226
 #lccn example ./rbi 201902345 lccn
 
-source ../config bibrecs
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config bibrecs
+
 CURDIR=`echo $PWD`
 
 ID=$1

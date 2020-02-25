@@ -1,7 +1,8 @@
 #!/bin/bash
 #curl single bib and overwrite, either bibid or lccn
 
-source ../config bibrecs
+
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config  bibrecs
 
 ./source2rdf_single.sh $1 $2
 

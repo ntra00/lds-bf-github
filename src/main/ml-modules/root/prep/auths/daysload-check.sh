@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /marklogic/id/natlibcat/admin/bfi/auths/
+ source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
 
 curdir=`pwd`
 # mkdir $curdir/manifest

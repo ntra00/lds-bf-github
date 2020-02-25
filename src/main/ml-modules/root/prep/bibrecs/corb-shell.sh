@@ -32,7 +32,7 @@
  # xcc://id:pw@mlvlp04.loc.gov:port/ \
  
 #set dirs etc:
-source /marklogic/nate/lds/lds-bf/prep/config bibrecs
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config bibrecs
 
 CHANGEURIS="batchupdates/$1-uris.xqy"
 CHANGECODE=$2
