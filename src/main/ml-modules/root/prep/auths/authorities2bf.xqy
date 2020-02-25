@@ -637,12 +637,9 @@ let $relateds:=
 							 	xdmp:log(fn:concat("CORB auths indexing error  for ", $AUTHURI), "info")
 							 )
 				   }
-			let $_:= xdmp:log( fn:concat("CORB auth : ",$lccn," about to bf4ts"),"info")
+			
 				let $sem:= try {
-								(bf4ts:bf4ts($bfwork)			
-								,xdmp:log(bf4ts:bf4ts($bfwork)	, "info") 
-								
-								)
+									bf4ts:bf4ts($bfwork)														
 								}
           				   catch ($e) {
 						   		xdmp:log(fn:concat("CORB auth : bf4ts transform failed for ",$AUTHURI), "info") 
@@ -676,8 +673,8 @@ let $relateds:=
             			{$the-doc//mets:dmdSec[fn:not(@ID="marcxml") and fn:not(@ID="semtriples")] }
             			
 						<mets:dmdSec ID="semtriples">
-            				<mets:mdWrap MDTYPE="OTHER">
-            					<mets:xmlData>{if ($sem) then $sem else <sem:triples/>  }</mets:xmlData>
+            				<mets:mdWrap MDTYPE="OTHER">            					
+								<mets:xmlData>{if ($sem) then $sem else <sem:triples/>  }</mets:xmlData>
             				</mets:mdWrap>
             			</mets:dmdSec>    
 
@@ -795,9 +792,7 @@ return
 		    				xdmp:xslt-invoke("/prep/auths/auth2bibframe2/auth2bibframe2.xsl",document{$marcxml},$params)					
 		    			 } 
 		    		catch ($e) {
-		    					(xdmp:log($e,"info")
-								
-,
+		    					(
 												xdmp:log(fn:concat("CORB auth : auth2bibframe error; transform failed on ",$resclean), "info")						
 		    									
 								)

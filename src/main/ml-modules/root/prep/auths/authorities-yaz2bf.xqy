@@ -34,7 +34,7 @@ declare function yaz2bf:transform(
     let $auth2bfBase:="/prep/auths/auth2bibframe2/"
 	let $set := map:get($content, "value")
 	let $orig-uri := map:get($content, "uri")  
-let $_:=xdmp:log(fn:concat("CORB auth yaz load starting: " ,$orig-uri) ,"info")
+
 
 	return 
 	for $the-doc in $set/rdf:RDF/rdf:Description/bf:Work| $set/rdf:RDF/bf:Work| $set/rdf:RDF/rdf:Description/lclocal:graph/bf:Work
@@ -43,20 +43,21 @@ let $_:=xdmp:log(fn:concat("CORB auth yaz load starting: " ,$orig-uri) ,"info")
 	let $lccn:=$the-doc/bf:identifiedBy/bf:Lccn[fn:not(bf:status) or fn:not(fn:string(bf:status/bf:Status/@rdf:about="http://id.loc.gov/vocabulary/mstatus/cancinv")) ]/rdf:value
 	
 	let $lccn:=fn:replace(fn:string($lccn)," ","")
-return if (fn:not( $the-doc//bf:title/bf:Title) ) then
-	xdmp:log( fn:concat("CORB auth : ",$lccn," skipped on  load: Not a BFWork"),"info")
-else	
 
-	let $new-uri:=fn:concat("loc.natlib.works.",$lccn)
+return if (fn:not( $the-doc//bf:title/bf:Title) ) then
+		xdmp:log( fn:concat("CORB auth : ",$lccn," skipped on  load: Not a BFWork"),"info")
+	 else	
+
+		let $new-uri:=fn:concat("loc.natlib.works.",$lccn)
 	       (: dailies may not be nametitle or title records; also may have the 985 tag : skip them:)
 	
 	(: pilot and deprecated are testable? :)
 	
-let $already-in-pilot:=()
-let $deprecated:= if ( (exists($the-doc/bf:adminMetadata[1]/bf:AdminMetadata/bf:status/bf:Status[fn:string(bf:code)="d"]  )) or
-						fn:not($the-doc/bf:adminMetadata[1]/bf:AdminMetadata/bf:status/bf:Status)) then
-							fn:true()
-					else  fn:false()
+		let $already-in-pilot:=()
+		let $deprecated:= if ( (exists($the-doc/bf:adminMetadata[1]/bf:AdminMetadata/bf:status/bf:Status[fn:string(bf:code)="d"]  )) or
+								fn:not($the-doc/bf:adminMetadata[1]/bf:AdminMetadata/bf:status/bf:Status)) then
+									fn:true()
+							else  fn:false()
 
     (:-------------------------from ingest-voyager-bib  -------------------------:)
     	let $recstatus := ()
@@ -71,9 +72,9 @@ let $deprecated:= if ( (exists($the-doc/bf:adminMetadata[1]/bf:AdminMetadata/bf:
 				"/bibframe-process/reloads/2018-12-14/","/bibframe/hubworks/")
     (:-------------------------from ingest-voyager-bib  -------------------------:)
 
-	let $AUTHURI:= $resclean
+		let $AUTHURI:= $resclean
 	
-	let $paddedID := $AUTHURI
+		let $paddedID := $AUTHURI
 
 return
 		

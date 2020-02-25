@@ -152,40 +152,36 @@ declare variable $skip-nodes:=( for $n in $skip-literals/* return fn:string($n))
 :
 :   @param  $rdf        node() is the rdf:rdf with bf:Work/Instance/Item as a child. 
 :   @return rdf:RDF node
+
+ as element()
 :)
-declare function bf4ts:bf4ts($rdfxml as element() ) as node()*  {
-if ($rdfxml/*[1]/@rdf:about="" or fn:not($rdfxml/@rdf:about) ) then
- 	()
+declare function bf4ts:bf4ts($rdfxml ) as node()*  {
+
+	
+	if (fn:string($rdfxml/*[1]/@rdf:about)="" or fn:not($rdfxml/*[1]/@rdf:about) ) then
+ 		()
 	(:xdmp:log(fn:concat("CORB bf4ts error: No work/about " ,  " ",fn:name($rdfxml/*[1]), " ", $rdfxml//bf:mainTitle[1]/fn:string() )  ,"info"):)
 	else
 		let $out-format:="triplexml"			
-(:let $_:=xdmp:log(bf4ts:filter($rdfxml),"info"):)
-
-
-
 		let $sem:=	try{ 
 				sem:rdf-serialize( 
 									sem:rdf-parse(bf4ts:filter($rdfxml)),  $out-format 				
-						)
-					,xdmp:log(bf4ts:filter($rdfxml),"info")
-					,xdmp:log("see above","info")
-
+						)					
 				}			
 			catch($e){
-					(xdmp:log(fn:concat("CORB bf4ts error: ",fn:string($rdfxml/*[1]/@rdf:about),"... ",xdmp:quote($e//error:format-string)),"info")
-						(:xdmp:log(fn:concat("CORB bf4ts error: ", fn:string($rdfxml/*[1]/@rdf:about) ),"info"):)
-						
-						
-					)
+					(
+						xdmp:log(fn:concat("CORB bf4ts error: ", fn:string($rdfxml/*[1]/@rdf:about) ),"info")
+				)
 			}
 
 	return $sem
 };
-
+(:as element():)
 declare function bf4ts:filter($rdfxml as element() ) as node()* {
-let $_:= xdmp:log(fn:name($rdfxml) ,"info")
+
 
 let $bf:= $rdfxml/child::node()[fn:name()][1]
+
 return
 	<rdf:RDF
 	xmlns:rdf             = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -241,7 +237,9 @@ declare function bf4ts:process($node) {
 
 declare function bf4ts:cleanup($node) {
 (: need to stop indexing (relatedto/Work/about ) stuff with id uris in about, resource :)
-if ($node/child::*[1]/@rdf:about and fn:contains($node/child::*[1]/@rdf:about,"#Work880-") or fn:matches($node/child::*[1]/@rdf:about,"#Work7[0-9]{2}-[0-9]{2}") or fn:matches($node/child::*[1]/@rdf:about,"#Work2[0-9]{2}-[0-9]{2}")) then
+if ($node/child::*[1]/@rdf:about and fn:contains($node/child::*[1]/@rdf:about,"#Work880-") 
+	or 
+	fn:matches($node/child::*[1]/@rdf:about,"#Work7[0-9]{2}-[0-9]{2}") or fn:matches($node/child::*[1]/@rdf:about,"#Work2[0-9]{2}-[0-9]{2}")) then
 ()(: skip links to embedded 880 works :)
 else
 element {xs:QName(fn:name($node))} {
