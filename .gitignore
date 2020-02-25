@@ -18,7 +18,7 @@ build/**
 
 
 src/main/ml-modules/root/config
-
+src/main/ml-modules/root/prep/bibrecs/batchupdates/**
 src/id-main/**
 
 src/static/tohap/**
