@@ -1,0 +1,42 @@
+loading from /marklogic/applications/lds-bf-github/src/main/ml-modules/root/prep/bibrecs/load/unprocessed/single/split_0000007.xml.rdf /marklogic/applications/lds-bf-github/src/main/ml-modules/root/prep/bibrecs/load/unprocessed/single/split_0000008.xml.rdf /marklogic/applications/lds-bf-github/src/main/ml-modules/root/prep/bibrecs/load/unprocessed/single/split_0000011.xml.rdf /marklogic/applications/lds-bf-github/src/main/ml-modules/root/prep/bibrecs/load/unprocessed/single/split_0000012.xml.rdf /marklogic/applications/lds-bf-github/src/main/ml-modules/root/prep/bibrecs/load/unprocessed/single/split_0000019.xml.rdf
+5 files starting
+20/02/26 09:11:06 INFO contentpump.LocalJobRunner: Content type is set to MIXED.  The format of the  inserted documents will be determined by the MIME  type specification configured on MarkLogic Server.
+20/02/26 09:11:07 INFO contentpump.FileAndDirectoryInputFormat: Total input paths to process : 5
+20/02/26 09:11:09 INFO contentpump.LocalJobRunner:  completed 81%
+20/02/26 09:12:09 INFO contentpump.LocalJobRunner:  completed 100%
+20/02/26 09:21:09 ERROR mapreduce.ContentWriter: SVC-EXTIME: cts:uri-match("/lscoll/lcdb/items/c/0/2/0/7/2/4/8/1/1/*") -- Time limit exceeded
+20/02/26 09:21:09 WARN mapreduce.ContentWriter: Failed document /split_0000011.xml.rdf in file:/marklogic/applications/lds-bf-github/src/main/ml-modules/root/prep/bibrecs/load/unprocessed/single/split_0000011.xml.rdf
+2020-02-26 09:21:09.126 WARNING [16] (SessionImpl.close): Exception rolling back during Session.close()
+ com.marklogic.xcc.exceptions.XQueryException: XDMP-NOTXN: No transaction with identifier 12387476532098132751
+ [Session: user=id-admin, cb={default} [ContentSource: user=id-admin, cb={none} [provider: address=mlvlp05.loc.gov/140.147.104.123:8028, pool=1/64]]]
+ [Client: XCC/8.0-1, Server: XDBC/8.0-7.1]
+	com.marklogic.xcc.impl.handlers.ServerExceptionHandler.handleResponse(ServerExceptionHandler.java:34)
+	com.marklogic.xcc.impl.handlers.EvalRequestController.serverDialog(EvalRequestController.java:96)
+	com.marklogic.xcc.impl.handlers.AbstractRequestController.runRequest(AbstractRequestController.java:88)
+	com.marklogic.xcc.impl.SessionImpl.submitRequestInternal(SessionImpl.java:437)
+	com.marklogic.xcc.impl.SessionImpl.rollback(SessionImpl.java:188)
+	com.marklogic.xcc.impl.SessionImpl.close(SessionImpl.java:201)
+	com.marklogic.mapreduce.ContentWriter.close(ContentWriter.java:708)
+	com.marklogic.contentpump.MultithreadedMapper$MapRunner.run(MultithreadedMapper.java:381)
+	java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:473)
+	java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1152)
+	java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:622)
+	java.lang.Thread.run(Thread.java:748)
+20/02/26 09:21:09 ERROR mapreduce.ContentWriter: SVC-EXTIME: hadoop:transform-and-insert("/prep/bibrecs/corb-bibframe-process-yazbib-files.xqy", "http://loc.gov/ndmso/marc-2-bibframe-yaz/", "transform", "", $URI, $CONTENT, $INSERT-OPTIONS) -- Time limit exceeded
+20/02/26 09:21:09 WARN mapreduce.ContentWriter: Failed document /split_0000007.xml.rdf in file:/marklogic/applications/lds-bf-github/src/main/ml-modules/root/prep/bibrecs/load/unprocessed/single/split_0000007.xml.rdf
+20/02/26 09:21:09 INFO contentpump.LocalJobRunner: com.marklogic.mapreduce.MarkLogicCounter: 
+20/02/26 09:21:09 INFO contentpump.LocalJobRunner: INPUT_RECORDS: 5
+20/02/26 09:21:09 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS: 5
+20/02/26 09:21:09 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_COMMITTED: 5
+20/02/26 09:21:09 INFO contentpump.LocalJobRunner: OUTPUT_RECORDS_FAILED: 0
+20/02/26 09:21:09 INFO contentpump.LocalJobRunner: Total execution time: 602 sec
+--------------
+-rwxr-x---. 1 ntra marklogic 5457490 Feb 26 09:10 /marklogic/applications/lds-bf-github/src/main/ml-modules/root/prep/bibrecs/load/unprocessed/single/split_0000007.xml.rdf
+-rwxr-x---. 1 ntra marklogic 4705017 Feb 26 09:10 /marklogic/applications/lds-bf-github/src/main/ml-modules/root/prep/bibrecs/load/unprocessed/single/split_0000008.xml.rdf
+-rwxr-x---. 1 ntra marklogic 4310907 Feb 26 09:10 /marklogic/applications/lds-bf-github/src/main/ml-modules/root/prep/bibrecs/load/unprocessed/single/split_0000011.xml.rdf
+-rwxr-x---. 1 ntra marklogic 3983392 Feb 26 09:10 /marklogic/applications/lds-bf-github/src/main/ml-modules/root/prep/bibrecs/load/unprocessed/single/split_0000012.xml.rdf
+-rwxr-x---. 1 ntra marklogic 2640245 Feb 26 09:10 /marklogic/applications/lds-bf-github/src/main/ml-modules/root/prep/bibrecs/load/unprocessed/single/split_0000019.xml.rdf
+
+--------------
+241

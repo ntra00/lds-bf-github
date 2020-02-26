@@ -542,8 +542,9 @@ let $items :=
 					
 					 try {
 			   					bf4ts:bf4ts(  element rdf:RDF {$item-modified} )
-						} catch($e){
-						       xdmp:log(fn:concat("CORB BFE sem conversion error for ", $itemURI), "info")
+						} catch($e){ (<sem:triples/>,
+						       			xdmp:log(fn:concat("CORB BFE sem conversion error for ", $itemURI), "info")
+							   			)
 						   }
 			        let $item-mets := 
 			            <mets:mets 
@@ -696,13 +697,15 @@ declare function bfe2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $dest
 	let $work-bfindex :=
 	   try {
 	       bibframe2index:bibframe2index(<rdf:RDF>{$bfwork}</rdf:RDF>, <mxe:empty-record/> )
-	   } catch($e){
-	       $e
+	   } catch($e){( 	<index:index/>,
+	       xdmp:log(fn:concat("CORB BFE index  error for ", $BIBURI), "info")
+		   )
 	   }
 	let $work-sem :=  try {
 			   					bf4ts:bf4ts( <rdf:RDF>{ $bfwork }</rdf:RDF> )
-						} catch($e){
+						} catch($e){(<sem:triples/>,
 						       xdmp:log(fn:concat("CORB BFE sem conversion error for ", $BIBURI), "info")
+							   )
 						   }
 	
 

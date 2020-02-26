@@ -826,7 +826,13 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
     let $work :=  element rdf:RDF { $work } 
             
 	(:let $work-sem := bf4ts:bf4ts( element rdf:RDF { $work }  ):)
-	let $work-sem := bf4ts:bf4ts(  $work   )
+	
+	let $work-sem :=  try {
+			   					bf4ts:bf4ts(  $work   )
+						} catch($e){(<sem:triples/>,
+						       xdmp:log(fn:concat("CORB BFE sem conversion error for ", $BIBURI), "info")
+							   )
+						   }
 	
 	let $mxe:= if ($found-mets) then	
 					$found-mets/mets:mets/mets:dmdSec[@ID="mxe"]/mets:mdWrap/mets:xmlData/*
@@ -1173,7 +1179,7 @@ let $instanceOf:=if ($instanceOf/@rdf:resource)  then
 								bf4ts:bf4ts( element rdf:RDF { $instance-modified } )
 							  }
 							  catch($e){
-			  							( 	<sem:triples/>,$e,
+			  							( 	<sem:triples/>,
 							 			xdmp:log(fn:concat("CORB BFE/BIB sem error  for ", $instanceURI), "info")									
 							 		)
 							  }

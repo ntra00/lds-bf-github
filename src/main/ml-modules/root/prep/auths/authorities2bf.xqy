@@ -137,7 +137,7 @@ declare function auth2bf:link2translations($bfraw-work,$lccn, $string2ignore, $w
 								            		        ),
 												 cts:element-value-query(fn:QName("info:lc/xq-modules/lcindex", "uri"),$workDBURI)
 											)
-								let $_:=xdmp:log(concat ("CORB auth :  searching for ", $nameTitle),"info")
+								(:let $_:=xdmp:log(concat ("CORB auth :  searching for ", $nameTitle),"info"):)
 	
        	               			return
 										   cts:search( fn:doc(), $searchcode,
@@ -485,8 +485,8 @@ declare function auth2bf:link-and-make-mets($bfwork, $orig-uri, $new-uri,$lccn, 
  
 		                	let $node-link:=auth2bf:link2translations($bfwork,$lccn, $node-text, $new-uri)
 			            	return (auth2bf:dedup-links($bfwork/rdf:RDF/bf:Work,"bf:relatedTo", $node-link)
-			                     ,xdmp:log(fn:concat("linking part ",$node-link),"info")
-			             	)	                                        
+			                     		(:,xdmp:log(fn:concat("linking part ",$node-link),"info"):)
+			             			)	                                        
 					else ()
 				 let $distinct-translations:=auth2bf:dedup-links($bfwork,"bf:translationOf", $translation-link)		
 				
@@ -626,10 +626,7 @@ let $relateds:=
 				
 				
           		let $mxe:= $the-doc/mets:mets/mets:dmdSec[@ID="mxe"]/mets:mdWrap/mets:xmlData/mxe:record
-          		
-				(:let $idx:= try {bibframe2index:bibframe2index($bfwork, $mxe)			}
-						   catch($e){xdmp:log($e,"info")}
-						   :)
+          						
 			  let $idx:= try {
 				       			bibframe2index:bibframe2index($bfwork, <mxe:empty-record/> )
 				   } catch($e){
