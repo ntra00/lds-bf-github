@@ -26,7 +26,7 @@ ls -l $LOAD_UNPROCESSED/single/$LCCN*
 #port=$BFDB_XCC_PORT
 
 port=$BFDB_XCC_VIAMODULES_PORT
-echo "using modules port $BFDB_XCC_VIAMODULES_PORT
+echo "using modules port $BFDB_XCC_VIAMODULES_PORT"
 
  $MLCPPATH/mlcp.sh import  \
 	-host localhost \
