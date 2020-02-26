@@ -246,7 +246,7 @@ element {xs:QName(fn:name($node))} {
 		(		        
 		if ($node/@rdf:resource and fn:starts-with(fn:string($node/@rdf:resource),"www.") ) then
             (attribute rdf:resource {fn:concat("//",fn:string($node/@rdf:resource))}                
-                )
+                )		
 		else if ($node/@rdf:about) then 
 			let $uri:=fn:replace(fn:string($node/@rdf:about)," ","")
 			let $uri:=if ( fn:contains($uri, "http") and fn:not(fn:starts-with($uri, "http")) )	 then 
@@ -257,8 +257,14 @@ element {xs:QName(fn:name($node))} {
 				(:$node/@rdf:about:)
 		else if ($node/@rdf:resource and fn:not(fn:matches(fn:string($node/@rdf:resource),"^.+//.+$") ) ) then
 				element rdfs:label {fn:string($node/@rdf:resource)}
-
-        else  $node/@*
+        else if ($node/@rdf:resource) then 
+			let $uri:=fn:replace(fn:string($node/@rdf:resource)," ","")
+			let $uri:=if ( fn:contains($uri, "http") and fn:not(fn:starts-with($uri, "http")) )	 then 
+							fn:concat("http", fn:substring-after($uri,"http")) 
+					 else $uri
+			let $uri:=fn:normalize-unicode($uri)
+					return attribute rdf:resource {$uri}
+		else  $node/@*
 		,       
 		        (: found that related Works were being skipped 2019-03-04:)
 		
