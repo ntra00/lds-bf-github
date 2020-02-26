@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config bibrecs
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/config bibrecs
 
 # make an xml file for doc label change checking
 # after sourceprep, goes through the file system looking for 001s and creates a manifest of OBJIDs in xml

@@ -4,8 +4,7 @@
 
 # ex: nohup ./load_bib_yaz.sh 
 
-
-source ../config bibrecs
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/config bibrecs
 
 CURDIR=`echo $PWD`
 
@@ -25,7 +24,7 @@ echo $ct files starting
 
  $MLCPPATH/mlcp.sh import  \
 	-host localhost \
-        -port $BFDB_XCC_PORT \
+        -port $BFDB_XCC_VIAMODULES_PORT \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS \
 		-input_file_path $LOAD_UNPROCESSED/single \

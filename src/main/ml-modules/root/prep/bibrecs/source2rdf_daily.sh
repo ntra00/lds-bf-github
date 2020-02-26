@@ -8,7 +8,7 @@
 
 # set to yesterday unless date is passed in: (ILS records have yesterdays date)
 
-source /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config bibrecs
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/config bibrecs
 
 CURDIR=`echo $PWD`
 

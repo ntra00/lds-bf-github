@@ -1,6 +1,6 @@
 #!/bin/bash
 
- source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
+ source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/config auths
 
 curdir=`pwd`
 # mkdir $curdir/manifest

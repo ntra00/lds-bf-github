@@ -11,9 +11,9 @@
 #-------------- Almost identical to bibrecs daily! --------------------#
 
 # cant be ../config if run by crontab:
-source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
-CURDIR=`echo $PWD`
+source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/config auths
 
+CURDIR=`echo $PWD`
 
 
 YESTERDAY=$1 

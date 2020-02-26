@@ -1,5 +1,6 @@
 #!/bin/bash
-source ../config bibrecs
+# not in use?
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/config bibrecs
 
 echo "--------------------------------------------------------------------"
 echo source/processed/single contains yazzed content ready for reload

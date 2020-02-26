@@ -22,7 +22,7 @@
 
 # run config and set the directory to /marklogic/applications/nate/lds/lds-bf/prep/auths
 
-source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
+source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/config auths
 
 
 TODAY=$1 

@@ -4,14 +4,9 @@
 # daily load files: find nametitles and titles loaded to id=main today in the names file.
 # if you want to load a specific  day, 2017-07-01 on command line
 
-#8282 is  id-main xdbc
-# try 8082for id-main
-
-#8203 is natlibcat xdbc
 # 8203 transform uses file system, not Modules database; load to /admin/bfi/auths/authorities2bf.xqy
 #				          /marklogic/id/natlibcat/admin/bfi/auths/ admin/bfi/auths/authorities2bf.xqy
 
-# 8203 /marklogic/id/natlibcat/
 
 # added collection to nametitles and titles (/authorities/bfworks/)
 
@@ -23,7 +18,8 @@
 # run config and set the directgory to /marklogic/applications/nate/lds/lds-bf/prep/auths
 
 # cant be ../config if run by crontab:
-source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config auths
+source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/config auths
+
 TODAY=$1 
  if [ -n "$TODAY" ]
  then

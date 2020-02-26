@@ -3,8 +3,7 @@
 #records are already rdf , in source/processed/[date]/[A|D]
 # if re-running, copy from $LOAD_PROCESSED first
 
-source /marklogic/nate/lds/lds-bf/prep/config bibrecs
-
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/config bibrecs
 CURDIR=`echo $PWD`
 
 
@@ -48,7 +47,7 @@ for file in $(ls $DAILY_ADD/*.rdf); do
 
  $MLCPPATH/mlcp.sh import  \
   	    -host localhost \
-        -port $BFDB_XCC_PORT \
+	  -port $BFDB_XCC_VIAMODULES_PORT \
         -username $BFDB_XCC_USER \
          -password $BFDB_XCC_PASS \
  		-input_file_path $file	 \
@@ -72,7 +71,7 @@ for file in $(ls $DAILY_DEL/*.rdf); do
 
 	$MLCPPATH/mlcp.sh import  \
  	    -host localhost \
-        -port $BFDB_XCC_PORT \
+  -port $BFDB_XCC_VIAMODULES_PORT \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS \
 		-input_file_path ${DAILY_DEL}	 \

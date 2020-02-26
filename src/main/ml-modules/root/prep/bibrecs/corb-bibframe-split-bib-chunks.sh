@@ -29,7 +29,8 @@
 
 #split the 1000 records in /bibframe/process into singletons 
 
-source /marklogic/nate/lds/lds-bf/prep/config bibrecs
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/config bibrecs
+
 LOADTYPE=$1
 BIBTYPE=$2
 

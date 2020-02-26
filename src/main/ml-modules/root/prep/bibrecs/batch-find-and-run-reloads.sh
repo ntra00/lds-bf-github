@@ -4,7 +4,7 @@
 # then executes each yaz using "rbc"
 
 
-source /marklogic/nate/lds/lds-bf/prep/config bibrecs
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/config bibrecs
 
 CURDIR=`pwd`
 echo $CURDIR

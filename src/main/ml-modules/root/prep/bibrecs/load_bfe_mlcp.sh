@@ -7,8 +7,7 @@
 # 8203 transform uses   /admin/bfi/bibrecs/modules/bfe2mets.xqy
 # ex:  ./load_bfe_mlcp.sh 
 
-source /marklogic/applications/nate/lds/lds-bf/config bibrecs
-
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/config bibrecs
 CURDIR=`echo $PWD`
 
 

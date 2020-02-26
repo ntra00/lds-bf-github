@@ -9,7 +9,7 @@
 
 #this combines sourceprep and source2rdf steps in bibrecs
 
-source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config  auths
+source  /marklogic/id/lds-bf-github/src/main/ml-modules/root/config  auths
 CURDIR=`echo $PWD`
 LCCN=$1 
 

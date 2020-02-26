@@ -8,7 +8,7 @@ echo $watchct= watchcount
    if [[ !$watchct  ]]; then
 
 echo starting reloader
-source /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config bibrecs
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/config bibrecs
 
 #date >> /home/ntra/reloader.log
 CURDIR=`pwd`
