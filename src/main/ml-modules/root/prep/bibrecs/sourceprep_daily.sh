@@ -50,7 +50,6 @@ for mrc in $(ls /marklogic/opt/marcdump/bib/*$filedate*)
 pwd
 echo $mrc is the file to split
 	
-
 		directory=$YESTERDAY
 		echo about to make mkdir $directory
 		
@@ -127,11 +126,18 @@ echo "next, daily ADD records ingested to /bibframe-process/records with batch n
 
 echo "then process deletes: change the ingest program to look for  d in leader, remove from catalog"
 echo loading files from id-main name titles  $YESTERDAY
- 
+
+# 8203 is file system; only use for troubleshooting:
+# port=$BFDB_XCC_PORT
+# echo "using file system port $BFDB_XCC_PORT
+
+port=$BFDB_XCC_VIAMODULES_PORT
+echo "Posting marcxml files using modules port $BFDB_XCC_VIAMODULES_PORT"
+
 
  $MLCPPATH/mlcp.sh import  \
         -host localhost \
-        -port $BFDB_XCC_PORT \
+        -port $port \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS \
 		-input_file_path $SOURCE_UNPROCESSED/$YESTERDAY/A \
@@ -149,11 +155,9 @@ echo loading files from id-main name titles  $YESTERDAY
 
 echo about to post delete chunks:
 
-
-
 $MLCPPATH/mlcp.sh import  \
         -host localhost \
-        -port $BFDB_XCC_PORT \
+        -port $port \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS \
 		-input_file_path $SOURCE_UNPROCESSED/$YESTERDAY/D \

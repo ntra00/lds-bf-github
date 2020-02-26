@@ -126,7 +126,11 @@ chgrp -R marklogic $CURDIR/bfe-preprocess/*/*
 cd $VALIDDIR/source
 postingct=$(find -maxdepth 1 -mtime 0 -type f | wc -l)
 
+#echo using file system port $BFDB_XCC_POR
+#port=$BFDB_XCC_PORT
 
+port=$BFDB_XCC_VIAMODULES_PORT
+echo "using modules port $BFDB_XCC_VIAMODULES_PORT"
 
 if [[  $postingct > 0 ]]
  then
@@ -135,7 +139,7 @@ if [[  $postingct > 0 ]]
 
 	$MLCPPATH/mlcp.sh import  \
         -host $BFDB_HOST \
-        -port $BFDB_XCC_PORT \
+        -port $port \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS  \
 		-input_file_path $VALIDDIR/source/ \

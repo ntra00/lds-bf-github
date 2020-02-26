@@ -2,7 +2,7 @@
 #curl single bib and overwrite, either bibid or lccn
 
 
-source /marklogic/id/lds-bf-github/src/main/ml-modules/root/prep/config  bibrecs
+source /marklogic/id/lds-bf-github/src/main/ml-modules/root/config  bibrecs
 
 ./source2rdf_single.sh $1 $2
 
@@ -16,10 +16,17 @@ TODAY=`date +%Y-%m-%d`
 
  echo "load date  = $TODAY"
 
+# 8203 is file system; only use for troubleshooting:
+# port=$BFDB_XCC_PORT
+# echo "using file system port $BFDB_XCC_PORT
+
+port=$BFDB_XCC_VIAMODULES_PORT
+echo "Posting overwrite bibs rdf using modules port $BFDB_XCC_VIAMODULES_PORT"
+
  
 $MLCPPATH/mlcp.sh import  \
  	    -host localhost \
-        -port $BFDB_XCC_PORT \
+        -port $port \
         -username $BFDB_XCC_USER \
         -password $BFDB_XCC_PASS \
 		-input_file_path $LOAD_UNPROCESSED/single	 \

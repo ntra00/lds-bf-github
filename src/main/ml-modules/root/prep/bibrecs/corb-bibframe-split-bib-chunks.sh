@@ -65,7 +65,7 @@ fi
 
 		java -cp ${CORBPATH}/marklogic-corb-2.3.2.jar:${CORBPATH}/marklogic-xcc-8.0-5.jar $BATCHDATE  $TYPE \
 			com.marklogic.developer.corb.Manager \
-	        xcc://$BFDB_XCC_USER:$BFDB_XCC_PASS@localhost:$BFDB_XCC_PORT/ \
+	        xcc://$BFDB_XCC_USER:$BFDB_XCC_PASS@localhost:$BFDB_XCC_VIAMODULES_PORT/ \
 	  		"" \
 			corb-bibframe-split-marcxml-records.xqy \
 			$THREADS \

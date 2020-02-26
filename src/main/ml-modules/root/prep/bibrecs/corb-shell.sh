@@ -51,7 +51,7 @@ then
 
 java   -Xmx32G  -XX:+UseConcMarkSweepGC -cp $CORBPATH/marklogic-xcc-8.0-5.jar:$CORBPATH/corb.jar \
    com.marklogic.developer.corb.Manager \
-   xcc://$BFDB_XCC_USER:$BFDB_XCC_PASS@$BFDB_HOST:$BFDB_XCC_PORT/  \
+   xcc://$BFDB_XCC_USER:$BFDB_XCC_PASS@$BFDB_HOST:$BFDB_XCC_VIAMODULES_PORT/  \
    $COLLECTIONS \
    $CHANGECODE \
    $THREADS \
