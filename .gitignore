@@ -18,42 +18,35 @@ build/**
 
 
 src/main/ml-modules/root/config
-src/main/ml-modules/root/prep/bibrecs/batchupdates/**
 src/id-main/**
 
 src/static/tohap/**
-src/splashpages/**
-src/api/**
-src/xq/lscoll/**
-src/xq/ingest*.xqy
-src/xq/modules/lscoll/**
-src/xq/modules/ead/**
-src/xq/modules/pass*
+src/main/ml-modules/root/src/splashpages/**
+src/main/ml-modules/root/src/api/**
+src/main/ml-modules/root/src/xq/lscoll/**
+src/main/ml-modules/root/src/xq/ingest*.xqy
+src/main/ml-modules/root/src/xq/modules/lscoll/**
+src/main/ml-modules/root/src/xq/modules/ead/**
+src/main/ml-modules/root/src/xq/modules/pass*
 
 ##src/xq/rdfxq*
 
-prep/auths/auth_daily_query_filter.txt
-prep/auths/auth2bibframe2/**
-prep/auths/batchupdates/**
-prep/auths/load/**
-prep/auths/source/**
-prep/auths/out/**
-prep/auths/manifest/**
-prep/auths/nohup*
+src/main/ml-modules/root/prep/auths/auth_daily_query_filter.txt
+src/main/ml-modules/root/prep/auths/auth2bibframe2/**
+src/main/ml-modules/root/prep/auths/batchupdates/**.txt
+src/main/ml-modules/root/prep/auths/load/**
+src/main/ml-modules/root/prep/auths/source/**
+src/main/ml-modules/root/prep/auths/out/**
+src/main/ml-modules/root/prep/auths/manifest/**
+src/main/ml-modules/root/prep/auths/nohup*
 
-prep/bibrecs/batchupdates/**
-prep/bibrecs/load/**
-prep/bibrecs/manifest/**
-prep/bibrecs/source/**
-prep/bibrecs/bfe-preprocess/**
-prep/bibrecs/*test*
-prep/bibrecs/nohup*
+src/main/ml-modules/root/prep/bibrecs/batchupdates/**.txt
+src/main/ml-modules/root/prep/bibrecs/load/**
+src/main/ml-modules/root/prep/bibrecs/manifest/**
+src/main/ml-modules/root/prep/bibrecs/source/**
+src/main/ml-modules/root/prep/bibrecs/bfe-preprocess/**
+src/main/ml-modules/root/prep/bibrecs/*test*
+src/main/ml-modules/root/prep/bibrecs/nohup*
 
 # marc2bibframe2:
-prep/bibrecs/xsl/**
-prep/bibrecs/batchupdates/**
-prep/bibrecs/load/**
-prep/bibrecs/source/**
-prep/bibrecs/bfe-preprocess/**
-prep/bibrecs/*test*
-prep/logs/**
+src/main/ml-modules/root/prep/logs/**
