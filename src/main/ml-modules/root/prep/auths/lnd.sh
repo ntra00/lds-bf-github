@@ -1,4 +1,8 @@
 #!/bin/bash
+####################
+# not used since it does not use yaz lookups
+####################
+
 # this is written for idmain on localhost to nlc localhost 8282 to 8082?
 # test of mlcp copy from nametitles madsrdf in id-main to natlibcat bf works
 # daily load files: find nametitles and titles loaded to id=main today in the names file.
@@ -47,7 +51,6 @@ eval ${filter}
 
 #MLCPPATH=/marklogic/id/id-prep/mlcp/bin
 #PASSWD=`/marklogic/id/id-prep/marc/keys/passwd-ml.sh`
-
 
 echo loading files from id-main name titles  $TODAY
  
