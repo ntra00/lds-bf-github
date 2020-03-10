@@ -1,9 +1,9 @@
-{
-    "server-name": "%%mlAppServerPortFS%%-lds-http",
+{    
+    "server-name": "%%mlAppServerPortFS%%-lds-bf-filesystem-http",
     "group-name": "Default",
     "server-type": "http",
     "enabled": true,
-    "root": "/marklogic/id/lds/modules/",
+    "root": "/marklogic/applications/lds-bf-github/src/main/ml-modules/root/src",
     "port": "%%mlAppServerPortFS%%",
     "webDAV": false,
     "execute": true,
@@ -54,7 +54,7 @@
     "output-include-default-attributes": "default",
     "default-error-format": "compatible",
     "error-handler": "",
-    "url-rewriter": "/urlrewrite.xqy",
+    "url-rewriter": "urlrewrite.xqy",
     "rewrite-resolves-globally": false,
     "ssl-allow-sslv3": true,
     "ssl-allow-tls": true,
