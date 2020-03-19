@@ -748,7 +748,9 @@ let $related-7xxs:=if  ($bfraw-work/*[fn:not(self::* instance of element (bf:sub
 																						
 						}</related-7xxs>				
 						else ()
-			let $_:=xdmp:log($related-7xxs,"info")			
+let $_:=xdmp:log("--------------","info")	
+let $_:=xdmp:log($related-7xxs,"info")	
+			let $_:=xdmp:log("--------------","info")			
 let $related-7xxs:=  (:nodes and links to replace the 7xxs :)
 			<wrap>{				
 				 for $linkset in $related-7xxs/* (:links, not nodes:)
