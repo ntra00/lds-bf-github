@@ -748,20 +748,23 @@ let $related-7xxs:=if  ($bfraw-work/*[fn:not(self::* instance of element (bf:sub
 																						
 						}</related-7xxs>				
 						else ()
-let $_:=xdmp:log("--------------","info")	
-let $_:=xdmp:log($related-7xxs,"info")	
-			let $_:=xdmp:log("--------------","info")			
+
+				
 let $related-7xxs:=  (:nodes and links to replace the 7xxs :)
 			<wrap>{				
 				 for $linkset in $related-7xxs/* (:links, not nodes:)
+					
 					return												
 				 		if ( $linkset[self::* instance of element(wrap)]) then
+						
 						 	auth2bf:dedup-links($work,$linkset/name,$linkset/link)							 							
 						else
 							(:  blank nodes will be inserted as stubs  :)
 							 $linkset
 							
-				}</wrap>		
+				}</wrap>	
+
+	
 	let $sevenxx-properties:= fn:distinct-values(for $node in $related-7xxs/child::* return fn:name($node))
 	
 
@@ -799,6 +802,7 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
 							(:suppress relateds we've got stubs for (all but 880s :)
 							(:$related-7xxs/*,:)
 							$related-7xxs/*/bf:Work[fn:contains( fn:string(@rdf:about),"Work880")	],
+							$related-7xxs/*[not(self::* instance of  element  (bf:Work))],
 							(: link to related stubs in place of related blank nodes :)
 							$relateds
 							}

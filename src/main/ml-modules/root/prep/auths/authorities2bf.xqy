@@ -28,20 +28,24 @@ this is run by load_names_daily, port 8203, relative to  /marklogic/id/natlibcat
 
  :)
  (:
- : this makes sure reloaded related stuff is deduped
+ : this makes sure reloaded related stuff is deduped. only one relation per uri, and its the new one coming in.
  :)
 declare function auth2bf:dedup-links($work, $prop-name,$resource-url) {
 
 let $distinct:= fn:distinct-values($work/*[fn:name()=$prop-name]/@rdf:resource)
-
-let $new-distinct:=  if (fn:matches(  $resource-url, $distinct ) ) then
-					 					$distinct
+ 
+			
+let $new-distinct:= if (count($distinct) =0 or not($distinct) ) then
+						$resource-url 
+						else  if (count($distinct) =1 and  fn:matches(  fn:string($resource-url), fn:string($distinct) ) ) then
+					 					$resource-url 
 									else
-										($resource-url,  $distinct)
+									($resource-url,  $distinct)
+									
 	  return 	
 	    for $t in   $new-distinct
 			 return 
-			 element {$prop-name} {attribute  rdf:resource {$t} }
+			 element {$prop-name} {attribute  rdf:resource {fn:string($t)} }
 
 			 
 };
