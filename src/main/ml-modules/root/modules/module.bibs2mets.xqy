@@ -241,7 +241,8 @@ declare function bibs2mets:link-via-lccn2($lccn,  $workDBURI) {
      
 		return if ($relatedWork) then
 				(	$relatedWork,xdmp:log(fn:concat("CORB BIB merge: linked via lccn ", $workDBURI, " to :" ,$relatedWork),"info"))
-				else ("",xdmp:log(fn:concat("CORB BIB merge: not linked via lccn ", $workDBURI, " to :" ,$relatedWork),"info"))
+				else
+				 ("",xdmp:log(fn:concat("CORB BIB merge: not linked via lccn ", $workDBURI, " to :" ,$relatedWork),"info"))
 };
 
 (: this work is the 7xx work, so it is not primarycontribution etc:)
@@ -747,7 +748,7 @@ let $related-7xxs:=if  ($bfraw-work/*[fn:not(self::* instance of element (bf:sub
 																						
 						}</related-7xxs>				
 						else ()
-						
+			let $_:=xdmp:log($related-7xxs,"info")			
 let $related-7xxs:=  (:nodes and links to replace the 7xxs :)
 			<wrap>{				
 				 for $linkset in $related-7xxs/* (:links, not nodes:)

@@ -1,4 +1,4 @@
-xquery version "0.9-ml"
+xquery version "1.0-ml"
 (:
  : Copyright (c)2005-2008 Mark Logic Corporation
  :
@@ -42,4 +42,8 @@ let $uris := cts:uris(
     'CORB-UNEXPECTED', text { "Unexpected type:", $TYPE }) )
 return (count($uris), $uris)
 
-(: get-uris.xqy :)
+(: get-uris.xqy :)(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)
