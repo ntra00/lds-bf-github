@@ -923,7 +923,7 @@ main node is instance/instanceof
 		
 		let $orig-uri := map:get($content, 'uri')  
 
-		let $_x:= xdmp:log(fn:concat("CORB BFE editor load: orig uri " , $orig-uri  )   , "info")
+		let $_:= xdmp:log(fn:concat("CORB BFE editor load: orig uri " , $orig-uri  )   , "info")
  let $bfe-uri:="http://mlvlp04.loc.gov:3000/profile-edit/server/publishRsp"
 
 return (: try catch for the whole process to better return json result to editor :)
