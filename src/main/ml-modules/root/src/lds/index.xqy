@@ -148,6 +148,13 @@ let $html :=
                         }
                         <label for="lccn">LCCN</label>						
 						{
+                            if ($qname eq 'idx:issn') then
+                                <input tabindex="5" type="radio" value="idx:issn" checked="checked" name="qname" class="searchOptionRadioControl" id="issn" />
+                            else
+                                <input tabindex="5" type="radio" value="idx:issn" name="qname" class="searchOptionRadioControl" id="issn" />
+                        }
+                        <label for="issn">ISSN</label>			
+						{
                             if ($qname eq 'bflc:catalogerId') then
                                 <input tabindex="5" type="radio" value="bflc:catalogerId" checked="checked" name="qname" class="searchOptionRadioControl" id="catid" />
                             else

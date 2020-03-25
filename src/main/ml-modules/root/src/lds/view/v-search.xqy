@@ -73,8 +73,12 @@ declare function vs:render() as element(div) {
 		       else ()
             }
 			 <option value="idx:lccn">
-                {if ($qname eq "idx:lccn") then attribute selected {"selected"} else ()}
+                {if ($qname eq "idx:iccn") then attribute selected {"selected"} else ()}
                 LCCN
+            </option>
+			<option value="idx:Issn">
+                {if ($qname eq "idx:Issn") then attribute selected {"selected"} else ()}
+                ISSN
             </option>
         </select>
 

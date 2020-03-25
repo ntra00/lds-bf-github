@@ -77,7 +77,9 @@ declare function bibframe2index:bibframe2index($rdfxml as element(rdf:RDF) , $mx
 
     let $classes := for $c in $resource/bf:classification
 						return bibframe2index:get_classes($c)
-    
+    let $rdatypes:=for $c in $resource/bf:content|$resource/bf:media|$resource/bf:carrier
+						return bibframe2index:getRdaTypes($c/child::*[1])
+
     (: bibframe-related extracts :)
     let $uniformTitle :=  bibframe2index:get_bibframe_uniform_title($resource)
 	
@@ -142,6 +144,7 @@ declare function bibframe2index:bibframe2index($rdfxml as element(rdf:RDF) , $mx
 			$imprints,
 			$pubPlaces,
 			$issuance,
+			$rdatypes,
 			$display,
             $derivations,
             $createDate[text()],
@@ -175,6 +178,31 @@ return  if ($label!="") then
 					 (: changed mind about wanting serial, mono etc; instance material groups are pretty good already:)
 	else ()
 
+
+};
+
+declare function bibframe2index:getRdaTypes($class as element()*) as element()* {
+let $scheme:=fn:string($class/bf:source/bf:Source/@rdf:about)
+let $_:=xdmp:log($scheme,"info")
+
+return if ($scheme="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent" or 
+			$scheme="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia" or 
+			$scheme ="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier") then
+			let $prop:= 
+					if ($scheme="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia") then
+						"index:media"
+					else  if ( $scheme="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent" ) then
+						"index:content"	
+					else  if ( $scheme="http://id.loc.gov/vocabulary/genreFormSchemes/rdacarrier" ) then
+						"index:carrier"	
+					else ()
+			let $label:=fn:string($class/rdfs:label[1])
+	let $_:=xdmp:log($prop,"info")
+	let $_:=xdmp:log($label,"info")
+			return  if ($label!="" and $prop ) then 
+						element {$prop} {$label}										
+					else ()
+		else ()
 
 };
 
