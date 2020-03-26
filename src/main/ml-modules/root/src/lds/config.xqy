@@ -617,10 +617,10 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <page>results</page>
           <view-area>left</view-area>
           <view-name>Subject</view-name>
-          <description>Topics in your seearch Remove the filter by selecting the X icon.</description>
+          <description>Topics in your seearch. Remove the filter by selecting the X icon.</description>
           <longdesc>
             <div xmlns="http://www.w3.org/1999/xhtml">
-              Topics in your seearch Remove the filter by selecting the X icon.  
+              Topics in your seearch. Remove the filter by selecting the X icon.  
                
             </div>
           </longdesc>
@@ -628,6 +628,25 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <data-function>vf:facet-data</data-function>
           <facet-param>info:lc/xq-modules/lcindex</facet-param>
           <facet-param>subjectLexicon</facet-param>
+          <facet-operation>or</facet-operation>
+        </elt>
+        <elt>
+          <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
+          <page>search</page>
+          <page>results</page>
+          <view-area>left</view-area>
+          <view-name>Content types</view-name>
+          <description>Content types</description>
+          <longdesc>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+              Conten types in your seearch. Remove the filter by selecting the X icon.  
+               
+            </div>
+          </longdesc>
+          <starts-hidden>false</starts-hidden>
+          <data-function>vf:facet-data</data-function>
+          <facet-param>info:lc/xq-modules/lcindex</facet-param>
+          <facet-param>content</facet-param>
           <facet-operation>or</facet-operation>
         </elt>
        
@@ -650,6 +669,48 @@ declare variable $DISPLAY-ELEMENTS as node() :=
           <data-function>vf:facet-data</data-function>
           <facet-param>info:lc/xq-modules/lcindex</facet-param>
           <facet-param>beginpubdate</facet-param>
+          <facet-operation>or</facet-operation>
+        </elt>
+		 <elt>
+          <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
+          <page>search</page>
+          <page>results</page>
+          <view-area>left</view-area>
+          <view-name>Media (bf:Instance)</view-name>
+          <description>Media types</description>
+          <longdesc>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                To refine results by media type, select any media from the list provided. <br />
+                <br />
+                It is only possible to select one type at a time.<br />
+                Remove the filter by selecting the X icon.
+            </div>
+          </longdesc>
+          <starts-hidden>false</starts-hidden>
+          <data-function>vf:facet-data</data-function>
+          <facet-param>info:lc/xq-modules/lcindex</facet-param>
+          <facet-param>media</facet-param>
+          <facet-operation>or</facet-operation>
+        </elt>
+		<elt>
+          <facet-id>{ xdmp:set($f-counter, $f-counter + 1), fn:concat("f",$f-counter) }</facet-id>
+          <page>search</page>
+          <page>results</page>
+          <view-area>left</view-area>
+          <view-name>Carrier (bf:Instance)</view-name>
+          <description>Carrier types</description>
+          <longdesc>
+            <div xmlns="http://www.w3.org/1999/xhtml">
+                To refine results by media type, select any carrier from the list provided. <br />
+                <br />
+                It is only possible to select one carrier at a time.<br />
+                Remove the filter by selecting the X icon.
+            </div>
+          </longdesc>
+          <starts-hidden>false</starts-hidden>
+          <data-function>vf:facet-data</data-function>
+          <facet-param>info:lc/xq-modules/lcindex</facet-param>
+          <facet-param>carrier</facet-param>
           <facet-operation>or</facet-operation>
         </elt>
         <elt>
