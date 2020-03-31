@@ -33,8 +33,10 @@ img {
 	position: absolute;
 	top:-50px;
 }
+
 #container {
 	width:983px;
+	
 	height: auto;
 	margin-right:auto;
 	margin-left:auto;

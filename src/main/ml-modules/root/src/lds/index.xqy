@@ -154,13 +154,14 @@ let $html :=
                                 <input tabindex="5" type="radio" value="idx:issn" name="qname" class="searchOptionRadioControl" id="issn" />
                         }
                         <label for="issn">ISSN</label>			
+						<br/>
 						{
                             if ($qname eq 'bflc:catalogerId') then
                                 <input tabindex="5" type="radio" value="bflc:catalogerId" checked="checked" name="qname" class="searchOptionRadioControl" id="catid" />
                             else
                                 <input tabindex="5" type="radio" value="bflc:catalogerId" name="qname" class="searchOptionRadioControl" id="catid" />
                         }
-                        <label for="catid"><strong><small>Cataloger </small></strong></label>						
+                        <label for="catid"><small>Cataloger </small></label>						
 						
                     </div>
 					<hr />
