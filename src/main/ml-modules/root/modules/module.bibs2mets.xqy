@@ -1067,7 +1067,9 @@ if ibc is no, leave it all
 let $_:=xdmp:log(fn:concat("CORB BFE/BIB workdburi for ", $workuri-4-instance," ", $ibc), "info")									
 
 let $paddedID:=if ($ibc="yes" and $lccn!="" and  fn:not(fn:contains($paddedID, $lccn) ) ) then
-						fn:concat("e", $lccn)
+						(:fn:concat("e", $lccn):)
+						(xdmp:log(fn:concat("CORB BFE/BIB  in get-instance, NOT switching to lccn ", $lccn), "info")									
+						,$paddedID)
 					else 
 						$paddedID
 						
@@ -1319,7 +1321,7 @@ let $items := (: avoid related works with instances with specific xpath:)
 					 		}
 			        let $item-index :=   try {
 										 bibframe2index:bibframe2index( element rdf:RDF { $item-modified }, $mxe )
-										 } catch($e){	( (),
+										 } catch($e){	( <sem:triples/>,
 										 xdmp:log(fn:concat("CORB BFE/BIB item index for ", $iID), "info")
 										)
 					 		}

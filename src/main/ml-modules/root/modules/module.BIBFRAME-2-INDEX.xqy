@@ -183,7 +183,7 @@ return  if ($label!="") then
 
 declare function bibframe2index:getRdaTypes($class as element()*) as element()* {
 let $scheme:=fn:string($class/bf:source/bf:Source/@rdf:about)
-let $_:=xdmp:log($scheme,"info")
+
 
 return if ($scheme="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent" or 
 			$scheme="http://id.loc.gov/vocabulary/genreFormSchemes/rdamedia" or 
@@ -197,8 +197,7 @@ return if ($scheme="http://id.loc.gov/vocabulary/genreFormSchemes/rdacontent" or
 						"index:carrier"	
 					else ()
 			let $label:=fn:string($class/rdfs:label[1])
-	let $_:=xdmp:log($prop,"info")
-	let $_:=xdmp:log($label,"info")
+	
 			return  if ($label!="" and $prop ) then 
 						element {$prop} {$label}										
 					else ()

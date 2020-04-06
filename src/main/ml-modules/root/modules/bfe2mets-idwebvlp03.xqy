@@ -343,7 +343,7 @@ declare function bfe2mets:insert-instances($bfraw, $workDBURI, $paddedID, $mxe, 
 											fn:string($i//rdf:RDF/bf:Instance/bf:instanceOf/child::*[1]/@rdf:about)
 											else ()
 									else ()
-(:			let $_:=xdmp:log(fn:concat("CORB BFE ibc hiding work:" , $ibc, "|", $orig-work-link), "info"):)
+			(:let $_:=xdmp:log(fn:concat("CORB BFE ibc hiding work:" , $ibc, "|", $orig-work-link), "info"):)
 			(: bibid is the new e number:)
 			(:let $_:=xdmp:log(fn:concat("CORB BFE ibc hiding instance:" , $ibc, "|", $bibid), "info"):)
 
@@ -379,14 +379,16 @@ declare function bfe2mets:insert-instances($bfraw, $workDBURI, $paddedID, $mxe, 
 		        				)
 								,
 								xdmp:log(fn:concat("CORB BFE editor load: loaded instance doc : ", xs:string($i/@OBJID),  " to : ",$destination-uri )   , "info")
-							(:	stop hiding 2020-04-06
-							,
+								(:stop hiding:)
+								
+								(:,
+								
 								if ($ibc="yes") then
 									(xdmp:log(fn:concat("CORB BFE instanceuri hiding:" , $orig-instance-link), "info"),
 									 bfe2mets:hide-doc($orig-instance-link,"instances")
 									 )
 								else ()
-							:)
+								:)
 							)
 						}
 					catch ($e) { (xdmp:log(fn:concat("CORB BFE editor load: failed to load instance doc : ", xs:string($i/@OBJID),  " to : "	,$destination-uri )   , "info"),
@@ -677,11 +679,11 @@ declare function bfe2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $dest
 								else 	 () (: 2019-03-14 drop hasInstance; these are posted separately and link back $hasInstance:)
 	
 	(: old: {$bfraw-work/*[fn:local-name()!="hasInstance"]}:)
+		
 	let $bfwork:= <bf:Work>	{$bfraw-work/@*}							
-							{$bfraw-work/*[fn:not(self::* instance of element(bf:hasInstance))][fn:not(self::* instance of element(bflc:relationship))]     }
-							{$hasRelatedWorks}
-							{$bfraw/bf:Work/bflc:relationship[bflc:Relationship/*/bf:Work/@rdf:about]}
-							{$hasknownIndirectRelatedWorks}
+							{$bfraw-work/*[fn:not(self::* instance of element(bf:hasInstance)) and fn:not(child::bf:Work)]     }
+							{$bfraw/bf:Work/bf:subject/bf:Work}							
+							{$hasRelatedWorks}							
 							{$hasInstances}							
 					</bf:Work>	
 	
@@ -923,7 +925,7 @@ main node is instance/instanceof
 
 		let $_x:= xdmp:log(fn:concat("CORB BFE editor load: orig uri " , $orig-uri  )   , "info")
  	
-		let $bfe-uri:="http://mlvlp04.loc.gov:3000/profile-edit/server/publishRsp"
+		let $bfe-uri:="http://idwebvlp03.loc.gov:3000/profile-edit/server/publishRsp"
 
 return (: try catch for the whole process to better return json result to editor :)
 	try {
@@ -1124,6 +1126,7 @@ catch($e)  {
 				 
 }
 };
+
 (: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
 <metaInformation>
 <scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
