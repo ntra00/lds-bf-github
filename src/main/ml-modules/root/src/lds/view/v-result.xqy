@@ -103,6 +103,7 @@ let $_:=xdmp:log("-------------","info"):)
 							fn:string-length(fn:tokenize($svcid,"\.")[fn:last()])
 		   						else
 								1
+	let $edited:= index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/editor/" )
 		   let $rdftype:= if ($workid-length > 12 and fn:contains($svcid,"works.n")) then
 		   					 		"Work stub from Authority" 
 							 else if (fn:contains($svcid,"works.n")) then
@@ -124,6 +125,7 @@ let $_:=xdmp:log("-------------","info"):)
 							  else if (fn:contains($svcid,"instances.e")) then 
 							  		"Instance from Editor"							 
 							  else ""
+		    let $rdftype-label:= if ($edited) then fn:concat("Edited ", $rdftype) else $rdftype
 		    let $titletext := 
                 if (exists($idx/idx:display/idx:title/text())) then
                     string($idx/idx:display/idx:title)
@@ -145,7 +147,7 @@ let $_:=xdmp:log("-------------","info"):)
                        else						
                             concat("[No title: ", $svcid, "]")
                     }
-                    </a>  <span class="format"><b> ({$rdftype})</b></span>
+                    </a>  <span class="format"><b> ({$rdftype-label})</b></span>
                     <br/> {if ($titletext="" ) then fn:tokenize(fn:base-uri($mets),"/")[fn:last()] else () }
                 </div>    
             let $creator := 

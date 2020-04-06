@@ -10,38 +10,20 @@ declare namespace                                                       bflc    
 declare namespace                                                      index                                                  = "info:lc/xq-modules/lcindex";
 declare namespace                                                      idx                                                       = "info:lc/xq-modules/lcindex";
 declare namespace xdmphttp="xdmp:http";
-let $test-or-do:="test"
 
-let $node:="bf:electronicLocator"
-let $node:="mxe:d856_subfield_u"
-let $node:="bflc:target"
-let $node:="mxe:d856_subfield_u"
+declare variable $URI as xs:string external;
 
-let $query:=if ($test-or-do="test") then
-               cts:uris((), (),
-                        
-                    cts:and-query((
-                       (:cts:element-query(xs:QName($node),cts:and-query(())),:)
-                          cts:element-query(xs:QName($node),cts:and-query(())),
-                      cts:collection-query("/catalog/")
-                      
-                      
-                      ))
-                      )
-                      
-            else (: do something :)
-           ()
-    return (count($query), 
-        for $id in $query[1 to 120]
-          let $x:=fn:tokenize($id,"/")[fn:last()]
-        let $x:=fn:replace($x,"^c0+","")
-        let $bibid:=fn:replace($x,".xml","")
+
+
+    let $x:=fn:tokenize($URI,"/")[fn:last()]
+    let $x:=fn:replace($x,"^c0+","")
+    let $bibid:=fn:replace($x,".xml","")
     let $doc:= xdmp:http-get(fn:concat("http://mlvlp04.loc.gov:8230/resources/bibs/",$x))[2]
     return for $u in $doc//marcxml:datafield[@tag="856"]/marcxml:subfield[@code="u"]
        let $url:=fn:string($u)
        let $mat:=fn:matches($url, "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?")
-       return if ($mat) then ($id) else concat($bibid, ":",$url)
-       )
+       return if ($mat) then () else xdmp:log( concat("CORB SHELL link bad for bibid ",$bibid, ":",$url),"info")
+       
        (:return if (fn:not(fn:matches(fn:string($u),("loc.gov") ))) then
               let $urlcode:=fn:string(xdmp:http-get(fn:string($u))[1]//xdmphttp:code)
                 return if (fn:not(fn:matches($urlcode,("302","301") ))) then ( ((concat($bibid, ":", fn:string(     $u), xdmp:quote(xdmp:http-get(fn:string($u))[1]) )) )) else ()

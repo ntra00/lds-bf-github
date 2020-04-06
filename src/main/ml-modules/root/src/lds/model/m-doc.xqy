@@ -911,7 +911,9 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $so
 									fn:string-length(fn:tokenize($uri,"\.")[fn:last()])
 		   						else
 									1
-		    let $datasource:= if ($workid-length > 12 and fn:contains($uri,"works.n")) then
+		    let $edited:= index-of(xdmp:document-get-collections(fn:base-uri($mets)), "/bibframe/editor/" )
+			let $datasource:= 
+						if ($workid-length > 12 and fn:contains($uri,"works.n")) then
 		   					 		"Work stub from Authority" 
 							 else if (fn:contains($uri,"works.n")) then
 									 "Work from Authority" 
@@ -932,6 +934,8 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $so
 							  else if (fn:contains($uri,"instances.e")) then 
 							  		"Instance from Editor"							 
 							  else ""			
+			let $datasource-label:= if ($edited) then fn:concat("Edited ", $datasource) else $datasource
+
 			let $rdftype:= if (fn:starts-with($datasource,"Work") or fn:starts-with($datasource,"Instance") ) then 
 								fn:tokenize(fn:string($bf/bf:*[1]/rdf:type[1]/@rdf:resource) ,"/")[fn:last()] 
 								
@@ -1011,7 +1015,7 @@ let $ajax:=
 					   	<div id="dsresults">
 					   		<div id="ds-bibrecord">					  
 					   	 		 <h1 id="title-top">{$bfe-lookup} </h1>
-								 <span class="format">{$datasource}</span>		( <span style="color:red;" class="format">{$rdftype}</span> )
+								 <span class="format">{$datasource-label}</span>		( <span style="color:red;" class="format">{$rdftype}</span> )
 					   			<div style="align:right;">{$imageLink}</div>														
 
 		

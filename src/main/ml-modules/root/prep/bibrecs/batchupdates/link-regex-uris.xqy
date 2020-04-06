@@ -10,27 +10,36 @@ declare namespace                                                       bflc    
 declare namespace                                                      index                                                  = "info:lc/xq-modules/lcindex";
 declare namespace                                                      idx                                                       = "info:lc/xq-modules/lcindex";
 declare namespace xdmphttp="xdmp:http";
+let $test:="no"
 
-declare variable $URI as xs:string external;
+let $node:="bf:electronicLocator"
+let $node:="mxe:d856_subfield_u"
+let $node:="bflc:target"
+let $node:="mxe:d856_subfield_u"
 
+let $uris:=
+if ( $test="test" ) then 
+              cts:uris((), (),
+                        
+                    cts:and-query((                       
+                          cts:element-query(xs:QName($node),cts:and-query(())),
+                      cts:collection-query("/catalog/")                      
+                      ))
+                      )[1 to 5]
+else                      
+              cts:uris((), (),
+                        
+                    cts:and-query((                       
+                          cts:element-query(xs:QName($node),cts:and-query(())),
+                      cts:collection-query("/catalog/")                      
+                      ))
+                      )
 
+          
+    return ( xdmp:log(fn:concat("CORB shell link regex starting: ",count($uris)),"info"),
+			count($uris),$uris
+	)
 
-    let $x:=fn:tokenize($id,"/")[fn:last()]
-    let $x:=fn:replace($x,"^c0+","")
-    let $bibid:=fn:replace($x,".xml","")
-    let $doc:= xdmp:http-get(fn:concat("http://mlvlp04.loc.gov:8230/resources/bibs/",$x))[2]
-    return for $u in $doc//marcxml:datafield[@tag="856"]/marcxml:subfield[@code="u"]
-       let $url:=fn:string($u)
-       let $mat:=fn:matches($url, "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?")
-       return if ($mat) then ($id) else concat($bibid, ":",$url)
-       )
-       (:return if (fn:not(fn:matches(fn:string($u),("loc.gov") ))) then
-              let $urlcode:=fn:string(xdmp:http-get(fn:string($u))[1]//xdmphttp:code)
-                return if (fn:not(fn:matches($urlcode,("302","301") ))) then ( ((concat($bibid, ":", fn:string(     $u), xdmp:quote(xdmp:http-get(fn:string($u))[1]) )) )) else ()
-         else ()
-   )
-   :)
-    (:xdmp:document-delete("/lscoll/lcdb/items/c/0/2/1/3/5/4/2/4/4/c0213542440001-1.xml")):)
 (: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
 <metaInformation>
 <scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>

@@ -81,7 +81,7 @@ let $ctsquery :=
 let $ctsquery:=cts:and-not-query(
 								$ctsquery,cts:collection-query("/bibframe/stubworks/")        
 								)
-        
+    
 let $searchLabel :=  if ($term="token") then
 				  			xs:QName("idx:token")
 					else if ($term="lccn") then
@@ -92,6 +92,9 @@ let $searchLabel :=  if ($term="token") then
 					      xs:QName("idx:nameTitle")
 
 let $searchLabel2 :=       xs:QName("idx:title")
+
+    
+
         
 let $stop := xs:integer($offset) + xs:integer($resultCount) - 1
 	
@@ -108,6 +111,7 @@ let $completions:=
 						cts:search( 
 				           /mets:mets,   cts:element-query($searchLabel, $q)
 						   )
+let $_:=xdmp:log($completions,"info")
 let $search := 
 
     for $c at $x in $completions
