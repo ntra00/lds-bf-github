@@ -288,6 +288,30 @@
         {
             "scalar-type": "string",
             "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "content",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "media",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
+            "localname": "carrier",
+            "collation": "http://marklogic.com/collation/codepoint",
+            "range-value-positions": false,
+            "invalid-values": "reject"
+        },
+        {
+            "scalar-type": "string",
+            "namespace-uri": "info:lc/xq-modules/lcindex",
             "localname": "subjectLexicon",
             "collation": "http://marklogic.com/collation/en/S1",
             "range-value-positions": false,
@@ -465,14 +489,6 @@
             "scalar-type": "string",
             "namespace-uri": "info:lc/xq-modules/lcindex",
             "localname": "title",
-            "collation": "http://marklogic.com/collation/codepoint",
-            "range-value-positions": false,
-            "invalid-values": "reject"
-        },
-        {
-            "scalar-type": "string",
-            "namespace-uri": "info:lc/xq-modules/lcindex",
-            "localname": "nameTitleAuto",
             "collation": "http://marklogic.com/collation/codepoint",
             "range-value-positions": false,
             "invalid-values": "reject"
