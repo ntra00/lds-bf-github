@@ -111,7 +111,7 @@ let $completions:=
 						cts:search( 
 				           /mets:mets,   cts:element-query($searchLabel, $q)
 						   )
-let $_:=xdmp:log($completions,"info")
+(:let $_:=xdmp:log($completions,"info"):)
 let $search := 
 
     for $c at $x in $completions

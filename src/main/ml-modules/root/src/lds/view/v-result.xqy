@@ -71,7 +71,7 @@ let $_:=xdmp:log("-------------","info"):)
                 <br />,
                 <span class="format"><span>Format:</span> Finding Aid</span>,
                 <br />,
-                <span class="location"><span>Location:</span> Available Online</span>,
+                <span class="location"><span>Location:</span>  Online</span>,
                 <br/>,
                 <p><a href="{concat("/", $svcid,"/default.html")}">Bib view</a></p>,
                 <div class="findaid-summary">
@@ -111,19 +111,19 @@ let $_:=xdmp:log("-------------","info"):)
 							 else if ($workid-length > 12 and fn:contains($svcid,"works.c")) then 
 							 		"Work Stub from Bib"
 							  else if ($workid-length > 12 and fn:contains($svcid,"works.e")) then 
-							  		"Work stub from Editor"
+							  		"Work stub"
 							  else if (fn:contains($svcid,"works.c")) then 
 							  		"Work from Bib"							  
 							   else if (fn:contains($svcid,"works.e")) then 
-							  		"Work from Editor"							  
+							  		"Work"							  
 							  else if (fn:contains($svcid,"instances.c")) then 
 							  		"Instance"	
 							  else if (fn:contains($svcid,"items.e")) then 
-							  		fn:concat("Item from Editor")
+							  		fn:concat("Item")
 							  else if (fn:contains($svcid,"items")) then 
 							  		"Item"								 
 							  else if (fn:contains($svcid,"instances.e")) then 
-							  		"Instance from Editor"							 
+							  		"Instance"							 
 							  else ""
 		    let $rdftype-label:= if ($edited) then fn:concat("Edited ", $rdftype) else $rdftype
 		    let $titletext := 
@@ -153,7 +153,7 @@ let $_:=xdmp:log("-------------","info"):)
             let $creator := 
                 if ($idx/idx:display/idx:mainCreator) then
                     <div class="author">{string($idx/idx:display/idx:mainCreator[1])}</div>
-                else if ($idx/idx:byName) then
+              else if ($idx/idx:byName) then
                     <div class="author">{string($idx/idx:byName[1])}</div>
                 else
                     ()
@@ -185,23 +185,30 @@ let $_:=xdmp:log("-------------","info"):)
 
 	 				 else ()
 			let $typeOfMaterial :=
-                    if (exists($idx/idx:display/idx:typeOfMaterial)) then
+                    if (exists($idx/idx:display/idx:typeOfMaterial) ) then
                         <div class="format">{string($idx/idx:display/idx:typeOfMaterial)}</div>
                     else if (exists($idx/idx:form)) then
                         <div class="format">{string($idx/idx:form[1])}</div>
-						 else if ($idx/idx:materialGroup!="Instance") then
-                        <div class="format">{string($idx/idx:materialGroup[1])}</div>
+						
+						else if ($idx/idx:materialGroup="Print" and $idx/idx:issuance!="Single unit") then
+                        <div class="format">{string($idx/idx:issuance)}</div> 
+						else if ($idx/idx:materialGroup!="Instance") then
+                        <div class="format">{ string($idx/idx:materialGroup[1])}</div>
 						else if ($idx/idx:issuance!="Single unit") then
                         <div class="format">{string($idx/idx:issuance[1])}</div>
                     else
                         ()
-            let $online-status :=
-                if ($idx//idx:digitized="Online") then
-                    <div class="online">Available Online</div>                  
+			let $typeOfMaterial:=if ($typeOfMaterial=$rdftype) then () else $typeOfMaterial
+
+            let $online-status := 
+               if ($idx//idx:digitized="Online") then
+                    <div class="online">Online</div>  
+				 else if (matches($idx//idx:carrier,"online","i")) then	
+					 <div class="online">Online</div>                 
                 else if ($idx//idx:digitized="Partly Online") then
                     <div class="part-online">Partly Online (includes links to tables of contents, descriptions, biographical information, etc.)</div>
                 else
-                    ()
+                    () 
             (:let $snips := lq:tohap-tei-snippet($result)
             	let $filtersnips := lq:filter-snippets($snips, "/tei:")
             	let $snipout :=
@@ -303,7 +310,7 @@ let $_:=xdmp:log("-------------","info"):)
                     else    ()         
             let $online-status :=
                 if ($idx//idx:digitized="Online") then
-                    <div class="online">Available Online</div>                  
+                    <div class="online"> Online</div>                  
                 else if ($idx//idx:digitized="Partly Online") then
                     <div class="part-online">Partly Online (includes links to tables of contents, descriptions, biographical information, etc.)</div>
                 else

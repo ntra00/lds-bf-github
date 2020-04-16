@@ -950,7 +950,7 @@ return (: try catch for the whole process to better return json result to editor
 						else 		$root-node
 		(:if multiple works still are there, just pick one:)		
 		let $root-node:=$root-node[1]
-	
+let $payload-about:=fn:string($root-node/@rdf:about)	
 		(:return if (count($root-node) !=1 ) then
 	
 			    xdmp:log(fn:concat("CORB BFE: error loading, too many root nodes in: ",$orig-uri),"info")
@@ -1076,12 +1076,15 @@ return (: try catch for the whole process to better return json result to editor
 								else 
 									$nodeID
 
-		  		let $json:=if ($result)  then
-		  		           		fn:concat('{"name": "',$orig-uri,'","objid": "resources/',$type,'/',$nodeID,'","publish": {"status": "success","message": "posted"}}')
+		  		let $json:= if ($result and fn:contains($payload-about,"loc.gov/resources/")) then
+							let $objid:=fn:substring-after($payload-about,"loc.gov")
+							return (xdmp:log($objid,"info"),
+								fn:concat('{"name": "',$orig-uri,'","objid": "',$objid,'","publish": {"status": "success","message": "posted"}}')
+								)
+							else if ($result)  then
+		  		           		fn:concat('{"name": "',$orig-uri,'","objid": "/resources/',$type,'/',$nodeID,'","publish": {"status": "success","message": "posted"}}')
 		  		            else 
-		  		                fn:concat('{"name": "',$orig-uri,'","objid": "resources/',$orig-uri,'","publish": {"status": "error","message": "post failed"}}')
-
-		       
+		  		                fn:concat('{"name": "',$orig-uri,'","objid": "/resources/',$orig-uri,'","publish": {"status": "error","message": "post failed"}}')
 
 		        let  $bfe-options:=<options xmlns="xdmp:http">       
 		                    <data>{$json}</data>

@@ -316,6 +316,7 @@ let $objid:=fn:replace($objid,".resources","loc.natlib")
 
 let $mets:=utils:mets($objid)
 let $rdf:=$mets//mets:dmdSec[@ID="bibframe"]/mets:mdWrap[@MDTYPE="OTHER"]/mets:xmlData/*[1]
+let $idx:=$mets//mets:dmdSec[@ID="index" or @ID="lds-index"]/mets:mdWrap[@MDTYPE="OTHER"]/mets:xmlData/idx:*
  let $prov:=if ($mets//idx:aLabel) then 
  				$mets//idx:aLabel
  			else
@@ -330,8 +331,10 @@ let $prov:=if ($prov)  then
 let $mat:=fn:string($mets//mets:dmdSec[@ID="index" or @ID="lds-index"]/mets:mdWrap[@MDTYPE="OTHER"]/mets:xmlData/idx:*//idx:materialGroup)
  
 
- return if  ($mat and $mat!="Instance") then fn:concat("(",$mat,") ",$prov) else $prov
-
+ return if  ($mat and $mat!="Instance" and $mat!="Print") then fn:concat("(",$mat,") ",$prov) 
+ else if ($mat="Print" and $idx/idx:issuance!="Single unit") then
+fn:concat("(",fn:string($idx/idx:issuance),") ",$prov) 
+else $prov
 
 };
 (:parent is in bf, use xpath, then sparql for label
@@ -875,7 +878,7 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $so
 						 else 
 						 ()
 			let $loaded-display:=if ( $reloadable	) then
-								 (<span style="color:red;">{$loaded} </span> ,  <span style="margin-left:30px;">* to be reloaded within 5 minutes.</span>)
+								 (<span style="color:red;">{$loaded} </span> ,  <span style="margin-left:30px;">* to be reloaded within 6 minutes.</span>)
 							else <span >{$loaded}</span>
 			
 			
@@ -920,19 +923,19 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $so
 							 else if ($workid-length > 14 and fn:contains($uri,"works.c")) then 
 							 		"Work Stub from Bib"
 							  else if ($workid-length = 15 and fn:contains($uri,"works.e")) then 
-							  		"Work stub from Editor"
+							  		"Work stub"
 							  else if (fn:contains($uri,"works.c")) then 
 							  		"Work from Bib"							  
 							   else if (fn:contains($uri,"works.e")) then 
-							  		"Work from Editor"							  
+							  		"Work"							  
 							  else if (fn:contains($uri,"instances.c")) then 
 							  		"Instance"	
 							  else if (fn:contains($uri,"items.e")) then 
-							  		fn:concat("Item from Editor")
+							  		fn:concat("Item")
 							  else if (fn:contains($uri,"items")) then 
 							  		"Item"								 
 							  else if (fn:contains($uri,"instances.e")) then 
-							  		"Instance from Editor"							 
+							  		"Instance"							 
 							  else ""			
 			let $datasource-label:= if ($edited) then fn:concat("Edited ", $datasource) else $datasource
 
@@ -941,6 +944,31 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $so
 								
 								else ()
 			let $rdftype:= if ($rdftype) then $rdftype else "Untyped"
+			let $idx:=$mets//mets:dmdSec[@ID="ldsindex" or @ID="index"]/mets:mdWrap/mets:xmlData/idx:index
+			let $typeOfMaterial :=
+                    if (exists($idx/idx:display/idx:typeOfMaterial)) then
+                        <span class="format">{string($idx/idx:display/idx:typeOfMaterial)}</span>
+                    else if (exists($idx/idx:form)) then
+                        <span class="format">{string($idx/idx:form[1])}</span>
+						
+						else if ($idx/idx:materialGroup="Print" and $idx/idx:issuance!="Single unit") then
+                        <span class="format">{string($idx/idx:issuance)}</span> 
+						else if ($idx/idx:materialGroup!="Instance") then
+                        <span class="format">{string($idx/idx:materialGroup[1])}</span>
+						else if ($idx/idx:issuance!="Single unit") then
+                        <span class="format">{string($idx/idx:issuance[1])}</span>
+                    else
+                        ()
+			let $typeOfMaterial:=if ($typeOfMaterial=$rdftype) then () else $typeOfMaterial
+            let $online-status := 
+               if ($idx//idx:digitized="Online") then
+                    <span class="online"> Online</span>  
+				 else if (matches($idx//idx:carrier,"online","i")) then	
+					 <span class="online"> Online</span>                 
+                else if ($idx//idx:digitized="Partly Online") then
+                    <span class="part-online">Partly Online (includes links to tables of contents, descriptions, biographical information, etc.)</span>
+                else
+                    () 
             let $token:=tokenize($uri,"\.")[last()]
             let $bibid:=replace($token,"^c0+","")
   			let $bibid:=replace($bibid,"^e0+","")
@@ -1015,7 +1043,7 @@ let $ajax:=
 					   	<div id="dsresults">
 					   		<div id="ds-bibrecord">					  
 					   	 		 <h1 id="title-top">{$bfe-lookup} </h1>
-								 <span class="format">{$datasource-label}</span>		( <span style="color:red;" class="format">{$rdftype}</span> )
+								 <span class="format">{$datasource-label}</span> <span>{$typeOfMaterial}</span>		( <span style="color:red;" class="format">{$rdftype}</span> )<span>{$online-status}</span> 
 					   			<div style="align:right;">{$imageLink}</div>														
 
 		
