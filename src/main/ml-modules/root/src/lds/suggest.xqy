@@ -23,8 +23,8 @@ let $matches :=
     if($term eq "") then 
         () 
     else
-        let $_ := xdmp:log(concat("suggestions for: ", $term), 'debug')
-        return
+        (:let $_ := xdmp:log(concat("suggestions for: ", $term), 'debug')
+        return:)
             cts:element-value-match(xs:QName($qname), concat(normalize-space($term), "*"), ("case-insensitive", "diacritic-insensitive", "ascending", "collation=http://marklogic.com/collation/en/S1"))[1 to $num-suggestions]
 let $content :=
     if (matches($mime, 'application/json')) then
@@ -47,4 +47,8 @@ return
         xdmp:add-response-header("Cache-Control", resp:cache-control($duration)), 
         xdmp:add-response-header("Expires", resp:expires($duration)), xdmp:set-response-encoding("UTF-8"), 
         $content
-    )
+    )(: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
+<metaInformation>
+<scenarios/><MapperMetaTag><MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no"/><MapperBlockPosition></MapperBlockPosition><TemplateContext></TemplateContext></MapperMetaTag>
+</metaInformation>
+:)

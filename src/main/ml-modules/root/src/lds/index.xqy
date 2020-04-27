@@ -109,6 +109,7 @@ let $html :=
                         <label class="nodisplay" for="quick-search-box">Keyword Search</label>
                         <input tabindex="1" id="quick-search-box" name="q" type="text" class="search" value="{$starting-text}" size="50" maxlength="300"/>
                         <button tabindex="7" id="indexSubmit">Search</button>
+						<input value="score-desc" type="hidden" alt="sort" name="sort" />
 						<!-- <input type="hidden" value="bfview" id="behavior" name="behavior"/> -->
                     </div>
                     <div id="quick-search-options">				

@@ -1043,7 +1043,12 @@ let $ajax:=
 					   	<div id="dsresults">
 					   		<div id="ds-bibrecord">					  
 					   	 		 <h1 id="title-top">{$bfe-lookup} </h1>
-								 <span class="format">{$datasource-label}</span> <span>{$typeOfMaterial}</span>		( <span style="color:red;" class="format">{$rdftype}</span> )<span>{$online-status}</span> 
+								 <span>{$typeOfMaterial} </span> &nbsp;<span class="format"> {$datasource-label}</span>		
+								 {if ($rdftype="Print" and contains(fn:string($online-status),"Online" ) ) then
+									<span>{$online-status}</span> 
+								 else
+								 	 ( <span style="color:red;" class="format">&nbsp;{$rdftype}&nbsp;</span> ,<span>{$online-status}</span> )
+									}
 					   			<div style="align:right;">{$imageLink}</div>														
 
 		

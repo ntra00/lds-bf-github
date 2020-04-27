@@ -378,7 +378,10 @@ declare function vr:render($results, $start, $time, $longstart, $longcount, $sea
         else
             () 
     let $preserve-param-inputs :=
-        for $param in ($lp:CUR-PARAMS//param:param)[not(param:name/text() = ('sort','count'))]
+        (:for $param in ($lp:CUR-PARAMS//param:param)[not(param:name/text() = ('sort','count'))]
+		kept all but sort and count?? why not keep sort?
+		:)
+		for $param in ($lp:CUR-PARAMS//param:param)[not(param:name/text() = ('count'))]
         let $name := $param/param:name/text()
         let $value := $param/param:value/text()
         return

@@ -680,12 +680,19 @@ declare function bfe2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $dest
 	
 	(: old: {$bfraw-work/*[fn:local-name()!="hasInstance"]}:)
 		
-	let $bfwork:= <bf:Work>	{$bfraw-work/@*}							
+(:	let $bfwork:= <bf:Work>	{$bfraw-work/@*}							
 							{$bfraw-work/*[fn:not(self::* instance of element(bf:hasInstance)) and fn:not(child::bf:Work)]     }
 							{$bfraw/bf:Work/bf:subject/bf:Work}							
 							{$hasRelatedWorks}							
 							{$hasInstances}							
-					</bf:Work>	
+					</bf:Work>	:)
+	let $bfwork:= <bf:Work>	{$bfraw-work/@*}							
+			{$bfraw-work/*[fn:not(self::* instance of element(bf:hasInstance))][fn:not(self::* instance of element(bflc:relationship))]     }
+			{$hasRelatedWorks}
+			{$bfraw/bf:Work/bflc:relationship[bflc:Relationship/*/bf:Work/@rdf:about]}
+			{$hasknownIndirectRelatedWorks}
+			{$hasInstances}							
+	</bf:Work>	
 	
 (:was indexing bfraw work, and semmming!! :)
 	let $work-bfindex :=

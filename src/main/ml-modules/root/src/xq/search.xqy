@@ -102,8 +102,9 @@ declare function local:makeHTML($content as element(search:response), $skin as x
                         <div id="ds-quicksearch">
                             <form id="quick-search" name="quick-search" method="get" action="/xq/search.xqy">
                                 <input value="{$searchstr}" type="text" alt="q" name="q" size="75" maxlength="200" class="txt" id="quick-search-box" />
-                                <input value="{$thiscollection}" type="hidden" alt="collection" name="collection" />
-                                <input value="score-desc" type="hidden" alt="sort" name="sort" />
+                                <input value="{$thiscollection}" type="hidden" alt="collection" name="collection"/>
+                                <input value="{$mysort}"  alt="sort" name="sort" />
+									
                                 <span>&nbsp;<button value="submit">Search</button>&nbsp;<label style="margin-left: 4px;" class="norm"><a href="advanced.html">Advanced Search</a></label></span>
                             </form>
                             <span class="searchhelp">

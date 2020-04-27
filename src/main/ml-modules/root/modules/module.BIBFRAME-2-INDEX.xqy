@@ -84,12 +84,35 @@ declare function bibframe2index:bibframe2index($rdfxml as element(rdf:RDF) , $mx
     let $uniformTitle :=  bibframe2index:get_bibframe_uniform_title($resource)
 	
 	let $mainTitles := bibframe2index:get_bibframe_titles($resource)
-	let $aLabel:=if($uniformTitle) then 
-	   element index:aLabel {$uniformTitle//text()}
-	 else if ($mainTitles) then
-	   element index:aLabel {$mainTitles[1]//text()}
-	   else 
-	       element index:aLabel {"no title"}
+	(: work gets nametitle, Title or ??
+	instance gets provActivity
+	item gets call#, barcode
+	:)
+	let $aLabel:= if ($nodetype="Work" or $nodetype="Hub") then					
+						if($uniformTitle) then 
+		   					element index:aLabel {$uniformTitle[1]/text() }
+		 				else if ($mainTitles) then
+						   element index:aLabel {$mainTitles[1]//text()}
+	  				    else 
+					       element index:aLabel {"no title"}
+				  else if ($nodetype="Instance" ) then 
+						let $prov:=$resource/bf:provisionActivityStatement 
+						let $prov:=if ($prov) then 
+									  fn:string($prov[1])
+ 								else
+									 fn:string-join($resource//bf:ProvisionActivity[1]/*," ")						
+
+						let $edition:=fn:string($resource/bf:editionStatement[1] )
+						
+						let $stmt:=fn:normalize-space(fn:concat($edition," ",$prov))
+			 			return if ($stmt) then 
+									 element index:aLabel {$stmt}
+ 								else
+									 element index:aLabel {"no pub info"}
+				  else if ($nodetype="Item" ) then 
+						element index:aLabel {fn:string-join($resource/bf:shelfMark/*," ")}
+				else  
+					element index:aLabel {"unlabeled"}
     let $bibframeLabels := ()
             (: bibframe2index:get_bibframe_labels($resource):)
     let $creators := bibframe2index:get_bibframe_creator($resource)

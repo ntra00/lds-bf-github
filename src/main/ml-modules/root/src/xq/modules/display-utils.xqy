@@ -561,7 +561,7 @@ declare variable $display:RDFclasses as element () :=
 	<class name="bf:EncodingLevel">Encoding level</class>
 	<class name="bf:Eidr">EIDR</class>
 	<class name="bf:MetadataLicensor" subclassof="Agent">Metadata licensor</class>
-	<class name="bf:PrimaryContribution" subclassof="Contribution" sort="02">Primary contribution</class>
+	<!--<class name="bf:PrimaryContribution" subclassof="Contribution" sort="02">Primary contribution</class>-->
 	<!--<class name="bf:Relation">Relation</class>-->
 	
 	<class name="bf:DemographicGroup">Demographic group</class>
@@ -571,6 +571,7 @@ declare variable $display:RDFclasses as element () :=
 	<class name="bf:OperatingSystem" subclassof="SystemRequirement">Operating system</class>
 	<class name="bf:ImageBitDepth" subclassof="DigitalCharacteristic">Image bit depth</class>
 <!-- bflc: -->
+<class name="bflc:PrimaryContribution" subclassof="Contribution" sort="02">Primary contribution</class>
 	<!-- auths -->
 	<class name="bflc:TransliteratedTitle" sort="01" >Transliterated title</class>
 	<class name="bflc:SeriesAnalysis" sort="55a">Series analysis</class> 
@@ -923,21 +924,26 @@ declare  function display:title($rdf,$indent){
   
   (  <dt class="label">{if ( fn:name($rdf)="bf:Title" and  ( not($rdf/rdf:type) or $rdf/rdf:type="http://id.loc.gov/ontologies/bibframe/Title") ) then  																						
 							fn:string($display:RDFclasses/class[@name=fn:name($rdf)]) 
+							(:="http://www.loc.gov/mads/rdf/v1#CorporateName":)
+						else if ($rdf instance of element(madsrdf:Authority) and $rdf/rdf:type[contains(fn:string(@rdf:resource),"#")]) then
+										fn:tokenize(fn:string( $rdf/rdf:type/@rdf:resource		)	,"#")[fn:last()		]									
+						else if ($rdf instance of element(madsrdf:Authority) and $rdf/rdf:type[contains(fn:string(@rdf:resource),"/")]) then
+										fn:tokenize(fn:string( $rdf/rdf:type/@rdf:resource		)	,"/")[fn:last()		]	
 						else  if ( fn:name($rdf)!="bf:Title") then  															
 									 fn:string($display:RDFclasses/class[@name=fn:name($rdf)]) 
 
 						else if ( fn:name($rdf)="bf:Title" and   $rdf/rdf:type!="http://id.loc.gov/ontologies/bibframe/Title") then  								  							
 									for $type in $rdf/rdf:type[1] 
-									return display:linkme($type,"label")  																
+									return display:linkme($type,"label")  	
+																
 						else
-
 						( 			fn:string($display:RDFclasses/class[@name=fn:name($rdf)]) )
 						}
 						</dt>,
 	        
 			<dd class="bibdata"> {  if (fn:string($rdf/bf:mainTitle)!="") then
 	                               			fn:string($rdf/bf:mainTitle)
-									else if ($rdf[self::* instance of element(bf:Agent) ] and fn:contains(fn:string($rdf/@rdf:about),"example.org") ) then
+									else if ($rdf[self::* instance of element(bf:Agent) or  self::* instance of element(madsrdf:CorporateName) ] and fn:contains(fn:string($rdf/@rdf:about),"example.org") ) then
 												(display:linkme($rdf,"value"))
 												
 									else if ($rdf[self::* instance of element(bf:Agent) ] and $rdf/@rdf:about) then
@@ -1109,8 +1115,10 @@ let $result:=
 			 $rdf instance of element(bflc:TransliteratedTitle) or
 			 $rdf instance of element(bf:VariantTitle) or
 			 $rdf instance of element(bf:KeyTitle) or
-			 $rdf instance of element(bf:CollectiveTitle) or			 
-			
+			 $rdf instance of element(bf:CollectiveTitle) or			 			
+			 $rdf instance of element(madsrdf:CorporateName) or		
+			 $rdf instance of element(madsrdf:Authority)  or
+			  $rdf instance of element(bf:Organization)  or
 			 $rdf instance of element(bf:Agent) ) then
 	    		display:title($rdf,$indent) 
 	
