@@ -68,7 +68,7 @@ declare namespace xdmphttp = "xdmp:http";
 declare function bibframe2index:bibframe2index($rdfxml as element(rdf:RDF) , $mxe  ) {
     		
 	let $resource := $rdfxml/child::node()[fn:name()][1] (:bf:work, instance, item :)
-	
+	let  $nodetype:=fn:local-name($resource)
     let $uris := bibframe2index:get_uris($resource)
 	
     let $types := bibframe2index:get_types($resource)
@@ -608,7 +608,7 @@ declare function bibframe2index:get_types($el as element()) as element()*
 	return 
         (
         element index:rdftype { text { fn:concat("http://id.loc.gov/ontologies/bibframe/",$root_rdftype)} },
-        for $type in $el/../*[fn:matches(fn:local-name(),"(Work|Instance)")]/rdf:type[1]
+    for $type in $el/../*[fn:matches(fn:local-name(),"(Work|Instance|Hub)")]/rdf:type[1]
 			let $group:=if (fn:matches($type/@rdf:resource,"ontologies/bibframe/")) then
 							 fn:substring-after($type/@rdf:resource,"ontologies/bibframe/")
 					    else if (fn:matches($type/@rdf:resource,"ontologies/bflc/")) then
