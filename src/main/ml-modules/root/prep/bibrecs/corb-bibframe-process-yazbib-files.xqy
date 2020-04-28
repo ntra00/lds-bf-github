@@ -76,8 +76,9 @@ declare variable $TODAY as xs:string:=fn:substring(fn:string(fn:current-date()),
 
 declare variable $XML-STRING as xs:string external;
 
-(: if overwrite=yes then update=replace, unconditionally:)
-declare variable $OVERWRITE as xs:string external ;
+(: if overwrite=overwrite then update=replace, unconditionally else nomerge :)
+declare variable $PARAM as xs:string external ;
+
 
 
 
@@ -148,14 +149,17 @@ declare function m2bfyaz:transform(
 {
 
 	let $start := xdmp:elapsed-time()
-	let $OVERWRITE:= map:get($context, "transform_param")
+	let $PARAM:= map:get($context, "transform_param") (: OVERWRITE Or NOMERGE :)
+	
 	let $body := map:get($content, "value")
 	let $orig-uri := map:get($content, "uri")  (: file name! :)
 	
 	let $_:=xdmp:log(fn:concat("CORB BIBYAZ uri starting: ",$orig-uri),"info")
-	let $_:= if ($OVERWRITE="OVERWRITE") then
-			 		xdmp:log(fn:concat("CORB BIBYAZ overwrite any edits on ",$orig-uri," : ",$OVERWRITE),"info") 
-			 else 	
+	let $_:= if ($PARAM="OVERWRITE") then
+			 		xdmp:log(fn:concat("CORB BIBYAZ overwrite any edits on ",$orig-uri," : ",$PARAM),"info") 
+			 else 	 if ($PARAM="NOMERGE") then
+			 		xdmp:log(fn:concat("CORB BIBYAZ not merging on ",$orig-uri," : ",$PARAM),"info") 
+			 else
 			 		()
 	
 	
@@ -231,7 +235,7 @@ return
 	
 					let $result:=						
 							(
-								bibs2mets:get-work($bf,$workDBURI,$paddedID, $BIBURI, $mxe,  $destination-collections,$destination-uri, $OVERWRITE)								
+								bibs2mets:get-work($bf,$workDBURI,$paddedID, $BIBURI, $mxe,  $destination-collections,$destination-uri, $PARAM)								
 			  					,
 							    xdmp:log(fn:concat("CORB BIBYAZ merge:  ", (xdmp:elapsed-time() - $start) cast as xs:string), "info")
 						    	)

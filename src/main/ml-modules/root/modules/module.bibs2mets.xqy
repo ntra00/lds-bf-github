@@ -433,10 +433,11 @@ when linking 7xxs to existing works, you can include work stubs unlike when merg
 : bfraw is a whole package (work+instances, starting at rdf:RDF
 : this is for merging a new record's instance onto another work, so you can't include work stubs 
 : also exclude photos??
+PARAM is either nothing or OVERWRITE or NOMERGE
 :
 :)
 
-declare function bibs2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $mxe, $collections, $destination-uri, $OVERWRITE)
+declare function bibs2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $mxe, $collections, $destination-uri, $PARAM)
 {
 
     let $bfraw-work := $bfraw/bf:Work
@@ -485,6 +486,7 @@ declare function bibs2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $mxe
 					 if ($nameTitle!="" and fn:not(fn:contains($nameTitle,"Untitled") )	
 					 				    and fn:not(fn:matches($nameTitle,"NO CAPTION","i") ) 
 										and fn:not(fn:matches(normalize-space($nameTitle),"Annual Report","i") ) 
+										and ($PARAM !="NOMERGE" or not($PARAM))
 										) then
 							"try to merge"
 						else 
@@ -553,7 +555,7 @@ declare function bibs2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $mxe
 					 else ()
 					 )		
     		
-		else (: didn't  even look for found match :)
+		else (: didn't  even look for found match or were told not to (NOMERGE) :)
 			()
 	
 	
@@ -940,11 +942,11 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
     let $quality :=()
 
     let $forests:=()
- let $_:= if (  $OVERWRITE !="OVERWRITE" and xdmp:document-get-collections($destination-uri)="/bibframe/editor/")  then
+ let $_:= if (  ($PARAM !="OVERWRITE" or not ($PARAM) ) and xdmp:document-get-collections($destination-uri)="/bibframe/editor/")  then
  				xdmp:log(fn:concat("CORB BIB merge: overwriting edits for  ", $workDBURI, "; ",$OVERWRITE),"info")
 			else  ()
 	let $insert-work := 
-		 if ( $OVERWRITE !="OVERWRITE" and fn:doc-available($destination-uri)  and xdmp:document-get-collections($destination-uri)="/bibframe/editor/")  then
+		 if ( ($PARAM !="OVERWRITE"  or not ($PARAM) ) and fn:doc-available($destination-uri)  and xdmp:document-get-collections($destination-uri)="/bibframe/editor/")  then
 		 (:if (fn:doc-available($destination-uri)  and xdmp:document-get-collections($destination-uri)="/bibframe/editor/")  then:)
 				xdmp:log(fn:concat("CORB BIB merge: skipping loading work doc - edited  : ",$workDBURI, " from bib doc : ",$BIBURI )   , "info")
 			else
