@@ -2,6 +2,7 @@
 #curl single bib and overwrite, either bibid or lccn
 # this version reloads but does nto try to merge, using $NOMERGE parameter
 
+
 source /marklogic/id/lds-bf-github/src/main/ml-modules/root/config  bibrecs
 
 ./source2rdf_single.sh $1 $2
@@ -12,38 +13,11 @@ CURDIR=`echo $PWD`
 # do not check for edited content before loading.
 NOMERGE="NOMERGE"
 
-TODAY=`date +%Y-%m-%d`
 
- echo "load date  = $TODAY"
+ mv  $SOURCE_PROCESSED/single/$1*  $LOAD_UNPROCESSED/single/
+ echo  $LOAD_UNPROCESSED/single/
+ ls -l  $LOAD_UNPROCESSED/single/
 
-# 8203 is file system; only use for troubleshooting:
-# port=$BFDB_XCC_PORT
-# echo "using file system port $BFDB_XCC_PORT
+	  
+./loadrdf_single.sh "NOMERGE"
 
-port=$BFDB_XCC_VIAMODULES_PORT
-echo "Posting overwrite bibs rdf using modules port $BFDB_XCC_VIAMODULES_PORT"
-
- 
-$MLCPPATH/mlcp.sh import  \
- 	    -host localhost \
-        -port $port \
-        -username $BFDB_XCC_USER \
-        -password $BFDB_XCC_PASS \
-		-input_file_path $LOAD_UNPROCESSED/single	 \
-		-output_uri_replace "$LOAD_UNPROCESSED/single,''"  \
-		-output_collections /bibframe-process/,/processing/load/bibs/$TODAY/,/bibframe-process/yaz-reload/ \
-		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update \
-   		-input_file_type documents \
-		-transform_module /prep/bibrecs/corb-bibframe-process-yazbib-files.xqy \
-		-transform_param $NOMERGE  \
-		-transform_namespace "http://loc.gov/ndmso/marc-2-bibframe-yaz/" \
-		-document_type xml \
-        -aggregate_record_element RDF \
-        -aggregate_record_namespace http://www.w3.org/1999/02/22-rdf-syntax-ns# \
-        -thread_count $THREADS \
-        -mode local 
-
-echo $ID loaded?
-
-mv $LOAD_UNPROCESSED/single/$ID*.rdf $LOAD_PROCESSED/single/
-ls -l $LOAD_PROCESSED/single/$ID.rdf

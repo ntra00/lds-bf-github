@@ -943,7 +943,7 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
 
     let $forests:=()
  let $_:= if (  ($PARAM !="OVERWRITE" or not ($PARAM) ) and xdmp:document-get-collections($destination-uri)="/bibframe/editor/")  then
- 				xdmp:log(fn:concat("CORB BIB merge: overwriting edits for  ", $workDBURI, "; ",$OVERWRITE),"info")
+ 				xdmp:log(fn:concat("CORB BIB merge: overwriting edits for  ", $workDBURI, "; ",$PARAM),"info")
 			else  ()
 	let $insert-work := 
 		 if ( ($PARAM !="OVERWRITE"  or not ($PARAM) ) and fn:doc-available($destination-uri)  and xdmp:document-get-collections($destination-uri)="/bibframe/editor/")  then
