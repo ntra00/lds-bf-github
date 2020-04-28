@@ -10,6 +10,12 @@ CURDIR=`echo $PWD`
 
 TODAY=`date +%Y-%m-%d`
 
+# transform param is nothing or NOMERGE  OVERWRITE
+PARAM=$1
+
+
+echo param is $PARAM
+
 echo loading from  $LOAD_UNPROCESSED/single/*
 
 #ls -l  $LOAD_UNPROCESSED/single/*
@@ -31,6 +37,7 @@ echo $ct files starting
 		-output_uri_replace "$LOAD_UNPROCESSED/single,''"  \
 		-transform_module /prep/bibrecs/corb-bibframe-process-yazbib-files.xqy \
 		-transform_namespace "http://loc.gov/ndmso/marc-2-bibframe-yaz/" \
+		-transform_param $PARAM  \
  		-output_collections /authorities/bfworks/,/resources/works/,/processing/load_bfworks/$TODAY/,/catalog/,/lscoll/lcdb/works/,/authorities/yazbfworks/,/bibframe/hubworks/ \
         -output_permissions lc_xmlsh,update,id-user-role,read \
         -thread_count $THREADS \

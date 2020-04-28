@@ -159,88 +159,84 @@ declare function m2bfyaz:transform(
 			 		xdmp:log(fn:concat("CORB BIBYAZ overwrite any edits on ",$orig-uri," : ",$PARAM),"info") 
 			 else 	 if ($PARAM="NOMERGE") then
 			 		xdmp:log(fn:concat("CORB BIBYAZ not merging on ",$orig-uri," : ",$PARAM),"info") 
-			 else
-			 		()
-	
-	
+			 else  ()
+			 		
 return 
 
 	for $set in $body/descendant-or-self::rdf:RDF
 	
-	
-	
-	 for $records in $set/rdf:Description/lclocal:graph
-	
-	
-		for $work in $records/bf:Work[parent::lclocal:graph]
+
+	   for $records in $set/rdf:Description/lclocal:graph
+		
+			for $work in $records/bf:Work[parent::lclocal:graph]
 			
 
 	(: 2019-01-17: leader 06 status new and changed generate a status; otherwise it's a delete:)
-		return if ( fn:not($work/bf:adminMetadata/bf:AdminMetadata/bf:status) or
-				 $work/bf:adminMetadata[1]/bf:AdminMetadata/bf:status/bf:Status[fn:string(bf:code)="d"] )
-		 then
-				let $bibid:= fn:replace(fn:string($work/@rdf:about), "^http://bibframe.example.org/([0-9]+)#Work$","$1")
+			return if ( fn:not($work/bf:adminMetadata/bf:AdminMetadata/bf:status) or
+				 		$work/bf:adminMetadata[1]/bf:AdminMetadata/bf:status/bf:Status[fn:string(bf:code)="d"] )
+		 			then
+						let $bibid:= fn:replace(fn:string($work/@rdf:about), "^http://bibframe.example.org/([0-9]+)#Work$","$1")
 				
-				return
+						return
 							m2bfyaz:remove-from-coll($bibid)
-  			else
+  					else
 			
 		
-		let $already-in-pilot:=   
-			for $batch in $work//lclocal:batch
-	      		return if (fn:matches(fn:string($batch) ,"BibframePilot2","i")) then
-	        			fn:true()
-	       			else 
-	        			()
-		 return if ($already-in-pilot) then
-						xdmp:log(fn:concat("CORB BIBYAZ merge: skip: ",fn:string($work/@rdf:about) , ", has 985." ), "info")
-				else
+				let $already-in-pilot:=   
+					for $batch in $work//lclocal:batch
+			      		return if (fn:matches(fn:string($batch) ,"BibframePilot2","i")) then
+			        			fn:true()
+			       			else 
+			        			()
+				 return if ($already-in-pilot) then
+								xdmp:log(fn:concat("CORB BIBYAZ merge: skip: ",fn:string($work/@rdf:about) , ", has 985." ), "info")
+						else
 					
 					
-					let $work-about:= fn:string($work/@rdf:about)
-					let $instances:=$records/bf:Instance[fn:string(bf:instanceOf/@rdf:resource) = $work-about ]
-					let $record:=<rdf:RDF>{$work, $instances}</rdf:RDF>
+							let $work-about:= fn:string($work/@rdf:about)
+							let $instances:=$records/bf:Instance[fn:string(bf:instanceOf/@rdf:resource) = $work-about ]
+							let $record:=<rdf:RDF>{$work, $instances}</rdf:RDF>
 
-					let $cleanbf:=xdmp:quote($record)
-					let $bf:= xdmp:unquote(
-									fn:replace($cleanbf, "\[from old catalog\]","")
-								)
-					let $bf:=$bf/element()
-					let $BIBURI:= fn:tokenize($work-about,"/")[fn:last()]
-					let $BIBURI:=fn:substring-before($BIBURI,"#Work")
-					let $BIBURI := bibs2mets:padded-id($BIBURI)
+							let $cleanbf:=xdmp:quote($record)
+							let $bf:= xdmp:unquote(
+											fn:replace($cleanbf, "\[from old catalog\]","")
+										)
+							let $bf:=$bf/element()
+							let $BIBURI:= fn:tokenize($work-about,"/")[fn:last()]
+							let $BIBURI:=fn:substring-before($BIBURI,"#Work")
+							let $BIBURI := bibs2mets:padded-id($BIBURI)
 
-					(:	converted records are prefixed with "c" so they don't overwrite name/titles:)
-					let $paddedID := fn:concat("c",$BIBURI)
-					let $workURI := fn:concat("http://id.loc.gov/resources/works/" , $paddedID)
-					let $workDBURI := fn:concat("loc.natlib.works.",$paddedID)
-							(: fn:concat("/resources/works/" , $paddedID, ".xml"):)
+							(:	converted records are prefixed with "c" so they don't overwrite name/titles:)
+							let $paddedID := fn:concat("c",$BIBURI)
+							let $workURI := fn:concat("http://id.loc.gov/resources/works/" , $paddedID)
+							let $workDBURI := fn:concat("loc.natlib.works.",$paddedID)
+									(: fn:concat("/resources/works/" , $paddedID, ".xml"):)
 
-				(:-------------------------from ingest-voyager-bib vvvv -------------------------:)
-					let $resclean := $paddedID
-					let $dirtox := bibs2mets:chars-001($resclean)
-					let $dest := "/lscoll/lcdb/works/"
-				    let $destination-root := $dest
-				    let $dir := fn:concat($destination-root, string-join($dirtox, '/'), '/')
-				    let $destination-uri := fn:concat($dir, $resclean, '.xml')
-				    (: the collection 9/16 is so we know the reload happened , and there are semtriples; remove after all reloads done
-					2018-08-29 added yaz reload:)
-					let $destination-collections := ($destination-root, "/lscoll/lcdb/", "/lscoll/", "/catalog/", "/catalog/lscoll/", "/catalog/lscoll/lcdb/",
-				    		"/catalog/lscoll/lcdb/bib/", "/bibframe-process/reloads/2017-09-16/","/bibframe-process/yaz-reload/",
-							fn:concat("/processing/load/bibs/",$TODAY,"/"))
+						(:-------------------------from ingest-voyager-bib vvvv -------------------------:)
+							let $resclean := $paddedID
+							let $dirtox := bibs2mets:chars-001($resclean)
+							let $dest := "/lscoll/lcdb/works/"
+						    let $destination-root := $dest
+						    let $dir := fn:concat($destination-root, string-join($dirtox, '/'), '/')
+						    let $destination-uri := fn:concat($dir, $resclean, '.xml')
+						    (: the collection 9/16 is so we know the reload happened , and there are semtriples; remove after all reloads done
+							2018-08-29 added yaz reload:)
+							let $destination-collections := ($destination-root, "/lscoll/lcdb/", "/lscoll/", "/catalog/", "/catalog/lscoll/", "/catalog/lscoll/lcdb/",
+						    		"/catalog/lscoll/lcdb/bib/", "/bibframe-process/reloads/2017-09-16/","/bibframe-process/yaz-reload/",
+									fn:concat("/processing/load/bibs/",$TODAY,"/"))
 					
-				(:-------------------------from ingest-voyager-bib ^^^^^^^-----------------------:)
+						(:-------------------------from ingest-voyager-bib ^^^^^^^-----------------------:)
 
-					let $mxe:=<mxe:record><!--none--></mxe:record>					
+							let $mxe:=<mxe:record><!--none--></mxe:record>					
 	
-					let $result:=						
-							(
-								bibs2mets:get-work($bf,$workDBURI,$paddedID, $BIBURI, $mxe,  $destination-collections,$destination-uri, $PARAM)								
-			  					,
-							    xdmp:log(fn:concat("CORB BIBYAZ merge:  ", (xdmp:elapsed-time() - $start) cast as xs:string), "info")
-						    	)
+							let $result:=						
+									(
+										bibs2mets:get-work($bf,$workDBURI,$paddedID, $BIBURI, $mxe,  $destination-collections,$destination-uri, $PARAM)								
+					  					,
+									    xdmp:log(fn:concat("CORB BIBYAZ merge:  ", (xdmp:elapsed-time() - $start) cast as xs:string), "info")
+								    	)
 				    
-return ()
+							return ()
 };
 (: Stylus Studio meta-information - (c) 2004-2005. Progress Software Corporation. All rights reserved.
 <metaInformation>
