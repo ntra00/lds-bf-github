@@ -960,10 +960,14 @@ declare function md:lcrenderBib($mets as node() ,$uri as xs:string, $offset, $so
                     else
                         ()
 			let $typeOfMaterial:=if ($typeOfMaterial=$rdftype) then () else $typeOfMaterial
+			let $onlinecarrier:= for $c in $idx//idx:carrier
+									return if (matches(fn:string($c),"nonline","i")) then
+												"Online"
+											 else ()
             let $online-status := 
                if ($idx//idx:digitized="Online") then
                     <span class="online"> Online</span>  
-				 else if (matches($idx//idx:carrier,"online","i")) then	
+				 else if ($onlinecarrier) then	
 					 <span class="online"> Online</span>                 
                 else if ($idx//idx:digitized="Partly Online") then
                     <span class="part-online">Partly Online (includes links to tables of contents, descriptions, biographical information, etc.)</span>

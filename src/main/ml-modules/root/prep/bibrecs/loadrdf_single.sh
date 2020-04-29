@@ -38,7 +38,7 @@ echo $ct files starting
 		-transform_module /prep/bibrecs/corb-bibframe-process-yazbib-files.xqy \
 		-transform_namespace "http://loc.gov/ndmso/marc-2-bibframe-yaz/" \
 		-transform_param $PARAM  \
- 		-output_collections /authorities/bfworks/,/resources/works/,/processing/load_bfworks/$TODAY/,/catalog/,/lscoll/lcdb/works/,/authorities/yazbfworks/,/bibframe/hubworks/ \
+ 		-output_collections /processing/load_bfworks/$TODAY/ \
         -output_permissions lc_xmlsh,update,id-user-role,read \
         -thread_count $THREADS \
         -mode local 

@@ -155,11 +155,15 @@ declare function m2bfyaz:transform(
 	let $orig-uri := map:get($content, "uri")  (: file name! :)
 	
 	let $_:=xdmp:log(fn:concat("CORB BIBYAZ uri starting: ",$orig-uri),"info")
+
 	let $_:= if ($PARAM="OVERWRITE") then
 			 		xdmp:log(fn:concat("CORB BIBYAZ overwrite any edits on ",$orig-uri," : ",$PARAM),"info") 
 			 else 	 if ($PARAM="NOMERGE") then
 			 		xdmp:log(fn:concat("CORB BIBYAZ not merging on ",$orig-uri," : ",$PARAM),"info") 
-			 else  ()
+			else  ()
+
+ 	let $base-collections:=map:get($context, "output_collections")
+
 			 		
 return 
 
@@ -221,7 +225,7 @@ return
 						    let $destination-uri := fn:concat($dir, $resclean, '.xml')
 						    (: the collection 9/16 is so we know the reload happened , and there are semtriples; remove after all reloads done
 							2018-08-29 added yaz reload:)
-							let $destination-collections := ($destination-root, "/lscoll/lcdb/", "/lscoll/", "/catalog/", "/catalog/lscoll/", "/catalog/lscoll/lcdb/",
+							let $destination-collections := ($base-collections, $destination-root, "/lscoll/lcdb/", "/lscoll/", "/catalog/", "/catalog/lscoll/", "/catalog/lscoll/lcdb/",
 						    		"/catalog/lscoll/lcdb/bib/", "/bibframe-process/reloads/2017-09-16/","/bibframe-process/yaz-reload/",
 									fn:concat("/processing/load/bibs/",$TODAY,"/"))
 					

@@ -199,11 +199,14 @@ let $_:=xdmp:log("-------------","info"):)
                     else
                         ()
 			let $typeOfMaterial:=if ($typeOfMaterial=$rdftype) then () else $typeOfMaterial
-
+			let $onlinecarrier:= for $c in $idx//idx:carrier
+									return if (matches(fn:string($c),"nonline","i")) then
+												"Online"
+											 else ()
             let $online-status := 
                if ($idx//idx:digitized="Online") then
                     <div class="online">Online</div>  
-				 else if (matches($idx//idx:carrier,"online","i")) then	
+				 else if ($onlinecarrier) then	
 					 <div class="online">Online</div>                 
                 else if ($idx//idx:digitized="Partly Online") then
                     <div class="part-online">Partly Online (includes links to tables of contents, descriptions, biographical information, etc.)</div>
