@@ -241,8 +241,7 @@ declare function bibs2mets:link-via-lccn2($lccn,  $workDBURI) {
      
 		return if ($relatedWork) then
 				(	$relatedWork,xdmp:log(fn:concat("CORB BIB merge: linked via lccn ", $workDBURI, " to :" ,$relatedWork),"info"))
-				else
-				 ("",xdmp:log(fn:concat("CORB BIB merge: not linked via lccn ", $workDBURI, " to :" ,$relatedWork),"info"))
+				else ("",xdmp:log(fn:concat("CORB BIB merge: not linked via lccn ", $workDBURI, " to :" ,$relatedWork),"info"))
 };
 
 (: this work is the 7xx work, so it is not primarycontribution etc:)
@@ -750,15 +749,13 @@ let $related-7xxs:=if  ($bfraw-work/*[fn:not(self::* instance of element (bf:sub
 																						
 						}</related-7xxs>				
 						else ()
-
-				
+						
 let $related-7xxs:=  (:nodes and links to replace the 7xxs :)
 			<wrap>{				
 				 for $linkset in $related-7xxs/* (:links, not nodes:)
 					
 					return												
 				 		if ( $linkset[self::* instance of element(wrap)]) then
-						
 						 	auth2bf:dedup-links($work,$linkset/name,$linkset/link)							 							
 						else
 							(:  blank nodes will be inserted as stubs  :)
@@ -863,8 +860,7 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
 									
 
 					   } catch($e){
-					             (<index:index/>,
-								 	( 	$e, "info"),
+					             (<index:index/>,								 	
 								 	xdmp:log(fn:concat("CORB BFE/BIB indexing error  for ",fn:tokenize($destination-uri,"/")[fn:last()]), "info")
 								 )
 					   }
@@ -1040,7 +1036,10 @@ let $work:= if ( $distinct-translations or $distinct-relateds or $related-7xxs) 
  declare function bibs2mets:link-subject-works($subjects) {
 ()
  };
-(: return instance mets docs for each bf:Instance in $bfraw:)
+(: return instance mets docs for each bf:Instance in $bfraw
+: was changing bibid to lccn if "ibc" but that's not sustainable.
+2020-3-09: tried stopping.
+:)
 
 declare function bibs2mets:get-instances(
         $bfraw as element(rdf:RDF), 
@@ -1066,8 +1065,9 @@ if ibc is no, leave it all
 				return fn:replace($tmp-uri, "loc.natlib.works.","")
 			else ()	
 
-let $_:=xdmp:log(fn:concat("CORB BFE/BIB workdburi for ", $workuri-4-instance," ", $ibc), "info")									
+let $_:=xdmp:log(fn:concat("CORB BFE/BIB workuri-4-instance ", $workuri-4-instance," ", $ibc), "info")									
 
+(: stopped switcing to lccn :)
 let $paddedID:=if ($ibc="yes" and $lccn!="" and  fn:not(fn:contains($paddedID, $lccn) ) ) then
 						(:fn:concat("e", $lccn):)
 						(xdmp:log(fn:concat("CORB BFE/BIB  in get-instance, NOT switching to lccn ", $lccn), "info")									
@@ -1099,16 +1099,18 @@ let $paddedID:=if ($ibc="yes" and $lccn!="" and  fn:not(fn:contains($paddedID, $
 									fn:tokenize(fn:string($i/@rdf:about),"/")[fn:last()]
 								else
 									$paddedID
-				let $paddedID:=if ($lccn and not($i/@rdf:about)) then
+				
+				(: keep padded id!
+                    let $paddedID:=if ($lccn and not($i/@rdf:about)) then
 										fn:concat("e",$lccn)
 								else $paddedID
-				
+				:)
 
 			    let $iID:=bibs2mets:get-padded-subnode($pos, $paddedID)
 	       
 		        let $instanceDBURI := fn:concat("loc.natlib.instances." , $iID )
 		        let $instanceURI := fn:concat("http://id.loc.gov/resources/instances/", $iID)
-
+	
 	  	        let $instanceOf := 
 						if  ($i/bf:instanceOf) then 
 							if ($i/bf:instanceOf/bf:Work/@rdf:about) then
@@ -1316,8 +1318,8 @@ let $items := (: avoid related works with instances with specific xpath:)
 						  try {
 			   				  bf4ts:bf4ts( element rdf:RDF { $item-modified } )
 					 
-					 		} catch($e){	( (),
-					     					xdmp:log(fn:concat("CORB BFE/BIB sem conversion error for ", $iID), "info")
+					 		} catch($e){	 (<sem:triples/>,
+					     					xdmp:log(fn:concat("CORB BFE/BIB sem conversion error for item ", $iID), "info")
 											
 										)
 					 		}

@@ -193,11 +193,17 @@ let $_:=xdmp:log(fn:concat("CORB bfe-full lccn:", $lccn ),"info")
 			)
 			
 	
-let $bfraw:=
-		element  rdf:RDF {
+	let $bfraw:=
+		<rdf:RDF xmlns="http://id.loc.gov/ontologies/bibframe/"
+				xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+				xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+				xmlns:bflc="http://id.loc.gov/ontologies/bflc/"
+		 		xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+				xmlns:lclocal="http://id.loc.gov/ontologies/lclocal/"
+		  		xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"> {
 		  		   ($work, $instances-reformatted, $items-reformatted)
 		}
-		
+		</rdf:RDF>
 	(:-------------------------from ingest-voyager-bib  -------------------------:)
 	let $resclean := $paddedID
 	let $dirtox := bibs2mets:chars-001($resclean)	
@@ -311,7 +317,7 @@ declare function bfe2mets:insert-instances($bfraw, $workDBURI, $paddedID, $mxe, 
 			and there is no $mxe or work admin metadata	
 
 	:)	
-	(:let $_:=xdmp:log(fn:concat("workdburi: ",$workDBURI, " paddedid: ", $paddedID,", lccn:", $lccn),"info"):)
+	
 	
 	let $instances-mets := bibs2mets:get-instances($bfraw,$workDBURI, $paddedID, $mxe, $adminMeta[1], $lccn, $ibc)
 
@@ -319,7 +325,6 @@ declare function bfe2mets:insert-instances($bfraw, $workDBURI, $paddedID, $mxe, 
   
     let $insert-instances :=
         for $i in $instances-mets 			
-
 			(: instances is now one or more mets object			:)
 			(:-------------------------from ingest-voyager-bib  -------------------------:)
 			let $bibid := fn:tokenize( xs:string($i/@OBJID), "\.")[fn:last()]
@@ -359,9 +364,7 @@ declare function bfe2mets:insert-instances($bfraw, $workDBURI, $paddedID, $mxe, 
 									else
 										""
 
-			let $_:=if ($ibc="yes") then
-							xdmp:log(fn:concat("CORB ibc instance? workdbu: ", $workDBURI," : instance uri", $destination-uri ," orig work: ",$orig-work-link, " newlink : ", $change-work-link),"info")
-				else ()
+	
 (:moving items inside instances at long last 2019-10-11 :)
 		
 	        return	  
@@ -666,7 +669,7 @@ declare function bfe2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $dest
 							return (	bibs2mets:insert-work-stubs($rels,$workDBURI, $paddedID, $BIBURI, $destination-uri))
                             
 					else  ()
-
+(: this doesn't work because instances are just in here as rdf:RDF/bf:Instance ?? don't care because dont want links from work to instance :)
 	let $hasInstances:= for $hasInstance at $x in $bfraw-work/*[self::node() instance of element(bf:hasInstance )]
 						return
 							if (fn:contains($hasInstance/@rdf:resource,"bibframe.example.org") or $hasInstance/bf:Instance/@rdf:nodeID ) then
@@ -1076,7 +1079,7 @@ return (: try catch for the whole process to better return json result to editor
 
 		  		let $json:= if ($result and fn:contains($payload-about,"loc.gov/resources/")) then
 							let $objid:=fn:substring-after($payload-about,"loc.gov")
-							return (xdmp:log($objid,"info"),
+							return (
 								fn:concat('{"name": "',$orig-uri,'","objid": "',$objid,'","publish": {"status": "success","message": "posted"}}')
 								)
 						else			if ($result)  then
