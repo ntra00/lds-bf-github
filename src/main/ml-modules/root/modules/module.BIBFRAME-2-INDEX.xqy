@@ -100,7 +100,7 @@ declare function bibframe2index:bibframe2index($rdfxml as element(rdf:RDF) , $mx
 						let $prov:=if ($prov) then 
 									  fn:string($prov[1])
  								else
-									 fn:string-join($resource//bf:ProvisionActivity[1]/*," ")						
+									 fn:string-join($resource//bf:provisionActivity[1]/child::*[1]/*," ")						
 
 						let $edition:=fn:string($resource/bf:editionStatement[1] )
 						

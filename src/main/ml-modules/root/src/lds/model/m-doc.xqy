@@ -326,7 +326,7 @@ let $idx:=$mets//mets:dmdSec[@ID="index" or @ID="lds-index"]/mets:mdWrap[@MDTYPE
 let $prov:=if ($prov)  then
  			fn:string($prov)
  		else
-			fn:string-join($rdf/*[1]/bf:provisionActivity/bf:ProvisionActivity/*," ")
+			fn:string-join($rdf/*[1]/bf:provisionActivity/child::*[1]/*," ")
  
 let $mat:=fn:string($mets//mets:dmdSec[@ID="index" or @ID="lds-index"]/mets:mdWrap[@MDTYPE="OTHER"]/mets:xmlData/idx:*//idx:materialGroup)
  

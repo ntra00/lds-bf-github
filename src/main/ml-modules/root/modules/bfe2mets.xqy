@@ -41,7 +41,7 @@ declare namespace 	pmo  				= "http://performedmusicontology.org/ontology/";
 import module namespace sem 				= "http://marklogic.com/semantics" at "/MarkLogic/semantics.xqy";
 import module namespace	bf4ts   			= "info:lc/xq-modules/bf4ts#"   		 at "module.BIBFRAME-4-Triplestore.xqy";
 import module namespace bibframe2index      = "info:lc/id-modules/bibframe2index#" at "module.BIBFRAME-2-INDEX.xqy";
-import module namespace mem = "http://xqdev.com/in-mem-update" at '/MarkLogic/appservices/utils/in-mem-update.xqy';
+
 
 (: ==============================================================================================================
 :	ALERT: using test version of bibs2mets: (drop .new to revert to production version
@@ -751,7 +751,7 @@ declare function bfe2mets:get-work($bfraw, $workDBURI, $paddedID, $BIBURI, $dest
 (:    let $work-lock:=xdmp:log(xdmp:document-locks($destination-uri),"info"):)
 
 	let $insert-work := 
-         (xdmp:log(fn:concat("CORB BFE editor load: about to try doc insert on : ",$workDBURI, " from bib doc : ",$BIBURI  ," to ",  $destination-uri)   , "info"),
+         (
 		 try {(xdmp:document-insert(
                  $destination-uri, 
                 $work-mets,

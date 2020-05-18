@@ -131,6 +131,9 @@ postingct=$(find -maxdepth 1 -mtime 0 -type f | wc -l)
 
 port=$BFDB_XCC_VIAMODULES_PORT
 echo "using modules port $BFDB_XCC_VIAMODULES_PORT"
+# -transform_module /prep/bibrecs/modules/bfe2mets.xqy \
+
+
 
 if [[  $postingct > 0 ]]
  then
@@ -148,7 +151,7 @@ if [[  $postingct > 0 ]]
 		-output_permissions lc_read,read,lc_read,execute,id-admin-role,update,lc_xmlsh,update \
     	-input_file_type documents \
 		-document_type XML \
-		-transform_module /prep/bibrecs/modules/bfe2mets.xqy \
+		-transform_module modules/bfe2mets.xqy \
 		-transform_function transform \
 	    -transform_namespace http://loc.gov/ndmso/bfe-2-mets \
         -thread_count $THREADS 
