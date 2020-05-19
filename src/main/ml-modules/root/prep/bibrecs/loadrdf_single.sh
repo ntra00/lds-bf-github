@@ -11,8 +11,13 @@ CURDIR=`echo $PWD`
 TODAY=`date +%Y-%m-%d`
 
 # transform param is nothing or NOMERGE  OVERWRITE
-PARAM=$1
-
+param=$1
+if [[  $param == "" ]]
+then
+PARAM="nothing"
+else
+PARAM=$param
+fi
 
 echo param is $PARAM
 

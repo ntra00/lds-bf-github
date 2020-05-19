@@ -149,7 +149,7 @@ declare function m2bfyaz:transform(
 {
 
 	let $start := xdmp:elapsed-time()
-	let $PARAM:= map:get($context, "transform_param") (: OVERWRITE Or NOMERGE :)
+	let $PARAM:= map:get($context, "transform_param") (: OVERWRITE Or NOMERGE or "nothing" :)
 	
 	let $body := map:get($content, "value")
 	let $orig-uri := map:get($content, "uri")  (: file name! :)
