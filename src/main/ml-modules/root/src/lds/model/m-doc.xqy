@@ -317,8 +317,10 @@ let $objid:=fn:replace($objid,".resources","loc.natlib")
 let $mets:=utils:mets($objid)
 let $rdf:=$mets//mets:dmdSec[@ID="bibframe"]/mets:mdWrap[@MDTYPE="OTHER"]/mets:xmlData/*[1]
 let $idx:=$mets//mets:dmdSec[@ID="index" or @ID="lds-index"]/mets:mdWrap[@MDTYPE="OTHER"]/mets:xmlData/idx:*
- let $prov:=if ($mets//idx:aLabel) then 
+let $prov:= if ($mets//idx:aLabel !="no pub info" ) then 
  				$mets//idx:aLabel
+			else if ($mets//idx:title[1]) then
+					$mets//idx:title[1]
  			else
  				$rdf/*[1]/bf:provisionActivityStatement[1]
  
