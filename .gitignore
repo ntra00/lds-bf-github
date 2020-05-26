@@ -15,7 +15,7 @@ src/xq/ingest*.xqy
 src/xq/modules/lscoll/**
 src/xq/modules/ead/**
 src/xq/modules/pass*
-src/xq/rdfxq*
+#src/xq/rdfxq*
 
 prep/auths/auth_daily_query_filter.txt
 prep/auths/auth2bibframe2/**

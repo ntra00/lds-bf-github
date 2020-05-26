@@ -1,0 +1,102 @@
+#!/bin/bash
+# production one
+# no trailing slash
+
+APPLICATIONS_DIR="/marklogic/applications"
+BFHOME="$APPLICATIONS_DIR/lds-bf-github/src/main/ml-modules/root"
+cd $BFHOME
+
+# one of auths  or  bibrecs
+SUBDIR=$1
+#debug is 2
+DEBUG=$2
+
+cd prep/$SUBDIR
+
+DIR="$(pwd)"
+
+#### 
+# THESE VALUES WILL BE SPECIFIC TO YOUR ENVIRONMENT
+####
+
+
+M2BFDIR=$APPLICATIONS_DIR/marc2bibframe2
+AUTH2BFDIR=$BFHOME/prep/auths/auth2bibframe2
+NAMESLOAD=/marklogic/id/lds-id/prep/marc-auth/names/load/processed
+MODULES=$BFHOME/modules
+MLCPPATH=$APPLICATIONS_DIR/mlcp/bin
+CORBPATH=$APPLICATIONS_DIR/corb
+
+
+THREADS=4
+BFDB_HOST="localhost"
+
+# file system for testing:
+BFDB_XCC_PORT="8203"
+
+# use this in prod:
+BFDB_XCC_VIAMODULES_PORT="8028"
+
+BFDB_XCC_USER="id-admin"
+BFDB_XCC_PASS=`/marklogic/keys/passwd-ml.sh`
+ID_XCC_USER="id-admin"
+ID_XCC_PASS=`/marklogic/keys/passwd-ml.sh`
+ID_XCC_PORT="8082"
+ONIX_HOST="rs7.loc.gov" 
+ONIX_USER="p7515861"
+ONIX_PASSWORD="Irvkf5L[pHzy"
+
+BFDB_BASEURI="http://mlvlp04.loc.gov:8230"
+########
+########
+
+
+SOURCE_UNPROCESSED=$DIR/source/unprocessed
+SOURCE_PROCESSED=$DIR/source/processed
+
+LOAD_UNPROCESSED=$DIR/load/unprocessed
+LOAD_PROCESSED=$DIR/load/processed
+DEL_UNPROCESSED=$DIR/del/unprocessed
+DEL_PROCESSED=$DIR/del/processed
+
+if [[ $DEBUG != "" ]]; then
+
+echo "------------------"
+
+echo $BFHOME
+echo $APPLICATIONS_DIR
+
+echo $SUBDIR
+
+echo $DIR
+
+echo $M2BFDIR
+echo $MODULES
+echo $MLCPPATH
+
+echo $THREADS
+echo $BFDB_HOST
+echo $BFDB_XCC_PORT
+echo $BFDB_XCC_USER
+echo $BFDB_XCC_PASS
+echo $ID_XCC_USER
+echo $ID_XCC_PASS
+echo $ONIX_HOST
+echo $ONIX_USER
+echo $ONIX_PASSWORD
+
+echo "ID_XCC_USER_PROD=$ID_XCC_USER"
+echo "ID_XCC_PASS_PROD=$ID_XCC_PASS"
+echo "ID_XCC_PORT=$ID_XCC_PORT"
+echo "BFDB_XCC_VIAMODULES_PORT=$BFDB_XCC_VIAMODULES_PORT"
+echo $BFDB_BASEURI
+
+ echo $SOURCE_UNPROCESSED
+ echo $SOURCE_PROCESSED
+
+ echo $LOAD_UNPROCESSED
+ echo $LOAD_PROCESSED
+
+ echo "------------------"
+fi
+
